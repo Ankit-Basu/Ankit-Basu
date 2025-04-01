@@ -31,7 +31,8 @@
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Ankit-basu&theme=dark)](https://git.io/streak-stats)
 
-![LeetCode Badges](https://leetcode-badge-showcase.vercel.app/api?username=Ankit_Basu&theme=dark&border=border&animated=true)
+![LeetCode Badges](https://leetcode-badge-showcase.vercel.app/api?username=Ankit_Basu&theme=dark&border=border&animated=true&t=1)
+
 
 ### ✍ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
