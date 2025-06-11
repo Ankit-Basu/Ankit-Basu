@@ -31,7 +31,7 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ankit-basu&show_icons=true&theme=highcontrast&locale=en" alt="ankit-basu" /></p>
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Ankit-basu&theme=dark)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Ankit-basu&theme=dark&timestamp=20250611)](https://git.io/streak-stats)
 
 ![LeetCode Badges](https://leetcode-badge-showcase.vercel.app/api?username=Ankit_Basu&theme=dark&border=border&animated=true)
 
