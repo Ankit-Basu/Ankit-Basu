@@ -73,7 +73,6 @@
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
   <img style="margin: 10px;" src="https://github-readme-streak-stats-git-main-akankshs-projects-296d3a31.vercel.app?user=Ankit-Basu&theme=tokyonight&hide_border=true" alt="Ankit's Streak" />
-  <img style="margin: 10px;" src="https://github-stats-ten-delta.vercel.app/api?username=Ankit-Basu&theme=tokyonight&hide_border=true&hide_title=true&show_icons=true" alt="Ankit's Stats" />
 </div>
 
 ---
