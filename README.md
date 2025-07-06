@@ -81,7 +81,7 @@
 ## 🧠 LeetCode Badges
 
 <div align="center" style="margin-top: 30px;">
-  <img src="https://leetcode-badge-showcase.vercel.app/api?username=Ankit_Basu&theme=dark&border=border&animated=true" alt="LeetCode Badges" />
+  <img src="https://leetcode-badge-showcase.vercel.app/api?username=Ankit_Basu&theme=onedark&border=border&animated=true" alt="LeetCode Badges" />
 </div>
 
 ---
