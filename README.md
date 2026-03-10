@@ -205,7 +205,7 @@ const ankit = {
 ## 🦖 Dino Run
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/niceholowell/chrome-dino-game/main/dino.gif" width="600" alt="Dino Running" />
+  <img src="assets/dino_game.png" width="600" alt="Dino Running" />
 </div>
 
 <img src="assets/fading_line.gif" width="100%" />
