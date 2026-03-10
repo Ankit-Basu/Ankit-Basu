@@ -122,22 +122,90 @@ const ankit = {
 
 <img src="assets/fading_line.gif" width="100%" />
 
-## 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake-dark.svg" />
-  </picture>
-</div>
-
-<img src="assets/fading_line.gif" width="100%" />
-
 ## 📈 Activity Graph
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankit-Basu&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="100%" />
+</div>
+
+<img src="assets/fading_line.gif" width="100%" />
+
+## 🕹️ Quest Log — Click to Expand!
+
+<details>
+<summary>🎯 <b>Main Quest: Fullstack Mastery</b></summary>
+<br>
+
+| Status | Quest                           |    XP    |
+| :----: | ------------------------------- | :------: |
+|   ✅   | Learn HTML, CSS & JavaScript    |  ⭐⭐⭐  |
+|   ✅   | Master React & Node.js (MERN)   | ⭐⭐⭐⭐ |
+|   ✅   | Build & Deploy Full-Stack Apps  | ⭐⭐⭐⭐ |
+|   ✅   | Learn Android Development       |  ⭐⭐⭐  |
+|   🔄   | Master System Design            |   ⭐⭐   |
+|   🔄   | Contribute to Major Open Source |   ⭐⭐   |
+
+</details>
+
+<details>
+<summary>🤖 <b>Side Quest: AI / ML Arc</b></summary>
+<br>
+
+| Status | Quest                                   |    XP    |
+| :----: | --------------------------------------- | :------: |
+|   ✅   | Learn Python for ML                     |  ⭐⭐⭐  |
+|   ✅   | Build ML Models (scikit-learn, PyTorch) | ⭐⭐⭐⭐ |
+|   ✅   | Deploy AI-Powered Web Apps              | ⭐⭐⭐⭐ |
+|   🔄   | Explore Deep Learning & NLP             |   ⭐⭐   |
+|   🔜   | Build end-to-end MLOps Pipeline         |    ⭐    |
+
+</details>
+
+<details>
+<summary>⚔️ <b>Side Quest: Competitive Programming</b></summary>
+<br>
+
+|   Platform    | Level                          |  Rating  |
+| :-----------: | ------------------------------ | :------: |
+|  🟡 LeetCode  | 400+ Problems Solved           | Max 1590 |
+| 🟢 Codeforces | Div3 Rank 1178                 | Max 1119 |
+|  🔵 CodeChef  | Global Rank 1161 (Starters199) | Max 1489 |
+
+</details>
+
+<details>
+<summary>🌐 <b>Side Quest: Web3 / Blockchain</b></summary>
+<br>
+
+| Status | Quest                              |  XP  |
+| :----: | ---------------------------------- | :--: |
+|   ✅   | Understand Blockchain Fundamentals | ⭐⭐ |
+|   🔄   | Learn Solidity & Smart Contracts   | ⭐⭐ |
+|   🔜   | Build a DApp                       |  ⭐  |
+|   🔜   | Explore DeFi Protocols             |  ⭐  |
+
+</details>
+
+<details>
+<summary>🎁 <b>Secret Loot — Click for Surprise!</b></summary>
+<br>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="200" />
+  <br><br>
+  <b>You found the secret chest! 🎉</b><br>
+  <em>Here's a mass of XP for being curious!</em><br><br>
+  <img src="https://img.shields.io/badge/+500_XP_BONUS-FFD700?style=for-the-badge&logo=hackthebox&logoColor=black" />
+</div>
+
+</details>
+
+<img src="assets/fading_line.gif" width="100%" />
+
+## 🦖 Dino Run
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/niceholowell/chrome-dino-game/main/dino.gif" width="600" alt="Dino Running" />
 </div>
 
 <img src="assets/fading_line.gif" width="100%" />
@@ -150,26 +218,10 @@ const ankit = {
 
 <img src="assets/fading_line.gif" width="100%" />
 
-## 🦖 Dino Game — Take a Break!
-
 <div align="center">
-  <p><em>Press <kbd>Space</kbd> to jump!</em></p>
-
-  <a href="https://chromedino.com/" target="_blank">
-    <img src="https://raw.githubusercontent.com/niceholowell/chrome-dino-game/main/dino.gif" width="500" alt="Chrome Dino Game" />
-  </a>
-
-  <br>
-
-  <a href="https://chromedino.com/" target="_blank">
-    <img src="https://img.shields.io/badge/🎮_PLAY_THE_DINO_GAME-4CAF50?style=for-the-badge&logoColor=white" alt="Play" />
-  </a>
-</div>
-
-<img src="assets/fading_line.gif" width="100%" />
-
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=18&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=450&lines=Thanks+for+stopping+by!+%F0%9F%91%80;Star+a+repo+if+you+like+what+you+see+%E2%AD%90;Let's+build+something+cool+together+%F0%9F%A4%9D" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=18&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=500&lines=GG+WP!+Thanks+for+visiting+my+profile+%F0%9F%91%80;Drop+a+%E2%AD%90+if+you+liked+something;Let's+collab+and+build+something+epic+%F0%9F%94%A5;See+you+in+the+code+trenches+%F0%9F%9A%80" alt="Typing SVG" />
   <br>
   <img src="assets/cat_pixel.gif" width="80" />
+  <br><br>
+  <img src="https://img.shields.io/badge/GAME_OVER-INSERT_COIN_TO_CONTINUE-FF0000?style=for-the-badge&logo=retropie&logoColor=white" />
 </div>
