@@ -3,25 +3,21 @@
 </p>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&height=60&lines=Hey+%F0%9F%91%8B%2C+I'm+Ankit+Basu;Full-Stack+Dev+%7C+Code+Geek+%F0%9F%92%BB;Turning+Coffee+Into+Code+%E2%98%95;Always+Shipping+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&height=60&lines=Hey+%F0%9F%91%8B%2C+I'm+Ankit+Basu;Full-Stack+Dev+%7C+Code+Geek+%F0%9F%92%BB;ML+Enthusiast+%F0%9F%A4%96+%7C+Web3+Explorer;Turning+Coffee+Into+Code+%E2%98%95;Always+Shipping+%F0%9F%9A%80" alt="Typing SVG" />
 </h1>
 
-<h3 align="center">⚡ Fullstack Developer | Open Source Nerd | Problem Solver from India 🇮🇳</h3>
+<h3 align="center">⚡ Fullstack Developer | ML Enthusiast 🤖 | Web3 Explorer 🌐 | Open Source Nerd from India 🇮🇳</h3>
 
-<br>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Ankit-Basu&label=Profile%20Views&color=6C63FF&style=for-the-badge" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/Ankit-Basu?label=Followers&style=for-the-badge&color=6C63FF" alt="Followers" />
+</p>
 
 <div align="center">
   <img src="assets/cute_working.gif" width="280" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="assets/eat_sleep_code.gif" width="280" />
 </div>
-
-<br>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Ankit-Basu&label=Profile%20Views&color=6C63FF&style=for-the-badge" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/Ankit-Basu?label=Followers&style=for-the-badge&color=6C63FF" alt="Followers" />
-</p>
 
 <img src="assets/fading_line.gif" width="100%" />
 
@@ -31,9 +27,9 @@
 const ankit = {
   pronouns: "he" | "him",
   location: "India 🇮🇳",
-  currentlyBuilding: "AI-powered apps that actually help people",
-  learning: ["React Native", "Machine Learning", "System Design"],
-  askMeAbout: ["MERN Stack", "Android Dev", "Competitive Programming"],
+  currentlyBuilding: "AI-powered apps & Web3 experiments",
+  learning: ["React Native", "Machine Learning", "Blockchain"],
+  askMeAbout: ["MERN Stack", "Android Dev", "Competitive Programming", "ML/AI"],
   funFact: "I debug faster at 3 AM with lofi beats 🎧",
   motto: "Ship it or it doesn't exist 🚀",
 };
@@ -45,7 +41,7 @@ const ankit = {
 
 <div align="center">
 
-### 💻 Languages
+#### 💻 Languages
 
 <p>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -54,15 +50,15 @@ const ankit = {
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" />
 </p>
 
-### 🧰 Frameworks & Libraries
+#### 🧰 Frameworks & Libraries
 
 <p>
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
@@ -72,16 +68,26 @@ const ankit = {
   <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" />
 </p>
 
-### 🗄️ Databases & Cloud
+#### 🤖 AI / ML
+
+<p>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+</p>
+
+#### 🗄️ Databases & Cloud
 
 <p>
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
 </p>
 
-### 🛠️ Tools & Platforms
+#### 🛠️ Tools
 
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
@@ -90,47 +96,20 @@ const ankit = {
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
   <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
 </p>
 
 </div>
 
 <img src="assets/fading_line.gif" width="100%" />
 
-## 🔌 Link Up
-
-<div align="center">
-  <a href="https://github.com/Ankit-Basu" target="_blank">
-    <img src="assets/github_logo.gif" alt="GitHub" width="70" height="70" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/ankit-basu-4a6774297/" target="_blank">
-    <img src="assets/linkedin_logo.gif" alt="LinkedIn" width="70" height="70" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.instagram.com/_ank1t._/" target="_blank">
-    <img src="assets/insta_logo.gif" alt="Instagram" width="70" height="70" />
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="mailto:ankitbasu935@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/ankit-basu-4a6774297/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/Ankit_Basu03">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
-</div>
-
-<br>
+## 🔌 Link Up &nbsp; <img src="assets/cat_pixel.gif" width="40" />
 
 <p align="center">
-  <img src="assets/cat_pixel.gif" alt="Pixel Cat" width="120" />
+  <a href="https://github.com/Ankit-Basu"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/ankit-basu-4a6774297/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://www.instagram.com/_ank1t._/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+  <a href="https://twitter.com/Ankit_Basu03"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
+  <a href="mailto:ankitbasu935@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 <img src="assets/fading_line.gif" width="100%" />
@@ -138,23 +117,7 @@ const ankit = {
 ## 📊 Player Stats
 
 <div align="center">
-  <img src="https://github-readme-streak-stats-git-main-akankshs-projects-296d3a31.vercel.app?user=Ankit-Basu&theme=tokyonight&hide_border=true" alt="Ankit's Streak" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ankit-Basu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="180" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit-Basu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="180" />
-</div>
-
-<img src="assets/fading_line.gif" width="100%" />
-
-## 🏆 Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ankit-Basu&theme=tokyonight&no-frame=true&column=7&margin-w=10" alt="Trophies" />
+  <img src="https://github-readme-streak-stats-git-main-akankshs-projects-296d3a31.vercel.app?user=Ankit-Basu&theme=tokyonight&hide_border=true" alt="Ankit's Streak" width="70%" />
 </div>
 
 <img src="assets/fading_line.gif" width="100%" />
@@ -171,7 +134,7 @@ const ankit = {
 
 <img src="assets/fading_line.gif" width="100%" />
 
-## 📈 Contribution Graph
+## 📈 Activity Graph
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankit-Basu&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="100%" />
@@ -187,14 +150,26 @@ const ankit = {
 
 <img src="assets/fading_line.gif" width="100%" />
 
+## 🦖 Dino Game — Take a Break!
+
 <div align="center">
-  <img src="assets/coworking.gif" width="250" />
-  <br><br>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=18&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=450&lines=Thanks+for+stopping+by!+%F0%9F%91%80;Star+a+repo+if+you+like+what+you+see+%E2%AD%90;Let's+build+something+cool+together+%F0%9F%A4%9D" alt="Typing SVG" />
+  <p><em>Press <kbd>Space</kbd> to jump!</em></p>
+
+  <a href="https://chromedino.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/niceholowell/chrome-dino-game/main/dino.gif" width="500" alt="Chrome Dino Game" />
+  </a>
+
+  <br>
+
+  <a href="https://chromedino.com/" target="_blank">
+    <img src="https://img.shields.io/badge/🎮_PLAY_THE_DINO_GAME-4CAF50?style=for-the-badge&logoColor=white" alt="Play" />
+  </a>
 </div>
 
-<br>
+<img src="assets/fading_line.gif" width="100%" />
 
-<p align="center">
-  <em>Stay frosty, keep coding.</em> 👾
-</p>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=18&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=450&lines=Thanks+for+stopping+by!+%F0%9F%91%80;Star+a+repo+if+you+like+what+you+see+%E2%AD%90;Let's+build+something+cool+together+%F0%9F%A4%9D" alt="Typing SVG" />
+  <br>
+  <img src="assets/cat_pixel.gif" width="80" />
+</div>
