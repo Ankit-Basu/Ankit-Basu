@@ -220,6 +220,8 @@ const ankit = {
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=18&pause=1000&color=A855F7&center=true&vCenter=true&random=false&width=500&lines=GG+WP!+Thanks+for+visiting+%F0%9F%91%80;Drop+a+%E2%AD%90+if+you+liked+something;Let's+collab+and+build+something+epic+%F0%9F%94%A5;See+you+in+the+code+trenches+%F0%9F%9A%80)
 
+  <img src="assets/headphone.gif" width="80" />
+  &nbsp;&nbsp;
   <img src="assets/cat_pixel.gif" width="80" />
   <br><br>
   <img src="https://img.shields.io/badge/GAME_OVER-INSERT_COIN_TO_CONTINUE-A855F7?style=for-the-badge&logo=retropie&logoColor=white" />
