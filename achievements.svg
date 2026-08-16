@@ -1,26 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#07070b"/>
-      <stop offset="100%" style="stop-color:#0e0e17"/>
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="100%" style="stop-color:#111122"/>
     </linearGradient>
 
     <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#161624;stop-opacity:0.75"/>
-      <stop offset="100%" style="stop-color:#0f0f18;stop-opacity:0.9"/>
+      <stop offset="0%" style="stop-color:#1e1e3f;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#14142b;stop-opacity:0.65"/>
     </linearGradient>
 
     <linearGradient id="skeuoMedal" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#242436"/>
-      <stop offset="100%" style="stop-color:#12121a"/>
+      <stop offset="0%" style="stop-color:#26264d"/>
+      <stop offset="100%" style="stop-color:#15152b"/>
     </linearGradient>
 
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <filter id="tealGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
+    </filter>
+
+    <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.7"/>
     </filter>
   </defs>
 
@@ -30,62 +34,61 @@
   </style>
 
   <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bgGrad)" rx="18"/>
-  <rect x="1.5" y="1.5" width="1197" height="297" rx="18" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2"/>
+  <rect width="1200" height="300" fill="url(#bgGrad)" rx="16"/>
 
   <!-- Header -->
   <g transform="translate(48, 36)">
-    <text class="sans" font-size="12" font-weight="400" fill="#94a3b8" letter-spacing="2">VERIFIED HONORS</text>
-    <text y="26" class="sans" font-size="22" font-weight="900" fill="#ffffff">Developer Achievements &amp; Milestones</text>
+    <text class="sans" font-size="12" font-weight="600" fill="#8b8ba7" letter-spacing="2">VERIFIED HONORS</text>
+    <text y="26" class="sans" font-size="22" font-weight="900" fill="#ff00c8">Developer Achievements &amp; Milestones</text>
   </g>
 
-  <!-- 4 Skeuomorphic Medal Cards Grid -->
+  <!-- 4 Skeuomorphic Medal Cards Grid (Consistent Glowing Teal Icon Circle) -->
   <!-- Card 1 -->
   <g transform="translate(48, 80)">
-    <rect width="260" height="100" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#fbbf24" stroke-width="1.5" filter="url(#glow)"/>
+    <rect width="260" height="100" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
+    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#00e5c7" stroke-width="1.5" filter="url(#tealGlow)"/>
     <text x="38" y="57" font-size="20" text-anchor="middle">🥇</text>
-    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#fbbf24">5+ Hackathon Wins</text>
-    <text x="72" y="60" class="mono" font-size="10.5" fill="#94a3b8">National &amp; University</text>
-    <text x="72" y="74" class="mono" font-size="10.5" fill="#94a3b8">Inter-Varsity Podiums</text>
+    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#eceff4">5+ Hackathon Wins</text>
+    <text x="72" y="60" class="mono" font-size="10.5" fill="#8b8ba7">National &amp; University</text>
+    <text x="72" y="74" class="mono" font-size="10.5" fill="#8b8ba7">Inter-Varsity Podiums</text>
   </g>
 
   <!-- Card 2 -->
   <g transform="translate(330, 80)">
-    <rect width="260" height="100" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow)"/>
+    <rect width="260" height="100" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
+    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#00e5c7" stroke-width="1.5" filter="url(#tealGlow)"/>
     <text x="38" y="57" font-size="20" text-anchor="middle">💻</text>
-    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#06b6d4">400+ Solved</text>
-    <text x="72" y="60" class="mono" font-size="10.5" fill="#94a3b8">LeetCode &amp; GFG | 1590</text>
-    <text x="72" y="74" class="mono" font-size="10.5" fill="#38bdf8">Top 25% Contest Rating</text>
+    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#eceff4">400+ Solved</text>
+    <text x="72" y="60" class="mono" font-size="10.5" fill="#8b8ba7">LeetCode &amp; GFG | 1590</text>
+    <text x="72" y="74" class="mono" font-size="10.5" fill="#00e5c7">Top 25% Contest Rating</text>
   </g>
 
   <!-- Card 3 -->
   <g transform="translate(612, 80)">
-    <rect width="260" height="100" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#a855f7" stroke-width="1.5" filter="url(#glow)"/>
+    <rect width="260" height="100" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
+    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#00e5c7" stroke-width="1.5" filter="url(#tealGlow)"/>
     <text x="38" y="57" font-size="20" text-anchor="middle">⚡</text>
-    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#a855f7">Contest Rankings</text>
-    <text x="72" y="60" class="mono" font-size="10.5" fill="#94a3b8">CF: Div3 Rank 1178</text>
-    <text x="72" y="74" class="mono" font-size="10.5" fill="#94a3b8">CC: Global Rank 1161</text>
+    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#eceff4">Contest Rankings</text>
+    <text x="72" y="60" class="mono" font-size="10.5" fill="#8b8ba7">CF: Div3 Rank 1178</text>
+    <text x="72" y="74" class="mono" font-size="10.5" fill="#8b8ba7">CC: Global Rank 1161</text>
   </g>
 
   <!-- Card 4 -->
   <g transform="translate(894, 80)">
-    <rect width="258" height="100" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#38bdf8" stroke-width="1.5" filter="url(#glow)"/>
+    <rect width="258" height="100" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
+    <circle cx="38" cy="50" r="22" fill="url(#skeuoMedal)" stroke="#00e5c7" stroke-width="1.5" filter="url(#tealGlow)"/>
     <text x="38" y="57" font-size="20" text-anchor="middle">🎓</text>
-    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#38bdf8">Academic Honors</text>
-    <text x="72" y="60" class="mono" font-size="10.5" fill="#94a3b8">B.Tech CSE: 9.2 CGPA</text>
-    <text x="72" y="74" class="mono" font-size="10.5" fill="#94a3b8">ISC: 95.25% • ICSE: 97.2%</text>
+    <text x="72" y="42" class="sans" font-size="14" font-weight="900" fill="#eceff4">Academic Honors</text>
+    <text x="72" y="60" class="mono" font-size="10.5" fill="#8b8ba7">B.Tech CSE: 9.2 CGPA</text>
+    <text x="72" y="74" class="mono" font-size="10.5" fill="#8b8ba7">ISC: 95.25% • ICSE: 97.2%</text>
   </g>
 
   <!-- Bottom Verification Footer -->
   <g transform="translate(48, 200)">
-    <rect width="1104" height="74" rx="10" fill="#0c0c14" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
-    <text x="24" y="32" class="sans" font-size="13" font-weight="800" fill="#f8fafc">📜 Professional &amp; Academic Certifications</text>
-    <text x="24" y="54" class="mono" font-size="11.5" fill="#94a3b8">
-      • <tspan fill="#38bdf8">NPTEL IIT Hyderabad:</tspan> Privacy &amp; Security in Social Media  •  <tspan fill="#06b6d4">CSE Pathshala:</tspan> Mastering in C &amp; Advanced DSA  •  <tspan fill="#a855f7">LPU:</tspan> Java Application Development
+    <rect width="1104" height="74" rx="10" fill="#121224" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <text x="24" y="32" class="sans" font-size="13" font-weight="800" fill="#eceff4">📜 Professional &amp; Academic Certifications</text>
+    <text x="24" y="54" class="mono" font-size="11.5" fill="#8b8ba7">
+      • <tspan fill="#00e5c7">NPTEL IIT Hyderabad:</tspan> Privacy &amp; Security in Social Media  •  <tspan fill="#00e5c7">CSE Pathshala:</tspan> Advanced C &amp; DSA  •  <tspan fill="#ff00c8">LPU:</tspan> Java Application Development
     </text>
   </g>
 </svg>

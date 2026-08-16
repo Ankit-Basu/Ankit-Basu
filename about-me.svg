@@ -1,24 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#07070b"/>
-      <stop offset="100%" style="stop-color:#0e0e17"/>
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="100%" style="stop-color:#111122"/>
     </linearGradient>
 
     <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#161624;stop-opacity:0.75"/>
-      <stop offset="100%" style="stop-color:#0f0f18;stop-opacity:0.9"/>
-    </linearGradient>
-
-    <linearGradient id="auroraGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#7c3aed"/>
-      <stop offset="100%" style="stop-color:#06b6d4"/>
+      <stop offset="0%" style="stop-color:#1e1e3f;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#14142b;stop-opacity:0.65"/>
     </linearGradient>
 
     <linearGradient id="skeuoTag" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e1e2d"/>
-      <stop offset="100%" style="stop-color:#12121c"/>
+      <stop offset="0%" style="stop-color:#26264d"/>
+      <stop offset="100%" style="stop-color:#15152b"/>
     </linearGradient>
+
+    <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
   </defs>
 
   <style>
@@ -27,145 +26,144 @@
   </style>
 
   <!-- Background -->
-  <rect width="1200" height="480" fill="url(#bgGrad)" rx="18"/>
-  <rect x="1.5" y="1.5" width="1197" height="477" rx="18" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2"/>
+  <rect width="1200" height="500" fill="url(#bgGrad)" rx="16"/>
 
   <!-- Section Header -->
   <g transform="translate(48, 38)">
-    <text class="sans" font-size="12" font-weight="400" fill="#94a3b8" letter-spacing="2">PRODUCTION ARCHITECTURES</text>
-    <text y="28" class="sans" font-size="24" font-weight="900" fill="#ffffff">Featured Engineering Systems</text>
+    <text class="sans" font-size="12" font-weight="600" fill="#8b8ba7" letter-spacing="2">PRODUCTION ARCHITECTURES</text>
+    <text y="28" class="sans" font-size="24" font-weight="900" fill="#ff00c8">Featured Engineering Systems</text>
   </g>
 
   <!-- ================= GRID ROW 1 (3 Columns) ================= -->
   <!-- Project 1: SUDARSHAN-X -->
   <g transform="translate(48, 88)">
-    <rect width="350" height="170" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <rect width="350" height="180" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
     
-    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#06b6d4">🛸 SUDARSHAN-X</text>
-    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Autonomous Drone Defense Platform</text>
+    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#00e5c7">🛸 SUDARSHAN-X</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#8b8ba7">Autonomous Drone Defense Platform</text>
 
-    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#eceff4">
       YOLOv8 aerial threat detection, RF spectrum analysis, Doppler tracking, and Reynolds Boids 3D swarm interception.
     </text>
 
     <!-- Skeuomorphic Tags -->
-    <g transform="translate(20, 126)">
+    <g transform="translate(20, 134)">
       <rect x="0" y="0" width="70" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="35" y="16" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" text-anchor="middle">YOLOv8</text>
+      <text x="35" y="16" class="mono" font-size="9.5" font-weight="700" fill="#00e5c7" text-anchor="middle">YOLOv8</text>
 
       <rect x="76" y="0" width="90" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="121" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Three Fiber</text>
+      <text x="121" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Three Fiber</text>
 
       <rect x="172" y="0" width="74" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="209" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Node.js</text>
+      <text x="209" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Node.js</text>
 
       <rect x="252" y="0" width="56" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="280" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Python</text>
+      <text x="280" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Python</text>
     </g>
   </g>
 
   <!-- Project 2: SheShield -->
   <g transform="translate(425, 88)">
-    <rect width="350" height="170" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <rect width="350" height="180" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
     
-    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#a855f7">🛡️ SheShield Platform</text>
-    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Campus &amp; Personal Safety Network</text>
+    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#ff00c8">🛡️ SheShield Platform</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#8b8ba7">Campus &amp; Personal Safety Network</text>
 
-    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
-      ML-powered real-time heat maps (30% incident drop), emergency response, and 24/7 NLP AI conversational support.
+    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#eceff4">
+      ML-powered real-time incident heatmaps (30% drop in incidents), automated escort dispatch, and 24/7 AI chatbot.
     </text>
 
-    <g transform="translate(20, 126)">
+    <g transform="translate(20, 134)">
       <rect x="0" y="0" width="60" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="30" y="16" class="mono" font-size="9.5" font-weight="700" fill="#a855f7" text-anchor="middle">React</text>
+      <text x="30" y="16" class="mono" font-size="9.5" font-weight="700" fill="#ff00c8" text-anchor="middle">React</text>
 
       <rect x="66" y="0" width="54" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="93" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">PHP</text>
+      <text x="93" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">PHP</text>
 
       <rect x="126" y="0" width="66" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="159" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">MySQL</text>
+      <text x="159" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">MySQL</text>
 
       <rect x="198" y="0" width="76" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="236" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Tailwind</text>
+      <text x="236" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Tailwind</text>
     </g>
   </g>
 
   <!-- Project 3: KrishiVaani -->
   <g transform="translate(802, 88)">
-    <rect width="350" height="170" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <rect width="350" height="180" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
     
-    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#06b6d4">🌾 KrishiVaani</text>
-    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Multilingual Smart Farming Assistant</text>
+    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#00e5c7">🌾 KrishiVaani</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#8b8ba7">Multilingual Smart Farming Assistant</text>
 
-    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
-      99.48% accuracy crop disease detection (MobileNetV2), Groq LLM reasoning, and real-time mandi prices with 10+ language voice I/O.
+    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#eceff4">
+      99.48% accuracy crop disease diagnosis via MobileNetV2, Groq LLM reasoning, and real-time mandi prices with voice I/O.
     </text>
 
-    <g transform="translate(20, 126)">
+    <g transform="translate(20, 134)">
       <rect x="0" y="0" width="72" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="36" y="16" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" text-anchor="middle">PyTorch</text>
+      <text x="36" y="16" class="mono" font-size="9.5" font-weight="700" fill="#00e5c7" text-anchor="middle">PyTorch</text>
 
       <rect x="78" y="0" width="56" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="106" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Flask</text>
+      <text x="106" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Flask</text>
 
       <rect x="140" y="0" width="78" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="179" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Groq LLM</text>
+      <text x="179" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Groq LLM</text>
 
       <rect x="224" y="0" width="74" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="261" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">MobileNet</text>
+      <text x="261" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">MobileNet</text>
     </g>
   </g>
 
   <!-- ================= GRID ROW 2 (2 Columns) ================= -->
   <!-- Project 4: AlgoTrail -->
-  <g transform="translate(48, 278)">
-    <rect width="538" height="165" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <g transform="translate(48, 290)">
+    <rect width="538" height="175" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
     
-    <text x="24" y="32" class="sans" font-size="16" font-weight="800" fill="#38bdf8">🗺️ AlgoTrail Visualizer</text>
-    <text x="24" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Interactive Algorithm &amp; Maze Playground</text>
+    <text x="24" y="32" class="sans" font-size="16" font-weight="800" fill="#00e5c7">🗺️ AlgoTrail Visualizer</text>
+    <text x="24" y="48" class="mono" font-size="10" font-weight="600" fill="#8b8ba7">Interactive Algorithm &amp; Maze Playground</text>
 
-    <text x="24" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+    <text x="24" y="74" class="sans" font-size="11.5" font-weight="400" fill="#eceff4">
       Pathfinding visualizer with real-time maze generation animations, step metrics, and AI-powered step explanations for intuitive learning.
     </text>
 
-    <g transform="translate(24, 122)">
+    <g transform="translate(24, 130)">
       <rect x="0" y="0" width="86" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="43" y="16" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+      <text x="43" y="16" class="mono" font-size="9.5" font-weight="700" fill="#00e5c7" text-anchor="middle">JavaScript</text>
 
       <rect x="94" y="0" width="60" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="124" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">CSS3</text>
+      <text x="124" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">CSS3</text>
 
       <rect x="160" y="0" width="100" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="210" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">AI Assistant</text>
+      <text x="210" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">AI Assistant</text>
 
       <rect x="266" y="0" width="80" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="306" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Algorithms</text>
+      <text x="306" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Algorithms</text>
     </g>
   </g>
 
   <!-- Project 5: GridSense -->
-  <g transform="translate(614, 278)">
-    <rect width="538" height="165" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <g transform="translate(614, 290)">
+    <rect width="538" height="175" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
     
-    <text x="24" y="32" class="sans" font-size="16" font-weight="800" fill="#a855f7">⚡ GridSense IoT Analytics</text>
-    <text x="24" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Smart Energy &amp; Power Grid Dashboard</text>
+    <text x="24" y="32" class="sans" font-size="16" font-weight="800" fill="#ff00c8">⚡ GridSense IoT Analytics</text>
+    <text x="24" y="48" class="mono" font-size="10" font-weight="600" fill="#8b8ba7">Smart Energy &amp; Power Grid Dashboard</text>
 
-    <text x="24" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+    <text x="24" y="74" class="sans" font-size="11.5" font-weight="400" fill="#eceff4">
       Smart energy grid monitoring dashboard for real-time power analytics, demand forecasting, anomaly detection, and asset optimization.
     </text>
 
-    <g transform="translate(24, 122)">
+    <g transform="translate(24, 130)">
       <rect x="0" y="0" width="86" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="43" y="16" class="mono" font-size="9.5" font-weight="700" fill="#a855f7" text-anchor="middle">JavaScript</text>
+      <text x="43" y="16" class="mono" font-size="9.5" font-weight="700" fill="#ff00c8" text-anchor="middle">JavaScript</text>
 
       <rect x="94" y="0" width="60" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="124" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">React</text>
+      <text x="124" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">React</text>
 
       <rect x="160" y="0" width="76" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="198" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Node.js</text>
+      <text x="198" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">Node.js</text>
 
       <rect x="242" y="0" width="104" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-      <text x="294" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">IoT Analytics</text>
+      <text x="294" y="16" class="mono" font-size="9.5" font-weight="700" fill="#eceff4" text-anchor="middle">IoT Analytics</text>
     </g>
   </g>
 </svg>

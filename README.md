@@ -2,8 +2,8 @@
 
 <!-- HERO BANNER -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=3">
-  <img width="100%" alt="Ankit Basu — Software Architect & AI Researcher" src="./banner.svg?v=3">
+  <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=4">
+  <img width="100%" alt="Ankit Basu — Software Architect & AI Researcher" src="./banner.svg?v=4">
 </picture>
 
 <br/>
@@ -12,7 +12,7 @@
 
 <!-- UNIFIED DEVELOPER CONSOLE & TECH ARSENAL -->
 <p align="center">
-  <img src="./lanyard.svg?v=3" width="100%" alt="Ankit Basu Developer Passport & Tech Arsenal" />
+  <img src="./lanyard.svg?v=4" width="100%" alt="Ankit Basu Developer Passport & Tech Arsenal" />
 </p>
 
 <br/>
@@ -21,7 +21,7 @@
 
 <!-- FEATURED ENGINEERING SYSTEMS (VISUAL BENTO GRID) -->
 <p align="center">
-  <img src="./about-me.svg?v=3" width="100%" alt="Featured Engineering Systems" />
+  <img src="./about-me.svg?v=4" width="100%" alt="Featured Engineering Systems" />
 </p>
 
 <br/>
@@ -30,7 +30,7 @@
 
 <!-- UNIFIED TELEMETRY & TECHNICAL MASTERY -->
 <p align="center">
-  <img src="./stats.svg?v=3" width="100%" alt="Developer Telemetry & Technical Mastery" />
+  <img src="./stats.svg?v=4" width="100%" alt="Developer Telemetry & Technical Mastery" />
 </p>
 
 <br/>
@@ -39,7 +39,7 @@
 
 <!-- ENGINEERING LIFECYCLE & ACTIVITY MOMENTUM -->
 <p align="center">
-  <img src="./streak.svg?v=3" width="100%" alt="Development Lifecycle Momentum" />
+  <img src="./streak.svg?v=4" width="100%" alt="Development Lifecycle Momentum" />
 </p>
 
 <br/>
@@ -58,7 +58,7 @@
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankit-Basu&bg_color=0a0a0f&color=06b6d4&line=7c3aed&point=38bdf8&area=true&hide_border=true" width="98%" alt="Ankit GitHub Activity Analytics" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankit-Basu&bg_color=0d0d1a&color=00e5c7&line=ff00c8&point=00e5c7&area=true&hide_border=true" width="98%" alt="Ankit GitHub Activity Analytics" />
 </p>
 
 <br/>
@@ -67,7 +67,7 @@
 
 <!-- VERIFIED HONORS & ACHIEVEMENTS -->
 <p align="center">
-  <img src="./achievements.svg?v=3" width="100%" alt="Developer Honors & Milestones" />
+  <img src="./achievements.svg?v=4" width="100%" alt="Developer Honors & Milestones" />
 </p>
 
 <br/>
@@ -78,34 +78,34 @@
 <div align="center">
 
 <a href="https://github.com/Ankit-Basu">
-  <img src="https://img.shields.io/badge/GitHub-Ankit--Basu-0a0a0f?style=for-the-badge&logo=github&logoColor=06b6d4" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/GitHub-Ankit--Basu-0d0d1a?style=for-the-badge&logo=github&logoColor=00e5c7" alt="GitHub"/>
 </a>
 &nbsp;
 <a href="https://www.linkedin.com/in/ankit-basu-4a6774297/">
-  <img src="https://img.shields.io/badge/LinkedIn-Ankit_Basu-0a0a0f?style=for-the-badge&logo=linkedin&logoColor=38bdf8" alt="LinkedIn"/>
+  <img src="https://img.shields.io/badge/LinkedIn-Ankit_Basu-0d0d1a?style=for-the-badge&logo=linkedin&logoColor=ff00c8" alt="LinkedIn"/>
 </a>
 &nbsp;
 <a href="https://www.instagram.com/_ank1t._/">
-  <img src="https://img.shields.io/badge/Instagram-_ank1t._-0a0a0f?style=for-the-badge&logo=instagram&logoColor=a855f7" alt="Instagram"/>
+  <img src="https://img.shields.io/badge/Instagram-_ank1t._-0d0d1a?style=for-the-badge&logo=instagram&logoColor=00e5c7" alt="Instagram"/>
 </a>
 &nbsp;
 <a href="mailto:ankitbasu935@gmail.com">
-  <img src="https://img.shields.io/badge/Email-ankitbasu935@gmail.com-0a0a0f?style=for-the-badge&logo=gmail&logoColor=06b6d4" alt="Email"/>
+  <img src="https://img.shields.io/badge/Email-ankitbasu935@gmail.com-0d0d1a?style=for-the-badge&logo=gmail&logoColor=ff00c8" alt="Email"/>
 </a>
 
 <br/><br/>
 
-<p style="font-family: sans-serif; color: #64748b; font-size: 13px; letter-spacing: 2px;">
+<p style="font-family: sans-serif; color: #8b8ba7; font-size: 13px; letter-spacing: 2px;">
   INNOVATE • SCALE • ARCHITECT • SHIP
 </p>
 
-<p style="font-style: italic; color: #94a3b8; font-size: 12px;">
+<p style="font-style: italic; color: #eceff4; font-size: 12px;">
   "Turning ambitious ideas into scalable engineering reality."
 </p>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Ankit-Basu&style=for-the-badge&color=7c3aed" alt="Profile views"/>
+<img src="https://komarev.com/ghpvc/?username=Ankit-Basu&style=for-the-badge&color=ff00c8" alt="Profile views"/>
 
 </div>
 
