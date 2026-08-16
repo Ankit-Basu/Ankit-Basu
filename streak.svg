@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020617"/>
+      <stop offset="100%" style="stop-color:#07101f"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#67e8f9"/>
+      <stop offset="50%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#d946ef"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="33%" style="stop-color:#6366f1"/>
+      <stop offset="66%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#d946ef"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.3" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseNode1 { 0%,100% { r: 6; opacity: 0.8; } 50% { r: 9; opacity: 1; } }
+    @keyframes pulseNode2 { 0%,100% { r: 6; opacity: 0.8; } 50% { r: 9; opacity: 1; } }
+    @keyframes pulseNode3 { 0%,100% { r: 6; opacity: 0.8; } 50% { r: 9; opacity: 1; } }
+    @keyframes pulseNode4 { 0%,100% { r: 6; opacity: 0.8; } 50% { r: 9; opacity: 1; } }
+    @keyframes lineFlow { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -100; } }
+    @keyframes borderAnim { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -800; } }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+    .sans { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; }
+    .node1 { animation: pulseNode1 2.4s ease-in-out infinite; }
+    .node2 { animation: pulseNode2 2.4s ease-in-out infinite; animation-delay: 0.6s; }
+    .node3 { animation: pulseNode3 2.4s ease-in-out infinite; animation-delay: 1.2s; }
+    .node4 { animation: pulseNode4 2.4s ease-in-out infinite; animation-delay: 1.8s; }
+    .flow-line { animation: lineFlow 3s linear infinite; }
+    .border-anim { animation: borderAnim 20s linear infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="960" height="220" fill="url(#bg)" rx="12"/>
+  <rect width="960" height="220" fill="url(#grid)" rx="12"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="958" height="218" rx="12" fill="none" stroke="url(#border)" stroke-width="1" opacity="0.4" stroke-dasharray="6 3" class="border-anim"/>
+
+  <!-- Header -->
+  <text x="36" y="42" class="sans" font-size="20" font-weight="800" fill="#f1f5f9">🔥 Contribution Momentum</text>
+  <text x="36" y="62" class="mono" font-size="11" fill="#64748b">Consistency • learning • shipping</text>
+
+  <!-- Connecting dashed line between nodes -->
+  <line x1="180" y1="120" x2="780" y2="120" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="6 6" class="flow-line" opacity="0.5"/>
+
+  <!-- NODE 1: LEARN -->
+  <g transform="translate(180, 120)">
+    <!-- Outer glow ring -->
+    <circle cx="0" cy="0" r="28" fill="#0a1628" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <!-- Inner glowing dot -->
+    <circle cx="0" cy="0" r="6" fill="#67e8f9" class="node1" filter="url(#glow)"/>
+    <text x="0" y="45" class="mono" font-size="12" fill="#67e8f9" font-weight="700" text-anchor="middle" letter-spacing="1.5">LEARN</text>
+  </g>
+
+  <!-- NODE 2: BUILD -->
+  <g transform="translate(380, 120)">
+    <circle cx="0" cy="0" r="28" fill="#0a1628" stroke="#6366f1" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="0" cy="0" r="6" fill="#818cf8" class="node2" filter="url(#glow)"/>
+    <text x="0" y="45" class="mono" font-size="12" fill="#818cf8" font-weight="700" text-anchor="middle" letter-spacing="1.5">BUILD</text>
+  </g>
+
+  <!-- NODE 3: COMMIT -->
+  <g transform="translate(580, 120)">
+    <circle cx="0" cy="0" r="28" fill="#0a1628" stroke="#a855f7" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="0" cy="0" r="6" fill="#c084fc" class="node3" filter="url(#glow)"/>
+    <text x="0" y="45" class="mono" font-size="12" fill="#c084fc" font-weight="700" text-anchor="middle" letter-spacing="1.5">COMMIT</text>
+  </g>
+
+  <!-- NODE 4: REPEAT -->
+  <g transform="translate(780, 120)">
+    <circle cx="0" cy="0" r="28" fill="#0a1628" stroke="#d946ef" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="22" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="0" cy="0" r="6" fill="#f472b6" class="node4" filter="url(#glow)"/>
+    <text x="0" y="45" class="mono" font-size="12" fill="#f472b6" font-weight="700" text-anchor="middle" letter-spacing="1.5">REPEAT</text>
+  </g>
+
+  <!-- Bottom subtitle -->
+  <text x="480" y="198" class="mono" font-size="10" fill="#475569" text-anchor="middle">Real streak numbers can be connected later from GitHub activity.</text>
+</svg>
