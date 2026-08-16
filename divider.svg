@@ -1,61 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 30" width="1200" height="30">
-  <defs>
-    <!-- Solid neon linear gradient with userSpaceOnUse to guarantee 100% cross-renderer support -->
-    <linearGradient id="divGradient" x1="60" y1="0" x2="1140" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#fbe2a7" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#fbe2a7" stop-opacity="0.7"/>
-      <stop offset="35%" stop-color="#e4a2b1" stop-opacity="0.95"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="65%" stop-color="#e4a2b1" stop-opacity="0.95"/>
-      <stop offset="85%" stop-color="#fbe2a7" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
-    </linearGradient>
+  <!-- Outer wide subtle line -->
+  <rect x="60" y="14" width="1080" height="2" rx="1" fill="#fbe2a7" opacity="0.45"/>
 
-    <linearGradient id="divGlowGrad" x1="60" y1="0" x2="1140" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#fbe2a7" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#fbe2a7" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#e4a2b1" stop-opacity="0.6"/>
-      <stop offset="75%" stop-color="#fbe2a7" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
+  <!-- Mid-span vibrant rose bar -->
+  <rect x="180" y="13.5" width="840" height="3" rx="1.5" fill="#e4a2b1" opacity="0.8"/>
 
-  <style>
-    @keyframes linePulse {
-      0%, 100% { opacity: 0.8; }
-      50% { opacity: 1; }
-    }
-    .pulse-bar { animation: linePulse 2.5s ease-in-out infinite; }
-  </style>
+  <!-- Center gold core -->
+  <rect x="380" y="13" width="440" height="4" rx="2" fill="#fbe2a7" opacity="0.95"/>
 
-  <!-- Ambient diffuse glow rect behind the main bar -->
-  <rect x="60" y="11" width="1080" height="8" rx="4" fill="url(#divGlowGrad)" opacity="0.5"/>
+  <!-- Center bright white beacon -->
+  <rect x="500" y="12.5" width="200" height="5" rx="2.5" fill="#ffffff" opacity="1"/>
 
-  <!-- Core crisp neon bar (rect with width and height so it NEVER fails) -->
-  <rect x="60" y="13.5" width="1080" height="3" rx="1.5" fill="url(#divGradient)" class="pulse-bar"/>
-
-  <!-- Sweeping bright pulse highlight -->
+  <!-- Animated traveling laser pulse -->
   <g>
-    <rect x="60" y="13" width="120" height="4" rx="2" fill="#ffffff" opacity="0.9">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="960 0" dur="2.5s" repeatCount="indefinite"/>
+    <rect x="60" y="11.5" width="160" height="7" rx="3.5" fill="#ffffff" opacity="0.95">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="920 0" dur="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="60" y="10" width="160" height="10" rx="5" fill="#e4a2b1" opacity="0.5">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="920 0" dur="2.4s" repeatCount="indefinite"/>
     </rect>
   </g>
 
   <!-- Left terminus nodes -->
-  <circle cx="60" cy="15" r="4" fill="#fbe2a7"/>
-  <circle cx="78" cy="15" r="2.5" fill="#e4a2b1"/>
+  <circle cx="60" cy="15" r="4.5" fill="#fbe2a7"/>
+  <circle cx="80" cy="15" r="3" fill="#e4a2b1"/>
 
-  <!-- Center jewel with animated pulsing halo ring -->
+  <!-- Center jewel with expanding halo rings -->
   <g transform="translate(600, 15)">
+    <!-- Expanding pulse ring 1 -->
     <circle cx="0" cy="0" r="8" fill="none" stroke="#e4a2b1" stroke-width="2">
-      <animate attributeName="r" values="6;16;6" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="6;20;6" dur="2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.9;0;0.9" dur="2s" repeatCount="indefinite"/>
     </circle>
+    <!-- Expanding pulse ring 2 (offset) -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#fbe2a7" stroke-width="1.5">
+      <animate attributeName="r" values="10;24;10" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Rotating diamond -->
     <rect x="-6" y="-6" width="12" height="12" rx="2.5" fill="#fbe2a7" transform="rotate(45)"/>
-    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="3.5" fill="#ffffff"/>
   </g>
 
   <!-- Right terminus nodes -->
-  <circle cx="1122" cy="15" r="2.5" fill="#fbe2a7"/>
-  <circle cx="1140" cy="15" r="4" fill="#e4a2b1"/>
+  <circle cx="1120" cy="15" r="3" fill="#fbe2a7"/>
+  <circle cx="1140" cy="15" r="4.5" fill="#e4a2b1"/>
 </svg>
