@@ -1,34 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" width="960" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#030712"/>
-      <stop offset="100%" style="stop-color:#071022"/>
-    </linearGradient>
-
-    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00f2fe"/>
-      <stop offset="50%" style="stop-color:#818cf8"/>
-      <stop offset="100%" style="stop-color:#ec4899"/>
+      <stop offset="0%" style="stop-color:#0d171d"/>
+      <stop offset="100%" style="stop-color:#14222b"/>
     </linearGradient>
 
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a1329"/>
-      <stop offset="100%" style="stop-color:#0f1c3a"/>
+      <stop offset="0%" style="stop-color:#172732;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#101c24;stop-opacity:0.95"/>
     </linearGradient>
 
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fbbf24"/>
-      <stop offset="100%" style="stop-color:#f59e0b"/>
-    </linearGradient>
-
-    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00f2fe"/>
-      <stop offset="100%" style="stop-color:#38bdf8"/>
-    </linearGradient>
-
-    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#a855f7"/>
-      <stop offset="100%" style="stop-color:#c084fc"/>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbe2a7"/>
+      <stop offset="100%" style="stop-color:#e4a7b1"/>
     </linearGradient>
 
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
@@ -38,77 +22,68 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.35" opacity="0.3"/>
-    </pattern>
   </defs>
 
   <style>
-    @keyframes borderSpin { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -900; } }
     .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
     .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .border-anim { animation: borderSpin 20s linear infinite; }
   </style>
 
   <!-- Background -->
-  <rect width="960" height="340" fill="url(#bg)" rx="16"/>
-  <rect width="960" height="340" fill="url(#grid)" rx="16"/>
-
-  <!-- Border -->
-  <rect x="1.5" y="1.5" width="957" height="337" rx="16" fill="none" stroke="url(#border)" stroke-width="1.4" opacity="0.75" stroke-dasharray="8 4" class="border-anim"/>
+  <rect width="960" height="320" fill="url(#bg)" rx="16"/>
+  <rect x="1" y="1" width="958" height="318" rx="16" fill="none" stroke="#243744" stroke-width="1.2"/>
 
   <!-- Header -->
-  <g transform="translate(36, 42)">
-    <text class="sans" font-size="20" font-weight="900" fill="#f8fafc">🏆 Verified Developer Achievements</text>
-    <text y="22" class="mono" font-size="11.5" font-weight="500" fill="#64748b">Competitive programming, hackathons &amp; academic milestones</text>
+  <g transform="translate(36, 40)">
+    <text class="sans" font-size="20" font-weight="900" fill="#fbe2a7">🏆 Verified Honors &amp; Milestones</text>
+    <text y="22" class="mono" font-size="11" font-weight="500" fill="#859ba8">Competitive programming, hackathons &amp; academic excellence</text>
   </g>
 
   <!-- Card 1: Hackathons -->
-  <g transform="translate(36, 82)">
-    <rect width="272" height="100" rx="10" fill="url(#cardBg)" stroke="#1e3a5f" stroke-width="1.2"/>
-    <circle cx="38" cy="50" r="24" fill="#091428" stroke="#fbbf24" stroke-width="1.8" filter="url(#glow)"/>
-    <text x="38" y="58" font-size="22" text-anchor="middle">🥇</text>
-    <text x="74" y="38" class="sans" font-size="14" font-weight="900" fill="url(#goldGrad)">5+ Hackathon Podiums</text>
-    <text x="74" y="58" class="mono" font-size="10.5" fill="#94a3b8">Top Positions &amp; Ranks in</text>
-    <text x="74" y="74" class="mono" font-size="10.5" fill="#94a3b8">National Hackathons</text>
+  <g transform="translate(36, 80)">
+    <rect width="272" height="92" rx="10" fill="url(#cardBg)" stroke="#243744" stroke-width="1"/>
+    <circle cx="38" cy="46" r="22" fill="#132029" stroke="#fbe2a7" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="38" y="53" font-size="20" text-anchor="middle">🥇</text>
+    <text x="74" y="37" class="sans" font-size="13.5" font-weight="900" fill="#fbe2a7">5+ Hackathon Podiums</text>
+    <text x="74" y="56" class="mono" font-size="10.5" fill="#859ba8">National &amp; University</text>
+    <text x="74" y="70" class="mono" font-size="10.5" fill="#859ba8">Inter-Varsity Ranks</text>
   </g>
 
   <!-- Card 2: LeetCode & DSA -->
-  <g transform="translate(344, 82)">
-    <rect width="272" height="100" rx="10" fill="url(#cardBg)" stroke="#1e3a5f" stroke-width="1.2"/>
-    <circle cx="38" cy="50" r="24" fill="#091428" stroke="#00f2fe" stroke-width="1.8" filter="url(#glow)"/>
-    <text x="38" y="58" font-size="22" text-anchor="middle">💻</text>
-    <text x="74" y="38" class="sans" font-size="14" font-weight="900" fill="url(#cyanGrad)">400+ Problems Solved</text>
-    <text x="74" y="58" class="mono" font-size="10.5" fill="#94a3b8">LeetCode &amp; GFG | Max 1590</text>
-    <text x="74" y="74" class="mono" font-size="10.5" fill="#00f2fe" font-weight="700">Contest Rating: Top 25%</text>
+  <g transform="translate(344, 80)">
+    <rect width="272" height="92" rx="10" fill="url(#cardBg)" stroke="#243744" stroke-width="1"/>
+    <circle cx="38" cy="46" r="22" fill="#132029" stroke="#e4a7b1" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="38" y="53" font-size="20" text-anchor="middle">💻</text>
+    <text x="74" y="37" class="sans" font-size="13.5" font-weight="900" fill="#e4a7b1">400+ Problems Solved</text>
+    <text x="74" y="56" class="mono" font-size="10.5" fill="#859ba8">LeetCode &amp; GFG • Max 1590</text>
+    <text x="74" y="70" class="mono" font-size="10.5" fill="#fbe2a7" font-weight="700">Contest Rating: Top 25%</text>
   </g>
 
   <!-- Card 3: Codeforces & CodeChef -->
-  <g transform="translate(652, 82)">
-    <rect width="272" height="100" rx="10" fill="url(#cardBg)" stroke="#1e3a5f" stroke-width="1.2"/>
-    <circle cx="38" cy="50" r="24" fill="#091428" stroke="#a855f7" stroke-width="1.8" filter="url(#glow)"/>
-    <text x="38" y="58" font-size="22" text-anchor="middle">⚡</text>
-    <text x="74" y="38" class="sans" font-size="14" font-weight="900" fill="url(#purpleGrad)">Contest Rankings</text>
-    <text x="74" y="58" class="mono" font-size="10.5" fill="#94a3b8">CF: Div3 Rank 1178 (1119)</text>
-    <text x="74" y="74" class="mono" font-size="10.5" fill="#94a3b8">CC: Global Rank 1161 (1489)</text>
+  <g transform="translate(652, 80)">
+    <rect width="272" height="92" rx="10" fill="url(#cardBg)" stroke="#243744" stroke-width="1"/>
+    <circle cx="38" cy="46" r="22" fill="#132029" stroke="#fbe2a7" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="38" y="53" font-size="20" text-anchor="middle">⚡</text>
+    <text x="74" y="37" class="sans" font-size="13.5" font-weight="900" fill="#fbe2a7">Contest Rankings</text>
+    <text x="74" y="56" class="mono" font-size="10.5" fill="#859ba8">CF: Div3 Rank 1178 (1119)</text>
+    <text x="74" y="70" class="mono" font-size="10.5" fill="#859ba8">CC: Global Rank 1161 (1489)</text>
   </g>
 
   <!-- Bottom Academic & Certifications Card -->
-  <g transform="translate(36, 202)">
-    <rect width="888" height="104" rx="10" fill="url(#cardBg)" stroke="#1e3a5f" stroke-width="1.2"/>
+  <g transform="translate(36, 190)">
+    <rect width="888" height="96" rx="10" fill="url(#cardBg)" stroke="#243744" stroke-width="1"/>
 
     <!-- Left: Academic -->
-    <text x="24" y="32" class="sans" font-size="14" font-weight="900" fill="#f8fafc">🎓 Academic Honors</text>
-    <text x="24" y="56" class="mono" font-size="12.5" fill="#cbd5e1">B.Tech Computer Science &amp; Engineering • <tspan fill="#4ade80" font-weight="900">CGPA: 9.2 / 10</tspan></text>
-    <text x="24" y="76" class="mono" font-size="11" fill="#64748b">Lovely Professional University | ISC: 95.25% • ICSE: 97.2%</text>
+    <text x="24" y="32" class="sans" font-size="14" font-weight="900" fill="#ffffff">🎓 Academic Honors</text>
+    <text x="24" y="54" class="mono" font-size="12" fill="#d6e2e9">B.Tech Computer Science &amp; Engineering • <tspan fill="#fbe2a7" font-weight="800">CGPA: 9.2 / 10</tspan></text>
+    <text x="24" y="72" class="mono" font-size="11" fill="#859ba8">Lovely Professional University | ISC: 95.25% • ICSE: 97.2%</text>
 
     <!-- Divider -->
-    <line x1="530" y1="16" x2="530" y2="88" stroke="#1e3a5f" stroke-width="1.2"/>
+    <line x1="530" y1="16" x2="530" y2="80" stroke="#243744" stroke-width="1"/>
 
     <!-- Right: Certifications -->
-    <text x="555" y="32" class="sans" font-size="14" font-weight="900" fill="#f8fafc">📜 Key Professional Certifications</text>
-    <text x="555" y="56" class="mono" font-size="11.5" fill="#94a3b8">• NPTEL IIT Hyderabad: Privacy &amp; Security in Social Media</text>
-    <text x="555" y="76" class="mono" font-size="11.5" fill="#94a3b8">• Advanced C &amp; DSA (CSE Pathshala) • Java App Dev (LPU)</text>
+    <text x="555" y="32" class="sans" font-size="14" font-weight="900" fill="#ffffff">📜 Professional Certifications</text>
+    <text x="555" y="54" class="mono" font-size="11.5" fill="#859ba8">• NPTEL IIT Hyderabad: Privacy &amp; Security in Social Media</text>
+    <text x="555" y="72" class="mono" font-size="11.5" fill="#859ba8">• Advanced C &amp; DSA (CSE Pathshala) • Java App Dev (LPU)</text>
   </g>
 </svg>

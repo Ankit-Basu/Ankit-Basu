@@ -1,102 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" width="960" height="200">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#030712"/>
-      <stop offset="100%" style="stop-color:#071022"/>
+      <stop offset="0%" style="stop-color:#0d171d"/>
+      <stop offset="100%" style="stop-color:#14222b"/>
     </linearGradient>
 
-    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00f2fe"/>
-      <stop offset="50%" style="stop-color:#818cf8"/>
-      <stop offset="100%" style="stop-color:#ec4899"/>
-    </linearGradient>
-
-    <linearGradient id="pipelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00f2fe"/>
-      <stop offset="33%" style="stop-color:#6366f1"/>
-      <stop offset="66%" style="stop-color:#a855f7"/>
-      <stop offset="100%" style="stop-color:#ec4899"/>
+    <linearGradient id="pipeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbe2a7"/>
+      <stop offset="50%" style="stop-color:#e4a7b1"/>
+      <stop offset="100%" style="stop-color:#fbe2a7"/>
     </linearGradient>
 
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.35" opacity="0.3"/>
-    </pattern>
   </defs>
 
   <style>
-    @keyframes pulseNode1 { 0%, 100% { r: 6.5; opacity: 1; } 50% { r: 9.5; opacity: 0.5; } }
-    @keyframes pulseNode2 { 0%, 100% { r: 6.5; opacity: 1; } 50% { r: 9.5; opacity: 0.5; } }
-    @keyframes pulseNode3 { 0%, 100% { r: 6.5; opacity: 1; } 50% { r: 9.5; opacity: 0.5; } }
-    @keyframes pulseNode4 { 0%, 100% { r: 6.5; opacity: 1; } 50% { r: 9.5; opacity: 0.5; } }
+    @keyframes pulseNode { 0%, 100% { r: 5.5; opacity: 1; } 50% { r: 8; opacity: 0.5; } }
     @keyframes lineFlow { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -120; } }
-    @keyframes borderSpin { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -900; } }
-    
     .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
     .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .node-1 { animation: pulseNode1 2.2s ease-in-out infinite; }
-    .node-2 { animation: pulseNode2 2.2s ease-in-out infinite 0.55s; }
-    .node-3 { animation: pulseNode3 2.2s ease-in-out infinite 1.1s; }
-    .node-4 { animation: pulseNode4 2.2s ease-in-out infinite 1.65s; }
+    .node-1 { animation: pulseNode 2.2s ease-in-out infinite; }
+    .node-2 { animation: pulseNode 2.2s ease-in-out infinite 0.55s; }
+    .node-3 { animation: pulseNode 2.2s ease-in-out infinite 1.1s; }
+    .node-4 { animation: pulseNode 2.2s ease-in-out infinite 1.65s; }
     .flow-line { animation: lineFlow 3s linear infinite; }
-    .border-anim { animation: borderSpin 20s linear infinite; }
   </style>
 
   <!-- Background -->
-  <rect width="960" height="220" fill="url(#bg)" rx="14"/>
-  <rect width="960" height="220" fill="url(#grid)" rx="14"/>
-
-  <!-- Border -->
-  <rect x="1.5" y="1.5" width="957" height="217" rx="14" fill="none" stroke="url(#border)" stroke-width="1.4" opacity="0.75" stroke-dasharray="8 4" class="border-anim"/>
+  <rect width="960" height="200" fill="url(#bg)" rx="16"/>
+  <rect x="1" y="1" width="958" height="198" rx="16" fill="none" stroke="#243744" stroke-width="1.2"/>
 
   <!-- Header -->
-  <g transform="translate(36, 42)">
-    <text class="sans" font-size="20" font-weight="900" fill="#f8fafc">🔥 Contribution Momentum</text>
-    <text y="22" class="mono" font-size="11.5" font-weight="500" fill="#64748b">Consistency • learning • shipping</text>
+  <g transform="translate(36, 38)">
+    <text class="sans" font-size="19" font-weight="900" fill="#fbe2a7">🔥 Engineering Momentum</text>
+    <text y="20" class="mono" font-size="11" font-weight="500" fill="#859ba8">Consistency • continuous integration • shipping</text>
   </g>
 
-  <!-- Connecting dashed flow line -->
-  <line x1="180" y1="122" x2="780" y2="122" stroke="url(#pipelineGrad)" stroke-width="2.5" stroke-dasharray="8 8" class="flow-line" opacity="0.65"/>
+  <!-- Connecting dashed line -->
+  <line x1="180" y1="115" x2="780" y2="115" stroke="url(#pipeGrad)" stroke-width="2" stroke-dasharray="8 8" class="flow-line" opacity="0.6"/>
 
-  <!-- NODE 1: LEARN -->
-  <g transform="translate(180, 122)">
-    <circle cx="0" cy="0" r="30" fill="#081426" stroke="#00f2fe" stroke-width="1.8" filter="url(#glow)"/>
-    <circle cx="0" cy="0" r="23" fill="#0f1d3a" stroke="#1e3a5f" stroke-width="1"/>
-    <circle cx="0" cy="0" r="6.5" fill="#00f2fe" class="node-1" filter="url(#glow)"/>
-    <text x="0" y="48" class="mono" font-size="12.5" fill="#00f2fe" font-weight="800" text-anchor="middle" letter-spacing="1.5">LEARN</text>
+  <!-- NODE 1 -->
+  <g transform="translate(180, 115)">
+    <circle cx="0" cy="0" r="26" fill="#132029" stroke="#fbe2a7" stroke-width="1.5" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="5.5" fill="#fbe2a7" class="node-1" filter="url(#glow)"/>
+    <text x="0" y="44" class="mono" font-size="12" fill="#fbe2a7" font-weight="800" text-anchor="middle" letter-spacing="1.5">LEARN</text>
   </g>
 
-  <!-- NODE 2: BUILD -->
-  <g transform="translate(380, 122)">
-    <circle cx="0" cy="0" r="30" fill="#081426" stroke="#6366f1" stroke-width="1.8" filter="url(#glow)"/>
-    <circle cx="0" cy="0" r="23" fill="#0f1d3a" stroke="#1e3a5f" stroke-width="1"/>
-    <circle cx="0" cy="0" r="6.5" fill="#818cf8" class="node-2" filter="url(#glow)"/>
-    <text x="0" y="48" class="mono" font-size="12.5" fill="#818cf8" font-weight="800" text-anchor="middle" letter-spacing="1.5">BUILD</text>
+  <!-- NODE 2 -->
+  <g transform="translate(380, 115)">
+    <circle cx="0" cy="0" r="26" fill="#132029" stroke="#e4a7b1" stroke-width="1.5" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="5.5" fill="#e4a7b1" class="node-2" filter="url(#glow)"/>
+    <text x="0" y="44" class="mono" font-size="12" fill="#e4a7b1" font-weight="800" text-anchor="middle" letter-spacing="1.5">BUILD</text>
   </g>
 
-  <!-- NODE 3: COMMIT -->
-  <g transform="translate(580, 122)">
-    <circle cx="0" cy="0" r="30" fill="#081426" stroke="#a855f7" stroke-width="1.8" filter="url(#glow)"/>
-    <circle cx="0" cy="0" r="23" fill="#0f1d3a" stroke="#1e3a5f" stroke-width="1"/>
-    <circle cx="0" cy="0" r="6.5" fill="#c084fc" class="node-3" filter="url(#glow)"/>
-    <text x="0" y="48" class="mono" font-size="12.5" fill="#c084fc" font-weight="800" text-anchor="middle" letter-spacing="1.5">COMMIT</text>
+  <!-- NODE 3 -->
+  <g transform="translate(580, 115)">
+    <circle cx="0" cy="0" r="26" fill="#132029" stroke="#fbe2a7" stroke-width="1.5" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="5.5" fill="#fbe2a7" class="node-3" filter="url(#glow)"/>
+    <text x="0" y="44" class="mono" font-size="12" fill="#fbe2a7" font-weight="800" text-anchor="middle" letter-spacing="1.5">COMMIT</text>
   </g>
 
-  <!-- NODE 4: REPEAT -->
-  <g transform="translate(780, 122)">
-    <circle cx="0" cy="0" r="30" fill="#081426" stroke="#ec4899" stroke-width="1.8" filter="url(#glow)"/>
-    <circle cx="0" cy="0" r="23" fill="#0f1d3a" stroke="#1e3a5f" stroke-width="1"/>
-    <circle cx="0" cy="0" r="6.5" fill="#f472b6" class="node-4" filter="url(#glow)"/>
-    <text x="0" y="48" class="mono" font-size="12.5" fill="#f472b6" font-weight="800" text-anchor="middle" letter-spacing="1.5">REPEAT</text>
+  <!-- NODE 4 -->
+  <g transform="translate(780, 115)">
+    <circle cx="0" cy="0" r="26" fill="#132029" stroke="#e4a7b1" stroke-width="1.5" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="5.5" fill="#e4a7b1" class="node-4" filter="url(#glow)"/>
+    <text x="0" y="44" class="mono" font-size="12" fill="#e4a7b1" font-weight="800" text-anchor="middle" letter-spacing="1.5">REPEAT</text>
   </g>
-
-  <!-- Subtitle -->
-  <text x="480" y="198" class="mono" font-size="10.5" fill="#64748b" text-anchor="middle">Real streak numbers can be connected later from GitHub activity.</text>
 </svg>
