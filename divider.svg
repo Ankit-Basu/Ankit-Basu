@@ -1,26 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 20" width="1200" height="20">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24">
   <defs>
-    <linearGradient id="divLine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="dLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#fbe2a7;stop-opacity:0"/>
-      <stop offset="50%" style="stop-color:#fbe2a7;stop-opacity:0.5"/>
+      <stop offset="30%" style="stop-color:#fbe2a7;stop-opacity:0.35"/>
+      <stop offset="50%" style="stop-color:#e4a2b1;stop-opacity:0.6"/>
+      <stop offset="70%" style="stop-color:#fbe2a7;stop-opacity:0.35"/>
       <stop offset="100%" style="stop-color:#e4a2b1;stop-opacity:0"/>
     </linearGradient>
-    <linearGradient id="divGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fbe2a7;stop-opacity:0">
-        <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="0.15" style="stop-color:#fbe2a7;stop-opacity:0.8">
-        <animate attributeName="offset" values="0.15;1.15" dur="3s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="0.3" style="stop-color:#e4a2b1;stop-opacity:0">
-        <animate attributeName="offset" values="0.3;1.3" dur="3s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
   </defs>
-  <!-- Base line -->
-  <line x1="100" y1="10" x2="1100" y2="10" stroke="url(#divLine)" stroke-width="1"/>
-  <!-- Sweeping glow dot -->
-  <line x1="100" y1="10" x2="1100" y2="10" stroke="url(#divGlow)" stroke-width="2.5"/>
-  <!-- Center diamond -->
-  <rect x="596" y="6" width="8" height="8" rx="1.5" fill="#fbe2a7" opacity="0.4" transform="rotate(45,600,10)"/>
+
+  <style>
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+    @keyframes dotPulse {
+      0%, 100% { r: 3; opacity: 0.9; }
+      50% { r: 5; opacity: 0.4; }
+    }
+    .line-pulse { animation: glowPulse 3s ease-in-out infinite; }
+    .dot-pulse { animation: dotPulse 2.5s ease-in-out infinite; }
+  </style>
+
+  <!-- Main gradient line -->
+  <line x1="120" y1="12" x2="1080" y2="12" stroke="url(#dLine)" stroke-width="1.5" class="line-pulse"/>
+
+  <!-- Subtle outer glow line -->
+  <line x1="200" y1="12" x2="1000" y2="12" stroke="#fbe2a7" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Left accent dot -->
+  <circle cx="120" cy="12" r="2" fill="#fbe2a7" opacity="0.5"/>
+
+  <!-- Center pulsing diamond -->
+  <rect x="597" y="9" width="6" height="6" rx="1" fill="#fbe2a7" opacity="0.7" transform="rotate(45,600,12)"/>
+  <circle cx="600" cy="12" fill="#e4a2b1" class="dot-pulse">
+    <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Right accent dot -->
+  <circle cx="1080" cy="12" r="2" fill="#e4a2b1" opacity="0.5"/>
 </svg>
