@@ -1,94 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_a" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0e1c24"/>
       <stop offset="100%" style="stop-color:#162a36"/>
     </linearGradient>
 
-    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3543;stop-opacity:0.6"/>
-      <stop offset="100%" style="stop-color:#142732;stop-opacity:0.75"/>
+    <linearGradient id="glassCard_a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3543;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#142732;stop-opacity:0.7"/>
     </linearGradient>
 
-    <linearGradient id="skeuoMedal" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="skeuoMedal_a" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#254152"/>
       <stop offset="100%" style="stop-color:#172a36"/>
     </linearGradient>
 
-    <filter id="creamGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="creamGlow_a" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    <filter id="cardShadow_a" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
   </defs>
 
   <style>
-    .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
-    .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono_a { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+    .sans_a { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
   </style>
 
   <!-- Background -->
-  <rect width="1200" height="320" fill="url(#bgGrad)" rx="16"/>
+  <rect width="1200" height="340" fill="url(#bgGrad_a)" rx="16"/>
 
   <!-- Header -->
   <g transform="translate(48, 36)">
-    <text class="sans" font-size="12" font-weight="600" fill="#8a97a0" letter-spacing="2">VERIFIED HONORS</text>
-    <text y="26" class="sans" font-size="22" font-weight="900" fill="#fbe2a7">Developer Achievements &amp; Milestones</text>
+    <text class="sans_a" font-size="12" font-weight="600" fill="#8a97a0" letter-spacing="2">VERIFIED HONORS</text>
+    <text y="26" class="sans_a" font-size="22" font-weight="900" fill="#fbe2a7">Developer Achievements &amp; Milestones</text>
   </g>
 
-  <!-- Asymmetric Masonry Cards (Top: 4 Cards, Bottom: Rich Certifications Bar) -->
-  <!-- Card 1: Hackathons -->
+  <!-- ====== MASONRY: TALL card left + 2 short cards stacked on its right ====== -->
+  <!-- Card A: Hackathons (TALL, left accent stripe) -->
   <g transform="translate(48, 80)">
-    <rect width="260" height="110" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
-    <circle cx="38" cy="55" r="22" fill="url(#skeuoMedal)" stroke="#fbe2a7" stroke-width="1.5" filter="url(#creamGlow)"/>
-    <text x="38" y="62" font-size="20" text-anchor="middle">🥇</text>
-    <text x="72" y="44" class="sans" font-size="14" font-weight="900" fill="#f5f0e8">5+ Hackathon Wins</text>
-    <text x="72" y="64" class="mono" font-size="10.5" fill="#8a97a0">National &amp; University</text>
-    <text x="72" y="80" class="mono" font-size="10.5" fill="#8a97a0">Inter-Varsity Podiums</text>
+    <rect width="320" height="168" rx="14" fill="url(#glassCard_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#cardShadow_a)"/>
+    <rect x="0" y="0" width="5" height="168" rx="3" fill="#fbe2a7"/>
+    <text x="24" y="34" font-size="28">🥇</text>
+    <text x="62" y="34" class="sans_a" font-size="16" font-weight="900" fill="#f5f0e8">5+ Hackathon Wins</text>
+    <text x="24" y="62" class="mono_a" font-size="11" fill="#8a97a0">National &amp; University Inter-Varsity</text>
+    <text x="24" y="82" class="mono_a" font-size="11" fill="#8a97a0">Podiums across engineering domains</text>
+    <!-- Large stat number -->
+    <text x="24" y="140" class="sans_a" font-size="42" font-weight="900" fill="#fbe2a7" filter="url(#creamGlow_a)">5+</text>
+    <text x="96" y="140" class="mono_a" font-size="13" font-weight="700" fill="#8a97a0">wins</text>
   </g>
 
-  <!-- Card 2: LeetCode & DSA -->
-  <g transform="translate(330, 80)">
-    <rect width="260" height="110" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
-    <circle cx="38" cy="55" r="22" fill="url(#skeuoMedal)" stroke="#fbe2a7" stroke-width="1.5" filter="url(#creamGlow)"/>
-    <text x="38" y="62" font-size="20" text-anchor="middle">💻</text>
-    <text x="72" y="44" class="sans" font-size="14" font-weight="900" fill="#f5f0e8">400+ Solved</text>
-    <text x="72" y="64" class="mono" font-size="10.5" fill="#8a97a0">LeetCode &amp; GFG | 1590</text>
-    <text x="72" y="80" class="mono" font-size="10.5" fill="#e4a2b1">Top 25% Contest Rating</text>
+  <!-- Card B: LeetCode (SHORT, top accent bar, stacked top-right of Card A) -->
+  <g transform="translate(388, 80)">
+    <rect width="390" height="78" rx="14" fill="url(#glassCard_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#cardShadow_a)"/>
+    <rect x="0" y="0" width="390" height="4" rx="2" fill="#e4a2b1"/>
+    <text x="20" y="36" font-size="18">💻</text>
+    <text x="46" y="36" class="sans_a" font-size="14" font-weight="900" fill="#f5f0e8">400+ Solved</text>
+    <text x="175" y="36" class="mono_a" font-size="11" fill="#8a97a0">LeetCode &amp; GFG</text>
+    <text x="46" y="56" class="mono_a" font-size="11" fill="#e4a2b1" font-weight="700">Rating 1590 • Top 25% Contest</text>
   </g>
 
-  <!-- Card 3: Contest Rankings -->
-  <g transform="translate(612, 80)">
-    <rect width="260" height="110" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
-    <circle cx="38" cy="55" r="22" fill="url(#skeuoMedal)" stroke="#fbe2a7" stroke-width="1.5" filter="url(#creamGlow)"/>
-    <text x="38" y="62" font-size="20" text-anchor="middle">⚡</text>
-    <text x="72" y="44" class="sans" font-size="14" font-weight="900" fill="#f5f0e8">Contest Rankings</text>
-    <text x="72" y="64" class="mono" font-size="10.5" fill="#8a97a0">CF: Div3 Rank 1178</text>
-    <text x="72" y="80" class="mono" font-size="10.5" fill="#8a97a0">CC: Global Rank 1161</text>
+  <!-- Card C: Contest Rankings (SHORT, stacked below Card B) -->
+  <g transform="translate(388, 170)">
+    <rect width="390" height="78" rx="14" fill="url(#glassCard_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#cardShadow_a)"/>
+    <rect x="0" y="0" width="5" height="78" rx="3" fill="#fbe2a7"/>
+    <text x="20" y="36" font-size="18">⚡</text>
+    <text x="46" y="36" class="sans_a" font-size="14" font-weight="900" fill="#f5f0e8">Contest Rankings</text>
+    <text x="46" y="56" class="mono_a" font-size="11" fill="#8a97a0">CF: Div3 Rank 1178 • CC: Global 1161</text>
   </g>
 
-  <!-- Card 4: Academic Honors -->
-  <g transform="translate(894, 80)">
-    <rect width="258" height="110" rx="16" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" filter="url(#glassShadow)"/>
-    <circle cx="38" cy="55" r="22" fill="url(#skeuoMedal)" stroke="#fbe2a7" stroke-width="1.5" filter="url(#creamGlow)"/>
-    <text x="38" y="62" font-size="20" text-anchor="middle">🎓</text>
-    <text x="72" y="44" class="sans" font-size="14" font-weight="900" fill="#f5f0e8">Academic Honors</text>
-    <text x="72" y="64" class="mono" font-size="10.5" fill="#8a97a0">B.Tech CSE: 9.2 CGPA</text>
-    <text x="72" y="80" class="mono" font-size="10.5" fill="#8a97a0">ISC: 95.25% • ICSE: 97.2%</text>
+  <!-- Card D: Academic Honors (WIDE, right side, top accent bar, different height) -->
+  <g transform="translate(798, 80)">
+    <rect width="354" height="168" rx="14" fill="url(#glassCard_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#cardShadow_a)"/>
+    <rect x="0" y="0" width="354" height="4" rx="2" fill="#e4a2b1"/>
+    <text x="20" y="38" font-size="28">🎓</text>
+    <text x="58" y="38" class="sans_a" font-size="16" font-weight="900" fill="#f5f0e8">Academic Honors</text>
+    <text x="20" y="68" class="mono_a" font-size="12" fill="#fbe2a7" font-weight="700">B.Tech CSE: 9.2 CGPA</text>
+    <text x="20" y="90" class="mono_a" font-size="11" fill="#8a97a0">ISC: 95.25% • ICSE: 97.2%</text>
+    <!-- Large stat -->
+    <text x="20" y="145" class="sans_a" font-size="36" font-weight="900" fill="#e4a2b1">9.2</text>
+    <text x="90" y="145" class="mono_a" font-size="12" font-weight="700" fill="#8a97a0">/ 10 CGPA</text>
   </g>
 
-  <!-- Bottom Verification Footer (Masonry Wide Span) -->
-  <g transform="translate(48, 210)">
-    <rect width="1104" height="80" rx="12" fill="#142631" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-    <text x="24" y="34" class="sans" font-size="13" font-weight="800" fill="#f5f0e8">📜 Professional &amp; Academic Certifications</text>
-    <text x="24" y="58" class="mono" font-size="11.5" fill="#8a97a0">
-      • <tspan fill="#fbe2a7">NPTEL IIT Hyderabad:</tspan> Privacy &amp; Security in Social Media  •  <tspan fill="#e4a2b1">CSE Pathshala:</tspan> Advanced C &amp; DSA  •  <tspan fill="#fbe2a7">LPU:</tspan> Java Application Development
+  <!-- Footer: Wide certifications bar (full span, no left/right accent — just flat dark panel) -->
+  <g transform="translate(48, 264)">
+    <rect width="1104" height="56" rx="10" fill="#0d1f2a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="22" y="24" class="sans_a" font-size="12" font-weight="800" fill="#f5f0e8">📜 Certifications</text>
+    <text x="22" y="44" class="mono_a" font-size="11" fill="#8a97a0">
+      <tspan fill="#fbe2a7">NPTEL IIT Hyderabad:</tspan> Privacy &amp; Security  •  <tspan fill="#e4a2b1">CSE Pathshala:</tspan> Advanced C &amp; DSA  •  <tspan fill="#fbe2a7">LPU:</tspan> Java Application Development
     </text>
   </g>
 </svg>
