@@ -2,39 +2,39 @@
 
 <!-- HERO BANNER — Diagonal photo split with layered depth -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=13">
-  <img width="100%" alt="Ankit Basu — Software Architect & AI Researcher" src="./banner.svg?v=13">
+  <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=14">
+  <img width="100%" alt="Ankit Basu — Software Architect & AI Researcher" src="./banner.svg?v=14">
 </picture>
 
 <br/>
-<img src="./divider.svg?v=13" width="100%" alt="divider" />
+<img src="./divider.svg?v=14" width="100%" alt="divider" />
 <br/>
 
 <!-- SKILLS & CREDENTIALS — Big stat numbers + grouped tech stack -->
 <p align="center">
-  <img src="./lanyard.svg?v=13" width="100%" alt="Skills, Credentials & Tech Stack" />
+  <img src="./lanyard.svg?v=14" width="100%" alt="Skills, Credentials & Tech Stack" />
 </p>
 
 <br/>
-<img src="./divider.svg?v=13" width="100%" alt="divider" />
+<img src="./divider.svg?v=14" width="100%" alt="divider" />
 <br/>
 
 <!-- FEATURED PROJECTS — Breathing glow, star badges, varied card shapes -->
 <p align="center">
-  <img src="./about-me.svg?v=13" width="100%" alt="Featured Engineering Systems" />
+  <img src="./about-me.svg?v=14" width="100%" alt="Featured Engineering Systems" />
 </p>
 
 <br/>
-<img src="./divider.svg?v=13" width="100%" alt="divider" />
+<img src="./divider.svg?v=14" width="100%" alt="divider" />
 <br/>
 
 <!-- GITHUB ACTIVITY & PROFICIENCY — Split panel: stat boxes + animated progress bars -->
 <p align="center">
-  <img src="./stats.svg?v=13" width="100%" alt="GitHub Activity & Technical Mastery" />
+  <img src="./stats.svg?v=14" width="100%" alt="GitHub Activity & Technical Mastery" />
 </p>
 
 <br/>
-<img src="./divider.svg?v=13" width="100%" alt="divider" />
+<img src="./divider.svg?v=14" width="100%" alt="divider" />
 <br/>
 
 <!-- STREAK STATS (Bubblegum themed) -->
@@ -43,12 +43,12 @@
 </p>
 
 <br/>
-<img src="./divider.svg?v=13" width="100%" alt="divider" />
+<img src="./divider.svg?v=14" width="100%" alt="divider" />
 <br/>
 
-<!-- NOW BUILDING — Terminal with typing animation -->
+<!-- NOW BUILDING — Terminal with typing animation & CRT scanline depth -->
 <p align="center">
-  <img src="./streak.svg?v=13" width="100%" alt="Now Building — Live Terminal" />
+  <img src="./streak.svg?v=14" width="100%" alt="Now Building — Live Terminal" />
 </p>
 
 <br/>
@@ -73,21 +73,21 @@
 </p>
 
 <br/>
-<img src="./divider.svg?v=13" width="100%" alt="divider" />
+<img src="./divider.svg?v=14" width="100%" alt="divider" />
 <br/>
 
 <!-- ACHIEVEMENTS — Asymmetric masonry with count-up animations -->
 <p align="center">
-  <img src="./achievements.svg?v=13" width="100%" alt="Achievements & Milestones" />
+  <img src="./achievements.svg?v=14" width="100%" alt="Achievements & Milestones" />
 </p>
 
 <br/>
-<img src="./divider.svg?v=13" width="100%" alt="divider" />
+<img src="./divider.svg?v=14" width="100%" alt="divider" />
 <br/>
 
-<!-- GLASS FOOTER -->
+<!-- GLASS FOOTER — Clickable Social Connectors & Quote -->
 <p align="center">
-  <img src="./footer.svg?v=13" width="100%" alt="Connect with Ankit" />
+  <img src="./footer.svg?v=14" width="100%" alt="Connect with Ankit" />
 </p>
 
 <br/>
