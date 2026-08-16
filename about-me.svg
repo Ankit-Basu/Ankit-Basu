@@ -1,108 +1,171 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d171d"/>
-      <stop offset="100%" style="stop-color:#14222b"/>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#07070b"/>
+      <stop offset="100%" style="stop-color:#0e0e17"/>
     </linearGradient>
 
-    <linearGradient id="panelBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#172732;stop-opacity:0.9"/>
-      <stop offset="100%" style="stop-color:#101c24;stop-opacity:0.95"/>
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161624;stop-opacity:0.75"/>
+      <stop offset="100%" style="stop-color:#0f0f18;stop-opacity:0.9"/>
     </linearGradient>
 
-    <linearGradient id="focusCard" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#1c2d38"/>
-      <stop offset="100%" style="stop-color:#142129"/>
+    <linearGradient id="auroraGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
     </linearGradient>
 
-    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fbe2a7"/>
-      <stop offset="100%" style="stop-color:#e4a7b1"/>
+    <linearGradient id="skeuoTag" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2d"/>
+      <stop offset="100%" style="stop-color:#12121c"/>
     </linearGradient>
-
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
-    @keyframes dotGlow {
-      0%, 100% { r: 4.5; opacity: 1; }
-      50% { r: 6; opacity: 0.5; }
-    }
     .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
     .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .dot-cream { animation: dotGlow 2.5s ease-in-out infinite; }
-    .dot-rose { animation: dotGlow 2.5s ease-in-out infinite 0.8s; }
   </style>
 
   <!-- Background -->
-  <rect width="1200" height="340" fill="url(#bg)" rx="18"/>
-  <rect x="1" y="1" width="1198" height="338" rx="18" fill="none" stroke="#243744" stroke-width="1.2"/>
+  <rect width="1200" height="480" fill="url(#bgGrad)" rx="18"/>
+  <rect x="1.5" y="1.5" width="1197" height="477" rx="18" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2"/>
 
-  <!-- LEFT PANEL: WHOAMI -->
-  <g transform="translate(30, 25)">
-    <rect width="540" height="290" rx="14" fill="url(#panelBg)" stroke="#243744" stroke-width="1"/>
-    
-    <text x="25" y="38" class="mono" font-size="13" font-weight="700">
-      <tspan fill="#e4a7b1">❯ </tspan><tspan fill="#fbe2a7">whoami --summary</tspan>
-    </text>
-
-    <text x="25" y="82" class="sans" fill="#ffffff" font-size="32" font-weight="900" letter-spacing="-0.5">ANKIT BASU</text>
-    <text x="25" y="104" class="mono" fill="#fbe2a7" font-size="12.5" font-weight="600">@Ankit-Basu • Software Engineer &amp; Researcher</text>
-
-    <!-- Roles -->
-    <text x="25" y="140" class="sans" fill="#f8fafc" font-size="14" font-weight="800">⚡ Full Stack Development (React, Node.js, Express)</text>
-    <text x="25" y="164" class="sans" fill="#f8fafc" font-size="14" font-weight="800">🤖 Autonomous AI Systems (YOLOv8, PyTorch, LLMs)</text>
-    <text x="25" y="188" class="sans" fill="#f8fafc" font-size="14" font-weight="800">☁️ Cloud Native &amp; DevOps (Docker, Kubernetes, AWS)</text>
-
-    <text x="25" y="222" class="mono" fill="#859ba8" font-size="11.5">Building high-impact systems, robust algorithms &amp; scalable</text>
-    <text x="25" y="238" class="mono" fill="#859ba8" font-size="11.5">digital products with clean architecture and speed.</text>
-
-    <text x="25" y="274" class="mono" fill="#fbe2a7" font-size="12" font-weight="700">
-      <tspan fill="#e4a7b1">$ </tspan>build • learn • ship • repeat
-    </text>
+  <!-- Section Header -->
+  <g transform="translate(48, 38)">
+    <text class="sans" font-size="12" font-weight="400" fill="#94a3b8" letter-spacing="2">PRODUCTION ARCHITECTURES</text>
+    <text y="28" class="sans" font-size="24" font-weight="900" fill="#ffffff">Featured Engineering Systems</text>
   </g>
 
-  <!-- RIGHT PANEL: KEY PROJECTS -->
-  <g transform="translate(600, 25)">
-    <rect width="570" height="290" rx="14" fill="url(#panelBg)" stroke="#243744" stroke-width="1"/>
+  <!-- ================= GRID ROW 1 (3 Columns) ================= -->
+  <!-- Project 1: SUDARSHAN-X -->
+  <g transform="translate(48, 88)">
+    <rect width="350" height="170" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    
+    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#06b6d4">🛸 SUDARSHAN-X</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Autonomous Drone Defense Platform</text>
 
-    <text x="28" y="38" class="mono" fill="#e4a7b1" font-size="14" font-weight="900" letter-spacing="2">FEATURED ENGINEERING SYSTEMS</text>
+    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+      YOLOv8 aerial threat detection, RF spectrum analysis, Doppler tracking, and Reynolds Boids 3D swarm interception.
+    </text>
 
-    <!-- Project 1 -->
-    <g transform="translate(28, 52)">
-      <rect width="514" height="46" rx="8" fill="url(#focusCard)" stroke="#243744" stroke-width="1"/>
-      <circle cx="22" cy="23" r="4.5" fill="#fbe2a7" class="dot-cream" filter="url(#glow)"/>
-      <text x="38" y="20" class="mono" fill="#ffffff" font-size="12.5" font-weight="800">Autonomous Drone Defense (SUDARSHAN-X)</text>
-      <text x="38" y="36" class="mono" fill="#859ba8" font-size="10">YOLOv8 • RF Spectrum • Kalman Filters • 3D Swarm</text>
+    <!-- Skeuomorphic Tags -->
+    <g transform="translate(20, 126)">
+      <rect x="0" y="0" width="70" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="35" y="16" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" text-anchor="middle">YOLOv8</text>
+
+      <rect x="76" y="0" width="90" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="121" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Three Fiber</text>
+
+      <rect x="172" y="0" width="74" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="209" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Node.js</text>
+
+      <rect x="252" y="0" width="56" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="280" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Python</text>
     </g>
+  </g>
 
-    <!-- Project 2 -->
-    <g transform="translate(28, 106)">
-      <rect width="514" height="46" rx="8" fill="url(#focusCard)" stroke="#243744" stroke-width="1"/>
-      <circle cx="22" cy="23" r="4.5" fill="#e4a7b1" class="dot-rose" filter="url(#glow)"/>
-      <text x="38" y="20" class="mono" fill="#ffffff" font-size="12.5" font-weight="800">Campus Safety Platform (SheShield)</text>
-      <text x="38" y="36" class="mono" fill="#859ba8" font-size="10">ML Heatmaps • 150+ Concerns • 24/7 AI Chatbot</text>
+  <!-- Project 2: SheShield -->
+  <g transform="translate(425, 88)">
+    <rect width="350" height="170" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    
+    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#a855f7">🛡️ SheShield Platform</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Campus &amp; Personal Safety Network</text>
+
+    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+      ML-powered real-time heat maps (30% incident drop), emergency response, and 24/7 NLP AI conversational support.
+    </text>
+
+    <g transform="translate(20, 126)">
+      <rect x="0" y="0" width="60" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="30" y="16" class="mono" font-size="9.5" font-weight="700" fill="#a855f7" text-anchor="middle">React</text>
+
+      <rect x="66" y="0" width="54" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="93" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">PHP</text>
+
+      <rect x="126" y="0" width="66" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="159" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">MySQL</text>
+
+      <rect x="198" y="0" width="76" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="236" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Tailwind</text>
     </g>
+  </g>
 
-    <!-- Project 3 -->
-    <g transform="translate(28, 160)">
-      <rect width="514" height="46" rx="8" fill="url(#focusCard)" stroke="#243744" stroke-width="1"/>
-      <circle cx="22" cy="23" r="4.5" fill="#fbe2a7" class="dot-cream" filter="url(#glow)"/>
-      <text x="38" y="20" class="mono" fill="#ffffff" font-size="12.5" font-weight="800">Multilingual Smart Farming (KrishiVaani)</text>
-      <text x="38" y="36" class="mono" fill="#859ba8" font-size="10">99.48% Accuracy • MobileNetV2 • Gemini Reasoning</text>
+  <!-- Project 3: KrishiVaani -->
+  <g transform="translate(802, 88)">
+    <rect width="350" height="170" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    
+    <text x="20" y="32" class="sans" font-size="16" font-weight="800" fill="#06b6d4">🌾 KrishiVaani</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Multilingual Smart Farming Assistant</text>
+
+    <text x="20" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+      99.48% accuracy crop disease detection (MobileNetV2), Groq LLM reasoning, and real-time mandi prices with 10+ language voice I/O.
+    </text>
+
+    <g transform="translate(20, 126)">
+      <rect x="0" y="0" width="72" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="36" y="16" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" text-anchor="middle">PyTorch</text>
+
+      <rect x="78" y="0" width="56" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="106" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Flask</text>
+
+      <rect x="140" y="0" width="78" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="179" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Groq LLM</text>
+
+      <rect x="224" y="0" width="74" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="261" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">MobileNet</text>
     </g>
+  </g>
 
-    <!-- Status Box -->
-    <g transform="translate(28, 222)">
-      <rect width="514" height="34" rx="8" fill="#0d171d" stroke="#fbe2a7" stroke-width="1"/>
-      <circle cx="18" cy="17" r="4" fill="#fbe2a7"/>
-      <text x="32" y="21" class="mono" fill="#fbe2a7" font-size="11.5" font-weight="800" letter-spacing="1">BUILDING • LEARNING • OPEN TO COLLABORATE</text>
+  <!-- ================= GRID ROW 2 (2 Columns) ================= -->
+  <!-- Project 4: AlgoTrail -->
+  <g transform="translate(48, 278)">
+    <rect width="538" height="165" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    
+    <text x="24" y="32" class="sans" font-size="16" font-weight="800" fill="#38bdf8">🗺️ AlgoTrail Visualizer</text>
+    <text x="24" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Interactive Algorithm &amp; Maze Playground</text>
+
+    <text x="24" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+      Pathfinding visualizer with real-time maze generation animations, step metrics, and AI-powered step explanations for intuitive learning.
+    </text>
+
+    <g transform="translate(24, 122)">
+      <rect x="0" y="0" width="86" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="43" y="16" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+
+      <rect x="94" y="0" width="60" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="124" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">CSS3</text>
+
+      <rect x="160" y="0" width="100" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="210" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">AI Assistant</text>
+
+      <rect x="266" y="0" width="80" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="306" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Algorithms</text>
+    </g>
+  </g>
+
+  <!-- Project 5: GridSense -->
+  <g transform="translate(614, 278)">
+    <rect width="538" height="165" rx="12" fill="url(#glassCard)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    
+    <text x="24" y="32" class="sans" font-size="16" font-weight="800" fill="#a855f7">⚡ GridSense IoT Analytics</text>
+    <text x="24" y="48" class="mono" font-size="10" font-weight="600" fill="#64748b">Smart Energy &amp; Power Grid Dashboard</text>
+
+    <text x="24" y="74" class="sans" font-size="11.5" font-weight="400" fill="#cbd5e1">
+      Smart energy grid monitoring dashboard for real-time power analytics, demand forecasting, anomaly detection, and asset optimization.
+    </text>
+
+    <g transform="translate(24, 122)">
+      <rect x="0" y="0" width="86" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="43" y="16" class="mono" font-size="9.5" font-weight="700" fill="#a855f7" text-anchor="middle">JavaScript</text>
+
+      <rect x="94" y="0" width="60" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="124" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">React</text>
+
+      <rect x="160" y="0" width="76" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="198" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">Node.js</text>
+
+      <rect x="242" y="0" width="104" height="24" rx="6" fill="url(#skeuoTag)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="294" y="16" class="mono" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">IoT Analytics</text>
     </g>
   </g>
 </svg>

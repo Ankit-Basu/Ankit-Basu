@@ -1,90 +1,48 @@
 <div align="center">
 
+<!-- HERO BANNER -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=2">
-  <img width="100%" alt="Ankit Basu — Full Stack, ML and Cloud Engineer" src="./banner.svg?v=2">
+  <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=3">
+  <img width="100%" alt="Ankit Basu — Software Architect & AI Researcher" src="./banner.svg?v=3">
 </picture>
 
 <br/>
-
-<p align="center">
-  <img src="./about-me.svg?v=2" width="100%" alt="About Ankit Basu" />
-</p>
-
-</div>
-
----
-
-## 🖥️ Verified Developer Console
-
-<div align="center">
-  <img src="./lanyard.svg?v=2" width="100%" alt="Ankit Basu Developer Console"/>
-</div>
-
----
-
-## 🚀 Tech Arsenal & Core Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=java,python,c,cpp,js,html,css,react,nodejs,express,mongodb,mysql,postgres,docker,kubernetes,aws,git,github,vscode,postman" alt="Technology stack"/>
-
-</div>
-
+<img src="./divider.svg" width="100%" alt="divider" />
 <br/>
 
-**Core Engineering Focus:** Java & DSA (Algorithms) • Full Stack Development (MERN) • Machine Learning & Computer Vision • Cloud Infrastructure (Docker, Kubernetes, AWS) • High-Performance Systems
+<!-- UNIFIED DEVELOPER CONSOLE & TECH ARSENAL -->
+<p align="center">
+  <img src="./lanyard.svg?v=3" width="100%" alt="Ankit Basu Developer Passport & Tech Arsenal" />
+</p>
 
----
+<br/>
+<img src="./divider.svg" width="100%" alt="divider" />
+<br/>
 
-## 💼 Featured Engineering Systems
+<!-- FEATURED ENGINEERING SYSTEMS (VISUAL BENTO GRID) -->
+<p align="center">
+  <img src="./about-me.svg?v=3" width="100%" alt="Featured Engineering Systems" />
+</p>
 
-| System / Project | Description & Core Innovations | Tech Stack |
-|---|---|---|
-| **[SheShield](https://github.com/Ankit-Basu/SheShield)** | Campus & women's safety platform with ML-powered incident heat maps (30% incident drop), emergency response, and 24/7 AI chatbot. | React • PHP • MySQL • Tailwind CSS • Chart.js |
-| **[SUDARSHAN-X](https://github.com/Ankit-Basu)** | Autonomous drone defense platform combining YOLOv8 aerial threat detection, RF spectrum analysis, Doppler tracking, and 3D swarm intelligence. | React Three Fiber • Node.js • Python • YOLOv8 • Socket.IO |
-| **[KrishiVaani](https://github.com/Ankit-Basu)** | Multilingual smart farming assistant with 99.48% accuracy crop disease diagnosis, Gemini reasoning, and real-time mandi prices. | PyTorch • Flask • JavaScript • Groq LLM • Tailwind CSS |
-| **[AlgoTrail](https://github.com/Ankit-Basu/AlgoTrail)** | Interactive algorithms visualizer with real-time pathfinding, maze generation animations, and AI-powered step explanations. | JavaScript • CSS • AI Assist • Algorithms |
-| **[GridSense](https://github.com/Ankit-Basu/GridSense)** | Smart grid analytics and IoT energy monitoring dashboard for real-time tracking, forecasting, and anomaly detection. | JavaScript • React • Node.js • Analytics |
+<br/>
+<img src="./divider.svg" width="100%" alt="divider" />
+<br/>
 
----
+<!-- UNIFIED TELEMETRY & TECHNICAL MASTERY -->
+<p align="center">
+  <img src="./stats.svg?v=3" width="100%" alt="Developer Telemetry & Technical Mastery" />
+</p>
 
-## 📊 Developer Telemetry & Analytics
+<br/>
+<img src="./divider.svg" width="100%" alt="divider" />
+<br/>
 
-<div align="center">
-  <img src="./stats.svg?v=2" width="56%" alt="Ankit developer stats"/>
-  <img src="./langs.svg?v=2" width="43%" alt="Ankit technology mastery"/>
-</div>
+<!-- ENGINEERING LIFECYCLE & ACTIVITY MOMENTUM -->
+<p align="center">
+  <img src="./streak.svg?v=3" width="100%" alt="Development Lifecycle Momentum" />
+</p>
 
----
-
-## 🔥 Development Momentum
-
-<div align="center">
-  <img src="./streak.svg?v=2" width="100%" alt="Development momentum"/>
-</div>
-
----
-
-## 📈 GitHub Activity Analytics
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankit-Basu&bg_color=111d24&color=fbe2a7&line=e4a7b1&point=fbe2a7&area=true&hide_border=true" width="98%" alt="Ankit GitHub activity graph"/>
-
-</div>
-
----
-
-## 🏆 Verified Honors & Achievements
-
-<div align="center">
-  <img src="./achievements.svg?v=2" width="100%" alt="Developer achievements"/>
-</div>
-
----
-
-## 🐍 Contribution Flow
+<br/>
 
 <p align="center">
   <picture>
@@ -92,45 +50,63 @@
             srcset="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake-dark.svg">
     <source media="(prefers-color-scheme: light)"
             srcset="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake.svg">
-    <img alt="Ankit Basu Contribution Snake"
+    <img alt="Ankit Basu Contribution Flow"
          src="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake.svg">
   </picture>
 </p>
 
----
+<br/>
 
-## 🌐 Connect & Collaborate
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankit-Basu&bg_color=0a0a0f&color=06b6d4&line=7c3aed&point=38bdf8&area=true&hide_border=true" width="98%" alt="Ankit GitHub Activity Analytics" />
+</p>
 
+<br/>
+<img src="./divider.svg" width="100%" alt="divider" />
+<br/>
+
+<!-- VERIFIED HONORS & ACHIEVEMENTS -->
+<p align="center">
+  <img src="./achievements.svg?v=3" width="100%" alt="Developer Honors & Milestones" />
+</p>
+
+<br/>
+<img src="./divider.svg" width="100%" alt="divider" />
+<br/>
+
+<!-- MINIMALIST FOOTER & CONNECT -->
 <div align="center">
 
 <a href="https://github.com/Ankit-Basu">
-  <img src="https://img.shields.io/badge/GitHub-Ankit--Basu-111d24?style=for-the-badge&logo=github&logoColor=fbe2a7" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/GitHub-Ankit--Basu-0a0a0f?style=for-the-badge&logo=github&logoColor=06b6d4" alt="GitHub"/>
 </a>
 &nbsp;
 <a href="https://www.linkedin.com/in/ankit-basu-4a6774297/">
-  <img src="https://img.shields.io/badge/LinkedIn-Ankit_Basu-111d24?style=for-the-badge&logo=linkedin&logoColor=e4a7b1" alt="LinkedIn"/>
+  <img src="https://img.shields.io/badge/LinkedIn-Ankit_Basu-0a0a0f?style=for-the-badge&logo=linkedin&logoColor=38bdf8" alt="LinkedIn"/>
 </a>
 &nbsp;
 <a href="https://www.instagram.com/_ank1t._/">
-  <img src="https://img.shields.io/badge/Instagram-_ank1t._-111d24?style=for-the-badge&logo=instagram&logoColor=fbe2a7" alt="Instagram"/>
+  <img src="https://img.shields.io/badge/Instagram-_ank1t._-0a0a0f?style=for-the-badge&logo=instagram&logoColor=a855f7" alt="Instagram"/>
 </a>
 &nbsp;
 <a href="mailto:ankitbasu935@gmail.com">
-  <img src="https://img.shields.io/badge/Email-ankitbasu935@gmail.com-111d24?style=for-the-badge&logo=gmail&logoColor=e4a7b1" alt="Email"/>
+  <img src="https://img.shields.io/badge/Email-ankitbasu935@gmail.com-0a0a0f?style=for-the-badge&logo=gmail&logoColor=06b6d4" alt="Email"/>
 </a>
 
-</div>
+<br/><br/>
 
----
+<p style="font-family: sans-serif; color: #64748b; font-size: 13px; letter-spacing: 2px;">
+  INNOVATE • SCALE • ARCHITECT • SHIP
+</p>
 
-<div align="center">
-
-### `INNOVATE • SCALE • ARCHITECT • SHIP`
-
-*"Turning ambitious ideas into scalable engineering reality."*
+<p style="font-style: italic; color: #94a3b8; font-size: 12px;">
+  "Turning ambitious ideas into scalable engineering reality."
+</p>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Ankit-Basu&style=for-the-badge&color=e4a7b1" alt="Profile views"/>
+<img src="https://komarev.com/ghpvc/?username=Ankit-Basu&style=for-the-badge&color=7c3aed" alt="Profile views"/>
+
+</div>
 
 </div>
