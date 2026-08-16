@@ -1,203 +1,143 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
   <defs>
     <linearGradient id="bg_l" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0e1c24"/>
-      <stop offset="100%" style="stop-color:#162a36"/>
+      <stop offset="0%" style="stop-color:#0e1c24"/><stop offset="100%" style="stop-color:#162a36"/>
     </linearGradient>
-
     <linearGradient id="glass_l" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a3040;stop-opacity:0.65"/>
-      <stop offset="100%" style="stop-color:#12242e;stop-opacity:0.8"/>
+      <stop offset="0%" style="stop-color:#1a3040;stop-opacity:0.6"/><stop offset="100%" style="stop-color:#12242e;stop-opacity:0.8"/>
     </linearGradient>
-
     <linearGradient id="chip_l" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#22404f"/>
-      <stop offset="100%" style="stop-color:#152c38"/>
+      <stop offset="0%" style="stop-color:#22404f"/><stop offset="100%" style="stop-color:#152c38"/>
     </linearGradient>
-
-    <linearGradient id="statBox_l" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#142e3c"/>
-      <stop offset="100%" style="stop-color:#0d1f2a"/>
+    <linearGradient id="statBx" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#142e3c"/><stop offset="100%" style="stop-color:#0d1f2a"/>
     </linearGradient>
-
-    <filter id="creamGlow_l" x="-25%" y="-25%" width="150%" height="150%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="cG_l" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
-    <filter id="roseGlow_l" x="-25%" y="-25%" width="150%" height="150%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="rG_l" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
-    <filter id="shadow_l" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000000" flood-opacity="0.5"/>
+    <filter id="sh_l" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
     </filter>
   </defs>
 
   <style>
-    /* Staggered fade+scale-in for stat boxes */
-    @keyframes statReveal1 { 0% { opacity: 0; transform: scale(0.85); } 100% { opacity: 1; transform: scale(1); } }
-    @keyframes statReveal2 { 0%,15% { opacity: 0; transform: scale(0.85); } 100% { opacity: 1; transform: scale(1); } }
-    @keyframes statReveal3 { 0%,30% { opacity: 0; transform: scale(0.85); } 100% { opacity: 1; transform: scale(1); } }
-    @keyframes statReveal4 { 0%,45% { opacity: 0; transform: scale(0.85); } 100% { opacity: 1; transform: scale(1); } }
-
-    /* Staggered chip fade-in */
-    @keyframes chipFade { 0% { opacity: 0; transform: translateY(6px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeUp1 { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes fadeUp2 { 0%,15% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes fadeUp3 { 0%,30% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes fadeUp4 { 0%,45% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes chipIn { 0% { opacity: 0; } 100% { opacity: 1; } }
 
     .mono_l { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
     .sans_l { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .stat1 { opacity: 0; animation: statReveal1 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; }
-    .stat2 { opacity: 0; animation: statReveal2 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; }
-    .stat3 { opacity: 0; animation: statReveal3 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; }
-    .stat4 { opacity: 0; animation: statReveal4 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; }
-
-    .chip-d1 { opacity: 0; animation: chipFade 0.5s ease 0.4s forwards; }
-    .chip-d2 { opacity: 0; animation: chipFade 0.5s ease 0.46s forwards; }
-    .chip-d3 { opacity: 0; animation: chipFade 0.5s ease 0.52s forwards; }
-    .chip-d4 { opacity: 0; animation: chipFade 0.5s ease 0.58s forwards; }
-    .chip-d5 { opacity: 0; animation: chipFade 0.5s ease 0.64s forwards; }
-    .chip-d6 { opacity: 0; animation: chipFade 0.5s ease 0.70s forwards; }
-    .chip-d7 { opacity: 0; animation: chipFade 0.5s ease 0.76s forwards; }
-    .chip-d8 { opacity: 0; animation: chipFade 0.5s ease 0.82s forwards; }
-    .chip-d9 { opacity: 0; animation: chipFade 0.5s ease 0.88s forwards; }
-    .chip-d10 { opacity: 0; animation: chipFade 0.5s ease 0.94s forwards; }
-    .chip-d11 { opacity: 0; animation: chipFade 0.5s ease 1.0s forwards; }
-    .chip-d12 { opacity: 0; animation: chipFade 0.5s ease 1.06s forwards; }
-    .chip-d13 { opacity: 0; animation: chipFade 0.5s ease 1.12s forwards; }
-    .chip-d14 { opacity: 0; animation: chipFade 0.5s ease 1.18s forwards; }
-    .chip-d15 { opacity: 0; animation: chipFade 0.5s ease 1.24s forwards; }
+    .s1 { opacity: 0; animation: fadeUp1 0.6s ease 0.2s forwards; }
+    .s2 { opacity: 0; animation: fadeUp2 0.6s ease 0.2s forwards; }
+    .s3 { opacity: 0; animation: fadeUp3 0.6s ease 0.2s forwards; }
+    .s4 { opacity: 0; animation: fadeUp4 0.6s ease 0.2s forwards; }
+    .c1 { opacity:0; animation: chipIn 0.4s ease 0.5s forwards; }
+    .c2 { opacity:0; animation: chipIn 0.4s ease 0.56s forwards; }
+    .c3 { opacity:0; animation: chipIn 0.4s ease 0.62s forwards; }
+    .c4 { opacity:0; animation: chipIn 0.4s ease 0.68s forwards; }
+    .c5 { opacity:0; animation: chipIn 0.4s ease 0.74s forwards; }
+    .c6 { opacity:0; animation: chipIn 0.4s ease 0.80s forwards; }
+    .c7 { opacity:0; animation: chipIn 0.4s ease 0.86s forwards; }
+    .c8 { opacity:0; animation: chipIn 0.4s ease 0.92s forwards; }
+    .c9 { opacity:0; animation: chipIn 0.4s ease 0.98s forwards; }
+    .c10 { opacity:0; animation: chipIn 0.4s ease 1.04s forwards; }
+    .c11 { opacity:0; animation: chipIn 0.4s ease 1.10s forwards; }
   </style>
 
-  <!-- Background -->
-  <rect width="1200" height="380" fill="url(#bg_l)" rx="16"/>
+  <rect width="1200" height="360" fill="url(#bg_l)" rx="16"/>
+  <rect x="28" y="16" width="1144" height="328" rx="18" fill="url(#glass_l)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#sh_l)"/>
 
-  <!-- Main glass panel -->
-  <rect x="28" y="16" width="1144" height="348" rx="18" fill="url(#glass_l)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#shadow_l)"/>
+  <!-- Header -->
+  <text x="56" y="48" class="sans_l" font-size="11" font-weight="600" fill="#8a97a0" letter-spacing="2">CREDENTIALS &amp; EXPERTISE</text>
+  <text x="56" y="72" class="sans_l" font-size="20" font-weight="900" fill="#fbe2a7">Skills &amp; Achievements</text>
 
-  <!-- Section header -->
-  <g transform="translate(56, 40)">
-    <text class="sans_l" font-size="12" font-weight="600" fill="#8a97a0" letter-spacing="2">CREDENTIALS &amp; EXPERTISE</text>
-    <text y="26" class="sans_l" font-size="22" font-weight="900" fill="#fbe2a7">Skills &amp; Achievements</text>
+  <!-- 4 STAT BOXES — 1 row, fixed positions (NO CSS transform, only opacity) -->
+  <!-- Box 1: CGPA -->
+  <g transform="translate(56, 90)" class="s1">
+    <rect width="250" height="82" rx="12" fill="url(#statBx)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <rect width="4" height="82" rx="2" fill="#fbe2a7"/>
+    <text x="125" y="38" class="sans_l" font-size="34" font-weight="900" fill="#fbe2a7" text-anchor="middle" filter="url(#cG_l)">9.2</text>
+    <text x="125" y="58" class="mono_l" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">CGPA &#x2022; B.Tech CSE</text>
+    <text x="125" y="72" class="mono_l" font-size="9" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.65">ISC 95% &#x2022; ICSE 97%</text>
   </g>
 
-  <!-- ====== TOP ROW: 4 Big stat boxes with count-up reveal ====== -->
-  <g transform="translate(56, 86)">
-    <!-- Box 1: CGPA -->
-    <g class="stat1">
-      <rect x="0" y="0" width="254" height="90" rx="14" fill="url(#statBox_l)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="0" y="0" width="5" height="90" rx="3" fill="#fbe2a7"/>
-      <text x="127" y="42" class="sans_l" font-size="38" font-weight="900" fill="#fbe2a7" text-anchor="middle" filter="url(#creamGlow_l)">9.2</text>
-      <text x="127" y="68" class="mono_l" font-size="11" font-weight="700" fill="#8a97a0" text-anchor="middle">CGPA &#x2022; B.Tech CSE @ LPU</text>
-      <text x="127" y="82" class="mono_l" font-size="9.5" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.7">ISC 95.25% &#x2022; ICSE 97.2%</text>
-    </g>
-
-    <!-- Box 2: DSA -->
-    <g class="stat2" transform="translate(272, 0)">
-      <rect x="0" y="0" width="254" height="90" rx="14" fill="url(#statBox_l)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="0" y="0" width="254" height="4" rx="2" fill="#e4a2b1"/>
-      <text x="127" y="42" class="sans_l" font-size="38" font-weight="900" fill="#e4a2b1" text-anchor="middle" filter="url(#roseGlow_l)">400+</text>
-      <text x="127" y="68" class="mono_l" font-size="11" font-weight="700" fill="#8a97a0" text-anchor="middle">DSA Problems Solved</text>
-      <text x="127" y="82" class="mono_l" font-size="9.5" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.7">LeetCode &#x2022; GFG &#x2022; Codeforces</text>
-    </g>
-
-    <!-- Box 3: LC Rating -->
-    <g class="stat3" transform="translate(544, 0)">
-      <rect x="0" y="0" width="254" height="90" rx="14" fill="url(#statBox_l)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="0" y="0" width="5" height="90" rx="3" fill="#fbe2a7"/>
-      <text x="127" y="42" class="sans_l" font-size="38" font-weight="900" fill="#fbe2a7" text-anchor="middle" filter="url(#creamGlow_l)">1590</text>
-      <text x="127" y="68" class="mono_l" font-size="11" font-weight="700" fill="#8a97a0" text-anchor="middle">LeetCode Contest Rating</text>
-      <text x="127" y="82" class="mono_l" font-size="9.5" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.7">Top 25% Globally</text>
-    </g>
-
-    <!-- Box 4: Hackathons -->
-    <g class="stat4" transform="translate(816, 0)">
-      <rect x="0" y="0" width="254" height="90" rx="14" fill="url(#statBox_l)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="0" y="0" width="254" height="4" rx="2" fill="#e4a2b1"/>
-      <text x="127" y="42" class="sans_l" font-size="38" font-weight="900" fill="#e4a2b1" text-anchor="middle" filter="url(#roseGlow_l)">5+</text>
-      <text x="127" y="68" class="mono_l" font-size="11" font-weight="700" fill="#8a97a0" text-anchor="middle">Hackathon Wins</text>
-      <text x="127" y="82" class="mono_l" font-size="9.5" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.7">National &amp; University Podiums</text>
-    </g>
+  <!-- Box 2: DSA -->
+  <g transform="translate(322, 90)" class="s2">
+    <rect width="250" height="82" rx="12" fill="url(#statBx)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <rect width="250" height="4" rx="2" fill="#e4a2b1"/>
+    <text x="125" y="38" class="sans_l" font-size="34" font-weight="900" fill="#e4a2b1" text-anchor="middle" filter="url(#rG_l)">400+</text>
+    <text x="125" y="58" class="mono_l" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">DSA Problems Solved</text>
+    <text x="125" y="72" class="mono_l" font-size="9" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.65">LeetCode &#x2022; GFG &#x2022; CF</text>
   </g>
 
-  <!-- ====== BOTTOM: Grouped tech categories with staggered chip reveal ====== -->
-  <g transform="translate(56, 198)">
-    <!-- Category 1: LANGUAGES -->
-    <g>
-      <text class="mono_l" font-size="10" font-weight="700" fill="#fbe2a7" letter-spacing="1.5">LANGUAGES</text>
-      <g transform="translate(0, 14)">
-        <g class="chip-d1"><rect x="0" y="0" width="62" height="28" rx="8" fill="url(#chip_l)" stroke="#fbe2a7" stroke-width="1"/>
-        <text x="31" y="18" class="mono_l" font-size="10.5" font-weight="800" fill="#fbe2a7" text-anchor="middle">Java</text></g>
+  <!-- Box 3: LC Rating -->
+  <g transform="translate(588, 90)" class="s3">
+    <rect width="250" height="82" rx="12" fill="url(#statBx)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <rect width="4" height="82" rx="2" fill="#fbe2a7"/>
+    <text x="125" y="38" class="sans_l" font-size="34" font-weight="900" fill="#fbe2a7" text-anchor="middle" filter="url(#cG_l)">1590</text>
+    <text x="125" y="58" class="mono_l" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">LeetCode Rating</text>
+    <text x="125" y="72" class="mono_l" font-size="9" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.65">Top 25% Globally</text>
+  </g>
 
-        <g class="chip-d2"><rect x="70" y="0" width="72" height="28" rx="14" fill="url(#chip_l)" stroke="#e4a2b1" stroke-width="1"/>
-        <text x="106" y="18" class="mono_l" font-size="10.5" font-weight="800" fill="#e4a2b1" text-anchor="middle">Python</text></g>
+  <!-- Box 4: Hackathons -->
+  <g transform="translate(854, 90)" class="s4">
+    <rect width="250" height="82" rx="12" fill="url(#statBx)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <rect width="250" height="4" rx="2" fill="#e4a2b1"/>
+    <text x="125" y="38" class="sans_l" font-size="34" font-weight="900" fill="#e4a2b1" text-anchor="middle" filter="url(#rG_l)">5+</text>
+    <text x="125" y="58" class="mono_l" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">Hackathon Wins</text>
+    <text x="125" y="72" class="mono_l" font-size="9" font-weight="600" fill="#8a97a0" text-anchor="middle" opacity="0.65">National Podiums</text>
+  </g>
 
-        <g class="chip-d3"><rect x="150" y="0" width="48" height="28" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="174" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">C++</text></g>
-
-        <g class="chip-d4"><rect x="206" y="0" width="86" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="249" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">JavaScript</text></g>
-
-        <g class="chip-d5"><rect x="300" y="0" width="52" height="28" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="326" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">SQL</text></g>
-      </g>
+  <!-- TECH STACK — 3 labeled rows -->
+  <g transform="translate(56, 190)">
+    <!-- LANGUAGES -->
+    <text class="mono_l" font-size="10" font-weight="700" fill="#fbe2a7" letter-spacing="1.5">LANGUAGES</text>
+    <g transform="translate(100, -12)">
+      <g class="c1"><rect x="0" y="0" width="56" height="26" rx="7" fill="url(#chip_l)" stroke="#fbe2a7" stroke-width="1"/><text x="28" y="17" class="mono_l" font-size="10" font-weight="800" fill="#fbe2a7" text-anchor="middle">Java</text></g>
+      <g class="c2"><rect x="64" y="0" width="68" height="26" rx="13" fill="url(#chip_l)" stroke="#e4a2b1" stroke-width="1"/><text x="98" y="17" class="mono_l" font-size="10" font-weight="800" fill="#e4a2b1" text-anchor="middle">Python</text></g>
+      <g class="c3"><rect x="140" y="0" width="44" height="26" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="162" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">C++</text></g>
+      <g class="c4"><rect x="192" y="0" width="82" height="26" rx="13" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="233" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">JavaScript</text></g>
+      <g class="c5"><rect x="282" y="0" width="46" height="26" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="305" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">SQL</text></g>
     </g>
 
-    <!-- Category 2: FRAMEWORKS & LIBRARIES -->
-    <g transform="translate(380, 0)">
+    <!-- FRAMEWORKS -->
+    <g transform="translate(440, 0)">
       <text class="mono_l" font-size="10" font-weight="700" fill="#e4a2b1" letter-spacing="1.5">FRAMEWORKS</text>
-      <g transform="translate(0, 14)">
-        <g class="chip-d6"><rect x="0" y="0" width="96" height="28" rx="14" fill="url(#chip_l)" stroke="#e4a2b1" stroke-width="1"/>
-        <text x="48" y="18" class="mono_l" font-size="10.5" font-weight="800" fill="#e4a2b1" text-anchor="middle">React/Next</text></g>
-
-        <g class="chip-d7"><rect x="104" y="0" width="104" height="28" rx="6" fill="url(#chip_l)" stroke="#fbe2a7" stroke-width="1"/>
-        <text x="156" y="18" class="mono_l" font-size="10.5" font-weight="800" fill="#fbe2a7" text-anchor="middle">Node/Express</text></g>
-
-        <g class="chip-d8"><rect x="216" y="0" width="74" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="253" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">PyTorch</text></g>
-
-        <g class="chip-d9"><rect x="298" y="0" width="88" height="28" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="342" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">LangChain</text></g>
-
-        <g class="chip-d10"><rect x="394" y="0" width="72" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="430" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">Flask</text></g>
+      <g transform="translate(100, -12)">
+        <g class="c1"><rect x="0" y="0" width="92" height="26" rx="13" fill="url(#chip_l)" stroke="#e4a2b1" stroke-width="1"/><text x="46" y="17" class="mono_l" font-size="10" font-weight="800" fill="#e4a2b1" text-anchor="middle">React/Next</text></g>
+        <g class="c2"><rect x="100" y="0" width="100" height="26" rx="6" fill="url(#chip_l)" stroke="#fbe2a7" stroke-width="1"/><text x="150" y="17" class="mono_l" font-size="10" font-weight="800" fill="#fbe2a7" text-anchor="middle">Node/Express</text></g>
+        <g class="c3"><rect x="208" y="0" width="70" height="26" rx="13" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="243" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">PyTorch</text></g>
+        <g class="c4"><rect x="286" y="0" width="84" height="26" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="328" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">LangChain</text></g>
       </g>
     </g>
 
-    <!-- Row 2: INFRASTRUCTURE & TOOLS -->
-    <g transform="translate(0, 56)">
-      <text class="mono_l" font-size="10" font-weight="700" fill="#fbe2a7" letter-spacing="1.5">INFRASTRUCTURE &amp; TOOLS</text>
-      <g transform="translate(0, 14)">
-        <g class="chip-d11"><rect x="0" y="0" width="70" height="28" rx="6" fill="url(#chip_l)" stroke="#fbe2a7" stroke-width="1"/>
-        <text x="35" y="18" class="mono_l" font-size="10.5" font-weight="800" fill="#fbe2a7" text-anchor="middle">Docker</text></g>
-
-        <g class="chip-d12"><rect x="78" y="0" width="50" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="103" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">K8s</text></g>
-
-        <g class="chip-d13"><rect x="136" y="0" width="56" height="28" rx="6" fill="url(#chip_l)" stroke="#e4a2b1" stroke-width="1"/>
-        <text x="164" y="18" class="mono_l" font-size="10.5" font-weight="800" fill="#e4a2b1" text-anchor="middle">AWS</text></g>
-
-        <g class="chip-d14"><rect x="200" y="0" width="84" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="242" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">MongoDB</text></g>
-
-        <g class="chip-d15"><rect x="292" y="0" width="88" height="28" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="336" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">PostgreSQL</text></g>
-
-        <rect x="388" y="0" width="60" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="418" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">Redis</text>
-
-        <rect x="456" y="0" width="60" height="28" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="486" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">CI/CD</text>
-
-        <rect x="524" y="0" width="72" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="560" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">YOLOv8</text>
-
-        <rect x="604" y="0" width="78" height="28" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="643" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">Three.js</text>
-
-        <rect x="690" y="0" width="86" height="28" rx="14" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-        <text x="733" y="18" class="mono_l" font-size="10.5" font-weight="700" fill="#f5f0e8" text-anchor="middle">Socket.IO</text>
+    <!-- INFRA -->
+    <g transform="translate(0, 40)">
+      <text class="mono_l" font-size="10" font-weight="700" fill="#fbe2a7" letter-spacing="1.5">INFRASTRUCTURE</text>
+      <g transform="translate(120, -12)">
+        <g class="c6"><rect x="0" y="0" width="66" height="26" rx="6" fill="url(#chip_l)" stroke="#fbe2a7" stroke-width="1"/><text x="33" y="17" class="mono_l" font-size="10" font-weight="800" fill="#fbe2a7" text-anchor="middle">Docker</text></g>
+        <g class="c7"><rect x="74" y="0" width="46" height="26" rx="13" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="97" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">K8s</text></g>
+        <g class="c8"><rect x="128" y="0" width="50" height="26" rx="6" fill="url(#chip_l)" stroke="#e4a2b1" stroke-width="1"/><text x="153" y="17" class="mono_l" font-size="10" font-weight="800" fill="#e4a2b1" text-anchor="middle">AWS</text></g>
+        <g class="c9"><rect x="186" y="0" width="82" height="26" rx="13" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="227" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">MongoDB</text></g>
+        <g class="c10"><rect x="276" y="0" width="86" height="26" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="319" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">PostgreSQL</text></g>
+        <g class="c11"><rect x="370" y="0" width="58" height="26" rx="13" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="399" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">Redis</text></g>
+        <rect x="436" y="0" width="58" height="26" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="465" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">CI/CD</text>
+        <rect x="502" y="0" width="68" height="26" rx="13" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="536" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">YOLOv8</text>
+        <rect x="578" y="0" width="74" height="26" rx="6" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="615" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">Three.js</text>
+        <rect x="660" y="0" width="78" height="26" rx="13" fill="url(#chip_l)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="699" y="17" class="mono_l" font-size="10" font-weight="700" fill="#f5f0e8" text-anchor="middle">Socket.IO</text>
       </g>
+    </g>
+
+    <!-- Certifications bar -->
+    <g transform="translate(0, 80)">
+      <rect width="1088" height="40" rx="8" fill="#0d1f2a" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <text x="16" y="16" class="sans_l" font-size="10" font-weight="800" fill="#f5f0e8">&#x1F4DC; Certifications</text>
+      <text x="16" y="32" class="mono_l" font-size="9.5" fill="#8a97a0"><tspan fill="#fbe2a7">NPTEL IIT:</tspan> Privacy &amp; Security  &#x2022;  <tspan fill="#e4a2b1">CSE Pathshala:</tspan> Advanced C &amp; DSA  &#x2022;  <tspan fill="#fbe2a7">LPU:</tspan> Java Application Dev</text>
     </g>
   </g>
 </svg>

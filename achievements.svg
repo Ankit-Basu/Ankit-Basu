@@ -1,99 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" width="1200" height="310">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
   <defs>
     <linearGradient id="bg_a" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0e1c24"/><stop offset="100%" style="stop-color:#162a36"/>
     </linearGradient>
-    <linearGradient id="glass_a" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="gl_a" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#1e3543;stop-opacity:0.55"/><stop offset="100%" style="stop-color:#142732;stop-opacity:0.7"/>
     </linearGradient>
-    <linearGradient id="statBox_a" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bx_a" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#142e3c"/><stop offset="100%" style="stop-color:#0d1f2a"/>
     </linearGradient>
-    <filter id="creamG_a" x="-25%" y="-25%" width="150%" height="150%">
+    <filter id="cG_a" x="-25%" y="-25%" width="150%" height="150%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="roseG_a" x="-25%" y="-25%" width="150%" height="150%">
+    <filter id="rG_a" x="-25%" y="-25%" width="150%" height="150%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="shad_a" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    <filter id="sh_a" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
     </filter>
   </defs>
 
   <style>
-    @keyframes countUp1 { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
-    @keyframes countUp2 { 0%,20% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
-    @keyframes countUp3 { 0%,40% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
-    @keyframes countUp4 { 0%,60% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
-    @keyframes iconShine { 0%,70% { opacity: 1; } 80% { opacity: 0.4; } 90%,100% { opacity: 1; } }
-
+    @keyframes fI1 { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes fI2 { 0%,20% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes fI3 { 0%,40% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes fI4 { 0%,60% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes iShine { 0%,75% { opacity: 1; } 85% { opacity: 0.35; } 95%,100% { opacity: 1; } }
     .mono_a { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
     .sans_a { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .cu1 { opacity: 0; animation: countUp1 0.7s ease 0.3s forwards; }
-    .cu2 { opacity: 0; animation: countUp2 0.7s ease 0.3s forwards; }
-    .cu3 { opacity: 0; animation: countUp3 0.7s ease 0.3s forwards; }
-    .cu4 { opacity: 0; animation: countUp4 0.7s ease 0.3s forwards; }
-    .icon-shine1 { animation: iconShine 5s ease infinite; }
-    .icon-shine2 { animation: iconShine 5s ease 1.2s infinite; }
-    .icon-shine3 { animation: iconShine 5s ease 2.4s infinite; }
-    .icon-shine4 { animation: iconShine 5s ease 3.6s infinite; }
+    .r1 { opacity: 0; animation: fI1 0.5s ease 0.2s forwards; }
+    .r2 { opacity: 0; animation: fI2 0.5s ease 0.2s forwards; }
+    .r3 { opacity: 0; animation: fI3 0.5s ease 0.2s forwards; }
+    .r4 { opacity: 0; animation: fI4 0.5s ease 0.2s forwards; }
+    .is1 { animation: iShine 5s ease infinite; }
+    .is2 { animation: iShine 5s ease 1.3s infinite; }
+    .is3 { animation: iShine 5s ease 2.5s infinite; }
+    .is4 { animation: iShine 5s ease 3.7s infinite; }
   </style>
 
-  <rect width="1200" height="310" fill="url(#bg_a)" rx="16"/>
+  <rect width="1200" height="280" fill="url(#bg_a)" rx="16"/>
 
-  <g transform="translate(48, 32)">
-    <text class="sans_a" font-size="12" font-weight="600" fill="#8a97a0" letter-spacing="2">VERIFIED HONORS</text>
-    <text y="26" class="sans_a" font-size="22" font-weight="900" fill="#fbe2a7">Achievements &amp; Milestones</text>
+  <text x="48" y="36" class="sans_a" font-size="11" font-weight="600" fill="#8a97a0" letter-spacing="2">VERIFIED HONORS</text>
+  <text x="48" y="58" class="sans_a" font-size="20" font-weight="900" fill="#fbe2a7">Achievements &amp; Milestones</text>
+
+  <!-- 4 cards in a clean row: 260px each, 24px gaps -->
+  <!-- Card A: Hackathons -->
+  <g transform="translate(48, 76)" class="r1">
+    <rect width="260" height="100" rx="12" fill="url(#bx_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#sh_a)"/>
+    <rect width="4" height="100" rx="2" fill="#fbe2a7"/>
+    <text x="20" y="28" font-size="20" class="is1">&#x1F947;</text>
+    <text x="46" y="28" class="sans_a" font-size="13" font-weight="900" fill="#f5f0e8">Hackathon Wins</text>
+    <text x="20" y="46" class="mono_a" font-size="9" fill="#8a97a0">National &amp; University Podiums</text>
+    <text x="20" y="84" class="sans_a" font-size="34" font-weight="900" fill="#fbe2a7" filter="url(#cG_a)">5+</text>
+    <text x="68" y="84" class="mono_a" font-size="10" font-weight="700" fill="#8a97a0">wins</text>
   </g>
 
-  <!-- Asymmetric masonry: 1 tall left, 2 short stacked right, 1 tall far-right -->
-  <!-- Card A: Hackathons (TALL) -->
-  <g transform="translate(48, 76)" class="cu1">
-    <rect width="280" height="152" rx="14" fill="url(#glass_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#shad_a)"/>
-    <rect x="0" y="0" width="5" height="152" rx="3" fill="#fbe2a7"/>
-    <text x="24" y="34" font-size="26" class="icon-shine1">&#x1F947;</text>
-    <text x="58" y="34" class="sans_a" font-size="15" font-weight="900" fill="#f5f0e8">Hackathon Wins</text>
-    <text x="24" y="56" class="mono_a" font-size="10" fill="#8a97a0">National &amp; University Podiums</text>
-    <text x="24" y="120" class="sans_a" font-size="44" font-weight="900" fill="#fbe2a7" filter="url(#creamG_a)">5+</text>
-    <text x="92" y="120" class="mono_a" font-size="12" font-weight="700" fill="#8a97a0">wins</text>
+  <!-- Card B: DSA -->
+  <g transform="translate(330, 76)" class="r2">
+    <rect width="260" height="100" rx="12" fill="url(#bx_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#sh_a)"/>
+    <rect width="260" height="4" rx="2" fill="#e4a2b1"/>
+    <text x="20" y="28" font-size="20" class="is2">&#x1F4BB;</text>
+    <text x="46" y="28" class="sans_a" font-size="13" font-weight="900" fill="#f5f0e8">DSA Mastery</text>
+    <text x="20" y="46" class="mono_a" font-size="9" fill="#8a97a0">400+ Problems &#x2022; Top 25%</text>
+    <text x="20" y="84" class="sans_a" font-size="34" font-weight="900" fill="#e4a2b1" filter="url(#rG_a)">1590</text>
+    <text x="102" y="84" class="mono_a" font-size="10" font-weight="700" fill="#8a97a0">LC Rating</text>
   </g>
 
-  <!-- Card B: LeetCode (SHORT top) -->
-  <g transform="translate(348, 76)" class="cu2">
-    <rect width="370" height="70" rx="14" fill="url(#glass_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#shad_a)"/>
-    <rect x="0" y="0" width="370" height="4" rx="2" fill="#e4a2b1"/>
-    <text x="18" y="30" font-size="18" class="icon-shine2">&#x1F4BB;</text>
-    <text x="44" y="30" class="sans_a" font-size="13" font-weight="900" fill="#f5f0e8">400+ DSA Solved</text>
-    <text x="44" y="50" class="mono_a" font-size="10.5" fill="#e4a2b1" font-weight="700">Rating 1590 &#x2022; Top 25%</text>
-    <text x="300" y="44" class="sans_a" font-size="28" font-weight="900" fill="#e4a2b1" text-anchor="middle" filter="url(#roseG_a)">1590</text>
+  <!-- Card C: Contest -->
+  <g transform="translate(612, 76)" class="r3">
+    <rect width="260" height="100" rx="12" fill="url(#bx_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#sh_a)"/>
+    <rect width="4" height="100" rx="2" fill="#fbe2a7"/>
+    <text x="20" y="28" font-size="20" class="is3">&#x26A1;</text>
+    <text x="46" y="28" class="sans_a" font-size="13" font-weight="900" fill="#f5f0e8">Contest Rankings</text>
+    <text x="20" y="46" class="mono_a" font-size="9" fill="#8a97a0">CF Div3 #1178 &#x2022; CC #1161</text>
+    <text x="20" y="84" class="sans_a" font-size="34" font-weight="900" fill="#fbe2a7" filter="url(#cG_a)">CF</text>
+    <text x="60" y="84" class="mono_a" font-size="10" font-weight="700" fill="#8a97a0">1119 Rating</text>
   </g>
 
-  <!-- Card C: Contest Rankings (SHORT bottom) -->
-  <g transform="translate(348, 158)" class="cu3">
-    <rect width="370" height="70" rx="14" fill="url(#glass_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#shad_a)"/>
-    <rect x="0" y="0" width="5" height="70" rx="3" fill="#fbe2a7"/>
-    <text x="18" y="30" font-size="18" class="icon-shine3">&#x26A1;</text>
-    <text x="44" y="30" class="sans_a" font-size="13" font-weight="900" fill="#f5f0e8">Contest Rankings</text>
-    <text x="44" y="50" class="mono_a" font-size="10.5" fill="#8a97a0">CF: Div3 #1178 &#x2022; CC: Global #1161</text>
+  <!-- Card D: Academic -->
+  <g transform="translate(894, 76)" class="r4">
+    <rect width="260" height="100" rx="12" fill="url(#bx_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#sh_a)"/>
+    <rect width="260" height="4" rx="2" fill="#e4a2b1"/>
+    <text x="20" y="28" font-size="20" class="is4">&#x1F393;</text>
+    <text x="46" y="28" class="sans_a" font-size="13" font-weight="900" fill="#f5f0e8">Academic Honors</text>
+    <text x="20" y="46" class="mono_a" font-size="9" fill="#8a97a0">B.Tech CSE &#x2022; ISC 95% &#x2022; ICSE 97%</text>
+    <text x="20" y="84" class="sans_a" font-size="34" font-weight="900" fill="#e4a2b1" filter="url(#rG_a)">9.2</text>
+    <text x="72" y="84" class="mono_a" font-size="10" font-weight="700" fill="#8a97a0">/ 10 CGPA</text>
   </g>
 
-  <!-- Card D: Academic Honors (TALL right) -->
-  <g transform="translate(738, 76)" class="cu4">
-    <rect width="414" height="152" rx="14" fill="url(#glass_a)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#shad_a)"/>
-    <rect x="0" y="0" width="414" height="4" rx="2" fill="#e4a2b1"/>
-    <text x="24" y="34" font-size="26" class="icon-shine4">&#x1F393;</text>
-    <text x="58" y="34" class="sans_a" font-size="15" font-weight="900" fill="#f5f0e8">Academic Honors</text>
-    <text x="24" y="56" class="mono_a" font-size="10" fill="#8a97a0">B.Tech CSE @ LPU &#x2022; ISC 95.25% &#x2022; ICSE 97.2%</text>
-    <text x="24" y="120" class="sans_a" font-size="44" font-weight="900" fill="#e4a2b1" filter="url(#roseG_a)">9.2</text>
-    <text x="102" y="120" class="mono_a" font-size="12" font-weight="700" fill="#8a97a0">/ 10 CGPA</text>
-  </g>
-
-  <!-- Footer: Certifications -->
-  <g transform="translate(48, 244)">
-    <rect width="1104" height="48" rx="10" fill="#0d1f2a" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-    <text x="20" y="20" class="sans_a" font-size="11" font-weight="800" fill="#f5f0e8">&#x1F4DC; Certifications</text>
-    <text x="20" y="38" class="mono_a" font-size="10.5" fill="#8a97a0">
-      <tspan fill="#fbe2a7">NPTEL IIT Hyderabad:</tspan> Privacy &amp; Security  &#x2022;  <tspan fill="#e4a2b1">CSE Pathshala:</tspan> Advanced C &amp; DSA  &#x2022;  <tspan fill="#fbe2a7">LPU:</tspan> Java Application Dev
-    </text>
+  <!-- Certifications bar -->
+  <g transform="translate(48, 192)">
+    <rect width="1104" height="42" rx="8" fill="#0d1f2a" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="16" y="16" class="sans_a" font-size="10" font-weight="800" fill="#f5f0e8">&#x1F4DC; Certifications</text>
+    <text x="16" y="32" class="mono_a" font-size="9.5" fill="#8a97a0"><tspan fill="#fbe2a7">NPTEL IIT:</tspan> Privacy &amp; Security  &#x2022;  <tspan fill="#e4a2b1">CSE Pathshala:</tspan> Advanced C &amp; DSA  &#x2022;  <tspan fill="#fbe2a7">LPU:</tspan> Java App Dev</text>
   </g>
 </svg>
