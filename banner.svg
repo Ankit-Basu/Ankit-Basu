@@ -253,10 +253,10 @@
     <circle cx="940" cy="182" r="84" fill="#081219" fill-opacity="0.45"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="8"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="url(#ob_h)" stroke-width="8"
-            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="295.6"
+            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="306.1"
             transform="rotate(-90 940 182)" filter="url(#glow_h)">
-      <animate attributeName="stroke-dashoffset" from="486.0"
-               to="295.6" dur="2.1s" fill="freeze"
+      <animate attributeName="stroke-dashoffset" from="487.9"
+               to="306.1" dur="2.1s" fill="freeze"
                calcMode="spline" keySplines="0.22 1 0.36 1"/>
     </circle>
     <clipPath id="av_h"><circle cx="940" cy="182" r="66"/></clipPath>
@@ -270,7 +270,7 @@
       <text class="mono" x="0" y="-3" text-anchor="middle" font-size="7.4"
             letter-spacing="1.4" fill="#93a8b4">LV</text>
       <text class="sans" x="0" y="13" text-anchor="middle" font-size="17"
-            font-weight="800" fill="#fbe2a7">18</text>
+            font-weight="800" fill="#fbe2a7">10</text>
     </g>
   </g>
   <g class="ev4">
@@ -281,8 +281,8 @@
   <path d="M825,284 A16,16 0 0 1 840,269 H1040 A16,16 0 0 1 1055,284" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
   </g>
     <text class="mono" x="940" y="288" text-anchor="middle" font-size="10.4" letter-spacing="2.4">
-      <tspan fill="#e4a2b1" font-weight="600">ARCHITECT</tspan><tspan fill="#5f7683">  &#183;  </tspan
-      ><tspan fill="#fbe2a7">1,844 XP</tspan></text>
+      <tspan fill="#e4a2b1" font-weight="600">ENGINEER</tspan><tspan fill="#5f7683">  &#183;  </tspan
+      ><tspan fill="#fbe2a7">1,042 XP</tspan></text>
   </g>
   <g class="ev7">
   <g>
@@ -293,7 +293,7 @@
   </g>
   <g transform="translate(793.0,328) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#fbe2a7" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
         <path d="M4.2 17h14.4"/></g></g>
-  <text class="sans" x="802.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">28</text>
+  <text class="sans" x="802.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">26</text>
   <text class="mono" x="802.0" y="389" text-anchor="middle" font-size="8.6" letter-spacing="1.9" fill="#fbe2a7" fill-opacity="0.85">REPOS</text>
   </g>
   <g class="ev8">
@@ -316,7 +316,7 @@
   </g>
   <g transform="translate(1069.0,328) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#6fe7c8" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
         <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g>
-  <text class="sans" x="1078.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">149</text>
+  <text class="sans" x="1078.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">128</text>
   <text class="mono" x="1078.0" y="389" text-anchor="middle" font-size="8.6" letter-spacing="1.9" fill="#6fe7c8" fill-opacity="0.85">BEST STREAK</text>
   </g>
 <rect width="1200" height="450" rx="26" filter="url(#grain_h)" opacity="0.9" style="mix-blend-mode:overlay"/>
