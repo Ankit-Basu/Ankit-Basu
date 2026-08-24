@@ -1,0 +1,66 @@
+name: Refresh profile stats
+
+# Redraws the README panels from live GitHub data.
+#
+# The cards are generated here rather than pulled from a third-party stats
+# service, because those services rate-limit hard: github-readme-stats.vercel.app
+# was returning 503 when this was set up. Rendering our own SVGs means the
+# profile can never show a broken image.
+#
+# GITHUB_TOKEN is enough for public data. For richer numbers (private
+# contributions included), add a classic PAT with `read:user` as a repository
+# secret named GH_PAT and it will be preferred automatically.
+
+on:
+  schedule:
+    - cron: "17 2 * * *"   # daily, 02:17 UTC
+  push:
+    branches: [main, master]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/stats.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch live GitHub stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python scripts/fetch_stats.py
+
+      - name: Rebuild SVG panels
+        run: python scripts/build.py
+
+      # Gate the auto-commit: a malformed panel renders as a broken image on
+      # the profile, and nothing in the diff would make that obvious.
+      - name: Verify panels
+        run: python scripts/verify.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- '*.svg' data/stats.json
+          if git diff --staged --quiet; then
+            echo "stats unchanged"
+          else
+            git commit -m "chore: refresh profile stats [skip ci]"
+            git push
+          fi

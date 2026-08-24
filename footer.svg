@@ -1,73 +1,228 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 130" width="1200" height="130">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 262" width="1200" height="262" role="img">
+
   <defs>
-    <linearGradient id="bgGrad_f" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0e1c24"/>
-      <stop offset="100%" style="stop-color:#162a36"/>
+    <linearGradient id="pane_f" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.115"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.052"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.022"/>
     </linearGradient>
 
-    <linearGradient id="glassBtn_f1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#203c4c;stop-opacity:0.7"/>
-      <stop offset="100%" style="stop-color:#12242e;stop-opacity:0.9"/>
+    <linearGradient id="rim_f" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="38%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="68%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
     </linearGradient>
 
-    <filter id="btnGlow_c" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <linearGradient id="spec_f" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="sheen_f" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="bg_f" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0c1a24"/>
+      <stop offset="55%" stop-color="#081219"/>
+      <stop offset="100%" stop-color="#0a1a23"/>
+    </linearGradient>
+
+    <radialGradient id="vig_f" cx="50%" cy="42%" r="72%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+
+    <filter id="blob_f" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="58"/>
     </filter>
-    <filter id="btnGlow_r" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="soft_f" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
     </filter>
+    <filter id="glow_f" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowS_f" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="drop_f" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="dropS_f" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="grain_f" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+
+    <pattern id="grid_f" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
   </defs>
-
-  <style>
-    @keyframes pulseBtn1 { 0%,100% { opacity: 0.4; } 50% { opacity: 0.8; } }
-    @keyframes pulseBtn2 { 0%,100% { opacity: 0.35; } 50% { opacity: 0.75; } }
-    .mono_f { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
-    .sans_f { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .btn-gold { animation: pulseBtn1 3s ease-in-out infinite; }
-    .btn-rose { animation: pulseBtn2 3s ease-in-out 1.5s infinite; }
-    a { cursor: pointer; }
-  </style>
-
-  <rect width="1200" height="130" fill="url(#bgGrad_f)" rx="16"/>
-
-  <!-- Glass social badges with clickability & glow -->
-  <g transform="translate(140, 22)">
-    <!-- GitHub -->
-    <a href="https://github.com/Ankit-Basu" target="_blank">
-      <g>
-        <rect x="0" y="0" width="200" height="40" rx="12" fill="url(#glassBtn_f1)" stroke="#fbe2a7" stroke-width="1.2" class="btn-gold" filter="url(#btnGlow_c)"/>
-        <text x="100" y="25" class="mono_f" font-size="12" font-weight="700" fill="#fbe2a7" text-anchor="middle">&#x2B22; GitHub &#x2022; Ankit-Basu</text>
-      </g>
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/ankit-basu-4a6774297/" target="_blank">
-      <g transform="translate(225, 0)">
-        <rect x="0" y="0" width="200" height="40" rx="12" fill="url(#glassBtn_f1)" stroke="#e4a2b1" stroke-width="1.2" class="btn-rose" filter="url(#btnGlow_r)"/>
-        <text x="100" y="25" class="mono_f" font-size="12" font-weight="700" fill="#e4a2b1" text-anchor="middle">&#x2605; LinkedIn &#x2022; Ankit</text>
-      </g>
-    </a>
-
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/_ank1t._/" target="_blank">
-      <g transform="translate(450, 0)">
-        <rect x="0" y="0" width="190" height="40" rx="12" fill="url(#glassBtn_f1)" stroke="#fbe2a7" stroke-width="1.2" class="btn-gold" filter="url(#btnGlow_c)"/>
-        <text x="95" y="25" class="mono_f" font-size="12" font-weight="700" fill="#fbe2a7" text-anchor="middle">&#x25C6; IG &#x2022; _ank1t._</text>
-      </g>
-    </a>
-
-    <!-- Email -->
-    <a href="mailto:ankitbasu935@gmail.com" target="_blank">
-      <g transform="translate(665, 0)">
-        <rect x="0" y="0" width="255" height="40" rx="12" fill="url(#glassBtn_f1)" stroke="#e4a2b1" stroke-width="1.2" class="btn-rose" filter="url(#btnGlow_r)"/>
-        <text x="127" y="25" class="mono_f" font-size="11.5" font-weight="700" fill="#e4a2b1" text-anchor="middle">&#x2709; ankitbasu935@gmail.com</text>
-      </g>
-    </a>
+<style>
+    .mono { font-family:'JetBrains Mono','Fira Code','SFMono-Regular',ui-monospace,Consolas,monospace; }
+    .sans { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    text { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    @keyframes drift  { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(38px,-26px) scale(1.14)} }
+    @keyframes drift2 { 0%,100%{transform:translate(0,0) scale(1.06)} 50%{transform:translate(-44px,30px) scale(.9)} }
+    @keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(26px,34px)} }
+    @keyframes breathe{ 0%,100%{opacity:.30} 50%{opacity:.72} }
+    @keyframes blink  { 0%,45%{opacity:1} 50%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes sweep  { 0%{transform:translateX(-115%)} 62%,100%{transform:translateX(115%)} }
+    @keyframes rise   { 0%{transform:translateY(0);opacity:0} 12%{opacity:.75} 86%{opacity:.75} 100%{transform:translateY(-180px);opacity:0} }
+    @keyframes spin   { from{transform:rotate(0)} to{transform:rotate(360deg)} }
+    @keyframes spinR  { from{transform:rotate(360deg)} to{transform:rotate(0)} }
+    @keyframes ev0{0%,0.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev0{animation:ev0 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev1{0%,6.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev1{animation:ev1 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev2{0%,12.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev2{animation:ev2 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev3{0%,18.5%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev3{animation:ev3 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev4{0%,24.7%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev4{animation:ev4 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev5{0%,30.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev5{animation:ev5 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev6{0%,37.1%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev6{animation:ev6 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev7{0%,43.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev7{animation:ev7 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev8{0%,49.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev8{animation:ev8 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev9{0%,55.6%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev9{animation:ev9 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev10{0%,61.8%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev10{animation:ev10 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev11{0%,67.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev11{animation:ev11 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev12{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev12{animation:ev12 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev13{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev13{animation:ev13 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev14{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev14{animation:ev14 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev15{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev15{animation:ev15 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev16{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev16{animation:ev16 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev17{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev17{animation:ev17 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev18{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev18{animation:ev18 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev19{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev19{animation:ev19 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev20{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev20{animation:ev20 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev21{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev21{animation:ev21 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev22{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev22{animation:ev22 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev23{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev23{animation:ev23 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev24{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
+</style>
+<rect width="1200" height="262" rx="26" fill="url(#bg_f)"/>
+  <g filter="url(#blob_f)" opacity="0.85">
+  <ellipse cx="240" cy="120" rx="250" ry="195" fill="#fbe2a7" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:240px 120px"/>
+  <ellipse cx="640" cy="210" rx="260" ry="203" fill="#e4a2b1" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:640px 210px"/>
+  <ellipse cx="1000" cy="120" rx="240" ry="187" fill="#a78bfa" opacity="0.2" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1000px 120px"/>
   </g>
-
-  <!-- Tagline -->
-  <text x="600" y="92" class="sans_f" font-size="11" font-weight="700" fill="#8a97a0" text-anchor="middle" letter-spacing="3">INNOVATE &#x2022; SCALE &#x2022; ARCHITECT &#x2022; SHIP</text>
-  <text x="600" y="112" class="sans_f" font-size="11" font-weight="500" fill="#fbe2a7" text-anchor="middle" opacity="0.85" font-style="italic">"Turning ambitious engineering ideas into scalable, production reality."</text>
+  <rect width="1200" height="262" rx="26" fill="url(#grid_f)"/>
+  <rect width="1200" height="262" rx="26" fill="url(#vig_f)"/>
+<circle cx="399" cy="116" r="1.7" fill="#e4a2b1" opacity="0.3" style="animation:rise 9.7s linear 6.4s infinite"/>
+  <circle cx="447" cy="101" r="1.6" fill="#fbe2a7" opacity="0.3" style="animation:rise 9.3s linear 5.2s infinite"/>
+  <circle cx="110" cy="106" r="1.5" fill="#fbe2a7" opacity="0.3" style="animation:rise 16.4s linear 1.5s infinite"/>
+  <circle cx="284" cy="191" r="2.1" fill="#e4a2b1" opacity="0.3" style="animation:rise 14.2s linear 4.8s infinite"/>
+  <circle cx="1143" cy="99" r="2.0" fill="#fbe2a7" opacity="0.3" style="animation:rise 11.6s linear 1.7s infinite"/>
+  <circle cx="164" cy="141" r="2.0" fill="#fbe2a7" opacity="0.3" style="animation:rise 10.6s linear 7.0s infinite"/>
+  <circle cx="758" cy="151" r="1.6" fill="#e4a2b1" opacity="0.3" style="animation:rise 9.6s linear 0.7s infinite"/>
+  <circle cx="265" cy="199" r="1.5" fill="#fbe2a7" opacity="0.3" style="animation:rise 11.8s linear 7.0s infinite"/>
+  <circle cx="547" cy="139" r="1.9" fill="#fbe2a7" opacity="0.3" style="animation:rise 15.3s linear 2.9s infinite"/>
+  <circle cx="685" cy="175" r="2.0" fill="#e4a2b1" opacity="0.3" style="animation:rise 15.6s linear 3.5s infinite"/>
+  <circle cx="1147" cy="110" r="1.4" fill="#fbe2a7" opacity="0.3" style="animation:rise 15.8s linear 1.8s infinite"/>
+  <circle cx="587" cy="98" r="1.8" fill="#fbe2a7" opacity="0.3" style="animation:rise 15.9s linear 6.9s infinite"/>
+<g class="ev1">
+  <g>
+  <ellipse cx="119" cy="62" rx="110" ry="47" fill="#fbe2a7" opacity="0.16" filter="url(#soft_f)"/>
+  <path d="M64,46 H290 A18,18 0 0 1 308,64 V106 A18,18 0 0 1 290,124 H64 A18,18 0 0 1 46,106 V64 A18,18 0 0 1 64,46 Z" fill="url(#pane_f)" filter="url(#drop_f)"/>
+  <path d="M64,46 H290 A18,18 0 0 1 308,64 V106 A18,18 0 0 1 290,124 H64 A18,18 0 0 1 46,106 V64 A18,18 0 0 1 64,46 Z" fill="none" stroke="url(#rim_f)" stroke-width="1.2"/>
+  <path d="M47,64 A18,18 0 0 1 64,47 H290 A18,18 0 0 1 307,64" fill="none" stroke="url(#spec_f)" stroke-width="1.4"/>
+  <clipPath id="cl39"><path d="M64,46 H290 A18,18 0 0 1 308,64 V106 A18,18 0 0 1 290,124 H64 A18,18 0 0 1 46,106 V64 A18,18 0 0 1 64,46 Z"/></clipPath><g clip-path="url(#cl39)"><rect x="-85" y="46" width="131" height="78" fill="url(#sheen_f)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  </g>
+  <circle cx="86" cy="85" r="21" fill="#fbe2a7" fill-opacity="0.10" stroke="#fbe2a7" stroke-opacity="0.35"/>
+  <g transform="translate(73,72) scale(1.0833)" opacity="0.95"><g fill="#fbe2a7" stroke="none"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
+        0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729
+        1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93
+        0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405
+        2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22
+        0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></g></g>
+  <text class="mono" x="120" y="80" font-size="9.4" letter-spacing="2.4" fill="#fbe2a7" fill-opacity="0.9" font-weight="600">GITHUB</text>
+  <text x="120" y="99" font-size="12.5" fill="#eaf2f6">Ankit-Basu</text>
+  </g>
+  <g class="ev2">
+  <g>
+  <ellipse cx="401" cy="62" rx="110" ry="47" fill="#6fe7c8" opacity="0.16" filter="url(#soft_f)"/>
+  <path d="M346,46 H572 A18,18 0 0 1 590,64 V106 A18,18 0 0 1 572,124 H346 A18,18 0 0 1 328,106 V64 A18,18 0 0 1 346,46 Z" fill="url(#pane_f)" filter="url(#drop_f)"/>
+  <path d="M346,46 H572 A18,18 0 0 1 590,64 V106 A18,18 0 0 1 572,124 H346 A18,18 0 0 1 328,106 V64 A18,18 0 0 1 346,46 Z" fill="none" stroke="url(#rim_f)" stroke-width="1.2"/>
+  <path d="M329,64 A18,18 0 0 1 346,47 H572 A18,18 0 0 1 589,64" fill="none" stroke="url(#spec_f)" stroke-width="1.4"/>
+  <clipPath id="cl40"><path d="M346,46 H572 A18,18 0 0 1 590,64 V106 A18,18 0 0 1 572,124 H346 A18,18 0 0 1 328,106 V64 A18,18 0 0 1 346,46 Z"/></clipPath><g clip-path="url(#cl40)"><rect x="197" y="46" width="131" height="78" fill="url(#sheen_f)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.75s infinite"/></g>
+  </g>
+  <circle cx="368" cy="85" r="21" fill="#6fe7c8" fill-opacity="0.10" stroke="#6fe7c8" stroke-opacity="0.35"/>
+  <g transform="translate(355,72) scale(1.0833)" opacity="0.95"><g fill="#6fe7c8" stroke="none"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9
+        1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782
+        13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24
+        22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></g></g>
+  <text class="mono" x="402" y="80" font-size="9.4" letter-spacing="2.4" fill="#6fe7c8" fill-opacity="0.9" font-weight="600">LINKEDIN</text>
+  <text x="402" y="99" font-size="12.5" fill="#eaf2f6">Ankit Basu</text>
+  </g>
+  <g class="ev3">
+  <g>
+  <ellipse cx="683" cy="62" rx="110" ry="47" fill="#e4a2b1" opacity="0.16" filter="url(#soft_f)"/>
+  <path d="M628,46 H854 A18,18 0 0 1 872,64 V106 A18,18 0 0 1 854,124 H628 A18,18 0 0 1 610,106 V64 A18,18 0 0 1 628,46 Z" fill="url(#pane_f)" filter="url(#drop_f)"/>
+  <path d="M628,46 H854 A18,18 0 0 1 872,64 V106 A18,18 0 0 1 854,124 H628 A18,18 0 0 1 610,106 V64 A18,18 0 0 1 628,46 Z" fill="none" stroke="url(#rim_f)" stroke-width="1.2"/>
+  <path d="M611,64 A18,18 0 0 1 628,47 H854 A18,18 0 0 1 871,64" fill="none" stroke="url(#spec_f)" stroke-width="1.4"/>
+  <clipPath id="cl41"><path d="M628,46 H854 A18,18 0 0 1 872,64 V106 A18,18 0 0 1 854,124 H628 A18,18 0 0 1 610,106 V64 A18,18 0 0 1 628,46 Z"/></clipPath><g clip-path="url(#cl41)"><rect x="479" y="46" width="131" height="78" fill="url(#sheen_f)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.5s infinite"/></g>
+  </g>
+  <circle cx="650" cy="85" r="21" fill="#e4a2b1" fill-opacity="0.10" stroke="#e4a2b1" stroke-opacity="0.35"/>
+  <g transform="translate(637,72) scale(1.0833)" opacity="0.95"><g fill="none" stroke="#e4a2b1" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.6"/>
+        <circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.15" stroke="none" fill="#e4a2b1"/></g></g>
+  <text class="mono" x="684" y="80" font-size="9.4" letter-spacing="2.4" fill="#e4a2b1" fill-opacity="0.9" font-weight="600">INSTAGRAM</text>
+  <text x="684" y="99" font-size="12.5" fill="#eaf2f6">_ank1t._</text>
+  </g>
+  <g class="ev4">
+  <g>
+  <ellipse cx="965" cy="62" rx="110" ry="47" fill="#a78bfa" opacity="0.16" filter="url(#soft_f)"/>
+  <path d="M910,46 H1136 A18,18 0 0 1 1154,64 V106 A18,18 0 0 1 1136,124 H910 A18,18 0 0 1 892,106 V64 A18,18 0 0 1 910,46 Z" fill="url(#pane_f)" filter="url(#drop_f)"/>
+  <path d="M910,46 H1136 A18,18 0 0 1 1154,64 V106 A18,18 0 0 1 1136,124 H910 A18,18 0 0 1 892,106 V64 A18,18 0 0 1 910,46 Z" fill="none" stroke="url(#rim_f)" stroke-width="1.2"/>
+  <path d="M893,64 A18,18 0 0 1 910,47 H1136 A18,18 0 0 1 1153,64" fill="none" stroke="url(#spec_f)" stroke-width="1.4"/>
+  <clipPath id="cl42"><path d="M910,46 H1136 A18,18 0 0 1 1154,64 V106 A18,18 0 0 1 1136,124 H910 A18,18 0 0 1 892,106 V64 A18,18 0 0 1 910,46 Z"/></clipPath><g clip-path="url(#cl42)"><rect x="761" y="46" width="131" height="78" fill="url(#sheen_f)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.25s infinite"/></g>
+  </g>
+  <circle cx="932" cy="85" r="21" fill="#a78bfa" fill-opacity="0.10" stroke="#a78bfa" stroke-opacity="0.35"/>
+  <g transform="translate(919,72) scale(1.0833)" opacity="0.95"><g fill="none" stroke="#a78bfa" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="2.4" y="4.6" width="19.2" height="14.8" rx="3"/>
+        <path d="M3.4 7.2 12 13.2l8.6-6"/></g></g>
+  <text class="mono" x="966" y="80" font-size="9.4" letter-spacing="2.4" fill="#a78bfa" fill-opacity="0.9" font-weight="600">EMAIL</text>
+  <text x="966" y="99" font-size="10.2" fill="#eaf2f6">ankitbasu935@gmail.com</text>
+  </g>
+  <g class="ev5">
+  <text class="mono" x="600" y="172" text-anchor="middle" font-size="12" letter-spacing="5.6" fill="#fbe2a7" fill-opacity="0.92" font-weight="600" filter="url(#glowS_f)">INNOVATE  •  SCALE  •  ARCHITECT  •  SHIP</text>
+  <rect x="410" y="184" width="380" height="1" fill="url(#spec_f)"/>
+  <text x="600" y="212" text-anchor="middle" font-size="14" font-style="italic" fill="#93a8b4">&#8220;Turning ambitious engineering ideas into scalable, production reality.&#8221;</text>
+  <text class="mono" x="600" y="238" text-anchor="middle" font-size="9.6" letter-spacing="2.6" fill="#5f7683">JALANDHAR, PUNJAB · INDIA</text>
+  </g>
+<rect width="1200" height="262" rx="26" filter="url(#grain_f)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

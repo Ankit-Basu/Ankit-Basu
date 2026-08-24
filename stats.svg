@@ -1,165 +1,323 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 480" width="1200" height="480" role="img">
+
   <defs>
-    <linearGradient id="bgGrad_s" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0e1c24"/>
-      <stop offset="100%" style="stop-color:#162a36"/>
+    <linearGradient id="pane_s" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.115"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.052"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.022"/>
     </linearGradient>
 
-    <linearGradient id="glassCard_s" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3543;stop-opacity:0.55"/>
-      <stop offset="100%" style="stop-color:#142732;stop-opacity:0.7"/>
+    <linearGradient id="rim_s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="38%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="68%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
     </linearGradient>
 
-    <linearGradient id="curveArea_s" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fbe2a7;stop-opacity:0.3"/>
-      <stop offset="100%" style="stop-color:#fbe2a7;stop-opacity:0"/>
+    <linearGradient id="spec_s" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="barCream_s" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fbe2a7"/>
-      <stop offset="100%" style="stop-color:#fae8bd"/>
+    <linearGradient id="sheen_s" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="barRose_s" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#e4a2b1"/>
-      <stop offset="100%" style="stop-color:#efaebc"/>
+    <linearGradient id="bg_s" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0c1a24"/>
+      <stop offset="55%" stop-color="#081219"/>
+      <stop offset="100%" stop-color="#0a1a23"/>
     </linearGradient>
 
-    <filter id="creamGlow_s" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <radialGradient id="vig_s" cx="50%" cy="42%" r="72%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+
+    <filter id="blob_s" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="58"/>
+    </filter>
+    <filter id="soft_s" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="glow_s" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowS_s" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="drop_s" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="dropS_s" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
 
-    <filter id="roseGlow_s" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="grain_s" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
     </filter>
 
-    <filter id="cardShadow_s" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000000" flood-opacity="0.5"/>
-    </filter>
-
-    <!-- Subtle grain texture -->
-    <filter id="grain_s" x="0%" y="0%" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
-      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
-      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended"/>
-      <feComponentTransfer in="blended">
-        <feFuncA type="linear" slope="0.97"/>
-      </feComponentTransfer>
-    </filter>
+    <pattern id="grid_s" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
   </defs>
-
-  <style>
-    @keyframes progress1_s { 0% { width: 0; } 100% { width: 282px; } }
-    @keyframes progress2_s { 0% { width: 0; } 100% { width: 270px; } }
-    @keyframes progress3_s { 0% { width: 0; } 100% { width: 252px; } }
-    @keyframes progress4_s { 0% { width: 0; } 100% { width: 240px; } }
-    @keyframes pulseGlow_s { 0%, 100% { r: 4.5; opacity: 1; } 50% { r: 6.5; opacity: 0.4; } }
-    @keyframes drawLine_s { 0% { stroke-dashoffset: 600; } 100% { stroke-dashoffset: 0; } }
-
-    .mono_s { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
-    .sans_s { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .p-bar1_s { animation: progress1_s 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-    .p-bar2_s { animation: progress2_s 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards; }
-    .p-bar3_s { animation: progress3_s 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.30s forwards; }
-    .p-bar4_s { animation: progress4_s 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards; }
-    .pulse-dot_s { animation: pulseGlow_s 2s ease-in-out infinite; }
-    .draw-curve_s { stroke-dasharray: 600; stroke-dashoffset: 600; animation: drawLine_s 2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-  </style>
-
-  <!-- Background -->
-  <rect width="1200" height="340" fill="url(#bgGrad_s)" rx="16"/>
-
-  <!-- Main container with grain texture -->
-  <g filter="url(#grain_s)">
-    <rect x="24" y="20" width="1152" height="300" rx="16" fill="url(#glassCard_s)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#cardShadow_s)"/>
+<style>
+    .mono { font-family:'JetBrains Mono','Fira Code','SFMono-Regular',ui-monospace,Consolas,monospace; }
+    .sans { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    text { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    @keyframes drift  { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(38px,-26px) scale(1.14)} }
+    @keyframes drift2 { 0%,100%{transform:translate(0,0) scale(1.06)} 50%{transform:translate(-44px,30px) scale(.9)} }
+    @keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(26px,34px)} }
+    @keyframes breathe{ 0%,100%{opacity:.30} 50%{opacity:.72} }
+    @keyframes blink  { 0%,45%{opacity:1} 50%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes sweep  { 0%{transform:translateX(-115%)} 62%,100%{transform:translateX(115%)} }
+    @keyframes rise   { 0%{transform:translateY(0);opacity:0} 12%{opacity:.75} 86%{opacity:.75} 100%{transform:translateY(-180px);opacity:0} }
+    @keyframes spin   { from{transform:rotate(0)} to{transform:rotate(360deg)} }
+    @keyframes spinR  { from{transform:rotate(360deg)} to{transform:rotate(0)} }
+    @keyframes ev0{0%,0.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev0{animation:ev0 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev1{0%,6.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev1{animation:ev1 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev2{0%,12.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev2{animation:ev2 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev3{0%,18.5%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev3{animation:ev3 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev4{0%,24.7%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev4{animation:ev4 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev5{0%,30.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev5{animation:ev5 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev6{0%,37.1%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev6{animation:ev6 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev7{0%,43.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev7{animation:ev7 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev8{0%,49.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev8{animation:ev8 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev9{0%,55.6%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev9{animation:ev9 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev10{0%,61.8%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev10{animation:ev10 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev11{0%,67.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev11{animation:ev11 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev12{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev12{animation:ev12 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev13{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev13{animation:ev13 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev14{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev14{animation:ev14 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev15{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev15{animation:ev15 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev16{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev16{animation:ev16 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev17{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev17{animation:ev17 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev18{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev18{animation:ev18 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev19{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev19{animation:ev19 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev20{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev20{animation:ev20 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev21{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev21{animation:ev21 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev22{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev22{animation:ev22 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev23{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev23{animation:ev23 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev24{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
+</style>
+<rect width="1200" height="480" rx="26" fill="url(#bg_s)"/>
+  <g filter="url(#blob_s)" opacity="0.85">
+  <ellipse cx="200" cy="180" rx="250" ry="195" fill="#6fe7c8" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:200px 180px"/>
+  <ellipse cx="700" cy="380" rx="250" ry="195" fill="#fbe2a7" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:700px 380px"/>
+  <ellipse cx="1050" cy="200" rx="230" ry="179" fill="#a78bfa" opacity="0.2" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1050px 200px"/>
   </g>
-
-  <!-- ====== LEFT PANEL: GITHUB ACTIVITY (not identity data) ====== -->
-  <g transform="translate(56, 42)">
-    <text class="sans_s" font-size="12" font-weight="600" fill="#8a97a0" letter-spacing="2">GITHUB ACTIVITY</text>
-    <text y="28" class="sans_s" font-size="22" font-weight="900" fill="#fbe2a7">Development Momentum</text>
-
-    <!-- Big stat cards row -->
-    <g transform="translate(0, 52)">
-      <!-- Repos -->
-      <rect x="0" y="0" width="110" height="64" rx="10" fill="#0d1f2a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <text x="55" y="30" class="sans_s" font-size="28" font-weight="900" fill="#fbe2a7" text-anchor="middle" filter="url(#creamGlow_s)">30+</text>
-      <text x="55" y="50" class="mono_s" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">REPOSITORIES</text>
-
-      <!-- Contributions -->
-      <rect x="122" y="0" width="110" height="64" rx="10" fill="#0d1f2a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <text x="177" y="30" class="sans_s" font-size="28" font-weight="900" fill="#e4a2b1" text-anchor="middle" filter="url(#roseGlow_s)">1.2K</text>
-      <text x="177" y="50" class="mono_s" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">CONTRIBUTIONS</text>
-
-      <!-- Languages -->
-      <rect x="244" y="0" width="110" height="64" rx="10" fill="#0d1f2a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <text x="299" y="30" class="sans_s" font-size="28" font-weight="900" fill="#fbe2a7" text-anchor="middle" filter="url(#creamGlow_s)">12</text>
-      <text x="299" y="50" class="mono_s" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">LANGUAGES</text>
-
-      <!-- Streak -->
-      <rect x="366" y="0" width="110" height="64" rx="10" fill="#0d1f2a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <text x="421" y="30" class="sans_s" font-size="28" font-weight="900" fill="#e4a2b1" text-anchor="middle" filter="url(#roseGlow_s)">45</text>
-      <text x="421" y="50" class="mono_s" font-size="10" font-weight="700" fill="#8a97a0" text-anchor="middle">DAY STREAK</text>
+  <rect width="1200" height="480" rx="26" fill="url(#grid_s)"/>
+  <rect width="1200" height="480" rx="26" fill="url(#vig_s)"/>
+<g class="ev0">
+    <g transform="translate(55,56)">
+      <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
+            stroke="#6fe7c8" stroke-opacity="0.75" stroke-width="1.4"/>
+      <circle r="3" fill="#6fe7c8" style="animation:breathe 2.4s ease-in-out infinite"/>
     </g>
-
-    <!-- Weekly activity sparkline -->
-    <g transform="translate(0, 130)">
-      <text class="mono_s" font-size="10" font-weight="600" fill="#8a97a0" letter-spacing="1">WEEKLY COMMIT ACTIVITY</text>
-      <!-- Area fill under sparkline -->
-      <path d="M 0 100 L 40 82 L 100 90 L 160 60 L 220 72 L 280 42 L 340 55 L 400 30 L 460 38 L 476 35 L 476 100 Z" fill="url(#curveArea_s)" transform="translate(0, 14)"/>
-      <!-- Sparkline -->
-      <path d="M 0 100 L 40 82 L 100 90 L 160 60 L 220 72 L 280 42 L 340 55 L 400 30 L 460 38 L 476 35" fill="none" stroke="#fbe2a7" stroke-width="2.5" class="draw-curve_s" filter="url(#creamGlow_s)" transform="translate(0, 14)"/>
-      <!-- Endpoint dot -->
-      <circle cx="476" cy="49" r="5" fill="#e4a2b1" filter="url(#roseGlow_s)"/>
-    </g>
+    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#6fe7c8"
+          fill-opacity="0.9" font-weight="600">LIVE TELEMETRY</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#eaf2f6" letter-spacing="-0.4">GitHub Activity &amp; Reach</text>
   </g>
-
-  <!-- Vertical divider -->
-  <line x1="580" y1="42" x2="580" y2="295" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-
-  <!-- ====== RIGHT PANEL: PROFICIENCY BARS (kept, these are unique data) ====== -->
-  <g transform="translate(620, 42)">
-    <text class="sans_s" font-size="12" font-weight="600" fill="#8a97a0" letter-spacing="2">PROFICIENCY MATRIX</text>
-    <text y="28" class="sans_s" font-size="22" font-weight="900" fill="#fbe2a7">Technical Mastery</text>
-
-    <!-- Progress Bar 1: Java / DSA -->
-    <g transform="translate(0, 52)">
-      <text x="0" y="12" class="mono_s" font-size="12" fill="#f5f0e8" font-weight="700">Java / DSA</text>
-      <rect x="160" y="1" width="300" height="14" rx="7" fill="#142631" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="160" y="1" width="282" height="14" rx="7" fill="url(#barRose_s)" class="p-bar1_s" filter="url(#roseGlow_s)"/>
-      <circle cx="442" cy="8" r="4" fill="#e4a2b1" class="pulse-dot_s" filter="url(#roseGlow_s)"/>
-      <text x="475" y="13" class="mono_s" font-size="11" fill="#e4a2b1" font-weight="800">94%</text>
-    </g>
-
-    <!-- Progress Bar 2: Full Stack -->
-    <g transform="translate(0, 92)">
-      <text x="0" y="12" class="mono_s" font-size="12" fill="#f5f0e8" font-weight="700">Full Stack (MERN)</text>
-      <rect x="160" y="1" width="300" height="14" rx="7" fill="#142631" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="160" y="1" width="270" height="14" rx="7" fill="url(#barCream_s)" class="p-bar2_s" filter="url(#creamGlow_s)"/>
-      <circle cx="430" cy="8" r="4" fill="#fbe2a7" class="pulse-dot_s" filter="url(#creamGlow_s)"/>
-      <text x="475" y="13" class="mono_s" font-size="11" fill="#fbe2a7" font-weight="800">90%</text>
-    </g>
-
-    <!-- Progress Bar 3: Cloud & DevOps -->
-    <g transform="translate(0, 132)">
-      <text x="0" y="12" class="mono_s" font-size="12" fill="#f5f0e8" font-weight="700">Cloud &amp; DevOps</text>
-      <rect x="160" y="1" width="300" height="14" rx="7" fill="#142631" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="160" y="1" width="252" height="14" rx="7" fill="url(#barRose_s)" class="p-bar3_s" filter="url(#roseGlow_s)"/>
-      <circle cx="412" cy="8" r="4" fill="#e4a2b1" class="pulse-dot_s" filter="url(#roseGlow_s)"/>
-      <text x="475" y="13" class="mono_s" font-size="11" fill="#e4a2b1" font-weight="800">84%</text>
-    </g>
-
-    <!-- Progress Bar 4: AI / Deep Learning -->
-    <g transform="translate(0, 172)">
-      <text x="0" y="12" class="mono_s" font-size="12" fill="#f5f0e8" font-weight="700">AI / Deep Learning</text>
-      <rect x="160" y="1" width="300" height="14" rx="7" fill="#142631" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <rect x="160" y="1" width="240" height="14" rx="7" fill="url(#barCream_s)" class="p-bar4_s" filter="url(#creamGlow_s)"/>
-      <circle cx="400" cy="8" r="4" fill="#fbe2a7" class="pulse-dot_s" filter="url(#creamGlow_s)"/>
-      <text x="475" y="13" class="mono_s" font-size="11" fill="#fbe2a7" font-weight="800">80%</text>
-    </g>
-
-    <text x="0" y="232" class="mono_s" fill="#8a97a0" font-size="10.5">Java &#x2022; React &#x2022; Node.js &#x2022; Docker &#x2022; Python &#x2022; AWS &#x2022; PyTorch</text>
+  <g class="ev1">
+    <g>
+  <ellipse cx="971" cy="46" rx="107" ry="18" fill="#6fe7c8" opacity="0.14" filter="url(#soft_s)"/>
+  <path d="M915,40 H1139 A15,15 0 0 1 1154,55 V55 A15,15 0 0 1 1139,70 H915 A15,15 0 0 1 900,55 V55 A15,15 0 0 1 915,40 Z" fill="url(#pane_s)"/>
+  <path d="M915,40 H1139 A15,15 0 0 1 1154,55 V55 A15,15 0 0 1 1139,70 H915 A15,15 0 0 1 900,55 V55 A15,15 0 0 1 915,40 Z" fill="none" stroke="url(#rim_s)" stroke-width="1.2"/>
+  <path d="M901,55 A15,15 0 0 1 915,41 H1139 A15,15 0 0 1 1153,55" fill="none" stroke="url(#spec_s)" stroke-width="1.4"/>
   </g>
+    <circle cx="922" cy="55" r="3.8" fill="#6fe7c8"><animate attributeName="opacity"
+            values="1;.25;1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <text class="mono" x="936" y="59" font-size="9.4" letter-spacing="1.5" fill="#93a8b4">
+      SYNCED 2026-08-24 20:38 UTC</text>
+  </g>
+  <g class="ev1">
+  <g>
+  <ellipse cx="119" cy="140" rx="110" ry="71" fill="#fbe2a7" opacity="0.16" filter="url(#soft_s)"/>
+  <path d="M64,116 H290 A18,18 0 0 1 308,134 V216 A18,18 0 0 1 290,234 H64 A18,18 0 0 1 46,216 V134 A18,18 0 0 1 64,116 Z" fill="url(#pane_s)" filter="url(#drop_s)"/>
+  <path d="M64,116 H290 A18,18 0 0 1 308,134 V216 A18,18 0 0 1 290,234 H64 A18,18 0 0 1 46,216 V134 A18,18 0 0 1 64,116 Z" fill="none" stroke="url(#rim_s)" stroke-width="1.2"/>
+  <path d="M47,134 A18,18 0 0 1 64,117 H290 A18,18 0 0 1 307,134" fill="none" stroke="url(#spec_s)" stroke-width="1.4"/>
+  <clipPath id="cl19"><path d="M64,116 H290 A18,18 0 0 1 308,134 V216 A18,18 0 0 1 290,234 H64 A18,18 0 0 1 46,216 V134 A18,18 0 0 1 64,116 Z"/></clipPath><g clip-path="url(#cl19)"><rect x="-85" y="116" width="131" height="118" fill="url(#sheen_s)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  </g>
+  <g transform="translate(68,138) scale(0.9167)" opacity="0.9"><g fill="none" stroke="#fbe2a7" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g>
+  <text class="sans" x="68" y="194" font-size="38" font-weight="800" fill="#eaf2f6" letter-spacing="-1.4">1,844</text>
+  <text class="mono" x="68" y="214" font-size="9.2" letter-spacing="1.9" fill="#fbe2a7" fill-opacity="0.9" font-weight="600">TOTAL CONTRIBUTIONS</text>
+  <text class="mono" x="286" y="155" text-anchor="end" font-size="9.6" fill="#93a8b4" fill-opacity="0.85">since 2023-09</text>
+  </g>
+  <g class="ev2">
+  <g>
+  <ellipse cx="401" cy="140" rx="110" ry="71" fill="#e4a2b1" opacity="0.16" filter="url(#soft_s)"/>
+  <path d="M346,116 H572 A18,18 0 0 1 590,134 V216 A18,18 0 0 1 572,234 H346 A18,18 0 0 1 328,216 V134 A18,18 0 0 1 346,116 Z" fill="url(#pane_s)" filter="url(#drop_s)"/>
+  <path d="M346,116 H572 A18,18 0 0 1 590,134 V216 A18,18 0 0 1 572,234 H346 A18,18 0 0 1 328,216 V134 A18,18 0 0 1 346,116 Z" fill="none" stroke="url(#rim_s)" stroke-width="1.2"/>
+  <path d="M329,134 A18,18 0 0 1 346,117 H572 A18,18 0 0 1 589,134" fill="none" stroke="url(#spec_s)" stroke-width="1.4"/>
+  <clipPath id="cl20"><path d="M346,116 H572 A18,18 0 0 1 590,134 V216 A18,18 0 0 1 572,234 H346 A18,18 0 0 1 328,216 V134 A18,18 0 0 1 346,116 Z"/></clipPath><g clip-path="url(#cl20)"><rect x="197" y="116" width="131" height="118" fill="url(#sheen_s)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.7s infinite"/></g>
+  </g>
+  <g transform="translate(350,138) scale(0.9167)" opacity="0.9"><g fill="none" stroke="#e4a2b1" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
+        <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g>
+  <text class="sans" x="350" y="194" font-size="38" font-weight="800" fill="#eaf2f6" letter-spacing="-1.4">149</text>
+  <text class="mono" x="350" y="214" font-size="9.2" letter-spacing="1.9" fill="#e4a2b1" fill-opacity="0.9" font-weight="600">LONGEST STREAK</text>
+  <text class="mono" x="568" y="155" text-anchor="end" font-size="9.6" fill="#93a8b4" fill-opacity="0.85">consecutive days</text>
+  </g>
+  <g class="ev3">
+  <g>
+  <ellipse cx="683" cy="140" rx="110" ry="71" fill="#6fe7c8" opacity="0.16" filter="url(#soft_s)"/>
+  <path d="M628,116 H854 A18,18 0 0 1 872,134 V216 A18,18 0 0 1 854,234 H628 A18,18 0 0 1 610,216 V134 A18,18 0 0 1 628,116 Z" fill="url(#pane_s)" filter="url(#drop_s)"/>
+  <path d="M628,116 H854 A18,18 0 0 1 872,134 V216 A18,18 0 0 1 854,234 H628 A18,18 0 0 1 610,216 V134 A18,18 0 0 1 628,116 Z" fill="none" stroke="url(#rim_s)" stroke-width="1.2"/>
+  <path d="M611,134 A18,18 0 0 1 628,117 H854 A18,18 0 0 1 871,134" fill="none" stroke="url(#spec_s)" stroke-width="1.4"/>
+  <clipPath id="cl21"><path d="M628,116 H854 A18,18 0 0 1 872,134 V216 A18,18 0 0 1 854,234 H628 A18,18 0 0 1 610,216 V134 A18,18 0 0 1 628,116 Z"/></clipPath><g clip-path="url(#cl21)"><rect x="479" y="116" width="131" height="118" fill="url(#sheen_s)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.4s infinite"/></g>
+  </g>
+  <g transform="translate(632,138) scale(0.9167)" opacity="0.9"><g fill="none" stroke="#6fe7c8" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
+        <path d="M4.2 17h14.4"/></g></g>
+  <text class="sans" x="632" y="194" font-size="38" font-weight="800" fill="#eaf2f6" letter-spacing="-1.4">28</text>
+  <text class="mono" x="632" y="214" font-size="9.2" letter-spacing="1.9" fill="#6fe7c8" fill-opacity="0.9" font-weight="600">PUBLIC REPOSITORIES</text>
+  <text class="mono" x="850" y="155" text-anchor="end" font-size="9.6" fill="#93a8b4" fill-opacity="0.85">5 forks</text>
+  </g>
+  <g class="ev4">
+  <g>
+  <ellipse cx="965" cy="140" rx="110" ry="71" fill="#a78bfa" opacity="0.16" filter="url(#soft_s)"/>
+  <path d="M910,116 H1136 A18,18 0 0 1 1154,134 V216 A18,18 0 0 1 1136,234 H910 A18,18 0 0 1 892,216 V134 A18,18 0 0 1 910,116 Z" fill="url(#pane_s)" filter="url(#drop_s)"/>
+  <path d="M910,116 H1136 A18,18 0 0 1 1154,134 V216 A18,18 0 0 1 1136,234 H910 A18,18 0 0 1 892,216 V134 A18,18 0 0 1 910,116 Z" fill="none" stroke="url(#rim_s)" stroke-width="1.2"/>
+  <path d="M893,134 A18,18 0 0 1 910,117 H1136 A18,18 0 0 1 1153,134" fill="none" stroke="url(#spec_s)" stroke-width="1.4"/>
+  <clipPath id="cl22"><path d="M910,116 H1136 A18,18 0 0 1 1154,134 V216 A18,18 0 0 1 1136,234 H910 A18,18 0 0 1 892,216 V134 A18,18 0 0 1 910,116 Z"/></clipPath><g clip-path="url(#cl22)"><rect x="761" y="116" width="131" height="118" fill="url(#sheen_s)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.0999999999999996s infinite"/></g>
+  </g>
+  <g transform="translate(914,138) scale(0.9167)" opacity="0.9"><g fill="none" stroke="#a78bfa" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g>
+  <text class="sans" x="914" y="194" font-size="38" font-weight="800" fill="#eaf2f6" letter-spacing="-1.4">24</text>
+  <text class="mono" x="914" y="214" font-size="9.2" letter-spacing="1.9" fill="#a78bfa" fill-opacity="0.9" font-weight="600">STARS EARNED</text>
+  <text class="mono" x="1132" y="155" text-anchor="end" font-size="9.6" fill="#93a8b4" fill-opacity="0.85">23 followers</text>
+  </g>
+  <g class="ev5">
+  <g>
+  <ellipse cx="214" cy="294" rx="252" ry="108" fill="#fbe2a7" opacity="0.09" filter="url(#soft_s)"/>
+  <path d="M66,258 H626 A20,20 0 0 1 646,278 V418 A20,20 0 0 1 626,438 H66 A20,20 0 0 1 46,418 V278 A20,20 0 0 1 66,258 Z" fill="url(#pane_s)" filter="url(#drop_s)"/>
+  <path d="M66,258 H626 A20,20 0 0 1 646,278 V418 A20,20 0 0 1 626,438 H66 A20,20 0 0 1 46,418 V278 A20,20 0 0 1 66,258 Z" fill="none" stroke="url(#rim_s)" stroke-width="1.2"/>
+  <path d="M47,278 A20,20 0 0 1 66,259 H626 A20,20 0 0 1 645,278" fill="none" stroke="url(#spec_s)" stroke-width="1.4"/>
+  </g>
+  <text class="mono" x="72" y="288" font-size="10.5" letter-spacing="3" fill="#fbe2a7" fill-opacity="0.9" font-weight="600">LANGUAGE DISTRIBUTION</text>
+  <rect x="72" y="296" width="548" height="1" fill="#ffffff" opacity="0.08"/>
+  <circle cx="78" cy="314" r="4" fill="#f1e05a"/>
+  <text x="90" y="318" font-size="11.4" fill="#93a8b4">JavaScript</text>
+  <g>
+    <rect x="214" y="310" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.08"/>
+    <style>@keyframes xp23{from{width:28.4px}to{width:158.0px}}
+    .xp23{animation:xp23 2.30s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp23" x="214" y="310" width="158.0" height="6" rx="3.0" fill="#f3e577" filter="url(#glowS_s)"/>
+    <rect class="xp23" x="214" y="310" width="158.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text class="mono" x="620" y="318" text-anchor="end" font-size="10.4" font-weight="700" fill="#f8efac">49.4%</text>
+  <circle cx="78" cy="334" r="4" fill="#4F5D95"/>
+  <text x="90" y="338" font-size="11.4" fill="#93a8b4">PHP</text>
+  <g>
+    <rect x="214" y="330" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.08"/>
+    <style>@keyframes xp24{from{width:9.5px}to{width:52.7px}}
+    .xp24{animation:xp24 2.39s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp24" x="214" y="330" width="52.7" height="6" rx="3.0" fill="#6e7aa8" filter="url(#glowS_s)"/>
+    <rect class="xp24" x="214" y="330" width="52.7" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text class="mono" x="620" y="338" text-anchor="end" font-size="10.4" font-weight="700" fill="#a7aeca">16.5%</text>
+  <circle cx="78" cy="354" r="4" fill="#f7523f"/>
+  <text x="90" y="358" font-size="11.4" fill="#93a8b4">Blade</text>
+  <g>
+    <rect x="214" y="350" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.08"/>
+    <style>@keyframes xp25{from{width:8.0px}to{width:44.4px}}
+    .xp25{animation:xp25 2.48s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp25" x="214" y="350" width="44.4" height="6" rx="3.0" fill="#f87161" filter="url(#glowS_s)"/>
+    <rect class="xp25" x="214" y="350" width="44.4" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text class="mono" x="620" y="358" text-anchor="end" font-size="10.4" font-weight="700" fill="#fba89f">13.9%</text>
+  <circle cx="78" cy="374" r="4" fill="#e34c26"/>
+  <text x="90" y="378" font-size="11.4" fill="#93a8b4">HTML</text>
+  <g>
+    <rect x="214" y="370" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.08"/>
+    <style>@keyframes xp26{from{width:7.6px}to{width:42.4px}}
+    .xp26{animation:xp26 2.57s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp26" x="214" y="370" width="42.4" height="6" rx="3.0" fill="#e86c4d" filter="url(#glowS_s)"/>
+    <rect class="xp26" x="214" y="370" width="42.4" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text class="mono" x="620" y="378" text-anchor="end" font-size="10.4" font-weight="700" fill="#f1a592">13.3%</text>
+  <circle cx="78" cy="394" r="4" fill="#563d7c"/>
+  <text x="90" y="398" font-size="11.4" fill="#93a8b4">CSS</text>
+  <g>
+    <rect x="214" y="390" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.08"/>
+    <style>@keyframes xp27{from{width:6.0px}to{width:17.9px}}
+    .xp27{animation:xp27 2.66s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp27" x="214" y="390" width="17.9" height="6" rx="3.0" fill="#745f93" filter="url(#glowS_s)"/>
+    <rect class="xp27" x="214" y="390" width="17.9" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text class="mono" x="620" y="398" text-anchor="end" font-size="10.4" font-weight="700" fill="#aa9ebd">5.6%</text>
+  <circle cx="78" cy="414" r="4" fill="#f34b7d"/>
+  <text x="90" y="418" font-size="11.4" fill="#93a8b4">C++</text>
+  <g>
+    <rect x="214" y="410" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.08"/>
+    <style>@keyframes xp28{from{width:4.6px}to{width:4.6px}}
+    .xp28{animation:xp28 2.75s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp28" x="214" y="410" width="4.6" height="6" rx="3.0" fill="#f56b94" filter="url(#glowS_s)"/>
+    <rect class="xp28" x="214" y="410" width="4.6" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text class="mono" x="620" y="418" text-anchor="end" font-size="10.4" font-weight="700" fill="#f9a5be">1.4%</text>
+  </g>
+  <g class="ev6">
+  <g>
+  <ellipse cx="803" cy="294" rx="205" ry="108" fill="#6fe7c8" opacity="0.1" filter="url(#soft_s)"/>
+  <path d="M686,258 H1134 A20,20 0 0 1 1154,278 V418 A20,20 0 0 1 1134,438 H686 A20,20 0 0 1 666,418 V278 A20,20 0 0 1 686,258 Z" fill="url(#pane_s)" filter="url(#drop_s)"/>
+  <path d="M686,258 H1134 A20,20 0 0 1 1154,278 V418 A20,20 0 0 1 1134,438 H686 A20,20 0 0 1 666,418 V278 A20,20 0 0 1 686,258 Z" fill="none" stroke="url(#rim_s)" stroke-width="1.2"/>
+  <path d="M667,278 A20,20 0 0 1 686,259 H1134 A20,20 0 0 1 1153,278" fill="none" stroke="url(#spec_s)" stroke-width="1.4"/>
+  </g>
+  <text class="mono" x="692" y="288" font-size="10.5" letter-spacing="3" fill="#6fe7c8" fill-opacity="0.9" font-weight="600">PROFILE SIGNAL</text>
+  <rect x="692" y="296" width="436" height="1" fill="#ffffff" opacity="0.08"/>
+  <g transform="translate(694,310) scale(0.7500)" opacity="0.85"><g fill="none" stroke="#fbe2a7" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.6"/><path d="M2.8 20.4c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/>
+        <path d="M16.4 4.8a3.6 3.6 0 0 1 0 6.6M17.6 14.6c2.2.7 3.6 2.7 3.6 5.1"/></g></g>
+  <text x="722" y="324" font-size="12" fill="#93a8b4">Followers</text>
+  <text class="sans" x="1128" y="325" text-anchor="end" font-size="17" font-weight="800" fill="#fbe2a7">23</text>
+  <rect x="694" y="335" width="434" height="1" fill="#ffffff" opacity="0.06"/>
+  <g transform="translate(694,340) scale(0.7500)" opacity="0.85"><g fill="none" stroke="#e4a2b1" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.4" cy="4.8" r="2.4"/><circle cx="17.6" cy="4.8" r="2.4"/><circle cx="12" cy="19.2" r="2.4"/>
+        <path d="M6.4 7.2v2a3 3 0 0 0 3 3h5.2a3 3 0 0 0 3-3v-2M12 12.2v4.6"/></g></g>
+  <text x="722" y="354" font-size="12" fill="#93a8b4">Forks of my work</text>
+  <text class="sans" x="1128" y="355" text-anchor="end" font-size="17" font-weight="800" fill="#e4a2b1">5</text>
+  <rect x="694" y="365" width="434" height="1" fill="#ffffff" opacity="0.06"/>
+  <g transform="translate(694,370) scale(0.7500)" opacity="0.85"><g fill="none" stroke="#6fe7c8" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
+  <text x="722" y="384" font-size="12" fill="#93a8b4">Years on GitHub</text>
+  <text class="sans" x="1128" y="385" text-anchor="end" font-size="17" font-weight="800" fill="#6fe7c8">2.9</text>
+  <rect x="694" y="395" width="434" height="1" fill="#ffffff" opacity="0.06"/>
+  <g transform="translate(694,400) scale(0.7500)" opacity="0.85"><g fill="none" stroke="#a78bfa" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
+        <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g>
+  <text x="722" y="414" font-size="12" fill="#93a8b4">Current streak</text>
+  <text class="sans" x="1128" y="415" text-anchor="end" font-size="17" font-weight="800" fill="#a78bfa">1 day</text>
+  </g>
+  <text class="mono" x="600" y="462" text-anchor="middle" font-size="9.6" letter-spacing="1.6" fill="#5f7683">PULLED STRAIGHT FROM THE GITHUB API &#183; REBUILT DAILY BY GITHUB ACTIONS</text>
+<rect width="1200" height="480" rx="26" filter="url(#grain_s)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 620" width="1200" height="620" role="img">
+
+  <defs>
+    <linearGradient id="pane_p" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.115"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.052"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.022"/>
+    </linearGradient>
+
+    <linearGradient id="rim_p" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="38%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="68%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
+    </linearGradient>
+
+    <linearGradient id="spec_p" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="sheen_p" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="bg_p" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0c1a24"/>
+      <stop offset="55%" stop-color="#081219"/>
+      <stop offset="100%" stop-color="#0a1a23"/>
+    </linearGradient>
+
+    <radialGradient id="vig_p" cx="50%" cy="42%" r="72%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+
+    <filter id="blob_p" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="58"/>
+    </filter>
+    <filter id="soft_p" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="glow_p" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowS_p" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="drop_p" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="dropS_p" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="grain_p" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+
+    <pattern id="grid_p" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+<style>
+    .mono { font-family:'JetBrains Mono','Fira Code','SFMono-Regular',ui-monospace,Consolas,monospace; }
+    .sans { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    text { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    @keyframes drift  { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(38px,-26px) scale(1.14)} }
+    @keyframes drift2 { 0%,100%{transform:translate(0,0) scale(1.06)} 50%{transform:translate(-44px,30px) scale(.9)} }
+    @keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(26px,34px)} }
+    @keyframes breathe{ 0%,100%{opacity:.30} 50%{opacity:.72} }
+    @keyframes blink  { 0%,45%{opacity:1} 50%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes sweep  { 0%{transform:translateX(-115%)} 62%,100%{transform:translateX(115%)} }
+    @keyframes rise   { 0%{transform:translateY(0);opacity:0} 12%{opacity:.75} 86%{opacity:.75} 100%{transform:translateY(-180px);opacity:0} }
+    @keyframes spin   { from{transform:rotate(0)} to{transform:rotate(360deg)} }
+    @keyframes spinR  { from{transform:rotate(360deg)} to{transform:rotate(0)} }
+    @keyframes ev0{0%,0.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev0{animation:ev0 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev1{0%,6.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev1{animation:ev1 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev2{0%,12.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev2{animation:ev2 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev3{0%,18.5%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev3{animation:ev3 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev4{0%,24.7%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev4{animation:ev4 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev5{0%,30.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev5{animation:ev5 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev6{0%,37.1%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev6{animation:ev6 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev7{0%,43.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev7{animation:ev7 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev8{0%,49.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev8{animation:ev8 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev9{0%,55.6%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev9{animation:ev9 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev10{0%,61.8%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev10{animation:ev10 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev11{0%,67.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev11{animation:ev11 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev12{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev12{animation:ev12 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev13{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev13{animation:ev13 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev14{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev14{animation:ev14 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev15{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev15{animation:ev15 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev16{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev16{animation:ev16 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev17{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev17{animation:ev17 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev18{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev18{animation:ev18 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev19{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev19{animation:ev19 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev20{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev20{animation:ev20 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev21{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev21{animation:ev21 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev22{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev22{animation:ev22 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev23{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev23{animation:ev23 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev24{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
+</style>
+<rect width="1200" height="620" rx="26" fill="url(#bg_p)"/>
+  <g filter="url(#blob_p)" opacity="0.85">
+  <ellipse cx="220" cy="200" rx="260" ry="203" fill="#fbe2a7" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:220px 200px"/>
+  <ellipse cx="860" cy="180" rx="250" ry="195" fill="#e4a2b1" opacity="0.22" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:860px 180px"/>
+  <ellipse cx="300" cy="470" rx="240" ry="187" fill="#6fe7c8" opacity="0.16" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:300px 470px"/>
+  <ellipse cx="960" cy="500" rx="240" ry="187" fill="#a78bfa" opacity="0.2" style="animation:drift 31s ease-in-out 5.1s infinite;transform-origin:960px 500px"/>
+  </g>
+  <rect width="1200" height="620" rx="26" fill="url(#grid_p)"/>
+  <rect width="1200" height="620" rx="26" fill="url(#vig_p)"/>
+<g class="ev0">
+    <g transform="translate(55,56)">
+      <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
+            stroke="#e4a2b1" stroke-opacity="0.75" stroke-width="1.4"/>
+      <circle r="3" fill="#e4a2b1" style="animation:breathe 2.4s ease-in-out infinite"/>
+    </g>
+    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#e4a2b1"
+          fill-opacity="0.9" font-weight="600">PROJECT VAULT</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#eaf2f6" letter-spacing="-0.4">Featured Engineering Systems</text>
+  </g>
+  <g class="ev1">
+  <g>
+  <ellipse cx="203" cy="157" rx="235" ry="134" fill="#fbe2a7" opacity="0.17" filter="url(#soft_p)"/>
+  <path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
+  <path d="M47,132 A20,20 0 0 1 66,113 H586 A20,20 0 0 1 605,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
+  <clipPath id="cl14"><path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl14)"><rect x="-234" y="112" width="280" height="224" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  </g>
+  <rect x="46" y="136" width="3" height="176" rx="1.5" fill="#fbe2a7" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="68" y="132" width="81" height="20" rx="10" fill="#fbe2a7" fill-opacity="0.16" stroke="#fbe2a7" stroke-opacity="0.45"/>
+  <text class="mono" x="108.5" y="146" text-anchor="middle" font-size="8.8" letter-spacing="1.8" fill="#fbe2a7" font-weight="700">LEGENDARY</text>
+  <g transform="translate(68,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.0s infinite"><g fill="none" stroke="#fbe2a7" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><rect x="8.6" y="8.6" width="6.8" height="6.8" rx="2"/>
+        <path d="M8.8 8.8 5.4 5.4M15.2 8.8l3.4-3.4M8.8 15.2l-3.4 3.4M15.2 15.2l3.4 3.4"/>
+        <circle cx="4.4" cy="4.4" r="2.5"/><circle cx="19.6" cy="4.4" r="2.5"/>
+        <circle cx="4.4" cy="19.6" r="2.5"/><circle cx="19.6" cy="19.6" r="2.5"/></g></g>
+  <text class="sans" x="114" y="190" font-size="20" font-weight="700" fill="#eaf2f6" letter-spacing="-0.3">SUDARSHAN-X</text>
+  <text class="mono" x="114" y="208" font-size="10.4" letter-spacing="1.5" fill="#fbe2a7" fill-opacity="0.9">Autonomous Drone Defense Platform</text>
+  <text x="70" y="242" font-size="12" fill="#93a8b4">YOLOv8 aerial threat detection with RF spectrum analysis and</text>
+  <text x="70" y="261" font-size="12" fill="#93a8b4">Doppler tracking, driving a Reynolds-Boids 3D swarm interceptor.</text>
+  <g><rect x="70" y="290" width="59" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="100" y="304" text-anchor="middle" font-size="10.2" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">YOLOv8</text></g>
+  <g><rect x="135" y="290" width="129" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="200" y="304" text-anchor="middle" font-size="10.2" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">React Three Fiber</text></g>
+  <g><rect x="270" y="290" width="66" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="303" y="304" text-anchor="middle" font-size="10.2" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">Node.js</text></g>
+  <g><rect x="342" y="290" width="59" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="372" y="304" text-anchor="middle" font-size="10.2" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">Python</text></g>
+  </g>
+  <g class="ev2">
+  <g>
+  <ellipse cx="774" cy="157" rx="222" ry="134" fill="#e4a2b1" opacity="0.17" filter="url(#soft_p)"/>
+  <path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
+  <path d="M627,132 A20,20 0 0 1 646,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
+  <clipPath id="cl15"><path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z"/></clipPath><g clip-path="url(#cl15)"><rect x="362" y="112" width="264" height="224" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
+  </g>
+  <rect x="626" y="136" width="3" height="176" rx="1.5" fill="#e4a2b1" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="648" y="132" width="48" height="20" rx="10" fill="#e4a2b1" fill-opacity="0.16" stroke="#e4a2b1" stroke-opacity="0.45"/>
+  <text class="mono" x="672.0" y="146" text-anchor="middle" font-size="8.8" letter-spacing="1.8" fill="#e4a2b1" font-weight="700">EPIC</text>
+  <g opacity="0.95"><g transform="translate(1080,133) scale(0.6667)" opacity="1.0"><g fill="none" stroke="#fbe2a7" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="1130" y="146" text-anchor="end" font-size="12" font-weight="700" fill="#fbe2a7">19</text></g>
+  <g transform="translate(648,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.6s infinite"><g fill="none" stroke="#e4a2b1" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4 20 5.4v6.1c0 4.9-3.4 8.8-8 10.1-4.6-1.3-8-5.2-8-10.1V5.4Z"/>
+        <path d="m8.6 12 2.4 2.5 4.4-4.7"/></g></g>
+  <text class="sans" x="694" y="190" font-size="20" font-weight="700" fill="#eaf2f6" letter-spacing="-0.3">SheShield</text>
+  <text class="mono" x="694" y="208" font-size="10.4" letter-spacing="1.5" fill="#e4a2b1" fill-opacity="0.9">Campus &amp; Personal Safety Network</text>
+  <text x="650" y="242" font-size="12" fill="#93a8b4">ML-powered live incident heatmaps that cut response time 30%,</text>
+  <text x="650" y="261" font-size="12" fill="#93a8b4">automated escort dispatch and a 24/7 AI safety chatbot.</text>
+  <g><rect x="650" y="290" width="40" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="670" y="304" text-anchor="middle" font-size="10.2" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">PHP</text></g>
+  <g><rect x="696" y="290" width="53" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="722" y="304" text-anchor="middle" font-size="10.2" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">React</text></g>
+  <g><rect x="755" y="290" width="53" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="782" y="304" text-anchor="middle" font-size="10.2" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">MySQL</text></g>
+  <g><rect x="814" y="290" width="72" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="850" y="304" text-anchor="middle" font-size="10.2" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Tailwind</text></g>
+  </g>
+  <g class="ev3">
+  <g>
+  <ellipse cx="146" cy="403" rx="150" ry="128" fill="#6fe7c8" opacity="0.17" filter="url(#soft_p)"/>
+  <path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
+  <path d="M47,380 A20,20 0 0 1 66,361 H384 A20,20 0 0 1 403,380" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
+  <clipPath id="cl16"><path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z"/></clipPath><g clip-path="url(#cl16)"><rect x="-133" y="360" width="179" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
+  </g>
+  <rect x="46" y="384" width="3" height="166" rx="1.5" fill="#6fe7c8" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="68" y="380" width="48" height="20" rx="10" fill="#6fe7c8" fill-opacity="0.16" stroke="#6fe7c8" stroke-opacity="0.45"/>
+  <text class="mono" x="92.0" y="394" text-anchor="middle" font-size="8.8" letter-spacing="1.8" fill="#6fe7c8" font-weight="700">RARE</text>
+  <g transform="translate(68,416) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.2s infinite"><g fill="none" stroke="#6fe7c8" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M20.4 3.6c0 9.2-4.6 13.8-11 13.8-2.4 0-4.2-.7-5.2-1.9C2.5 13.6 3.4 9.2 7 6.7c3.3-2.3 8.6-2.6 13.4-3.1Z"/>
+        <path d="M17.4 6.6C12 9 8.4 13 6 20.4"/></g></g>
+  <text class="sans" x="114" y="438" font-size="20" font-weight="700" fill="#eaf2f6" letter-spacing="-0.3">KrishiVaani</text>
+  <text class="mono" x="114" y="456" font-size="10.4" letter-spacing="1.5" fill="#6fe7c8" fill-opacity="0.9">Multilingual Smart Farming Assistant</text>
+  <text x="70" y="490" font-size="12" fill="#93a8b4">99.48% crop-disease diagnosis on MobileNetV2, Groq LLM</text>
+  <text x="70" y="509" font-size="12" fill="#93a8b4">reasoning, live mandi prices and full voice I/O.</text>
+  <g><rect x="70" y="528" width="66" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="103" y="542" text-anchor="middle" font-size="10.2" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">PyTorch</text></g>
+  <g><rect x="142" y="528" width="53" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="168" y="542" text-anchor="middle" font-size="10.2" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Flask</text></g>
+  <g><rect x="201" y="528" width="72" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="237" y="542" text-anchor="middle" font-size="10.2" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Groq LLM</text></g>
+  </g>
+  <g class="ev4">
+  <g>
+  <ellipse cx="522" cy="403" rx="150" ry="128" fill="#6fe7c8" opacity="0.17" filter="url(#soft_p)"/>
+  <path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
+  <path d="M423,380 A20,20 0 0 1 442,361 H760 A20,20 0 0 1 779,380" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
+  <clipPath id="cl17"><path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z"/></clipPath><g clip-path="url(#cl17)"><rect x="243" y="360" width="179" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
+  </g>
+  <rect x="422" y="384" width="3" height="166" rx="1.5" fill="#6fe7c8" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="444" y="380" width="48" height="20" rx="10" fill="#6fe7c8" fill-opacity="0.16" stroke="#6fe7c8" stroke-opacity="0.45"/>
+  <text class="mono" x="468.0" y="394" text-anchor="middle" font-size="8.8" letter-spacing="1.8" fill="#6fe7c8" font-weight="700">RARE</text>
+  <g opacity="0.95"><g transform="translate(706,381) scale(0.6667)" opacity="1.0"><g fill="none" stroke="#fbe2a7" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="756" y="394" text-anchor="end" font-size="12" font-weight="700" fill="#fbe2a7">1</text></g>
+  <g transform="translate(444,416) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.7999999999999998s infinite"><g fill="none" stroke="#6fe7c8" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="2.8" width="18.4" height="18.4" rx="2.6"/>
+        <path d="M7 2.8v9.4h5.2M17 21.2v-9.4h-5M2.8 7h4.2M21.2 17H17M12.2 7h5M7 17H2.8"/></g></g>
+  <text class="sans" x="490" y="438" font-size="20" font-weight="700" fill="#eaf2f6" letter-spacing="-0.3">AlgoTrail</text>
+  <text class="mono" x="490" y="456" font-size="10.4" letter-spacing="1.5" fill="#6fe7c8" fill-opacity="0.9">Algorithm &amp; Maze Playground</text>
+  <text x="446" y="490" font-size="12" fill="#93a8b4">Pathfinding visualiser with real-time maze generation,</text>
+  <text x="446" y="509" font-size="12" fill="#93a8b4">step metrics and AI-generated step explanations.</text>
+  <g><rect x="446" y="528" width="85" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="488" y="542" text-anchor="middle" font-size="10.2" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">JavaScript</text></g>
+  <g><rect x="537" y="528" width="47" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="560" y="542" text-anchor="middle" font-size="10.2" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">CSS3</text></g>
+  <g><rect x="590" y="528" width="78" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="629" y="542" text-anchor="middle" font-size="10.2" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">AI Assist</text></g>
+  </g>
+  <g class="ev5">
+  <g>
+  <ellipse cx="898" cy="403" rx="150" ry="128" fill="#8fb8c9" opacity="0.17" filter="url(#soft_p)"/>
+  <path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
+  <path d="M799,380 A20,20 0 0 1 818,361 H1134 A20,20 0 0 1 1153,380" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
+  <clipPath id="cl18"><path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z"/></clipPath><g clip-path="url(#cl18)"><rect x="620" y="360" width="178" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
+  </g>
+  <rect x="798" y="384" width="3" height="166" rx="1.5" fill="#8fb8c9" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="820" y="380" width="74" height="20" rx="10" fill="#8fb8c9" fill-opacity="0.16" stroke="#8fb8c9" stroke-opacity="0.45"/>
+  <text class="mono" x="857.0" y="394" text-anchor="middle" font-size="8.8" letter-spacing="1.8" fill="#8fb8c9" font-weight="700">UNCOMMON</text>
+  <g transform="translate(820,416) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 2.4s infinite"><g fill="none" stroke="#8fb8c9" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2.4 4.6 13.6h6.2l-1.2 8 8.8-11.2h-6.2Z"/></g></g>
+  <text class="sans" x="866" y="438" font-size="20" font-weight="700" fill="#eaf2f6" letter-spacing="-0.3">GridSense</text>
+  <text class="mono" x="866" y="456" font-size="10.4" letter-spacing="1.5" fill="#8fb8c9" fill-opacity="0.9">Smart Energy &amp; Power-Grid Dashboard</text>
+  <text x="822" y="490" font-size="12" fill="#93a8b4">IoT telemetry ingestion with anomaly detection and</text>
+  <text x="822" y="509" font-size="12" fill="#93a8b4">live consumption forecasting across sensor fleets.</text>
+  <g><rect x="822" y="528" width="53" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#8fb8c9" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="848" y="542" text-anchor="middle" font-size="10.2" fill="#8fb8c9" fill-opacity="0.95" letter-spacing="0.4">React</text></g>
+  <g><rect x="881" y="528" width="66" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#8fb8c9" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="914" y="542" text-anchor="middle" font-size="10.2" fill="#8fb8c9" fill-opacity="0.95" letter-spacing="0.4">Node.js</text></g>
+  <g><rect x="953" y="528" width="40" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#8fb8c9" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="973" y="542" text-anchor="middle" font-size="10.2" fill="#8fb8c9" fill-opacity="0.95" letter-spacing="0.4">IoT</text></g>
+  </g>
+<rect width="1200" height="620" rx="26" filter="url(#grain_p)" opacity="0.9" style="mix-blend-mode:overlay"/>
+</svg>

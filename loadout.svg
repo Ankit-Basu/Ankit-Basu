@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 570" width="1200" height="570" role="img">
+
+  <defs>
+    <linearGradient id="pane_l" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.115"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.052"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.022"/>
+    </linearGradient>
+
+    <linearGradient id="rim_l" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="38%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="68%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
+    </linearGradient>
+
+    <linearGradient id="spec_l" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="sheen_l" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="bg_l" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0c1a24"/>
+      <stop offset="55%" stop-color="#081219"/>
+      <stop offset="100%" stop-color="#0a1a23"/>
+    </linearGradient>
+
+    <radialGradient id="vig_l" cx="50%" cy="42%" r="72%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+
+    <filter id="blob_l" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="58"/>
+    </filter>
+    <filter id="soft_l" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="glow_l" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowS_l" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="drop_l" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="dropS_l" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="grain_l" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+
+    <pattern id="grid_l" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+<style>
+    .mono { font-family:'JetBrains Mono','Fira Code','SFMono-Regular',ui-monospace,Consolas,monospace; }
+    .sans { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    text { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif; }
+    @keyframes drift  { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(38px,-26px) scale(1.14)} }
+    @keyframes drift2 { 0%,100%{transform:translate(0,0) scale(1.06)} 50%{transform:translate(-44px,30px) scale(.9)} }
+    @keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(26px,34px)} }
+    @keyframes breathe{ 0%,100%{opacity:.30} 50%{opacity:.72} }
+    @keyframes blink  { 0%,45%{opacity:1} 50%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes sweep  { 0%{transform:translateX(-115%)} 62%,100%{transform:translateX(115%)} }
+    @keyframes rise   { 0%{transform:translateY(0);opacity:0} 12%{opacity:.75} 86%{opacity:.75} 100%{transform:translateY(-180px);opacity:0} }
+    @keyframes spin   { from{transform:rotate(0)} to{transform:rotate(360deg)} }
+    @keyframes spinR  { from{transform:rotate(360deg)} to{transform:rotate(0)} }
+    @keyframes ev0{0%,0.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev0{animation:ev0 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev1{0%,6.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev1{animation:ev1 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev2{0%,12.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev2{animation:ev2 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev3{0%,18.5%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev3{animation:ev3 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev4{0%,24.7%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev4{animation:ev4 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev5{0%,30.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev5{animation:ev5 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev6{0%,37.1%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev6{animation:ev6 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev7{0%,43.2%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev7{animation:ev7 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev8{0%,49.4%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev8{animation:ev8 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev9{0%,55.6%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev9{animation:ev9 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev10{0%,61.8%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev10{animation:ev10 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev11{0%,67.9%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev11{animation:ev11 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev12{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev12{animation:ev12 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev13{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev13{animation:ev13 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev14{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev14{animation:ev14 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev15{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev15{animation:ev15 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev16{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev16{animation:ev16 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev17{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev17{animation:ev17 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev18{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev18{animation:ev18 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev19{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev19{animation:ev19 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev20{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev20{animation:ev20 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev21{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev21{animation:ev21 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev22{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev22{animation:ev22 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev23{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev23{animation:ev23 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev24{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
+    @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+    .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
+</style>
+<rect width="1200" height="570" rx="26" fill="url(#bg_l)"/>
+  <g filter="url(#blob_l)" opacity="0.85">
+  <ellipse cx="180" cy="180" rx="250" ry="195" fill="#fbe2a7" opacity="0.22" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:180px 180px"/>
+  <ellipse cx="620" cy="420" rx="240" ry="187" fill="#e4a2b1" opacity="0.2" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:620px 420px"/>
+  <ellipse cx="1030" cy="200" rx="240" ry="187" fill="#a78bfa" opacity="0.22" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1030px 200px"/>
+  </g>
+  <rect width="1200" height="570" rx="26" fill="url(#grid_l)"/>
+  <rect width="1200" height="570" rx="26" fill="url(#vig_l)"/>
+<g class="ev0">
+    <g transform="translate(55,56)">
+      <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
+            stroke="#fbe2a7" stroke-opacity="0.75" stroke-width="1.4"/>
+      <circle r="3" fill="#fbe2a7" style="animation:breathe 2.4s ease-in-out infinite"/>
+    </g>
+    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#fbe2a7"
+          fill-opacity="0.9" font-weight="600">PLAYER LOADOUT</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#eaf2f6" letter-spacing="-0.4">Skills, Credentials &amp; Arsenal</text>
+  </g>
+  <g class="ev1">
+  <g>
+  <ellipse cx="119" cy="141" rx="110" ry="74" fill="#fbe2a7" opacity="0.15" filter="url(#soft_l)"/>
+  <path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
+  <path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
+  <path d="M47,134 A18,18 0 0 1 64,117 H290 A18,18 0 0 1 307,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
+  <clipPath id="cl2"><path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z"/></clipPath><g clip-path="url(#cl2)"><rect x="-85" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  </g>
+  <g>
+    <circle cx="100" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
+    <style>@keyframes rg3{from{stroke-dashoffset:157.3}to{stroke-dashoffset:15.1}}
+    .rg3{animation:rg3 2.20s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg3" cx="100" cy="178" r="30" fill="none" stroke="#fbe2a7" stroke-width="5"
+            stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="15.1"
+            transform="rotate(-90 100 178)" filter="url(#glowS_l)"/>
+  </g>
+  <g transform="translate(90,168) scale(0.8333)" opacity="0.95"><g fill="none" stroke="#fbe2a7" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 22 8l-10 4.8L2 8Z"/>
+        <path d="M6.2 10.4v5.2c0 1.9 2.6 3.4 5.8 3.4s5.8-1.5 5.8-3.4v-5.2M22 8v5.6"/></g></g>
+  <text class="sans" x="146" y="172" font-size="30" font-weight="800" fill="#eaf2f6" letter-spacing="-0.8">9.2</text>
+  <text class="mono" x="146" y="192" font-size="9.6" letter-spacing="2.2" fill="#fbe2a7" fill-opacity="0.92" font-weight="600">CGPA</text>
+  <text x="146" y="213" font-size="10.6" fill="#93a8b4">B.Tech CSE · ISC 95% · ICSE 97%</text>
+  </g>
+  <g class="ev2">
+  <g>
+  <ellipse cx="401" cy="141" rx="110" ry="74" fill="#6fe7c8" opacity="0.15" filter="url(#soft_l)"/>
+  <path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
+  <path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
+  <path d="M329,134 A18,18 0 0 1 346,117 H572 A18,18 0 0 1 589,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
+  <clipPath id="cl4"><path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z"/></clipPath><g clip-path="url(#cl4)"><rect x="197" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.8s infinite"/></g>
+  </g>
+  <g>
+    <circle cx="382" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
+    <style>@keyframes rg5{from{stroke-dashoffset:161.4}to{stroke-dashoffset:37.7}}
+    .rg5{animation:rg5 2.32s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg5" cx="382" cy="178" r="30" fill="none" stroke="#6fe7c8" stroke-width="5"
+            stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="37.7"
+            transform="rotate(-90 382 178)" filter="url(#glowS_l)"/>
+  </g>
+  <g transform="translate(372,168) scale(0.8333)" opacity="0.95"><g fill="none" stroke="#6fe7c8" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8-4.6 4 4.6 4M15.6 8l4.6 4-4.6 4M13.6 5.2l-3.2 13.6"/></g></g>
+  <text class="sans" x="428" y="172" font-size="30" font-weight="800" fill="#eaf2f6" letter-spacing="-0.8">400+</text>
+  <text class="mono" x="428" y="192" font-size="9.6" letter-spacing="2.2" fill="#6fe7c8" fill-opacity="0.92" font-weight="600">DSA SOLVED</text>
+  <text x="428" y="213" font-size="10.6" fill="#93a8b4">LeetCode · GFG · Codeforces</text>
+  </g>
+  <g class="ev3">
+  <g>
+  <ellipse cx="683" cy="141" rx="110" ry="74" fill="#e4a2b1" opacity="0.15" filter="url(#soft_l)"/>
+  <path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
+  <path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
+  <path d="M611,134 A18,18 0 0 1 628,117 H854 A18,18 0 0 1 871,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
+  <clipPath id="cl6"><path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z"/></clipPath><g clip-path="url(#cl6)"><rect x="479" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.6s infinite"/></g>
+  </g>
+  <g>
+    <circle cx="664" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
+    <style>@keyframes rg7{from{stroke-dashoffset:164.1}to{stroke-dashoffset:52.8}}
+    .rg7{animation:rg7 2.44s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg7" cx="664" cy="178" r="30" fill="none" stroke="#e4a2b1" stroke-width="5"
+            stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="52.8"
+            transform="rotate(-90 664 178)" filter="url(#glowS_l)"/>
+  </g>
+  <g transform="translate(654,168) scale(0.8333)" opacity="0.95"><g fill="none" stroke="#e4a2b1" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g>
+  <text class="sans" x="710" y="172" font-size="30" font-weight="800" fill="#eaf2f6" letter-spacing="-0.8">1590</text>
+  <text class="mono" x="710" y="192" font-size="9.6" letter-spacing="2.2" fill="#e4a2b1" fill-opacity="0.92" font-weight="600">LEETCODE</text>
+  <text x="710" y="213" font-size="10.6" fill="#93a8b4">Top 25% globally</text>
+  </g>
+  <g class="ev4">
+  <g>
+  <ellipse cx="965" cy="141" rx="110" ry="74" fill="#a78bfa" opacity="0.15" filter="url(#soft_l)"/>
+  <path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
+  <path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
+  <path d="M893,134 A18,18 0 0 1 910,117 H1136 A18,18 0 0 1 1153,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
+  <clipPath id="cl8"><path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z"/></clipPath><g clip-path="url(#cl8)"><rect x="761" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.4000000000000004s infinite"/></g>
+  </g>
+  <g>
+    <circle cx="946" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
+    <style>@keyframes rg9{from{stroke-dashoffset:159.7}to{stroke-dashoffset:28.3}}
+    .rg9{animation:rg9 2.56s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg9" cx="946" cy="178" r="30" fill="none" stroke="#a78bfa" stroke-width="5"
+            stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="28.3"
+            transform="rotate(-90 946 178)" filter="url(#glowS_l)"/>
+  </g>
+  <g transform="translate(936,168) scale(0.8333)" opacity="0.95"><g fill="none" stroke="#a78bfa" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M7.4 3.4h9.2v5.4a4.6 4.6 0 0 1-9.2 0Z"/>
+        <path d="M7.4 4.8H4.2v1.6a3.4 3.4 0 0 0 3.2 3.4M16.6 4.8h3.2v1.6a3.4 3.4 0 0 1-3.2 3.4"/>
+        <path d="M12 13.4v4M8.6 20.6h6.8l-.8-3.2H9.4Z"/></g></g>
+  <text class="sans" x="992" y="172" font-size="30" font-weight="800" fill="#eaf2f6" letter-spacing="-0.8">5+</text>
+  <text class="mono" x="992" y="192" font-size="9.6" letter-spacing="2.2" fill="#a78bfa" fill-opacity="0.92" font-weight="600">HACKATHON WINS</text>
+  <text x="992" y="213" font-size="10.6" fill="#93a8b4">National &amp; university podiums</text>
+  </g>
+  <g class="ev5">
+  <g>
+  <ellipse cx="246" cy="304" rx="301" ry="120" fill="#fbe2a7" opacity="0.08" filter="url(#soft_l)"/>
+  <path d="M66,264 H742 A20,20 0 0 1 762,284 V444 A20,20 0 0 1 742,464 H66 A20,20 0 0 1 46,444 V284 A20,20 0 0 1 66,264 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
+  <path d="M66,264 H742 A20,20 0 0 1 762,284 V444 A20,20 0 0 1 742,464 H66 A20,20 0 0 1 46,444 V284 A20,20 0 0 1 66,264 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
+  <path d="M47,284 A20,20 0 0 1 66,265 H742 A20,20 0 0 1 761,284" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
+  </g>
+  <text class="mono" x="72" y="292" font-size="10.5" letter-spacing="3" fill="#fbe2a7" fill-opacity="0.9" font-weight="600">ARSENAL</text>
+  <rect x="72" y="300" width="664" height="1" fill="#ffffff" opacity="0.08"/>
+  <text class="mono" x="72" y="322" font-size="9.4" letter-spacing="2.2" fill="#fbe2a7" fill-opacity="0.85">LANGUAGES</text>
+  <g><rect x="72" y="330" width="48" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="96" y="344" text-anchor="middle" font-size="10.6" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">Java</text></g>
+  <g><rect x="126" y="330" width="61" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="156" y="344" text-anchor="middle" font-size="10.6" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">Python</text></g>
+  <g><rect x="193" y="330" width="41" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="214" y="344" text-anchor="middle" font-size="10.6" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">C++</text></g>
+  <g><rect x="240" y="330" width="87" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="284" y="344" text-anchor="middle" font-size="10.6" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">JavaScript</text></g>
+  <g><rect x="333" y="330" width="87" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="376" y="344" text-anchor="middle" font-size="10.6" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">TypeScript</text></g>
+  <g><rect x="426" y="330" width="41" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="446" y="344" text-anchor="middle" font-size="10.6" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">SQL</text></g>
+  <g><rect x="473" y="330" width="41" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="494" y="344" text-anchor="middle" font-size="10.6" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">PHP</text></g>
+  <text class="mono" x="72" y="372" font-size="9.4" letter-spacing="2.2" fill="#e4a2b1" fill-opacity="0.85">FRAMEWORKS</text>
+  <g><rect x="72" y="380" width="100" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="122" y="394" text-anchor="middle" font-size="10.6" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">React / Next</text></g>
+  <g><rect x="178" y="380" width="114" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="235" y="394" text-anchor="middle" font-size="10.6" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Node / Express</text></g>
+  <g><rect x="298" y="380" width="68" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="332" y="394" text-anchor="middle" font-size="10.6" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">PyTorch</text></g>
+  <g><rect x="372" y="380" width="81" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="412" y="394" text-anchor="middle" font-size="10.6" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">LangChain</text></g>
+  <g><rect x="459" y="380" width="54" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="486" y="394" text-anchor="middle" font-size="10.6" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Flask</text></g>
+  <g><rect x="519" y="380" width="74" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="556" y="394" text-anchor="middle" font-size="10.6" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Tailwind</text></g>
+  <g><rect x="599" y="380" width="74" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="636" y="394" text-anchor="middle" font-size="10.6" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Three.js</text></g>
+  <text class="mono" x="72" y="422" font-size="9.4" letter-spacing="2.2" fill="#6fe7c8" fill-opacity="0.85">INFRASTRUCTURE</text>
+  <g><rect x="72" y="430" width="61" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="102" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Docker</text></g>
+  <g><rect x="139" y="430" width="87" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="182" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Kubernetes</text></g>
+  <g><rect x="232" y="430" width="41" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="252" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">AWS</text></g>
+  <g><rect x="279" y="430" width="68" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="313" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">MongoDB</text></g>
+  <g><rect x="353" y="430" width="87" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="396" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">PostgreSQL</text></g>
+  <g><rect x="446" y="430" width="54" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="473" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Redis</text></g>
+  <g><rect x="506" y="430" width="54" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="533" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">CI/CD</text></g>
+  <g><rect x="566" y="430" width="68" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="600" y="444" text-anchor="middle" font-size="10.6" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Jenkins</text></g>
+  </g>
+  <g class="ev6">
+  <g>
+  <ellipse cx="886" cy="304" rx="156" ry="120" fill="#a78bfa" opacity="0.1" filter="url(#soft_l)"/>
+  <path d="M802,264 H1134 A20,20 0 0 1 1154,284 V444 A20,20 0 0 1 1134,464 H802 A20,20 0 0 1 782,444 V284 A20,20 0 0 1 802,264 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
+  <path d="M802,264 H1134 A20,20 0 0 1 1154,284 V444 A20,20 0 0 1 1134,464 H802 A20,20 0 0 1 782,444 V284 A20,20 0 0 1 802,264 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
+  <path d="M783,284 A20,20 0 0 1 802,265 H1134 A20,20 0 0 1 1153,284" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
+  </g>
+  <text class="mono" x="808" y="292" font-size="10.5" letter-spacing="3" fill="#a78bfa" fill-opacity="0.9" font-weight="600">PROFICIENCY MATRIX</text>
+  <rect x="808" y="300" width="320" height="1" fill="#ffffff" opacity="0.08"/>
+  <text x="808" y="326" font-size="11.6" fill="#93a8b4">Java / DSA</text>
+  <text class="mono" x="1128" y="326" text-anchor="end" font-size="11" font-weight="700" fill="#fbe2a7">94%</text>
+  <g>
+    <rect x="808" y="333" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
+    <style>@keyframes xp10{from{width:54.1px}to{width:300.8px}}
+    .xp10{animation:xp10 2.40s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp10" x="808" y="333" width="300.8" height="6" rx="3.0" fill="#fbe2a7" filter="url(#glowS_l)"/>
+    <rect class="xp10" x="808" y="333" width="300.8" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text x="808" y="362" font-size="11.6" fill="#93a8b4">Full Stack (MERN)</text>
+  <text class="mono" x="1128" y="362" text-anchor="end" font-size="11" font-weight="700" fill="#e4a2b1">90%</text>
+  <g>
+    <rect x="808" y="369" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
+    <style>@keyframes xp11{from{width:51.8px}to{width:288.0px}}
+    .xp11{animation:xp11 2.54s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp11" x="808" y="369" width="288.0" height="6" rx="3.0" fill="#e4a2b1" filter="url(#glowS_l)"/>
+    <rect class="xp11" x="808" y="369" width="288.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text x="808" y="398" font-size="11.6" fill="#93a8b4">Cloud &amp; DevOps</text>
+  <text class="mono" x="1128" y="398" text-anchor="end" font-size="11" font-weight="700" fill="#6fe7c8">84%</text>
+  <g>
+    <rect x="808" y="405" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
+    <style>@keyframes xp12{from{width:48.4px}to{width:268.8px}}
+    .xp12{animation:xp12 2.68s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp12" x="808" y="405" width="268.8" height="6" rx="3.0" fill="#6fe7c8" filter="url(#glowS_l)"/>
+    <rect class="xp12" x="808" y="405" width="268.8" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  <text x="808" y="434" font-size="11.6" fill="#93a8b4">AI / Deep Learning</text>
+  <text class="mono" x="1128" y="434" text-anchor="end" font-size="11" font-weight="700" fill="#a78bfa">80%</text>
+  <g>
+    <rect x="808" y="441" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
+    <style>@keyframes xp13{from{width:46.1px}to{width:256.0px}}
+    .xp13{animation:xp13 2.82s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp13" x="808" y="441" width="256.0" height="6" rx="3.0" fill="#a78bfa" filter="url(#glowS_l)"/>
+    <rect class="xp13" x="808" y="441" width="256.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+  </g>
+  <g class="ev7">
+  <g>
+  <ellipse cx="356" cy="499" rx="465" ry="28" fill="#6fe7c8" opacity="0.08" filter="url(#soft_l)"/>
+  <path d="M61,490 H1139 A15,15 0 0 1 1154,505 V521 A15,15 0 0 1 1139,536 H61 A15,15 0 0 1 46,521 V505 A15,15 0 0 1 61,490 Z" fill="url(#pane_l)"/>
+  <path d="M61,490 H1139 A15,15 0 0 1 1154,505 V521 A15,15 0 0 1 1139,536 H61 A15,15 0 0 1 46,521 V505 A15,15 0 0 1 61,490 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
+  <path d="M47,505 A15,15 0 0 1 61,491 H1139 A15,15 0 0 1 1153,505" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
+  </g>
+  <g transform="translate(68,502) scale(0.8750)" opacity="0.9"><g fill="none" stroke="#6fe7c8" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="6.2"/><path d="m12 12.4 1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3Z"/>
+        <path d="M8.6 9.4 6 2.6h12l-2.6 6.8"/></g></g>
+  <text class="mono" x="100" y="518" font-size="10" letter-spacing="2.4" fill="#6fe7c8" fill-opacity="0.9" font-weight="600">CERTIFIED</text>
+  <text x="196" y="519" font-size="11.6"><tspan fill="#fbe2a7" font-weight="600">NPTEL · IIT</tspan><tspan fill="#93a8b4">  Privacy &amp; Security</tspan></text>
+  <text x="407" y="519" font-size="12" fill="#5f7683">&#8226;</text>
+  <text x="421" y="519" font-size="11.6"><tspan fill="#fbe2a7" font-weight="600">CSE Pathshala</tspan><tspan fill="#93a8b4">  Advanced C &amp; DSA</tspan></text>
+  <text x="632" y="519" font-size="12" fill="#5f7683">&#8226;</text>
+  <text x="646" y="519" font-size="11.6"><tspan fill="#fbe2a7" font-weight="600">LPU</tspan><tspan fill="#93a8b4">  Java Application Development</tspan></text>
+  </g>
+<rect width="1200" height="570" rx="26" filter="url(#grain_l)" opacity="0.9" style="mix-blend-mode:overlay"/>
+</svg>
