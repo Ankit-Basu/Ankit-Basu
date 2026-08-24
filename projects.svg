@@ -36,14 +36,14 @@
 
     <radialGradient id="vig_p" cx="50%" cy="42%" r="72%">
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.28"/>
     </radialGradient>
 
-    <filter id="blob_p" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="58"/>
+    <filter id="blob_p" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="96"/>
     </filter>
-    <filter id="soft_p" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="9"/>
+    <filter id="soft_p" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="26"/>
     </filter>
     <filter id="glow_p" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="4" result="b"/>
@@ -63,7 +63,7 @@
     <filter id="grain_p" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+      <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
     <pattern id="grid_p" width="34" height="34" patternUnits="userSpaceOnUse">
@@ -137,7 +137,7 @@
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 </style>
 <rect width="1200" height="620" rx="26" fill="url(#bg_p)"/>
-  <g filter="url(#blob_p)" opacity="0.85">
+  <g filter="url(#blob_p)" opacity="0.55">
   <ellipse cx="220" cy="200" rx="260" ry="203" fill="#fbe2a7" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:220px 200px"/>
   <ellipse cx="860" cy="180" rx="250" ry="195" fill="#e4a2b1" opacity="0.22" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:860px 180px"/>
   <ellipse cx="300" cy="470" rx="240" ry="187" fill="#6fe7c8" opacity="0.16" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:300px 470px"/>
@@ -157,11 +157,12 @@
   </g>
   <g class="ev1">
   <g>
-  <ellipse cx="203" cy="157" rx="235" ry="134" fill="#fbe2a7" opacity="0.17" filter="url(#soft_p)"/>
+  <clipPath id="tc27"><path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z"/></clipPath>
+  <g clip-path="url(#tc27)"><ellipse cx="214" cy="148" rx="280" ry="139" fill="#fbe2a7" opacity="0.17" filter="url(#soft_p)"/></g>
   <path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,132 A20,20 0 0 1 66,113 H586 A20,20 0 0 1 605,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
-  <clipPath id="cl14"><path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl14)"><rect x="-234" y="112" width="280" height="224" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  <clipPath id="cl28"><path d="M66,112 H586 A20,20 0 0 1 606,132 V316 A20,20 0 0 1 586,336 H66 A20,20 0 0 1 46,316 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl28)"><rect x="-234" y="112" width="280" height="224" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
   <rect x="46" y="136" width="3" height="176" rx="1.5" fill="#fbe2a7" opacity="0.85" filter="url(#glowS_p)"/>
   <rect x="68" y="132" width="81" height="20" rx="10" fill="#fbe2a7" fill-opacity="0.16" stroke="#fbe2a7" stroke-opacity="0.45"/>
@@ -181,11 +182,12 @@
   </g>
   <g class="ev2">
   <g>
-  <ellipse cx="774" cy="157" rx="222" ry="134" fill="#e4a2b1" opacity="0.17" filter="url(#soft_p)"/>
+  <clipPath id="tc29"><path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z"/></clipPath>
+  <g clip-path="url(#tc29)"><ellipse cx="784" cy="148" rx="264" ry="139" fill="#e4a2b1" opacity="0.17" filter="url(#soft_p)"/></g>
   <path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M627,132 A20,20 0 0 1 646,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
-  <clipPath id="cl15"><path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z"/></clipPath><g clip-path="url(#cl15)"><rect x="362" y="112" width="264" height="224" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
+  <clipPath id="cl30"><path d="M646,112 H1134 A20,20 0 0 1 1154,132 V316 A20,20 0 0 1 1134,336 H646 A20,20 0 0 1 626,316 V132 A20,20 0 0 1 646,112 Z"/></clipPath><g clip-path="url(#cl30)"><rect x="362" y="112" width="264" height="224" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
   </g>
   <rect x="626" y="136" width="3" height="176" rx="1.5" fill="#e4a2b1" opacity="0.85" filter="url(#glowS_p)"/>
   <rect x="648" y="132" width="48" height="20" rx="10" fill="#e4a2b1" fill-opacity="0.16" stroke="#e4a2b1" stroke-opacity="0.45"/>
@@ -204,11 +206,12 @@
   </g>
   <g class="ev3">
   <g>
-  <ellipse cx="146" cy="403" rx="150" ry="128" fill="#6fe7c8" opacity="0.17" filter="url(#soft_p)"/>
+  <clipPath id="tc31"><path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z"/></clipPath>
+  <g clip-path="url(#tc31)"><ellipse cx="153" cy="394" rx="179" ry="133" fill="#6fe7c8" opacity="0.17" filter="url(#soft_p)"/></g>
   <path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,380 A20,20 0 0 1 66,361 H384 A20,20 0 0 1 403,380" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
-  <clipPath id="cl16"><path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z"/></clipPath><g clip-path="url(#cl16)"><rect x="-133" y="360" width="179" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
+  <clipPath id="cl32"><path d="M66,360 H384 A20,20 0 0 1 404,380 V554 A20,20 0 0 1 384,574 H66 A20,20 0 0 1 46,554 V380 A20,20 0 0 1 66,360 Z"/></clipPath><g clip-path="url(#cl32)"><rect x="-133" y="360" width="179" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
   </g>
   <rect x="46" y="384" width="3" height="166" rx="1.5" fill="#6fe7c8" opacity="0.85" filter="url(#glowS_p)"/>
   <rect x="68" y="380" width="48" height="20" rx="10" fill="#6fe7c8" fill-opacity="0.16" stroke="#6fe7c8" stroke-opacity="0.45"/>
@@ -225,11 +228,12 @@
   </g>
   <g class="ev4">
   <g>
-  <ellipse cx="522" cy="403" rx="150" ry="128" fill="#6fe7c8" opacity="0.17" filter="url(#soft_p)"/>
+  <clipPath id="tc33"><path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z"/></clipPath>
+  <g clip-path="url(#tc33)"><ellipse cx="529" cy="394" rx="179" ry="133" fill="#6fe7c8" opacity="0.17" filter="url(#soft_p)"/></g>
   <path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M423,380 A20,20 0 0 1 442,361 H760 A20,20 0 0 1 779,380" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
-  <clipPath id="cl17"><path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z"/></clipPath><g clip-path="url(#cl17)"><rect x="243" y="360" width="179" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
+  <clipPath id="cl34"><path d="M442,360 H760 A20,20 0 0 1 780,380 V554 A20,20 0 0 1 760,574 H442 A20,20 0 0 1 422,554 V380 A20,20 0 0 1 442,360 Z"/></clipPath><g clip-path="url(#cl34)"><rect x="243" y="360" width="179" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
   </g>
   <rect x="422" y="384" width="3" height="166" rx="1.5" fill="#6fe7c8" opacity="0.85" filter="url(#glowS_p)"/>
   <rect x="444" y="380" width="48" height="20" rx="10" fill="#6fe7c8" fill-opacity="0.16" stroke="#6fe7c8" stroke-opacity="0.45"/>
@@ -247,11 +251,12 @@
   </g>
   <g class="ev5">
   <g>
-  <ellipse cx="898" cy="403" rx="150" ry="128" fill="#8fb8c9" opacity="0.17" filter="url(#soft_p)"/>
+  <clipPath id="tc35"><path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z"/></clipPath>
+  <g clip-path="url(#tc35)"><ellipse cx="905" cy="394" rx="178" ry="133" fill="#8fb8c9" opacity="0.17" filter="url(#soft_p)"/></g>
   <path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M799,380 A20,20 0 0 1 818,361 H1134 A20,20 0 0 1 1153,380" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
-  <clipPath id="cl18"><path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z"/></clipPath><g clip-path="url(#cl18)"><rect x="620" y="360" width="178" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
+  <clipPath id="cl36"><path d="M818,360 H1134 A20,20 0 0 1 1154,380 V554 A20,20 0 0 1 1134,574 H818 A20,20 0 0 1 798,554 V380 A20,20 0 0 1 818,360 Z"/></clipPath><g clip-path="url(#cl36)"><rect x="620" y="360" width="178" height="214" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
   </g>
   <rect x="798" y="384" width="3" height="166" rx="1.5" fill="#8fb8c9" opacity="0.85" filter="url(#glowS_p)"/>
   <rect x="820" y="380" width="74" height="20" rx="10" fill="#8fb8c9" fill-opacity="0.16" stroke="#8fb8c9" stroke-opacity="0.45"/>

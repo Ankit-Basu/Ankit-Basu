@@ -17,7 +17,7 @@ import re
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone, date
+from datetime import datetime, timedelta, timezone, date
 
 USER = os.environ.get("GH_USER", "Ankit-Basu")
 TOKEN = os.environ.get("GITHUB_TOKEN", "").strip()
@@ -37,13 +37,18 @@ def get(url, data=None, headers=None, timeout=30):
 
 
 # ---------------------------------------------------------------- GraphQL
-GQL = """
+# contributionsCollection only ever covers a 12-month window, so asking for
+# it once returns *last year's* contributions, not the all-time total. One
+# aliased block per year since the account opened, merged below, is what
+# actually gives an all-time figure and a streak that can see past 12 months.
+GQL_HEAD = """
 query($login:String!) {
   user(login:$login) {
     name
     createdAt
     followers { totalCount }
     following { totalCount }
+    publicRepos: repositories(privacy: PUBLIC, ownerAffiliations: OWNER) { totalCount }
     repositories(first:100, ownerAffiliations:OWNER, isFork:false,
                  orderBy:{field:STARGAZERS, direction:DESC}) {
       totalCount
@@ -54,32 +59,58 @@ query($login:String!) {
         }
       }
     }
-    contributionsCollection {
+"""
+
+GQL_YEAR = """
+    %(alias)s: contributionsCollection(from:"%(frm)s", to:"%(to)s") {
       totalCommitContributions
       totalPullRequestContributions
       totalIssueContributions
-      totalRepositoryContributions
       contributionCalendar {
         totalContributions
         weeks { contributionDays { date contributionCount } }
       }
     }
+"""
+
+GQL_TAIL = """
   }
 }
 """
 
 
-def via_graphql():
-    body = json.dumps({"query": GQL, "variables": {"login": USER}}).encode()
-    raw = get("https://api.github.com/graphql", body,
-              {"Authorization": "bearer " + TOKEN,
-               "Content-Type": "application/json"})
-    doc = json.loads(raw)
-    if "errors" in doc:
-        raise RuntimeError(doc["errors"])
-    u = doc["data"]["user"]
-    repos = u["repositories"]["nodes"]
+def year_windows(created_iso):
+    """[(alias, from, to)] covering account creation -> now, in <=1y slices."""
+    start = datetime.strptime(created_iso[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    now = datetime.now(timezone.utc)
+    out, i = [], 0
+    cur = start
+    while cur < now and i < 12:
+        end = min(cur.replace(year=cur.year + 1) - timedelta(seconds=1), now)
+        out.append(("y%d" % i,
+                    cur.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    end.strftime("%Y-%m-%dT%H:%M:%SZ")))
+        cur = end + timedelta(seconds=1)
+        i += 1
+    return out
 
+
+def via_graphql():
+    # first pass: profile + repos, and createdAt so we know how far back to go
+    probe = GQL_HEAD + GQL_YEAR % {
+        "alias": "y0",
+        "frm": (datetime.now(timezone.utc) - timedelta(days=365)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "to": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+    } + GQL_TAIL
+    u = _gql(probe)
+    created = u["createdAt"]
+
+    windows = year_windows(created)
+    q = GQL_HEAD + "".join(
+        GQL_YEAR % {"alias": a, "frm": f, "to": t} for a, f, t in windows) + GQL_TAIL
+    u = _gql(q)
+
+    repos = u["repositories"]["nodes"]
     langs = {}
     for r in repos:
         for e in r["languages"]["edges"]:
@@ -88,28 +119,53 @@ def via_graphql():
                 langs[n] = {"size": 0, "color": e["node"]["color"] or "#8fb8c9"}
             langs[n]["size"] += e["size"]
 
-    days = []
-    for wk in u["contributionsCollection"]["contributionCalendar"]["weeks"]:
-        for d in wk["contributionDays"]:
-            days.append((d["date"], d["contributionCount"]))
+    # merge every year's calendar into one all-time series
+    seen, days = set(), []
+    commits = prs = issues = 0
+    for alias, _, _ in windows:
+        cc = u.get(alias)
+        if not cc:
+            continue
+        commits += cc["totalCommitContributions"]
+        prs += cc["totalPullRequestContributions"]
+        issues += cc["totalIssueContributions"]
+        for wk in cc["contributionCalendar"]["weeks"]:
+            for dd in wk["contributionDays"]:
+                if dd["date"] not in seen:
+                    seen.add(dd["date"])
+                    days.append((dd["date"], dd["contributionCount"]))
+    days.sort()
 
-    cc = u["contributionsCollection"]
+    print("graphql: %d yearly windows, %d calendar days from %s"
+          % (len(windows), len(days), created[:10]))
+
     return {
         "name": u["name"] or USER,
-        "created_at": u["createdAt"],
+        "created_at": created,
         "followers": u["followers"]["totalCount"],
         "following": u["following"]["totalCount"],
-        "repos": u["repositories"]["totalCount"],
+        # the profile's repo count includes forks; the node list above does not
+        "repos": u["publicRepos"]["totalCount"],
         "stars": sum(r["stargazerCount"] for r in repos),
         "forks": sum(r["forkCount"] for r in repos),
-        "commits": cc["totalCommitContributions"],
-        "prs": cc["totalPullRequestContributions"],
-        "issues": cc["totalIssueContributions"],
+        "commits": commits,
+        "prs": prs,
+        "issues": issues,
         "languages": langs,
         "calendar": days,
         "top_repos": [{"name": r["name"], "stars": r["stargazerCount"]}
                       for r in repos[:6]],
     }
+
+
+def _gql(query):
+    body = json.dumps({"query": query, "variables": {"login": USER}}).encode()
+    raw = get("https://api.github.com/graphql", body,
+              {"Authorization": "bearer " + TOKEN, "Content-Type": "application/json"})
+    doc = json.loads(raw)
+    if doc.get("errors"):
+        raise RuntimeError(doc["errors"])
+    return doc["data"]["user"]
 
 
 # ---------------------------------------------------------------- REST
@@ -271,6 +327,17 @@ def main():
     for k in ("current", "longest", "total_contributions"):
         if not data.get(k) and prev.get(k):
             data[k] = prev[k]
+
+    # All-time counters only ever go up. If a fetch reports less than what is
+    # already cached, the query was narrower than intended - which is exactly
+    # how a 12-month contributionsCollection once shrank the all-time total
+    # from 1,844 to 1,042 - so keep the known-good figure and say so.
+    for k in ("total_contributions", "longest", "stars", "repos"):
+        old_v, new_v = prev.get(k), data.get(k)
+        if isinstance(old_v, int) and isinstance(new_v, int) and new_v < old_v:
+            print("warning: %s went backwards (%s -> %s); keeping %s"
+                  % (k, old_v, new_v, old_v), file=sys.stderr)
+            data[k] = old_v
 
     created = data["created_at"][:10]
     y, m, d = (int(v) for v in created.split("-"))

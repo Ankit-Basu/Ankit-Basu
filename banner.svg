@@ -36,14 +36,14 @@
 
     <radialGradient id="vig_h" cx="50%" cy="42%" r="72%">
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.28"/>
     </radialGradient>
 
-    <filter id="blob_h" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="58"/>
+    <filter id="blob_h" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="96"/>
     </filter>
-    <filter id="soft_h" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="9"/>
+    <filter id="soft_h" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="26"/>
     </filter>
     <filter id="glow_h" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="4" result="b"/>
@@ -63,7 +63,7 @@
     <filter id="grain_h" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+      <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
     <pattern id="grid_h" width="34" height="34" patternUnits="userSpaceOnUse">
@@ -141,7 +141,7 @@
     @keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
     </style>
 <rect width="1200" height="450" rx="26" fill="url(#bg_h)"/>
-  <g filter="url(#blob_h)" opacity="0.85">
+  <g filter="url(#blob_h)" opacity="0.55">
   <ellipse cx="250" cy="140" rx="230" ry="179" fill="#fbe2a7" opacity="0.3" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:250px 140px"/>
   <ellipse cx="700" cy="330" rx="210" ry="164" fill="#e4a2b1" opacity="0.26" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:700px 330px"/>
   <ellipse cx="960" cy="150" rx="240" ry="187" fill="#a78bfa" opacity="0.26" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:960px 150px"/>
@@ -187,7 +187,8 @@
   </defs>
   <g class="ev1">
     <g>
-  <ellipse cx="168" cy="58" rx="156" ry="19" fill="#6fe7c8" opacity="0.2" filter="url(#soft_h)"/>
+  <clipPath id="tc1"><path d="M80,52 H420 A16,16 0 0 1 436,68 V68 A16,16 0 0 1 420,84 H80 A16,16 0 0 1 64,68 V68 A16,16 0 0 1 80,52 Z"/></clipPath>
+  <g clip-path="url(#tc1)"><ellipse cx="176" cy="57" rx="186" ry="20" fill="#6fe7c8" opacity="0.2" filter="url(#soft_h)"/></g>
   <path d="M80,52 H420 A16,16 0 0 1 436,68 V68 A16,16 0 0 1 420,84 H80 A16,16 0 0 1 64,68 V68 A16,16 0 0 1 80,52 Z" fill="url(#pane_h)"/>
   <path d="M80,52 H420 A16,16 0 0 1 436,68 V68 A16,16 0 0 1 420,84 H80 A16,16 0 0 1 64,68 V68 A16,16 0 0 1 80,52 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
   <path d="M65,68 A16,16 0 0 1 80,53 H420 A16,16 0 0 1 435,68" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
@@ -224,11 +225,12 @@
   <g><rect x="481" y="264" width="42" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="502" y="281" text-anchor="middle" font-size="11" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">AWS</text></g></g>
   <g class="ev5">
   <g>
-  <ellipse cx="243" cy="336" rx="269" ry="47" fill="#a78bfa" opacity="0.12" filter="url(#soft_h)"/>
+  <clipPath id="tc2"><path d="M78,320 H690 A14,14 0 0 1 704,334 V384 A14,14 0 0 1 690,398 H78 A14,14 0 0 1 64,384 V334 A14,14 0 0 1 78,320 Z"/></clipPath>
+  <g clip-path="url(#tc2)"><ellipse cx="256" cy="332" rx="320" ry="48" fill="#a78bfa" opacity="0.12" filter="url(#soft_h)"/></g>
   <path d="M78,320 H690 A14,14 0 0 1 704,334 V384 A14,14 0 0 1 690,398 H78 A14,14 0 0 1 64,384 V334 A14,14 0 0 1 78,320 Z" fill="url(#pane_h)" filter="url(#drop_h)"/>
   <path d="M78,320 H690 A14,14 0 0 1 704,334 V384 A14,14 0 0 1 690,398 H78 A14,14 0 0 1 64,384 V334 A14,14 0 0 1 78,320 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
   <path d="M65,334 A14,14 0 0 1 78,321 H690 A14,14 0 0 1 703,334" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
-  <clipPath id="cl1"><path d="M78,320 H690 A14,14 0 0 1 704,334 V384 A14,14 0 0 1 690,398 H78 A14,14 0 0 1 64,384 V334 A14,14 0 0 1 78,320 Z"/></clipPath><g clip-path="url(#cl1)"><rect x="-256" y="320" width="320" height="78" fill="url(#sheen_h)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.2s infinite"/></g>
+  <clipPath id="cl3"><path d="M78,320 H690 A14,14 0 0 1 704,334 V384 A14,14 0 0 1 690,398 H78 A14,14 0 0 1 64,384 V334 A14,14 0 0 1 78,320 Z"/></clipPath><g clip-path="url(#cl3)"><rect x="-256" y="320" width="320" height="78" fill="url(#sheen_h)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.2s infinite"/></g>
   </g>
     <text class="mono" x="86" y="352" font-size="13">
       <tspan fill="#a78bfa">const</tspan><tspan fill="#eaf2f6"> ankit </tspan><tspan fill="#93a8b4">= {</tspan
@@ -253,10 +255,10 @@
     <circle cx="940" cy="182" r="84" fill="#081219" fill-opacity="0.45"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="8"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="url(#ob_h)" stroke-width="8"
-            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="306.1"
+            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="295.6"
             transform="rotate(-90 940 182)" filter="url(#glow_h)">
-      <animate attributeName="stroke-dashoffset" from="487.9"
-               to="306.1" dur="2.1s" fill="freeze"
+      <animate attributeName="stroke-dashoffset" from="486.0"
+               to="295.6" dur="2.1s" fill="freeze"
                calcMode="spline" keySplines="0.22 1 0.36 1"/>
     </circle>
     <clipPath id="av_h"><circle cx="940" cy="182" r="66"/></clipPath>
@@ -270,35 +272,38 @@
       <text class="mono" x="0" y="-3" text-anchor="middle" font-size="7.4"
             letter-spacing="1.4" fill="#93a8b4">LV</text>
       <text class="sans" x="0" y="13" text-anchor="middle" font-size="17"
-            font-weight="800" fill="#fbe2a7">10</text>
+            font-weight="800" fill="#fbe2a7">18</text>
     </g>
   </g>
   <g class="ev4">
   <g>
-  <ellipse cx="889" cy="274" rx="97" ry="19" fill="#e4a2b1" opacity="0.16" filter="url(#soft_h)"/>
+  <clipPath id="tc4"><path d="M840,268 H1040 A16,16 0 0 1 1056,284 V284 A16,16 0 0 1 1040,300 H840 A16,16 0 0 1 824,284 V284 A16,16 0 0 1 840,268 Z"/></clipPath>
+  <g clip-path="url(#tc4)"><ellipse cx="894" cy="273" rx="116" ry="20" fill="#e4a2b1" opacity="0.16" filter="url(#soft_h)"/></g>
   <path d="M840,268 H1040 A16,16 0 0 1 1056,284 V284 A16,16 0 0 1 1040,300 H840 A16,16 0 0 1 824,284 V284 A16,16 0 0 1 840,268 Z" fill="url(#pane_h)"/>
   <path d="M840,268 H1040 A16,16 0 0 1 1056,284 V284 A16,16 0 0 1 1040,300 H840 A16,16 0 0 1 824,284 V284 A16,16 0 0 1 840,268 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
   <path d="M825,284 A16,16 0 0 1 840,269 H1040 A16,16 0 0 1 1055,284" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
   </g>
     <text class="mono" x="940" y="288" text-anchor="middle" font-size="10.4" letter-spacing="2.4">
-      <tspan fill="#e4a2b1" font-weight="600">ENGINEER</tspan><tspan fill="#5f7683">  &#183;  </tspan
-      ><tspan fill="#fbe2a7">1,042 XP</tspan></text>
+      <tspan fill="#e4a2b1" font-weight="600">ARCHITECT</tspan><tspan fill="#5f7683">  &#183;  </tspan
+      ><tspan fill="#fbe2a7">1,844 XP</tspan></text>
   </g>
   <g class="ev7">
   <g>
-  <ellipse cx="775" cy="329" rx="52" ry="52" fill="#fbe2a7" opacity="0.14" filter="url(#soft_h)"/>
+  <clipPath id="tc5"><path d="M755,312 H849 A15,15 0 0 1 864,327 V383 A15,15 0 0 1 849,398 H755 A15,15 0 0 1 740,383 V327 A15,15 0 0 1 755,312 Z"/></clipPath>
+  <g clip-path="url(#tc5)"><ellipse cx="777" cy="326" rx="62" ry="53" fill="#fbe2a7" opacity="0.14" filter="url(#soft_h)"/></g>
   <path d="M755,312 H849 A15,15 0 0 1 864,327 V383 A15,15 0 0 1 849,398 H755 A15,15 0 0 1 740,383 V327 A15,15 0 0 1 755,312 Z" fill="url(#pane_h)" filter="url(#drop_h)"/>
   <path d="M755,312 H849 A15,15 0 0 1 864,327 V383 A15,15 0 0 1 849,398 H755 A15,15 0 0 1 740,383 V327 A15,15 0 0 1 755,312 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
   <path d="M741,327 A15,15 0 0 1 755,313 H849 A15,15 0 0 1 863,327" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
   </g>
   <g transform="translate(793.0,328) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#fbe2a7" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
         <path d="M4.2 17h14.4"/></g></g>
-  <text class="sans" x="802.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">26</text>
+  <text class="sans" x="802.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">28</text>
   <text class="mono" x="802.0" y="389" text-anchor="middle" font-size="8.6" letter-spacing="1.9" fill="#fbe2a7" fill-opacity="0.85">REPOS</text>
   </g>
   <g class="ev8">
   <g>
-  <ellipse cx="913" cy="329" rx="52" ry="52" fill="#e4a2b1" opacity="0.14" filter="url(#soft_h)"/>
+  <clipPath id="tc6"><path d="M893,312 H987 A15,15 0 0 1 1002,327 V383 A15,15 0 0 1 987,398 H893 A15,15 0 0 1 878,383 V327 A15,15 0 0 1 893,312 Z"/></clipPath>
+  <g clip-path="url(#tc6)"><ellipse cx="915" cy="326" rx="62" ry="53" fill="#e4a2b1" opacity="0.14" filter="url(#soft_h)"/></g>
   <path d="M893,312 H987 A15,15 0 0 1 1002,327 V383 A15,15 0 0 1 987,398 H893 A15,15 0 0 1 878,383 V327 A15,15 0 0 1 893,312 Z" fill="url(#pane_h)" filter="url(#drop_h)"/>
   <path d="M893,312 H987 A15,15 0 0 1 1002,327 V383 A15,15 0 0 1 987,398 H893 A15,15 0 0 1 878,383 V327 A15,15 0 0 1 893,312 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
   <path d="M879,327 A15,15 0 0 1 893,313 H987 A15,15 0 0 1 1001,327" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
@@ -309,14 +314,15 @@
   </g>
   <g class="ev9">
   <g>
-  <ellipse cx="1051" cy="329" rx="52" ry="52" fill="#6fe7c8" opacity="0.14" filter="url(#soft_h)"/>
+  <clipPath id="tc7"><path d="M1031,312 H1125 A15,15 0 0 1 1140,327 V383 A15,15 0 0 1 1125,398 H1031 A15,15 0 0 1 1016,383 V327 A15,15 0 0 1 1031,312 Z"/></clipPath>
+  <g clip-path="url(#tc7)"><ellipse cx="1053" cy="326" rx="62" ry="53" fill="#6fe7c8" opacity="0.14" filter="url(#soft_h)"/></g>
   <path d="M1031,312 H1125 A15,15 0 0 1 1140,327 V383 A15,15 0 0 1 1125,398 H1031 A15,15 0 0 1 1016,383 V327 A15,15 0 0 1 1031,312 Z" fill="url(#pane_h)" filter="url(#drop_h)"/>
   <path d="M1031,312 H1125 A15,15 0 0 1 1140,327 V383 A15,15 0 0 1 1125,398 H1031 A15,15 0 0 1 1016,383 V327 A15,15 0 0 1 1031,312 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
   <path d="M1017,327 A15,15 0 0 1 1031,313 H1125 A15,15 0 0 1 1139,327" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
   </g>
   <g transform="translate(1069.0,328) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#6fe7c8" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
         <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g>
-  <text class="sans" x="1078.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">128</text>
+  <text class="sans" x="1078.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">149</text>
   <text class="mono" x="1078.0" y="389" text-anchor="middle" font-size="8.6" letter-spacing="1.9" fill="#6fe7c8" fill-opacity="0.85">BEST STREAK</text>
   </g>
 <rect width="1200" height="450" rx="26" filter="url(#grain_h)" opacity="0.9" style="mix-blend-mode:overlay"/>

@@ -108,14 +108,14 @@ def base_defs(scope):
 
     <radialGradient id="vig_S" cx="50%" cy="42%" r="72%">
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.28"/>
     </radialGradient>
 
-    <filter id="blob_S" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="58"/>
+    <filter id="blob_S" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="96"/>
     </filter>
-    <filter id="soft_S" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="9"/>
+    <filter id="soft_S" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="26"/>
     </filter>
     <filter id="glow_S" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="4" result="b"/>
@@ -135,7 +135,7 @@ def base_defs(scope):
     <filter id="grain_S" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+      <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
     <pattern id="grid_S" width="34" height="34" patternUnits="userSpaceOnUse">
@@ -216,7 +216,7 @@ def frame(scope, w, h, blobs=None, grid=True, vignette=True):
     blobs = blobs or []
     out = ['<rect width="%s" height="%s" rx="26" fill="url(#bg_%s)"/>' % (w, h, s)]
     if blobs:
-        out.append('<g filter="url(#blob_%s)" opacity="0.85">' % s)
+        out.append('<g filter="url(#blob_%s)" opacity="0.55">' % s)
         for i, (cx, cy, r, col, op, anim) in enumerate(blobs):
             out.append('<ellipse cx="%s" cy="%s" rx="%s" ry="%.0f" fill="%s" opacity="%s" '
                        'style="animation:%s %ss ease-in-out %ss infinite;transform-origin:%spx %spx"/>'
@@ -245,9 +245,15 @@ def card(scope, x, y, w, h, r=18, tint=None, tint_op=0.16, shadow=True,
         attrs += ' style="%s"' % style
     g = ["<g%s>" % attrs]
     if tint:
-        g.append('<ellipse cx="%.0f" cy="%.0f" rx="%.0f" ry="%.0f" fill="%s" opacity="%s" '
-                 'filter="url(#soft_%s)"/>'
-                 % (x + w * 0.28, y + h * 0.2, w * 0.42, h * 0.6, tint, tint_op, s))
+        # Clipped to the pane on purpose. Unclipped, a blurred tint ellipse
+        # blooms past the rounded corners and reads as a coloured halo stuck
+        # to the outside of the card - the light has to look like it is inside
+        # the glass, not smeared around it.
+        tid = uid("tc")
+        g.append('<clipPath id="%s"><path d="%s"/></clipPath>' % (tid, rr(x, y, w, h, r)))
+        g.append('<g clip-path="url(#%s)"><ellipse cx="%.0f" cy="%.0f" rx="%.0f" ry="%.0f" '
+                 'fill="%s" opacity="%s" filter="url(#soft_%s)"/></g>'
+                 % (tid, x + w * 0.3, y + h * 0.16, w * 0.5, h * 0.62, tint, tint_op, s))
     sh = ' filter="url(#drop_%s)"' % s if shadow else ""
     g.append('<path d="%s" fill="url(#pane_%s)"%s/>' % (rr(x, y, w, h, r), s, sh))
     g.append('<path d="%s" fill="none" stroke="url(#rim_%s)" stroke-width="1.2"/>'

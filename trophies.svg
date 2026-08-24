@@ -36,14 +36,14 @@
 
     <radialGradient id="vig_t" cx="50%" cy="42%" r="72%">
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.28"/>
     </radialGradient>
 
-    <filter id="blob_t" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="58"/>
+    <filter id="blob_t" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="96"/>
     </filter>
-    <filter id="soft_t" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="9"/>
+    <filter id="soft_t" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="26"/>
     </filter>
     <filter id="glow_t" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="4" result="b"/>
@@ -63,7 +63,7 @@
     <filter id="grain_t" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+      <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
     <pattern id="grid_t" width="34" height="34" patternUnits="userSpaceOnUse">
@@ -136,10 +136,10 @@
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 
-    @keyframes unlock{0%{opacity:0;transform:scale(.4)}45%{opacity:.95}100%{opacity:0;transform:scale(2.3)}}
+    @keyframes halo{0%,100%{opacity:.20}50%{opacity:.55}}
     </style>
 <rect width="1200" height="400" rx="26" fill="url(#bg_t)"/>
-  <g filter="url(#blob_t)" opacity="0.85">
+  <g filter="url(#blob_t)" opacity="0.55">
   <ellipse cx="200" cy="190" rx="250" ry="195" fill="#fbe2a7" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:200px 190px"/>
   <ellipse cx="620" cy="210" rx="240" ry="187" fill="#e4a2b1" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:620px 210px"/>
   <ellipse cx="1020" cy="230" rx="250" ry="195" fill="#a78bfa" opacity="0.22" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1020px 230px"/>
@@ -158,14 +158,15 @@
   </g>
   <g class="ev1">
   <g>
-  <ellipse cx="119" cy="151" rx="110" ry="118" fill="#fbe2a7" opacity="0.18" filter="url(#soft_t)"/>
+  <clipPath id="tc54"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath>
+  <g clip-path="url(#tc54)"><ellipse cx="125" cy="143" rx="131" ry="122" fill="#fbe2a7" opacity="0.18" filter="url(#soft_t)"/></g>
   <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
   <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M47,132 A20,20 0 0 1 66,113 H288 A20,20 0 0 1 307,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
-  <clipPath id="cl29"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl29)"><rect x="-85" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  <clipPath id="cl55"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl55)"><rect x="-85" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
-  <circle cx="177" cy="158" r="30" fill="#fbe2a7" fill-opacity="0.10" stroke="#fbe2a7" stroke-opacity="0.42" stroke-width="1.3"/>
-  <circle cx="177" cy="158" r="30" fill="none" stroke="#fbe2a7" stroke-width="1.6" style="animation:unlock 3.4s ease-out 0.9s infinite;transform-origin:177px 158px"/>
+  <circle cx="177" cy="158" r="30" fill="#fbe2a7" fill-opacity="0.09" stroke="#fbe2a7" stroke-opacity="0.38" stroke-width="1.3"/>
+  <circle cx="177" cy="158" r="35" fill="none" stroke="#fbe2a7" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.0s infinite"/>
   <g transform="translate(163,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#fbe2a7" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="6.2"/><path d="m12 12.4 1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3Z"/>
         <path d="M8.6 9.4 6 2.6h12l-2.6 6.8"/></g></g>
   <text class="sans" x="177" y="206" text-anchor="middle" font-size="15.5" font-weight="700" fill="#eaf2f6">Hackathon Wins</text>
@@ -176,14 +177,15 @@
   </g>
   <g class="ev2">
   <g>
-  <ellipse cx="401" cy="151" rx="110" ry="118" fill="#6fe7c8" opacity="0.18" filter="url(#soft_t)"/>
+  <clipPath id="tc56"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath>
+  <g clip-path="url(#tc56)"><ellipse cx="407" cy="143" rx="131" ry="122" fill="#6fe7c8" opacity="0.18" filter="url(#soft_t)"/></g>
   <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
   <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M329,132 A20,20 0 0 1 348,113 H570 A20,20 0 0 1 589,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
-  <clipPath id="cl30"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath><g clip-path="url(#cl30)"><rect x="197" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.85s infinite"/></g>
+  <clipPath id="cl57"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath><g clip-path="url(#cl57)"><rect x="197" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.85s infinite"/></g>
   </g>
-  <circle cx="459" cy="158" r="30" fill="#6fe7c8" fill-opacity="0.10" stroke="#6fe7c8" stroke-opacity="0.42" stroke-width="1.3"/>
-  <circle cx="459" cy="158" r="30" fill="none" stroke="#6fe7c8" stroke-width="1.6" style="animation:unlock 3.4s ease-out 1.15s infinite;transform-origin:459px 158px"/>
+  <circle cx="459" cy="158" r="30" fill="#6fe7c8" fill-opacity="0.09" stroke="#6fe7c8" stroke-opacity="0.38" stroke-width="1.3"/>
+  <circle cx="459" cy="158" r="35" fill="none" stroke="#6fe7c8" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.35s infinite"/>
   <g transform="translate(445,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#6fe7c8" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8-4.6 4 4.6 4M15.6 8l4.6 4-4.6 4M13.6 5.2l-3.2 13.6"/></g></g>
   <text class="sans" x="459" y="206" text-anchor="middle" font-size="15.5" font-weight="700" fill="#eaf2f6">DSA Mastery</text>
   <text x="459" y="225" text-anchor="middle" font-size="10.8" fill="#93a8b4">400+ problems · top 25%</text>
@@ -193,14 +195,15 @@
   </g>
   <g class="ev3">
   <g>
-  <ellipse cx="683" cy="151" rx="110" ry="118" fill="#a78bfa" opacity="0.18" filter="url(#soft_t)"/>
+  <clipPath id="tc58"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath>
+  <g clip-path="url(#tc58)"><ellipse cx="689" cy="143" rx="131" ry="122" fill="#a78bfa" opacity="0.18" filter="url(#soft_t)"/></g>
   <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
   <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M611,132 A20,20 0 0 1 630,113 H852 A20,20 0 0 1 871,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
-  <clipPath id="cl31"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath><g clip-path="url(#cl31)"><rect x="479" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.7s infinite"/></g>
+  <clipPath id="cl59"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath><g clip-path="url(#cl59)"><rect x="479" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.7s infinite"/></g>
   </g>
-  <circle cx="741" cy="158" r="30" fill="#a78bfa" fill-opacity="0.10" stroke="#a78bfa" stroke-opacity="0.42" stroke-width="1.3"/>
-  <circle cx="741" cy="158" r="30" fill="none" stroke="#a78bfa" stroke-width="1.6" style="animation:unlock 3.4s ease-out 1.4s infinite;transform-origin:741px 158px"/>
+  <circle cx="741" cy="158" r="30" fill="#a78bfa" fill-opacity="0.09" stroke="#a78bfa" stroke-opacity="0.38" stroke-width="1.3"/>
+  <circle cx="741" cy="158" r="35" fill="none" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.7s infinite"/>
   <g transform="translate(727,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#a78bfa" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2.4 4.6 13.6h6.2l-1.2 8 8.8-11.2h-6.2Z"/></g></g>
   <text class="sans" x="741" y="206" text-anchor="middle" font-size="15.5" font-weight="700" fill="#eaf2f6">Contest Ranking</text>
   <text x="741" y="225" text-anchor="middle" font-size="10.8" fill="#93a8b4">CF Div3 #1178 · CC #1161</text>
@@ -210,14 +213,15 @@
   </g>
   <g class="ev4">
   <g>
-  <ellipse cx="965" cy="151" rx="110" ry="118" fill="#e4a2b1" opacity="0.18" filter="url(#soft_t)"/>
+  <clipPath id="tc60"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath>
+  <g clip-path="url(#tc60)"><ellipse cx="971" cy="143" rx="131" ry="122" fill="#e4a2b1" opacity="0.18" filter="url(#soft_t)"/></g>
   <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
   <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M893,132 A20,20 0 0 1 912,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
-  <clipPath id="cl32"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath><g clip-path="url(#cl32)"><rect x="761" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.55s infinite"/></g>
+  <clipPath id="cl61"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath><g clip-path="url(#cl61)"><rect x="761" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.55s infinite"/></g>
   </g>
-  <circle cx="1023" cy="158" r="30" fill="#e4a2b1" fill-opacity="0.10" stroke="#e4a2b1" stroke-opacity="0.42" stroke-width="1.3"/>
-  <circle cx="1023" cy="158" r="30" fill="none" stroke="#e4a2b1" stroke-width="1.6" style="animation:unlock 3.4s ease-out 1.65s infinite;transform-origin:1023px 158px"/>
+  <circle cx="1023" cy="158" r="30" fill="#e4a2b1" fill-opacity="0.09" stroke="#e4a2b1" stroke-opacity="0.38" stroke-width="1.3"/>
+  <circle cx="1023" cy="158" r="35" fill="none" stroke="#e4a2b1" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 1.0499999999999998s infinite"/>
   <g transform="translate(1009,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#e4a2b1" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 22 8l-10 4.8L2 8Z"/>
         <path d="M6.2 10.4v5.2c0 1.9 2.6 3.4 5.8 3.4s5.8-1.5 5.8-3.4v-5.2M22 8v5.6"/></g></g>
   <text class="sans" x="1023" y="206" text-anchor="middle" font-size="15.5" font-weight="700" fill="#eaf2f6">Academic Honours</text>
@@ -228,7 +232,8 @@
   </g>
   <g class="ev7">
   <g>
-  <ellipse cx="356" cy="339" rx="465" ry="28" fill="#fbe2a7" opacity="0.07" filter="url(#soft_t)"/>
+  <clipPath id="tc62"><path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z"/></clipPath>
+  <g clip-path="url(#tc62)"><ellipse cx="378" cy="337" rx="554" ry="29" fill="#fbe2a7" opacity="0.07" filter="url(#soft_t)"/></g>
   <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="url(#pane_t)"/>
   <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M47,345 A15,15 0 0 1 61,331 H1139 A15,15 0 0 1 1153,345" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
@@ -241,7 +246,7 @@
   <rect x="323" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   <g transform="translate(680,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#6fe7c8" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
         <path d="M4.2 17h14.4"/></g></g>
-  <text class="mono" x="708" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">26 PUBLIC REPOS</text>
+  <text class="mono" x="708" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">28 PUBLIC REPOS</text>
   <rect x="600" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   <g transform="translate(957,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#a78bfa" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
   <text class="mono" x="985" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">2.9 YEARS BUILDING</text>

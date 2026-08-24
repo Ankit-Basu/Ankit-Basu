@@ -433,6 +433,11 @@ def build_stats(d):
         weeks = 30
         recent = cal[-weeks * 7:]
         peak = max([n for _, n in recent] or [1]) or 1
+        # Bucket by quartiles of the active days. A linear ramp against the
+        # peak lumps almost everything into level 1 whenever one busy day
+        # dwarfs the rest, which flattens the whole grid to a single tone.
+        active = sorted(n for _, n in recent if n > 0)
+        cuts = [active[int(len(active) * q)] for q in (0.25, 0.5, 0.75)] if active else [1, 2, 3]
         body.append('<text class="mono" x="692" y="288" font-size="10.5" letter-spacing="3" '
                     'fill="%s" fill-opacity="0.9" font-weight="600">'
                     'CONTRIBUTION HEATMAP &#183; LAST 30 WEEKS</text>' % MINT)
@@ -441,16 +446,16 @@ def build_stats(d):
         for idx, (day, n) in enumerate(recent):
             cx = 694 + (idx // 7) * step
             cy = 308 + (idx % 7) * step
-            lvl = 0 if n == 0 else min(4, 1 + int(3.99 * n / peak))
-            fill = ["#ffffff", MINT, MINT, CREAM, CREAM][lvl]
-            op = [0.07, 0.32, 0.58, 0.75, 1.0][lvl]
+            lvl = 0 if n == 0 else 1 + sum(1 for c in cuts if n > c)
+            fill = ["#ffffff", MINT, MINT, MINT, MINT][lvl]
+            op = [0.06, 0.18, 0.38, 0.62, 0.92][lvl]
             dl = 0.6 + (idx // 7) * 0.018
             body.append(f'<rect x="{cx:.1f}" y="{cy:.1f}" width="{cell}" height="{cell}" rx="3" '
                         f'fill="{fill}" opacity="{op}" class="{ev(6 + idx // 7)}"/>')
         body.append(f'<text class="mono" x="692" y="425" font-size="9" fill="{DIM}">LESS</text>')
         for j in range(5):
-            fill = ["#ffffff", MINT, MINT, CREAM, CREAM][j]
-            op = [0.07, 0.32, 0.58, 0.75, 1.0][j]
+            fill = ["#ffffff", MINT, MINT, MINT, MINT][j]
+            op = [0.06, 0.18, 0.38, 0.62, 0.92][j]
             body.append(f'<rect x="{728 + j * 15}" y="416" width="11" height="11" rx="3" '
                         f'fill="{fill}" opacity="{op}"/>')
         body.append(f'<text class="mono" x="{728 + 5 * 15 + 4}" y="425" font-size="9" fill="{DIM}">MORE</text>')
@@ -490,7 +495,7 @@ def build_stats(d):
 def build_trophies(d):
     s = "t"
     css = """
-    @keyframes unlock{0%{opacity:0;transform:scale(.4)}45%{opacity:.95}100%{opacity:0;transform:scale(2.3)}}
+    @keyframes halo{0%,100%{opacity:.20}50%{opacity:.55}}
     """
     body = [section_header(s, PAD, 62, "TROPHY HALL", "Achievements & Milestones", VIOLET)]
 
@@ -502,11 +507,11 @@ def build_trophies(d):
         body.append(card(s, x, 112, tw, 196, r=20, tint=col, tint_op=0.18,
                          sheen=True, sheen_delay=i * 0.85))
         # medallion
-        body.append(f'<circle cx="{cx}" cy="158" r="30" fill="{col}" fill-opacity="0.10" '
-                    f'stroke="{col}" stroke-opacity="0.42" stroke-width="1.3"/>')
-        body.append(f'<circle cx="{cx}" cy="158" r="30" fill="none" stroke="{col}" stroke-width="1.6" '
-                    f'style="animation:unlock 3.4s ease-out {0.9 + i * 0.25}s infinite;'
-                    f'transform-origin:{cx}px 158px"/>')
+        body.append(f'<circle cx="{cx}" cy="158" r="30" fill="{col}" fill-opacity="0.09" '
+                    f'stroke="{col}" stroke-opacity="0.38" stroke-width="1.3"/>')
+        body.append(f'<circle cx="{cx}" cy="158" r="35" fill="none" stroke="{col}" '
+                    f'stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" '
+                    f'style="animation:halo 3.6s ease-in-out {i * 0.35}s infinite"/>')
         body.append(icon(ic, cx - 14, 144, 28, col, 1.6, 1.0))
         body.append(f'<text class="sans" x="{cx}" y="{206}" text-anchor="middle" font-size="15.5" '
                     f'font-weight="700" fill="{INK}">{esc(title)}</text>')

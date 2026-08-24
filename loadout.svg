@@ -36,14 +36,14 @@
 
     <radialGradient id="vig_l" cx="50%" cy="42%" r="72%">
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.28"/>
     </radialGradient>
 
-    <filter id="blob_l" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="58"/>
+    <filter id="blob_l" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="96"/>
     </filter>
-    <filter id="soft_l" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="9"/>
+    <filter id="soft_l" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="26"/>
     </filter>
     <filter id="glow_l" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="4" result="b"/>
@@ -63,7 +63,7 @@
     <filter id="grain_l" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+      <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
     <pattern id="grid_l" width="34" height="34" patternUnits="userSpaceOnUse">
@@ -137,7 +137,7 @@
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 </style>
 <rect width="1200" height="570" rx="26" fill="url(#bg_l)"/>
-  <g filter="url(#blob_l)" opacity="0.85">
+  <g filter="url(#blob_l)" opacity="0.55">
   <ellipse cx="180" cy="180" rx="250" ry="195" fill="#fbe2a7" opacity="0.22" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:180px 180px"/>
   <ellipse cx="620" cy="420" rx="240" ry="187" fill="#e4a2b1" opacity="0.2" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:620px 420px"/>
   <ellipse cx="1030" cy="200" rx="240" ry="187" fill="#a78bfa" opacity="0.22" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1030px 200px"/>
@@ -156,17 +156,18 @@
   </g>
   <g class="ev1">
   <g>
-  <ellipse cx="119" cy="141" rx="110" ry="74" fill="#fbe2a7" opacity="0.15" filter="url(#soft_l)"/>
+  <clipPath id="tc8"><path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z"/></clipPath>
+  <g clip-path="url(#tc8)"><ellipse cx="125" cy="136" rx="131" ry="77" fill="#fbe2a7" opacity="0.15" filter="url(#soft_l)"/></g>
   <path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
   <path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
   <path d="M47,134 A18,18 0 0 1 64,117 H290 A18,18 0 0 1 307,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
-  <clipPath id="cl2"><path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z"/></clipPath><g clip-path="url(#cl2)"><rect x="-85" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  <clipPath id="cl9"><path d="M64,116 H290 A18,18 0 0 1 308,134 V222 A18,18 0 0 1 290,240 H64 A18,18 0 0 1 46,222 V134 A18,18 0 0 1 64,116 Z"/></clipPath><g clip-path="url(#cl9)"><rect x="-85" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
   <g>
     <circle cx="100" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
-    <style>@keyframes rg3{from{stroke-dashoffset:157.3}to{stroke-dashoffset:15.1}}
-    .rg3{animation:rg3 2.20s cubic-bezier(.22,1,.36,1);}</style>
-    <circle class="rg3" cx="100" cy="178" r="30" fill="none" stroke="#fbe2a7" stroke-width="5"
+    <style>@keyframes rg10{from{stroke-dashoffset:157.3}to{stroke-dashoffset:15.1}}
+    .rg10{animation:rg10 2.20s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg10" cx="100" cy="178" r="30" fill="none" stroke="#fbe2a7" stroke-width="5"
             stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="15.1"
             transform="rotate(-90 100 178)" filter="url(#glowS_l)"/>
   </g>
@@ -178,17 +179,18 @@
   </g>
   <g class="ev2">
   <g>
-  <ellipse cx="401" cy="141" rx="110" ry="74" fill="#6fe7c8" opacity="0.15" filter="url(#soft_l)"/>
+  <clipPath id="tc11"><path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z"/></clipPath>
+  <g clip-path="url(#tc11)"><ellipse cx="407" cy="136" rx="131" ry="77" fill="#6fe7c8" opacity="0.15" filter="url(#soft_l)"/></g>
   <path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
   <path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
   <path d="M329,134 A18,18 0 0 1 346,117 H572 A18,18 0 0 1 589,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
-  <clipPath id="cl4"><path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z"/></clipPath><g clip-path="url(#cl4)"><rect x="197" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.8s infinite"/></g>
+  <clipPath id="cl12"><path d="M346,116 H572 A18,18 0 0 1 590,134 V222 A18,18 0 0 1 572,240 H346 A18,18 0 0 1 328,222 V134 A18,18 0 0 1 346,116 Z"/></clipPath><g clip-path="url(#cl12)"><rect x="197" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.8s infinite"/></g>
   </g>
   <g>
     <circle cx="382" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
-    <style>@keyframes rg5{from{stroke-dashoffset:161.4}to{stroke-dashoffset:37.7}}
-    .rg5{animation:rg5 2.32s cubic-bezier(.22,1,.36,1);}</style>
-    <circle class="rg5" cx="382" cy="178" r="30" fill="none" stroke="#6fe7c8" stroke-width="5"
+    <style>@keyframes rg13{from{stroke-dashoffset:161.4}to{stroke-dashoffset:37.7}}
+    .rg13{animation:rg13 2.32s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg13" cx="382" cy="178" r="30" fill="none" stroke="#6fe7c8" stroke-width="5"
             stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="37.7"
             transform="rotate(-90 382 178)" filter="url(#glowS_l)"/>
   </g>
@@ -199,17 +201,18 @@
   </g>
   <g class="ev3">
   <g>
-  <ellipse cx="683" cy="141" rx="110" ry="74" fill="#e4a2b1" opacity="0.15" filter="url(#soft_l)"/>
+  <clipPath id="tc14"><path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z"/></clipPath>
+  <g clip-path="url(#tc14)"><ellipse cx="689" cy="136" rx="131" ry="77" fill="#e4a2b1" opacity="0.15" filter="url(#soft_l)"/></g>
   <path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
   <path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
   <path d="M611,134 A18,18 0 0 1 628,117 H854 A18,18 0 0 1 871,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
-  <clipPath id="cl6"><path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z"/></clipPath><g clip-path="url(#cl6)"><rect x="479" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.6s infinite"/></g>
+  <clipPath id="cl15"><path d="M628,116 H854 A18,18 0 0 1 872,134 V222 A18,18 0 0 1 854,240 H628 A18,18 0 0 1 610,222 V134 A18,18 0 0 1 628,116 Z"/></clipPath><g clip-path="url(#cl15)"><rect x="479" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.6s infinite"/></g>
   </g>
   <g>
     <circle cx="664" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
-    <style>@keyframes rg7{from{stroke-dashoffset:164.1}to{stroke-dashoffset:52.8}}
-    .rg7{animation:rg7 2.44s cubic-bezier(.22,1,.36,1);}</style>
-    <circle class="rg7" cx="664" cy="178" r="30" fill="none" stroke="#e4a2b1" stroke-width="5"
+    <style>@keyframes rg16{from{stroke-dashoffset:164.1}to{stroke-dashoffset:52.8}}
+    .rg16{animation:rg16 2.44s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg16" cx="664" cy="178" r="30" fill="none" stroke="#e4a2b1" stroke-width="5"
             stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="52.8"
             transform="rotate(-90 664 178)" filter="url(#glowS_l)"/>
   </g>
@@ -220,17 +223,18 @@
   </g>
   <g class="ev4">
   <g>
-  <ellipse cx="965" cy="141" rx="110" ry="74" fill="#a78bfa" opacity="0.15" filter="url(#soft_l)"/>
+  <clipPath id="tc17"><path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z"/></clipPath>
+  <g clip-path="url(#tc17)"><ellipse cx="971" cy="136" rx="131" ry="77" fill="#a78bfa" opacity="0.15" filter="url(#soft_l)"/></g>
   <path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
   <path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
   <path d="M893,134 A18,18 0 0 1 910,117 H1136 A18,18 0 0 1 1153,134" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
-  <clipPath id="cl8"><path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z"/></clipPath><g clip-path="url(#cl8)"><rect x="761" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.4000000000000004s infinite"/></g>
+  <clipPath id="cl18"><path d="M910,116 H1136 A18,18 0 0 1 1154,134 V222 A18,18 0 0 1 1136,240 H910 A18,18 0 0 1 892,222 V134 A18,18 0 0 1 910,116 Z"/></clipPath><g clip-path="url(#cl18)"><rect x="761" y="116" width="131" height="124" fill="url(#sheen_l)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.4000000000000004s infinite"/></g>
   </g>
   <g>
     <circle cx="946" cy="178" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="5"/>
-    <style>@keyframes rg9{from{stroke-dashoffset:159.7}to{stroke-dashoffset:28.3}}
-    .rg9{animation:rg9 2.56s cubic-bezier(.22,1,.36,1);}</style>
-    <circle class="rg9" cx="946" cy="178" r="30" fill="none" stroke="#a78bfa" stroke-width="5"
+    <style>@keyframes rg19{from{stroke-dashoffset:159.7}to{stroke-dashoffset:28.3}}
+    .rg19{animation:rg19 2.56s cubic-bezier(.22,1,.36,1);}</style>
+    <circle class="rg19" cx="946" cy="178" r="30" fill="none" stroke="#a78bfa" stroke-width="5"
             stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="28.3"
             transform="rotate(-90 946 178)" filter="url(#glowS_l)"/>
   </g>
@@ -243,7 +247,8 @@
   </g>
   <g class="ev5">
   <g>
-  <ellipse cx="246" cy="304" rx="301" ry="120" fill="#fbe2a7" opacity="0.08" filter="url(#soft_l)"/>
+  <clipPath id="tc20"><path d="M66,264 H742 A20,20 0 0 1 762,284 V444 A20,20 0 0 1 742,464 H66 A20,20 0 0 1 46,444 V284 A20,20 0 0 1 66,264 Z"/></clipPath>
+  <g clip-path="url(#tc20)"><ellipse cx="261" cy="296" rx="358" ry="124" fill="#fbe2a7" opacity="0.08" filter="url(#soft_l)"/></g>
   <path d="M66,264 H742 A20,20 0 0 1 762,284 V444 A20,20 0 0 1 742,464 H66 A20,20 0 0 1 46,444 V284 A20,20 0 0 1 66,264 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
   <path d="M66,264 H742 A20,20 0 0 1 762,284 V444 A20,20 0 0 1 742,464 H66 A20,20 0 0 1 46,444 V284 A20,20 0 0 1 66,264 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
   <path d="M47,284 A20,20 0 0 1 66,265 H742 A20,20 0 0 1 761,284" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
@@ -278,7 +283,8 @@
   </g>
   <g class="ev6">
   <g>
-  <ellipse cx="886" cy="304" rx="156" ry="120" fill="#a78bfa" opacity="0.1" filter="url(#soft_l)"/>
+  <clipPath id="tc21"><path d="M802,264 H1134 A20,20 0 0 1 1154,284 V444 A20,20 0 0 1 1134,464 H802 A20,20 0 0 1 782,444 V284 A20,20 0 0 1 802,264 Z"/></clipPath>
+  <g clip-path="url(#tc21)"><ellipse cx="894" cy="296" rx="186" ry="124" fill="#a78bfa" opacity="0.1" filter="url(#soft_l)"/></g>
   <path d="M802,264 H1134 A20,20 0 0 1 1154,284 V444 A20,20 0 0 1 1134,464 H802 A20,20 0 0 1 782,444 V284 A20,20 0 0 1 802,264 Z" fill="url(#pane_l)" filter="url(#drop_l)"/>
   <path d="M802,264 H1134 A20,20 0 0 1 1154,284 V444 A20,20 0 0 1 1134,464 H802 A20,20 0 0 1 782,444 V284 A20,20 0 0 1 802,264 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
   <path d="M783,284 A20,20 0 0 1 802,265 H1134 A20,20 0 0 1 1153,284" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
@@ -289,42 +295,43 @@
   <text class="mono" x="1128" y="326" text-anchor="end" font-size="11" font-weight="700" fill="#fbe2a7">94%</text>
   <g>
     <rect x="808" y="333" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
-    <style>@keyframes xp10{from{width:54.1px}to{width:300.8px}}
-    .xp10{animation:xp10 2.40s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp10" x="808" y="333" width="300.8" height="6" rx="3.0" fill="#fbe2a7" filter="url(#glowS_l)"/>
-    <rect class="xp10" x="808" y="333" width="300.8" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp22{from{width:54.1px}to{width:300.8px}}
+    .xp22{animation:xp22 2.40s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp22" x="808" y="333" width="300.8" height="6" rx="3.0" fill="#fbe2a7" filter="url(#glowS_l)"/>
+    <rect class="xp22" x="808" y="333" width="300.8" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text x="808" y="362" font-size="11.6" fill="#93a8b4">Full Stack (MERN)</text>
   <text class="mono" x="1128" y="362" text-anchor="end" font-size="11" font-weight="700" fill="#e4a2b1">90%</text>
   <g>
     <rect x="808" y="369" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
-    <style>@keyframes xp11{from{width:51.8px}to{width:288.0px}}
-    .xp11{animation:xp11 2.54s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp11" x="808" y="369" width="288.0" height="6" rx="3.0" fill="#e4a2b1" filter="url(#glowS_l)"/>
-    <rect class="xp11" x="808" y="369" width="288.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp23{from{width:51.8px}to{width:288.0px}}
+    .xp23{animation:xp23 2.54s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp23" x="808" y="369" width="288.0" height="6" rx="3.0" fill="#e4a2b1" filter="url(#glowS_l)"/>
+    <rect class="xp23" x="808" y="369" width="288.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text x="808" y="398" font-size="11.6" fill="#93a8b4">Cloud &amp; DevOps</text>
   <text class="mono" x="1128" y="398" text-anchor="end" font-size="11" font-weight="700" fill="#6fe7c8">84%</text>
   <g>
     <rect x="808" y="405" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
-    <style>@keyframes xp12{from{width:48.4px}to{width:268.8px}}
-    .xp12{animation:xp12 2.68s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp12" x="808" y="405" width="268.8" height="6" rx="3.0" fill="#6fe7c8" filter="url(#glowS_l)"/>
-    <rect class="xp12" x="808" y="405" width="268.8" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp24{from{width:48.4px}to{width:268.8px}}
+    .xp24{animation:xp24 2.68s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp24" x="808" y="405" width="268.8" height="6" rx="3.0" fill="#6fe7c8" filter="url(#glowS_l)"/>
+    <rect class="xp24" x="808" y="405" width="268.8" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text x="808" y="434" font-size="11.6" fill="#93a8b4">AI / Deep Learning</text>
   <text class="mono" x="1128" y="434" text-anchor="end" font-size="11" font-weight="700" fill="#a78bfa">80%</text>
   <g>
     <rect x="808" y="441" width="320" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.1"/>
-    <style>@keyframes xp13{from{width:46.1px}to{width:256.0px}}
-    .xp13{animation:xp13 2.82s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp13" x="808" y="441" width="256.0" height="6" rx="3.0" fill="#a78bfa" filter="url(#glowS_l)"/>
-    <rect class="xp13" x="808" y="441" width="256.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp25{from{width:46.1px}to{width:256.0px}}
+    .xp25{animation:xp25 2.82s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp25" x="808" y="441" width="256.0" height="6" rx="3.0" fill="#a78bfa" filter="url(#glowS_l)"/>
+    <rect class="xp25" x="808" y="441" width="256.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   </g>
   <g class="ev7">
   <g>
-  <ellipse cx="356" cy="499" rx="465" ry="28" fill="#6fe7c8" opacity="0.08" filter="url(#soft_l)"/>
+  <clipPath id="tc26"><path d="M61,490 H1139 A15,15 0 0 1 1154,505 V521 A15,15 0 0 1 1139,536 H61 A15,15 0 0 1 46,521 V505 A15,15 0 0 1 61,490 Z"/></clipPath>
+  <g clip-path="url(#tc26)"><ellipse cx="378" cy="497" rx="554" ry="29" fill="#6fe7c8" opacity="0.08" filter="url(#soft_l)"/></g>
   <path d="M61,490 H1139 A15,15 0 0 1 1154,505 V521 A15,15 0 0 1 1139,536 H61 A15,15 0 0 1 46,521 V505 A15,15 0 0 1 61,490 Z" fill="url(#pane_l)"/>
   <path d="M61,490 H1139 A15,15 0 0 1 1154,505 V521 A15,15 0 0 1 1139,536 H61 A15,15 0 0 1 46,521 V505 A15,15 0 0 1 61,490 Z" fill="none" stroke="url(#rim_l)" stroke-width="1.2"/>
   <path d="M47,505 A15,15 0 0 1 61,491 H1139 A15,15 0 0 1 1153,505" fill="none" stroke="url(#spec_l)" stroke-width="1.4"/>
