@@ -239,10 +239,10 @@
   <path d="M47,345 A15,15 0 0 1 61,331 H1139 A15,15 0 0 1 1153,345" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   </g>
   <g transform="translate(126,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#fbe2a7" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g>
-  <text class="mono" x="154" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">24 STARS EARNED</text>
+  <text class="mono" x="154" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">25 STARS EARNED</text>
   <g transform="translate(403,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#e4a2b1" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.6"/><path d="M2.8 20.4c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/>
         <path d="M16.4 4.8a3.6 3.6 0 0 1 0 6.6M17.6 14.6c2.2.7 3.6 2.7 3.6 5.1"/></g></g>
-  <text class="mono" x="431" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">23 FOLLOWERS</text>
+  <text class="mono" x="431" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">22 FOLLOWERS</text>
   <rect x="323" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   <g transform="translate(680,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#6fe7c8" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
         <path d="M4.2 17h14.4"/></g></g>

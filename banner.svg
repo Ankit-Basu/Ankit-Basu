@@ -255,10 +255,10 @@
     <circle cx="940" cy="182" r="84" fill="#081219" fill-opacity="0.45"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="8"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="url(#ob_h)" stroke-width="8"
-            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="258.6"
+            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="237.5"
             transform="rotate(-90 940 182)" filter="url(#glow_h)">
-      <animate attributeName="stroke-dashoffset" from="479.3"
-               to="258.6" dur="2.1s" fill="freeze"
+      <animate attributeName="stroke-dashoffset" from="475.5"
+               to="237.5" dur="2.1s" fill="freeze"
                calcMode="spline" keySplines="0.22 1 0.36 1"/>
     </circle>
     <clipPath id="av_h"><circle cx="940" cy="182" r="66"/></clipPath>
@@ -285,7 +285,7 @@
   </g>
     <text class="mono" x="940" y="288" text-anchor="middle" font-size="10.4" letter-spacing="2.4">
       <tspan fill="#e4a2b1" font-weight="600">ARCHITECT</tspan><tspan fill="#5f7683">  &#183;  </tspan
-      ><tspan fill="#fbe2a7">1,851 XP</tspan></text>
+      ><tspan fill="#fbe2a7">1,855 XP</tspan></text>
   </g>
   <g class="ev7">
   <g>
@@ -309,7 +309,7 @@
   <path d="M879,327 A15,15 0 0 1 893,313 H987 A15,15 0 0 1 1001,327" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
   </g>
   <g transform="translate(931.0,328) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#e4a2b1" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g>
-  <text class="sans" x="940.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">24</text>
+  <text class="sans" x="940.0" y="372" text-anchor="middle" font-size="24" font-weight="800" fill="#eaf2f6">25</text>
   <text class="mono" x="940.0" y="389" text-anchor="middle" font-size="8.6" letter-spacing="1.9" fill="#e4a2b1" fill-opacity="0.85">STARS</text>
   </g>
   <g class="ev9">
