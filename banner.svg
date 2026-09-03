@@ -255,10 +255,10 @@
     <circle cx="940" cy="182" r="84" fill="#081219" fill-opacity="0.45"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="8"/>
     <circle cx="940" cy="182" r="84" fill="none" stroke="url(#ob_h)" stroke-width="8"
-            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="480.3"
+            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="395.8"
             transform="rotate(-90 940 182)" filter="url(#glow_h)">
-      <animate attributeName="stroke-dashoffset" from="519.2"
-               to="480.3" dur="2.1s" fill="freeze"
+      <animate attributeName="stroke-dashoffset" from="504.0"
+               to="395.8" dur="2.1s" fill="freeze"
                calcMode="spline" keySplines="0.22 1 0.36 1"/>
     </circle>
     <clipPath id="av_h"><circle cx="940" cy="182" r="66"/></clipPath>
@@ -285,7 +285,7 @@
   </g>
     <text class="mono" x="940" y="288" text-anchor="middle" font-size="10.4" letter-spacing="2.4">
       <tspan fill="#e4a2b1" font-weight="600">ARCHITECT</tspan><tspan fill="#5f7683">  &#183;  </tspan
-      ><tspan fill="#fbe2a7">1,909 XP</tspan></text>
+      ><tspan fill="#fbe2a7">1,925 XP</tspan></text>
   </g>
   <g class="ev7">
   <g>
