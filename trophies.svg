@@ -246,7 +246,7 @@
   <rect x="323" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   <g transform="translate(680,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#6fe7c8" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
         <path d="M4.2 17h14.4"/></g></g>
-  <text class="mono" x="708" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">28 PUBLIC REPOS</text>
+  <text class="mono" x="708" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">29 PUBLIC REPOS</text>
   <rect x="600" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   <g transform="translate(957,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#a78bfa" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
   <text class="mono" x="985" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">2.9 YEARS BUILDING</text>
