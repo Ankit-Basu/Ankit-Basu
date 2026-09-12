@@ -249,7 +249,7 @@
   <text class="mono" x="708" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">30 PUBLIC REPOS</text>
   <rect x="600" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   <g transform="translate(957,342) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#a78bfa" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
-  <text class="mono" x="985" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">2.9 YEARS BUILDING</text>
+  <text class="mono" x="985" y="359" font-size="10.4" letter-spacing="1.8" fill="#93a8b4" font-weight="600">3.0 YEARS BUILDING</text>
   <rect x="877" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   </g>
 <rect width="1200" height="400" rx="26" filter="url(#grain_t)" opacity="0.9" style="mix-blend-mode:overlay"/>
