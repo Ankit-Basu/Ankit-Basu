@@ -159,7 +159,7 @@
   </g>
   <g class="ev1"><g><rect x="251" y="33" width="122.2" height="24" rx="0" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.4"/><rect x="248" y="30" width="122.2" height="24" rx="0" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.4"/></g><text class="mono" x="309.1" y="46.5" text-anchor="middle" font-size="10.4" font-weight="800" letter-spacing="1.6" fill="#0a0f14">CURRENT QUEST</text></g>
   <text class="sans ev2" x="252" y="90" font-size="25" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">The road ahead</text>
-  <clipPath id="say21"><rect class="say" x="250" y="106" width="495.4" height="22"/></clipPath><text class="mono" x="252" y="122" font-size="13" fill="#9da7b3" textLength="491.4" lengthAdjust="spacingAndGlyphs" clip-path="url(#say21)">The story is not finished. You get to choose what happens next.</text>
+  <clipPath id="say22"><rect class="say" x="250" y="106" width="495.4" height="22"/></clipPath><text class="mono" x="252" y="122" font-size="13" fill="#9da7b3" textLength="491.4" lengthAdjust="spacingAndGlyphs" clip-path="url(#say22)">The story is not finished. You get to choose what happens next.</text>
   <path class="nxt" d="M1117 122h14l-7 8z" fill="#ff4fa0"/>
   <text class="mono ev3" x="1128" y="74" text-anchor="end" font-size="9.4" letter-spacing="2" fill="#6e7681">CH 06/06 &#183; FINAL CHAPTER</text>
   <rect x="939" y="84" width="9" height="10" fill="#ff4fa0" style="animation:seg 3.67s linear -3.67s infinite"/>

@@ -170,9 +170,9 @@
   <g class="ev3"><g transform="rotate(-2 160.0 313.0)"><g><rect x="50" y="304" width="228" height="26" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/><rect x="46" y="300" width="228" height="26" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="160.0" y="316.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">POST-CREDITS SCENE: VOTE ABOVE ↑</text></g></g>
   <g>
   <path d="M661,40 H1133 A18,18 0 0 1 1151,58 V322 A18,18 0 0 1 1133,340 H661 A18,18 0 0 1 643,322 V58 A18,18 0 0 1 661,40 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg15" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#8b5cff" stop-opacity="0.272"/><stop offset="1" stop-color="#8b5cff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg16" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#8b5cff" stop-opacity="0.272"/><stop offset="1" stop-color="#8b5cff" stop-opacity="0"/></radialGradient>
   <path d="M658,40 H1136 A18,18 0 0 1 1154,58 V322 A18,18 0 0 1 1136,340 H658 A18,18 0 0 1 640,322 V58 A18,18 0 0 1 658,40 Z" fill="#0d1117"/>
-  <path d="M658,40 H1136 A18,18 0 0 1 1154,58 V322 A18,18 0 0 1 1136,340 H658 A18,18 0 0 1 640,322 V58 A18,18 0 0 1 658,40 Z" fill="url(#tg15)"/>
+  <path d="M658,40 H1136 A18,18 0 0 1 1154,58 V322 A18,18 0 0 1 1136,340 H658 A18,18 0 0 1 640,322 V58 A18,18 0 0 1 658,40 Z" fill="url(#tg16)"/>
   <path d="M658,40 H1136 A18,18 0 0 1 1154,58 V322 A18,18 0 0 1 1136,340 H658 A18,18 0 0 1 640,322 V58 A18,18 0 0 1 658,40 Z" fill="url(#pane_e)"/>
   <path d="M658,40 H1136 A18,18 0 0 1 1154,58 V322 A18,18 0 0 1 1136,340 H658 A18,18 0 0 1 640,322 V58 A18,18 0 0 1 658,40 Z" fill="none" stroke="url(#rim_e)" stroke-width="1.2"/>
   <path d="M641,58 A18,18 0 0 1 658,41 H1136 A18,18 0 0 1 1153,58" fill="none" stroke="url(#spec_e)" stroke-width="1.4"/>

@@ -199,3 +199,29 @@ CREDITS = [
 
 MARQUEE = ["OPEN TO SWE / AI ROLES", "SHIPPING SAFETY TECH", "AI AGENTS", "FULL-STACK SYSTEMS",
            "400+ DSA", "5x HACKATHON WINS", "BUILT IN JALANDHAR"]
+
+# ------------------------------------------------------------ skill tree
+# Branches of (skill, unlocked). Locked nodes are what's being learned now.
+SKILL_TREE = [
+    ("FRONTEND", CREAM, [("HTML / CSS", True), ("JavaScript", True), ("React", True),
+                         ("Next.js", True), ("Three.js", True)]),
+    ("BACKEND", ROSE, [("Java", True), ("Node / Express", True), ("FastAPI", True),
+                       ("Django", True), ("Distributed Sys", False)]),
+    ("AI / ML", MINT, [("Python", True), ("PyTorch", True), ("LangChain", True),
+                       ("Speech ML", False), ("MLOps", False)]),
+    ("CLOUD", VIOLET, [("Linux", True), ("Docker", True), ("Kubernetes", True),
+                       ("AWS", True), ("Rust", False)]),
+]
+SKILL_ROOT = "DSA + C++"
+
+# ------------------------------------------------------------ boss fight
+# The current main quest, drawn as a boss. (phase, label, state) where state
+# is done / now / next.
+BOSS = dict(name="THE VOICE CLONE", quest="Pratirodh", repo="Pratirodh",
+            lore="Fakes a family member's voice and calls asking for money.",
+            weak="Weak point: the phone line leaves a fingerprint.",
+            moves=[("0", "Foundation & tooling", "done"),
+                   ("1", "Data engineering", "now"),
+                   ("2", "Telephony simulator", "next"),
+                   ("4", "Channel-aware detector", "next"),
+                   ("5", "Evidence fusion", "next")])

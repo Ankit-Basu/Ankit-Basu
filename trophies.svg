@@ -167,14 +167,14 @@
   <g class="ev1">
   <g>
   <path d="M69,112 H285 A20,20 0 0 1 305,132 V288 A20,20 0 0 1 285,308 H69 A20,20 0 0 1 49,288 V132 A20,20 0 0 1 69,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg94" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.306"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg95" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.306"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
   <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="#0d1117"/>
-  <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="url(#tg94)"/>
+  <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="url(#tg95)"/>
   <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_t)"/>
   <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M47,132 A20,20 0 0 1 66,113 H288 A20,20 0 0 1 307,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="66" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl95"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl95)"><rect x="-85" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  <clipPath id="cl96"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl96)"><rect x="-85" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
   <circle cx="177" cy="158" r="30" fill="#ffc857" fill-opacity="0.09" stroke="#ffc857" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="177" cy="158" r="35" fill="none" stroke="#ffc857" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.0s infinite"/>
@@ -189,14 +189,14 @@
   <g class="ev2">
   <g>
   <path d="M351,112 H567 A20,20 0 0 1 587,132 V288 A20,20 0 0 1 567,308 H351 A20,20 0 0 1 331,288 V132 A20,20 0 0 1 351,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg96" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg97" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
   <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="#0d1117"/>
-  <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="url(#tg96)"/>
+  <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="url(#tg97)"/>
   <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="url(#pane_t)"/>
   <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M329,132 A20,20 0 0 1 348,113 H570 A20,20 0 0 1 589,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="348" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl97"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath><g clip-path="url(#cl97)"><rect x="197" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.85s infinite"/></g>
+  <clipPath id="cl98"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath><g clip-path="url(#cl98)"><rect x="197" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.85s infinite"/></g>
   </g>
   <circle cx="459" cy="158" r="30" fill="#2ee6ff" fill-opacity="0.09" stroke="#2ee6ff" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="459" cy="158" r="35" fill="none" stroke="#2ee6ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.35s infinite"/>
@@ -210,14 +210,14 @@
   <g class="ev3">
   <g>
   <path d="M633,112 H849 A20,20 0 0 1 869,132 V288 A20,20 0 0 1 849,308 H633 A20,20 0 0 1 613,288 V132 A20,20 0 0 1 633,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg98" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.306"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg99" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.306"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
   <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="#0d1117"/>
-  <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="url(#tg98)"/>
+  <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="url(#tg99)"/>
   <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="url(#pane_t)"/>
   <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M611,132 A20,20 0 0 1 630,113 H852 A20,20 0 0 1 871,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="630" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl99"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath><g clip-path="url(#cl99)"><rect x="479" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.7s infinite"/></g>
+  <clipPath id="cl100"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath><g clip-path="url(#cl100)"><rect x="479" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.7s infinite"/></g>
   </g>
   <circle cx="741" cy="158" r="30" fill="#b6ff4f" fill-opacity="0.09" stroke="#b6ff4f" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="741" cy="158" r="35" fill="none" stroke="#b6ff4f" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.7s infinite"/>
@@ -231,14 +231,14 @@
   <g class="ev4">
   <g>
   <path d="M915,112 H1131 A20,20 0 0 1 1151,132 V288 A20,20 0 0 1 1131,308 H915 A20,20 0 0 1 895,288 V132 A20,20 0 0 1 915,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg100" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg101" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
   <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="#0d1117"/>
-  <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="url(#tg100)"/>
+  <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="url(#tg101)"/>
   <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="url(#pane_t)"/>
   <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M893,132 A20,20 0 0 1 912,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="912" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl101"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath><g clip-path="url(#cl101)"><rect x="761" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.55s infinite"/></g>
+  <clipPath id="cl102"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath><g clip-path="url(#cl102)"><rect x="761" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.55s infinite"/></g>
   </g>
   <circle cx="1023" cy="158" r="30" fill="#ff4fa0" fill-opacity="0.09" stroke="#ff4fa0" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="1023" cy="158" r="35" fill="none" stroke="#ff4fa0" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 1.0499999999999998s infinite"/>
@@ -252,9 +252,9 @@
   </g>
   <g class="ev7">
   <g>
-  <radialGradient id="tg102" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.119"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg103" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.119"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
   <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="#0d1117"/>
-  <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="url(#tg102)"/>
+  <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="url(#tg103)"/>
   <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="url(#pane_t)"/>
   <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M47,345 A15,15 0 0 1 61,331 H1139 A15,15 0 0 1 1153,345" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>

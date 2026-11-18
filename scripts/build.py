@@ -19,6 +19,7 @@ from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET,  # noq
 from icons import icon  # noqa: E402
 import story  # noqa: E402
 import arcade  # noqa: E402
+import game  # noqa: E402
 from design import sticker, brut, INKK  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -461,6 +462,7 @@ def main():
     d = load()
     print("building panels from data synced %s" % d.get("synced_at"))
     write("banner.svg", story.build_hero(d))
+    write("hud.svg", game.build_hud(d))
     write("marquee.svg", arcade.build_marquee())
     write("marquee2.svg", arcade.build_marquee(flip=True))
     write("credits.svg", arcade.build_credits(d))
@@ -468,12 +470,15 @@ def main():
         write("chapter%d.svg" % (i + 1), story.build_chapter(i))
     write("timeline.svg", story.build_timeline())
     write("loadout.svg", build_loadout())
+    write("skilltree.svg", game.build_skilltree())
     write("projects.svg", story.build_vault(d))
     write("stats.svg", build_stats(d))
     write("city.svg", story.build_city(d))
     write("companion.svg", arcade.build_companion(d))
     write("ticker.svg", arcade.build_ticker(d))
     write("trophies.svg", build_trophies(d))
+    boss_pct = next((q[2] for q in P.QUESTS if q[0] == P.BOSS["quest"]), 0)
+    write("boss.svg", game.build_boss(boss_pct))
     write("questlog.svg", build_questlog())
     write("votes.svg", arcade.build_votes())
     write("footer.svg", build_footer())

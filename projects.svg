@@ -162,14 +162,14 @@
   <g class="ev1">
   <g>
   <path d="M69,112 H564 A20,20 0 0 1 584,132 V344 A20,20 0 0 1 564,364 H69 A20,20 0 0 1 49,344 V132 A20,20 0 0 1 69,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg51" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.306"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg52" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.306"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
   <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="#0d1117"/>
-  <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="url(#tg51)"/>
+  <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="url(#tg52)"/>
   <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_p)"/>
   <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,132 A20,20 0 0 1 66,113 H567 A20,20 0 0 1 586,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="66" y="361.5" width="501" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl52"><path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl52)"><rect x="-224" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  <clipPath id="cl53"><path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl53)"><rect x="-224" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
   <rect x="46" y="138" width="3" height="200" rx="1.5" fill="#ffc857" opacity="0.85"/>
   <g transform="rotate(-3 103.5 140.5)"><g><rect x="69" y="133" width="75" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66" y="130" width="75" height="21" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="103.5" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">LEGENDARY</text></g>
@@ -191,14 +191,14 @@
   <g class="ev2">
   <g>
   <path d="M636,112 H1131 A20,20 0 0 1 1151,132 V344 A20,20 0 0 1 1131,364 H636 A20,20 0 0 1 616,344 V132 A20,20 0 0 1 636,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg53" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.306"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg54" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.306"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
   <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="#0d1117"/>
-  <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="url(#tg53)"/>
+  <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="url(#tg54)"/>
   <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="url(#pane_p)"/>
   <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M614,132 A20,20 0 0 1 633,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="633" y="361.5" width="501" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl54"><path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z"/></clipPath><g clip-path="url(#cl54)"><rect x="342" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
+  <clipPath id="cl55"><path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z"/></clipPath><g clip-path="url(#cl55)"><rect x="342" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
   </g>
   <rect x="613" y="138" width="3" height="200" rx="1.5" fill="#b6ff4f" opacity="0.85"/>
   <g transform="rotate(-3 662.0 140.5)"><g><rect x="636" y="133" width="58" height="21" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/><rect x="633" y="130" width="58" height="21" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="662.0" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">MYTHIC</text></g>
@@ -217,14 +217,14 @@
   <g class="ev3">
   <g>
   <path d="M69.0,388 H285.0 A20,20 0 0 1 305.0,408 V600 A20,20 0 0 1 285.0,620 H69.0 A20,20 0 0 1 49.0,600 V408 A20,20 0 0 1 69.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg55" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg56" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
   <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="#0d1117"/>
-  <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="url(#tg55)"/>
+  <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="url(#tg56)"/>
   <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="url(#pane_p)"/>
   <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47.0,408 A20,20 0 0 1 66.0,389 H288.0 A20,20 0 0 1 307.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="66" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl56"><path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z"/></clipPath><g clip-path="url(#cl56)"><rect x="-85" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
+  <clipPath id="cl57"><path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z"/></clipPath><g clip-path="url(#cl57)"><rect x="-85" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
   </g>
   <rect x="46.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85"/>
   <g transform="rotate(-3 89.5 416.5)"><g><rect x="69.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66.0" y="406" width="47" height="21" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="89.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
@@ -242,14 +242,14 @@
   <g class="ev4">
   <g>
   <path d="M351.0,388 H567.0 A20,20 0 0 1 587.0,408 V600 A20,20 0 0 1 567.0,620 H351.0 A20,20 0 0 1 331.0,600 V408 A20,20 0 0 1 351.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg57" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg58" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
   <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="#0d1117"/>
-  <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="url(#tg57)"/>
+  <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="url(#tg58)"/>
   <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="url(#pane_p)"/>
   <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M329.0,408 A20,20 0 0 1 348.0,389 H570.0 A20,20 0 0 1 589.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="348" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl58"><path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z"/></clipPath><g clip-path="url(#cl58)"><rect x="197" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
+  <clipPath id="cl59"><path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z"/></clipPath><g clip-path="url(#cl59)"><rect x="197" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
   </g>
   <rect x="328.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85"/>
   <g transform="rotate(-3 371.5 416.5)"><g><rect x="351.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="348.0" y="406" width="47" height="21" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="371.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
@@ -269,14 +269,14 @@
   <g class="ev5">
   <g>
   <path d="M633.0,388 H849.0 A20,20 0 0 1 869.0,408 V600 A20,20 0 0 1 849.0,620 H633.0 A20,20 0 0 1 613.0,600 V408 A20,20 0 0 1 633.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg59" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg60" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
   <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="#0d1117"/>
-  <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="url(#tg59)"/>
+  <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="url(#tg60)"/>
   <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="url(#pane_p)"/>
   <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M611.0,408 A20,20 0 0 1 630.0,389 H852.0 A20,20 0 0 1 871.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="630" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl60"><path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z"/></clipPath><g clip-path="url(#cl60)"><rect x="479" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
+  <clipPath id="cl61"><path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z"/></clipPath><g clip-path="url(#cl61)"><rect x="479" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
   </g>
   <rect x="610.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85"/>
   <g transform="rotate(-3 653.5 416.5)"><g><rect x="633.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="630.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="653.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
@@ -294,14 +294,14 @@
   <g class="ev6">
   <g>
   <path d="M915.0,388 H1131.0 A20,20 0 0 1 1151.0,408 V600 A20,20 0 0 1 1131.0,620 H915.0 A20,20 0 0 1 895.0,600 V408 A20,20 0 0 1 915.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg61" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg62" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
   <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="#0d1117"/>
-  <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="url(#tg61)"/>
+  <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="url(#tg62)"/>
   <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="url(#pane_p)"/>
   <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M893.0,408 A20,20 0 0 1 912.0,389 H1134.0 A20,20 0 0 1 1153.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="912" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl62"><path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z"/></clipPath><g clip-path="url(#cl62)"><rect x="761" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 4.5s infinite"/></g>
+  <clipPath id="cl63"><path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z"/></clipPath><g clip-path="url(#cl63)"><rect x="761" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 4.5s infinite"/></g>
   </g>
   <rect x="892.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85"/>
   <g transform="rotate(-3 935.5 416.5)"><g><rect x="915.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="912.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="935.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
@@ -317,9 +317,9 @@
   </g>
   <g class="ev8"><g>
   <path d="M67,646 H1133 A18,18 0 0 1 1151,664 V740 A18,18 0 0 1 1133,758 H67 A18,18 0 0 1 49,740 V664 A18,18 0 0 1 67,646 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg63" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.170"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg64" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.170"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
   <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="#0d1117"/>
-  <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="url(#tg63)"/>
+  <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="url(#tg64)"/>
   <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="url(#pane_p)"/>
   <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,664 A18,18 0 0 1 64,647 H1136 A18,18 0 0 1 1153,664" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>

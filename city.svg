@@ -166,14 +166,14 @@
   <g class="ev3">
   <g>
   <path d="M919,112 H1135 A16,16 0 0 1 1151,128 V174 A16,16 0 0 1 1135,190 H919 A16,16 0 0 1 903,174 V128 A16,16 0 0 1 919,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg81" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg82" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
   <path d="M916,112 H1138 A16,16 0 0 1 1154,128 V174 A16,16 0 0 1 1138,190 H916 A16,16 0 0 1 900,174 V128 A16,16 0 0 1 916,112 Z" fill="#0d1117"/>
-  <path d="M916,112 H1138 A16,16 0 0 1 1154,128 V174 A16,16 0 0 1 1138,190 H916 A16,16 0 0 1 900,174 V128 A16,16 0 0 1 916,112 Z" fill="url(#tg81)"/>
+  <path d="M916,112 H1138 A16,16 0 0 1 1154,128 V174 A16,16 0 0 1 1138,190 H916 A16,16 0 0 1 900,174 V128 A16,16 0 0 1 916,112 Z" fill="url(#tg82)"/>
   <path d="M916,112 H1138 A16,16 0 0 1 1154,128 V174 A16,16 0 0 1 1138,190 H916 A16,16 0 0 1 900,174 V128 A16,16 0 0 1 916,112 Z" fill="url(#pane_y)"/>
   <path d="M916,112 H1138 A16,16 0 0 1 1154,128 V174 A16,16 0 0 1 1138,190 H916 A16,16 0 0 1 900,174 V128 A16,16 0 0 1 916,112 Z" fill="none" stroke="url(#rim_y)" stroke-width="1.2"/>
   <path d="M901,128 A16,16 0 0 1 916,113 H1138 A16,16 0 0 1 1153,128" fill="none" stroke="url(#spec_y)" stroke-width="1.4"/>
   <rect x="916" y="187.5" width="222" height="1.2" rx="0.6" fill="url(#refr_y)"/>
-  <clipPath id="cl82"><path d="M916,112 H1138 A16,16 0 0 1 1154,128 V174 A16,16 0 0 1 1138,190 H916 A16,16 0 0 1 900,174 V128 A16,16 0 0 1 916,112 Z"/></clipPath><g clip-path="url(#cl82)"><rect x="773" y="112" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0s infinite"/></g>
+  <clipPath id="cl83"><path d="M916,112 H1138 A16,16 0 0 1 1154,128 V174 A16,16 0 0 1 1138,190 H916 A16,16 0 0 1 900,174 V128 A16,16 0 0 1 916,112 Z"/></clipPath><g clip-path="url(#cl83)"><rect x="773" y="112" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0s infinite"/></g>
   </g>
   <g transform="translate(918,128) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#ffc857" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g>
   <text class="sans" x="918" y="175" font-size="26" font-weight="800" fill="#f0f3f6">1,159</text>
@@ -182,14 +182,14 @@
   <g class="ev4">
   <g>
   <path d="M919,204 H1135 A16,16 0 0 1 1151,220 V266 A16,16 0 0 1 1135,282 H919 A16,16 0 0 1 903,266 V220 A16,16 0 0 1 919,204 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg83" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.255"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg84" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.255"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
   <path d="M916,204 H1138 A16,16 0 0 1 1154,220 V266 A16,16 0 0 1 1138,282 H916 A16,16 0 0 1 900,266 V220 A16,16 0 0 1 916,204 Z" fill="#0d1117"/>
-  <path d="M916,204 H1138 A16,16 0 0 1 1154,220 V266 A16,16 0 0 1 1138,282 H916 A16,16 0 0 1 900,266 V220 A16,16 0 0 1 916,204 Z" fill="url(#tg83)"/>
+  <path d="M916,204 H1138 A16,16 0 0 1 1154,220 V266 A16,16 0 0 1 1138,282 H916 A16,16 0 0 1 900,266 V220 A16,16 0 0 1 916,204 Z" fill="url(#tg84)"/>
   <path d="M916,204 H1138 A16,16 0 0 1 1154,220 V266 A16,16 0 0 1 1138,282 H916 A16,16 0 0 1 900,266 V220 A16,16 0 0 1 916,204 Z" fill="url(#pane_y)"/>
   <path d="M916,204 H1138 A16,16 0 0 1 1154,220 V266 A16,16 0 0 1 1138,282 H916 A16,16 0 0 1 900,266 V220 A16,16 0 0 1 916,204 Z" fill="none" stroke="url(#rim_y)" stroke-width="1.2"/>
   <path d="M901,220 A16,16 0 0 1 916,205 H1138 A16,16 0 0 1 1153,220" fill="none" stroke="url(#spec_y)" stroke-width="1.4"/>
   <rect x="916" y="279.5" width="222" height="1.2" rx="0.6" fill="url(#refr_y)"/>
-  <clipPath id="cl84"><path d="M916,204 H1138 A16,16 0 0 1 1154,220 V266 A16,16 0 0 1 1138,282 H916 A16,16 0 0 1 900,266 V220 A16,16 0 0 1 916,204 Z"/></clipPath><g clip-path="url(#cl84)"><rect x="773" y="204" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1s infinite"/></g>
+  <clipPath id="cl85"><path d="M916,204 H1138 A16,16 0 0 1 1154,220 V266 A16,16 0 0 1 1138,282 H916 A16,16 0 0 1 900,266 V220 A16,16 0 0 1 916,204 Z"/></clipPath><g clip-path="url(#cl85)"><rect x="773" y="204" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1s infinite"/></g>
   </g>
   <g transform="translate(918,220) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#ff4fa0" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
   <text class="sans" x="918" y="267" font-size="26" font-weight="800" fill="#f0f3f6">77%</text>
@@ -198,14 +198,14 @@
   <g class="ev5">
   <g>
   <path d="M919,296 H1135 A16,16 0 0 1 1151,312 V358 A16,16 0 0 1 1135,374 H919 A16,16 0 0 1 903,358 V312 A16,16 0 0 1 919,296 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg85" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg86" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
   <path d="M916,296 H1138 A16,16 0 0 1 1154,312 V358 A16,16 0 0 1 1138,374 H916 A16,16 0 0 1 900,358 V312 A16,16 0 0 1 916,296 Z" fill="#0d1117"/>
-  <path d="M916,296 H1138 A16,16 0 0 1 1154,312 V358 A16,16 0 0 1 1138,374 H916 A16,16 0 0 1 900,358 V312 A16,16 0 0 1 916,296 Z" fill="url(#tg85)"/>
+  <path d="M916,296 H1138 A16,16 0 0 1 1154,312 V358 A16,16 0 0 1 1138,374 H916 A16,16 0 0 1 900,358 V312 A16,16 0 0 1 916,296 Z" fill="url(#tg86)"/>
   <path d="M916,296 H1138 A16,16 0 0 1 1154,312 V358 A16,16 0 0 1 1138,374 H916 A16,16 0 0 1 900,358 V312 A16,16 0 0 1 916,296 Z" fill="url(#pane_y)"/>
   <path d="M916,296 H1138 A16,16 0 0 1 1154,312 V358 A16,16 0 0 1 1138,374 H916 A16,16 0 0 1 900,358 V312 A16,16 0 0 1 916,296 Z" fill="none" stroke="url(#rim_y)" stroke-width="1.2"/>
   <path d="M901,312 A16,16 0 0 1 916,297 H1138 A16,16 0 0 1 1153,312" fill="none" stroke="url(#spec_y)" stroke-width="1.4"/>
   <rect x="916" y="371.5" width="222" height="1.2" rx="0.6" fill="url(#refr_y)"/>
-  <clipPath id="cl86"><path d="M916,296 H1138 A16,16 0 0 1 1154,312 V358 A16,16 0 0 1 1138,374 H916 A16,16 0 0 1 900,358 V312 A16,16 0 0 1 916,296 Z"/></clipPath><g clip-path="url(#cl86)"><rect x="773" y="296" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2s infinite"/></g>
+  <clipPath id="cl87"><path d="M916,296 H1138 A16,16 0 0 1 1154,312 V358 A16,16 0 0 1 1138,374 H916 A16,16 0 0 1 900,358 V312 A16,16 0 0 1 916,296 Z"/></clipPath><g clip-path="url(#cl87)"><rect x="773" y="296" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2s infinite"/></g>
   </g>
   <g transform="translate(918,312) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#2ee6ff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
         <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g>
@@ -215,14 +215,14 @@
   <g class="ev6">
   <g>
   <path d="M919,388 H1135 A16,16 0 0 1 1151,404 V450 A16,16 0 0 1 1135,466 H919 A16,16 0 0 1 903,450 V404 A16,16 0 0 1 919,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg87" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.255"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg88" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.255"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
   <path d="M916,388 H1138 A16,16 0 0 1 1154,404 V450 A16,16 0 0 1 1138,466 H916 A16,16 0 0 1 900,450 V404 A16,16 0 0 1 916,388 Z" fill="#0d1117"/>
-  <path d="M916,388 H1138 A16,16 0 0 1 1154,404 V450 A16,16 0 0 1 1138,466 H916 A16,16 0 0 1 900,450 V404 A16,16 0 0 1 916,388 Z" fill="url(#tg87)"/>
+  <path d="M916,388 H1138 A16,16 0 0 1 1154,404 V450 A16,16 0 0 1 1138,466 H916 A16,16 0 0 1 900,450 V404 A16,16 0 0 1 916,388 Z" fill="url(#tg88)"/>
   <path d="M916,388 H1138 A16,16 0 0 1 1154,404 V450 A16,16 0 0 1 1138,466 H916 A16,16 0 0 1 900,450 V404 A16,16 0 0 1 916,388 Z" fill="url(#pane_y)"/>
   <path d="M916,388 H1138 A16,16 0 0 1 1154,404 V450 A16,16 0 0 1 1138,466 H916 A16,16 0 0 1 900,450 V404 A16,16 0 0 1 916,388 Z" fill="none" stroke="url(#rim_y)" stroke-width="1.2"/>
   <path d="M901,404 A16,16 0 0 1 916,389 H1138 A16,16 0 0 1 1153,404" fill="none" stroke="url(#spec_y)" stroke-width="1.4"/>
   <rect x="916" y="463.5" width="222" height="1.2" rx="0.6" fill="url(#refr_y)"/>
-  <clipPath id="cl88"><path d="M916,388 H1138 A16,16 0 0 1 1154,404 V450 A16,16 0 0 1 1138,466 H916 A16,16 0 0 1 900,450 V404 A16,16 0 0 1 916,388 Z"/></clipPath><g clip-path="url(#cl88)"><rect x="773" y="388" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3s infinite"/></g>
+  <clipPath id="cl89"><path d="M916,388 H1138 A16,16 0 0 1 1154,404 V450 A16,16 0 0 1 1138,466 H916 A16,16 0 0 1 900,450 V404 A16,16 0 0 1 916,388 Z"/></clipPath><g clip-path="url(#cl89)"><rect x="773" y="388" width="127" height="78" fill="url(#sheen_y)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3s infinite"/></g>
   </g>
   <g transform="translate(918,404) scale(0.7500)" opacity="0.9"><g fill="none" stroke="#b6ff4f" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M7.4 3.4h9.2v5.4a4.6 4.6 0 0 1-9.2 0Z"/>
         <path d="M7.4 4.8H4.2v1.6a3.4 3.4 0 0 0 3.2 3.4M16.6 4.8h3.2v1.6a3.4 3.4 0 0 1-3.2 3.4"/>
