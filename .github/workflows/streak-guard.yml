@@ -1,0 +1,42 @@
+name: Streak guard
+
+# An evening nudge, never a commit. If today (IST) has no contributions yet,
+# this opens one issue that @-mentions the owner, so the GitHub app pushes a
+# notification while there's still time to ship something real. A later run
+# adds a last call; the issue closes itself once today has a contribution.
+#
+# GitHub may start scheduled runs some minutes late, so the last call is
+# set a full hour before midnight.
+
+on:
+  schedule:
+    - cron: "30 15 * * *"   # 21:00 IST
+    - cron: "30 17 * * *"   # 23:00 IST, last call
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+concurrency:
+  group: streak-guard
+  cancel-in-progress: false
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check today's contributions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python scripts/streak_guard.py
