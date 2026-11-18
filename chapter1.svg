@@ -1,72 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 26" width="1200" height="26" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 150" width="1200" height="150" role="img">
 
   <defs>
-    <linearGradient id="pane_v" x1="0" y1="0" x2="0.7" y2="1">
+    <linearGradient id="pane_c1" x1="0" y1="0" x2="0.7" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.115"/>
       <stop offset="45%" stop-color="#ffffff" stop-opacity="0.052"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.022"/>
     </linearGradient>
 
-    <linearGradient id="rim_v" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.42"/>
-      <stop offset="38%" stop-color="#ffffff" stop-opacity="0.10"/>
-      <stop offset="68%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
+    <linearGradient id="rim_c1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
+      <stop offset="22%" stop-color="#fbe2a7" stop-opacity="0.16"/>
+      <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="74%" stop-color="#a78bfa" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#6fe7c8" stop-opacity="0.30"/>
     </linearGradient>
 
-    <linearGradient id="spec_v" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="refr_c1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6fe7c8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#6fe7c8" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#e4a2b1" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="spec_c1" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
       <stop offset="22%" stop-color="#ffffff" stop-opacity="0.55"/>
       <stop offset="60%" stop-color="#ffffff" stop-opacity="0.30"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="sheen_v" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="sheen_c1" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
       <stop offset="45%" stop-color="#ffffff" stop-opacity="0.17"/>
       <stop offset="55%" stop-color="#ffffff" stop-opacity="0.17"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="bg_v" x1="0" y1="0" x2="0.6" y2="1">
+    <linearGradient id="bg_c1" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#0c1a24"/>
       <stop offset="55%" stop-color="#081219"/>
       <stop offset="100%" stop-color="#0a1a23"/>
     </linearGradient>
 
-    <radialGradient id="vig_v" cx="50%" cy="42%" r="72%">
+    <radialGradient id="vig_c1" cx="50%" cy="42%" r="72%">
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0.28"/>
     </radialGradient>
 
-    <filter id="blob_v" x="-70%" y="-70%" width="240%" height="240%">
+    <filter id="blob_c1" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="96"/>
     </filter>
-    <filter id="soft_v" x="-70%" y="-70%" width="240%" height="240%">
+    <filter id="soft_c1" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="26"/>
     </filter>
-    <filter id="glow_v" x="-70%" y="-70%" width="240%" height="240%">
+    <filter id="glow_c1" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="glowS_v" x="-70%" y="-70%" width="240%" height="240%">
+    <filter id="glowS_c1" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="1.8" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="drop_v" x="-30%" y="-30%" width="160%" height="180%">
+    <filter id="drop_c1" x="-30%" y="-30%" width="160%" height="180%">
       <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
     </filter>
-    <filter id="dropS_v" x="-30%" y="-30%" width="160%" height="180%">
+    <filter id="dropS_c1" x="-30%" y="-30%" width="160%" height="180%">
       <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
 
-    <filter id="grain_v" x="0" y="0" width="100%" height="100%">
+    <filter id="grain_c1" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
       <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
-    <pattern id="grid_v" width="34" height="34" patternUnits="userSpaceOnUse">
+    <pattern id="grid_c1" width="34" height="34" patternUnits="userSpaceOnUse">
       <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
     </pattern>
   </defs>
@@ -135,25 +143,34 @@
     .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
-@keyframes comet{0%{transform:translateX(0)}100%{transform:translateX(1060px)}}</style>
-<rect width="1200" height="26" rx="26" fill="url(#bg_v)"/>
-  <rect width="1200" height="26" rx="26" fill="url(#vig_v)"/>
-
-  <rect x="70" y="12" width="1060" height="2" rx="1" fill="url(#spec_v)" opacity="0.55"/>
-  <rect x="240" y="12.4" width="720" height="1.2" rx="0.6" fill="#fbe2a7" opacity="0.5"/>
-  <g style="animation:comet 3.6s cubic-bezier(.55,0,.45,1) infinite">
-    <rect x="70" y="11" width="120" height="4" rx="2" fill="url(#spec_v)"/>
-    <circle cx="190" cy="13" r="3.2" fill="#ffffff" filter="url(#glow_v)"/>
+@keyframes stamp{0%{transform:scale(1.18) rotate(-7deg);opacity:.5}55%{transform:scale(.96) rotate(1deg);opacity:1}100%{transform:scale(1) rotate(0)}}.stamp{animation:stamp 1.1s cubic-bezier(.22,1,.36,1)}@keyframes uline{0%,20%{stroke-dashoffset:.8}100%{stroke-dashoffset:0}}.uline{animation:uline 2.2s cubic-bezier(.22,1,.36,1)}</style>
+<rect width="1200" height="150" rx="26" fill="url(#bg_c1)"/>
+  <g filter="url(#blob_c1)" opacity="0.55">
+  <ellipse cx="300" cy="70" rx="200" ry="156" fill="#fbe2a7" opacity="0.22" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:300px 70px"/>
+  <ellipse cx="950" cy="80" rx="220" ry="172" fill="#e4a2b1" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:950px 80px"/>
   </g>
-  <g transform="translate(600,13)">
-    <circle r="9" fill="none" stroke="#e4a2b1" stroke-width="1.4">
-      <animate attributeName="r" values="5;19;5" dur="2.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values=".85;0;.85" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
-    <rect x="-5" y="-5" width="10" height="10" rx="2" fill="#fbe2a7" transform="rotate(45)"
-          filter="url(#glow_v)"/>
-    <circle r="2.6" fill="#ffffff"/>
-  </g>
-  <circle cx="70" cy="13" r="3.4" fill="#fbe2a7" opacity="0.8"/>
-  <circle cx="1130" cy="13" r="3.4" fill="#e4a2b1" opacity="0.8"/>
+  <rect width="1200" height="150" rx="26" fill="url(#vig_c1)"/>
+<g class="stamp" style="transform-origin:121.0px 75px"><g><rect x="53" y="33" width="150" height="94" rx="14" fill="#e4a2b1" stroke="#0a0f14" stroke-width="3"/><rect x="46" y="26" width="150" height="94" rx="14" fill="#fbe2a7" stroke="#0a0f14" stroke-width="3"/></g><text class="mono" x="121.0" y="52" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="2.6" fill="#0a0f14">CHAPTER</text><text class="sans" x="121.0" y="104" text-anchor="middle" font-size="46" font-weight="900" fill="#0a0f14" letter-spacing="-1">I</text></g>
+  <g class="ev1"><g>
+  <clipPath id="tc15"><path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z"/></clipPath>
+  <g clip-path="url(#tc15)"><ellipse cx="502" cy="41" rx="466" ry="58" fill="#fbe2a7" opacity="0.16" filter="url(#soft_c1)"/></g>
+  <path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z" fill="url(#pane_c1)" filter="url(#drop_c1)"/>
+  <path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z" fill="none" stroke="url(#rim_c1)" stroke-width="1.2"/>
+  <path d="M223,44 A18,18 0 0 1 240,27 H1136 A18,18 0 0 1 1153,44" fill="none" stroke="url(#spec_c1)" stroke-width="1.4"/>
+  <rect x="240" y="117.5" width="896" height="1.2" rx="0.6" fill="url(#refr_c1)"/>
+  <clipPath id="cl16"><path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z"/></clipPath><g clip-path="url(#cl16)"><rect x="-244" y="26" width="466" height="94" fill="url(#sheen_c1)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0s infinite"/></g>
+  </g></g>
+  <text class="mono ev2" x="250" y="56" font-size="11" letter-spacing="3.4" fill="#fbe2a7" font-weight="700">ORIGIN STORY</text>
+  <text class="sans ev2" x="250" y="88" font-size="26" font-weight="800" fill="#eaf2f6" letter-spacing="-0.5">How the player got here</text>
+  <text class="ev3" x="250" y="108" font-size="12.5" font-style="italic" fill="#93a8b4">Three years, thirty-odd repos, one habit: ship it</text>
+  <path class="uline" d="M250 66.5H363" stroke="#fbe2a7" stroke-width="1.6" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0" opacity="0.6"/>
+  <text class="mono ev3" x="1126" y="56" text-anchor="end" font-size="9.4" letter-spacing="2" fill="#5f7683">PROGRESS 1/6</text>
+  <g class="ev4"><g><rect x="971" y="79" width="16" height="16" rx="4" fill="#e4a2b1" stroke="#0a0f14" stroke-width="2"/><rect x="968" y="76" width="16" height="16" rx="4" fill="#fbe2a7" stroke="#0a0f14" stroke-width="2"/></g></g>
+  <rect class="ev4" x="994" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
+  <rect class="ev4" x="1020" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
+  <rect class="ev4" x="1046" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
+  <rect class="ev4" x="1072" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
+  <rect class="ev4" x="1098" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
+  <text class="mono ev5" x="1126" y="110" text-anchor="end" font-size="9.4" letter-spacing="2" fill="#fbe2a7" fill-opacity="0.85">&#10022; SAVE POINT REACHED</text>
+<rect width="1200" height="150" rx="26" filter="url(#grain_c1)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

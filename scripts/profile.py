@@ -55,33 +55,94 @@ CERTS = [("NPTEL · IIT", "Privacy & Security"),
          ("LPU", "Java Application Development")]
 
 # ------------------------------------------------------------ projects
-# rarity, icon, title, subtitle, body lines, tech chips, repo slug
+# Pulled from each repo's own README. rarity, icon, title, subtitle,
+# body lines, tech chips, repo slug, live link label (or None)
 PROJECTS = [
-    dict(rarity="LEGENDARY", icon="drone", title="SUDARSHAN-X",
-         sub="Autonomous Drone Defense Platform",
-         body=["YOLOv8 aerial threat detection with RF spectrum analysis and",
-               "Doppler tracking, driving a Reynolds-Boids 3D swarm interceptor."],
-         tech=["YOLOv8", "React Three Fiber", "Node.js", "Python"], repo=None),
-    dict(rarity="EPIC", icon="shield", title="SheShield",
-         sub="Campus & Personal Safety Network",
-         body=["ML-powered live incident heatmaps that cut response time 30%,",
-               "automated escort dispatch and a 24/7 AI safety chatbot."],
-         tech=["PHP", "React", "MySQL", "Tailwind"], repo="SheShield"),
-    dict(rarity="RARE", icon="leaf", title="KrishiVaani",
-         sub="Multilingual Smart Farming Assistant",
-         body=["99.48% crop-disease diagnosis on MobileNetV2, Groq LLM",
-               "reasoning, live mandi prices and full voice I/O."],
-         tech=["PyTorch", "Flask", "Groq LLM"], repo=None),
-    dict(rarity="RARE", icon="maze", title="AlgoTrail",
-         sub="Algorithm & Maze Playground",
-         body=["Pathfinding visualiser with real-time maze generation,",
-               "step metrics and AI-generated step explanations."],
-         tech=["JavaScript", "CSS3", "AI Assist"], repo="AlgoTrail"),
-    dict(rarity="UNCOMMON", icon="bolt", title="GridSense",
-         sub="Smart Energy & Power-Grid Dashboard",
-         body=["IoT telemetry ingestion with anomaly detection and",
-               "live consumption forecasting across sensor fleets."],
-         tech=["React", "Node.js", "IoT"], repo=None),
+    dict(rarity="LEGENDARY", icon="shield", title="SheShield",
+         sub="No one walks home alone",
+         body=["Women's safety platform for LPU: one-tap SOS without sign-in,",
+               "verified Walk-With-Us escorts, anonymous incident reports and a",
+               "live campus safety map. Web app + Expo SDK 58 Android app."],
+         tech=["PHP", "MySQL", "React Native", "Expo", "Leaflet"],
+         repo="SheShield", live="sheshield-ab.vercel.app"),
+    dict(rarity="MYTHIC", icon="bolt", title="Vyapaar",
+         sub="Agent commerce on Razorpay rails",
+         body=["An outside AI agent discovers the catalog, proves a human's",
+               "consent and clears nine guardrails before it pays, while the",
+               "merchant's own growth agent can never fake a discount."],
+         tech=["FastAPI", "Next.js", "Razorpay", "JWT mandates"],
+         repo="Vyapaar", live="vyapaar-web.vercel.app"),
+    dict(rarity="EPIC", icon="users", title="Hirehearsal",
+         sub="Rehearse the hire",
+         body=["Ora, a voice-first AI interviewer, runs technical,",
+               "project and HR rounds, adapts difficulty and scores",
+               "substance, clarity and depth."],
+         tech=["Next.js 16", "Java", "Docker"], repo="Hirehearsal", live=None),
+    dict(rarity="EPIC", icon="cap", title="BookMyCampus",
+         sub="Every bookable room, one platform",
+         body=["Labs, halls and equipment with approval chains,",
+               "QR check-in, auto-release of no-shows and a",
+               "make-up class finder for faculty."],
+         tech=["Django", "PostgreSQL", "React"], repo="BookMyCampus",
+         live="book-my-campus-ab.vercel.app"),
+    dict(rarity="RARE", icon="clock", title="TimedInk",
+         sub="Fault-tolerant email scheduler",
+         body=["Sends land on time through restarts, a wiped",
+               "Redis and provider rate limits. MySQL is the",
+               "truth; the queue rebuilds from it. 73 tests."],
+         tech=["Node", "BullMQ", "Redis", "MySQL"], repo="TimedInk",
+         live="timed-ink.vercel.app"),
+    dict(rarity="RARE", icon="code", title="PII Redaction",
+         sub="Enterprise document privacy engine",
+         body=["Hybrid regex + NER engine that swaps 10 PII",
+               "types for realistic fakes in .docx files while",
+               "keeping every table and format intact."],
+         tech=["Python", "spaCy", "python-docx"], repo="PII-Redaction-Tool", live=None),
+]
+
+# The rest of the story, shown as compact chips under the vault.
+# (title, one-liner, repo slug or None)
+SIDE_QUESTS = [
+    ("GridSense", "3D smart-grid digital twin", "GridSense"),
+    ("MindBloom", "Gemini AI wellness for kids", "MindBloom"),
+    ("Pixel-Board", "8-bit multiplayer whiteboard", "Pixel-Board"),
+    ("CampusWhisper", "Anonymous campus confessions", "CampusWhisper"),
+    ("AlgoTrail", "Algorithm visual playground", "AlgoTrail"),
+    ("SUDARSHAN-X", "Autonomous drone defence", None),
+    ("KrishiVaani", "Multilingual farming assistant", None),
+]
+
+# ------------------------------------------------------------ story
+ROLES = ["Software Architect", "AI Researcher", "Full-Stack Engineer",
+         "Safety-Tech Builder"]
+
+STORY = ["A builder from Jalandhar who turns campus problems into",
+         "production systems: safety tech, AI agents and tools",
+         "that real people open every day."]
+
+# Chapter cards between sections: (numeral, kicker, title, subtitle, accent)
+CHAPTERS = [
+    ("I", "ORIGIN STORY", "How the player got here", "Three years, thirty-odd repos, one habit: ship it", CREAM),
+    ("II", "THE ARSENAL", "Skills, credentials & gear", "Everything equipped for the next boss fight", ROSE),
+    ("III", "THE BUILDS", "Systems shipped to production", "Pulled straight from the repos that hold them", MINT),
+    ("IV", "BATTLE LOG", "Live telemetry from GitHub", "Rebuilt every day by GitHub Actions", VIOLET),
+    ("V", "TROPHY HALL", "Achievements unlocked", "Podiums, ratings and the grind behind them", CREAM),
+    ("VI", "CURRENT QUEST", "What's on the bench right now", "Active missions, live progress", ROSE),
+]
+
+# Origin timeline, dated from each repo's creation date.
+# (when, title, line 1, line 2, accent)
+TIMELINE = [
+    ("SEP 2023", "Player spawned", "Created this GitHub account.", "Level 1, no gear, big ideas.", CREAM),
+    ("SEP 2024", "The grind begins", "LeetCode-Solutions and CP drills:", "400+ problems and counting.", MINT),
+    ("MAR 2025", "SheShield", "A women's safety platform that", "now has 20 stars and an APK.", ROSE),
+    ("JUL 2025", "Hackathon season", "AlgoTrail visualiser and the", "Adobe Hackathon PDF engine.", VIOLET),
+    ("NOV 2025", "GridSense", "A 3D smart-grid digital twin", "with ML forecasting.", CREAM),
+    ("FEB 2026", "Real-time arc", "Pixel-Board and CampusWhisper:", "Socket.IO, WebRTC, Groq vision.", MINT),
+    ("MAY 2026", "MindBloom", "Gemini-powered wellness for", "children, parents, counsellors.", ROSE),
+    ("AUG 2026", "Systems arc", "PII redaction engine, then", "Vyapaar agent commerce.", VIOLET),
+    ("SEP 2026", "Production grade", "TimedInk scheduler and the", "Hirehearsal AI interviewer.", CREAM),
+    ("NOV 2026", "Now playing", "BookMyCampus, Pratirodh and", "the SheShield Android app.", MINT),
 ]
 
 # ------------------------------------------------------------ trophies
@@ -95,10 +156,10 @@ TROPHIES = [
 
 # ------------------------------------------------------------ quest log
 QUESTS = [
-    ("SUDARSHAN-X v2.0", "Multi-target Kalman fusion tracker", 72, CREAM),
-    ("Swarm Visualiser", "Shipping the 3D interception view to prod", 84, ROSE),
+    ("Pratirodh", "Detecting AI voice-clone fraud on Indian phone calls", 18, CREAM),
+    ("SheShield Mobile", "Android app: offline reports, hold-to-send SOS", 88, ROSE),
     ("Daily DSA Grind", "Contest-grade problems, every single day", 90, MINT),
     ("Cloud Native", "EKS + GitOps deployment pipeline", 58, VIOLET),
 ]
 
-LEARNING = ["Distributed Systems", "Rust", "MLOps", "System Design"]
+LEARNING = ["Speech ML", "Distributed Systems", "Rust", "MLOps", "System Design"]

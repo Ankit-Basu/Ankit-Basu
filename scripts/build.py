@@ -17,6 +17,8 @@ from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET,  # noq
                     RARITY, esc, rr, card, chip_row, xpbar, ring, page,
                     section_header, uid, ev, lighten)
 from icons import icon  # noqa: E402
+import story  # noqa: E402
+from design import sticker  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W = 1200
@@ -66,185 +68,6 @@ def write(name, svg):
     with open(path, "w", encoding="utf-8") as f:
         f.write(svg)
     print("  %-16s %6.1f KB" % (name, len(svg) / 1024.0))
-
-
-# ================================================================ banner
-def build_banner(d):
-    s = "h"
-    lvl = max(1, int(d.get("total_contributions") or 0) // 100)
-    xp = int(d.get("total_contributions") or 0) % 100
-    tier = next(t for c, t in TIERS if (d.get("total_contributions") or 0) >= c)
-    ocx, ocy = 940, 182
-
-    css = """
-    @keyframes nsweep{0%{transform:translateX(-280px)}58%,100%{transform:translateX(560px)}}
-    @keyframes orbit{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-    @keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
-    """
-
-    defs = f"""<defs>
-    <linearGradient id="nm_{s}" x1="0" y1="0" x2="1" y2="0.5">
-      <stop offset="0%" stop-color="#ffffff"/><stop offset="34%" stop-color="{CREAM}"/>
-      <stop offset="68%" stop-color="{ROSE}"/><stop offset="100%" stop-color="{VIOLET}"/>
-    </linearGradient>
-    <linearGradient id="ob_{s}" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="{CREAM}"/><stop offset="55%" stop-color="{ROSE}"/>
-      <stop offset="100%" stop-color="{VIOLET}"/>
-    </linearGradient>
-    <radialGradient id="avSh_{s}" cx="50%" cy="38%" r="72%">
-      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#06121a" stop-opacity="0.32"/>
-    </radialGradient>
-    <clipPath id="nc_{s}">
-      <text class="sans" x="{PAD + 18}" y="166" font-size="74" font-weight="800"
-            letter-spacing="-2.4">{esc(P.NAME)}</text>
-    </clipPath>
-  </defs>"""
-
-    body = [defs]
-
-    # -- status pill
-    body.append(f"""<g class="ev1">
-    {card(s, PAD + 18, 52, 372, 32, r=16, tint=MINT, tint_op=0.20, shadow=False)}
-    <circle cx="{PAD + 40}" cy="68" r="4.5" fill="{MINT}" filter="url(#glow_{s})"
-            style="animation:pop 1.9s ease-in-out infinite;transform-origin:{PAD + 40}px 68px"/>
-    <circle cx="{PAD + 40}" cy="68" r="9" fill="none" stroke="{MINT}" stroke-width="1.2" opacity="0.5">
-      <animate attributeName="r" values="5;15;5" dur="2.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values=".65;0;.65" dur="2.4s" repeatCount="indefinite"/>
-    </circle>
-    <text class="mono" x="{PAD + 58}" y="72.5" font-size="11.5" letter-spacing="2.3"
-          fill="{MINT}" font-weight="600">{esc(P.STATUS)}</text>
-  </g>""")
-
-    # -- name with sheen sweep
-    body.append(f"""<g class="ev2">
-    <text class="sans" x="{PAD + 18}" y="166" font-size="74" font-weight="800"
-          letter-spacing="-2.4" fill="url(#nm_{s})">{esc(P.NAME)}</text>
-    <g clip-path="url(#nc_{s})">
-      <rect x="{PAD - 40}" y="96" width="150" height="90" fill="url(#sheen_{s})"
-            style="animation:nsweep 5.5s cubic-bezier(.4,0,.2,1) 1.2s infinite"/>
-    </g>
-  </g>""")
-
-    body.append(f"""<g class="ev3">
-    <text class="mono" x="{PAD + 20}" y="196" font-size="13" letter-spacing="4.4"
-          fill="{CREAM}" fill-opacity="0.92" font-weight="600">{esc(P.ROLE)}</text>
-    <rect x="{PAD + 20}" y="212" width="430" height="1" fill="{CREAM}" opacity="0.22"/>
-    <text x="{PAD + 20}" y="242" font-size="14.5" fill="{DIM}">{esc(P.TAGLINE)}</text>
-  </g>""")
-
-    chips, _ = chip_row(s, PAD + 20, 264, P.HERO_CHIPS,
-                        cols=[CREAM, ROSE, MINT, VIOLET], gap=8, fs=11, h=26)
-    body.append(f'<g class="ev4">{chips}</g>')
-
-    # -- code strip
-    body.append(f"""<g class="ev5">
-  {card(s, PAD + 18, 320, 640, 78, r=14, tint=VIOLET, tint_op=0.12, sheen=True, sheen_delay=2.2)}
-    <text class="mono" x="{PAD + 40}" y="352" font-size="13">
-      <tspan fill="{VIOLET}">const</tspan><tspan fill="{INK}"> ankit </tspan><tspan fill="{DIM}">= {{</tspan
-      ><tspan fill="{MINT}"> cgpa</tspan><tspan fill="{DIM}">:</tspan><tspan fill="{CREAM}"> 9.2</tspan
-      ><tspan fill="{DIM}">,</tspan><tspan fill="{MINT}"> dsa</tspan><tspan fill="{DIM}">:</tspan
-      ><tspan fill="{ROSE}"> "400+"</tspan><tspan fill="{DIM}">,</tspan
-      ><tspan fill="{MINT}"> stack</tspan><tspan fill="{DIM}">:</tspan
-      ><tspan fill="{ROSE}"> "MERN + PyTorch"</tspan><tspan fill="{DIM}"> }};</tspan>
-    </text>
-    <text class="mono" x="{PAD + 40}" y="378" font-size="12.5" fill="{FAINT}">
-      <tspan>// shipping systems that survive production</tspan>
-      <tspan fill="{CREAM}" style="animation:blink 1.1s steps(1) infinite"> &#9646;</tspan>
-    </text>
-  </g>""")
-
-    # -- rank orb: the profile photo as the player portrait, wrapped in the
-    #    XP ring, with the level on a hex badge clipped to the portrait edge
-    av = load_avatar()
-    portrait = ""
-    if av:
-        portrait = f"""
-    <clipPath id="av_{s}"><circle cx="{ocx}" cy="{ocy}" r="66"/></clipPath>
-    <image clip-path="url(#av_{s})" x="{ocx - 66}" y="{ocy - 66}" width="132" height="132"
-           preserveAspectRatio="xMidYMid slice" href="{av}" xlink:href="{av}"/>
-    <circle cx="{ocx}" cy="{ocy}" r="66" fill="url(#avSh_{s})"/>"""
-
-    body.append(f"""<g class="ev3">
-    <circle cx="{ocx}" cy="{ocy}" r="116" fill="none" stroke="{CREAM}" stroke-opacity="0.16"
-            stroke-width="1" stroke-dasharray="2 10"
-            style="animation:orbit 34s linear infinite;transform-origin:{ocx}px {ocy}px"/>
-    <circle cx="{ocx}" cy="{ocy}" r="102" fill="none" stroke="{ROSE}" stroke-opacity="0.22"
-            stroke-width="1.4" stroke-dasharray="34 14"
-            style="animation:orbit 22s linear infinite reverse;transform-origin:{ocx}px {ocy}px"/>
-    <circle cx="{ocx}" cy="{ocy}" r="84" fill="{BG0}" fill-opacity="0.45"/>
-    <circle cx="{ocx}" cy="{ocy}" r="84" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="8"/>
-    <circle cx="{ocx}" cy="{ocy}" r="84" fill="none" stroke="url(#ob_{s})" stroke-width="8"
-            stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="{527.8 * (1 - xp / 100):.1f}"
-            transform="rotate(-90 {ocx} {ocy})" filter="url(#glow_{s})">
-      <animate attributeName="stroke-dashoffset" from="{527.8 * (1 - xp * 0.18 / 100):.1f}"
-               to="{527.8 * (1 - xp / 100):.1f}" dur="2.1s" fill="freeze"
-               calcMode="spline" keySplines="0.22 1 0.36 1"/>
-    </circle>{portrait}
-    <circle cx="{ocx}" cy="{ocy}" r="66" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.4"/>
-    <g transform="translate({ocx + 50},{ocy + 50})">
-      <path d="M0,-23 L19.9,-11.5 L19.9,11.5 L0,23 L-19.9,11.5 L-19.9,-11.5 Z"
-            fill="{BG0}" fill-opacity="0.92" stroke="{CREAM}" stroke-opacity="0.85" stroke-width="1.6"/>
-      <text class="mono" x="0" y="-3" text-anchor="middle" font-size="7.4"
-            letter-spacing="1.4" fill="{DIM}">LV</text>
-      <text class="sans" x="0" y="13" text-anchor="middle" font-size="17"
-            font-weight="800" fill="{CREAM}">{lvl}</text>
-    </g>
-  </g>
-  <g class="ev4">
-  {card(s, ocx - 116, 268, 232, 32, r=16, tint=ROSE, tint_op=0.16, shadow=False)}
-    <text class="mono" x="{ocx}" y="288" text-anchor="middle" font-size="10.4" letter-spacing="2.4">
-      <tspan fill="{ROSE}" font-weight="600">{tier}</tspan><tspan fill="{FAINT}">  &#183;  </tspan
-      ><tspan fill="{CREAM}">{fmt(d.get('total_contributions'))} XP</tspan></text>
-  </g>""")
-
-    # -- three mini tiles under the orb
-    mini = [("repo", fmt(d["repos"]), "REPOS", CREAM),
-            ("star", fmt(d["stars"]), "STARS", ROSE),
-            ("flame", fmt(d.get("longest")), "BEST STREAK", MINT)]
-    tw, gap = 124, 14
-    x0 = ocx - (3 * tw + 2 * gap) // 2
-    for i, (ic, val, lab, col) in enumerate(mini):
-        x = x0 + i * (tw + gap)
-        body.append(f'<g class="{ev(7 + i)}">')
-        body.append(card(s, x, 312, tw, 86, r=15, tint=col, tint_op=0.14))
-        body.append(icon(ic, x + tw / 2 - 9, 328, 18, col, 1.7, 0.9))
-        body.append(f'<text class="sans" x="{x + tw / 2}" y="{372}" text-anchor="middle" '
-                    f'font-size="24" font-weight="800" fill="{INK}">{val}</text>')
-        body.append(f'<text class="mono" x="{x + tw / 2}" y="{389}" text-anchor="middle" '
-                    f'font-size="8.6" letter-spacing="1.9" fill="{col}" fill-opacity="0.85">{lab}</text>')
-        body.append("</g>")
-
-    blobs = [(250, 140, 230, CREAM, 0.30, "drift"),
-             (700, 330, 210, ROSE, 0.26, "drift2"),
-             (960, 150, 240, VIOLET, 0.26, "drift3"),
-             (1120, 380, 180, MINT, 0.18, "drift")]
-    return page(s, W, 450, css, "\n  ".join(body), blobs, use_particles=18)
-
-
-# ================================================================ divider
-def build_divider():
-    s = "v"
-    css = "@keyframes comet{0%{transform:translateX(0)}100%{transform:translateX(1060px)}}"
-    body = f"""
-  <rect x="70" y="12" width="1060" height="2" rx="1" fill="url(#spec_{s})" opacity="0.55"/>
-  <rect x="240" y="12.4" width="720" height="1.2" rx="0.6" fill="{CREAM}" opacity="0.5"/>
-  <g style="animation:comet 3.6s cubic-bezier(.55,0,.45,1) infinite">
-    <rect x="70" y="11" width="120" height="4" rx="2" fill="url(#spec_{s})"/>
-    <circle cx="190" cy="13" r="3.2" fill="#ffffff" filter="url(#glow_{s})"/>
-  </g>
-  <g transform="translate(600,13)">
-    <circle r="9" fill="none" stroke="{ROSE}" stroke-width="1.4">
-      <animate attributeName="r" values="5;19;5" dur="2.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values=".85;0;.85" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
-    <rect x="-5" y="-5" width="10" height="10" rx="2" fill="{CREAM}" transform="rotate(45)"
-          filter="url(#glow_{s})"/>
-    <circle r="2.6" fill="#ffffff"/>
-  </g>
-  <circle cx="70" cy="13" r="3.4" fill="{CREAM}" opacity="0.8"/>
-  <circle cx="1130" cy="13" r="3.4" fill="{ROSE}" opacity="0.8"/>"""
-    return page(s, W, 26, css, body, blobs=None, grid=False, use_grain=False)
 
 
 # ================================================================ loadout
@@ -315,58 +138,6 @@ def build_loadout():
              (620, 420, 240, ROSE, 0.20, "drift2"),
              (1030, 200, 240, VIOLET, 0.22, "drift3")]
     return page(s, W, 570, "", "\n  ".join(body), blobs)
-
-
-# ================================================================ projects
-def build_projects(d):
-    s = "p"
-    stars = {r["name"]: r["stars"] for r in d.get("top_repos", [])}
-    body = [section_header(s, PAD, 62, "PROJECT VAULT", "Featured Engineering Systems", ROSE)]
-
-    boxes = [(PAD, 112, 560, 224), (626, 112, 528, 224),
-             (PAD, 360, 358, 214), (422, 360, 358, 214), (798, 360, 356, 214)]
-
-    for i, pr in enumerate(P.PROJECTS):
-        x, y, w, h = boxes[i]
-        col = RARITY[pr["rarity"]]
-        body.append(f'<g class="{ev(1 + i)}">')
-        body.append(card(s, x, y, w, h, r=20, tint=col, tint_op=0.17,
-                         sheen=True, sheen_delay=i * 0.9))
-
-        # rarity edge + ribbon
-        body.append(f'<rect x="{x}" y="{y + 24}" width="3" height="{h - 48}" rx="1.5" '
-                    f'fill="{col}" opacity="0.85" filter="url(#glowS_{s})"/>')
-        rw = int(len(pr["rarity"]) * 6.6) + 22
-        body.append(f'<rect x="{x + 22}" y="{y + 20}" width="{rw}" height="20" rx="10" '
-                    f'fill="{col}" fill-opacity="0.16" stroke="{col}" stroke-opacity="0.45"/>')
-        body.append(f'<text class="mono" x="{x + 22 + rw / 2}" y="{y + 34}" text-anchor="middle" '
-                    f'font-size="8.8" letter-spacing="1.8" fill="{col}" font-weight="700">{pr["rarity"]}</text>')
-
-        st = stars.get(pr["repo"] or "", 0)
-        if st:
-            body.append(f'<g opacity="0.95">'
-                        f'{icon("star", x + w - 74, y + 21, 16, CREAM, 1.8)}'
-                        f'<text class="mono" x="{x + w - 24}" y="{y + 34}" text-anchor="end" '
-                        f'font-size="12" font-weight="700" fill="{CREAM}">{st}</text></g>')
-
-        body.append(icon(pr["icon"], x + 22, y + 56, 34, col, 1.6, 0.95,
-                         extra=f' style="animation:breathe 4s ease-in-out {i * 0.6}s infinite"'))
-        body.append(f'<text class="sans" x="{x + 68}" y="{y + 78}" font-size="20" font-weight="700" '
-                    f'fill="{INK}" letter-spacing="-0.3">{esc(pr["title"])}</text>')
-        body.append(f'<text class="mono" x="{x + 68}" y="{y + 96}" font-size="10.4" '
-                    f'letter-spacing="1.5" fill="{col}" fill-opacity="0.9">{esc(pr["sub"])}</text>')
-        for li, line in enumerate(pr["body"]):
-            body.append(f'<text x="{x + 24}" y="{y + 130 + li * 19}" font-size="12" '
-                        f'fill="{DIM}">{esc(line)}</text>')
-        row, _ = chip_row(s, x + 24, y + h - 46, pr["tech"], cols=[col], gap=6, fs=10.2, h=21)
-        body.append(row)
-        body.append("</g>")
-
-    blobs = [(220, 200, 260, CREAM, 0.20, "drift"),
-             (860, 180, 250, ROSE, 0.22, "drift2"),
-             (300, 470, 240, MINT, 0.16, "drift3"),
-             (960, 500, 240, VIOLET, 0.20, "drift")]
-    return page(s, W, 620, "", "\n  ".join(body), blobs)
 
 
 # ================================================================ stats
@@ -655,18 +426,24 @@ def build_footer():
     blobs = [(240, 120, 250, CREAM, 0.20, "drift"),
              (640, 210, 260, ROSE, 0.18, "drift2"),
              (1000, 120, 240, VIOLET, 0.20, "drift3")]
-    return page(s, W, 262, "", "\n  ".join(body), blobs, use_particles=12)
+    st, stw = sticker(W // 2 - 92, 262, "TO BE CONTINUED \u25B8", CREAM, ROSE, fs=11, h=28)
+    body.append('<g class="ev6"><g style="animation:breathe2 2.4s ease-in-out infinite">%s</g></g>' % st)
+    css = "@keyframes breathe2{0%,100%{opacity:1}50%{opacity:.72}}"
+    return page(s, W, 316, css, "\n  ".join(body), blobs, use_particles=12)
 
 
 # ================================================================ main
 def main():
     d = load()
     print("building panels from data synced %s" % d.get("synced_at"))
-    write("banner.svg", build_banner(d))
-    write("divider.svg", build_divider())
+    write("banner.svg", story.build_hero(d))
+    for i in range(len(P.CHAPTERS)):
+        write("chapter%d.svg" % (i + 1), story.build_chapter(i))
+    write("timeline.svg", story.build_timeline())
     write("loadout.svg", build_loadout())
-    write("projects.svg", build_projects(d))
+    write("projects.svg", story.build_vault(d))
     write("stats.svg", build_stats(d))
+    write("city.svg", story.build_city(d))
     write("trophies.svg", build_trophies(d))
     write("questlog.svg", build_questlog())
     write("footer.svg", build_footer())

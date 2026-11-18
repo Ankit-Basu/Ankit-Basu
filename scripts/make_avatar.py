@@ -20,9 +20,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "profile.jpg")
 OUT = os.path.join(ROOT, "data", "avatar.txt")
 
-SIZE = 320          # rendered at r=66 in a 1200-wide panel, so 320 covers 2x
-QUALITY = 82
-CROP = (252, 0, 788, 536)   # head-and-shoulders out of the 1280x1280 original
+SIZE = 440          # the hero portrait renders ~300px wide; 440 keeps it sharp
+QUALITY = 80
+CROP = (320, 0, 760, 440)   # head-and-shoulders; keep in step with make_sketch.CROP
 BRIGHTNESS = 1.24           # the source is backlit; the face needs lifting
 SATURATION = 0.94
 CONTRAST = 1.03

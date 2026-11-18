@@ -80,10 +80,18 @@ def base_defs(scope):
     </linearGradient>
 
     <linearGradient id="rim_S" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.42"/>
-      <stop offset="38%" stop-color="#ffffff" stop-opacity="0.10"/>
-      <stop offset="68%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
+      <stop offset="22%" stop-color="#fbe2a7" stop-opacity="0.16"/>
+      <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="74%" stop-color="#a78bfa" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#6fe7c8" stop-opacity="0.30"/>
+    </linearGradient>
+
+    <linearGradient id="refr_S" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6fe7c8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#6fe7c8" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#e4a2b1" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_S" x1="0" y1="0" x2="1" y2="0">
@@ -260,6 +268,9 @@ def card(scope, x, y, w, h, r=18, tint=None, tint_op=0.16, shadow=True,
              % (rr(x, y, w, h, r), s))
     g.append('<path d="%s" fill="none" stroke="url(#spec_%s)" stroke-width="1.4"/>'
              % (top_edge(x, y, w, r), s))
+    if h > 60:
+        g.append('<rect x="%.0f" y="%.1f" width="%.0f" height="1.2" rx="0.6" fill="url(#refr_%s)"/>'
+                 % (x + r, y + h - 2.5, w - 2 * r, s))
     if sheen:
         cid = uid("cl")
         g.append('<clipPath id="%s"><path d="%s"/></clipPath>'
@@ -390,3 +401,30 @@ def page(scope, w, h, css, body, blobs=None, grid=True, use_grain=True,
         parts.append(grain(scope, w, h))
     parts.append("</svg>")
     return "\n".join(parts)
+
+
+# ---------------------------------------------------------------- neo-brutalism
+# The story layer (chapter cards, stickers, the PRESS START tag) is drawn
+# neo-brutalist on purpose: solid saturated blocks, a thick ink border and a
+# hard zero-blur offset shadow. Against the soft glass panels that contrast is
+# what makes a chapter break read as a chapter break.
+INKK = "#0a0f14"   # brutalist ink - near-black, used for borders and text on blocks
+
+
+def brut(x, y, w, h, fill, shadow=ROSE, r=10, off=6, bw=2.6, cls="", style=""):
+    attrs = (' class="%s"' % cls if cls else "") + (' style="%s"' % style if style else "")
+    return ('<g%s><rect x="%s" y="%s" width="%s" height="%s" rx="%s" fill="%s" stroke="%s" stroke-width="%s"/>'
+            '<rect x="%s" y="%s" width="%s" height="%s" rx="%s" fill="%s" stroke="%s" stroke-width="%s"/></g>'
+            % (attrs, x + off, y + off, w, h, r, shadow, INKK, bw,
+               x, y, w, h, r, fill, INKK, bw))
+
+
+def sticker(x, y, label, fill=CREAM, shadow=ROSE, fs=11, h=26, rot=0, off=4):
+    """A brutalist label block. Returns (svg, width)."""
+    w = int(len(label) * fs * 0.64 + 24)
+    t = ' transform="rotate(%s %s %s)"' % (rot, x + w / 2, y + h / 2) if rot else ""
+    sv = ('<g%s>%s<text class="mono" x="%.1f" y="%.1f" text-anchor="middle" font-size="%s" '
+          'font-weight="800" letter-spacing="1.4" fill="%s">%s</text></g>'
+          % (t, brut(x, y, w, h, fill, shadow, r=6, off=off, bw=2.2),
+             x + w / 2, y + h / 2 + fs * 0.36, fs, INKK, esc(label)))
+    return sv, w
