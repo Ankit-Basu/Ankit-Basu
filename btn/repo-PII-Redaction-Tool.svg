@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164 46" width="164" height="46" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 171 48" width="171" height="48" role="img">
 <style>text{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif}.nd{animation:nd 2.4s cubic-bezier(.45,0,.25,1) infinite}@keyframes nd{0%,55%,100%{transform:none}75%{transform:translate(2px,-2px)}}@keyframes beam{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}.bm{animation:beam 4.5s linear -4.36s infinite}</style>
-<path d="M11.5 1.5H152.5A10 10 0 0 1 162.5 11.5V31.5A10 10 0 0 1 152.5 41.5H11.5A10 10 0 0 1 1.5 31.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="#161b22" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
-<path class="bm" d="M11.5 1.5H152.5A10 10 0 0 1 162.5 11.5V31.5A10 10 0 0 1 152.5 41.5H11.5A10 10 0 0 1 1.5 31.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="none" stroke="#7dd3fc" stroke-width="1.4" stroke-linecap="round" pathLength="100" stroke-dasharray="16 84" stroke-dashoffset="0"/>
-<g transform="translate(17.5,12.5) scale(0.7500)" opacity="1"><g fill="none" stroke="#7dd3fc" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
+<path d="M11.5 1.5H159.5A10 10 0 0 1 169.5 11.5V33.5A10 10 0 0 1 159.5 43.5H11.5A10 10 0 0 1 1.5 33.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="#161b22" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+<path class="bm" d="M11.5 1.5H159.5A10 10 0 0 1 169.5 11.5V33.5A10 10 0 0 1 159.5 43.5H11.5A10 10 0 0 1 1.5 33.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="none" stroke="#7dd3fc" stroke-width="1.4" stroke-linecap="round" pathLength="100" stroke-dasharray="16 84" stroke-dashoffset="0"/>
+<g transform="translate(17.5,13.5) scale(0.7500)" opacity="1"><g fill="none" stroke="#7dd3fc" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
         <path d="M4.2 17h14.4"/></g></g>
-<text x="43.5" y="26.1" font-size="13" font-weight="600" letter-spacing="0.1" fill="#f0f3f6" textLength="85.8" lengthAdjust="spacing">PII Redaction</text>
-<g class="nd"><path d="M138.3 26.5l9-9M140.3 17.5h7v7" fill="none" stroke="#7dd3fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="43.5" y="27.4" font-size="14" font-weight="600" letter-spacing="0.1" fill="#f0f3f6" textLength="92.4" lengthAdjust="spacing">PII Redaction</text>
+<g class="nd"><path d="M144.89999999999998 27.5l9-9M146.89999999999998 18.5h7v7" fill="none" stroke="#7dd3fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>

@@ -134,7 +134,7 @@ def build_skilltree():
                     f'stroke="{col}" stroke-opacity="0.35" stroke-width="2"/>'
                     f'<path class="flow" d="M{rx + 62} {ry}C{rx + 110} {ry} {x0 - 110} {y} {x0 - 44} {y}" fill="none" '
                     f'stroke="{col}" stroke-width="2" stroke-dasharray="4 8"/>')
-        body.append(f'<text class="mono {ev(1 + bi)}" x="{x0 - 40}" y="{y - 16}" font-size="9" letter-spacing="2" '
+        body.append(f'<text class="mono {ev(1 + bi)}" x="{x0 - 40}" y="{y - 26}" font-size="9" letter-spacing="2" '
                     f'fill="{col}" font-weight="800">{esc(branch)}</text>')
         prev = x0 - 44
         for ni, (name, unlocked) in enumerate(nodes):

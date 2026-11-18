@@ -83,7 +83,7 @@ PROJECTS = [
          body=["Labs, halls and equipment with approval chains,",
                "QR check-in, auto-release of no-shows and a",
                "make-up class finder for faculty."],
-         tech=["Django", "PostgreSQL", "React"], repo="BookMyCampus",
+         tech=["Django", "Postgres", "React"], repo="BookMyCampus",
          live="book-my-campus-ab.vercel.app"),
     dict(rarity="RARE", icon="clock", title="TimedInk",
          sub="Fault-tolerant email scheduler",
@@ -97,7 +97,7 @@ PROJECTS = [
          body=["Hybrid regex + NER engine that swaps 10 PII",
                "types for realistic fakes in .docx files while",
                "keeping every table and format intact."],
-         tech=["Python", "spaCy", "python-docx"], repo="PII-Redaction-Tool", live=None),
+         tech=["Python", "spaCy", "docx"], repo="PII-Redaction-Tool", live=None),
 ]
 
 # The rest of the story, shown as compact chips under the vault.
@@ -142,12 +142,12 @@ CHAPTERS = [
 # (when, title, line 1, line 2, accent)
 TIMELINE = [
     ("SEP 2023", "Player spawned", "Created this GitHub account.", "Level 1, no gear, big ideas.", CREAM),
-    ("SEP 2024", "The grind begins", "LeetCode-Solutions and CP drills:", "400+ problems and counting.", MINT),
+    ("SEP 2024", "The grind begins", "LeetCode and CP drills:", "400+ problems and counting.", MINT),
     ("MAR 2025", "SheShield", "A women's safety platform that", "now has 20 stars and an APK.", ROSE),
     ("JUL 2025", "Hackathon season", "AlgoTrail visualiser and the", "Adobe Hackathon PDF engine.", VIOLET),
     ("NOV 2025", "GridSense", "A 3D smart-grid digital twin", "with ML forecasting.", CREAM),
-    ("FEB 2026", "Real-time arc", "Pixel-Board and CampusWhisper:", "Socket.IO, WebRTC, Groq vision.", MINT),
-    ("MAY 2026", "MindBloom", "Gemini-powered wellness for", "children, parents, counsellors.", ROSE),
+    ("FEB 2026", "Real-time arc", "Pixel-Board, CampusWhisper:", "Socket.IO, WebRTC, Groq vision.", MINT),
+    ("MAY 2026", "MindBloom", "Gemini-powered wellness", "for kids, parents, counsellors.", ROSE),
     ("AUG 2026", "Systems arc", "PII redaction engine, then", "Vyapaar agent commerce.", VIOLET),
     ("SEP 2026", "Production grade", "TimedInk scheduler and the", "Hirehearsal AI interviewer.", CREAM),
     ("NOV 2026", "Now playing", "BookMyCampus, Pratirodh and", "the SheShield Android app.", MINT),
@@ -212,7 +212,7 @@ SKILL_TREE = [
     ("CLOUD", VIOLET, [("Linux", True), ("Docker", True), ("Kubernetes", True),
                        ("AWS", True), ("Rust", False)]),
 ]
-SKILL_ROOT = "DSA + C++"
+SKILL_ROOT = "DSA + Java"
 
 # ------------------------------------------------------------ boss fight
 # The current main quest, drawn as a boss. (phase, label, state) where state

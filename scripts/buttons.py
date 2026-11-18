@@ -18,9 +18,9 @@ import profile as P
 from design import INK, CREAM, ROSE, MINT, VIOLET, esc, svg_open
 from icons import icon
 
-H = 40          # button height
+H = 42          # button height
 R = 10          # corner radius
-FS = 13         # label size
+FS = 14         # label size
 SANS = "'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif"
 
 

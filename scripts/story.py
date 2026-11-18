@@ -315,20 +315,17 @@ def build_hero(d):
     chips, _ = chip_row(s, x0, 372, P.HERO_CHIPS, cols=[CREAM, ROSE, MINT, VIOLET], gap=8, fs=11, h=26)
     body.append(f'<g class="ev5">{chips}</g>')
 
-    # -- save-file stats
-    tiles = [("pulse", fmt(tc), "XP EARNED", CREAM), ("repo", fmt(d["repos"]), "REPOS", ROSE),
-             ("star", fmt(d["stars"]), "STARS", MINT), ("flame", fmt(d.get("longest")), "BEST STREAK", VIOLET)]
-    tw, gap = 140, 14
-    for i, (ic, val, lab, col) in enumerate(tiles):
-        x = x0 + i * (tw + gap)
-        body.append(f'<g class="{ev(6 + i)}">')
-        body.append(card(s, x, 424, tw, 86, r=16, tint=col, tint_op=0.16, sheen=True, sheen_delay=i * 0.7))
-        body.append(icon(ic, x + 16, 440, 17, col, 1.7, 0.9))
-        body.append(f'<text class="mono" x="{x + tw - 16}" y="453" text-anchor="end" font-size="8.6" '
-                    f'letter-spacing="1.6" fill="{col}" fill-opacity="0.9" font-weight="600">{lab}</text>')
-        body.append(f'<text class="sans" x="{x + 16}" y="494" font-size="27" font-weight="800" '
-                    f'fill="{INK}" letter-spacing="-0.8">{val}</text>')
-        body.append("</g>")
+    # -- no stat tiles here: the HUD directly under the hero carries the
+    #    numbers. The floor gets a quiet cue into the story instead.
+    css.append("@keyframes cue{0%,100%{transform:translateY(0);opacity:.35}50%{transform:translateY(5px);opacity:1}}"
+               ".cue{animation:cue 2.2s ease-in-out infinite}")
+    body.append(f'<g class="ev6"><text class="mono" x="{x0}" y="476" font-size="10" letter-spacing="3.2" '
+                f'fill="{DIM}">SCROLL TO BEGIN</text>'
+                f'<path class="cue" d="M{x0 + 176} 466l6 6 6-6" fill="none" stroke="{MINT}" stroke-width="1.6" '
+                f'stroke-linecap="round" stroke-linejoin="round"/>'
+                f'<path class="cue" style="animation-delay:-.3s" d="M{x0 + 176} 474l6 6 6-6" fill="none" '
+                f'stroke="{MINT}" stroke-opacity="0.5" stroke-width="1.6" stroke-linecap="round" '
+                f'stroke-linejoin="round"/></g>')
 
     # -- portrait with orbits and the level badge
     size = 300
@@ -381,7 +378,7 @@ def build_chapter(i):
     H = 176
     n = len(P.CHAPTERS)
     shadow = {CREAM: ROSE, ROSE: MINT, MINT: CREAM, VIOLET: ROSE}[col]
-    fs = 13
+    fs = 14.5
     tw = len(line) * fs * 0.6
     T = 11.0
     nseg = 16
@@ -482,7 +479,7 @@ def build_timeline():
     </animateMotion>
   </g>""")
 
-    cw, ch = 206, 100
+    cw, ch = 218, 104
     for i, ((nx, ny), (when, title, l1, l2, col)) in enumerate(zip(nodes, P.TIMELINE)):
         last = i == len(P.TIMELINE) - 1
         cx = min(max(nx - cw / 2, PAD), W - PAD - cw)
@@ -588,12 +585,19 @@ def build_city(d):
         body.append(lab)
 
     # right column: numbers from the same calendar
+    # the weekday that carries the most work - new information, rather than
+    # repeating the streak numbers shown elsewhere
+    import datetime as _dt
+    wd = [0] * 7
+    for day, n in recent:
+        wd[_dt.date.fromisoformat(day).weekday()] += n
+    busy_day = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][wd.index(max(wd))] if any(wd) else "-"
     year = sum(n for _, n in recent)
     activedays = sum(1 for _, n in recent if n)
     rows = [("pulse", fmt(year), "CONTRIBUTIONS · 52 WEEKS", CREAM),
             ("clock", "%d%%" % round(100.0 * activedays / max(1, len(recent))), "DAYS WITH A COMMIT", ROSE),
             ("flame", fmt(d.get("current")), "CURRENT STREAK", MINT),
-            ("trophy", fmt(d.get("longest")), "LONGEST STREAK", VIOLET)]
+            ("pulse", busy_day, "BUSIEST WEEKDAY", VIOLET)]
     rx = 900
     for i, (ic, val, lab, col) in enumerate(rows):
         y = 112 + i * 92
@@ -640,7 +644,7 @@ def _project_card(s, i, pr, x, y, w, h, stars, big):
     tx = x + 22 + isz + 14
     o.append(f'<text class="sans" x="{tx}" y="{y + (80 if big else 74)}" font-size="{23 if big else 18}" '
              f'font-weight="800" fill="{INK}" letter-spacing="-0.4">{esc(pr["title"])}</text>')
-    o.append(f'<text class="mono" x="{tx}" y="{y + (98 if big else 90)}" font-size="{10.2 if big else 9}" '
+    o.append(f'<text class="mono" x="{tx}" y="{y + (98 if big else 90)}" font-size="{10.2 if big else 8.2}" '
              f'letter-spacing="1.2" fill="{col}" fill-opacity="0.92">{esc(pr["sub"].upper())}</text>')
     lines = pr["body"] if big else pr.get("short", pr["body"])
     for li, line in enumerate(lines):
@@ -707,7 +711,7 @@ def build_vault(d):
         wdt = gw4
         body.append(f'<rect x="{cx}" y="{cy}" width="{wdt}" height="23" rx="11.5" fill="{col}" fill-opacity="0.07" '
                     f'stroke="{col}" stroke-opacity="0.35"/>'
-                    f'<text x="{cx + 12}" y="{cy + 15.5}" font-size="11"><tspan fill="{col}" font-weight="700">'
+                    f'<text x="{cx + 12}" y="{cy + 15.5}" font-size="9.8"><tspan fill="{col}" font-weight="700">'
                     f'{esc(t)}</tspan><tspan fill="{DIM}">  {esc(one)}</tspan></text>')
         cx += wdt + 10
     body.append("</g>")

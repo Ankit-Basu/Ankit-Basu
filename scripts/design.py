@@ -297,13 +297,15 @@ def card(scope, x, y, w, h, r=18, tint=None, tint_op=0.16, shadow=True,
 def chip(scope, x, y, label, col=None, pad=11, fs=11.5, h=23, mono=True):
     """Small glass token. Returns (svg, width)."""
     col = col or DIM
-    w = int(len(label) * (fs * 0.62) + pad * 2)
+    fs = bump(fs)
+    tw = len(label) * (fs * 0.62 + 0.4)
+    w = int(tw + pad * 2)
     cls = "mono" if mono else "sans"
     sv = ('<g><rect x="%s" y="%s" width="%s" height="%s" rx="%.1f" fill="#ffffff" '
           'fill-opacity="0.055" stroke="%s" stroke-opacity="0.32" stroke-width="1"/>'
           '<text class="%s" x="%.0f" y="%.0f" text-anchor="middle" font-size="%s" fill="%s" '
-          'fill-opacity="0.95" letter-spacing="0.4">%s</text></g>'
-          % (x, y, w, h, h / 2.0, col, cls, x + w / 2.0, y + h / 2.0 + 4, fs, col, esc(label)))
+          'fill-opacity="0.95" letter-spacing="0.4" textLength="%.1f" lengthAdjust="spacing">%s</text></g>'
+          % (x, y, w, h, h / 2.0, col, cls, x + w / 2.0, y + h / 2.0 + fs * 0.36, fs, col, tw, esc(label)))
     return sv, w
 
 
@@ -402,6 +404,39 @@ def svg_open(w, h):
             'viewBox="0 0 %s %s" width="%s" height="%s" role="img">' % (w, h, w, h))
 
 
+def bump(fs):
+    """Readable size for a label drawn on the 1200-wide canvas.
+
+    GitHub shows these panels at roughly 840px, so everything renders at
+    about 70% - a 10px label lands near 7px. Small text gets the biggest
+    lift; headings are already large enough and barely move."""
+    fs = float(fs)
+    if fs <= 10.5:
+        return round(fs * 1.2, 1)
+    if fs <= 12.5:
+        return round(fs * 1.1, 1)
+    if fs <= 16:
+        return round(fs * 1.05, 1)
+    return fs
+
+
+_TAG = re.compile(r"<(?:text|tspan|g)\b[^>]*>")
+_FS = re.compile(r'font-size="([0-9.]+)"')
+
+
+def _scale_fonts(body):
+    """Apply bump() to every font-size in the panel. Text pinned with
+    textLength is skipped: its width is exact on purpose (typed lines,
+    ticker loops, pills that size themselves), and scaling it would squash
+    the glyphs or break the animation that depends on that width."""
+    def fix(m):
+        tag = m.group(0)
+        if "textLength=" in tag:
+            return tag
+        return _FS.sub(lambda f: 'font-size="%s"' % bump(f.group(1)), tag)
+    return _TAG.sub(fix, body)
+
+
 _FILTER_ATTR = re.compile(r'\s+filter="url\(#(?:glow|glowS|drop|dropS|soft|blob)_[A-Za-z0-9]+\)"')
 
 
@@ -413,6 +448,7 @@ def page(scope, w, h, css, body, blobs=None, grid=True, use_grain=False,
     # strokes instead; grain (a full-canvas feTurbulence in overlay blend)
     # is off for the same reason.
     body = _FILTER_ATTR.sub("", body)
+    body = _scale_fonts(body)
     parts = [svg_open(w, h), base_defs(scope),
              "<style>" + BASE_CSS + css + "</style>",
              frame(scope, w, h, blobs, grid)]
@@ -453,13 +489,14 @@ def sticker(x, y, label, fill=CREAM, shadow=None, fs=11, h=26, rot=0, off=4):
     """A label tag: a tinted translucent pill with a hairline border in the
     accent colour and accent text. Returns (svg, width). rot/shadow/off are
     accepted for older call sites and ignored - nothing tilts any more."""
-    fs = min(fs, 10.5)
-    w = int(len(label) * fs * 0.66 + 26)
+    fs = bump(min(fs, 10.5))
+    tw = len(label) * (fs * 0.6 + 1.6) - 1.6
+    w = int(tw + 32)
     sv = ('<g><rect x="%s" y="%s" width="%s" height="%s" rx="%.1f" fill="%s" fill-opacity="0.12" '
           'stroke="%s" stroke-opacity="0.45" stroke-width="1"/>'
           '<circle cx="%.1f" cy="%.1f" r="2.4" fill="%s"/>'
           '<text class="mono" x="%.1f" y="%.1f" font-size="%s" font-weight="600" letter-spacing="1.6" '
-          'fill="%s">%s</text></g>'
+          'fill="%s" textLength="%.1f" lengthAdjust="spacing">%s</text></g>'
           % (x, y, w, h, h / 2.0, fill, fill, x + 12, y + h / 2.0, fill,
-             x + 20, y + h / 2 + fs * 0.36, fs, fill, esc(label)))
+             x + 21, y + h / 2 + fs * 0.36, fs, fill, tw, esc(label)))
     return sv, w

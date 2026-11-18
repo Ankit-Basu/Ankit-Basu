@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 119 46" width="119" height="46" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 124 48" width="124" height="48" role="img">
 <style>text{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif}.nd{animation:nd 2.4s cubic-bezier(.45,0,.25,1) infinite}@keyframes nd{0%,55%,100%{transform:none}75%{transform:translateX(3px)}}@keyframes beam{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}.bm{animation:beam 4.5s linear -3.69s infinite}</style>
-<rect x="7.5" y="5.5" width="104" height="40" rx="10" fill="#c5f467" opacity="0.35"/>
-<path d="M11.5 1.5H107.5A10 10 0 0 1 117.5 11.5V31.5A10 10 0 0 1 107.5 41.5H11.5A10 10 0 0 1 1.5 31.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="#f0f3f6"/>
-<rect x="11.5" y="2.3" width="96" height="1" fill="#ffffff"/>
-<text x="17.5" y="26.1" font-size="13" font-weight="600" letter-spacing="0.1" fill="#0d1117" textLength="66.3" lengthAdjust="spacing">Battle log</text>
-<g class="nd"><path d="M92.8 16.5l5 5-5 5" fill="none" stroke="#0d1117" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="7.5" y="5.5" width="109" height="42" rx="10" fill="#c5f467" opacity="0.35"/>
+<path d="M11.5 1.5H112.5A10 10 0 0 1 122.5 11.5V33.5A10 10 0 0 1 112.5 43.5H11.5A10 10 0 0 1 1.5 33.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="#f0f3f6"/>
+<rect x="11.5" y="2.3" width="101" height="1" fill="#ffffff"/>
+<text x="17.5" y="27.4" font-size="14" font-weight="600" letter-spacing="0.1" fill="#0d1117" textLength="71.4" lengthAdjust="spacing">Battle log</text>
+<g class="nd"><path d="M97.89999999999999 17.5l5 5-5 5" fill="none" stroke="#0d1117" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>

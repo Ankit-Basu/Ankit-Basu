@@ -146,22 +146,22 @@
     .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
-@keyframes stamp{0%{transform:translateY(10px);opacity:.5}100%{transform:none;opacity:1}}.stamp{animation:stamp 1.2s cubic-bezier(.22,1,.36,1)}@keyframes trace{0%,10%{stroke-dashoffset:1}70%,100%{stroke-dashoffset:0}}.uline{animation:trace 2.6s cubic-bezier(.45,.05,.35,1)}@keyframes say{0%{width:0}32%,100%{width:526.6px}}.say{animation:say 11.0s steps(67,end) infinite}@keyframes nxt{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(3px);opacity:.4}}.nxt{animation:nxt 1.6s ease-in-out infinite}@keyframes seg{0%,4%{opacity:.15}10%,74%{opacity:1}84%,100%{opacity:.15}}@keyframes flick{0%,100%{opacity:.9}50%{opacity:.45}}.flick{animation:flick 3.2s ease-in-out infinite}</style>
+@keyframes stamp{0%{transform:translateY(10px);opacity:.5}100%{transform:none;opacity:1}}.stamp{animation:stamp 1.2s cubic-bezier(.22,1,.36,1)}@keyframes trace{0%,10%{stroke-dashoffset:1}70%,100%{stroke-dashoffset:0}}.uline{animation:trace 2.6s cubic-bezier(.45,.05,.35,1)}@keyframes say{0%{width:0}32%,100%{width:586.9px}}.say{animation:say 11.0s steps(67,end) infinite}@keyframes nxt{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(3px);opacity:.4}}.nxt{animation:nxt 1.6s ease-in-out infinite}@keyframes seg{0%,4%{opacity:.15}10%,74%{opacity:1}84%,100%{opacity:.15}}@keyframes flick{0%,100%{opacity:.9}50%{opacity:.45}}.flick{animation:flick 3.2s ease-in-out infinite}</style>
 <rect width="1200" height="176" rx="20" fill="#0d1117"/>
 <g class="stamp" style="transform-origin:121.0px 92px"><g>
-  <radialGradient id="tg17" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.340"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg9" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.340"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
   <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="#0d1117"/>
-  <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="url(#tg17)"/>
+  <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="url(#tg9)"/>
   <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="url(#pane_c1)"/>
   <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="none" stroke="url(#rim_c1)" stroke-width="1.2"/>
   <path d="M47,50 A16,16 0 0 1 62,35 H180 A16,16 0 0 1 195,50" fill="none" stroke="url(#spec_c1)" stroke-width="1.4"/>
   <rect x="62" y="143.5" width="118" height="1.2" rx="0.6" fill="url(#refr_c1)"/>
-  </g><text class="mono" x="121.0" y="60" text-anchor="middle" font-size="9.4" font-weight="600" letter-spacing="3" fill="#fcd38d">CHAPTER</text><text class="sans uline" x="121.0" y="122" text-anchor="middle" font-size="56" font-weight="800" fill="none" stroke="#fcd38d" stroke-width="1.3" letter-spacing="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0">I</text><rect x="105.0" y="132" width="32" height="1.5" rx="0.75" fill="#fcd38d"/></g>
+  </g><text class="mono" x="121.0" y="60" text-anchor="middle" font-size="11.3" font-weight="600" letter-spacing="3" fill="#fcd38d">CHAPTER</text><text class="sans uline" x="121.0" y="122" text-anchor="middle" font-size="56.0" font-weight="800" fill="none" stroke="#fcd38d" stroke-width="1.3" letter-spacing="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0">I</text><rect x="105.0" y="132" width="32" height="1.5" rx="0.75" fill="#fcd38d"/></g>
   <g class="ev1">
   <g>
-  <radialGradient id="tg18" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.136"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg10" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.136"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
   <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="#0d1117"/>
-  <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="url(#tg18)"/>
+  <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="url(#tg10)"/>
   <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="url(#pane_c1)"/>
   <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="none" stroke="url(#rim_c1)" stroke-width="1.2"/>
   <path d="M223,50 A16,16 0 0 1 238,35 H1138 A16,16 0 0 1 1153,50" fill="none" stroke="url(#spec_c1)" stroke-width="1.4"/>
@@ -172,11 +172,11 @@
   <path class="flick" d="M232 122V136H246" fill="none" stroke="#fcd38d" stroke-width="1.4" stroke-linecap="round"/>
   <path class="flick" d="M1144 122V136H1130" fill="none" stroke="#fcd38d" stroke-width="1.4" stroke-linecap="round"/>
   </g>
-  <g class="ev1"><g><rect x="248" y="44" width="102" height="22" rx="11.0" fill="#fcd38d" fill-opacity="0.12" stroke="#fcd38d" stroke-opacity="0.45" stroke-width="1"/><circle cx="260.0" cy="55.0" r="2.4" fill="#fcd38d"/><text class="mono" x="268.0" y="58.5" font-size="9.6" font-weight="600" letter-spacing="1.6" fill="#fcd38d">ORIGIN STORY</text></g></g>
-  <text class="sans ev2" x="248" y="100" font-size="25" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">It started with one commit</text>
-  <clipPath id="say19"><rect class="say" x="246" y="116" width="526.6" height="22"/></clipPath><text class="mono" x="248" y="132" font-size="13" fill="#9da7b3" textLength="522.6" lengthAdjust="spacingAndGlyphs" clip-path="url(#say19)">September 2023. An empty account, a laptop, and far too many ideas.</text>
+  <g class="ev1"><g><rect x="248" y="44" width="132" height="22" rx="11.0" fill="#fcd38d" fill-opacity="0.12" stroke="#fcd38d" stroke-opacity="0.45" stroke-width="1"/><circle cx="260.0" cy="55.0" r="2.4" fill="#fcd38d"/><text class="mono" x="269.0" y="59.1" font-size="11.5" font-weight="600" letter-spacing="1.6" fill="#fcd38d" textLength="100.4" lengthAdjust="spacing">ORIGIN STORY</text></g></g>
+  <text class="sans ev2" x="248" y="100" font-size="25.0" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">It started with one commit</text>
+  <clipPath id="say11"><rect class="say" x="246" y="116" width="586.9" height="22"/></clipPath><text class="mono" x="248" y="132" font-size="14.5" fill="#9da7b3" textLength="582.9" lengthAdjust="spacingAndGlyphs" clip-path="url(#say11)">September 2023. An empty account, a laptop, and far too many ideas.</text>
   <path class="nxt" d="M1114 122l6 6 6-6" fill="none" stroke="#fcd38d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="mono ev3" x="1124" y="62" text-anchor="end" font-size="9" letter-spacing="2" fill="#6e7681">CH 01/06 &#183; LOADING NEXT</text>
+  <text class="mono ev3" x="1124" y="62" text-anchor="end" font-size="10.8" letter-spacing="2" fill="#6e7681">CH 01/06 &#183; LOADING NEXT</text>
   <rect x="951" y="72" width="8" height="4" rx="2" fill="#fcd38d" style="animation:seg 3.67s linear -3.67s infinite"/>
   <rect x="962" y="72" width="8" height="4" rx="2" fill="#fcd38d" style="animation:seg 3.67s linear -3.58s infinite"/>
   <rect x="973" y="72" width="8" height="4" rx="2" fill="#fcd38d" style="animation:seg 3.67s linear -3.49s infinite"/>

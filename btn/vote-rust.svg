@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 216 46" width="216" height="46" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 229 48" width="229" height="48" role="img">
 <style>text{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif}.nd{animation:nd 2.4s cubic-bezier(.45,0,.25,1) infinite}@keyframes nd{0%,55%,100%{transform:none}75%{transform:translate(2px,-2px)}}@keyframes beam{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}.bm{animation:beam 4.5s linear -0.02s infinite}</style>
-<path d="M11.5 1.5H204.5A10 10 0 0 1 214.5 11.5V31.5A10 10 0 0 1 204.5 41.5H11.5A10 10 0 0 1 1.5 31.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="#161b22" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
-<path class="bm" d="M11.5 1.5H204.5A10 10 0 0 1 214.5 11.5V31.5A10 10 0 0 1 204.5 41.5H11.5A10 10 0 0 1 1.5 31.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="none" stroke="#7dd3fc" stroke-width="1.4" stroke-linecap="round" pathLength="100" stroke-dasharray="16 84" stroke-dashoffset="0"/>
-<text x="17.5" y="26.1" font-size="13" font-weight="600" letter-spacing="0.1" fill="#f0f3f6" textLength="163.8" lengthAdjust="spacing">Vote · A Rust side quest</text>
-<g class="nd"><path d="M190.29999999999998 26.5l9-9M192.29999999999998 17.5h7v7" fill="none" stroke="#7dd3fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M11.5 1.5H217.5A10 10 0 0 1 227.5 11.5V33.5A10 10 0 0 1 217.5 43.5H11.5A10 10 0 0 1 1.5 33.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="#161b22" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+<path class="bm" d="M11.5 1.5H217.5A10 10 0 0 1 227.5 11.5V33.5A10 10 0 0 1 217.5 43.5H11.5A10 10 0 0 1 1.5 33.5V11.5A10 10 0 0 1 11.5 1.5Z" fill="none" stroke="#7dd3fc" stroke-width="1.4" stroke-linecap="round" pathLength="100" stroke-dasharray="16 84" stroke-dashoffset="0"/>
+<text x="17.5" y="27.4" font-size="14" font-weight="600" letter-spacing="0.1" fill="#f0f3f6" textLength="176.4" lengthAdjust="spacing">Vote · A Rust side quest</text>
+<g class="nd"><path d="M202.89999999999998 27.5l9-9M204.89999999999998 18.5h7v7" fill="none" stroke="#7dd3fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>
