@@ -147,8 +147,8 @@
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 @keyframes roll{from{transform:translateY(0)}to{transform:translateY(-540px)}}.roll{animation:roll 26s linear infinite}@keyframes ink{0%,8%{stroke-dashoffset:1}40%,100%{stroke-dashoffset:0}}.ink{animation:ink 7s cubic-bezier(.45,.05,.35,1) infinite}@keyframes fillin{0%,38%{fill-opacity:0}55%,100%{fill-opacity:1}}.fillin{animation:fillin 7s ease-out infinite}@keyframes q{0%,100%{opacity:1}50%{opacity:0}}.qm{animation:q 1s steps(1) infinite}</style>
-<rect width="1200" height="380" fill="#0d1117"/>
-  <rect width="1200" height="380" fill="url(#grid_e)"/>
+<rect width="1200" height="380" rx="20" fill="#0d1117"/>
+  <rect width="1200" height="380" rx="20" fill="url(#grid_e)"/>
 <circle cx="399" cy="168" r="1.7" fill="#ff4fa0" opacity="0.3" style="animation:rise 9.7s linear 6.4s infinite"/>
   <circle cx="447" cy="147" r="1.6" fill="#ffc857" opacity="0.3" style="animation:rise 9.3s linear 5.2s infinite"/>
   <circle cx="110" cy="154" r="1.5" fill="#ffc857" opacity="0.3" style="animation:rise 16.4s linear 1.5s infinite"/>

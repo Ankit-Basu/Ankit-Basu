@@ -188,7 +188,7 @@ def _horizon(s, H, sun=None, hy=None, depth=None):
     vx = W / 2
     clip = "hzc_" + s
     out = [f"""<defs>
-    <clipPath id="{clip}"><path d="{rr(0, 0, W, H, 26)}"/></clipPath>
+    <clipPath id="{clip}"><path d="{rr(0, 0, W, H, 20)}"/></clipPath>
     <linearGradient id="sun_{s}" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="{CREAM}"/><stop offset="55%" stop-color="{ROSE}"/>
       <stop offset="100%" stop-color="{PURPLE}"/>
@@ -365,7 +365,7 @@ def build_hero(d):
              (640, 420, 220, ROSE, 0.24, "drift2"),
              (960, 200, 260, VIOLET, 0.28, "drift3"),
              (1120, 470, 180, MINT, 0.2, "drift")]
-    return page(s, W, H, "\n    ".join(css), "\n  ".join(body), blobs, use_particles=18)
+    return page(s, W, H, "\n    ".join(css), "\n  ".join(body), blobs)
 
 
 # ================================================================ chapter cards
@@ -503,11 +503,12 @@ def build_timeline():
                         f'<circle cx="{nx}" cy="{ny}" r="3.4" fill="{col}" filter="url(#glowS_{s})"/>')
         body.append("</g>")
 
-    st, stw = sticker(W - PAD - 150, 44, "YOU ARE HERE ↘", MINT, VIOLET, fs=10, h=24, rot=3)
+    nx_, ny_ = nodes[len(P.TIMELINE) - 1]
+    st, stw = sticker(nx_ - 30, ny_ - 58, "YOU ARE HERE ↓", MINT, ROSE, fs=10, h=24, rot=-3, off=3)
     body.append(f'<g class="ev20">{st}</g>')
     body.append(f'<text class="mono" x="{W // 2}" y="{H - 22}" text-anchor="middle" font-size="9.6" '
                 f'letter-spacing="1.6" fill="{FAINT}">DATED FROM EACH REPOSITORY\'S FIRST COMMIT &#183; '
-                f'THE GREEN DIAMOND IS ME, STILL WALKING</text>')
+                f'THE CYAN DIAMOND IS ME, STILL WALKING</text>')
     blobs = [(240, 200, 250, CREAM, 0.2, "drift"), (700, 420, 250, ROSE, 0.18, "drift2"),
              (1040, 220, 230, MINT, 0.16, "drift3")]
     return page(s, W, H, css, "\n  ".join(body), blobs)
@@ -695,13 +696,12 @@ def build_vault(d):
     body.append(st)
     body.append(f'<text class="mono" x="{PAD + 22 + stw + 16}" y="{sy + 35}" font-size="10" fill="{DIM}">'
                 f'more chapters of the same story</text>')
-    cx, cy = PAD + 22, sy + 58
     cols = [CREAM, ROSE, MINT, VIOLET]
+    gw4 = (W - 2 * PAD - 44 - 3 * 10) / 4.0
     for j, (t, one, repo) in enumerate(P.SIDE_QUESTS):
         col = cols[j % 4]
-        wdt = int(len(t) * 7.6 + len(one) * 5.7 + 40)
-        if cx + wdt > W - PAD - 20:
-            cx, cy = PAD + 22, cy + 30
+        cx, cy = PAD + 22 + (j % 4) * (gw4 + 10), sy + 52 + (j // 4) * 30
+        wdt = gw4
         body.append(f'<rect x="{cx}" y="{cy}" width="{wdt}" height="23" rx="11.5" fill="{col}" fill-opacity="0.07" '
                     f'stroke="{col}" stroke-opacity="0.35"/>'
                     f'<text x="{cx + 12}" y="{cy + 15.5}" font-size="11"><tspan fill="{col}" font-weight="700">'

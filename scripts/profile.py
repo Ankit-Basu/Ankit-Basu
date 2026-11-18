@@ -19,8 +19,8 @@ LINKEDIN = "Ankit Basu"
 INSTAGRAM = "_ank1t._"
 EMAIL = "ankitbasu935@gmail.com"
 
-QUOTE = "Turning ambitious engineering ideas into scalable, production reality."
-MOTTO = "INNOVATE  •  SCALE  •  ARCHITECT  •  SHIP"
+QUOTE = "If it isn't in production yet, it's still a side quest."
+MOTTO = "BUILD  •  BREAK  •  FIX  •  SHIP  •  REPEAT"
 
 HERO_CHIPS = ["JAVA", "PYTHON", "REACT", "NODE.JS", "PYTORCH", "DOCKER", "AWS"]
 
@@ -106,7 +106,7 @@ SIDE_QUESTS = [
     ("GridSense", "3D smart-grid digital twin", "GridSense"),
     ("MindBloom", "Gemini AI wellness for kids", "MindBloom"),
     ("Pixel-Board", "8-bit multiplayer whiteboard", "Pixel-Board"),
-    ("CampusWhisper", "Anonymous campus confessions", "CampusWhisper"),
+    ("CampusWhisper", "Anonymous confessions", "CampusWhisper"),
     ("AlgoTrail", "Algorithm visual playground", "AlgoTrail"),
     ("SUDARSHAN-X", "Autonomous drone defence", None),
     ("KrishiVaani", "Multilingual farming assistant", None),

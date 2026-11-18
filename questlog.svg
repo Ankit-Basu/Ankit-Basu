@@ -151,8 +151,8 @@
     .tyw{animation:type 2.4s steps(22,end);}
     @keyframes scan{0%{transform:translateY(-40px)}100%{transform:translateY(320px)}}
     </style>
-<rect width="1200" height="416" fill="#0d1117"/>
-  <rect width="1200" height="416" fill="url(#grid_q)"/>
+<rect width="1200" height="416" rx="20" fill="#0d1117"/>
+  <rect width="1200" height="416" rx="20" fill="url(#grid_q)"/>
 <g>
   <path d="M65,40 H1135 A22,22 0 0 1 1157,62 V314 A22,22 0 0 1 1135,336 H65 A22,22 0 0 1 43,314 V62 A22,22 0 0 1 65,40 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
   <radialGradient id="tg103" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.153"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>

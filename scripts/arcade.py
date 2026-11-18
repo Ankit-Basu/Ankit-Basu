@@ -84,7 +84,7 @@ def build_companion(d):
             "on": "bob 2.4s ease-in-out infinite",
             "asleep": "bob 4.8s ease-in-out infinite"}[mood]
 
-    fill = {"K": INKK, "B": MINT, "S": "#0a0e14", "A": ROSE, "L": PURPLE}
+    fill = {"K": "#4b3bb8", "B": MINT, "S": "#0a0e14", "A": ROSE, "L": PURPLE}
     cells = []
     for r, row in enumerate(SPRITE):
         for c, ch in enumerate(row):
@@ -187,7 +187,7 @@ def build_ticker(d):
     body.append(f'<text class="mono ev1" x="{34 + len(fmt(this7)) * 20 + 14}" y="130" font-size="13" '
                 f'font-weight="700" fill="{tcol}">{"&#9650;" if up else "&#9660;"} {abs(chg):.0f}%</text>')
     body.append(f'<text class="mono ev1" x="34" y="150" font-size="9.4" letter-spacing="1.4" fill="{DIM}">'
-                f'COMMITS THIS WEEK VS LAST</text>')
+                f'CONTRIBUTIONS THIS WEEK VS LAST</text>')
     body.append(f'<g class="ev1"><circle cx="{HW - 120}" cy="125" r="4" fill="{ROSE}" '
                 f'style="animation:live 1.4s steps(1) infinite"/>'
                 f'<text class="mono" x="{HW - 108}" y="129" font-size="10" letter-spacing="1.6" fill="{ROSE}" '

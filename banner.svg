@@ -182,26 +182,8 @@
     @keyframes phot{0%,50%{opacity:0}64%,90%{opacity:1}97%,100%{opacity:0}}.phot{animation:phot 16s ease-in-out infinite}
     @keyframes scn{0%{transform:translateY(0);opacity:.95}55%{transform:translateY(300px);opacity:.95}56%,100%{transform:translateY(300px);opacity:0}}.scn{animation:scn 16s linear infinite}
     @keyframes hud1{0%,51%{opacity:1}52%,100%{opacity:0}}@keyframes hud2{0%,51%{opacity:0}52%,92%{opacity:1}93%,100%{opacity:0}}@keyframes hud3{0%,92%{opacity:0}93%,100%{opacity:1}}.hud1{animation:hud1 16s steps(1) infinite}.hud2{animation:hud2 16s steps(1) infinite}.hud3{animation:hud3 16s steps(1) infinite}</style>
-<rect width="1200" height="560" fill="#0d1117"/>
-  <rect width="1200" height="560" fill="url(#grid_h)"/>
-<circle cx="399" cy="249" r="1.7" fill="#ff4fa0" opacity="0.3" style="animation:rise 9.7s linear 6.4s infinite"/>
-  <circle cx="447" cy="216" r="1.6" fill="#ffc857" opacity="0.3" style="animation:rise 9.3s linear 5.2s infinite"/>
-  <circle cx="110" cy="228" r="1.5" fill="#ffc857" opacity="0.3" style="animation:rise 16.4s linear 1.5s infinite"/>
-  <circle cx="284" cy="417" r="2.1" fill="#ff4fa0" opacity="0.3" style="animation:rise 14.2s linear 4.8s infinite"/>
-  <circle cx="1143" cy="212" r="2.0" fill="#ffc857" opacity="0.3" style="animation:rise 11.6s linear 1.7s infinite"/>
-  <circle cx="164" cy="305" r="2.0" fill="#ffc857" opacity="0.3" style="animation:rise 10.6s linear 7.0s infinite"/>
-  <circle cx="758" cy="327" r="1.6" fill="#ff4fa0" opacity="0.3" style="animation:rise 9.6s linear 0.7s infinite"/>
-  <circle cx="265" cy="436" r="1.5" fill="#ffc857" opacity="0.3" style="animation:rise 11.8s linear 7.0s infinite"/>
-  <circle cx="547" cy="302" r="1.9" fill="#ffc857" opacity="0.3" style="animation:rise 15.3s linear 2.9s infinite"/>
-  <circle cx="685" cy="381" r="2.0" fill="#ff4fa0" opacity="0.3" style="animation:rise 15.6s linear 3.5s infinite"/>
-  <circle cx="1147" cy="238" r="1.4" fill="#ffc857" opacity="0.3" style="animation:rise 15.8s linear 1.8s infinite"/>
-  <circle cx="587" cy="210" r="1.8" fill="#ffc857" opacity="0.3" style="animation:rise 15.9s linear 6.9s infinite"/>
-  <circle cx="1028" cy="306" r="1.8" fill="#ff4fa0" opacity="0.3" style="animation:rise 14.3s linear 7.0s infinite"/>
-  <circle cx="550" cy="492" r="2.1" fill="#ffc857" opacity="0.3" style="animation:rise 13.3s linear 8.0s infinite"/>
-  <circle cx="99" cy="443" r="1.7" fill="#ffc857" opacity="0.3" style="animation:rise 17.9s linear 9.9s infinite"/>
-  <circle cx="354" cy="332" r="1.8" fill="#ff4fa0" opacity="0.3" style="animation:rise 9.2s linear 5.5s infinite"/>
-  <circle cx="222" cy="237" r="1.0" fill="#ffc857" opacity="0.3" style="animation:rise 15.9s linear 1.6s infinite"/>
-  <circle cx="312" cy="334" r="2.0" fill="#ffc857" opacity="0.3" style="animation:rise 9.7s linear 5.4s infinite"/>
+<rect width="1200" height="560" rx="20" fill="#0d1117"/>
+  <rect width="1200" height="560" rx="20" fill="url(#grid_h)"/>
 <defs>
     <linearGradient id="nm_h" x1="0" y1="0" x2="1" y2="0.5">
       <stop offset="0%" stop-color="#ffffff"/><stop offset="34%" stop-color="#ffc857"/>
@@ -213,7 +195,7 @@
     </clipPath>
   </defs>
   <defs>
-    <clipPath id="hzc_h"><path d="M26,0 H1174 A26,26 0 0 1 1200,26 V534 A26,26 0 0 1 1174,560 H26 A26,26 0 0 1 0,534 V26 A26,26 0 0 1 26,0 Z"/></clipPath>
+    <clipPath id="hzc_h"><path d="M20,0 H1180 A20,20 0 0 1 1200,20 V540 A20,20 0 0 1 1180,560 H20 A20,20 0 0 1 0,540 V20 A20,20 0 0 1 20,0 Z"/></clipPath>
     <linearGradient id="sun_h" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffc857"/><stop offset="55%" stop-color="#ff4fa0"/>
       <stop offset="100%" stop-color="#8b5cff"/>

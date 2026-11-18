@@ -152,8 +152,8 @@
     .ma{animation:ma 2.6s cubic-bezier(.45,.05,.35,1)}
     @keyframes live{0%,100%{opacity:1}50%{opacity:.2}}
     </style>
-<rect width="600" height="400" fill="#0d1117"/>
-  <rect width="600" height="400" fill="url(#grid_k)"/>
+<rect width="600" height="400" rx="20" fill="#0d1117"/>
+  <rect width="600" height="400" rx="20" fill="url(#grid_k)"/>
 <g class="ev0">
     <g transform="translate(43,50)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
@@ -166,7 +166,7 @@
   </g>
   <text class="sans ev1" x="34" y="132" font-size="34" font-weight="800" fill="#f0f3f6" letter-spacing="-1">65</text>
   <text class="mono ev1" x="88" y="130" font-size="13" font-weight="700" fill="#2ee6ff">&#9650; 48%</text>
-  <text class="mono ev1" x="34" y="150" font-size="9.4" letter-spacing="1.4" fill="#9da7b3">COMMITS THIS WEEK VS LAST</text>
+  <text class="mono ev1" x="34" y="150" font-size="9.4" letter-spacing="1.4" fill="#9da7b3">CONTRIBUTIONS THIS WEEK VS LAST</text>
   <g class="ev1"><circle cx="480" cy="125" r="4" fill="#ff4fa0" style="animation:live 1.4s steps(1) infinite"/><text class="mono" x="492" y="129" font-size="10" letter-spacing="1.6" fill="#ff4fa0" font-weight="700">LIVE &#183; 26W</text></g>
   <g>
   <radialGradient id="tg93" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#8b5cff" stop-opacity="0.238"/><stop offset="1" stop-color="#8b5cff" stop-opacity="0"/></radialGradient>

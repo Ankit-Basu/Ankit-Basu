@@ -147,8 +147,8 @@
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 </style>
-<rect width="1200" height="570" fill="#0d1117"/>
-  <rect width="1200" height="570" fill="url(#grid_l)"/>
+<rect width="1200" height="570" rx="20" fill="#0d1117"/>
+  <rect width="1200" height="570" rx="20" fill="url(#grid_l)"/>
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"

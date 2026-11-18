@@ -150,8 +150,8 @@
     @keyframes crown{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-4px) rotate(-4deg)}}
     @keyframes insert{0%,100%{opacity:1}50%{opacity:.25}}
     </style>
-<rect width="1200" height="330" fill="#0d1117"/>
-  <rect width="1200" height="330" fill="url(#grid_g)"/>
+<rect width="1200" height="330" rx="20" fill="#0d1117"/>
+  <rect width="1200" height="330" rx="20" fill="url(#grid_g)"/>
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"

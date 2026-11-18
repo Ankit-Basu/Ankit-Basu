@@ -147,8 +147,8 @@
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 @keyframes breathe2{0%,100%{opacity:1}50%{opacity:.72}}</style>
-<rect width="1200" height="316" fill="#0d1117"/>
-  <rect width="1200" height="316" fill="url(#grid_f)"/>
+<rect width="1200" height="316" rx="20" fill="#0d1117"/>
+  <rect width="1200" height="316" rx="20" fill="url(#grid_f)"/>
 <circle cx="399" cy="140" r="1.7" fill="#ff4fa0" opacity="0.3" style="animation:rise 9.7s linear 6.4s infinite"/>
   <circle cx="447" cy="122" r="1.6" fill="#ffc857" opacity="0.3" style="animation:rise 9.3s linear 5.2s infinite"/>
   <circle cx="110" cy="128" r="1.5" fill="#ffc857" opacity="0.3" style="animation:rise 16.4s linear 1.5s infinite"/>
@@ -240,9 +240,9 @@
   <text x="966" y="99" font-size="10.2" fill="#f0f3f6">ankitbasu935@gmail.com</text>
   </g>
   <g class="ev5">
-  <text class="mono" x="600" y="172" text-anchor="middle" font-size="12" letter-spacing="5.6" fill="#ffc857" fill-opacity="0.92" font-weight="600">INNOVATE  •  SCALE  •  ARCHITECT  •  SHIP</text>
+  <text class="mono" x="600" y="172" text-anchor="middle" font-size="12" letter-spacing="5.6" fill="#ffc857" fill-opacity="0.92" font-weight="600">BUILD  •  BREAK  •  FIX  •  SHIP  •  REPEAT</text>
   <rect x="410" y="184" width="380" height="1" fill="url(#spec_f)"/>
-  <text x="600" y="212" text-anchor="middle" font-size="14" font-style="italic" fill="#9da7b3">&#8220;Turning ambitious engineering ideas into scalable, production reality.&#8221;</text>
+  <text x="600" y="212" text-anchor="middle" font-size="14" font-style="italic" fill="#9da7b3">&#8220;If it isn't in production yet, it's still a side quest.&#8221;</text>
   <text class="mono" x="600" y="238" text-anchor="middle" font-size="9.6" letter-spacing="2.6" fill="#6e7681">JALANDHAR, PUNJAB · INDIA</text>
   </g>
   <g class="ev6"><g style="animation:breathe2 2.4s ease-in-out infinite"><g><g><rect x="512" y="266" width="143" height="28" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/><rect x="508" y="262" width="143" height="28" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="579.5" y="280.0" text-anchor="middle" font-size="11" font-weight="800" letter-spacing="1.4" fill="#0a0f14">TO BE CONTINUED ▸</text></g></g></g>

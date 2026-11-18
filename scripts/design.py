@@ -236,9 +236,11 @@ def frame(scope, w, h, blobs=None, grid=True, vignette=True):
     `vignette` are accepted and ignored so the panel code stays unchanged.
     """
     s = scope
-    out = ['<rect width="%s" height="%s" fill="%s"/>' % (w, h, BG0)]
+    # rounded so the panels read as deliberate cards on GitHub's light theme;
+    # on the dark theme the corners vanish into the matching page colour
+    out = ['<rect width="%s" height="%s" rx="20" fill="%s"/>' % (w, h, BG0)]
     if grid:
-        out.append('<rect width="%s" height="%s" fill="url(#grid_%s)"/>' % (w, h, s))
+        out.append('<rect width="%s" height="%s" rx="20" fill="url(#grid_%s)"/>' % (w, h, s))
     return "\n  ".join(out)
 
 

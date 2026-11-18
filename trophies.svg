@@ -152,8 +152,8 @@
 @keyframes tst1{0%,33.33%{transform:translateX(40px);opacity:0}36.33%,63.67%{transform:translateX(0);opacity:1}66.67%,100%{transform:translateX(40px);opacity:0}}.tst1{animation:tst1 15s cubic-bezier(.22,1,.36,1) infinite}
 @keyframes tst2{0%,66.67%{transform:translateX(40px);opacity:0}69.67%,97.00%{transform:translateX(0);opacity:1}100.00%,100%{transform:translateX(40px);opacity:0}}.tst2{animation:tst2 15s cubic-bezier(.22,1,.36,1) infinite}
 </style>
-<rect width="1200" height="400" fill="#0d1117"/>
-  <rect width="1200" height="400" fill="url(#grid_t)"/>
+<rect width="1200" height="400" rx="20" fill="#0d1117"/>
+  <rect width="1200" height="400" rx="20" fill="url(#grid_t)"/>
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
