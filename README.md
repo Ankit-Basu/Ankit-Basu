@@ -21,18 +21,14 @@
 <a name="prologue"></a>
 <img src="./banner.svg?v=30" width="100%" alt="Ankit Basu: Software Architect and AI Researcher. A self-drawing line portrait resolves into a photo." />
 
-<sub>
-
-**[Prologue](#prologue)** ·
-**[I&nbsp;Origin](#origin)** ·
-**[II&nbsp;Arsenal](#arsenal)** ·
-**[III&nbsp;Builds](#builds)** ·
-**[IV&nbsp;Battle&nbsp;Log](#battle-log)** ·
-**[V&nbsp;Trophies](#trophies)** ·
-**[VI&nbsp;Current&nbsp;Quest](#quest)** ·
-**[Epilogue](#epilogue)**
-
-</sub>
+**▶ Chapter select:**
+[Origin](#origin) ·
+[Arsenal](#arsenal) ·
+[Builds](#builds) ·
+[Battle&nbsp;Log](#battle-log) ·
+[Trophies](#trophies) ·
+[Current&nbsp;Quest](#quest) ·
+[Epilogue](#epilogue)
 
 <!-- ── CHAPTER I · ORIGIN ───────────────────────────────────────────── -->
 <a name="origin"></a>
