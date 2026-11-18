@@ -37,9 +37,9 @@
     </linearGradient>
 
     <linearGradient id="bg_p" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="#150b30"/>
-      <stop offset="55%" stop-color="#07051a"/>
-      <stop offset="100%" stop-color="#0d0624"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
     <radialGradient id="vig_p" cx="50%" cy="42%" r="72%">
@@ -75,7 +75,7 @@
     </filter>
 
     <pattern id="grid_p" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+      <circle cx="11" cy="11" r="0.9" fill="#ffffff" fill-opacity="0.05"/>
     </pattern>
     <pattern id="scan_p" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
@@ -147,16 +147,8 @@
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 </style>
-<rect width="1200" height="800" rx="26" fill="url(#bg_p)"/>
-  <g filter="url(#blob_p)" opacity="0.55">
-  <ellipse cx="220" cy="220" rx="260" ry="203" fill="#ffc857" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:220px 220px"/>
-  <ellipse cx="860" cy="200" rx="250" ry="195" fill="#b6ff4f" opacity="0.22" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:860px 200px"/>
-  <ellipse cx="300" cy="520" rx="240" ry="187" fill="#2ee6ff" opacity="0.16" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:300px 520px"/>
-  <ellipse cx="960" cy="560" rx="240" ry="187" fill="#ff4fa0" opacity="0.2" style="animation:drift 31s ease-in-out 5.1s infinite;transform-origin:960px 560px"/>
-  </g>
-  <rect width="1200" height="800" rx="26" fill="url(#grid_p)"/>
-  <rect width="1200" height="800" rx="26" fill="url(#vig_p)"/>
-  <rect width="1200" height="800" rx="26" fill="url(#scan_p)" opacity="0.5"/>
+<rect width="1200" height="800" fill="#0d1117"/>
+  <rect width="1200" height="800" fill="url(#grid_p)"/>
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
@@ -165,7 +157,7 @@
     </g>
     <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#ff4fa0"
           fill-opacity="0.9" font-weight="600">PROJECT VAULT</text>
-    <text x="46" y="89" font-size="25" font-weight="700" fill="#f6f1ff" letter-spacing="-0.4">Featured engineering systems</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#f0f3f6" letter-spacing="-0.4">Featured engineering systems</text>
   </g>
   <g class="ev1">
   <g>
@@ -182,11 +174,11 @@
   <g><g transform="translate(521,132) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#ffc857" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="565" y="145" text-anchor="end" font-size="12" font-weight="700" fill="#ffc857">20</text></g>
   <g transform="translate(68,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.0s infinite"><g fill="none" stroke="#ffc857" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4 20 5.4v6.1c0 4.9-3.4 8.8-8 10.1-4.6-1.3-8-5.2-8-10.1V5.4Z"/>
         <path d="m8.6 12 2.4 2.5 4.4-4.7"/></g></g>
-  <text class="sans" x="116" y="192" font-size="23" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">SheShield</text>
+  <text class="sans" x="116" y="192" font-size="23" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">SheShield</text>
   <text class="mono" x="116" y="210" font-size="10.2" letter-spacing="1.2" fill="#ffc857" fill-opacity="0.92">NO ONE WALKS HOME ALONE</text>
-  <text x="70" y="246" font-size="12.6" fill="#b4a8d8">Women's safety platform for LPU: one-tap SOS without sign-in,</text>
-  <text x="70" y="266" font-size="12.6" fill="#b4a8d8">verified Walk-With-Us escorts, anonymous incident reports and a</text>
-  <text x="70" y="286" font-size="12.6" fill="#b4a8d8">live campus safety map. Web app + Expo SDK 58 Android app.</text>
+  <text x="70" y="246" font-size="12.6" fill="#9da7b3">Women's safety platform for LPU: one-tap SOS without sign-in,</text>
+  <text x="70" y="266" font-size="12.6" fill="#9da7b3">verified Walk-With-Us escorts, anonymous incident reports and a</text>
+  <text x="70" y="286" font-size="12.6" fill="#9da7b3">live campus safety map. Web app + Expo SDK 58 Android app.</text>
   <g><rect x="70" y="320" width="40" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="90" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">PHP</text></g>
   <g><rect x="116" y="320" width="53" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="142" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">MySQL</text></g>
   <g><rect x="175" y="320" width="96" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="223" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">React Native</text></g>
@@ -207,11 +199,11 @@
   <rect x="613" y="138" width="3" height="200" rx="1.5" fill="#b6ff4f" opacity="0.85" filter="url(#glowS_p)"/>
   <g transform="rotate(-3 662.0 140.5)"><g><rect x="636" y="133" width="58" height="21" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/><rect x="633" y="130" width="58" height="21" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="662.0" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">MYTHIC</text></g>
   <g transform="translate(635,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.6s infinite"><g fill="none" stroke="#b6ff4f" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2.4 4.6 13.6h6.2l-1.2 8 8.8-11.2h-6.2Z"/></g></g>
-  <text class="sans" x="683" y="192" font-size="23" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">Vyapaar</text>
+  <text class="sans" x="683" y="192" font-size="23" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">Vyapaar</text>
   <text class="mono" x="683" y="210" font-size="10.2" letter-spacing="1.2" fill="#b6ff4f" fill-opacity="0.92">AGENT COMMERCE ON RAZORPAY RAILS</text>
-  <text x="637" y="246" font-size="12.6" fill="#b4a8d8">An outside AI agent discovers the catalog, proves a human's</text>
-  <text x="637" y="266" font-size="12.6" fill="#b4a8d8">consent and clears nine guardrails before it pays, while the</text>
-  <text x="637" y="286" font-size="12.6" fill="#b4a8d8">merchant's own growth agent can never fake a discount.</text>
+  <text x="637" y="246" font-size="12.6" fill="#9da7b3">An outside AI agent discovers the catalog, proves a human's</text>
+  <text x="637" y="266" font-size="12.6" fill="#9da7b3">consent and clears nine guardrails before it pays, while the</text>
+  <text x="637" y="286" font-size="12.6" fill="#9da7b3">merchant's own growth agent can never fake a discount.</text>
   <g><rect x="637" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="670" y="334" text-anchor="middle" font-size="10" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">FastAPI</text></g>
   <g><rect x="708" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="740" y="334" text-anchor="middle" font-size="10" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">Next.js</text></g>
   <g><rect x="779" y="320" width="71" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="814" y="334" text-anchor="middle" font-size="10" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">Razorpay</text></g>
@@ -232,11 +224,11 @@
   <g transform="rotate(-3 89.5 416.5)"><g><rect x="69.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66.0" y="406" width="47" height="21" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="89.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
   <g transform="translate(68.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.2s infinite"><g fill="none" stroke="#ff4fa0" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.6"/><path d="M2.8 20.4c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/>
         <path d="M16.4 4.8a3.6 3.6 0 0 1 0 6.6M17.6 14.6c2.2.7 3.6 2.7 3.6 5.1"/></g></g>
-  <text class="sans" x="110.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">Hirehearsal</text>
+  <text class="sans" x="110.0" y="462" font-size="18" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">Hirehearsal</text>
   <text class="mono" x="110.0" y="478" font-size="9" letter-spacing="1.2" fill="#ff4fa0" fill-opacity="0.92">REHEARSE THE HIRE</text>
-  <text x="70.0" y="510.0" font-size="11" fill="#b4a8d8">Ora, a voice-first AI interviewer,</text>
-  <text x="70.0" y="527.5" font-size="11" fill="#b4a8d8">runs tech, project and HR rounds</text>
-  <text x="70.0" y="545.0" font-size="11" fill="#b4a8d8">and scores every answer honestly.</text>
+  <text x="70.0" y="510.0" font-size="11" fill="#9da7b3">Ora, a voice-first AI interviewer,</text>
+  <text x="70.0" y="527.5" font-size="11" fill="#9da7b3">runs tech, project and HR rounds</text>
+  <text x="70.0" y="545.0" font-size="11" fill="#9da7b3">and scores every answer honestly.</text>
   <g><rect x="70.0" y="576" width="80" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="110" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Next.js 16</text></g>
   <g><rect x="156.0" y="576" width="45" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="178" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Java</text></g>
   <g><rect x="207.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="235" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Docker</text></g>
@@ -256,11 +248,11 @@
   <g><g transform="translate(524.0,408) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#ffc857" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="568.0" y="421" text-anchor="end" font-size="12" font-weight="700" fill="#ffc857">1</text></g>
   <g transform="translate(350.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.7999999999999998s infinite"><g fill="none" stroke="#ff4fa0" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 22 8l-10 4.8L2 8Z"/>
         <path d="M6.2 10.4v5.2c0 1.9 2.6 3.4 5.8 3.4s5.8-1.5 5.8-3.4v-5.2M22 8v5.6"/></g></g>
-  <text class="sans" x="392.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">BookMyCampus</text>
+  <text class="sans" x="392.0" y="462" font-size="18" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">BookMyCampus</text>
   <text class="mono" x="392.0" y="478" font-size="9" letter-spacing="1.2" fill="#ff4fa0" fill-opacity="0.92">CAMPUS BOOKING PLATFORM</text>
-  <text x="352.0" y="510.0" font-size="11" fill="#b4a8d8">Rooms, labs and kit with approvals,</text>
-  <text x="352.0" y="527.5" font-size="11" fill="#b4a8d8">QR check-in and no-show release,</text>
-  <text x="352.0" y="545.0" font-size="11" fill="#b4a8d8">plus a make-up class finder.</text>
+  <text x="352.0" y="510.0" font-size="11" fill="#9da7b3">Rooms, labs and kit with approvals,</text>
+  <text x="352.0" y="527.5" font-size="11" fill="#9da7b3">QR check-in and no-show release,</text>
+  <text x="352.0" y="545.0" font-size="11" fill="#9da7b3">plus a make-up class finder.</text>
   <g><rect x="352.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="380" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Django</text></g>
   <g><rect x="414.0" y="576" width="80" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="454" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">PostgreSQL</text></g>
   <g><rect x="500.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="526" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">React</text></g>
@@ -279,11 +271,11 @@
   <rect x="610.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85" filter="url(#glowS_p)"/>
   <g transform="rotate(-3 653.5 416.5)"><g><rect x="633.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="630.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="653.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
   <g transform="translate(632.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 2.4s infinite"><g fill="none" stroke="#2ee6ff" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
-  <text class="sans" x="674.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">TimedInk</text>
+  <text class="sans" x="674.0" y="462" font-size="18" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">TimedInk</text>
   <text class="mono" x="674.0" y="478" font-size="9" letter-spacing="1.2" fill="#2ee6ff" fill-opacity="0.92">FAULT-TOLERANT SCHEDULER</text>
-  <text x="634.0" y="510.0" font-size="11" fill="#b4a8d8">Sends land on time through restarts,</text>
-  <text x="634.0" y="527.5" font-size="11" fill="#b4a8d8">a wiped Redis and rate limits.</text>
-  <text x="634.0" y="545.0" font-size="11" fill="#b4a8d8">73 hermetic tests prove it.</text>
+  <text x="634.0" y="510.0" font-size="11" fill="#9da7b3">Sends land on time through restarts,</text>
+  <text x="634.0" y="527.5" font-size="11" fill="#9da7b3">a wiped Redis and rate limits.</text>
+  <text x="634.0" y="545.0" font-size="11" fill="#9da7b3">73 hermetic tests prove it.</text>
   <g><rect x="634.0" y="576" width="45" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="656" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">Node</text></g>
   <g><rect x="685.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="713" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">BullMQ</text></g>
   <g><rect x="747.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="772" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">Redis</text></g>
@@ -302,11 +294,11 @@
   <rect x="892.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85" filter="url(#glowS_p)"/>
   <g transform="rotate(-3 935.5 416.5)"><g><rect x="915.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="912.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="935.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
   <g transform="translate(914.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 3.0s infinite"><g fill="none" stroke="#2ee6ff" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8-4.6 4 4.6 4M15.6 8l4.6 4-4.6 4M13.6 5.2l-3.2 13.6"/></g></g>
-  <text class="sans" x="956.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">PII Redaction</text>
+  <text class="sans" x="956.0" y="462" font-size="18" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">PII Redaction</text>
   <text class="mono" x="956.0" y="478" font-size="9" letter-spacing="1.2" fill="#2ee6ff" fill-opacity="0.92">DOCUMENT PRIVACY ENGINE</text>
-  <text x="916.0" y="510.0" font-size="11" fill="#b4a8d8">Hybrid regex + NER engine swaps</text>
-  <text x="916.0" y="527.5" font-size="11" fill="#b4a8d8">10 PII types for realistic fakes</text>
-  <text x="916.0" y="545.0" font-size="11" fill="#b4a8d8">in .docx, tables kept intact.</text>
+  <text x="916.0" y="510.0" font-size="11" fill="#9da7b3">Hybrid regex + NER engine swaps</text>
+  <text x="916.0" y="527.5" font-size="11" fill="#9da7b3">10 PII types for realistic fakes</text>
+  <text x="916.0" y="545.0" font-size="11" fill="#9da7b3">in .docx, tables kept intact.</text>
   <g><rect x="916.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="944" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">Python</text></g>
   <g><rect x="978.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="1004" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">spaCy</text></g>
   <g><rect x="1035.0" y="576" width="86" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="1078" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">python-docx</text></g>
@@ -320,14 +312,14 @@
   <rect x="64" y="755.5" width="1072" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   </g>
   <g><g><rect x="71" y="667" width="94" height="24" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/><rect x="68" y="664" width="94" height="24" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="115.0" y="679.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">SIDE QUESTS</text></g>
-  <text class="mono" x="178" y="681" font-size="10" fill="#b4a8d8">more chapters of the same story</text>
-  <rect x="68" y="704" width="256" height="23" rx="11.5" fill="#ffc857" fill-opacity="0.07" stroke="#ffc857" stroke-opacity="0.35"/><text x="80" y="719.5" font-size="11"><tspan fill="#ffc857" font-weight="700">GridSense</tspan><tspan fill="#b4a8d8">  3D smart-grid digital twin</tspan></text>
-  <rect x="334" y="704" width="262" height="23" rx="11.5" fill="#ff4fa0" fill-opacity="0.07" stroke="#ff4fa0" stroke-opacity="0.35"/><text x="346" y="719.5" font-size="11"><tspan fill="#ff4fa0" font-weight="700">MindBloom</tspan><tspan fill="#b4a8d8">  Gemini AI wellness for kids</tspan></text>
-  <rect x="606" y="704" width="283" height="23" rx="11.5" fill="#2ee6ff" fill-opacity="0.07" stroke="#2ee6ff" stroke-opacity="0.35"/><text x="618" y="719.5" font-size="11"><tspan fill="#2ee6ff" font-weight="700">Pixel-Board</tspan><tspan fill="#b4a8d8">  8-bit multiplayer whiteboard</tspan></text>
-  <rect x="68" y="734" width="298" height="23" rx="11.5" fill="#b6ff4f" fill-opacity="0.07" stroke="#b6ff4f" stroke-opacity="0.35"/><text x="80" y="749.5" font-size="11"><tspan fill="#b6ff4f" font-weight="700">CampusWhisper</tspan><tspan fill="#b4a8d8">  Anonymous campus confessions</tspan></text>
-  <rect x="376" y="734" width="262" height="23" rx="11.5" fill="#ffc857" fill-opacity="0.07" stroke="#ffc857" stroke-opacity="0.35"/><text x="388" y="749.5" font-size="11"><tspan fill="#ffc857" font-weight="700">AlgoTrail</tspan><tspan fill="#b4a8d8">  Algorithm visual playground</tspan></text>
-  <rect x="648" y="734" width="260" height="23" rx="11.5" fill="#ff4fa0" fill-opacity="0.07" stroke="#ff4fa0" stroke-opacity="0.35"/><text x="660" y="749.5" font-size="11"><tspan fill="#ff4fa0" font-weight="700">SUDARSHAN-X</tspan><tspan fill="#b4a8d8">  Autonomous drone defence</tspan></text>
-  <rect x="68" y="764" width="294" height="23" rx="11.5" fill="#2ee6ff" fill-opacity="0.07" stroke="#2ee6ff" stroke-opacity="0.35"/><text x="80" y="779.5" font-size="11"><tspan fill="#2ee6ff" font-weight="700">KrishiVaani</tspan><tspan fill="#b4a8d8">  Multilingual farming assistant</tspan></text>
+  <text class="mono" x="178" y="681" font-size="10" fill="#9da7b3">more chapters of the same story</text>
+  <rect x="68" y="704" width="256" height="23" rx="11.5" fill="#ffc857" fill-opacity="0.07" stroke="#ffc857" stroke-opacity="0.35"/><text x="80" y="719.5" font-size="11"><tspan fill="#ffc857" font-weight="700">GridSense</tspan><tspan fill="#9da7b3">  3D smart-grid digital twin</tspan></text>
+  <rect x="334" y="704" width="262" height="23" rx="11.5" fill="#ff4fa0" fill-opacity="0.07" stroke="#ff4fa0" stroke-opacity="0.35"/><text x="346" y="719.5" font-size="11"><tspan fill="#ff4fa0" font-weight="700">MindBloom</tspan><tspan fill="#9da7b3">  Gemini AI wellness for kids</tspan></text>
+  <rect x="606" y="704" width="283" height="23" rx="11.5" fill="#2ee6ff" fill-opacity="0.07" stroke="#2ee6ff" stroke-opacity="0.35"/><text x="618" y="719.5" font-size="11"><tspan fill="#2ee6ff" font-weight="700">Pixel-Board</tspan><tspan fill="#9da7b3">  8-bit multiplayer whiteboard</tspan></text>
+  <rect x="68" y="734" width="298" height="23" rx="11.5" fill="#b6ff4f" fill-opacity="0.07" stroke="#b6ff4f" stroke-opacity="0.35"/><text x="80" y="749.5" font-size="11"><tspan fill="#b6ff4f" font-weight="700">CampusWhisper</tspan><tspan fill="#9da7b3">  Anonymous campus confessions</tspan></text>
+  <rect x="376" y="734" width="262" height="23" rx="11.5" fill="#ffc857" fill-opacity="0.07" stroke="#ffc857" stroke-opacity="0.35"/><text x="388" y="749.5" font-size="11"><tspan fill="#ffc857" font-weight="700">AlgoTrail</tspan><tspan fill="#9da7b3">  Algorithm visual playground</tspan></text>
+  <rect x="648" y="734" width="260" height="23" rx="11.5" fill="#ff4fa0" fill-opacity="0.07" stroke="#ff4fa0" stroke-opacity="0.35"/><text x="660" y="749.5" font-size="11"><tspan fill="#ff4fa0" font-weight="700">SUDARSHAN-X</tspan><tspan fill="#9da7b3">  Autonomous drone defence</tspan></text>
+  <rect x="68" y="764" width="294" height="23" rx="11.5" fill="#2ee6ff" fill-opacity="0.07" stroke="#2ee6ff" stroke-opacity="0.35"/><text x="80" y="779.5" font-size="11"><tspan fill="#2ee6ff" font-weight="700">KrishiVaani</tspan><tspan fill="#9da7b3">  Multilingual farming assistant</tspan></text>
   </g>
 <rect width="1200" height="800" rx="26" filter="url(#grain_p)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

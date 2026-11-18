@@ -15,12 +15,12 @@ edge, a fading hairline border, and a whisper of noise grain.
 # "Midnight Arcade": a synthwave night. The accent names are historical
 # (the profile started in cream / rose / mint / violet) and are kept so the
 # layout code reads the same; the comment says what each one is now.
-BG0 = "#07051a"    # deepest backdrop - indigo black
-BG1 = "#150b30"
-BG2 = "#1e1145"
-INK = "#f6f1ff"    # primary text
-DIM = "#b4a8d8"    # secondary text
-FAINT = "#7a6ea3"  # tertiary text
+BG0 = "#0d1117"    # GitHub's own dark page colour, so panels melt into the page
+BG1 = "#0d1117"
+BG2 = "#161b22"    # GitHub's raised surface
+INK = "#f0f3f6"    # primary text
+DIM = "#9da7b3"    # secondary text
+FAINT = "#6e7681"  # tertiary text
 
 CREAM = "#ffc857"   # amber - legendary / primary accent
 ROSE = "#ff4fa0"    # hot magenta - epic / secondary accent
@@ -115,7 +115,7 @@ def base_defs(scope):
     <linearGradient id="bg_S" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="BG1_"/>
       <stop offset="55%" stop-color="BG0_"/>
-      <stop offset="100%" stop-color="#0d0624"/>
+      <stop offset="100%" stop-color="BG0_"/>
     </linearGradient>
 
     <radialGradient id="vig_S" cx="50%" cy="42%" r="72%">
@@ -151,7 +151,7 @@ def base_defs(scope):
     </filter>
 
     <pattern id="grid_S" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+      <circle cx="11" cy="11" r="0.9" fill="#ffffff" fill-opacity="0.05"/>
     </pattern>
     <pattern id="scan_S" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
@@ -226,22 +226,18 @@ def lighten(hexcol, amt=0.42):
 
 # ---------------------------------------------------------------- pieces
 def frame(scope, w, h, blobs=None, grid=True, vignette=True):
-    """Full-bleed frosted backdrop: gradient, drifting light blobs, grid."""
+    """Flat backdrop in GitHub's own dark page colour, plus a faint dot grid.
+
+    Deliberately no drifting colour blobs, vignette or gradient wash: on a
+    profile those read as generic filler, and a flat base lets the panels
+    melt into the page so the README reads as one canvas. Colour comes only
+    from intentional places - accents, card tints, the hero sun. `blobs` and
+    `vignette` are accepted and ignored so the panel code stays unchanged.
+    """
     s = scope
-    blobs = blobs or []
-    out = ['<rect width="%s" height="%s" rx="26" fill="url(#bg_%s)"/>' % (w, h, s)]
-    if blobs:
-        out.append('<g filter="url(#blob_%s)" opacity="0.55">' % s)
-        for i, (cx, cy, r, col, op, anim) in enumerate(blobs):
-            out.append('<ellipse cx="%s" cy="%s" rx="%s" ry="%.0f" fill="%s" opacity="%s" '
-                       'style="animation:%s %ss ease-in-out %ss infinite;transform-origin:%spx %spx"/>'
-                       % (cx, cy, r, r * 0.78, col, op, anim, 16 + i * 5, round(i * 1.7, 1), cx, cy))
-        out.append("</g>")
+    out = ['<rect width="%s" height="%s" fill="%s"/>' % (w, h, BG0)]
     if grid:
-        out.append('<rect width="%s" height="%s" rx="26" fill="url(#grid_%s)"/>' % (w, h, s))
-    if vignette:
-        out.append('<rect width="%s" height="%s" rx="26" fill="url(#vig_%s)"/>' % (w, h, s))
-    out.append('<rect width="%s" height="%s" rx="26" fill="url(#scan_%s)" opacity="0.5"/>' % (w, h, s))
+        out.append('<rect width="%s" height="%s" fill="url(#grid_%s)"/>' % (w, h, s))
     return "\n  ".join(out)
 
 

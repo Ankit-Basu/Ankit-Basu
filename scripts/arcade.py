@@ -12,7 +12,7 @@ import json
 import os
 
 import profile as P
-from design import (BG0, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, PURPLE, INKK,
+from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, PURPLE, INKK,
                     esc, card, page, section_header, ev, brut, sticker)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -83,7 +83,7 @@ def build_companion(d):
             "on": "bob 2.4s ease-in-out infinite",
             "asleep": "bob 4.8s ease-in-out infinite"}[mood]
 
-    fill = {"K": INKK, "B": MINT, "S": "#120a2a", "A": ROSE, "L": PURPLE}
+    fill = {"K": INKK, "B": MINT, "S": "#0a0e14", "A": ROSE, "L": PURPLE}
     cells = []
     for r, row in enumerate(SPRITE):
         for c, ch in enumerate(row):
@@ -273,7 +273,7 @@ def build_votes():
         pct = (100.0 * n / total) if total else 0
         shadow = {CREAM: ROSE, ROSE: PURPLE, MINT: ROSE, VIOLET: MINT}[col]
         body.append(f'<g class="{ev(2 + i)}">')
-        body.append(brut(x, y, cw, 168, "#170d33", shadow, r=16, off=6, bw=2.6))
+        body.append(brut(x, y, cw, 168, BG2, shadow, r=16, off=6, bw=2.6))
         body.append(f'<rect x="{x + 1.3}" y="{y + 1.3}" width="{cw - 2.6}" height="44" rx="14" fill="{col}"/>'
                     f'<rect x="{x + 1.3}" y="{y + 30}" width="{cw - 2.6}" height="16" fill="{col}"/>'
                     f'<rect x="{x}" y="{y + 45}" width="{cw}" height="2.6" fill="{INKK}"/>')

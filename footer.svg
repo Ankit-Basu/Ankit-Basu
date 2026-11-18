@@ -37,9 +37,9 @@
     </linearGradient>
 
     <linearGradient id="bg_f" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="#150b30"/>
-      <stop offset="55%" stop-color="#07051a"/>
-      <stop offset="100%" stop-color="#0d0624"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
     <radialGradient id="vig_f" cx="50%" cy="42%" r="72%">
@@ -75,7 +75,7 @@
     </filter>
 
     <pattern id="grid_f" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+      <circle cx="11" cy="11" r="0.9" fill="#ffffff" fill-opacity="0.05"/>
     </pattern>
     <pattern id="scan_f" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
@@ -147,15 +147,8 @@
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 @keyframes breathe2{0%,100%{opacity:1}50%{opacity:.72}}</style>
-<rect width="1200" height="316" rx="26" fill="url(#bg_f)"/>
-  <g filter="url(#blob_f)" opacity="0.55">
-  <ellipse cx="240" cy="120" rx="250" ry="195" fill="#ffc857" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:240px 120px"/>
-  <ellipse cx="640" cy="210" rx="260" ry="203" fill="#ff4fa0" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:640px 210px"/>
-  <ellipse cx="1000" cy="120" rx="240" ry="187" fill="#b6ff4f" opacity="0.2" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1000px 120px"/>
-  </g>
-  <rect width="1200" height="316" rx="26" fill="url(#grid_f)"/>
-  <rect width="1200" height="316" rx="26" fill="url(#vig_f)"/>
-  <rect width="1200" height="316" rx="26" fill="url(#scan_f)" opacity="0.5"/>
+<rect width="1200" height="316" fill="#0d1117"/>
+  <rect width="1200" height="316" fill="url(#grid_f)"/>
 <circle cx="399" cy="140" r="1.7" fill="#ff4fa0" opacity="0.3" style="animation:rise 9.7s linear 6.4s infinite"/>
   <circle cx="447" cy="122" r="1.6" fill="#ffc857" opacity="0.3" style="animation:rise 9.3s linear 5.2s infinite"/>
   <circle cx="110" cy="128" r="1.5" fill="#ffc857" opacity="0.3" style="animation:rise 16.4s linear 1.5s infinite"/>
@@ -186,7 +179,7 @@
         2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22
         0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></g></g>
   <text class="mono" x="120" y="80" font-size="9.4" letter-spacing="2.4" fill="#ffc857" fill-opacity="0.9" font-weight="600">GITHUB</text>
-  <text x="120" y="99" font-size="12.5" fill="#f6f1ff">Ankit-Basu</text>
+  <text x="120" y="99" font-size="12.5" fill="#f0f3f6">Ankit-Basu</text>
   </g>
   <g class="ev2">
   <g>
@@ -204,7 +197,7 @@
         13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24
         22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></g></g>
   <text class="mono" x="402" y="80" font-size="9.4" letter-spacing="2.4" fill="#2ee6ff" fill-opacity="0.9" font-weight="600">LINKEDIN</text>
-  <text x="402" y="99" font-size="12.5" fill="#f6f1ff">Ankit Basu</text>
+  <text x="402" y="99" font-size="12.5" fill="#f0f3f6">Ankit Basu</text>
   </g>
   <g class="ev3">
   <g>
@@ -220,7 +213,7 @@
   <g transform="translate(637,72) scale(1.0833)" opacity="0.95"><g fill="none" stroke="#ff4fa0" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.6"/>
         <circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.15" stroke="none" fill="#ff4fa0"/></g></g>
   <text class="mono" x="684" y="80" font-size="9.4" letter-spacing="2.4" fill="#ff4fa0" fill-opacity="0.9" font-weight="600">INSTAGRAM</text>
-  <text x="684" y="99" font-size="12.5" fill="#f6f1ff">_ank1t._</text>
+  <text x="684" y="99" font-size="12.5" fill="#f0f3f6">_ank1t._</text>
   </g>
   <g class="ev4">
   <g>
@@ -236,13 +229,13 @@
   <g transform="translate(919,72) scale(1.0833)" opacity="0.95"><g fill="none" stroke="#b6ff4f" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><rect x="2.4" y="4.6" width="19.2" height="14.8" rx="3"/>
         <path d="M3.4 7.2 12 13.2l8.6-6"/></g></g>
   <text class="mono" x="966" y="80" font-size="9.4" letter-spacing="2.4" fill="#b6ff4f" fill-opacity="0.9" font-weight="600">EMAIL</text>
-  <text x="966" y="99" font-size="10.2" fill="#f6f1ff">ankitbasu935@gmail.com</text>
+  <text x="966" y="99" font-size="10.2" fill="#f0f3f6">ankitbasu935@gmail.com</text>
   </g>
   <g class="ev5">
   <text class="mono" x="600" y="172" text-anchor="middle" font-size="12" letter-spacing="5.6" fill="#ffc857" fill-opacity="0.92" font-weight="600" filter="url(#glowS_f)">INNOVATE  •  SCALE  •  ARCHITECT  •  SHIP</text>
   <rect x="410" y="184" width="380" height="1" fill="url(#spec_f)"/>
-  <text x="600" y="212" text-anchor="middle" font-size="14" font-style="italic" fill="#b4a8d8">&#8220;Turning ambitious engineering ideas into scalable, production reality.&#8221;</text>
-  <text class="mono" x="600" y="238" text-anchor="middle" font-size="9.6" letter-spacing="2.6" fill="#7a6ea3">JALANDHAR, PUNJAB · INDIA</text>
+  <text x="600" y="212" text-anchor="middle" font-size="14" font-style="italic" fill="#9da7b3">&#8220;Turning ambitious engineering ideas into scalable, production reality.&#8221;</text>
+  <text class="mono" x="600" y="238" text-anchor="middle" font-size="9.6" letter-spacing="2.6" fill="#6e7681">JALANDHAR, PUNJAB · INDIA</text>
   </g>
   <g class="ev6"><g style="animation:breathe2 2.4s ease-in-out infinite"><g><g><rect x="512" y="266" width="143" height="28" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/><rect x="508" y="262" width="143" height="28" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="579.5" y="280.0" text-anchor="middle" font-size="11" font-weight="800" letter-spacing="1.4" fill="#0a0f14">TO BE CONTINUED ▸</text></g></g></g>
 <rect width="1200" height="316" rx="26" filter="url(#grain_f)" opacity="0.9" style="mix-blend-mode:overlay"/>

@@ -37,9 +37,9 @@
     </linearGradient>
 
     <linearGradient id="bg_g" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="#150b30"/>
-      <stop offset="55%" stop-color="#07051a"/>
-      <stop offset="100%" stop-color="#0d0624"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
     <radialGradient id="vig_g" cx="50%" cy="42%" r="72%">
@@ -75,7 +75,7 @@
     </filter>
 
     <pattern id="grid_g" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+      <circle cx="11" cy="11" r="0.9" fill="#ffffff" fill-opacity="0.05"/>
     </pattern>
     <pattern id="scan_g" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
@@ -150,14 +150,8 @@
     @keyframes crown{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-4px) rotate(-4deg)}}
     @keyframes insert{0%,100%{opacity:1}50%{opacity:.25}}
     </style>
-<rect width="1200" height="330" rx="26" fill="url(#bg_g)"/>
-  <g filter="url(#blob_g)" opacity="0.55">
-  <ellipse cx="250" cy="200" rx="240" ry="187" fill="#b6ff4f" opacity="0.14" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:250px 200px"/>
-  <ellipse cx="900" cy="200" rx="240" ry="187" fill="#ff4fa0" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:900px 200px"/>
-  </g>
-  <rect width="1200" height="330" rx="26" fill="url(#grid_g)"/>
-  <rect width="1200" height="330" rx="26" fill="url(#vig_g)"/>
-  <rect width="1200" height="330" rx="26" fill="url(#scan_g)" opacity="0.5"/>
+<rect width="1200" height="330" fill="#0d1117"/>
+  <rect width="1200" height="330" fill="url(#grid_g)"/>
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
@@ -166,50 +160,50 @@
     </g>
     <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#b6ff4f"
           fill-opacity="0.9" font-weight="600">GAME MODE</text>
-    <text x="46" y="89" font-size="25" font-weight="700" fill="#f6f1ff" letter-spacing="-0.4">You pick my next quest</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#f0f3f6" letter-spacing="-0.4">You pick my next quest</text>
   </g>
   <text class="mono ev1" x="1154" y="58" text-anchor="end" font-size="10.6" letter-spacing="2.4" fill="#ffc857" font-weight="700" style="animation:insert 1.2s steps(1) infinite">&#9679; INSERT COIN: VOTE BELOW</text>
-  <text class="mono ev1" x="1154" y="80" text-anchor="end" font-size="9.6" fill="#b4a8d8">0 votes cast &#183; counted by a GitHub Action</text>
+  <text class="mono ev1" x="1154" y="80" text-anchor="end" font-size="9.6" fill="#9da7b3">0 votes cast &#183; counted by a GitHub Action</text>
   <g class="ev2">
-  <g><rect x="52" y="122" width="262" height="168" rx="16" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.6"/><rect x="46" y="116" width="262" height="168" rx="16" fill="#170d33" stroke="#0a0f14" stroke-width="2.6"/></g>
+  <g><rect x="52" y="122" width="262" height="168" rx="16" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.6"/><rect x="46" y="116" width="262" height="168" rx="16" fill="#161b22" stroke="#0a0f14" stroke-width="2.6"/></g>
   <rect x="47.3" y="117.3" width="259.4" height="44" rx="14" fill="#ffc857"/><rect x="47.3" y="146" width="259.4" height="16" fill="#ffc857"/><rect x="46" y="161" width="262" height="2.6" fill="#0a0f14"/>
   <text class="mono" x="64" y="145" font-size="12" font-weight="800" letter-spacing="1.4" fill="#0a0f14">PLAYER 1 &#183; PRATIRODH</text>
-  <text class="sans" x="64" y="194" font-size="17" font-weight="800" fill="#f6f1ff">Ship Pratirodh v1</text>
-  <text x="64" y="214" font-size="11.2" fill="#b4a8d8">First working voice-clone detector</text>
+  <text class="sans" x="64" y="194" font-size="17" font-weight="800" fill="#f0f3f6">Ship Pratirodh v1</text>
+  <text x="64" y="214" font-size="11.2" fill="#9da7b3">First working voice-clone detector</text>
   <rect x="64" y="234" width="226" height="12" rx="3" fill="#ffffff" fill-opacity="0.07" stroke="#0a0f14" stroke-width="1.4"/>
   <text class="mono" x="64" y="267" font-size="10.4" fill="#ffc857" font-weight="700">0 VOTES</text>
-  <text class="mono" x="290" y="267" text-anchor="end" font-size="10.4" fill="#b4a8d8">0%</text>
+  <text class="mono" x="290" y="267" text-anchor="end" font-size="10.4" fill="#9da7b3">0%</text>
   </g>
   <g class="ev3">
-  <g><rect x="334" y="122" width="262" height="168" rx="16" fill="#8b5cff" stroke="#0a0f14" stroke-width="2.6"/><rect x="328" y="116" width="262" height="168" rx="16" fill="#170d33" stroke="#0a0f14" stroke-width="2.6"/></g>
+  <g><rect x="334" y="122" width="262" height="168" rx="16" fill="#8b5cff" stroke="#0a0f14" stroke-width="2.6"/><rect x="328" y="116" width="262" height="168" rx="16" fill="#161b22" stroke="#0a0f14" stroke-width="2.6"/></g>
   <rect x="329.3" y="117.3" width="259.4" height="44" rx="14" fill="#ff4fa0"/><rect x="329.3" y="146" width="259.4" height="16" fill="#ff4fa0"/><rect x="328" y="161" width="262" height="2.6" fill="#0a0f14"/>
   <text class="mono" x="346" y="145" font-size="12" font-weight="800" letter-spacing="1.4" fill="#0a0f14">PLAYER 2 &#183; IOS</text>
-  <text class="sans" x="346" y="194" font-size="17" font-weight="800" fill="#f6f1ff">SheShield on iOS</text>
-  <text x="346" y="214" font-size="11.2" fill="#b4a8d8">Bring the safety app to iPhone</text>
+  <text class="sans" x="346" y="194" font-size="17" font-weight="800" fill="#f0f3f6">SheShield on iOS</text>
+  <text x="346" y="214" font-size="11.2" fill="#9da7b3">Bring the safety app to iPhone</text>
   <rect x="346" y="234" width="226" height="12" rx="3" fill="#ffffff" fill-opacity="0.07" stroke="#0a0f14" stroke-width="1.4"/>
   <text class="mono" x="346" y="267" font-size="10.4" fill="#ff4fa0" font-weight="700">0 VOTES</text>
-  <text class="mono" x="572" y="267" text-anchor="end" font-size="10.4" fill="#b4a8d8">0%</text>
+  <text class="mono" x="572" y="267" text-anchor="end" font-size="10.4" fill="#9da7b3">0%</text>
   </g>
   <g class="ev4">
-  <g><rect x="616" y="122" width="262" height="168" rx="16" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.6"/><rect x="610" y="116" width="262" height="168" rx="16" fill="#170d33" stroke="#0a0f14" stroke-width="2.6"/></g>
+  <g><rect x="616" y="122" width="262" height="168" rx="16" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.6"/><rect x="610" y="116" width="262" height="168" rx="16" fill="#161b22" stroke="#0a0f14" stroke-width="2.6"/></g>
   <rect x="611.3" y="117.3" width="259.4" height="44" rx="14" fill="#2ee6ff"/><rect x="611.3" y="146" width="259.4" height="16" fill="#2ee6ff"/><rect x="610" y="161" width="262" height="2.6" fill="#0a0f14"/>
   <text class="mono" x="628" y="145" font-size="12" font-weight="800" letter-spacing="1.4" fill="#0a0f14">PLAYER 3 &#183; RUST</text>
-  <text class="sans" x="628" y="194" font-size="17" font-weight="800" fill="#f6f1ff">A Rust side quest</text>
-  <text x="628" y="214" font-size="11.2" fill="#b4a8d8">A fast CLI tool, written in Rust</text>
+  <text class="sans" x="628" y="194" font-size="17" font-weight="800" fill="#f0f3f6">A Rust side quest</text>
+  <text x="628" y="214" font-size="11.2" fill="#9da7b3">A fast CLI tool, written in Rust</text>
   <rect x="628" y="234" width="226" height="12" rx="3" fill="#ffffff" fill-opacity="0.07" stroke="#0a0f14" stroke-width="1.4"/>
   <text class="mono" x="628" y="267" font-size="10.4" fill="#2ee6ff" font-weight="700">0 VOTES</text>
-  <text class="mono" x="854" y="267" text-anchor="end" font-size="10.4" fill="#b4a8d8">0%</text>
+  <text class="mono" x="854" y="267" text-anchor="end" font-size="10.4" fill="#9da7b3">0%</text>
   </g>
   <g class="ev5">
-  <g><rect x="898" y="122" width="262" height="168" rx="16" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.6"/><rect x="892" y="116" width="262" height="168" rx="16" fill="#170d33" stroke="#0a0f14" stroke-width="2.6"/></g>
+  <g><rect x="898" y="122" width="262" height="168" rx="16" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.6"/><rect x="892" y="116" width="262" height="168" rx="16" fill="#161b22" stroke="#0a0f14" stroke-width="2.6"/></g>
   <rect x="893.3" y="117.3" width="259.4" height="44" rx="14" fill="#b6ff4f"/><rect x="893.3" y="146" width="259.4" height="16" fill="#b6ff4f"/><rect x="892" y="161" width="262" height="2.6" fill="#0a0f14"/>
   <text class="mono" x="910" y="145" font-size="12" font-weight="800" letter-spacing="1.4" fill="#0a0f14">PLAYER 4 &#183; OSS</text>
-  <text class="sans" x="910" y="194" font-size="17" font-weight="800" fill="#f6f1ff">Open-source arc</text>
-  <text x="910" y="214" font-size="11.2" fill="#b4a8d8">Contribute to the tools I use daily</text>
+  <text class="sans" x="910" y="194" font-size="17" font-weight="800" fill="#f0f3f6">Open-source arc</text>
+  <text x="910" y="214" font-size="11.2" fill="#9da7b3">Contribute to the tools I use daily</text>
   <rect x="910" y="234" width="226" height="12" rx="3" fill="#ffffff" fill-opacity="0.07" stroke="#0a0f14" stroke-width="1.4"/>
   <text class="mono" x="910" y="267" font-size="10.4" fill="#b6ff4f" font-weight="700">0 VOTES</text>
-  <text class="mono" x="1136" y="267" text-anchor="end" font-size="10.4" fill="#b4a8d8">0%</text>
+  <text class="mono" x="1136" y="267" text-anchor="end" font-size="10.4" fill="#9da7b3">0%</text>
   </g>
-  <text class="mono" x="600" y="316" text-anchor="middle" font-size="9.4" letter-spacing="1.4" fill="#7a6ea3">CLICK A QUEST UNDER THIS PANEL &#8594; SUBMIT THE ISSUE &#8594; A BOT COUNTS YOUR VOTE AND CLOSES IT &#183; ONE VOTE PER PLAYER PER QUEST</text>
+  <text class="mono" x="600" y="316" text-anchor="middle" font-size="9.4" letter-spacing="1.4" fill="#6e7681">CLICK A QUEST UNDER THIS PANEL &#8594; SUBMIT THE ISSUE &#8594; A BOT COUNTS YOUR VOTE AND CLOSES IT &#183; ONE VOTE PER PLAYER PER QUEST</text>
 <rect width="1200" height="330" rx="26" filter="url(#grain_g)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

@@ -37,9 +37,9 @@
     </linearGradient>
 
     <linearGradient id="bg_k" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="#150b30"/>
-      <stop offset="55%" stop-color="#07051a"/>
-      <stop offset="100%" stop-color="#0d0624"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
     <radialGradient id="vig_k" cx="50%" cy="42%" r="72%">
@@ -75,7 +75,7 @@
     </filter>
 
     <pattern id="grid_k" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+      <circle cx="11" cy="11" r="0.9" fill="#ffffff" fill-opacity="0.05"/>
     </pattern>
     <pattern id="scan_k" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
@@ -152,14 +152,8 @@
     .ma{animation:ma 2.6s cubic-bezier(.45,.05,.35,1)}
     @keyframes live{0%,100%{opacity:1}50%{opacity:.2}}
     </style>
-<rect width="600" height="400" rx="26" fill="url(#bg_k)"/>
-  <g filter="url(#blob_k)" opacity="0.55">
-  <ellipse cx="160" cy="250" rx="220" ry="172" fill="#ffc857" opacity="0.18" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:160px 250px"/>
-  <ellipse cx="460" cy="200" rx="200" ry="156" fill="#8b5cff" opacity="0.3" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:460px 200px"/>
-  </g>
-  <rect width="600" height="400" rx="26" fill="url(#grid_k)"/>
-  <rect width="600" height="400" rx="26" fill="url(#vig_k)"/>
-  <rect width="600" height="400" rx="26" fill="url(#scan_k)" opacity="0.5"/>
+<rect width="600" height="400" fill="#0d1117"/>
+  <rect width="600" height="400" fill="url(#grid_k)"/>
 <g class="ev0">
     <g transform="translate(43,50)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
@@ -168,11 +162,11 @@
     </g>
     <text class="mono" x="62" y="55" font-size="11.5" letter-spacing="3.4" fill="#ffc857"
           fill-opacity="0.9" font-weight="600">MARKET</text>
-    <text x="34" y="83" font-size="25" font-weight="700" fill="#f6f1ff" letter-spacing="-0.4">$ANKIT · commits, as candles</text>
+    <text x="34" y="83" font-size="25" font-weight="700" fill="#f0f3f6" letter-spacing="-0.4">$ANKIT · commits, as candles</text>
   </g>
-  <text class="sans ev1" x="34" y="132" font-size="34" font-weight="800" fill="#f6f1ff" letter-spacing="-1">65</text>
+  <text class="sans ev1" x="34" y="132" font-size="34" font-weight="800" fill="#f0f3f6" letter-spacing="-1">65</text>
   <text class="mono ev1" x="88" y="130" font-size="13" font-weight="700" fill="#2ee6ff">&#9650; 48%</text>
-  <text class="mono ev1" x="34" y="150" font-size="9.4" letter-spacing="1.4" fill="#b4a8d8">COMMITS THIS WEEK VS LAST</text>
+  <text class="mono ev1" x="34" y="150" font-size="9.4" letter-spacing="1.4" fill="#9da7b3">COMMITS THIS WEEK VS LAST</text>
   <g class="ev1"><circle cx="480" cy="125" r="4" fill="#ff4fa0" style="animation:live 1.4s steps(1) infinite"/><text class="mono" x="492" y="129" font-size="10" letter-spacing="1.6" fill="#ff4fa0" font-weight="700">LIVE &#183; 26W</text></g>
   <g>
   <clipPath id="tc98"><path d="M38,160 H562 A14,14 0 0 1 576,174 V314 A14,14 0 0 1 562,328 H38 A14,14 0 0 1 24,314 V174 A14,14 0 0 1 38,160 Z"/></clipPath>
@@ -213,7 +207,7 @@
   <g class="ev14"><rect x="529.3" y="216.5" width="1.4" height="93.5" fill="#ff4fa0"/><rect x="524.0" y="265.7" width="12.0" height="44.3" rx="1.5" fill="#ff4fa0" fill-opacity="0.25" stroke="#ff4fa0" stroke-width="1"/></g>
   <g class="ev14"><rect x="549.3" y="196.8" width="1.4" height="113.2" fill="#ff4fa0"/><rect x="544.0" y="236.2" width="12.0" height="9.8" rx="1.5" fill="#ff4fa0" fill-opacity="0.25" stroke="#ff4fa0" stroke-width="1"/></g>
   <polyline class="ma" points="50.0,270.6 70.0,283.3 90.0,299.5 110.0,303.7 130.0,295.9 150.0,303.0 170.0,293.1 190.0,295.9 210.0,301.6 230.0,295.9 250.0,299.5 270.0,306.5 290.0,276.9 310.0,293.8 330.0,268.5 350.0,271.3 370.0,300.9 390.0,300.2 410.0,305.1 430.0,307.2 450.0,305.8 470.0,302.3 490.0,303.0 510.0,287.5 530.0,279.1 550.0,264.3" fill="none" stroke="#ffc857" stroke-width="1.8" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0" filter="url(#glowS_k)"/>
-  <text class="mono" x="560" y="174" text-anchor="end" font-size="8.6" fill="#7a6ea3">PEAK 26/DAY &#183; AMBER = WEEKLY AVERAGE</text>
+  <text class="mono" x="560" y="174" text-anchor="end" font-size="8.6" fill="#6e7681">PEAK 26/DAY &#183; AMBER = WEEKLY AVERAGE</text>
   <clipPath id="tp_k"><rect x="0" y="348" width="600" height="34"/></clipPath>
   <g><rect x="-10" y="348" width="620" height="32" rx="0" fill="#ff4fa0" stroke="#0a0f14" stroke-width="0"/><rect x="-10" y="348" width="620" height="32" rx="0" fill="#0a0f14" stroke="#0a0f14" stroke-width="0"/></g>
   <g clip-path="url(#tp_k)"><g style="animation:tape 26s linear infinite"><text class="mono" x="12" y="369" font-size="11" letter-spacing="1"><tspan fill="#ffc857" font-weight="700">$SHESHI</tspan><tspan fill="#2ee6ff"> 20&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$VIRUSV</tspan><tspan fill="#2ee6ff"> 3&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$BOOKMY</tspan><tspan fill="#2ee6ff"> 1&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$ALGOTR</tspan><tspan fill="#2ee6ff"> 1&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$CRYPTO</tspan><tspan fill="#2ee6ff"> 1&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$HIREHE</tspan><tspan fill="#2ee6ff"> 0&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$XP</tspan><tspan fill="#2ee6ff"> 2,175  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$PRS</tspan><tspan fill="#2ee6ff"> 32  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$REPOS</tspan><tspan fill="#2ee6ff"> 32  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$SHESHI</tspan><tspan fill="#2ee6ff"> 20&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$VIRUSV</tspan><tspan fill="#2ee6ff"> 3&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$BOOKMY</tspan><tspan fill="#2ee6ff"> 1&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$ALGOTR</tspan><tspan fill="#2ee6ff"> 1&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$CRYPTO</tspan><tspan fill="#2ee6ff"> 1&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$HIREHE</tspan><tspan fill="#2ee6ff"> 0&#9733;  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$XP</tspan><tspan fill="#2ee6ff"> 2,175  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$PRS</tspan><tspan fill="#2ee6ff"> 32  &#9650;   </tspan><tspan fill="#ffc857" font-weight="700">$REPOS</tspan><tspan fill="#2ee6ff"> 32  &#9650;   </tspan></text></g></g>
