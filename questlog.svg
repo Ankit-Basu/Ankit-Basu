@@ -9,17 +9,17 @@
 
     <linearGradient id="rim_q" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
+      <stop offset="22%" stop-color="#fcd38d" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
+      <stop offset="74%" stop-color="#f9a8d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_q" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
-      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7dd3fc" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#f9a8d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_q" x1="0" y1="0" x2="1" y2="0">
@@ -155,9 +155,9 @@
   <rect width="1200" height="416" rx="20" fill="url(#grid_q)"/>
 <g>
   <path d="M65,40 H1135 A22,22 0 0 1 1157,62 V314 A22,22 0 0 1 1135,336 H65 A22,22 0 0 1 43,314 V62 A22,22 0 0 1 65,40 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg106" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.153"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg118" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.153"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
   <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="#0d1117"/>
-  <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="url(#tg106)"/>
+  <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="url(#tg118)"/>
   <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="url(#pane_q)"/>
   <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="none" stroke="url(#rim_q)" stroke-width="1.2"/>
   <path d="M41,62 A22,22 0 0 1 62,41 H1138 A22,22 0 0 1 1159,62" fill="none" stroke="url(#spec_q)" stroke-width="1.4"/>
@@ -167,83 +167,83 @@
   <circle cx="92" cy="72" r="5.5" fill="#febc2e" opacity="0.9"/>
   <circle cx="112" cy="72" r="5.5" fill="#28c840" opacity="0.9"/>
   <text class="mono" x="600" y="76" text-anchor="middle" font-size="11.2" letter-spacing="1.2" fill="#9da7b3">ankit@system: ~/production</text>
-  <text class="mono" x="1128" y="76" text-anchor="end" font-size="9.6" letter-spacing="1.6" fill="#2ee6ff" fill-opacity="0.8">&#9679; LIVE</text>
+  <text class="mono" x="1128" y="76" text-anchor="end" font-size="9.6" letter-spacing="1.6" fill="#7dd3fc" fill-opacity="0.8">&#9679; LIVE</text>
   <rect x="40" y="94" width="1120" height="1" fill="#ffffff" opacity="0.09"/>
   <g>
     <text class="mono" x="72" y="128" font-size="12.8">
-      <tspan fill="#2ee6ff">ankit@system</tspan><tspan fill="#9da7b3">:</tspan
-      ><tspan fill="#b6ff4f">~/production</tspan><tspan fill="#9da7b3">$ </tspan></text>
-    <clipPath id="ty107"><rect class="tyw" x="280" y="112" width="176" height="24"/></clipPath>
-    <text class="mono" x="280" y="128" font-size="12.8" fill="#ffc857"
-          clip-path="url(#ty107)">cat now_building.md</text>
+      <tspan fill="#7dd3fc">ankit@system</tspan><tspan fill="#9da7b3">:</tspan
+      ><tspan fill="#c5f467">~/production</tspan><tspan fill="#9da7b3">$ </tspan></text>
+    <clipPath id="ty119"><rect class="tyw" x="280" y="112" width="176" height="24"/></clipPath>
+    <text class="mono" x="280" y="128" font-size="12.8" fill="#fcd38d"
+          clip-path="url(#ty119)">cat now_building.md</text>
   </g>
   <g class="ev9">
-  <text class="mono" x="72" y="172" font-size="12.4" fill="#ffc857" font-weight="600">&#9656; Pratirodh</text>
+  <text class="mono" x="72" y="172" font-size="12.4" fill="#fcd38d" font-weight="600">&#9656; Pratirodh</text>
   <text x="268" y="172" font-size="11.6" fill="#9da7b3">Detecting AI voice-clone fraud on Indian phone calls</text>
   <g>
     <rect x="800" y="163" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp108{from{width:8.1px}to{width:45.0px}}
-    .xp108{animation:xp108 3.40s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp108" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#ffc857"/>
-    <rect class="xp108" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp120{from{width:8.1px}to{width:45.0px}}
+    .xp120{animation:xp120 3.40s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp120" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#fcd38d"/>
+    <rect class="xp120" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
-  <text class="mono" x="1128" y="172" text-anchor="end" font-size="11" font-weight="700" fill="#ffc857">18%</text>
+  <text class="mono" x="1128" y="172" text-anchor="end" font-size="11" font-weight="700" fill="#fcd38d">18%</text>
   </g>
   <g class="ev10">
-  <text class="mono" x="72" y="206" font-size="12.4" fill="#ff4fa0" font-weight="600">&#9656; SheShield Mobile</text>
+  <text class="mono" x="72" y="206" font-size="12.4" fill="#f9a8d4" font-weight="600">&#9656; SheShield Mobile</text>
   <text x="268" y="206" font-size="11.6" fill="#9da7b3">Android app: offline reports, hold-to-send SOS</text>
   <g>
     <rect x="800" y="197" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp109{from{width:39.6px}to{width:220.0px}}
-    .xp109{animation:xp109 3.54s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp109" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#ff4fa0"/>
-    <rect class="xp109" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp121{from{width:39.6px}to{width:220.0px}}
+    .xp121{animation:xp121 3.54s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp121" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#f9a8d4"/>
+    <rect class="xp121" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
-  <text class="mono" x="1128" y="206" text-anchor="end" font-size="11" font-weight="700" fill="#ff4fa0">88%</text>
+  <text class="mono" x="1128" y="206" text-anchor="end" font-size="11" font-weight="700" fill="#f9a8d4">88%</text>
   </g>
   <g class="ev11">
-  <text class="mono" x="72" y="240" font-size="12.4" fill="#2ee6ff" font-weight="600">&#9656; Daily DSA Grind</text>
+  <text class="mono" x="72" y="240" font-size="12.4" fill="#7dd3fc" font-weight="600">&#9656; Daily DSA Grind</text>
   <text x="268" y="240" font-size="11.6" fill="#9da7b3">Contest-grade problems, every single day</text>
   <g>
     <rect x="800" y="231" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp110{from{width:40.5px}to{width:225.0px}}
-    .xp110{animation:xp110 3.68s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp110" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#2ee6ff"/>
-    <rect class="xp110" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp122{from{width:40.5px}to{width:225.0px}}
+    .xp122{animation:xp122 3.68s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp122" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#7dd3fc"/>
+    <rect class="xp122" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
-  <text class="mono" x="1128" y="240" text-anchor="end" font-size="11" font-weight="700" fill="#2ee6ff">90%</text>
+  <text class="mono" x="1128" y="240" text-anchor="end" font-size="11" font-weight="700" fill="#7dd3fc">90%</text>
   </g>
   <g class="ev12">
-  <text class="mono" x="72" y="274" font-size="12.4" fill="#b6ff4f" font-weight="600">&#9656; Cloud Native</text>
+  <text class="mono" x="72" y="274" font-size="12.4" fill="#c5f467" font-weight="600">&#9656; Cloud Native</text>
   <text x="268" y="274" font-size="11.6" fill="#9da7b3">EKS + GitOps deployment pipeline</text>
   <g>
     <rect x="800" y="265" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp111{from{width:26.1px}to{width:145.0px}}
-    .xp111{animation:xp111 3.82s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp111" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#b6ff4f"/>
-    <rect class="xp111" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp123{from{width:26.1px}to{width:145.0px}}
+    .xp123{animation:xp123 3.82s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp123" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#c5f467"/>
+    <rect class="xp123" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
-  <text class="mono" x="1128" y="274" text-anchor="end" font-size="11" font-weight="700" fill="#b6ff4f">58%</text>
+  <text class="mono" x="1128" y="274" text-anchor="end" font-size="11" font-weight="700" fill="#c5f467">58%</text>
   </g>
-  <text class="mono" x="72" y="316" font-size="12.8"><tspan fill="#2ee6ff">ankit@system</tspan><tspan fill="#9da7b3">:</tspan><tspan fill="#b6ff4f">~/production</tspan><tspan fill="#9da7b3">$</tspan><tspan fill="#ffc857" style="animation:blink 1.1s steps(1) infinite"> &#9646;</tspan></text>
-  <clipPath id="sc112"><path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z"/></clipPath><g clip-path="url(#sc112)" opacity="0.5"><rect x="40" y="40" width="1120" height="34" fill="url(#sheen_q)" style="animation:scan 7s linear infinite"/></g>
+  <text class="mono" x="72" y="316" font-size="12.8"><tspan fill="#7dd3fc">ankit@system</tspan><tspan fill="#9da7b3">:</tspan><tspan fill="#c5f467">~/production</tspan><tspan fill="#9da7b3">$</tspan><tspan fill="#fcd38d" style="animation:blink 1.1s steps(1) infinite"> &#9646;</tspan></text>
+  <clipPath id="sc124"><path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z"/></clipPath><g clip-path="url(#sc124)" opacity="0.5"><rect x="40" y="40" width="1120" height="34" fill="url(#sheen_q)" style="animation:scan 7s linear infinite"/></g>
   <g class="ev21">
   <g>
-  <radialGradient id="tg113" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.136"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg125" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#c5f467" stop-opacity="0.136"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient>
   <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="#0d1117"/>
-  <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="url(#tg113)"/>
+  <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="url(#tg125)"/>
   <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="url(#pane_q)"/>
   <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="none" stroke="url(#rim_q)" stroke-width="1.2"/>
   <path d="M41,367 A15,15 0 0 1 55,353 H1145 A15,15 0 0 1 1159,367" fill="none" stroke="url(#spec_q)" stroke-width="1.4"/>
   </g>
-  <g transform="translate(66,364) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#b6ff4f" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><rect x="6.4" y="6.4" width="11.2" height="11.2" rx="2.4"/>
+  <g transform="translate(66,364) scale(0.8333)" opacity="0.9"><g fill="none" stroke="#c5f467" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><rect x="6.4" y="6.4" width="11.2" height="11.2" rx="2.4"/>
         <rect x="10" y="10" width="4" height="4" rx="1"/>
         <path d="M9.4 2.6v3.8M14.6 2.6v3.8M9.4 17.6v3.8M14.6 17.6v3.8M2.6 9.4h3.8M2.6 14.6h3.8M17.6 9.4h3.8M17.6 14.6h3.8"/></g></g>
-  <text class="mono" x="98" y="379" font-size="10" letter-spacing="2.4" fill="#b6ff4f" fill-opacity="0.9" font-weight="600">LEVELLING UP</text>
-  <g><rect x="240" y="363" width="82" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="281" y="378" text-anchor="middle" font-size="10.8" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">Speech ML</text></g>
-  <g><rect x="330" y="363" width="149" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="404" y="378" text-anchor="middle" font-size="10.8" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Distributed Systems</text></g>
-  <g><rect x="487" y="363" width="48" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="511" y="378" text-anchor="middle" font-size="10.8" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">Rust</text></g>
-  <g><rect x="543" y="363" width="55" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="570" y="378" text-anchor="middle" font-size="10.8" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">MLOps</text></g>
-  <g><rect x="606" y="363" width="109" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="660" y="378" text-anchor="middle" font-size="10.8" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">System Design</text></g>
+  <text class="mono" x="98" y="379" font-size="10" letter-spacing="2.4" fill="#c5f467" fill-opacity="0.9" font-weight="600">LEVELLING UP</text>
+  <g><rect x="240" y="363" width="82" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#fcd38d" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="281" y="378" text-anchor="middle" font-size="10.8" fill="#fcd38d" fill-opacity="0.95" letter-spacing="0.4">Speech ML</text></g>
+  <g><rect x="330" y="363" width="149" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#f9a8d4" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="404" y="378" text-anchor="middle" font-size="10.8" fill="#f9a8d4" fill-opacity="0.95" letter-spacing="0.4">Distributed Systems</text></g>
+  <g><rect x="487" y="363" width="48" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#7dd3fc" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="511" y="378" text-anchor="middle" font-size="10.8" fill="#7dd3fc" fill-opacity="0.95" letter-spacing="0.4">Rust</text></g>
+  <g><rect x="543" y="363" width="55" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#c5f467" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="570" y="378" text-anchor="middle" font-size="10.8" fill="#c5f467" fill-opacity="0.95" letter-spacing="0.4">MLOps</text></g>
+  <g><rect x="606" y="363" width="109" height="22" rx="11.0" fill="#ffffff" fill-opacity="0.055" stroke="#fcd38d" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="660" y="378" text-anchor="middle" font-size="10.8" fill="#fcd38d" fill-opacity="0.95" letter-spacing="0.4">System Design</text></g>
   </g>
 </svg>

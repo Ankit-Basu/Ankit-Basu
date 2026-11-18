@@ -9,17 +9,17 @@
 
     <linearGradient id="rim_o" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
+      <stop offset="22%" stop-color="#fcd38d" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
+      <stop offset="74%" stop-color="#f9a8d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_o" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
-      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7dd3fc" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#f9a8d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_o" x1="0" y1="0" x2="1" y2="0">
@@ -152,195 +152,195 @@
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
-            stroke="#ffc857" stroke-opacity="0.75" stroke-width="1.4"/>
-      <circle r="3" fill="#ffc857" style="animation:breathe 2.4s ease-in-out infinite"/>
+            stroke="#fcd38d" stroke-opacity="0.75" stroke-width="1.4"/>
+      <circle r="3" fill="#fcd38d" style="animation:breathe 2.4s ease-in-out infinite"/>
     </g>
-    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#ffc857"
+    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#fcd38d"
           fill-opacity="0.9" font-weight="600">WORLD MAP</text>
     <text x="46" y="89" font-size="25" font-weight="700" fill="#f0f3f6" letter-spacing="-0.4">From level 1 to now</text>
   </g>
   <path d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="8" stroke-linecap="round"/>
   <path id="trail_o" class="trail" d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="url(#refr_o)" stroke-width="2.4" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0"/>
-  <path d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="#ffc857" stroke-opacity="0.35" stroke-width="1.4" stroke-dasharray="2 9"/>
+  <path d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="#fcd38d" stroke-opacity="0.35" stroke-width="1.4" stroke-dasharray="2 9"/>
   <g>
-    <circle r="11" fill="#2ee6ff" fill-opacity="0.18"/>
-    <rect x="-5.5" y="-5.5" width="11" height="11" rx="2" fill="#2ee6ff" stroke="#0a0f14" stroke-width="1.6"
+    <circle r="11" fill="#7dd3fc" fill-opacity="0.18"/>
+    <rect x="-5.5" y="-5.5" width="11" height="11" rx="2" fill="#7dd3fc" stroke="#0a0f14" stroke-width="1.6"
           transform="rotate(45)"/>
     <animateMotion dur="22s" repeatCount="indefinite" rotate="0" calcMode="linear">
       <mpath href="#trail_o" xlink:href="#trail_o"/>
     </animateMotion>
   </g>
   <g class="ev1">
-  <rect x="139.5" y="186" width="1" height="16" fill="#ffc857" opacity="0.5"/>
+  <rect x="139.5" y="186" width="1" height="16" fill="#fcd38d" opacity="0.5"/>
   <g>
-  <radialGradient id="tg23" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg35" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.255"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
   <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="#0d1117"/>
-  <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="url(#tg23)"/>
+  <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="url(#tg35)"/>
   <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="url(#pane_o)"/>
   <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M47,218 A16,16 0 0 1 62,203 H236 A16,16 0 0 1 251,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="62" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="62" y="226" font-size="9.8" letter-spacing="2" fill="#ffc857" font-weight="700">SEP 2023</text>
+  <text class="mono" x="62" y="226" font-size="9.8" letter-spacing="2" fill="#fcd38d" font-weight="700">SEP 2023</text>
   <text class="sans" x="62" y="249" font-size="15" font-weight="700" fill="#f0f3f6">Player spawned</text>
   <text x="62" y="270" font-size="11" fill="#9da7b3">Created this GitHub account.</text>
   <text x="62" y="287" font-size="11" fill="#9da7b3">Level 1, no gear, big ideas.</text>
-  <circle cx="140" cy="176" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="140" cy="176" r="3.4" fill="#ffc857"/>
+  <circle cx="140" cy="176" r="8" fill="#0d1117" stroke="#fcd38d" stroke-width="2"/><circle cx="140" cy="176" r="3.4" fill="#fcd38d"/>
   </g>
   <g class="ev3">
-  <rect x="369.5" y="186" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
+  <rect x="369.5" y="186" width="1" height="16" fill="#7dd3fc" opacity="0.5"/>
   <g>
-  <radialGradient id="tg24" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg36" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.255"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
   <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="#0d1117"/>
-  <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="url(#tg24)"/>
+  <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="url(#tg36)"/>
   <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="url(#pane_o)"/>
   <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M268.0,218 A16,16 0 0 1 283.0,203 H457.0 A16,16 0 0 1 472.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="283" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="283.0" y="226" font-size="9.8" letter-spacing="2" fill="#2ee6ff" font-weight="700">SEP 2024</text>
+  <text class="mono" x="283.0" y="226" font-size="9.8" letter-spacing="2" fill="#7dd3fc" font-weight="700">SEP 2024</text>
   <text class="sans" x="283.0" y="249" font-size="15" font-weight="700" fill="#f0f3f6">The grind begins</text>
   <text x="283.0" y="270" font-size="11" fill="#9da7b3">LeetCode-Solutions and CP drills:</text>
   <text x="283.0" y="287" font-size="11" fill="#9da7b3">400+ problems and counting.</text>
-  <circle cx="370" cy="176" r="8" fill="#0d1117" stroke="#2ee6ff" stroke-width="2"/><circle cx="370" cy="176" r="3.4" fill="#2ee6ff"/>
+  <circle cx="370" cy="176" r="8" fill="#0d1117" stroke="#7dd3fc" stroke-width="2"/><circle cx="370" cy="176" r="3.4" fill="#7dd3fc"/>
   </g>
   <g class="ev5">
-  <rect x="599.5" y="186" width="1" height="16" fill="#ff4fa0" opacity="0.5"/>
+  <rect x="599.5" y="186" width="1" height="16" fill="#f9a8d4" opacity="0.5"/>
   <g>
-  <radialGradient id="tg25" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.255"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg37" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#f9a8d4" stop-opacity="0.255"/><stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/></radialGradient>
   <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="#0d1117"/>
-  <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="url(#tg25)"/>
+  <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="url(#tg37)"/>
   <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="url(#pane_o)"/>
   <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M498.0,218 A16,16 0 0 1 513.0,203 H687.0 A16,16 0 0 1 702.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="513" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="513.0" y="226" font-size="9.8" letter-spacing="2" fill="#ff4fa0" font-weight="700">MAR 2025</text>
+  <text class="mono" x="513.0" y="226" font-size="9.8" letter-spacing="2" fill="#f9a8d4" font-weight="700">MAR 2025</text>
   <text class="sans" x="513.0" y="249" font-size="15" font-weight="700" fill="#f0f3f6">SheShield</text>
   <text x="513.0" y="270" font-size="11" fill="#9da7b3">A women's safety platform that</text>
   <text x="513.0" y="287" font-size="11" fill="#9da7b3">now has 20 stars and an APK.</text>
-  <circle cx="600" cy="176" r="8" fill="#0d1117" stroke="#ff4fa0" stroke-width="2"/><circle cx="600" cy="176" r="3.4" fill="#ff4fa0"/>
+  <circle cx="600" cy="176" r="8" fill="#0d1117" stroke="#f9a8d4" stroke-width="2"/><circle cx="600" cy="176" r="3.4" fill="#f9a8d4"/>
   </g>
   <g class="ev7">
-  <rect x="829.5" y="186" width="1" height="16" fill="#b6ff4f" opacity="0.5"/>
+  <rect x="829.5" y="186" width="1" height="16" fill="#c5f467" opacity="0.5"/>
   <g>
-  <radialGradient id="tg26" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.255"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg38" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#c5f467" stop-opacity="0.255"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient>
   <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="#0d1117"/>
-  <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="url(#tg26)"/>
+  <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="url(#tg38)"/>
   <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="url(#pane_o)"/>
   <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M728.0,218 A16,16 0 0 1 743.0,203 H917.0 A16,16 0 0 1 932.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="743" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="743.0" y="226" font-size="9.8" letter-spacing="2" fill="#b6ff4f" font-weight="700">JUL 2025</text>
+  <text class="mono" x="743.0" y="226" font-size="9.8" letter-spacing="2" fill="#c5f467" font-weight="700">JUL 2025</text>
   <text class="sans" x="743.0" y="249" font-size="15" font-weight="700" fill="#f0f3f6">Hackathon season</text>
   <text x="743.0" y="270" font-size="11" fill="#9da7b3">AlgoTrail visualiser and the</text>
   <text x="743.0" y="287" font-size="11" fill="#9da7b3">Adobe Hackathon PDF engine.</text>
-  <circle cx="830" cy="176" r="8" fill="#0d1117" stroke="#b6ff4f" stroke-width="2"/><circle cx="830" cy="176" r="3.4" fill="#b6ff4f"/>
+  <circle cx="830" cy="176" r="8" fill="#0d1117" stroke="#c5f467" stroke-width="2"/><circle cx="830" cy="176" r="3.4" fill="#c5f467"/>
   </g>
   <g class="ev9">
-  <rect x="1059.5" y="186" width="1" height="16" fill="#ffc857" opacity="0.5"/>
+  <rect x="1059.5" y="186" width="1" height="16" fill="#fcd38d" opacity="0.5"/>
   <g>
-  <radialGradient id="tg27" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg39" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.255"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
   <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="#0d1117"/>
-  <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="url(#tg27)"/>
+  <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="url(#tg39)"/>
   <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="url(#pane_o)"/>
   <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M949,218 A16,16 0 0 1 964,203 H1138 A16,16 0 0 1 1153,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="964" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="964" y="226" font-size="9.8" letter-spacing="2" fill="#ffc857" font-weight="700">NOV 2025</text>
+  <text class="mono" x="964" y="226" font-size="9.8" letter-spacing="2" fill="#fcd38d" font-weight="700">NOV 2025</text>
   <text class="sans" x="964" y="249" font-size="15" font-weight="700" fill="#f0f3f6">GridSense</text>
   <text x="964" y="270" font-size="11" fill="#9da7b3">A 3D smart-grid digital twin</text>
   <text x="964" y="287" font-size="11" fill="#9da7b3">with ML forecasting.</text>
-  <circle cx="1060" cy="176" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="1060" cy="176" r="3.4" fill="#ffc857"/>
+  <circle cx="1060" cy="176" r="8" fill="#0d1117" stroke="#fcd38d" stroke-width="2"/><circle cx="1060" cy="176" r="3.4" fill="#fcd38d"/>
   </g>
   <g class="ev11">
-  <rect x="1059.5" y="392" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
+  <rect x="1059.5" y="392" width="1" height="16" fill="#7dd3fc" opacity="0.5"/>
   <g>
-  <radialGradient id="tg28" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg40" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.255"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
   <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="#0d1117"/>
-  <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="url(#tg28)"/>
+  <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="url(#tg40)"/>
   <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="url(#pane_o)"/>
   <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M949,424 A16,16 0 0 1 964,409 H1138 A16,16 0 0 1 1153,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="964" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="964" y="432" font-size="9.8" letter-spacing="2" fill="#2ee6ff" font-weight="700">FEB 2026</text>
+  <text class="mono" x="964" y="432" font-size="9.8" letter-spacing="2" fill="#7dd3fc" font-weight="700">FEB 2026</text>
   <text class="sans" x="964" y="455" font-size="15" font-weight="700" fill="#f0f3f6">Real-time arc</text>
   <text x="964" y="476" font-size="11" fill="#9da7b3">Pixel-Board and CampusWhisper:</text>
   <text x="964" y="493" font-size="11" fill="#9da7b3">Socket.IO, WebRTC, Groq vision.</text>
-  <circle cx="1060" cy="382" r="8" fill="#0d1117" stroke="#2ee6ff" stroke-width="2"/><circle cx="1060" cy="382" r="3.4" fill="#2ee6ff"/>
+  <circle cx="1060" cy="382" r="8" fill="#0d1117" stroke="#7dd3fc" stroke-width="2"/><circle cx="1060" cy="382" r="3.4" fill="#7dd3fc"/>
   </g>
   <g class="ev13">
-  <rect x="829.5" y="392" width="1" height="16" fill="#ff4fa0" opacity="0.5"/>
+  <rect x="829.5" y="392" width="1" height="16" fill="#f9a8d4" opacity="0.5"/>
   <g>
-  <radialGradient id="tg29" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.255"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg41" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#f9a8d4" stop-opacity="0.255"/><stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/></radialGradient>
   <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="#0d1117"/>
-  <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="url(#tg29)"/>
+  <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="url(#tg41)"/>
   <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="url(#pane_o)"/>
   <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M728.0,424 A16,16 0 0 1 743.0,409 H917.0 A16,16 0 0 1 932.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="743" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="743.0" y="432" font-size="9.8" letter-spacing="2" fill="#ff4fa0" font-weight="700">MAY 2026</text>
+  <text class="mono" x="743.0" y="432" font-size="9.8" letter-spacing="2" fill="#f9a8d4" font-weight="700">MAY 2026</text>
   <text class="sans" x="743.0" y="455" font-size="15" font-weight="700" fill="#f0f3f6">MindBloom</text>
   <text x="743.0" y="476" font-size="11" fill="#9da7b3">Gemini-powered wellness for</text>
   <text x="743.0" y="493" font-size="11" fill="#9da7b3">children, parents, counsellors.</text>
-  <circle cx="830" cy="382" r="8" fill="#0d1117" stroke="#ff4fa0" stroke-width="2"/><circle cx="830" cy="382" r="3.4" fill="#ff4fa0"/>
+  <circle cx="830" cy="382" r="8" fill="#0d1117" stroke="#f9a8d4" stroke-width="2"/><circle cx="830" cy="382" r="3.4" fill="#f9a8d4"/>
   </g>
   <g class="ev15">
-  <rect x="599.5" y="392" width="1" height="16" fill="#b6ff4f" opacity="0.5"/>
+  <rect x="599.5" y="392" width="1" height="16" fill="#c5f467" opacity="0.5"/>
   <g>
-  <radialGradient id="tg30" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.255"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg42" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#c5f467" stop-opacity="0.255"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient>
   <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="#0d1117"/>
-  <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="url(#tg30)"/>
+  <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="url(#tg42)"/>
   <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="url(#pane_o)"/>
   <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M498.0,424 A16,16 0 0 1 513.0,409 H687.0 A16,16 0 0 1 702.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="513" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="513.0" y="432" font-size="9.8" letter-spacing="2" fill="#b6ff4f" font-weight="700">AUG 2026</text>
+  <text class="mono" x="513.0" y="432" font-size="9.8" letter-spacing="2" fill="#c5f467" font-weight="700">AUG 2026</text>
   <text class="sans" x="513.0" y="455" font-size="15" font-weight="700" fill="#f0f3f6">Systems arc</text>
   <text x="513.0" y="476" font-size="11" fill="#9da7b3">PII redaction engine, then</text>
   <text x="513.0" y="493" font-size="11" fill="#9da7b3">Vyapaar agent commerce.</text>
-  <circle cx="600" cy="382" r="8" fill="#0d1117" stroke="#b6ff4f" stroke-width="2"/><circle cx="600" cy="382" r="3.4" fill="#b6ff4f"/>
+  <circle cx="600" cy="382" r="8" fill="#0d1117" stroke="#c5f467" stroke-width="2"/><circle cx="600" cy="382" r="3.4" fill="#c5f467"/>
   </g>
   <g class="ev17">
-  <rect x="369.5" y="392" width="1" height="16" fill="#ffc857" opacity="0.5"/>
+  <rect x="369.5" y="392" width="1" height="16" fill="#fcd38d" opacity="0.5"/>
   <g>
-  <radialGradient id="tg31" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg43" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.255"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
   <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="#0d1117"/>
-  <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="url(#tg31)"/>
+  <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="url(#tg43)"/>
   <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="url(#pane_o)"/>
   <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M268.0,424 A16,16 0 0 1 283.0,409 H457.0 A16,16 0 0 1 472.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="283" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="283.0" y="432" font-size="9.8" letter-spacing="2" fill="#ffc857" font-weight="700">SEP 2026</text>
+  <text class="mono" x="283.0" y="432" font-size="9.8" letter-spacing="2" fill="#fcd38d" font-weight="700">SEP 2026</text>
   <text class="sans" x="283.0" y="455" font-size="15" font-weight="700" fill="#f0f3f6">Production grade</text>
   <text x="283.0" y="476" font-size="11" fill="#9da7b3">TimedInk scheduler and the</text>
   <text x="283.0" y="493" font-size="11" fill="#9da7b3">Hirehearsal AI interviewer.</text>
-  <circle cx="370" cy="382" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="370" cy="382" r="3.4" fill="#ffc857"/>
+  <circle cx="370" cy="382" r="8" fill="#0d1117" stroke="#fcd38d" stroke-width="2"/><circle cx="370" cy="382" r="3.4" fill="#fcd38d"/>
   </g>
   <g class="ev19">
-  <rect x="139.5" y="392" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
+  <rect x="139.5" y="392" width="1" height="16" fill="#7dd3fc" opacity="0.5"/>
   <g>
-  <radialGradient id="tg32" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg44" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.255"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
   <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="#0d1117"/>
-  <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="url(#tg32)"/>
+  <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="url(#tg44)"/>
   <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="url(#pane_o)"/>
   <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M47,424 A16,16 0 0 1 62,409 H236 A16,16 0 0 1 251,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="62" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="62" y="432" font-size="9.8" letter-spacing="2" fill="#2ee6ff" font-weight="700">NOV 2026</text>
+  <text class="mono" x="62" y="432" font-size="9.8" letter-spacing="2" fill="#7dd3fc" font-weight="700">NOV 2026</text>
   <text class="sans" x="62" y="455" font-size="15" font-weight="700" fill="#f0f3f6">Now playing</text>
   <text x="62" y="476" font-size="11" fill="#9da7b3">BookMyCampus, Pratirodh and</text>
   <text x="62" y="493" font-size="11" fill="#9da7b3">the SheShield Android app.</text>
-  <circle cx="140" cy="382" r="7" fill="none" stroke="#2ee6ff" stroke-width="1.6"><animate attributeName="r" values="7;22" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.8s" repeatCount="indefinite"/></circle>
-  <g><rect x="134" y="376" width="18" height="18" rx="4" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2"/><rect x="131" y="373" width="18" height="18" rx="4" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2"/></g>
+  <circle cx="140" cy="382" r="7" fill="none" stroke="#7dd3fc" stroke-width="1.6"><animate attributeName="r" values="7;22" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.8s" repeatCount="indefinite"/></circle>
+  <g><rect x="131" y="376.0" width="18" height="18" rx="4" fill="#000000" fill-opacity="0.35"/><rect x="131" y="373" width="18" height="18" rx="4" fill="#7dd3fc"/><rect x="134.2" y="373.6" width="11.6" height="1" fill="#ffffff" opacity="0.45"/></g>
   </g>
-  <g class="ev20"><g transform="rotate(-3 166.5 336.0)"><g><rect x="113" y="327" width="113" height="24" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/><rect x="110" y="324" width="113" height="24" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="166.5" y="339.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">YOU ARE HERE ↓</text></g></g>
+  <g class="ev20"><g><rect x="110" y="324" width="118" height="24" rx="12.0" fill="#7dd3fc" fill-opacity="0.12" stroke="#7dd3fc" stroke-opacity="0.45" stroke-width="1"/><circle cx="122.0" cy="336.0" r="2.4" fill="#7dd3fc"/><text class="mono" x="130.0" y="339.6" font-size="10" font-weight="600" letter-spacing="1.6" fill="#7dd3fc">YOU ARE HERE ↓</text></g></g>
   <text class="mono" x="600" y="578" text-anchor="middle" font-size="9.6" letter-spacing="1.6" fill="#6e7681">DATED FROM EACH REPOSITORY'S FIRST COMMIT &#183; THE CYAN DIAMOND IS ME, STILL WALKING</text>
 </svg>

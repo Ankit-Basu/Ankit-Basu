@@ -274,9 +274,8 @@ def build_hero(d):
     body.append(hz)
 
     # -- PRESS START sticker (brutalist) + availability pill (glass)
-    st, sw = sticker(x0, 52, "▶ PRESS START", CREAM, ROSE, fs=11.5, h=28)
-    body.append(f'<g class="ev1"><g style="animation:wob 3.2s ease-in-out infinite;'
-                f'transform-origin:{x0 + sw / 2}px 66px">{st}</g></g>')
+    st, sw = sticker(x0, 53, "PRESS START", CREAM, fs=10.4, h=28)
+    body.append(f'<g class="ev1">{st}</g>')
     px = x0 + sw + 22
     body.append(f"""<g class="ev1">
     {card(s, px, 53, 366, 28, r=14, tint=MINT, tint_op=0.2, shadow=False)}
@@ -386,45 +385,48 @@ def build_chapter(i):
     tw = len(line) * fs * 0.6
     T = 11.0
     nseg = 16
-    css = ("@keyframes stamp{0%%{transform:scale(1.18) rotate(-7deg);opacity:.5}"
-           "55%%{transform:scale(.96) rotate(1deg);opacity:1}100%%{transform:scale(1) rotate(0)}}"
-           ".stamp{animation:stamp 1.1s cubic-bezier(.22,1,.36,1)}"
+    css = ("@keyframes stamp{0%%{transform:translateY(10px);opacity:.5}100%%{transform:none;opacity:1}}"
+           ".stamp{animation:stamp 1.2s cubic-bezier(.22,1,.36,1)}"
+           "@keyframes trace{0%%,10%%{stroke-dashoffset:1}70%%,100%%{stroke-dashoffset:0}}"
+           ".uline{animation:trace 2.6s cubic-bezier(.45,.05,.35,1)}"
            "@keyframes say{0%%{width:0}32%%,100%%{width:%.1fpx}}.say{animation:say %.1fs steps(%d,end) infinite}"
-           "@keyframes nxt{0%%,100%%{transform:translateY(0);opacity:1}50%%{transform:translateY(3px);opacity:.35}}"
-           ".nxt{animation:nxt .9s steps(2,end) infinite}"
-           "@keyframes seg{0%%,4%%{opacity:.12}10%%,74%%{opacity:1}84%%,100%%{opacity:.12}}"
-           "@keyframes flick{0%%,100%%{opacity:1}48%%{opacity:1}50%%{opacity:.55}52%%{opacity:1}}"
-           ".flick{animation:flick 4.2s linear infinite}"
+           "@keyframes nxt{0%%,100%%{transform:translateY(0);opacity:1}50%%{transform:translateY(3px);opacity:.4}}"
+           ".nxt{animation:nxt 1.6s ease-in-out infinite}"
+           "@keyframes seg{0%%,4%%{opacity:.15}10%%,74%%{opacity:1}84%%,100%%{opacity:.15}}"
+           "@keyframes flick{0%%,100%%{opacity:.9}50%%{opacity:.45}}"
+           ".flick{animation:flick 3.2s ease-in-out infinite}"
            % (tw + 4, T, len(line)))
     body = []
 
-    # -- numeral block
+    # -- numeral tile: glass, with the numeral drawn as a thin outline that
+    #    traces itself in, and a hairline accent rule under it
     bw = 150
     body.append(f'<g class="stamp" style="transform-origin:{PAD + bw / 2}px 92px">'
-                f'{brut(PAD, 34, bw, 112, col, shadow, r=14, off=7, bw=3)}'
-                f'<text class="mono" x="{PAD + bw / 2}" y="60" text-anchor="middle" font-size="10" '
-                f'font-weight="800" letter-spacing="2.6" fill="{INKK}">CHAPTER</text>'
-                f'<text class="sans" x="{PAD + bw / 2}" y="122" text-anchor="middle" font-size="54" '
-                f'font-weight="900" fill="{INKK}" letter-spacing="-1">{num}</text>'
-                f'<rect x="{PAD + 22}" y="132" width="{bw - 44}" height="3" fill="{INKK}" opacity="0.8"/></g>')
+                f'{card(s, PAD, 34, bw, 112, r=16, tint=col, tint_op=0.2, shadow=False)}'
+                f'<text class="mono" x="{PAD + bw / 2}" y="60" text-anchor="middle" font-size="9.4" '
+                f'font-weight="600" letter-spacing="3" fill="{col}">CHAPTER</text>'
+                f'<text class="sans uline" x="{PAD + bw / 2}" y="122" text-anchor="middle" font-size="56" '
+                f'font-weight="800" fill="none" stroke="{col}" stroke-width="1.3" letter-spacing="2" '
+                f'pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0">{num}</text>'
+                f'<rect x="{PAD + bw / 2 - 16}" y="132" width="32" height="1.5" rx="0.75" fill="{col}"/></g>')
 
-    # -- dialogue box: ink outer frame, accent inner frame, pixel corner notches
-    gx = PAD + bw + 30
+    # -- dialogue box: a hairline frame with HUD corner brackets
+    gx = PAD + bw + 26
     gw = W - PAD - gx
-    by, bh = 44, 104
+    by, bh = 34, 112
     body.append(f'<g class="ev1">')
-    body.append(f'<rect x="{gx}" y="{by}" width="{gw}" height="{bh}" fill="{BG2}" stroke="{INKK}" stroke-width="4"/>')
-    body.append(f'<rect x="{gx + 5}" y="{by + 5}" width="{gw - 10}" height="{bh - 10}" fill="none" '
-                f'stroke="{col}" stroke-width="2" class="flick"/>')
-    for cx_, cy_ in [(gx, by), (gx + gw - 8, by), (gx, by + bh - 8), (gx + gw - 8, by + bh - 8)]:
-        body.append(f'<rect x="{cx_}" y="{cy_}" width="8" height="8" fill="{BG0}"/>')
+    body.append(card(s, gx, by, gw, bh, r=16, tint=col, tint_op=0.08, shadow=False))
+    L = 14
+    for (bx_, by_, dx, dy) in [(gx + 10, by + 10, 1, 1), (gx + gw - 10, by + 10, -1, 1),
+                               (gx + 10, by + bh - 10, 1, -1), (gx + gw - 10, by + bh - 10, -1, -1)]:
+        body.append(f'<path class="flick" d="M{bx_} {by_ + dy * L}V{by_}H{bx_ + dx * L}" fill="none" '
+                    f'stroke="{col}" stroke-width="1.4" stroke-linecap="round"/>')
     body.append("</g>")
-    # name tab
-    tab = "%s" % kicker
-    tw_ = len(tab) * 7.4 + 26
-    body.append(f'<g class="ev1">{brut(gx + 22, by - 14, tw_, 24, col, INKK, r=0, off=3, bw=2.4)}'
-                f'<text class="mono" x="{gx + 22 + tw_ / 2}" y="{by + 2.5}" text-anchor="middle" font-size="10.4" '
-                f'font-weight="800" letter-spacing="1.6" fill="{INKK}">{esc(tab)}</text></g>')
+    by += 8
+    # name tag
+    st_, _ = sticker(gx + 26, by + 2, kicker, col, fs=9.6, h=22)
+    body.append(f'<g class="ev1">{st_}</g>')
+    by += 12
 
     tx = gx + 26
     body.append(f'<text class="sans ev2" x="{tx}" y="{by + 46}" font-size="25" font-weight="800" '
@@ -433,19 +435,20 @@ def build_chapter(i):
     body.append(f'<clipPath id="{cid}"><rect class="say" x="{tx - 2}" y="{by + 62}" width="{tw + 4:.1f}" height="22"/></clipPath>'
                 f'<text class="mono" x="{tx}" y="{by + 78}" font-size="{fs}" fill="{DIM}" textLength="{tw:.1f}" '
                 f'lengthAdjust="spacingAndGlyphs" clip-path="url(#{cid})">{esc(line)}</text>')
-    ax = gx + gw - 30
-    body.append(f'<path class="nxt" d="M{ax - 7} {by + bh - 26}h14l-7 8z" fill="{col}"/>')
+    ax = gx + gw - 34
+    body.append(f'<path class="nxt" d="M{ax - 6} 122l6 6 6-6" fill="none" stroke="{col}" stroke-width="1.6" '
+                f'stroke-linecap="round" stroke-linejoin="round"/>')
 
-    # -- chapter progress + loading bar, top right of the box
-    rx = gx + gw - 26
-    body.append(f'<text class="mono ev3" x="{rx}" y="{by + 30}" text-anchor="end" font-size="9.4" '
+    # -- chapter progress + a thin segmented loader, top right of the box
+    rx = gx + gw - 30
+    body.append(f'<text class="mono ev3" x="{rx}" y="62" text-anchor="end" font-size="9" '
                 f'letter-spacing="2" fill="{FAINT}">CH {i + 1:02d}/{n:02d} &#183; '
                 f'{"LOADING NEXT" if i < n - 1 else "FINAL CHAPTER"}</text>')
-    segw = 9
+    segw = 8
     sx0 = rx - nseg * (segw + 3) + 3
     for k in range(nseg):
         dl = -T / 3.0 + k * 0.09
-        body.append(f'<rect x="{sx0 + k * (segw + 3)}" y="{by + 40}" width="{segw}" height="10" fill="{col}" '
+        body.append(f'<rect x="{sx0 + k * (segw + 3)}" y="72" width="{segw}" height="4" rx="2" fill="{col}" '
                     f'style="animation:seg {T / 3.0:.2f}s linear {dl:.2f}s infinite"/>')
     return page(s, W, H, css, "\n  ".join(body), None, grid=False)
 

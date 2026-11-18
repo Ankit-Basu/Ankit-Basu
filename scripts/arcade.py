@@ -84,7 +84,7 @@ def build_companion(d):
             "on": "bob 2.4s ease-in-out infinite",
             "asleep": "bob 4.8s ease-in-out infinite"}[mood]
 
-    fill = {"K": "#4b3bb8", "B": MINT, "S": "#0a0e14", "A": ROSE, "L": PURPLE}
+    fill = {"K": "#3a4150", "B": "#e6e9ef", "S": "#0d1117", "A": ROSE, "L": "#5b6472"}
     cells = []
     for r, row in enumerate(SPRITE):
         for c, ch in enumerate(row):
@@ -232,12 +232,11 @@ def build_ticker(d):
                    f'  &#9650;   </tspan>' for sym, val in syms)
     clip = "tp_" + s
     body.append(f'<clipPath id="{clip}"><rect x="0" y="{H - 52}" width="{HW}" height="34"/></clipPath>')
-    body.append(brut(-10, H - 52, HW + 20, 32, INKK, ROSE, r=0, off=0, bw=0))
     body.append(f'<g clip-path="url(#{clip})"><g style="animation:tape 26s linear infinite">'
                 f'<text class="mono" x="12" y="{H - 31}" font-size="11" letter-spacing="1">{item}{item}</text>'
                 f'</g></g>')
-    body.append(f'<rect x="0" y="{H - 53}" width="{HW}" height="1.4" fill="{ROSE}"/>'
-                f'<rect x="0" y="{H - 21}" width="{HW}" height="1.4" fill="{ROSE}"/>')
+    body.append(f'<rect x="0" y="{H - 53}" width="{HW}" height="1" fill="#ffffff" opacity="0.1"/>'
+                f'<rect x="0" y="{H - 21}" width="{HW}" height="1" fill="#ffffff" opacity="0.1"/>')
     blobs = [(160, 250, 220, CREAM, 0.18, "drift"), (460, 200, 200, PURPLE, 0.3, "drift2")]
     return page(s, HW, H, css, "\n  ".join(body), blobs)
 
@@ -272,32 +271,27 @@ def build_votes():
         y = 116
         n = votes[key]
         pct = (100.0 * n / total) if total else 0
-        shadow = {CREAM: ROSE, ROSE: PURPLE, MINT: ROSE, VIOLET: MINT}[col]
         body.append(f'<g class="{ev(2 + i)}">')
-        body.append(brut(x, y, cw, 168, BG2, shadow, r=16, off=6, bw=2.6))
-        body.append(f'<rect x="{x + 1.3}" y="{y + 1.3}" width="{cw - 2.6}" height="44" rx="14" fill="{col}"/>'
-                    f'<rect x="{x + 1.3}" y="{y + 30}" width="{cw - 2.6}" height="16" fill="{col}"/>'
-                    f'<rect x="{x}" y="{y + 45}" width="{cw}" height="2.6" fill="{INKK}"/>')
-        body.append(f'<text class="mono" x="{x + 18}" y="{y + 29}" font-size="12" font-weight="800" '
-                    f'letter-spacing="1.4" fill="{INKK}">PLAYER {i + 1} &#183; {key.upper()}</text>')
-        body.append(f'<text class="sans" x="{x + 18}" y="{y + 78}" font-size="17" font-weight="800" '
+        # glass card with a hairline accent along the top edge
+        body.append(card(s, x, y, cw, 168, r=16, tint=col, tint_op=0.14))
+        body.append(f'<rect x="{x + 18}" y="{y}" width="{cw - 36}" height="1.6" rx="0.8" fill="{col}"/>')
+        body.append(f'<text class="mono" x="{x + 18}" y="{y + 32}" font-size="9.6" font-weight="600" '
+                    f'letter-spacing="2.4" fill="{col}">OPTION {i + 1:02d}</text>')
+        body.append(f'<text class="sans" x="{x + 18}" y="{y + 66}" font-size="17" font-weight="700" '
                     f'fill="{INK}">{esc(label)}</text>')
-        body.append(f'<text x="{x + 18}" y="{y + 98}" font-size="11.2" fill="{DIM}">{esc(sub)}</text>')
-        body.append(f'<rect x="{x + 18}" y="{y + 118}" width="{cw - 36}" height="12" rx="3" fill="#ffffff" '
-                    f'fill-opacity="0.07" stroke="{INKK}" stroke-width="1.4"/>')
+        body.append(f'<text x="{x + 18}" y="{y + 88}" font-size="11.2" fill="{DIM}">{esc(sub)}</text>')
+        body.append(f'<rect x="{x + 18}" y="{y + 116}" width="{cw - 36}" height="4" rx="2" fill="#ffffff" '
+                    f'fill-opacity="0.08"/>')
         if n:
-            body.append(f'<rect x="{x + 18}" y="{y + 118}" width="{max(8, (cw - 36) * pct / 100):.1f}" '
-                        f'height="12" rx="3" fill="{col}" stroke="{INKK}" stroke-width="1.4"/>')
-        body.append(f'<text class="mono" x="{x + 18}" y="{y + 151}" font-size="10.4" fill="{col}" '
-                    f'font-weight="700">{n} VOTE{"S" if n != 1 else ""}</text>')
-        body.append(f'<text class="mono" x="{x + cw - 18}" y="{y + 151}" text-anchor="end" font-size="10.4" '
+            body.append(f'<rect x="{x + 18}" y="{y + 116}" width="{max(6, (cw - 36) * pct / 100):.1f}" '
+                        f'height="4" rx="2" fill="{col}"/>')
+        body.append(f'<text class="mono" x="{x + 18}" y="{y + 146}" font-size="10" fill="{col}" '
+                    f'font-weight="600">{n} vote{"s" if n != 1 else ""}</text>')
+        body.append(f'<text class="mono" x="{x + cw - 18}" y="{y + 146}" text-anchor="end" font-size="10" '
                     f'fill="{DIM}">{pct:.0f}%</text>')
         if key == lead:
-            cx = x + cw - 30
-            body.append(f'<g style="animation:crown 2s ease-in-out infinite;transform-origin:{cx}px {y - 4}px">'
-                        f'<path d="M{cx - 14} {y + 2}L{cx - 14} {y - 14}L{cx - 6} {y - 6}L{cx} {y - 18}'
-                        f'L{cx + 6} {y - 6}L{cx + 14} {y - 14}L{cx + 14} {y + 2}Z" fill="{CREAM}" '
-                        f'stroke="{INKK}" stroke-width="2"/></g>')
+            tag, tw_ = sticker(x + cw - 100, y + 16, "LEADING", col, fs=9, h=22)
+            body.append(tag)
         body.append("</g>")
     body.append(f'<text class="mono" x="{W // 2}" y="{H - 14}" text-anchor="middle" font-size="9.4" '
                 f'letter-spacing="1.4" fill="{FAINT}">CLICK A QUEST UNDER THIS PANEL &#8594; SUBMIT THE ISSUE &#8594; '
@@ -308,33 +302,40 @@ def build_votes():
 
 # ================================================================ marquee
 def build_marquee(flip=False):
-    """Two crossing neo-brutalist bands of kinetic type, scrolling in
-    opposite directions - the tape that holds the story's scenes together.
-    Each band is two copies of one pinned-width string, so the loop is
-    seamless and costs a single transform per band."""
+    """A ticker strip between scenes: hairline rules, small-caps mono type
+    with accent separators, edges that fade into the page, and one slow
+    transform scrolling two copies of a pinned-width string, so the loop is
+    seamless."""
     s = "q2" if flip else "q1"
-    W, H = 1200, 120
+    W, H = 1200, 64
     words = P.MARQUEE[::-1] if flip else P.MARQUEE
-    unit = "  \u2726  ".join(words) + "  \u2726  "
-    fs = 20
-    L = len(unit) * fs * 0.64
+    cols = [CREAM, ROSE, MINT, VIOLET]
+    fs = 12
+    sep = "     •     "
+    unit_txt = sep.join(words) + sep
+    L = len(unit_txt) * fs * 0.62
+    anim = "mqR" if flip else "mqL"
     css = ("@keyframes mqL{from{transform:translateX(0)}to{transform:translateX(-%.1fpx)}}"
            "@keyframes mqR{from{transform:translateX(-%.1fpx)}to{transform:translateX(0)}}" % (L, L))
-    bands = [(-2.4, ROSE, CREAM, "mqL", 34), (1.8, MINT, ROSE, "mqR", 40)]
-    if flip:
-        bands = [(2.2, CREAM, MINT, "mqR", 36), (-1.6, VIOLET, ROSE, "mqL", 42)]
-    body = []
-    for k, (rot, fill, shade, anim, dur) in enumerate(bands[::-1]):
-        y = 38 + k * 6
-        txt = esc(unit)
-        body.append(f'<g transform="rotate({rot} 600 60)">'
-                    f'<rect x="-60" y="{y + 6}" width="1320" height="40" fill="{shade}" stroke="{INKK}" stroke-width="3"/>'
-                    f'<rect x="-60" y="{y}" width="1320" height="40" fill="{fill}" stroke="{INKK}" stroke-width="3"/>'
-                    f'<g style="animation:{anim} {dur}s linear infinite">'
-                    f'<text class="sans" x="0" y="{y + 27}" font-size="{fs}" font-weight="900" letter-spacing="1" '
-                    f'fill="{INKK}" textLength="{L:.1f}" lengthAdjust="spacing">{txt}</text>'
-                    f'<text class="sans" x="{L:.1f}" y="{y + 27}" font-size="{fs}" font-weight="900" letter-spacing="1" '
-                    f'fill="{INKK}" textLength="{L:.1f}" lengthAdjust="spacing">{txt}</text></g></g>')
+
+    def copy(x0):
+        # each word in INK, each separator dot in the next accent colour
+        spans = []
+        for k, w in enumerate(words):
+            spans.append(f'<tspan fill="{INK}" fill-opacity="0.82">{esc(w)}</tspan>'
+                         f'<tspan fill="{cols[k % 4]}">{esc(sep)}</tspan>')
+        return (f'<text class="mono" x="{x0:.1f}" y="{H / 2 + 4.3:.1f}" font-size="{fs}" font-weight="600" '
+                f'letter-spacing="2.4" textLength="{L:.1f}" lengthAdjust="spacing" xml:space="preserve">'
+                f'{"".join(spans)}</text>')
+
+    fade = "mf_" + s
+    body = [f'<rect x="0" y="14" width="{W}" height="1" fill="#ffffff" opacity="0.08"/>',
+            f'<rect x="0" y="{H - 15}" width="{W}" height="1" fill="#ffffff" opacity="0.08"/>',
+            f'<g style="animation:{anim} {len(unit_txt) * 0.32:.0f}s linear infinite">{copy(0)}{copy(L)}</g>',
+            f'<linearGradient id="{fade}" x1="0" y1="0" x2="1" y2="0">'
+            f'<stop offset="0" stop-color="{BG0}"/><stop offset="0.12" stop-color="{BG0}" stop-opacity="0"/>'
+            f'<stop offset="0.88" stop-color="{BG0}" stop-opacity="0"/><stop offset="1" stop-color="{BG0}"/>'
+            f'</linearGradient><rect width="{W}" height="{H}" fill="url(#{fade})"/>']
     return page(s, W, H, css, "\n  ".join(body), None, grid=False)
 
 
@@ -350,7 +351,7 @@ def build_credits(d):
            ".roll{animation:roll %ds linear infinite}"
            "@keyframes ink{0%%,8%%{stroke-dashoffset:1}40%%,100%%{stroke-dashoffset:0}}"
            ".ink{animation:ink 7s cubic-bezier(.45,.05,.35,1) infinite}"
-           "@keyframes fillin{0%%,38%%{fill-opacity:0}55%%,100%%{fill-opacity:1}}"
+           "@keyframes fillin{0%%,38%%{fill-opacity:0}60%%,100%%{fill-opacity:.12}}"
            ".fillin{animation:fillin 7s ease-out infinite}"
            "@keyframes q{0%%,100%%{opacity:1}50%%{opacity:0}}"
            ".qm{animation:q 1s steps(1) infinite}" % (Lh, len(rows) * 2.6))
@@ -359,11 +360,12 @@ def build_credits(d):
     body.append(f'<text class="mono ev1" x="{PAD}" y="86" font-size="11" letter-spacing="3.6" fill="{DIM}">'
                 f'EPILOGUE &#183; ROLL CREDITS</text>')
     for k, (word, y) in enumerate([("THE", 168), ("END", 268)]):
-        body.append(f'<text class="sans ink fillin" x="{PAD - 4}" y="{y}" font-size="112" font-weight="900" '
-                    f'letter-spacing="-4" fill="{[CREAM, ROSE][k]}" fill-opacity="1" stroke="{[CREAM, ROSE][k]}" '
-                    f'stroke-width="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0">{word}</text>')
-    body.append(f'<text class="sans qm" x="{PAD + 268}" y="268" font-size="112" font-weight="900" fill="{MINT}">?</text>')
-    st, _ = sticker(PAD, 300, "POST-CREDITS SCENE: VOTE ABOVE \u2191", MINT, ROSE, fs=10, h=26, rot=-2)
+        body.append(f'<text class="sans ink fillin" x="{PAD - 4}" y="{y}" font-size="104" font-weight="800" '
+                    f'letter-spacing="-2" fill="{[CREAM, ROSE][k]}" fill-opacity="0.12" stroke="{[CREAM, ROSE][k]}" '
+                    f'stroke-width="1.6" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0">{word}</text>')
+    body.append(f'<text class="sans qm" x="{PAD + 250}" y="268" font-size="104" font-weight="800" fill="none" '
+                f'stroke="{MINT}" stroke-width="1.6">?</text>')
+    st, _ = sticker(PAD, 300, "POST-CREDITS SCENE: VOTE ABOVE", MINT, fs=10, h=26)
     body.append(f'<g class="ev3">{st}</g>')
 
     # right: the credits window

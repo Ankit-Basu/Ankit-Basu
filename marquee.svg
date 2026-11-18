@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 120" width="1200" height="120" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 64" width="1200" height="64" role="img">
 
   <defs>
     <linearGradient id="pane_q1" x1="0" y1="0" x2="0.7" y2="1">
@@ -9,17 +9,17 @@
 
     <linearGradient id="rim_q1" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
+      <stop offset="22%" stop-color="#fcd38d" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
+      <stop offset="74%" stop-color="#f9a8d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_q1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
-      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7dd3fc" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#f9a8d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_q1" x1="0" y1="0" x2="1" y2="0">
@@ -146,8 +146,10 @@
     .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
-@keyframes mqL{from{transform:translateX(0)}to{transform:translateX(-1881.6px)}}@keyframes mqR{from{transform:translateX(-1881.6px)}to{transform:translateX(0)}}</style>
-<rect width="1200" height="120" rx="20" fill="#0d1117"/>
-<g transform="rotate(1.8 600 60)"><rect x="-60" y="44" width="1320" height="40" fill="#ff4fa0" stroke="#0a0f14" stroke-width="3"/><rect x="-60" y="38" width="1320" height="40" fill="#2ee6ff" stroke="#0a0f14" stroke-width="3"/><g style="animation:mqR 40s linear infinite"><text class="sans" x="0" y="65" font-size="20" font-weight="900" letter-spacing="1" fill="#0a0f14" textLength="1881.6" lengthAdjust="spacing">OPEN TO SWE / AI ROLES  ✦  SHIPPING SAFETY TECH  ✦  AI AGENTS  ✦  FULL-STACK SYSTEMS  ✦  400+ DSA  ✦  5x HACKATHON WINS  ✦  BUILT IN JALANDHAR  ✦  </text><text class="sans" x="1881.6" y="65" font-size="20" font-weight="900" letter-spacing="1" fill="#0a0f14" textLength="1881.6" lengthAdjust="spacing">OPEN TO SWE / AI ROLES  ✦  SHIPPING SAFETY TECH  ✦  AI AGENTS  ✦  FULL-STACK SYSTEMS  ✦  400+ DSA  ✦  5x HACKATHON WINS  ✦  BUILT IN JALANDHAR  ✦  </text></g></g>
-  <g transform="rotate(-2.4 600 60)"><rect x="-60" y="50" width="1320" height="40" fill="#ffc857" stroke="#0a0f14" stroke-width="3"/><rect x="-60" y="44" width="1320" height="40" fill="#ff4fa0" stroke="#0a0f14" stroke-width="3"/><g style="animation:mqL 34s linear infinite"><text class="sans" x="0" y="71" font-size="20" font-weight="900" letter-spacing="1" fill="#0a0f14" textLength="1881.6" lengthAdjust="spacing">OPEN TO SWE / AI ROLES  ✦  SHIPPING SAFETY TECH  ✦  AI AGENTS  ✦  FULL-STACK SYSTEMS  ✦  400+ DSA  ✦  5x HACKATHON WINS  ✦  BUILT IN JALANDHAR  ✦  </text><text class="sans" x="1881.6" y="71" font-size="20" font-weight="900" letter-spacing="1" fill="#0a0f14" textLength="1881.6" lengthAdjust="spacing">OPEN TO SWE / AI ROLES  ✦  SHIPPING SAFETY TECH  ✦  AI AGENTS  ✦  FULL-STACK SYSTEMS  ✦  400+ DSA  ✦  5x HACKATHON WINS  ✦  BUILT IN JALANDHAR  ✦  </text></g></g>
+@keyframes mqL{from{transform:translateX(0)}to{transform:translateX(-1406.2px)}}@keyframes mqR{from{transform:translateX(-1406.2px)}to{transform:translateX(0)}}</style>
+<rect width="1200" height="64" rx="20" fill="#0d1117"/>
+<rect x="0" y="14" width="1200" height="1" fill="#ffffff" opacity="0.08"/>
+  <rect x="0" y="49" width="1200" height="1" fill="#ffffff" opacity="0.08"/>
+  <g style="animation:mqL 60s linear infinite"><text class="mono" x="0.0" y="36.3" font-size="12" font-weight="600" letter-spacing="2.4" textLength="1406.2" lengthAdjust="spacing" xml:space="preserve"><tspan fill="#f0f3f6" fill-opacity="0.82">OPEN TO SWE / AI ROLES</tspan><tspan fill="#fcd38d">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">SHIPPING SAFETY TECH</tspan><tspan fill="#f9a8d4">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">AI AGENTS</tspan><tspan fill="#7dd3fc">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">FULL-STACK SYSTEMS</tspan><tspan fill="#c5f467">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">400+ DSA</tspan><tspan fill="#fcd38d">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">5x HACKATHON WINS</tspan><tspan fill="#f9a8d4">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">BUILT IN JALANDHAR</tspan><tspan fill="#7dd3fc">     •     </tspan></text><text class="mono" x="1406.2" y="36.3" font-size="12" font-weight="600" letter-spacing="2.4" textLength="1406.2" lengthAdjust="spacing" xml:space="preserve"><tspan fill="#f0f3f6" fill-opacity="0.82">OPEN TO SWE / AI ROLES</tspan><tspan fill="#fcd38d">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">SHIPPING SAFETY TECH</tspan><tspan fill="#f9a8d4">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">AI AGENTS</tspan><tspan fill="#7dd3fc">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">FULL-STACK SYSTEMS</tspan><tspan fill="#c5f467">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">400+ DSA</tspan><tspan fill="#fcd38d">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">5x HACKATHON WINS</tspan><tspan fill="#f9a8d4">     •     </tspan><tspan fill="#f0f3f6" fill-opacity="0.82">BUILT IN JALANDHAR</tspan><tspan fill="#7dd3fc">     •     </tspan></text></g>
+  <linearGradient id="mf_q1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d1117"/><stop offset="0.12" stop-color="#0d1117" stop-opacity="0"/><stop offset="0.88" stop-color="#0d1117" stop-opacity="0"/><stop offset="1" stop-color="#0d1117"/></linearGradient><rect width="1200" height="64" fill="url(#mf_q1)"/>
 </svg>

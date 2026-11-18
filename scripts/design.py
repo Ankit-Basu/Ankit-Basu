@@ -23,19 +23,19 @@ INK = "#f0f3f6"    # primary text
 DIM = "#9da7b3"    # secondary text
 FAINT = "#6e7681"  # tertiary text
 
-CREAM = "#ffc857"   # amber - legendary / primary accent
-ROSE = "#ff4fa0"    # hot magenta - epic / secondary accent
-MINT = "#2ee6ff"    # electric cyan - rare / tertiary accent
-VIOLET = "#b6ff4f"  # acid lime - mythic / quaternary accent
+CREAM = "#fcd38d"   # soft amber - legendary / primary accent
+ROSE = "#f9a8d4"    # rose quartz - epic / secondary accent
+MINT = "#7dd3fc"    # sky - rare / tertiary accent
+VIOLET = "#c5f467"  # soft lime - mythic / quaternary accent
 GOLD = "#ffd479"
-PURPLE = "#8b5cff"  # the horizon glow
+PURPLE = "#a78bfa"  # the horizon glow
 
 RARITY = {
     "MYTHIC": VIOLET,
     "LEGENDARY": CREAM,
     "EPIC": ROSE,
     "RARE": MINT,
-    "UNCOMMON": "#9d8cff",
+    "UNCOMMON": "#c4b5fd",
 }
 
 MONO = "'JetBrains Mono','Fira Code','SFMono-Regular',ui-monospace,Consolas,monospace"
@@ -86,17 +86,17 @@ def base_defs(scope):
 
     <linearGradient id="rim_S" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
+      <stop offset="22%" stop-color="#fcd38d" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
+      <stop offset="74%" stop-color="#f9a8d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_S" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
-      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7dd3fc" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#f9a8d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_S" x1="0" y1="0" x2="1" y2="0">
@@ -433,20 +433,33 @@ def page(scope, w, h, css, body, blobs=None, grid=True, use_grain=False,
 INKK = "#0a0f14"   # brutalist ink - near-black, used for borders and text on blocks
 
 
-def brut(x, y, w, h, fill, shadow=ROSE, r=10, off=6, bw=2.6, cls="", style=""):
+def brut(x, y, w, h, fill, shadow=None, r=10, off=6, bw=2.6, cls="", style=""):
+    """A solid accent block - the 'story layer' surface.
+
+    It used to be neo-brutalist (ink border, hard coloured offset shadow);
+    that read as cartoonish. Now it is a clean solid fill with a soft
+    shadow and a hairline highlight on the top edge. The old parameters are
+    accepted so call sites stay unchanged; shadow/off/bw are ignored.
+    """
     attrs = (' class="%s"' % cls if cls else "") + (' style="%s"' % style if style else "")
-    return ('<g%s><rect x="%s" y="%s" width="%s" height="%s" rx="%s" fill="%s" stroke="%s" stroke-width="%s"/>'
-            '<rect x="%s" y="%s" width="%s" height="%s" rx="%s" fill="%s" stroke="%s" stroke-width="%s"/></g>'
-            % (attrs, x + off, y + off, w, h, r, shadow, INKK, bw,
-               x, y, w, h, r, fill, INKK, bw))
+    r = min(r, 12)
+    return ('<g%s><rect x="%s" y="%.1f" width="%s" height="%s" rx="%s" fill="#000000" fill-opacity="0.35"/>'
+            '<rect x="%s" y="%s" width="%s" height="%s" rx="%s" fill="%s"/>'
+            '<rect x="%.1f" y="%.1f" width="%.1f" height="1" fill="#ffffff" opacity="0.45"/></g>'
+            % (attrs, x, y + 3, w, h, r, x, y, w, h, r, fill, x + r * 0.8, y + 0.6, max(0, w - r * 1.6)))
 
 
-def sticker(x, y, label, fill=CREAM, shadow=ROSE, fs=11, h=26, rot=0, off=4):
-    """A brutalist label block. Returns (svg, width)."""
-    w = int(len(label) * fs * 0.64 + 24)
-    t = ' transform="rotate(%s %s %s)"' % (rot, x + w / 2, y + h / 2) if rot else ""
-    sv = ('<g%s>%s<text class="mono" x="%.1f" y="%.1f" text-anchor="middle" font-size="%s" '
-          'font-weight="800" letter-spacing="1.4" fill="%s">%s</text></g>'
-          % (t, brut(x, y, w, h, fill, shadow, r=6, off=off, bw=2.2),
-             x + w / 2, y + h / 2 + fs * 0.36, fs, INKK, esc(label)))
+def sticker(x, y, label, fill=CREAM, shadow=None, fs=11, h=26, rot=0, off=4):
+    """A label tag: a tinted translucent pill with a hairline border in the
+    accent colour and accent text. Returns (svg, width). rot/shadow/off are
+    accepted for older call sites and ignored - nothing tilts any more."""
+    fs = min(fs, 10.5)
+    w = int(len(label) * fs * 0.66 + 26)
+    sv = ('<g><rect x="%s" y="%s" width="%s" height="%s" rx="%.1f" fill="%s" fill-opacity="0.12" '
+          'stroke="%s" stroke-opacity="0.45" stroke-width="1"/>'
+          '<circle cx="%.1f" cy="%.1f" r="2.4" fill="%s"/>'
+          '<text class="mono" x="%.1f" y="%.1f" font-size="%s" font-weight="600" letter-spacing="1.6" '
+          'fill="%s">%s</text></g>'
+          % (x, y, w, h, h / 2.0, fill, fill, x + 12, y + h / 2.0, fill,
+             x + 20, y + h / 2 + fs * 0.36, fs, fill, esc(label)))
     return sv, w

@@ -41,7 +41,7 @@ def build_hud(d):
     hearts = 7
     lit = min(cur, hearts)
     css = """
-    @keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.22)}24%{transform:scale(1)}36%{transform:scale(1.14)}}
+    @keyframes beat{0%,100%{opacity:1}50%{opacity:.45}}
     .beat{animation:beat 1.6s ease-in-out infinite}
     @keyframes xpsh{from{transform:translateX(-120px)}to{transform:translateX(420px)}}
     @keyframes coin{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.15)}}
@@ -64,7 +64,10 @@ def build_hud(d):
     for k in range(hearts):
         on = k < lit
         cls = "beat" if on and k == lit - 1 else ""
-        body.append(_heart(hx + k * 30, 50, 3.4, ROSE if on else "#2a2f3a", cls))
+        sx_ = hx + k * 30
+        body.append(f'<rect class="{cls}" x="{sx_}" y="52" width="24" height="10" rx="5" '
+                    f'fill="{ROSE if on else "#ffffff"}" fill-opacity="{1 if on else 0.08}" '
+                    f'style="transform-origin:{sx_ + 12}px 57px"/>')
     body.append(f'<text class="mono" x="{hx + hearts * 30 + 2}" y="70" font-size="10" fill="{DIM}">'
                 f'{cur}d</text>')
     # XP bar
@@ -75,7 +78,7 @@ def build_hud(d):
                 f'{100 - xp} TO LV {lvl + 1}</text>')
     clip = uid("xc")
     body.append(f'<clipPath id="{clip}"><rect x="{xx}" y="50" width="{xw * xp / 100:.1f}" height="16"/></clipPath>')
-    body.append(f'<rect x="{xx}" y="50" width="{xw}" height="16" fill="#ffffff" fill-opacity="0.06" stroke="{INKK}" stroke-width="2"/>')
+    body.append(f'<rect x="{xx}" y="50" width="{xw}" height="16" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>')
     segs = "".join(f'<rect x="{xx + 2 + k * 10}" y="52" width="8" height="12" fill="{MINT}"/>' for k in range(xw // 10))
     body.append(f'<g clip-path="url(#{clip})">{segs}'
                 f'<rect x="{xx}" y="50" width="60" height="16" fill="#ffffff" opacity="0.35" '
@@ -84,7 +87,7 @@ def build_hud(d):
     # coins = stars
     cx = xx + xw + 44
     body.append(f'<g style="animation:coin 2.4s ease-in-out infinite;transform-origin:{cx + 11}px 58px">'
-                f'<circle cx="{cx + 11}" cy="58" r="11" fill="{CREAM}" stroke="{INKK}" stroke-width="2"/>'
+                f'<circle cx="{cx + 11}" cy="58" r="11" fill="{CREAM}"/>'
                 f'<text class="sans" x="{cx + 11}" y="63" text-anchor="middle" font-size="12" font-weight="900" '
                 f'fill="{INKK}">&#9733;</text></g>')
     body.append(f'<text class="mono" x="{cx + 30}" y="40" font-size="9" letter-spacing="2" fill="{CREAM}" '
@@ -192,7 +195,7 @@ def build_boss(quest_pct):
     .nowb{animation:now 1s steps(1) infinite}
     """
     body = []
-    st, sw = sticker(PAD, 34, "⚠ BOSS ENCOUNTER", ROSE, CREAM, fs=11, h=28, rot=-2)
+    st, sw = sticker(PAD, 34, "BOSS ENCOUNTER", ROSE, fs=10.4, h=28)
     body.append(f'<g class="ev1">{st}</g>')
     body.append(f'<text class="sans ev1" x="{PAD}" y="104" font-size="38" font-weight="900" fill="{INK}" '
                 f'letter-spacing="-1">{esc(B["name"])}</text>')

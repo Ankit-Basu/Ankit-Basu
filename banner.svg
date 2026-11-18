@@ -9,17 +9,17 @@
 
     <linearGradient id="rim_h" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
+      <stop offset="22%" stop-color="#fcd38d" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
+      <stop offset="74%" stop-color="#f9a8d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_h" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
-      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7dd3fc" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#f9a8d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_h" x1="0" y1="0" x2="1" y2="0">
@@ -186,8 +186,8 @@
   <rect width="1200" height="560" rx="20" fill="url(#grid_h)"/>
 <defs>
     <linearGradient id="nm_h" x1="0" y1="0" x2="1" y2="0.5">
-      <stop offset="0%" stop-color="#ffffff"/><stop offset="34%" stop-color="#ffc857"/>
-      <stop offset="68%" stop-color="#ff4fa0"/><stop offset="100%" stop-color="#2ee6ff"/>
+      <stop offset="0%" stop-color="#ffffff"/><stop offset="34%" stop-color="#fcd38d"/>
+      <stop offset="68%" stop-color="#f9a8d4"/><stop offset="100%" stop-color="#7dd3fc"/>
     </linearGradient>
     <clipPath id="nc_h">
       <text class="sans" x="62" y="196" font-size="80" font-weight="800"
@@ -197,17 +197,17 @@
   <defs>
     <clipPath id="hzc_h"><path d="M20,0 H1180 A20,20 0 0 1 1200,20 V540 A20,20 0 0 1 1180,560 H20 A20,20 0 0 1 0,540 V20 A20,20 0 0 1 20,0 Z"/></clipPath>
     <linearGradient id="sun_h" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffc857"/><stop offset="55%" stop-color="#ff4fa0"/>
-      <stop offset="100%" stop-color="#8b5cff"/>
+      <stop offset="0%" stop-color="#fcd38d"/><stop offset="55%" stop-color="#f9a8d4"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
     </linearGradient>
     <linearGradient id="flr_h" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ff4fa0" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#8b5cff" stop-opacity="0.05"/>
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.05"/>
     </linearGradient>
     <linearGradient id="hzl_h" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff4fa0" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ff4fa0" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f9a8d4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <g clip-path="url(#hzc_h)">
@@ -215,42 +215,42 @@
       <rect x="790" y="72" width="356" height="338" fill="#fff"/>
       <g style="animation:band 2.6s linear infinite"><rect x="790" y="253.6" width="356" height="2.0" fill="#000"/><rect x="790" y="282.0" width="356" height="3.6" fill="#000"/><rect x="790" y="307.0" width="356" height="5.2" fill="#000"/><rect x="790" y="330.1" width="356" height="6.8" fill="#000"/><rect x="790" y="349.7" width="356" height="8.4" fill="#000"/><rect x="790" y="367.5" width="356" height="10.0" fill="#000"/><rect x="790" y="383.5" width="356" height="11.6" fill="#000"/><rect x="790" y="397.7" width="356" height="13.2" fill="#000"/><rect x="790" y="410.2" width="356" height="14.8" fill="#000"/><rect x="790" y="420.9" width="356" height="16.4" fill="#000"/></g>
     </mask>
-    <radialGradient id="halo_h"><stop offset="0.6" stop-color="#ff4fa0" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="halo_h"><stop offset="0.6" stop-color="#f9a8d4" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/></radialGradient>
     <circle cx="968" cy="250" r="258" fill="url(#halo_h)"/>
     <circle cx="968" cy="250" r="178" fill="url(#sun_h)" mask="url(#sunm_h)"
             style="animation:sunb 5s ease-in-out infinite"/>
   <rect x="0" y="410" width="1200" height="150" fill="#0d1117" fill-opacity="0.55"/>
   <rect x="0" y="410" width="1200" height="150" fill="url(#flr_h)"/>
-  <g stroke="#ff4fa0" stroke-opacity="0.38" stroke-width="1"><path d="M236 410L-1500 560"/><path d="M262 410L-1350 560"/><path d="M288 410L-1200 560"/><path d="M314 410L-1050 560"/><path d="M340 410L-900 560"/><path d="M366 410L-750 560"/><path d="M392 410L-600 560"/><path d="M418 410L-450 560"/><path d="M444 410L-300 560"/><path d="M470 410L-150 560"/><path d="M496 410L0 560"/><path d="M522 410L150 560"/><path d="M548 410L300 560"/><path d="M574 410L450 560"/><path d="M600 410L600 560"/><path d="M626 410L750 560"/><path d="M652 410L900 560"/><path d="M678 410L1050 560"/><path d="M704 410L1200 560"/><path d="M730 410L1350 560"/><path d="M756 410L1500 560"/><path d="M782 410L1650 560"/><path d="M808 410L1800 560"/><path d="M834 410L1950 560"/><path d="M860 410L2100 560"/><path d="M886 410L2250 560"/><path d="M912 410L2400 560"/><path d="M938 410L2550 560"/><path d="M964 410L2700 560"/></g>
-  <rect x="0" y="410" width="1200" height="1.2" fill="#ff4fa0" opacity="0.7" transform="translate(0 0.8)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -0.00s infinite"/>
-  <rect x="0" y="410" width="1200" height="1.2" fill="#ff4fa0" opacity="0.7" transform="translate(0 6.9)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -0.60s infinite"/>
-  <rect x="0" y="410" width="1200" height="1.2" fill="#ff4fa0" opacity="0.7" transform="translate(0 19.1)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -1.20s infinite"/>
-  <rect x="0" y="410" width="1200" height="1.2" fill="#ff4fa0" opacity="0.7" transform="translate(0 37.5)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -1.80s infinite"/>
-  <rect x="0" y="410" width="1200" height="1.2" fill="#ff4fa0" opacity="0.7" transform="translate(0 62.0)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -2.40s infinite"/>
-  <rect x="0" y="410" width="1200" height="1.2" fill="#ff4fa0" opacity="0.7" transform="translate(0 92.6)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -3.00s infinite"/>
-  <rect x="0" y="410" width="1200" height="1.2" fill="#ff4fa0" opacity="0.7" transform="translate(0 129.3)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -3.60s infinite"/>
-  <linearGradient id="sky_h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0.2"/></linearGradient><rect x="0" y="340" width="1200" height="70" fill="url(#sky_h)"/>
+  <g stroke="#f9a8d4" stroke-opacity="0.38" stroke-width="1"><path d="M236 410L-1500 560"/><path d="M262 410L-1350 560"/><path d="M288 410L-1200 560"/><path d="M314 410L-1050 560"/><path d="M340 410L-900 560"/><path d="M366 410L-750 560"/><path d="M392 410L-600 560"/><path d="M418 410L-450 560"/><path d="M444 410L-300 560"/><path d="M470 410L-150 560"/><path d="M496 410L0 560"/><path d="M522 410L150 560"/><path d="M548 410L300 560"/><path d="M574 410L450 560"/><path d="M600 410L600 560"/><path d="M626 410L750 560"/><path d="M652 410L900 560"/><path d="M678 410L1050 560"/><path d="M704 410L1200 560"/><path d="M730 410L1350 560"/><path d="M756 410L1500 560"/><path d="M782 410L1650 560"/><path d="M808 410L1800 560"/><path d="M834 410L1950 560"/><path d="M860 410L2100 560"/><path d="M886 410L2250 560"/><path d="M912 410L2400 560"/><path d="M938 410L2550 560"/><path d="M964 410L2700 560"/></g>
+  <rect x="0" y="410" width="1200" height="1.2" fill="#f9a8d4" opacity="0.7" transform="translate(0 0.8)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -0.00s infinite"/>
+  <rect x="0" y="410" width="1200" height="1.2" fill="#f9a8d4" opacity="0.7" transform="translate(0 6.9)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -0.60s infinite"/>
+  <rect x="0" y="410" width="1200" height="1.2" fill="#f9a8d4" opacity="0.7" transform="translate(0 19.1)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -1.20s infinite"/>
+  <rect x="0" y="410" width="1200" height="1.2" fill="#f9a8d4" opacity="0.7" transform="translate(0 37.5)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -1.80s infinite"/>
+  <rect x="0" y="410" width="1200" height="1.2" fill="#f9a8d4" opacity="0.7" transform="translate(0 62.0)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -2.40s infinite"/>
+  <rect x="0" y="410" width="1200" height="1.2" fill="#f9a8d4" opacity="0.7" transform="translate(0 92.6)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -3.00s infinite"/>
+  <rect x="0" y="410" width="1200" height="1.2" fill="#f9a8d4" opacity="0.7" transform="translate(0 129.3)" style="animation:flr 4.2s cubic-bezier(.55,0,1,.45) -3.60s infinite"/>
+  <linearGradient id="sky_h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9a8d4" stop-opacity="0"/><stop offset="1" stop-color="#f9a8d4" stop-opacity="0.2"/></linearGradient><rect x="0" y="340" width="1200" height="70" fill="url(#sky_h)"/>
   <rect x="0" y="407" width="1200" height="6" fill="url(#hzl_h)" opacity="0.35"/><rect x="0" y="409" width="1200" height="2" fill="url(#hzl_h)"/>
   </g>
-  <g class="ev1"><g style="animation:wob 3.2s ease-in-out infinite;transform-origin:123.5px 66px"><g><g><rect x="68" y="56" width="119" height="28" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/><rect x="64" y="52" width="119" height="28" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="123.5" y="70.1" text-anchor="middle" font-size="11.5" font-weight="800" letter-spacing="1.4" fill="#0a0f14">▶ PRESS START</text></g></g></g>
+  <g class="ev1"><g><rect x="64" y="53" width="101" height="28" rx="14.0" fill="#fcd38d" fill-opacity="0.12" stroke="#fcd38d" stroke-opacity="0.45" stroke-width="1"/><circle cx="76.0" cy="67.0" r="2.4" fill="#fcd38d"/><text class="mono" x="84.0" y="70.7" font-size="10.4" font-weight="600" letter-spacing="1.6" fill="#fcd38d">PRESS START</text></g></g>
   <g class="ev1">
     <g>
-  <radialGradient id="tg1" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.340"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
-  <path d="M219,53 H557 A14,14 0 0 1 571,67 V67 A14,14 0 0 1 557,81 H219 A14,14 0 0 1 205,67 V67 A14,14 0 0 1 219,53 Z" fill="#0d1117"/>
-  <path d="M219,53 H557 A14,14 0 0 1 571,67 V67 A14,14 0 0 1 557,81 H219 A14,14 0 0 1 205,67 V67 A14,14 0 0 1 219,53 Z" fill="url(#tg1)"/>
-  <path d="M219,53 H557 A14,14 0 0 1 571,67 V67 A14,14 0 0 1 557,81 H219 A14,14 0 0 1 205,67 V67 A14,14 0 0 1 219,53 Z" fill="url(#pane_h)"/>
-  <path d="M219,53 H557 A14,14 0 0 1 571,67 V67 A14,14 0 0 1 557,81 H219 A14,14 0 0 1 205,67 V67 A14,14 0 0 1 219,53 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
-  <path d="M206,67 A14,14 0 0 1 219,54 H557 A14,14 0 0 1 570,67" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
+  <radialGradient id="tg1" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.340"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
+  <path d="M201,53 H539 A14,14 0 0 1 553,67 V67 A14,14 0 0 1 539,81 H201 A14,14 0 0 1 187,67 V67 A14,14 0 0 1 201,53 Z" fill="#0d1117"/>
+  <path d="M201,53 H539 A14,14 0 0 1 553,67 V67 A14,14 0 0 1 539,81 H201 A14,14 0 0 1 187,67 V67 A14,14 0 0 1 201,53 Z" fill="url(#tg1)"/>
+  <path d="M201,53 H539 A14,14 0 0 1 553,67 V67 A14,14 0 0 1 539,81 H201 A14,14 0 0 1 187,67 V67 A14,14 0 0 1 201,53 Z" fill="url(#pane_h)"/>
+  <path d="M201,53 H539 A14,14 0 0 1 553,67 V67 A14,14 0 0 1 539,81 H201 A14,14 0 0 1 187,67 V67 A14,14 0 0 1 201,53 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.2"/>
+  <path d="M188,67 A14,14 0 0 1 201,54 H539 A14,14 0 0 1 552,67" fill="none" stroke="url(#spec_h)" stroke-width="1.4"/>
   </g>
-    <circle cx="225" cy="67" r="4.5" fill="#2ee6ff"
-            style="animation:pop 1.9s ease-in-out infinite;transform-origin:225px 67px"/>
-    <circle cx="225" cy="67" r="9" fill="none" stroke="#2ee6ff" stroke-width="1.2" opacity="0.5">
+    <circle cx="207" cy="67" r="4.5" fill="#7dd3fc"
+            style="animation:pop 1.9s ease-in-out infinite;transform-origin:207px 67px"/>
+    <circle cx="207" cy="67" r="9" fill="none" stroke="#7dd3fc" stroke-width="1.2" opacity="0.5">
       <animate attributeName="r" values="5;14;5" dur="2.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values=".65;0;.65" dur="2.4s" repeatCount="indefinite"/>
     </circle>
-    <text class="mono" x="241" y="71" font-size="10.8" letter-spacing="2.1"
-          fill="#2ee6ff" font-weight="600">OPEN TO SWE / AI ENGINEERING ROLES</text>
+    <text class="mono" x="223" y="71" font-size="10.8" letter-spacing="2.1"
+          fill="#7dd3fc" font-weight="600">OPEN TO SWE / AI ENGINEERING ROLES</text>
   </g>
   <text class="mono ev2" x="64" y="122" font-size="11" letter-spacing="3.6" fill="#9da7b3">PROLOGUE &#183; A STORY IN SIX CHAPTERS</text>
   <g class="ev2">
@@ -261,30 +261,30 @@
             style="animation:nsweep 5.5s cubic-bezier(.4,0,.2,1) 1.2s infinite"/>
     </g>
   </g>
-  <g class="ev3"><text class="mono" x="64" y="244" font-size="21" font-weight="700" fill="#2ee6ff">&gt;_</text><clipPath id="tc2"><rect class="ty0" x="94" y="223" width="229.6" height="31.5"/></clipPath>
-  <text class="mono ty0o" x="94" y="244" font-size="21" font-weight="700" textLength="227.6" lengthAdjust="spacingAndGlyphs" fill="#ffc857" clip-path="url(#tc2)" opacity="1">Software Architect</text>
+  <g class="ev3"><text class="mono" x="64" y="244" font-size="21" font-weight="700" fill="#7dd3fc">&gt;_</text><clipPath id="tc2"><rect class="ty0" x="94" y="223" width="229.6" height="31.5"/></clipPath>
+  <text class="mono ty0o" x="94" y="244" font-size="21" font-weight="700" textLength="227.6" lengthAdjust="spacingAndGlyphs" fill="#fcd38d" clip-path="url(#tc2)" opacity="1">Software Architect</text>
   <clipPath id="tc3"><rect class="ty1" x="94" y="223" width="0.0" height="31.5"/></clipPath>
-  <text class="mono ty1o" x="94" y="244" font-size="21" font-weight="700" textLength="164.3" lengthAdjust="spacingAndGlyphs" fill="#ffc857" clip-path="url(#tc3)" opacity="0">AI Researcher</text>
+  <text class="mono ty1o" x="94" y="244" font-size="21" font-weight="700" textLength="164.3" lengthAdjust="spacingAndGlyphs" fill="#fcd38d" clip-path="url(#tc3)" opacity="0">AI Researcher</text>
   <clipPath id="tc4"><rect class="ty2" x="94" y="223" width="0.0" height="31.5"/></clipPath>
-  <text class="mono ty2o" x="94" y="244" font-size="21" font-weight="700" textLength="240.2" lengthAdjust="spacingAndGlyphs" fill="#ffc857" clip-path="url(#tc4)" opacity="0">Full-Stack Engineer</text>
+  <text class="mono ty2o" x="94" y="244" font-size="21" font-weight="700" textLength="240.2" lengthAdjust="spacingAndGlyphs" fill="#fcd38d" clip-path="url(#tc4)" opacity="0">Full-Stack Engineer</text>
   <clipPath id="tc5"><rect class="ty3" x="94" y="223" width="0.0" height="31.5"/></clipPath>
-  <text class="mono ty3o" x="94" y="244" font-size="21" font-weight="700" textLength="240.2" lengthAdjust="spacingAndGlyphs" fill="#ffc857" clip-path="url(#tc5)" opacity="0">Safety-Tech Builder</text>
-  <rect class="tcar" x="97" y="226.8" width="10.5" height="20.6" fill="#2ee6ff" style="transform:translateX(227.6px)"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/></rect></g>
+  <text class="mono ty3o" x="94" y="244" font-size="21" font-weight="700" textLength="240.2" lengthAdjust="spacingAndGlyphs" fill="#fcd38d" clip-path="url(#tc5)" opacity="0">Safety-Tech Builder</text>
+  <rect class="tcar" x="97" y="226.8" width="10.5" height="20.6" fill="#7dd3fc" style="transform:translateX(227.6px)"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/></rect></g>
   <rect class="ev3" x="64" y="266" width="560" height="1" fill="url(#spec_h)" opacity="0.7"/>
   <text class="ev4" x="64" y="298" font-size="15.5" fill="#9da7b3">A builder from Jalandhar who turns campus problems into</text>
   <text class="ev4" x="64" y="321" font-size="15.5" fill="#9da7b3">production systems: safety tech, AI agents and tools</text>
   <text class="ev4" x="64" y="344" font-size="15.5" fill="#9da7b3">that real people open every day.</text>
-  <g class="ev5"><g><rect x="64" y="372" width="49" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="88" y="389" text-anchor="middle" font-size="11" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">JAVA</text></g>
-  <g><rect x="121" y="372" width="62" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="152" y="389" text-anchor="middle" font-size="11" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">PYTHON</text></g>
-  <g><rect x="191" y="372" width="56" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="219" y="389" text-anchor="middle" font-size="11" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">REACT</text></g>
-  <g><rect x="255" y="372" width="69" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="290" y="389" text-anchor="middle" font-size="11" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">NODE.JS</text></g>
-  <g><rect x="332" y="372" width="69" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="366" y="389" text-anchor="middle" font-size="11" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">PYTORCH</text></g>
-  <g><rect x="409" y="372" width="62" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="440" y="389" text-anchor="middle" font-size="11" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">DOCKER</text></g>
-  <g><rect x="479" y="372" width="42" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="500" y="389" text-anchor="middle" font-size="11" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">AWS</text></g></g>
+  <g class="ev5"><g><rect x="64" y="372" width="49" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#fcd38d" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="88" y="389" text-anchor="middle" font-size="11" fill="#fcd38d" fill-opacity="0.95" letter-spacing="0.4">JAVA</text></g>
+  <g><rect x="121" y="372" width="62" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#f9a8d4" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="152" y="389" text-anchor="middle" font-size="11" fill="#f9a8d4" fill-opacity="0.95" letter-spacing="0.4">PYTHON</text></g>
+  <g><rect x="191" y="372" width="56" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#7dd3fc" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="219" y="389" text-anchor="middle" font-size="11" fill="#7dd3fc" fill-opacity="0.95" letter-spacing="0.4">REACT</text></g>
+  <g><rect x="255" y="372" width="69" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#c5f467" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="290" y="389" text-anchor="middle" font-size="11" fill="#c5f467" fill-opacity="0.95" letter-spacing="0.4">NODE.JS</text></g>
+  <g><rect x="332" y="372" width="69" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#fcd38d" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="366" y="389" text-anchor="middle" font-size="11" fill="#fcd38d" fill-opacity="0.95" letter-spacing="0.4">PYTORCH</text></g>
+  <g><rect x="409" y="372" width="62" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#f9a8d4" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="440" y="389" text-anchor="middle" font-size="11" fill="#f9a8d4" fill-opacity="0.95" letter-spacing="0.4">DOCKER</text></g>
+  <g><rect x="479" y="372" width="42" height="26" rx="13.0" fill="#ffffff" fill-opacity="0.055" stroke="#7dd3fc" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="500" y="389" text-anchor="middle" font-size="11" fill="#7dd3fc" fill-opacity="0.95" letter-spacing="0.4">AWS</text></g></g>
   <g class="ev6">
   <g>
   <path d="M83,424 H185 A16,16 0 0 1 201,440 V494 A16,16 0 0 1 185,510 H83 A16,16 0 0 1 67,494 V440 A16,16 0 0 1 83,424 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg6" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.272"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg6" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.272"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
   <path d="M80,424 H188 A16,16 0 0 1 204,440 V494 A16,16 0 0 1 188,510 H80 A16,16 0 0 1 64,494 V440 A16,16 0 0 1 80,424 Z" fill="#0d1117"/>
   <path d="M80,424 H188 A16,16 0 0 1 204,440 V494 A16,16 0 0 1 188,510 H80 A16,16 0 0 1 64,494 V440 A16,16 0 0 1 80,424 Z" fill="url(#tg6)"/>
   <path d="M80,424 H188 A16,16 0 0 1 204,440 V494 A16,16 0 0 1 188,510 H80 A16,16 0 0 1 64,494 V440 A16,16 0 0 1 80,424 Z" fill="url(#pane_h)"/>
@@ -293,14 +293,14 @@
   <rect x="80" y="507.5" width="108" height="1.2" rx="0.6" fill="url(#refr_h)"/>
   <clipPath id="cl7"><path d="M80,424 H188 A16,16 0 0 1 204,440 V494 A16,16 0 0 1 188,510 H80 A16,16 0 0 1 64,494 V440 A16,16 0 0 1 80,424 Z"/></clipPath><g clip-path="url(#cl7)"><rect x="-6" y="424" width="70" height="86" fill="url(#sheen_h)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
-  <g transform="translate(80,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#ffc857" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g>
-  <text class="mono" x="188" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#ffc857" fill-opacity="0.9" font-weight="600">XP EARNED</text>
+  <g transform="translate(80,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#fcd38d" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g>
+  <text class="mono" x="188" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#fcd38d" fill-opacity="0.9" font-weight="600">XP EARNED</text>
   <text class="sans" x="80" y="494" font-size="27" font-weight="800" fill="#f0f3f6" letter-spacing="-0.8">2,175</text>
   </g>
   <g class="ev7">
   <g>
   <path d="M237,424 H339 A16,16 0 0 1 355,440 V494 A16,16 0 0 1 339,510 H237 A16,16 0 0 1 221,494 V440 A16,16 0 0 1 237,424 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg8" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.272"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg8" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#f9a8d4" stop-opacity="0.272"/><stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/></radialGradient>
   <path d="M234,424 H342 A16,16 0 0 1 358,440 V494 A16,16 0 0 1 342,510 H234 A16,16 0 0 1 218,494 V440 A16,16 0 0 1 234,424 Z" fill="#0d1117"/>
   <path d="M234,424 H342 A16,16 0 0 1 358,440 V494 A16,16 0 0 1 342,510 H234 A16,16 0 0 1 218,494 V440 A16,16 0 0 1 234,424 Z" fill="url(#tg8)"/>
   <path d="M234,424 H342 A16,16 0 0 1 358,440 V494 A16,16 0 0 1 342,510 H234 A16,16 0 0 1 218,494 V440 A16,16 0 0 1 234,424 Z" fill="url(#pane_h)"/>
@@ -309,15 +309,15 @@
   <rect x="234" y="507.5" width="108" height="1.2" rx="0.6" fill="url(#refr_h)"/>
   <clipPath id="cl9"><path d="M234,424 H342 A16,16 0 0 1 358,440 V494 A16,16 0 0 1 342,510 H234 A16,16 0 0 1 218,494 V440 A16,16 0 0 1 234,424 Z"/></clipPath><g clip-path="url(#cl9)"><rect x="148" y="424" width="70" height="86" fill="url(#sheen_h)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.7s infinite"/></g>
   </g>
-  <g transform="translate(234,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#ff4fa0" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
+  <g transform="translate(234,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#f9a8d4" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 3.4h13.2v17.2H6.6a2.4 2.4 0 0 1-2.4-2.4V4.6a1.2 1.2 0 0 1 1.2-1.2Z"/>
         <path d="M4.2 17h14.4"/></g></g>
-  <text class="mono" x="342" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#ff4fa0" fill-opacity="0.9" font-weight="600">REPOS</text>
+  <text class="mono" x="342" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#f9a8d4" fill-opacity="0.9" font-weight="600">REPOS</text>
   <text class="sans" x="234" y="494" font-size="27" font-weight="800" fill="#f0f3f6" letter-spacing="-0.8">32</text>
   </g>
   <g class="ev8">
   <g>
   <path d="M391,424 H493 A16,16 0 0 1 509,440 V494 A16,16 0 0 1 493,510 H391 A16,16 0 0 1 375,494 V440 A16,16 0 0 1 391,424 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg10" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.272"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg10" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.272"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
   <path d="M388,424 H496 A16,16 0 0 1 512,440 V494 A16,16 0 0 1 496,510 H388 A16,16 0 0 1 372,494 V440 A16,16 0 0 1 388,424 Z" fill="#0d1117"/>
   <path d="M388,424 H496 A16,16 0 0 1 512,440 V494 A16,16 0 0 1 496,510 H388 A16,16 0 0 1 372,494 V440 A16,16 0 0 1 388,424 Z" fill="url(#tg10)"/>
   <path d="M388,424 H496 A16,16 0 0 1 512,440 V494 A16,16 0 0 1 496,510 H388 A16,16 0 0 1 372,494 V440 A16,16 0 0 1 388,424 Z" fill="url(#pane_h)"/>
@@ -326,14 +326,14 @@
   <rect x="388" y="507.5" width="108" height="1.2" rx="0.6" fill="url(#refr_h)"/>
   <clipPath id="cl11"><path d="M388,424 H496 A16,16 0 0 1 512,440 V494 A16,16 0 0 1 496,510 H388 A16,16 0 0 1 372,494 V440 A16,16 0 0 1 388,424 Z"/></clipPath><g clip-path="url(#cl11)"><rect x="302" y="424" width="70" height="86" fill="url(#sheen_h)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.4s infinite"/></g>
   </g>
-  <g transform="translate(388,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#2ee6ff" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g>
-  <text class="mono" x="496" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#2ee6ff" fill-opacity="0.9" font-weight="600">STARS</text>
+  <g transform="translate(388,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#7dd3fc" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g>
+  <text class="mono" x="496" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#7dd3fc" fill-opacity="0.9" font-weight="600">STARS</text>
   <text class="sans" x="388" y="494" font-size="27" font-weight="800" fill="#f0f3f6" letter-spacing="-0.8">26</text>
   </g>
   <g class="ev9">
   <g>
   <path d="M545,424 H647 A16,16 0 0 1 663,440 V494 A16,16 0 0 1 647,510 H545 A16,16 0 0 1 529,494 V440 A16,16 0 0 1 545,424 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg12" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.272"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg12" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#c5f467" stop-opacity="0.272"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient>
   <path d="M542,424 H650 A16,16 0 0 1 666,440 V494 A16,16 0 0 1 650,510 H542 A16,16 0 0 1 526,494 V440 A16,16 0 0 1 542,424 Z" fill="#0d1117"/>
   <path d="M542,424 H650 A16,16 0 0 1 666,440 V494 A16,16 0 0 1 650,510 H542 A16,16 0 0 1 526,494 V440 A16,16 0 0 1 542,424 Z" fill="url(#tg12)"/>
   <path d="M542,424 H650 A16,16 0 0 1 666,440 V494 A16,16 0 0 1 650,510 H542 A16,16 0 0 1 526,494 V440 A16,16 0 0 1 542,424 Z" fill="url(#pane_h)"/>
@@ -342,32 +342,32 @@
   <rect x="542" y="507.5" width="108" height="1.2" rx="0.6" fill="url(#refr_h)"/>
   <clipPath id="cl13"><path d="M542,424 H650 A16,16 0 0 1 666,440 V494 A16,16 0 0 1 650,510 H542 A16,16 0 0 1 526,494 V440 A16,16 0 0 1 542,424 Z"/></clipPath><g clip-path="url(#cl13)"><rect x="456" y="424" width="70" height="86" fill="url(#sheen_h)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.0999999999999996s infinite"/></g>
   </g>
-  <g transform="translate(542,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#b6ff4f" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
+  <g transform="translate(542,440) scale(0.7083)" opacity="0.9"><g fill="none" stroke="#c5f467" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
         <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g>
-  <text class="mono" x="650" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#b6ff4f" fill-opacity="0.9" font-weight="600">BEST STREAK</text>
+  <text class="mono" x="650" y="453" text-anchor="end" font-size="8.6" letter-spacing="1.6" fill="#c5f467" fill-opacity="0.9" font-weight="600">BEST STREAK</text>
   <text class="sans" x="542" y="494" font-size="27" font-weight="800" fill="#f0f3f6" letter-spacing="-0.8">149</text>
   </g>
   <g class="ev2">
-    <circle cx="968.0" cy="242.0" r="206" fill="none" stroke="#ffc857" stroke-opacity="0.16"
+    <circle cx="968.0" cy="242.0" r="206" fill="none" stroke="#fcd38d" stroke-opacity="0.16"
             stroke-width="1" stroke-dasharray="2 10"
             style="animation:orbit 40s linear infinite;transform-origin:968.0px 242.0px"/>
-    <circle cx="968.0" cy="242.0" r="190" fill="none" stroke="#ff4fa0" stroke-opacity="0.2"
+    <circle cx="968.0" cy="242.0" r="190" fill="none" stroke="#f9a8d4" stroke-opacity="0.2"
             stroke-width="1.4" stroke-dasharray="44 18"
             style="animation:orbit 26s linear infinite reverse;transform-origin:968.0px 242.0px"/>
     <g style="animation:orbit 18s linear infinite;transform-origin:968.0px 242.0px">
-      <circle cx="1158.0" cy="242.0" r="4" fill="#2ee6ff"/>
+      <circle cx="1158.0" cy="242.0" r="4" fill="#7dd3fc"/>
     </g>
   </g>
   <g class="ev3"><defs>
     <clipPath id="pf_h"><path d="M864,92 H1072 A46,46 0 0 1 1118,138 V346 A46,46 0 0 1 1072,392 H864 A46,46 0 0 1 818,346 V138 A46,46 0 0 1 864,92 Z"/></clipPath>
     <linearGradient id="ink_h" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="1000">
-      <stop offset="0%" stop-color="#2ee6ff"/><stop offset="50%" stop-color="#ffc857"/>
-      <stop offset="100%" stop-color="#ff4fa0"/>
+      <stop offset="0%" stop-color="#7dd3fc"/><stop offset="50%" stop-color="#fcd38d"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
     </linearGradient>
     <linearGradient id="scg_h" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#2ee6ff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7dd3fc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="pvg_h" cx="50%" cy="40%" r="70%">
       <stop offset="55%" stop-color="#0d1117" stop-opacity="0"/>
@@ -383,7 +383,7 @@
   </defs>
   <g>
   <path d="M863,76 H1073 A58,58 0 0 1 1131,134 V350 A58,58 0 0 1 1073,408 H863 A58,58 0 0 1 805,350 V134 A58,58 0 0 1 863,76 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg14" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.306"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg14" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#c5f467" stop-opacity="0.306"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient>
   <path d="M860,76 H1076 A58,58 0 0 1 1134,134 V350 A58,58 0 0 1 1076,408 H860 A58,58 0 0 1 802,350 V134 A58,58 0 0 1 860,76 Z" fill="#0d1117"/>
   <path d="M860,76 H1076 A58,58 0 0 1 1134,134 V350 A58,58 0 0 1 1076,408 H860 A58,58 0 0 1 802,350 V134 A58,58 0 0 1 860,76 Z" fill="url(#tg14)"/>
   <path d="M860,76 H1076 A58,58 0 0 1 1134,134 V350 A58,58 0 0 1 1076,408 H860 A58,58 0 0 1 802,350 V134 A58,58 0 0 1 860,76 Z" fill="url(#pane_h)"/>
@@ -513,22 +513,22 @@
   </g>
   <rect class="scn" x="818" y="91" width="300" height="2.4" fill="url(#scg_h)" opacity="0"/>
   </g>
-  <path d="M832 128V106H854" fill="none" stroke="#ffc857" stroke-opacity="0.75" stroke-width="2"/>
-  <path d="M1104 128V106H1082" fill="none" stroke="#ffc857" stroke-opacity="0.75" stroke-width="2"/>
-  <path d="M832 356V378H854" fill="none" stroke="#ffc857" stroke-opacity="0.75" stroke-width="2"/>
-  <path d="M1104 356V378H1082" fill="none" stroke="#ffc857" stroke-opacity="0.75" stroke-width="2"/>
+  <path d="M832 128V106H854" fill="none" stroke="#fcd38d" stroke-opacity="0.75" stroke-width="2"/>
+  <path d="M1104 128V106H1082" fill="none" stroke="#fcd38d" stroke-opacity="0.75" stroke-width="2"/>
+  <path d="M832 356V378H854" fill="none" stroke="#fcd38d" stroke-opacity="0.75" stroke-width="2"/>
+  <path d="M1104 356V378H1082" fill="none" stroke="#fcd38d" stroke-opacity="0.75" stroke-width="2"/>
   <path d="M864,92 H1072 A46,46 0 0 1 1118,138 V346 A46,46 0 0 1 1072,392 H864 A46,46 0 0 1 818,346 V138 A46,46 0 0 1 864,92 Z" fill="none" stroke="url(#rim_h)" stroke-width="1.6"/>
   <g class="mono" font-size="10.4" letter-spacing="1.8" text-anchor="middle">
-    <text class="hud1" x="968.0" y="438" fill="#2ee6ff" opacity="0">&#9679; TRACING 114 STROKES&#8230;</text>
-    <text class="hud2" x="968.0" y="438" fill="#ffc857">&#9679; RENDER COMPLETE &#183; PLAYER ONLINE</text>
-    <text class="hud3" x="968.0" y="438" fill="#ff4fa0" opacity="0">&#9679; RESPAWNING&#8230;</text>
+    <text class="hud1" x="968.0" y="438" fill="#7dd3fc" opacity="0">&#9679; TRACING 114 STROKES&#8230;</text>
+    <text class="hud2" x="968.0" y="438" fill="#fcd38d">&#9679; RENDER COMPLETE &#183; PLAYER ONLINE</text>
+    <text class="hud3" x="968.0" y="438" fill="#f9a8d4" opacity="0">&#9679; RESPAWNING&#8230;</text>
   </g></g>
   <g class="ev5">
-    <g><rect x="1083" y="357" width="68" height="68" rx="12" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.6"/><rect x="1078" y="352" width="68" height="68" rx="12" fill="#ffc857" stroke="#0a0f14" stroke-width="2.6"/></g>
+    <g><rect x="1078" y="355.0" width="68" height="68" rx="12" fill="#000000" fill-opacity="0.35"/><rect x="1078" y="352" width="68" height="68" rx="12" fill="#fcd38d"/><rect x="1087.6" y="352.6" width="48.8" height="1" fill="#ffffff" opacity="0.45"/></g>
     <text class="mono" x="1112" y="377" text-anchor="middle" font-size="9" font-weight="800"
           letter-spacing="1.6" fill="#0a0f14">LVL</text>
     <text class="sans" x="1112" y="403" text-anchor="middle" font-size="26" font-weight="800"
           fill="#0a0f14">21</text>
   </g>
-  <g class="ev5"><g transform="rotate(-4 854.0 75.0)"><g><rect x="816" y="66" width="84" height="26" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/><rect x="812" y="62" width="84" height="26" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="854.0" y="78.8" text-anchor="middle" font-size="10.5" font-weight="800" letter-spacing="1.4" fill="#0a0f14">ARCHITECT</text></g></g>
+  <g class="ev5"><g><rect x="812" y="62" width="88" height="26" rx="13.0" fill="#7dd3fc" fill-opacity="0.12" stroke="#7dd3fc" stroke-opacity="0.45" stroke-width="1"/><circle cx="824.0" cy="75.0" r="2.4" fill="#7dd3fc"/><text class="mono" x="832.0" y="78.8" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="#7dd3fc">ARCHITECT</text></g></g>
 </svg>

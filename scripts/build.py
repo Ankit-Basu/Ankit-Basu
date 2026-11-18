@@ -417,45 +417,24 @@ def build_questlog():
 
 # ================================================================ footer
 def build_footer():
+    """The closing card: motto, quote, location and a quiet sign-off. The
+    socials are not drawn here - they are real, clickable buttons in the
+    README right under this panel, and drawing them twice read as clutter."""
     s = "f"
-    links = [("github", "GITHUB", P.GITHUB, CREAM),
-             ("linkedin", "LINKEDIN", P.LINKEDIN, MINT),
-             ("instagram", "INSTAGRAM", P.INSTAGRAM, ROSE),
-             ("mail", "EMAIL", P.EMAIL, VIOLET)]
-    body = []
-    tw, gap = 262, 20
-    for i, (ic, plat, handle, col) in enumerate(links):
-        x = PAD + i * (tw + gap)
-        body.append(f'<g class="{ev(1 + i)}">')
-        body.append(card(s, x, 46, tw, 78, r=18, tint=col, tint_op=0.16,
-                         sheen=True, sheen_delay=i * 0.75))
-        body.append(f'<circle cx="{x + 40}" cy="85" r="21" fill="{col}" fill-opacity="0.10" '
-                    f'stroke="{col}" stroke-opacity="0.35"/>')
-        body.append(icon(ic, x + 27, 72, 26, col, 1.8, 0.95))
-        body.append(f'<text class="mono" x="{x + 74}" y="{80}" font-size="9.4" letter-spacing="2.4" '
-                    f'fill="{col}" fill-opacity="0.9" font-weight="600">{plat}</text>')
-        fs = 12.5 if len(handle) < 20 else 10.2
-        body.append(f'<text x="{x + 74}" y="{99}" font-size="{fs}" fill="{INK}">{esc(handle)}</text>')
-        body.append("</g>")
-
-    body.append(f'<g class="ev5">')
-    body.append(f'<text class="mono" x="{W // 2}" y="172" text-anchor="middle" font-size="12" '
-                f'letter-spacing="5.6" fill="{CREAM}" fill-opacity="0.92" font-weight="600" '
-                f'filter="url(#glowS_{s})">{esc(P.MOTTO)}</text>')
-    body.append(f'<rect x="{W // 2 - 190}" y="184" width="380" height="1" fill="url(#spec_{s})"/>')
-    body.append(f'<text x="{W // 2}" y="212" text-anchor="middle" font-size="14" '
+    body = [f'<g class="ev2">']
+    body.append(f'<text class="mono" x="{W // 2}" y="66" text-anchor="middle" font-size="12" '
+                f'letter-spacing="5.6" fill="{CREAM}" font-weight="600">{esc(P.MOTTO)}</text>')
+    body.append(f'<rect x="{W // 2 - 190}" y="80" width="380" height="1" fill="url(#spec_{s})"/>')
+    body.append(f'<text x="{W // 2}" y="112" text-anchor="middle" font-size="15" '
                 f'font-style="italic" fill="{DIM}">&#8220;{esc(P.QUOTE)}&#8221;</text>')
-    body.append(f'<text class="mono" x="{W // 2}" y="238" text-anchor="middle" font-size="9.6" '
+    body.append(f'<text class="mono" x="{W // 2}" y="140" text-anchor="middle" font-size="9.6" '
                 f'letter-spacing="2.6" fill="{FAINT}">{esc(P.LOCATION.upper())}</text>')
     body.append("</g>")
-
-    blobs = [(240, 120, 250, CREAM, 0.20, "drift"),
-             (640, 210, 260, ROSE, 0.18, "drift2"),
-             (1000, 120, 240, VIOLET, 0.20, "drift3")]
-    st, stw = sticker(W // 2 - 92, 262, "TO BE CONTINUED \u25B8", CREAM, ROSE, fs=11, h=28)
-    body.append('<g class="ev6"><g style="animation:breathe2 2.4s ease-in-out infinite">%s</g></g>' % st)
-    css = "@keyframes breathe2{0%,100%{opacity:1}50%{opacity:.72}}"
-    return page(s, W, 316, css, "\n  ".join(body), blobs, use_particles=12)
+    st, stw = sticker(0, 0, "TO BE CONTINUED", CREAM, fs=10, h=26)
+    body.append('<g class="ev4" transform="translate(%d 164)"><g style="animation:breathe2 3s ease-in-out infinite">%s</g></g>'
+                % (W // 2 - stw // 2, st))
+    css = "@keyframes breathe2{0%,100%{opacity:1}50%{opacity:.6}}"
+    return page(s, W, 214, css, "\n  ".join(body), None, use_particles=10)
 
 
 # ================================================================ main

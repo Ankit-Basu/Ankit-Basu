@@ -20,37 +20,37 @@
 <div align="center">
 
 <a name="prologue"></a>
-<img src="./banner.svg?v=70" width="100%" alt="Ankit Basu: Software Architect and AI Researcher. A self-drawing line portrait resolves into a photo." />
+<img src="./banner.svg?v=80" width="100%" alt="Ankit Basu: Software Architect and AI Researcher. A self-drawing line portrait resolves into a photo." />
 
-<img src="./marquee.svg?v=70" width="100%" alt="" />
-<img src="./hud.svg?v=70" width="100%" alt="HUD: level, streak hearts, XP to next level, coins and location" />
+<img src="./marquee.svg?v=80" width="100%" alt="" />
+<img src="./hud.svg?v=80" width="100%" alt="HUD: level, streak hearts, XP to next level, coins and location" />
 
 <a name="menu"></a>
-<a href="#origin"><img src="./btn/start.svg?v=1" alt="Press start" /></a>
+<a href="#origin"><img src="./btn/start.svg?v=2" alt="Press start" /></a>
 
-<a href="#origin"><img src="./btn/ch-origin.svg?v=1" alt="Chapter I: Origin" /></a>&nbsp;<a href="#arsenal"><img src="./btn/ch-arsenal.svg?v=1" alt="Chapter II: Arsenal" /></a>&nbsp;<a href="#builds"><img src="./btn/ch-builds.svg?v=1" alt="Chapter III: Builds" /></a>&nbsp;<a href="#battle-log"><img src="./btn/ch-battle-log.svg?v=1" alt="Chapter IV: Battle log" /></a>&nbsp;<a href="#trophies"><img src="./btn/ch-trophies.svg?v=1" alt="Chapter V: Trophies" /></a>&nbsp;<a href="#quest"><img src="./btn/ch-quest.svg?v=1" alt="Chapter VI: Current quest" /></a>
+<a href="#origin"><img src="./btn/ch-origin.svg?v=2" alt="Chapter I: Origin" /></a>&nbsp;<a href="#arsenal"><img src="./btn/ch-arsenal.svg?v=2" alt="Chapter II: Arsenal" /></a>&nbsp;<a href="#builds"><img src="./btn/ch-builds.svg?v=2" alt="Chapter III: Builds" /></a>&nbsp;<a href="#battle-log"><img src="./btn/ch-battle-log.svg?v=2" alt="Chapter IV: Battle log" /></a>&nbsp;<a href="#trophies"><img src="./btn/ch-trophies.svg?v=2" alt="Chapter V: Trophies" /></a>&nbsp;<a href="#quest"><img src="./btn/ch-quest.svg?v=2" alt="Chapter VI: Current quest" /></a>
 
 <!-- ── CHAPTER I · ORIGIN ───────────────────────────────────────────── -->
 <a name="origin"></a>
-<img src="./chapter1.svg?v=70" width="100%" alt="Chapter I: Origin story" />
-<img src="./timeline.svg?v=70" width="100%" alt="Timeline from joining GitHub in 2023 to the projects in progress now" />
+<img src="./chapter1.svg?v=80" width="100%" alt="Chapter I: Origin story" />
+<img src="./timeline.svg?v=80" width="100%" alt="Timeline from joining GitHub in 2023 to the projects in progress now" />
 
-<a href="#prologue"><img src="./btn/prev-prologue.svg?v=1" alt="Previous: prologue" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#arsenal"><img src="./btn/next-arsenal.svg?v=1" alt="Next: arsenal" /></a>
+<a href="#prologue"><img src="./btn/prev-prologue.svg?v=2" alt="Previous: prologue" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=2" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#arsenal"><img src="./btn/next-arsenal.svg?v=2" alt="Next: arsenal" /></a>
 
 <!-- ── CHAPTER II · ARSENAL ─────────────────────────────────────────── -->
 <a name="arsenal"></a>
-<img src="./chapter2.svg?v=70" width="100%" alt="Chapter II: The arsenal" />
-<img src="./loadout.svg?v=70" width="100%" alt="Skills, credentials and tech arsenal" />
-<img src="./skilltree.svg?v=70" width="100%" alt="Tech tree: unlocked skills branch from DSA and C++; locked nodes are in training" />
+<img src="./chapter2.svg?v=80" width="100%" alt="Chapter II: The arsenal" />
+<img src="./loadout.svg?v=80" width="100%" alt="Skills, credentials and tech arsenal" />
+<img src="./skilltree.svg?v=80" width="100%" alt="Tech tree: unlocked skills branch from DSA and C++; locked nodes are in training" />
 
-<a href="#origin"><img src="./btn/prev-origin.svg?v=1" alt="Previous: origin" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#builds"><img src="./btn/next-builds.svg?v=1" alt="Next: builds" /></a>
+<a href="#origin"><img src="./btn/prev-origin.svg?v=2" alt="Previous: origin" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=2" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#builds"><img src="./btn/next-builds.svg?v=2" alt="Next: builds" /></a>
 
 <!-- ── CHAPTER III · BUILDS ─────────────────────────────────────────── -->
 <a name="builds"></a>
-<img src="./chapter3.svg?v=70" width="100%" alt="Chapter III: The builds" />
-<img src="./projects.svg?v=70" width="100%" alt="Featured projects: SheShield, Vyapaar, Hirehearsal, BookMyCampus, TimedInk, PII Redaction" />
+<img src="./chapter3.svg?v=80" width="100%" alt="Chapter III: The builds" />
+<img src="./projects.svg?v=80" width="100%" alt="Featured projects: SheShield, Vyapaar, Hirehearsal, BookMyCampus, TimedInk, PII Redaction" />
 
-<a href="https://github.com/Ankit-Basu/SheShield"><img src="./btn/repo-SheShield.svg?v=1" alt="Open SheShield" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Vyapaar"><img src="./btn/repo-Vyapaar.svg?v=1" alt="Open Vyapaar" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Hirehearsal"><img src="./btn/repo-Hirehearsal.svg?v=1" alt="Open Hirehearsal" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/BookMyCampus"><img src="./btn/repo-BookMyCampus.svg?v=1" alt="Open BookMyCampus" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/TimedInk"><img src="./btn/repo-TimedInk.svg?v=1" alt="Open TimedInk" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/PII-Redaction-Tool"><img src="./btn/repo-PII-Redaction-Tool.svg?v=1" alt="Open PII-Redaction-Tool" /></a>
+<a href="https://github.com/Ankit-Basu/SheShield"><img src="./btn/repo-SheShield.svg?v=2" alt="Open SheShield" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Vyapaar"><img src="./btn/repo-Vyapaar.svg?v=2" alt="Open Vyapaar" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Hirehearsal"><img src="./btn/repo-Hirehearsal.svg?v=2" alt="Open Hirehearsal" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/BookMyCampus"><img src="./btn/repo-BookMyCampus.svg?v=2" alt="Open BookMyCampus" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/TimedInk"><img src="./btn/repo-TimedInk.svg?v=2" alt="Open TimedInk" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/PII-Redaction-Tool"><img src="./btn/repo-PII-Redaction-Tool.svg?v=2" alt="Open PII-Redaction-Tool" /></a>
 
 </div>
 
@@ -79,14 +79,14 @@
 
 <div align="center">
 
-<a href="#arsenal"><img src="./btn/prev-arsenal.svg?v=1" alt="Previous: arsenal" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#battle-log"><img src="./btn/next-battle-log.svg?v=1" alt="Next: battle-log" /></a>
+<a href="#arsenal"><img src="./btn/prev-arsenal.svg?v=2" alt="Previous: arsenal" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=2" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#battle-log"><img src="./btn/next-battle-log.svg?v=2" alt="Next: battle-log" /></a>
 
 <!-- ── CHAPTER IV · BATTLE LOG: rebuilt daily from the GitHub API ───── -->
 <a name="battle-log"></a>
-<img src="./chapter4.svg?v=70" width="100%" alt="Chapter IV: Battle log" />
-<img src="./stats.svg?v=70" width="100%" alt="Live GitHub activity and reach" />
-<img src="./city.svg?v=70" width="100%" alt="The last 52 weeks of contributions drawn as an isometric city, one tower per day" />
-<img src="./companion.svg?v=70" width="49%" alt="BYTE, a pixel robot companion whose mood follows my commit streak" /> <img src="./ticker.svg?v=70" width="49%" alt="$ANKIT: weekly contributions drawn as trading candles" />
+<img src="./chapter4.svg?v=80" width="100%" alt="Chapter IV: Battle log" />
+<img src="./stats.svg?v=80" width="100%" alt="Live GitHub activity and reach" />
+<img src="./city.svg?v=80" width="100%" alt="The last 52 weeks of contributions drawn as an isometric city, one tower per day" />
+<img src="./companion.svg?v=80" width="49%" alt="BYTE, a pixel robot companion whose mood follows my commit streak" /> <img src="./ticker.svg?v=80" width="49%" alt="$ANKIT: weekly contributions drawn as trading candles" />
 
 </div>
 
@@ -148,27 +148,27 @@
        src="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake.svg" />
 </picture>
 
-<a href="#builds"><img src="./btn/prev-builds.svg?v=1" alt="Previous: builds" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#trophies"><img src="./btn/next-trophies.svg?v=1" alt="Next: trophies" /></a>
+<a href="#builds"><img src="./btn/prev-builds.svg?v=2" alt="Previous: builds" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=2" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#trophies"><img src="./btn/next-trophies.svg?v=2" alt="Next: trophies" /></a>
 
 <!-- ── CHAPTER V · TROPHIES ─────────────────────────────────────────── -->
 <a name="trophies"></a>
-<img src="./chapter5.svg?v=70" width="100%" alt="Chapter V: Trophy hall" />
-<img src="./trophies.svg?v=70" width="100%" alt="Achievements and milestones" />
+<img src="./chapter5.svg?v=80" width="100%" alt="Chapter V: Trophy hall" />
+<img src="./trophies.svg?v=80" width="100%" alt="Achievements and milestones" />
 
-<a href="#battle-log"><img src="./btn/prev-battle-log.svg?v=1" alt="Previous: battle-log" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#quest"><img src="./btn/next-quest.svg?v=1" alt="Next: quest" /></a>
+<a href="#battle-log"><img src="./btn/prev-battle-log.svg?v=2" alt="Previous: battle-log" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=2" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#quest"><img src="./btn/next-quest.svg?v=2" alt="Next: quest" /></a>
 
 <!-- ── CHAPTER VI · CURRENT QUEST ───────────────────────────────────── -->
 <a name="quest"></a>
-<img src="./chapter6.svg?v=70" width="100%" alt="Chapter VI: Current quest" />
-<img src="./boss.svg?v=70" width="100%" alt="Boss fight: The Voice Clone, the current main quest Pratirodh, with its HP and phases" />
-<img src="./questlog.svg?v=70" width="100%" alt="What I'm building right now" />
+<img src="./chapter6.svg?v=80" width="100%" alt="Chapter VI: Current quest" />
+<img src="./boss.svg?v=80" width="100%" alt="Boss fight: The Voice Clone, the current main quest Pratirodh, with its HP and phases" />
+<img src="./questlog.svg?v=80" width="100%" alt="What I'm building right now" />
 
 <!-- GAME MODE: each link opens a prefilled issue; .github/workflows/vote.yml counts it -->
-<img src="./votes.svg?v=70" width="100%" alt="Game Mode: vote for my next quest" />
+<img src="./votes.svg?v=80" width="100%" alt="Game Mode: vote for my next quest" />
 
-<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+pratirodh"><img src="./btn/vote-pratirodh.svg?v=1" alt="Vote: ship Pratirodh v1" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+ios"><img src="./btn/vote-ios.svg?v=1" alt="Vote: SheShield on iOS" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+rust"><img src="./btn/vote-rust.svg?v=1" alt="Vote: a Rust side quest" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+oss"><img src="./btn/vote-oss.svg?v=1" alt="Vote: open-source arc" /></a>
+<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+pratirodh"><img src="./btn/vote-pratirodh.svg?v=2" alt="Vote: ship Pratirodh v1" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+ios"><img src="./btn/vote-ios.svg?v=2" alt="Vote: SheShield on iOS" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+rust"><img src="./btn/vote-rust.svg?v=2" alt="Vote: a Rust side quest" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+oss"><img src="./btn/vote-oss.svg?v=2" alt="Vote: open-source arc" /></a>
 
-<a href="#trophies"><img src="./btn/prev-trophies.svg?v=1" alt="Previous: trophies" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#epilogue"><img src="./btn/next-epilogue.svg?v=1" alt="Next: epilogue" /></a>
+<a href="#trophies"><img src="./btn/prev-trophies.svg?v=2" alt="Previous: trophies" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=2" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#epilogue"><img src="./btn/next-epilogue.svg?v=2" alt="Next: epilogue" /></a>
 
 </div>
 
@@ -195,17 +195,17 @@ Every panel above is an SVG generated by Python in [`scripts/`](scripts/). No th
 
 <!-- ── EPILOGUE ─────────────────────────────────────────────────────── -->
 <a name="epilogue"></a>
-<img src="./marquee2.svg?v=70" width="100%" alt="" />
-<img src="./credits.svg?v=70" width="100%" alt="The End: end credits starring my projects" />
-<img src="./footer.svg?v=70" width="100%" alt="Epilogue: connect with Ankit Basu" />
+<img src="./marquee2.svg?v=80" width="100%" alt="" />
+<img src="./credits.svg?v=80" width="100%" alt="The End: end credits starring my projects" />
+<img src="./footer.svg?v=80" width="100%" alt="Epilogue: connect with Ankit Basu" />
 
 <!-- Links live out here, not inside the SVG: GitHub renders these panels
      through <img>, and anchors inside an <img>-loaded SVG are never clickable. -->
-<a href="https://github.com/Ankit-Basu"><img src="./btn/social-github.svg?v=1" alt="GitHub" /></a>&nbsp;<a href="https://www.linkedin.com/in/ankit-basu-4a6774297/"><img src="./btn/social-linkedin.svg?v=1" alt="LinkedIn" /></a>&nbsp;<a href="https://ankitbasu.vercel.app/"><img src="./btn/social-portfolio.svg?v=1" alt="Portfolio" /></a>&nbsp;<a href="https://instagram.com/_ank1t._"><img src="./btn/social-instagram.svg?v=1" alt="Instagram" /></a>&nbsp;<a href="mailto:ankitbasu935@gmail.com"><img src="./btn/social-email.svg?v=1" alt="Email" /></a>
+<a href="https://github.com/Ankit-Basu"><img src="./btn/social-github.svg?v=2" alt="GitHub" /></a>&nbsp;<a href="https://www.linkedin.com/in/ankit-basu-4a6774297/"><img src="./btn/social-linkedin.svg?v=2" alt="LinkedIn" /></a>&nbsp;<a href="https://ankitbasu.vercel.app/"><img src="./btn/social-portfolio.svg?v=2" alt="Portfolio" /></a>&nbsp;<a href="https://instagram.com/_ank1t._"><img src="./btn/social-instagram.svg?v=2" alt="Instagram" /></a>&nbsp;<a href="mailto:ankitbasu935@gmail.com"><img src="./btn/social-email.svg?v=2" alt="Email" /></a>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Ankit-Basu&style=for-the-badge&color=fbe2a7&label=PLAYERS+WHO+VISITED"
+<img src="https://komarev.com/ghpvc/?username=Ankit-Basu&style=flat-square&color=7dd3fc&label=PLAYERS+WHO+VISITED"
      alt="Profile views" />
 
 </div>
