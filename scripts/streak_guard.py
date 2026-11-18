@@ -109,6 +109,9 @@ def main():
     # either source seeing activity is enough; only both at zero raises an alert
     count = max(cal_count, ev_count)
     print("calendar says %d, activity feed says %d since midnight IST" % (cal_count, ev_count))
+    test = os.environ.get("TEST_ALERT") == "true"
+    if test:
+        count = 0  # exercise the alert path end to end, phone included
     if os.environ.get("FORCE_COUNT") is not None:
         count = int(os.environ["FORCE_COUNT"])
     at_stake = streak_before(today, days)
@@ -117,7 +120,8 @@ def main():
           % (now.strftime("%Y-%m-%d %H:%M"), count, at_stake, hours_left))
 
     open_issues = call("GET", "/repos/%s/issues?state=open&labels=%s&per_page=20" % (REPO, LABEL)) or []
-    title_today = "Streak guard: no contributions yet on %s" % today
+    title_today = ("Streak guard TEST: notification check on %s" if test else
+                   "Streak guard: no contributions yet on %s") % today
 
     for iss in open_issues:
         if iss["title"] != title_today:
@@ -147,6 +151,8 @@ def main():
                 USER, hours_left, "" if hours_left == 1 else "s", stake)}))
         return 0
 
+    if test:
+        stake = "this is only a test: if this reached your phone, the streak guard works"
     body = ("@%s BYTE is falling asleep: no contributions yet today, and %s "
             "(about %d hours left).\n\n"
             "Anything real counts: a commit to any repo's default branch, a pull request, "

@@ -13,6 +13,11 @@ on:
     - cron: "30 15 * * *"   # 21:00 IST
     - cron: "30 17 * * *"   # 23:00 IST, last call
   workflow_dispatch:
+    inputs:
+      test:
+        description: "Send a test alert to check phone notifications"
+        type: boolean
+        default: false
 
 permissions:
   issues: write
@@ -39,4 +44,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
+          TEST_ALERT: ${{ inputs.test }}
         run: python scripts/streak_guard.py
