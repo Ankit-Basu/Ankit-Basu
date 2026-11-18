@@ -74,6 +74,11 @@ def main():
         seen += 1
         problems += check(path)
 
+    # README buttons: same checks, found by folder rather than listed
+    for path in sorted(glob.glob(os.path.join(ROOT, "btn", "*.svg"))):
+        seen += 1
+        problems += check(path)
+
     for path in sorted(glob.glob(os.path.join(ROOT, "*.svg"))):
         if os.path.splitext(os.path.basename(path))[0] not in PANELS:
             print("note: %s is not referenced by the README"
@@ -84,7 +89,7 @@ def main():
         for p in problems:
             print("  - " + p)
         return 1
-    print("all %d panels OK" % seen)
+    print("all %d panels and buttons OK" % seen)
     return 0
 
 

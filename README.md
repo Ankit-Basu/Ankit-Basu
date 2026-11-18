@@ -26,23 +26,16 @@
 <img src="./hud.svg?v=70" width="100%" alt="HUD: level, streak hearts, XP to next level, coins and location" />
 
 <a name="menu"></a>
-**[▶ PRESS START](#origin)** &nbsp;&nbsp;|&nbsp;&nbsp; **Chapter select**&nbsp;&nbsp;
-[Origin](#origin) ·
-[Arsenal](#arsenal) ·
-[Builds](#builds) ·
-[Battle&nbsp;Log](#battle-log) ·
-[Trophies](#trophies) ·
-[Current&nbsp;Quest](#quest) ·
-[Epilogue](#epilogue)
+<a href="#origin"><img src="./btn/start.svg?v=1" alt="Press start" /></a>
+
+<a href="#origin"><img src="./btn/ch-origin.svg?v=1" alt="Chapter I: Origin" /></a>&nbsp;<a href="#arsenal"><img src="./btn/ch-arsenal.svg?v=1" alt="Chapter II: Arsenal" /></a>&nbsp;<a href="#builds"><img src="./btn/ch-builds.svg?v=1" alt="Chapter III: Builds" /></a>&nbsp;<a href="#battle-log"><img src="./btn/ch-battle-log.svg?v=1" alt="Chapter IV: Battle log" /></a>&nbsp;<a href="#trophies"><img src="./btn/ch-trophies.svg?v=1" alt="Chapter V: Trophies" /></a>&nbsp;<a href="#quest"><img src="./btn/ch-quest.svg?v=1" alt="Chapter VI: Current quest" /></a>
 
 <!-- ── CHAPTER I · ORIGIN ───────────────────────────────────────────── -->
 <a name="origin"></a>
 <img src="./chapter1.svg?v=70" width="100%" alt="Chapter I: Origin story" />
 <img src="./timeline.svg?v=70" width="100%" alt="Timeline from joining GitHub in 2023 to the projects in progress now" />
 
-<sub>&nbsp;</sub>
-
-[◀ Prologue](#prologue) &nbsp;·&nbsp; [▲ Menu](#menu) &nbsp;·&nbsp; [Chapter II ▶](#arsenal)
+<a href="#prologue"><img src="./btn/prev-prologue.svg?v=1" alt="Previous: prologue" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#arsenal"><img src="./btn/next-arsenal.svg?v=1" alt="Next: arsenal" /></a>
 
 <!-- ── CHAPTER II · ARSENAL ─────────────────────────────────────────── -->
 <a name="arsenal"></a>
@@ -50,22 +43,14 @@
 <img src="./loadout.svg?v=70" width="100%" alt="Skills, credentials and tech arsenal" />
 <img src="./skilltree.svg?v=70" width="100%" alt="Tech tree: unlocked skills branch from DSA and C++; locked nodes are in training" />
 
-<sub>&nbsp;</sub>
-
-[◀ Chapter I](#origin) &nbsp;·&nbsp; [▲ Menu](#menu) &nbsp;·&nbsp; [Chapter III ▶](#builds)
+<a href="#origin"><img src="./btn/prev-origin.svg?v=1" alt="Previous: origin" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#builds"><img src="./btn/next-builds.svg?v=1" alt="Next: builds" /></a>
 
 <!-- ── CHAPTER III · BUILDS ─────────────────────────────────────────── -->
 <a name="builds"></a>
 <img src="./chapter3.svg?v=70" width="100%" alt="Chapter III: The builds" />
 <img src="./projects.svg?v=70" width="100%" alt="Featured projects: SheShield, Vyapaar, Hirehearsal, BookMyCampus, TimedInk, PII Redaction" />
 
-**Enter the build →**
-[SheShield](https://github.com/Ankit-Basu/SheShield) ·
-[Vyapaar](https://github.com/Ankit-Basu/Vyapaar) ·
-[Hirehearsal](https://github.com/Ankit-Basu/Hirehearsal) ·
-[BookMyCampus](https://github.com/Ankit-Basu/BookMyCampus) ·
-[TimedInk](https://github.com/Ankit-Basu/TimedInk) ·
-[PII Redaction](https://github.com/Ankit-Basu/PII-Redaction-Tool)
+<a href="https://github.com/Ankit-Basu/SheShield"><img src="./btn/repo-SheShield.svg?v=1" alt="Open SheShield" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Vyapaar"><img src="./btn/repo-Vyapaar.svg?v=1" alt="Open Vyapaar" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Hirehearsal"><img src="./btn/repo-Hirehearsal.svg?v=1" alt="Open Hirehearsal" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/BookMyCampus"><img src="./btn/repo-BookMyCampus.svg?v=1" alt="Open BookMyCampus" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/TimedInk"><img src="./btn/repo-TimedInk.svg?v=1" alt="Open TimedInk" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/PII-Redaction-Tool"><img src="./btn/repo-PII-Redaction-Tool.svg?v=1" alt="Open PII-Redaction-Tool" /></a>
 
 </div>
 
@@ -94,9 +79,7 @@
 
 <div align="center">
 
-<sub>&nbsp;</sub>
-
-[◀ Chapter II](#arsenal) &nbsp;·&nbsp; [▲ Menu](#menu) &nbsp;·&nbsp; [Chapter IV ▶](#battle-log)
+<a href="#arsenal"><img src="./btn/prev-arsenal.svg?v=1" alt="Previous: arsenal" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#battle-log"><img src="./btn/next-battle-log.svg?v=1" alt="Next: battle-log" /></a>
 
 <!-- ── CHAPTER IV · BATTLE LOG: rebuilt daily from the GitHub API ───── -->
 <a name="battle-log"></a>
@@ -165,18 +148,14 @@
        src="https://raw.githubusercontent.com/Ankit-Basu/Ankit-Basu/output/github-snake.svg" />
 </picture>
 
-<sub>&nbsp;</sub>
-
-[◀ Chapter III](#builds) &nbsp;·&nbsp; [▲ Menu](#menu) &nbsp;·&nbsp; [Chapter V ▶](#trophies)
+<a href="#builds"><img src="./btn/prev-builds.svg?v=1" alt="Previous: builds" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#trophies"><img src="./btn/next-trophies.svg?v=1" alt="Next: trophies" /></a>
 
 <!-- ── CHAPTER V · TROPHIES ─────────────────────────────────────────── -->
 <a name="trophies"></a>
 <img src="./chapter5.svg?v=70" width="100%" alt="Chapter V: Trophy hall" />
 <img src="./trophies.svg?v=70" width="100%" alt="Achievements and milestones" />
 
-<sub>&nbsp;</sub>
-
-[◀ Chapter IV](#battle-log) &nbsp;·&nbsp; [▲ Menu](#menu) &nbsp;·&nbsp; [Chapter VI ▶](#quest)
+<a href="#battle-log"><img src="./btn/prev-battle-log.svg?v=1" alt="Previous: battle-log" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#quest"><img src="./btn/next-quest.svg?v=1" alt="Next: quest" /></a>
 
 <!-- ── CHAPTER VI · CURRENT QUEST ───────────────────────────────────── -->
 <a name="quest"></a>
@@ -187,15 +166,9 @@
 <!-- GAME MODE: each link opens a prefilled issue; .github/workflows/vote.yml counts it -->
 <img src="./votes.svg?v=70" width="100%" alt="Game Mode: vote for my next quest" />
 
-**Cast your vote →**
-[**Pratirodh v1**](https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&title=vote%3A+pratirodh) ·
-[**SheShield on iOS**](https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&title=vote%3A+ios) ·
-[**Rust side quest**](https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&title=vote%3A+rust) ·
-[**Open-source arc**](https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&title=vote%3A+oss)
+<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+pratirodh"><img src="./btn/vote-pratirodh.svg?v=1" alt="Vote: ship Pratirodh v1" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+ios"><img src="./btn/vote-ios.svg?v=1" alt="Vote: SheShield on iOS" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+rust"><img src="./btn/vote-rust.svg?v=1" alt="Vote: a Rust side quest" /></a>&nbsp;<a href="https://github.com/Ankit-Basu/Ankit-Basu/issues/new?body=Just+press+Submit.+A+bot+counts+your+vote+and+closes+this+issue.&amp;title=vote%3A+oss"><img src="./btn/vote-oss.svg?v=1" alt="Vote: open-source arc" /></a>
 
-<sub>&nbsp;</sub>
-
-[◀ Chapter V](#trophies) &nbsp;·&nbsp; [▲ Menu](#menu) &nbsp;·&nbsp; [Epilogue ▶](#epilogue)
+<a href="#trophies"><img src="./btn/prev-trophies.svg?v=1" alt="Previous: trophies" /></a>&nbsp;&nbsp;<a href="#menu"><img src="./btn/menu.svg?v=1" alt="Back to the chapter menu" /></a>&nbsp;&nbsp;<a href="#epilogue"><img src="./btn/next-epilogue.svg?v=1" alt="Next: epilogue" /></a>
 
 </div>
 
@@ -210,7 +183,7 @@ Every panel above is an SVG generated by Python in [`scripts/`](scripts/). No th
 - **The city** is my last 52 weeks of contributions in isometric 3D: one tower per day, one street per week.
 - **The look** mixes four styles on one flat GitHub-dark canvas: synthwave for the hero (striped sun, scrolling grid floor), frosted glass for content, neo-brutalism for the story layer (chapter stamps, stickers, ribbons, vote cards), and JRPG dialogue boxes for the narrator.
 - **Smooth by design:** these panels load as `<img>`, so the browser repaints the whole image on every animation frame. There are no blur or drop-shadow filters anywhere; glows and shadows are gradients and offset shapes, and the motion is plain transforms and opacity.
-- **The game layer:** a HUD (streak hearts, XP to the next level, coins), a tech tree whose locked nodes are what I'm learning, and the current quest drawn as a boss whose HP falls as its phases ship. Every chapter ends in ◀ / ▲ / ▶ links, and BYTE has a dialogue tree you can click through.
+- **The game layer:** a HUD (streak hearts, XP to the next level, coins), a tech tree whose locked nodes are what I'm learning, and the current quest drawn as a boss whose HP falls as its phases ship. Every chapter ends in previous / menu / next buttons, and BYTE has a dialogue tree you can click through.
 - **BYTE** reads my current streak every day: 3+ days and it's hyped, 1-2 it's on it, 0 and it falls asleep.
 - **Game Mode** is a real vote: each link opens an issue, and [a workflow](.github/workflows/vote.yml) validates it, counts one vote per player, redraws the panel and closes the issue.
 - **Streak guard:** at 9 PM and 11 PM IST [a workflow](.github/workflows/streak-guard.yml) checks whether today has any contributions. If not, it opens an issue that pings me, then closes it once I've shipped something. It nudges; it never commits.
@@ -228,12 +201,7 @@ Every panel above is an SVG generated by Python in [`scripts/`](scripts/). No th
 
 <!-- Links live out here, not inside the SVG: GitHub renders these panels
      through <img>, and anchors inside an <img>-loaded SVG are never clickable. -->
-**Join the party →**
-[**GitHub**](https://github.com/Ankit-Basu) ·
-[**LinkedIn**](https://www.linkedin.com/in/ankit-basu-4a6774297/) ·
-[**Portfolio**](https://ankitbasu.vercel.app/) ·
-[**Instagram**](https://instagram.com/_ank1t._) ·
-[**Email**](mailto:ankitbasu935@gmail.com)
+<a href="https://github.com/Ankit-Basu"><img src="./btn/social-github.svg?v=1" alt="GitHub" /></a>&nbsp;<a href="https://www.linkedin.com/in/ankit-basu-4a6774297/"><img src="./btn/social-linkedin.svg?v=1" alt="LinkedIn" /></a>&nbsp;<a href="https://ankitbasu.vercel.app/"><img src="./btn/social-portfolio.svg?v=1" alt="Portfolio" /></a>&nbsp;<a href="https://instagram.com/_ank1t._"><img src="./btn/social-instagram.svg?v=1" alt="Instagram" /></a>&nbsp;<a href="mailto:ankitbasu935@gmail.com"><img src="./btn/social-email.svg?v=1" alt="Email" /></a>
 
 <br/>
 

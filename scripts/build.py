@@ -20,6 +20,7 @@ from icons import icon  # noqa: E402
 import story  # noqa: E402
 import arcade  # noqa: E402
 import game  # noqa: E402
+import buttons  # noqa: E402
 from design import sticker, brut, INKK  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -482,6 +483,8 @@ def main():
     write("questlog.svg", build_questlog())
     write("votes.svg", arcade.build_votes())
     write("footer.svg", build_footer())
+    os.makedirs(os.path.join(ROOT, "btn"), exist_ok=True)
+    buttons.build_all(write)
     print("done")
 
 
