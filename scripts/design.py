@@ -12,25 +12,29 @@ edge, a fading hairline border, and a whisper of noise grain.
 """
 
 # ---------------------------------------------------------------- palette
-BG0 = "#081219"    # deepest backdrop
-BG1 = "#0c1a24"
-BG2 = "#12242e"    # the original profile teal
-INK = "#eaf2f6"    # primary text
-DIM = "#93a8b4"    # secondary text
-FAINT = "#5f7683"  # tertiary text
+# "Midnight Arcade": a synthwave night. The accent names are historical
+# (the profile started in cream / rose / mint / violet) and are kept so the
+# layout code reads the same; the comment says what each one is now.
+BG0 = "#07051a"    # deepest backdrop - indigo black
+BG1 = "#150b30"
+BG2 = "#1e1145"
+INK = "#f6f1ff"    # primary text
+DIM = "#b4a8d8"    # secondary text
+FAINT = "#7a6ea3"  # tertiary text
 
-CREAM = "#fbe2a7"   # legendary / primary accent
-ROSE = "#e4a2b1"    # epic / secondary accent
-MINT = "#6fe7c8"    # rare / tertiary accent
-VIOLET = "#a78bfa"  # mythic / quaternary accent
+CREAM = "#ffc857"   # amber - legendary / primary accent
+ROSE = "#ff4fa0"    # hot magenta - epic / secondary accent
+MINT = "#2ee6ff"    # electric cyan - rare / tertiary accent
+VIOLET = "#b6ff4f"  # acid lime - mythic / quaternary accent
 GOLD = "#ffd479"
+PURPLE = "#8b5cff"  # the horizon glow
 
 RARITY = {
     "MYTHIC": VIOLET,
     "LEGENDARY": CREAM,
     "EPIC": ROSE,
     "RARE": MINT,
-    "UNCOMMON": "#8fb8c9",
+    "UNCOMMON": "#9d8cff",
 }
 
 MONO = "'JetBrains Mono','Fira Code','SFMono-Regular',ui-monospace,Consolas,monospace"
@@ -81,17 +85,17 @@ def base_defs(scope):
 
     <linearGradient id="rim_S" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#fbe2a7" stop-opacity="0.16"/>
+      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#a78bfa" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#6fe7c8" stop-opacity="0.30"/>
+      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_S" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6fe7c8" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#6fe7c8" stop-opacity="0.35"/>
-      <stop offset="70%" stop-color="#e4a2b1" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_S" x1="0" y1="0" x2="1" y2="0">
@@ -111,7 +115,7 @@ def base_defs(scope):
     <linearGradient id="bg_S" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="BG1_"/>
       <stop offset="55%" stop-color="BG0_"/>
-      <stop offset="100%" stop-color="#0a1a23"/>
+      <stop offset="100%" stop-color="#0d0624"/>
     </linearGradient>
 
     <radialGradient id="vig_S" cx="50%" cy="42%" r="72%">
@@ -146,8 +150,11 @@ def base_defs(scope):
       <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
-    <pattern id="grid_S" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    <pattern id="grid_S" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <pattern id="scan_S" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
     </pattern>
   </defs>""".replace("_S", "_" + s).replace("BG1_", BG1).replace("BG0_", BG0)
 
@@ -234,6 +241,7 @@ def frame(scope, w, h, blobs=None, grid=True, vignette=True):
         out.append('<rect width="%s" height="%s" rx="26" fill="url(#grid_%s)"/>' % (w, h, s))
     if vignette:
         out.append('<rect width="%s" height="%s" rx="26" fill="url(#vig_%s)"/>' % (w, h, s))
+    out.append('<rect width="%s" height="%s" rx="26" fill="url(#scan_%s)" opacity="0.5"/>' % (w, h, s))
     return "\n  ".join(out)
 
 

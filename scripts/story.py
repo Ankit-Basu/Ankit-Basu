@@ -16,7 +16,7 @@ import math
 import os
 
 import profile as P
-from design import (BG0, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, INKK, RARITY,
+from design import (BG0, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, PURPLE, INKK, RARITY,
                     esc, rr, card, chip_row, page, section_header, uid, ev,
                     brut, sticker)
 from icons import icon
@@ -179,6 +179,66 @@ def _typing(s, x, y, roles, fs=21):
     return "\n  ".join(out), "\n    ".join(css)
 
 
+def _horizon(s, H, sun=None, hy=None, depth=None):
+    """Synthwave horizon: an optional striped sun sinking behind the horizon
+    line and a perspective grid floor whose rows scroll toward the viewer.
+    Resting state: the rows sit at their evenly-receding positions."""
+    hy = hy or H - 150
+    depth = depth or H - hy
+    vx = W / 2
+    clip = "hzc_" + s
+    out = [f"""<defs>
+    <clipPath id="{clip}"><path d="{rr(0, 0, W, H, 26)}"/></clipPath>
+    <linearGradient id="sun_{s}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{CREAM}"/><stop offset="55%" stop-color="{ROSE}"/>
+      <stop offset="100%" stop-color="{PURPLE}"/>
+    </linearGradient>
+    <linearGradient id="flr_{s}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{ROSE}" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="{PURPLE}" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="hzl_{s}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="{ROSE}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="{ROSE}" stop-opacity="1"/>
+      <stop offset="100%" stop-color="{ROSE}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>""", f'<g clip-path="url(#{clip})">']
+    css = ["@keyframes flr{from{transform:translateY(0);opacity:0}25%%{opacity:.85}"
+           "to{transform:translateY(%dpx);opacity:.85}}" % depth,
+           "@keyframes sunb{0%,100%{opacity:.82}50%{opacity:1}}",
+           "@keyframes band{from{transform:translateY(0)}to{transform:translateY(-18px)}}"]
+    if sun:
+        sx, sy, sr = sun
+        msk = "sunm_" + s
+        # stripes thicken toward the horizon - the classic sliced sun
+        bands = "".join(
+            f'<rect x="{sx - sr}" y="{sy + sr * f:.1f}" width="{2 * sr}" height="{2 + k * 1.6:.1f}" fill="#000"/>'
+            for k, f in enumerate([0.02, 0.18, 0.32, 0.45, 0.56, 0.66, 0.75, 0.83, 0.9, 0.96]))
+        out.append(f"""<mask id="{msk}" maskUnits="userSpaceOnUse" x="{sx - sr}" y="{sy - sr}" width="{2 * sr}" height="{2 * sr}">
+      <rect x="{sx - sr}" y="{sy - sr}" width="{2 * sr}" height="{hy - (sy - sr)}" fill="#fff"/>
+      <g style="animation:band 2.6s linear infinite">{bands}</g>
+    </mask>
+    <circle cx="{sx}" cy="{sy}" r="{sr * 1.25:.0f}" fill="{ROSE}" opacity="0.18" filter="url(#soft_{s})"/>
+    <circle cx="{sx}" cy="{sy}" r="{sr}" fill="url(#sun_{s})" mask="url(#{msk})"
+            style="animation:sunb 5s ease-in-out infinite"/>""")
+    out.append(f'<rect x="0" y="{hy}" width="{W}" height="{H - hy}" fill="{BG0}" fill-opacity="0.55"/>')
+    out.append(f'<rect x="0" y="{hy}" width="{W}" height="{H - hy}" fill="url(#flr_{s})"/>')
+    rays = []
+    for k in range(-14, 15):
+        rays.append(f'<path d="M{vx + k * 26:.0f} {hy}L{vx + k * 150:.0f} {H}"/>')
+    out.append(f'<g stroke="{ROSE}" stroke-opacity="0.38" stroke-width="1">{"".join(rays)}</g>')
+    n, T = 7, 4.2
+    for i in range(n):
+        # quadratic spacing is what sells the perspective
+        rest = depth * ((i + 0.5) / n) ** 2
+        out.append(f'<rect x="0" y="{hy}" width="{W}" height="1.2" fill="{ROSE}" opacity="0.7" '
+                   f'transform="translate(0 {rest:.1f})" '
+                   f'style="animation:flr {T}s cubic-bezier(.55,0,1,.45) {-T * i / n:.2f}s infinite"/>')
+    out.append(f'<rect x="0" y="{hy - 1}" width="{W}" height="2.4" fill="url(#hzl_{s})" filter="url(#glowS_{s})"/>')
+    out.append("</g>")
+    return "\n  ".join(out), "\n    ".join(css)
+
+
 def build_hero(d):
     s = "h"
     H = 560
@@ -194,13 +254,16 @@ def build_hero(d):
     body = [f"""<defs>
     <linearGradient id="nm_{s}" x1="0" y1="0" x2="1" y2="0.5">
       <stop offset="0%" stop-color="#ffffff"/><stop offset="34%" stop-color="{CREAM}"/>
-      <stop offset="68%" stop-color="{ROSE}"/><stop offset="100%" stop-color="{VIOLET}"/>
+      <stop offset="68%" stop-color="{ROSE}"/><stop offset="100%" stop-color="{MINT}"/>
     </linearGradient>
     <clipPath id="nc_{s}">
       <text class="sans" x="{x0 - 2}" y="196" font-size="80" font-weight="800"
             letter-spacing="-2.8">{esc(P.NAME)}</text>
     </clipPath>
   </defs>"""]
+    hz, scss = _horizon(s, H, sun=(968, 250, 178))
+    css.append(scss)
+    body.append(hz)
 
     # -- PRESS START sticker (brutalist) + availability pill (glass)
     st, sw = sticker(x0, 52, "▶ PRESS START", CREAM, ROSE, fs=11.5, h=28)
@@ -431,7 +494,7 @@ def build_city(d):
     peak = max([n for _, n in recent] or [1]) or 1
     active = sorted(n for _, n in recent if n > 0)
     cuts = [active[int(len(active) * q)] for q in (0.25, 0.5, 0.75)] if active else [1, 2, 3]
-    ramp = [None, VIOLET, ROSE, CREAM, MINT]
+    ramp = [None, PURPLE, ROSE, CREAM, MINT]
 
     ox, oy = 150, 214
     a = (13.6, 4.0)    # one week along the street

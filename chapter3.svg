@@ -9,17 +9,17 @@
 
     <linearGradient id="rim_c3" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#fbe2a7" stop-opacity="0.16"/>
+      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#a78bfa" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#6fe7c8" stop-opacity="0.30"/>
+      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_c3" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6fe7c8" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#6fe7c8" stop-opacity="0.35"/>
-      <stop offset="70%" stop-color="#e4a2b1" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_c3" x1="0" y1="0" x2="1" y2="0">
@@ -37,9 +37,9 @@
     </linearGradient>
 
     <linearGradient id="bg_c3" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="#0c1a24"/>
-      <stop offset="55%" stop-color="#081219"/>
-      <stop offset="100%" stop-color="#0a1a23"/>
+      <stop offset="0%" stop-color="#150b30"/>
+      <stop offset="55%" stop-color="#07051a"/>
+      <stop offset="100%" stop-color="#0d0624"/>
     </linearGradient>
 
     <radialGradient id="vig_c3" cx="50%" cy="42%" r="72%">
@@ -74,8 +74,11 @@
       <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
-    <pattern id="grid_c3" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    <pattern id="grid_c3" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <pattern id="scan_c3" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
     </pattern>
   </defs>
 <style>
@@ -146,31 +149,32 @@
 @keyframes stamp{0%{transform:scale(1.18) rotate(-7deg);opacity:.5}55%{transform:scale(.96) rotate(1deg);opacity:1}100%{transform:scale(1) rotate(0)}}.stamp{animation:stamp 1.1s cubic-bezier(.22,1,.36,1)}@keyframes uline{0%,20%{stroke-dashoffset:.8}100%{stroke-dashoffset:0}}.uline{animation:uline 2.2s cubic-bezier(.22,1,.36,1)}</style>
 <rect width="1200" height="150" rx="26" fill="url(#bg_c3)"/>
   <g filter="url(#blob_c3)" opacity="0.55">
-  <ellipse cx="300" cy="70" rx="200" ry="156" fill="#6fe7c8" opacity="0.22" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:300px 70px"/>
-  <ellipse cx="950" cy="80" rx="220" ry="172" fill="#fbe2a7" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:950px 80px"/>
+  <ellipse cx="300" cy="70" rx="200" ry="156" fill="#2ee6ff" opacity="0.22" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:300px 70px"/>
+  <ellipse cx="950" cy="80" rx="220" ry="172" fill="#ffc857" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:950px 80px"/>
   </g>
   <rect width="1200" height="150" rx="26" fill="url(#vig_c3)"/>
-<g class="stamp" style="transform-origin:121.0px 75px"><g><rect x="53" y="33" width="150" height="94" rx="14" fill="#fbe2a7" stroke="#0a0f14" stroke-width="3"/><rect x="46" y="26" width="150" height="94" rx="14" fill="#6fe7c8" stroke="#0a0f14" stroke-width="3"/></g><text class="mono" x="121.0" y="52" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="2.6" fill="#0a0f14">CHAPTER</text><text class="sans" x="121.0" y="104" text-anchor="middle" font-size="46" font-weight="900" fill="#0a0f14" letter-spacing="-1">III</text></g>
+  <rect width="1200" height="150" rx="26" fill="url(#scan_c3)" opacity="0.5"/>
+<g class="stamp" style="transform-origin:121.0px 75px"><g><rect x="53" y="33" width="150" height="94" rx="14" fill="#ffc857" stroke="#0a0f14" stroke-width="3"/><rect x="46" y="26" width="150" height="94" rx="14" fill="#2ee6ff" stroke="#0a0f14" stroke-width="3"/></g><text class="mono" x="121.0" y="52" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="2.6" fill="#0a0f14">CHAPTER</text><text class="sans" x="121.0" y="104" text-anchor="middle" font-size="46" font-weight="900" fill="#0a0f14" letter-spacing="-1">III</text></g>
   <g class="ev1"><g>
   <clipPath id="tc19"><path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z"/></clipPath>
-  <g clip-path="url(#tc19)"><ellipse cx="502" cy="41" rx="466" ry="58" fill="#6fe7c8" opacity="0.16" filter="url(#soft_c3)"/></g>
+  <g clip-path="url(#tc19)"><ellipse cx="502" cy="41" rx="466" ry="58" fill="#2ee6ff" opacity="0.16" filter="url(#soft_c3)"/></g>
   <path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z" fill="url(#pane_c3)" filter="url(#drop_c3)"/>
   <path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z" fill="none" stroke="url(#rim_c3)" stroke-width="1.2"/>
   <path d="M223,44 A18,18 0 0 1 240,27 H1136 A18,18 0 0 1 1153,44" fill="none" stroke="url(#spec_c3)" stroke-width="1.4"/>
   <rect x="240" y="117.5" width="896" height="1.2" rx="0.6" fill="url(#refr_c3)"/>
   <clipPath id="cl20"><path d="M240,26 H1136 A18,18 0 0 1 1154,44 V102 A18,18 0 0 1 1136,120 H240 A18,18 0 0 1 222,102 V44 A18,18 0 0 1 240,26 Z"/></clipPath><g clip-path="url(#cl20)"><rect x="-244" y="26" width="466" height="94" fill="url(#sheen_c3)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0s infinite"/></g>
   </g></g>
-  <text class="mono ev2" x="250" y="56" font-size="11" letter-spacing="3.4" fill="#6fe7c8" font-weight="700">THE BUILDS</text>
-  <text class="sans ev2" x="250" y="88" font-size="26" font-weight="800" fill="#eaf2f6" letter-spacing="-0.5">Systems shipped to production</text>
-  <text class="ev3" x="250" y="108" font-size="12.5" font-style="italic" fill="#93a8b4">Pulled straight from the repos that hold them</text>
-  <path class="uline" d="M250 66.5H344" stroke="#6fe7c8" stroke-width="1.6" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0" opacity="0.6"/>
-  <text class="mono ev3" x="1126" y="56" text-anchor="end" font-size="9.4" letter-spacing="2" fill="#5f7683">PROGRESS 3/6</text>
-  <rect class="ev4" x="968" y="76" width="16" height="16" rx="4" fill="#6fe7c8" fill-opacity="0.35" stroke="#6fe7c8" stroke-opacity="0.6"/>
-  <rect class="ev4" x="994" y="76" width="16" height="16" rx="4" fill="#6fe7c8" fill-opacity="0.35" stroke="#6fe7c8" stroke-opacity="0.6"/>
-  <g class="ev4"><g><rect x="1023" y="79" width="16" height="16" rx="4" fill="#fbe2a7" stroke="#0a0f14" stroke-width="2"/><rect x="1020" y="76" width="16" height="16" rx="4" fill="#6fe7c8" stroke="#0a0f14" stroke-width="2"/></g></g>
+  <text class="mono ev2" x="250" y="56" font-size="11" letter-spacing="3.4" fill="#2ee6ff" font-weight="700">THE BUILDS</text>
+  <text class="sans ev2" x="250" y="88" font-size="26" font-weight="800" fill="#f6f1ff" letter-spacing="-0.5">Systems shipped to production</text>
+  <text class="ev3" x="250" y="108" font-size="12.5" font-style="italic" fill="#b4a8d8">Pulled straight from the repos that hold them</text>
+  <path class="uline" d="M250 66.5H344" stroke="#2ee6ff" stroke-width="1.6" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0" opacity="0.6"/>
+  <text class="mono ev3" x="1126" y="56" text-anchor="end" font-size="9.4" letter-spacing="2" fill="#7a6ea3">PROGRESS 3/6</text>
+  <rect class="ev4" x="968" y="76" width="16" height="16" rx="4" fill="#2ee6ff" fill-opacity="0.35" stroke="#2ee6ff" stroke-opacity="0.6"/>
+  <rect class="ev4" x="994" y="76" width="16" height="16" rx="4" fill="#2ee6ff" fill-opacity="0.35" stroke="#2ee6ff" stroke-opacity="0.6"/>
+  <g class="ev4"><g><rect x="1023" y="79" width="16" height="16" rx="4" fill="#ffc857" stroke="#0a0f14" stroke-width="2"/><rect x="1020" y="76" width="16" height="16" rx="4" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2"/></g></g>
   <rect class="ev4" x="1046" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
   <rect class="ev4" x="1072" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
   <rect class="ev4" x="1098" y="76" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>
-  <text class="mono ev5" x="1126" y="110" text-anchor="end" font-size="9.4" letter-spacing="2" fill="#6fe7c8" fill-opacity="0.85">&#10022; SAVE POINT REACHED</text>
+  <text class="mono ev5" x="1126" y="110" text-anchor="end" font-size="9.4" letter-spacing="2" fill="#2ee6ff" fill-opacity="0.85">&#10022; SAVE POINT REACHED</text>
 <rect width="1200" height="150" rx="26" filter="url(#grain_c3)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

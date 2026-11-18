@@ -24,7 +24,7 @@ import xml.dom.minidom
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PANELS = ["banner", "chapter1", "chapter2", "chapter3", "chapter4", "chapter5",
-          "chapter6", "timeline", "loadout", "projects", "stats", "city",
+          "chapter6", "timeline", "loadout", "projects", "stats", "city", "companion", "ticker", "votes",
           "trophies", "questlog", "footer"]
 
 

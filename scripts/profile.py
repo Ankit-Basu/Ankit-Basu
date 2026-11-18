@@ -163,3 +163,14 @@ QUESTS = [
 ]
 
 LEARNING = ["Speech ML", "Distributed Systems", "Rust", "MLOps", "System Design"]
+
+# ------------------------------------------------------------ game mode
+# Visitors vote for the next quest by opening an issue titled "vote: <key>".
+# .github/workflows/vote.yml counts it into data/votes.json and redraws.
+# (key, label, one-liner, accent)
+VOTE_OPTIONS = [
+    ("pratirodh", "Ship Pratirodh v1", "First working voice-clone detector", CREAM),
+    ("ios", "SheShield on iOS", "Bring the safety app to iPhone", ROSE),
+    ("rust", "A Rust side quest", "A fast CLI tool, written in Rust", MINT),
+    ("oss", "Open-source arc", "Contribute to the tools I use daily", VIOLET),
+]

@@ -9,17 +9,17 @@
 
     <linearGradient id="rim_p" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#fbe2a7" stop-opacity="0.16"/>
+      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#a78bfa" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#6fe7c8" stop-opacity="0.30"/>
+      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_p" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6fe7c8" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#6fe7c8" stop-opacity="0.35"/>
-      <stop offset="70%" stop-color="#e4a2b1" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_p" x1="0" y1="0" x2="1" y2="0">
@@ -37,9 +37,9 @@
     </linearGradient>
 
     <linearGradient id="bg_p" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="#0c1a24"/>
-      <stop offset="55%" stop-color="#081219"/>
-      <stop offset="100%" stop-color="#0a1a23"/>
+      <stop offset="0%" stop-color="#150b30"/>
+      <stop offset="55%" stop-color="#07051a"/>
+      <stop offset="100%" stop-color="#0d0624"/>
     </linearGradient>
 
     <radialGradient id="vig_p" cx="50%" cy="42%" r="72%">
@@ -74,8 +74,11 @@
       <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
-    <pattern id="grid_p" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    <pattern id="grid_p" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <pattern id="scan_p" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
     </pattern>
   </defs>
 <style>
@@ -146,184 +149,185 @@
 </style>
 <rect width="1200" height="800" rx="26" fill="url(#bg_p)"/>
   <g filter="url(#blob_p)" opacity="0.55">
-  <ellipse cx="220" cy="220" rx="260" ry="203" fill="#fbe2a7" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:220px 220px"/>
-  <ellipse cx="860" cy="200" rx="250" ry="195" fill="#a78bfa" opacity="0.22" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:860px 200px"/>
-  <ellipse cx="300" cy="520" rx="240" ry="187" fill="#6fe7c8" opacity="0.16" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:300px 520px"/>
-  <ellipse cx="960" cy="560" rx="240" ry="187" fill="#e4a2b1" opacity="0.2" style="animation:drift 31s ease-in-out 5.1s infinite;transform-origin:960px 560px"/>
+  <ellipse cx="220" cy="220" rx="260" ry="203" fill="#ffc857" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:220px 220px"/>
+  <ellipse cx="860" cy="200" rx="250" ry="195" fill="#b6ff4f" opacity="0.22" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:860px 200px"/>
+  <ellipse cx="300" cy="520" rx="240" ry="187" fill="#2ee6ff" opacity="0.16" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:300px 520px"/>
+  <ellipse cx="960" cy="560" rx="240" ry="187" fill="#ff4fa0" opacity="0.2" style="animation:drift 31s ease-in-out 5.1s infinite;transform-origin:960px 560px"/>
   </g>
   <rect width="1200" height="800" rx="26" fill="url(#grid_p)"/>
   <rect width="1200" height="800" rx="26" fill="url(#vig_p)"/>
+  <rect width="1200" height="800" rx="26" fill="url(#scan_p)" opacity="0.5"/>
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
-            stroke="#e4a2b1" stroke-opacity="0.75" stroke-width="1.4"/>
-      <circle r="3" fill="#e4a2b1" style="animation:breathe 2.4s ease-in-out infinite"/>
+            stroke="#ff4fa0" stroke-opacity="0.75" stroke-width="1.4"/>
+      <circle r="3" fill="#ff4fa0" style="animation:breathe 2.4s ease-in-out infinite"/>
     </g>
-    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#e4a2b1"
+    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#ff4fa0"
           fill-opacity="0.9" font-weight="600">PROJECT VAULT</text>
-    <text x="46" y="89" font-size="25" font-weight="700" fill="#eaf2f6" letter-spacing="-0.4">Featured engineering systems</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#f6f1ff" letter-spacing="-0.4">Featured engineering systems</text>
   </g>
   <g class="ev1">
   <g>
   <clipPath id="tc56"><path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z"/></clipPath>
-  <g clip-path="url(#tc56)"><ellipse cx="208" cy="152" rx="270" ry="156" fill="#fbe2a7" opacity="0.18" filter="url(#soft_p)"/></g>
+  <g clip-path="url(#tc56)"><ellipse cx="208" cy="152" rx="270" ry="156" fill="#ffc857" opacity="0.18" filter="url(#soft_p)"/></g>
   <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,132 A20,20 0 0 1 66,113 H567 A20,20 0 0 1 586,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="66" y="361.5" width="501" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   <clipPath id="cl57"><path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl57)"><rect x="-224" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
-  <rect x="46" y="138" width="3" height="200" rx="1.5" fill="#fbe2a7" opacity="0.85" filter="url(#glowS_p)"/>
-  <g transform="rotate(-3 103.5 140.5)"><g><rect x="69" y="133" width="75" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66" y="130" width="75" height="21" rx="6" fill="#fbe2a7" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="103.5" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">LEGENDARY</text></g>
-  <g><g transform="translate(521,132) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#fbe2a7" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="565" y="145" text-anchor="end" font-size="12" font-weight="700" fill="#fbe2a7">20</text></g>
-  <g transform="translate(68,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.0s infinite"><g fill="none" stroke="#fbe2a7" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4 20 5.4v6.1c0 4.9-3.4 8.8-8 10.1-4.6-1.3-8-5.2-8-10.1V5.4Z"/>
+  <rect x="46" y="138" width="3" height="200" rx="1.5" fill="#ffc857" opacity="0.85" filter="url(#glowS_p)"/>
+  <g transform="rotate(-3 103.5 140.5)"><g><rect x="69" y="133" width="75" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66" y="130" width="75" height="21" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="103.5" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">LEGENDARY</text></g>
+  <g><g transform="translate(521,132) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#ffc857" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="565" y="145" text-anchor="end" font-size="12" font-weight="700" fill="#ffc857">20</text></g>
+  <g transform="translate(68,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.0s infinite"><g fill="none" stroke="#ffc857" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4 20 5.4v6.1c0 4.9-3.4 8.8-8 10.1-4.6-1.3-8-5.2-8-10.1V5.4Z"/>
         <path d="m8.6 12 2.4 2.5 4.4-4.7"/></g></g>
-  <text class="sans" x="116" y="192" font-size="23" font-weight="800" fill="#eaf2f6" letter-spacing="-0.4">SheShield</text>
-  <text class="mono" x="116" y="210" font-size="10.2" letter-spacing="1.2" fill="#fbe2a7" fill-opacity="0.92">NO ONE WALKS HOME ALONE</text>
-  <text x="70" y="246" font-size="12.6" fill="#93a8b4">Women's safety platform for LPU: one-tap SOS without sign-in,</text>
-  <text x="70" y="266" font-size="12.6" fill="#93a8b4">verified Walk-With-Us escorts, anonymous incident reports and a</text>
-  <text x="70" y="286" font-size="12.6" fill="#93a8b4">live campus safety map. Web app + Expo SDK 58 Android app.</text>
-  <g><rect x="70" y="320" width="40" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="90" y="334" text-anchor="middle" font-size="10" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">PHP</text></g>
-  <g><rect x="116" y="320" width="53" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="142" y="334" text-anchor="middle" font-size="10" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">MySQL</text></g>
-  <g><rect x="175" y="320" width="96" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="223" y="334" text-anchor="middle" font-size="10" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">React Native</text></g>
-  <g><rect x="277" y="320" width="46" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="300" y="334" text-anchor="middle" font-size="10" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">Expo</text></g>
-  <g><rect x="329" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#fbe2a7" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="362" y="334" text-anchor="middle" font-size="10" fill="#fbe2a7" fill-opacity="0.95" letter-spacing="0.4">Leaflet</text></g>
-  <text class="mono" x="565" y="335" text-anchor="end" font-size="9.6" fill="#6fe7c8" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
+  <text class="sans" x="116" y="192" font-size="23" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">SheShield</text>
+  <text class="mono" x="116" y="210" font-size="10.2" letter-spacing="1.2" fill="#ffc857" fill-opacity="0.92">NO ONE WALKS HOME ALONE</text>
+  <text x="70" y="246" font-size="12.6" fill="#b4a8d8">Women's safety platform for LPU: one-tap SOS without sign-in,</text>
+  <text x="70" y="266" font-size="12.6" fill="#b4a8d8">verified Walk-With-Us escorts, anonymous incident reports and a</text>
+  <text x="70" y="286" font-size="12.6" fill="#b4a8d8">live campus safety map. Web app + Expo SDK 58 Android app.</text>
+  <g><rect x="70" y="320" width="40" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="90" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">PHP</text></g>
+  <g><rect x="116" y="320" width="53" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="142" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">MySQL</text></g>
+  <g><rect x="175" y="320" width="96" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="223" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">React Native</text></g>
+  <g><rect x="277" y="320" width="46" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="300" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">Expo</text></g>
+  <g><rect x="329" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffc857" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="362" y="334" text-anchor="middle" font-size="10" fill="#ffc857" fill-opacity="0.95" letter-spacing="0.4">Leaflet</text></g>
+  <text class="mono" x="565" y="335" text-anchor="end" font-size="9.6" fill="#2ee6ff" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
   </g>
   <g class="ev2">
   <g>
   <clipPath id="tc58"><path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z"/></clipPath>
-  <g clip-path="url(#tc58)"><ellipse cx="775" cy="152" rx="270" ry="156" fill="#a78bfa" opacity="0.18" filter="url(#soft_p)"/></g>
+  <g clip-path="url(#tc58)"><ellipse cx="775" cy="152" rx="270" ry="156" fill="#b6ff4f" opacity="0.18" filter="url(#soft_p)"/></g>
   <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M614,132 A20,20 0 0 1 633,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="633" y="361.5" width="501" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   <clipPath id="cl59"><path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z"/></clipPath><g clip-path="url(#cl59)"><rect x="342" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
   </g>
-  <rect x="613" y="138" width="3" height="200" rx="1.5" fill="#a78bfa" opacity="0.85" filter="url(#glowS_p)"/>
-  <g transform="rotate(-3 662.0 140.5)"><g><rect x="636" y="133" width="58" height="21" rx="6" fill="#fbe2a7" stroke="#0a0f14" stroke-width="2.2"/><rect x="633" y="130" width="58" height="21" rx="6" fill="#a78bfa" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="662.0" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">MYTHIC</text></g>
-  <g transform="translate(635,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.6s infinite"><g fill="none" stroke="#a78bfa" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2.4 4.6 13.6h6.2l-1.2 8 8.8-11.2h-6.2Z"/></g></g>
-  <text class="sans" x="683" y="192" font-size="23" font-weight="800" fill="#eaf2f6" letter-spacing="-0.4">Vyapaar</text>
-  <text class="mono" x="683" y="210" font-size="10.2" letter-spacing="1.2" fill="#a78bfa" fill-opacity="0.92">AGENT COMMERCE ON RAZORPAY RAILS</text>
-  <text x="637" y="246" font-size="12.6" fill="#93a8b4">An outside AI agent discovers the catalog, proves a human's</text>
-  <text x="637" y="266" font-size="12.6" fill="#93a8b4">consent and clears nine guardrails before it pays, while the</text>
-  <text x="637" y="286" font-size="12.6" fill="#93a8b4">merchant's own growth agent can never fake a discount.</text>
-  <g><rect x="637" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#a78bfa" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="670" y="334" text-anchor="middle" font-size="10" fill="#a78bfa" fill-opacity="0.95" letter-spacing="0.4">FastAPI</text></g>
-  <g><rect x="708" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#a78bfa" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="740" y="334" text-anchor="middle" font-size="10" fill="#a78bfa" fill-opacity="0.95" letter-spacing="0.4">Next.js</text></g>
-  <g><rect x="779" y="320" width="71" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#a78bfa" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="814" y="334" text-anchor="middle" font-size="10" fill="#a78bfa" fill-opacity="0.95" letter-spacing="0.4">Razorpay</text></g>
-  <g><rect x="856" y="320" width="96" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#a78bfa" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="904" y="334" text-anchor="middle" font-size="10" fill="#a78bfa" fill-opacity="0.95" letter-spacing="0.4">JWT mandates</text></g>
-  <text class="mono" x="1132" y="335" text-anchor="end" font-size="9.6" fill="#6fe7c8" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
+  <rect x="613" y="138" width="3" height="200" rx="1.5" fill="#b6ff4f" opacity="0.85" filter="url(#glowS_p)"/>
+  <g transform="rotate(-3 662.0 140.5)"><g><rect x="636" y="133" width="58" height="21" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/><rect x="633" y="130" width="58" height="21" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="662.0" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">MYTHIC</text></g>
+  <g transform="translate(635,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.6s infinite"><g fill="none" stroke="#b6ff4f" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2.4 4.6 13.6h6.2l-1.2 8 8.8-11.2h-6.2Z"/></g></g>
+  <text class="sans" x="683" y="192" font-size="23" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">Vyapaar</text>
+  <text class="mono" x="683" y="210" font-size="10.2" letter-spacing="1.2" fill="#b6ff4f" fill-opacity="0.92">AGENT COMMERCE ON RAZORPAY RAILS</text>
+  <text x="637" y="246" font-size="12.6" fill="#b4a8d8">An outside AI agent discovers the catalog, proves a human's</text>
+  <text x="637" y="266" font-size="12.6" fill="#b4a8d8">consent and clears nine guardrails before it pays, while the</text>
+  <text x="637" y="286" font-size="12.6" fill="#b4a8d8">merchant's own growth agent can never fake a discount.</text>
+  <g><rect x="637" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="670" y="334" text-anchor="middle" font-size="10" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">FastAPI</text></g>
+  <g><rect x="708" y="320" width="65" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="740" y="334" text-anchor="middle" font-size="10" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">Next.js</text></g>
+  <g><rect x="779" y="320" width="71" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="814" y="334" text-anchor="middle" font-size="10" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">Razorpay</text></g>
+  <g><rect x="856" y="320" width="96" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#b6ff4f" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="904" y="334" text-anchor="middle" font-size="10" fill="#b6ff4f" fill-opacity="0.95" letter-spacing="0.4">JWT mandates</text></g>
+  <text class="mono" x="1132" y="335" text-anchor="end" font-size="9.6" fill="#2ee6ff" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
   </g>
   <g class="ev3">
   <g>
   <clipPath id="tc60"><path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc60)"><ellipse cx="125" cy="425" rx="131" ry="144" fill="#e4a2b1" opacity="0.18" filter="url(#soft_p)"/></g>
+  <g clip-path="url(#tc60)"><ellipse cx="125" cy="425" rx="131" ry="144" fill="#ff4fa0" opacity="0.18" filter="url(#soft_p)"/></g>
   <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47.0,408 A20,20 0 0 1 66.0,389 H288.0 A20,20 0 0 1 307.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="66" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   <clipPath id="cl61"><path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z"/></clipPath><g clip-path="url(#cl61)"><rect x="-85" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
   </g>
-  <rect x="46.0" y="414" width="3" height="180" rx="1.5" fill="#e4a2b1" opacity="0.85" filter="url(#glowS_p)"/>
-  <g transform="rotate(-3 89.5 416.5)"><g><rect x="69.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66.0" y="406" width="47" height="21" rx="6" fill="#e4a2b1" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="89.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
-  <g transform="translate(68.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.2s infinite"><g fill="none" stroke="#e4a2b1" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.6"/><path d="M2.8 20.4c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/>
+  <rect x="46.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85" filter="url(#glowS_p)"/>
+  <g transform="rotate(-3 89.5 416.5)"><g><rect x="69.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66.0" y="406" width="47" height="21" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="89.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
+  <g transform="translate(68.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.2s infinite"><g fill="none" stroke="#ff4fa0" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.6"/><path d="M2.8 20.4c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/>
         <path d="M16.4 4.8a3.6 3.6 0 0 1 0 6.6M17.6 14.6c2.2.7 3.6 2.7 3.6 5.1"/></g></g>
-  <text class="sans" x="110.0" y="462" font-size="18" font-weight="800" fill="#eaf2f6" letter-spacing="-0.4">Hirehearsal</text>
-  <text class="mono" x="110.0" y="478" font-size="9" letter-spacing="1.2" fill="#e4a2b1" fill-opacity="0.92">REHEARSE THE HIRE</text>
-  <text x="70.0" y="510.0" font-size="11" fill="#93a8b4">Ora, a voice-first AI interviewer,</text>
-  <text x="70.0" y="527.5" font-size="11" fill="#93a8b4">runs tech, project and HR rounds</text>
-  <text x="70.0" y="545.0" font-size="11" fill="#93a8b4">and scores every answer honestly.</text>
-  <g><rect x="70.0" y="576" width="80" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="110" y="590" text-anchor="middle" font-size="9.4" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Next.js 16</text></g>
-  <g><rect x="156.0" y="576" width="45" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="178" y="590" text-anchor="middle" font-size="9.4" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Java</text></g>
-  <g><rect x="207.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="235" y="590" text-anchor="middle" font-size="9.4" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Docker</text></g>
+  <text class="sans" x="110.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">Hirehearsal</text>
+  <text class="mono" x="110.0" y="478" font-size="9" letter-spacing="1.2" fill="#ff4fa0" fill-opacity="0.92">REHEARSE THE HIRE</text>
+  <text x="70.0" y="510.0" font-size="11" fill="#b4a8d8">Ora, a voice-first AI interviewer,</text>
+  <text x="70.0" y="527.5" font-size="11" fill="#b4a8d8">runs tech, project and HR rounds</text>
+  <text x="70.0" y="545.0" font-size="11" fill="#b4a8d8">and scores every answer honestly.</text>
+  <g><rect x="70.0" y="576" width="80" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="110" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Next.js 16</text></g>
+  <g><rect x="156.0" y="576" width="45" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="178" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Java</text></g>
+  <g><rect x="207.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="235" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Docker</text></g>
   </g>
   <g class="ev4">
   <g>
   <clipPath id="tc62"><path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc62)"><ellipse cx="407" cy="425" rx="131" ry="144" fill="#e4a2b1" opacity="0.18" filter="url(#soft_p)"/></g>
+  <g clip-path="url(#tc62)"><ellipse cx="407" cy="425" rx="131" ry="144" fill="#ff4fa0" opacity="0.18" filter="url(#soft_p)"/></g>
   <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M329.0,408 A20,20 0 0 1 348.0,389 H570.0 A20,20 0 0 1 589.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="348" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   <clipPath id="cl63"><path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z"/></clipPath><g clip-path="url(#cl63)"><rect x="197" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
   </g>
-  <rect x="328.0" y="414" width="3" height="180" rx="1.5" fill="#e4a2b1" opacity="0.85" filter="url(#glowS_p)"/>
-  <g transform="rotate(-3 371.5 416.5)"><g><rect x="351.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="348.0" y="406" width="47" height="21" rx="6" fill="#e4a2b1" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="371.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
-  <g><g transform="translate(524.0,408) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#fbe2a7" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="568.0" y="421" text-anchor="end" font-size="12" font-weight="700" fill="#fbe2a7">1</text></g>
-  <g transform="translate(350.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.7999999999999998s infinite"><g fill="none" stroke="#e4a2b1" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 22 8l-10 4.8L2 8Z"/>
+  <rect x="328.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85" filter="url(#glowS_p)"/>
+  <g transform="rotate(-3 371.5 416.5)"><g><rect x="351.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="348.0" y="406" width="47" height="21" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="371.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
+  <g><g transform="translate(524.0,408) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#ffc857" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="568.0" y="421" text-anchor="end" font-size="12" font-weight="700" fill="#ffc857">1</text></g>
+  <g transform="translate(350.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.7999999999999998s infinite"><g fill="none" stroke="#ff4fa0" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 22 8l-10 4.8L2 8Z"/>
         <path d="M6.2 10.4v5.2c0 1.9 2.6 3.4 5.8 3.4s5.8-1.5 5.8-3.4v-5.2M22 8v5.6"/></g></g>
-  <text class="sans" x="392.0" y="462" font-size="18" font-weight="800" fill="#eaf2f6" letter-spacing="-0.4">BookMyCampus</text>
-  <text class="mono" x="392.0" y="478" font-size="9" letter-spacing="1.2" fill="#e4a2b1" fill-opacity="0.92">CAMPUS BOOKING PLATFORM</text>
-  <text x="352.0" y="510.0" font-size="11" fill="#93a8b4">Rooms, labs and kit with approvals,</text>
-  <text x="352.0" y="527.5" font-size="11" fill="#93a8b4">QR check-in and no-show release,</text>
-  <text x="352.0" y="545.0" font-size="11" fill="#93a8b4">plus a make-up class finder.</text>
-  <g><rect x="352.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="380" y="590" text-anchor="middle" font-size="9.4" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">Django</text></g>
-  <g><rect x="414.0" y="576" width="80" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="454" y="590" text-anchor="middle" font-size="9.4" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">PostgreSQL</text></g>
-  <g><rect x="500.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#e4a2b1" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="526" y="590" text-anchor="middle" font-size="9.4" fill="#e4a2b1" fill-opacity="0.95" letter-spacing="0.4">React</text></g>
-  <text class="mono" x="568.0" y="442" text-anchor="end" font-size="9.6" fill="#6fe7c8" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
+  <text class="sans" x="392.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">BookMyCampus</text>
+  <text class="mono" x="392.0" y="478" font-size="9" letter-spacing="1.2" fill="#ff4fa0" fill-opacity="0.92">CAMPUS BOOKING PLATFORM</text>
+  <text x="352.0" y="510.0" font-size="11" fill="#b4a8d8">Rooms, labs and kit with approvals,</text>
+  <text x="352.0" y="527.5" font-size="11" fill="#b4a8d8">QR check-in and no-show release,</text>
+  <text x="352.0" y="545.0" font-size="11" fill="#b4a8d8">plus a make-up class finder.</text>
+  <g><rect x="352.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="380" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">Django</text></g>
+  <g><rect x="414.0" y="576" width="80" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="454" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">PostgreSQL</text></g>
+  <g><rect x="500.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#ff4fa0" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="526" y="590" text-anchor="middle" font-size="9.4" fill="#ff4fa0" fill-opacity="0.95" letter-spacing="0.4">React</text></g>
+  <text class="mono" x="568.0" y="442" text-anchor="end" font-size="9.6" fill="#2ee6ff" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
   </g>
   <g class="ev5">
   <g>
   <clipPath id="tc64"><path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc64)"><ellipse cx="689" cy="425" rx="131" ry="144" fill="#6fe7c8" opacity="0.18" filter="url(#soft_p)"/></g>
+  <g clip-path="url(#tc64)"><ellipse cx="689" cy="425" rx="131" ry="144" fill="#2ee6ff" opacity="0.18" filter="url(#soft_p)"/></g>
   <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M611.0,408 A20,20 0 0 1 630.0,389 H852.0 A20,20 0 0 1 871.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="630" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   <clipPath id="cl65"><path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z"/></clipPath><g clip-path="url(#cl65)"><rect x="479" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
   </g>
-  <rect x="610.0" y="414" width="3" height="180" rx="1.5" fill="#6fe7c8" opacity="0.85" filter="url(#glowS_p)"/>
-  <g transform="rotate(-3 653.5 416.5)"><g><rect x="633.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="630.0" y="406" width="47" height="21" rx="6" fill="#6fe7c8" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="653.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
-  <g transform="translate(632.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 2.4s infinite"><g fill="none" stroke="#6fe7c8" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
-  <text class="sans" x="674.0" y="462" font-size="18" font-weight="800" fill="#eaf2f6" letter-spacing="-0.4">TimedInk</text>
-  <text class="mono" x="674.0" y="478" font-size="9" letter-spacing="1.2" fill="#6fe7c8" fill-opacity="0.92">FAULT-TOLERANT SCHEDULER</text>
-  <text x="634.0" y="510.0" font-size="11" fill="#93a8b4">Sends land on time through restarts,</text>
-  <text x="634.0" y="527.5" font-size="11" fill="#93a8b4">a wiped Redis and rate limits.</text>
-  <text x="634.0" y="545.0" font-size="11" fill="#93a8b4">73 hermetic tests prove it.</text>
-  <g><rect x="634.0" y="576" width="45" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="656" y="590" text-anchor="middle" font-size="9.4" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Node</text></g>
-  <g><rect x="685.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="713" y="590" text-anchor="middle" font-size="9.4" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">BullMQ</text></g>
-  <g><rect x="747.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="772" y="590" text-anchor="middle" font-size="9.4" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Redis</text></g>
-  <text class="mono" x="850.0" y="422" text-anchor="end" font-size="9.6" fill="#6fe7c8" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
+  <rect x="610.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85" filter="url(#glowS_p)"/>
+  <g transform="rotate(-3 653.5 416.5)"><g><rect x="633.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="630.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="653.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
+  <g transform="translate(632.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 2.4s infinite"><g fill="none" stroke="#2ee6ff" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
+  <text class="sans" x="674.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">TimedInk</text>
+  <text class="mono" x="674.0" y="478" font-size="9" letter-spacing="1.2" fill="#2ee6ff" fill-opacity="0.92">FAULT-TOLERANT SCHEDULER</text>
+  <text x="634.0" y="510.0" font-size="11" fill="#b4a8d8">Sends land on time through restarts,</text>
+  <text x="634.0" y="527.5" font-size="11" fill="#b4a8d8">a wiped Redis and rate limits.</text>
+  <text x="634.0" y="545.0" font-size="11" fill="#b4a8d8">73 hermetic tests prove it.</text>
+  <g><rect x="634.0" y="576" width="45" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="656" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">Node</text></g>
+  <g><rect x="685.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="713" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">BullMQ</text></g>
+  <g><rect x="747.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="772" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">Redis</text></g>
+  <text class="mono" x="850.0" y="422" text-anchor="end" font-size="9.6" fill="#2ee6ff" fill-opacity="0.9">&#9679; LIVE &#8599;</text>
   </g>
   <g class="ev6">
   <g>
   <clipPath id="tc66"><path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc66)"><ellipse cx="971" cy="425" rx="131" ry="144" fill="#6fe7c8" opacity="0.18" filter="url(#soft_p)"/></g>
+  <g clip-path="url(#tc66)"><ellipse cx="971" cy="425" rx="131" ry="144" fill="#2ee6ff" opacity="0.18" filter="url(#soft_p)"/></g>
   <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M893.0,408 A20,20 0 0 1 912.0,389 H1134.0 A20,20 0 0 1 1153.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="912" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   <clipPath id="cl67"><path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z"/></clipPath><g clip-path="url(#cl67)"><rect x="761" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 4.5s infinite"/></g>
   </g>
-  <rect x="892.0" y="414" width="3" height="180" rx="1.5" fill="#6fe7c8" opacity="0.85" filter="url(#glowS_p)"/>
-  <g transform="rotate(-3 935.5 416.5)"><g><rect x="915.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="912.0" y="406" width="47" height="21" rx="6" fill="#6fe7c8" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="935.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
-  <g transform="translate(914.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 3.0s infinite"><g fill="none" stroke="#6fe7c8" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8-4.6 4 4.6 4M15.6 8l4.6 4-4.6 4M13.6 5.2l-3.2 13.6"/></g></g>
-  <text class="sans" x="956.0" y="462" font-size="18" font-weight="800" fill="#eaf2f6" letter-spacing="-0.4">PII Redaction</text>
-  <text class="mono" x="956.0" y="478" font-size="9" letter-spacing="1.2" fill="#6fe7c8" fill-opacity="0.92">DOCUMENT PRIVACY ENGINE</text>
-  <text x="916.0" y="510.0" font-size="11" fill="#93a8b4">Hybrid regex + NER engine swaps</text>
-  <text x="916.0" y="527.5" font-size="11" fill="#93a8b4">10 PII types for realistic fakes</text>
-  <text x="916.0" y="545.0" font-size="11" fill="#93a8b4">in .docx, tables kept intact.</text>
-  <g><rect x="916.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="944" y="590" text-anchor="middle" font-size="9.4" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">Python</text></g>
-  <g><rect x="978.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="1004" y="590" text-anchor="middle" font-size="9.4" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">spaCy</text></g>
-  <g><rect x="1035.0" y="576" width="86" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#6fe7c8" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="1078" y="590" text-anchor="middle" font-size="9.4" fill="#6fe7c8" fill-opacity="0.95" letter-spacing="0.4">python-docx</text></g>
+  <rect x="892.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85" filter="url(#glowS_p)"/>
+  <g transform="rotate(-3 935.5 416.5)"><g><rect x="915.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="912.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="935.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
+  <g transform="translate(914.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 3.0s infinite"><g fill="none" stroke="#2ee6ff" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8-4.6 4 4.6 4M15.6 8l4.6 4-4.6 4M13.6 5.2l-3.2 13.6"/></g></g>
+  <text class="sans" x="956.0" y="462" font-size="18" font-weight="800" fill="#f6f1ff" letter-spacing="-0.4">PII Redaction</text>
+  <text class="mono" x="956.0" y="478" font-size="9" letter-spacing="1.2" fill="#2ee6ff" fill-opacity="0.92">DOCUMENT PRIVACY ENGINE</text>
+  <text x="916.0" y="510.0" font-size="11" fill="#b4a8d8">Hybrid regex + NER engine swaps</text>
+  <text x="916.0" y="527.5" font-size="11" fill="#b4a8d8">10 PII types for realistic fakes</text>
+  <text x="916.0" y="545.0" font-size="11" fill="#b4a8d8">in .docx, tables kept intact.</text>
+  <g><rect x="916.0" y="576" width="56" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="944" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">Python</text></g>
+  <g><rect x="978.0" y="576" width="51" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="1004" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">spaCy</text></g>
+  <g><rect x="1035.0" y="576" width="86" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="1078" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">python-docx</text></g>
   </g>
   <g class="ev8"><g>
   <clipPath id="tc68"><path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z"/></clipPath>
-  <g clip-path="url(#tc68)"><ellipse cx="378" cy="664" rx="554" ry="69" fill="#a78bfa" opacity="0.1" filter="url(#soft_p)"/></g>
+  <g clip-path="url(#tc68)"><ellipse cx="378" cy="664" rx="554" ry="69" fill="#b6ff4f" opacity="0.1" filter="url(#soft_p)"/></g>
   <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
   <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,664 A18,18 0 0 1 64,647 H1136 A18,18 0 0 1 1153,664" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="64" y="755.5" width="1072" height="1.2" rx="0.6" fill="url(#refr_p)"/>
   </g>
-  <g><g><rect x="71" y="667" width="94" height="24" rx="6" fill="#fbe2a7" stroke="#0a0f14" stroke-width="2.2"/><rect x="68" y="664" width="94" height="24" rx="6" fill="#a78bfa" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="115.0" y="679.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">SIDE QUESTS</text></g>
-  <text class="mono" x="178" y="681" font-size="10" fill="#93a8b4">more chapters of the same story</text>
-  <rect x="68" y="704" width="256" height="23" rx="11.5" fill="#fbe2a7" fill-opacity="0.07" stroke="#fbe2a7" stroke-opacity="0.35"/><text x="80" y="719.5" font-size="11"><tspan fill="#fbe2a7" font-weight="700">GridSense</tspan><tspan fill="#93a8b4">  3D smart-grid digital twin</tspan></text>
-  <rect x="334" y="704" width="262" height="23" rx="11.5" fill="#e4a2b1" fill-opacity="0.07" stroke="#e4a2b1" stroke-opacity="0.35"/><text x="346" y="719.5" font-size="11"><tspan fill="#e4a2b1" font-weight="700">MindBloom</tspan><tspan fill="#93a8b4">  Gemini AI wellness for kids</tspan></text>
-  <rect x="606" y="704" width="283" height="23" rx="11.5" fill="#6fe7c8" fill-opacity="0.07" stroke="#6fe7c8" stroke-opacity="0.35"/><text x="618" y="719.5" font-size="11"><tspan fill="#6fe7c8" font-weight="700">Pixel-Board</tspan><tspan fill="#93a8b4">  8-bit multiplayer whiteboard</tspan></text>
-  <rect x="68" y="734" width="298" height="23" rx="11.5" fill="#a78bfa" fill-opacity="0.07" stroke="#a78bfa" stroke-opacity="0.35"/><text x="80" y="749.5" font-size="11"><tspan fill="#a78bfa" font-weight="700">CampusWhisper</tspan><tspan fill="#93a8b4">  Anonymous campus confessions</tspan></text>
-  <rect x="376" y="734" width="262" height="23" rx="11.5" fill="#fbe2a7" fill-opacity="0.07" stroke="#fbe2a7" stroke-opacity="0.35"/><text x="388" y="749.5" font-size="11"><tspan fill="#fbe2a7" font-weight="700">AlgoTrail</tspan><tspan fill="#93a8b4">  Algorithm visual playground</tspan></text>
-  <rect x="648" y="734" width="260" height="23" rx="11.5" fill="#e4a2b1" fill-opacity="0.07" stroke="#e4a2b1" stroke-opacity="0.35"/><text x="660" y="749.5" font-size="11"><tspan fill="#e4a2b1" font-weight="700">SUDARSHAN-X</tspan><tspan fill="#93a8b4">  Autonomous drone defence</tspan></text>
-  <rect x="68" y="764" width="294" height="23" rx="11.5" fill="#6fe7c8" fill-opacity="0.07" stroke="#6fe7c8" stroke-opacity="0.35"/><text x="80" y="779.5" font-size="11"><tspan fill="#6fe7c8" font-weight="700">KrishiVaani</tspan><tspan fill="#93a8b4">  Multilingual farming assistant</tspan></text>
+  <g><g><rect x="71" y="667" width="94" height="24" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/><rect x="68" y="664" width="94" height="24" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="115.0" y="679.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">SIDE QUESTS</text></g>
+  <text class="mono" x="178" y="681" font-size="10" fill="#b4a8d8">more chapters of the same story</text>
+  <rect x="68" y="704" width="256" height="23" rx="11.5" fill="#ffc857" fill-opacity="0.07" stroke="#ffc857" stroke-opacity="0.35"/><text x="80" y="719.5" font-size="11"><tspan fill="#ffc857" font-weight="700">GridSense</tspan><tspan fill="#b4a8d8">  3D smart-grid digital twin</tspan></text>
+  <rect x="334" y="704" width="262" height="23" rx="11.5" fill="#ff4fa0" fill-opacity="0.07" stroke="#ff4fa0" stroke-opacity="0.35"/><text x="346" y="719.5" font-size="11"><tspan fill="#ff4fa0" font-weight="700">MindBloom</tspan><tspan fill="#b4a8d8">  Gemini AI wellness for kids</tspan></text>
+  <rect x="606" y="704" width="283" height="23" rx="11.5" fill="#2ee6ff" fill-opacity="0.07" stroke="#2ee6ff" stroke-opacity="0.35"/><text x="618" y="719.5" font-size="11"><tspan fill="#2ee6ff" font-weight="700">Pixel-Board</tspan><tspan fill="#b4a8d8">  8-bit multiplayer whiteboard</tspan></text>
+  <rect x="68" y="734" width="298" height="23" rx="11.5" fill="#b6ff4f" fill-opacity="0.07" stroke="#b6ff4f" stroke-opacity="0.35"/><text x="80" y="749.5" font-size="11"><tspan fill="#b6ff4f" font-weight="700">CampusWhisper</tspan><tspan fill="#b4a8d8">  Anonymous campus confessions</tspan></text>
+  <rect x="376" y="734" width="262" height="23" rx="11.5" fill="#ffc857" fill-opacity="0.07" stroke="#ffc857" stroke-opacity="0.35"/><text x="388" y="749.5" font-size="11"><tspan fill="#ffc857" font-weight="700">AlgoTrail</tspan><tspan fill="#b4a8d8">  Algorithm visual playground</tspan></text>
+  <rect x="648" y="734" width="260" height="23" rx="11.5" fill="#ff4fa0" fill-opacity="0.07" stroke="#ff4fa0" stroke-opacity="0.35"/><text x="660" y="749.5" font-size="11"><tspan fill="#ff4fa0" font-weight="700">SUDARSHAN-X</tspan><tspan fill="#b4a8d8">  Autonomous drone defence</tspan></text>
+  <rect x="68" y="764" width="294" height="23" rx="11.5" fill="#2ee6ff" fill-opacity="0.07" stroke="#2ee6ff" stroke-opacity="0.35"/><text x="80" y="779.5" font-size="11"><tspan fill="#2ee6ff" font-weight="700">KrishiVaani</tspan><tspan fill="#b4a8d8">  Multilingual farming assistant</tspan></text>
   </g>
 <rect width="1200" height="800" rx="26" filter="url(#grain_p)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

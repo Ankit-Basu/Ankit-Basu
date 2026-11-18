@@ -9,17 +9,17 @@
 
     <linearGradient id="rim_o" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
-      <stop offset="22%" stop-color="#fbe2a7" stop-opacity="0.16"/>
+      <stop offset="22%" stop-color="#ffc857" stop-opacity="0.18"/>
       <stop offset="48%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="74%" stop-color="#a78bfa" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#6fe7c8" stop-opacity="0.30"/>
+      <stop offset="74%" stop-color="#ff4fa0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2ee6ff" stop-opacity="0.34"/>
     </linearGradient>
 
     <linearGradient id="refr_o" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6fe7c8" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#6fe7c8" stop-opacity="0.35"/>
-      <stop offset="70%" stop-color="#e4a2b1" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#e4a2b1" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#2ee6ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#2ee6ff" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#ff4fa0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff4fa0" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="spec_o" x1="0" y1="0" x2="1" y2="0">
@@ -37,9 +37,9 @@
     </linearGradient>
 
     <linearGradient id="bg_o" x1="0" y1="0" x2="0.6" y2="1">
-      <stop offset="0%" stop-color="#0c1a24"/>
-      <stop offset="55%" stop-color="#081219"/>
-      <stop offset="100%" stop-color="#0a1a23"/>
+      <stop offset="0%" stop-color="#150b30"/>
+      <stop offset="55%" stop-color="#07051a"/>
+      <stop offset="100%" stop-color="#0d0624"/>
     </linearGradient>
 
     <radialGradient id="vig_o" cx="50%" cy="42%" r="72%">
@@ -74,8 +74,11 @@
       <feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer>
     </filter>
 
-    <pattern id="grid_o" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    <pattern id="grid_o" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="1" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <pattern id="scan_o" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.16"/>
     </pattern>
   </defs>
 <style>
@@ -146,195 +149,196 @@
 @keyframes trail{0%,8%{stroke-dashoffset:.86}100%{stroke-dashoffset:0}}.trail{animation:trail 3.4s cubic-bezier(.45,.05,.35,1)}</style>
 <rect width="1200" height="600" rx="26" fill="url(#bg_o)"/>
   <g filter="url(#blob_o)" opacity="0.55">
-  <ellipse cx="240" cy="200" rx="250" ry="195" fill="#fbe2a7" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:240px 200px"/>
-  <ellipse cx="700" cy="420" rx="250" ry="195" fill="#e4a2b1" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:700px 420px"/>
-  <ellipse cx="1040" cy="220" rx="230" ry="179" fill="#6fe7c8" opacity="0.16" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1040px 220px"/>
+  <ellipse cx="240" cy="200" rx="250" ry="195" fill="#ffc857" opacity="0.2" style="animation:drift 16s ease-in-out 0.0s infinite;transform-origin:240px 200px"/>
+  <ellipse cx="700" cy="420" rx="250" ry="195" fill="#ff4fa0" opacity="0.18" style="animation:drift2 21s ease-in-out 1.7s infinite;transform-origin:700px 420px"/>
+  <ellipse cx="1040" cy="220" rx="230" ry="179" fill="#2ee6ff" opacity="0.16" style="animation:drift3 26s ease-in-out 3.4s infinite;transform-origin:1040px 220px"/>
   </g>
   <rect width="1200" height="600" rx="26" fill="url(#grid_o)"/>
   <rect width="1200" height="600" rx="26" fill="url(#vig_o)"/>
+  <rect width="1200" height="600" rx="26" fill="url(#scan_o)" opacity="0.5"/>
 <g class="ev0">
     <g transform="translate(55,56)">
       <path d="M0,-9 L7.8,-4.5 L7.8,4.5 L0,9 L-7.8,4.5 L-7.8,-4.5 Z" fill="none"
-            stroke="#fbe2a7" stroke-opacity="0.75" stroke-width="1.4"/>
-      <circle r="3" fill="#fbe2a7" style="animation:breathe 2.4s ease-in-out infinite"/>
+            stroke="#ffc857" stroke-opacity="0.75" stroke-width="1.4"/>
+      <circle r="3" fill="#ffc857" style="animation:breathe 2.4s ease-in-out infinite"/>
     </g>
-    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#fbe2a7"
+    <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#ffc857"
           fill-opacity="0.9" font-weight="600">ORIGIN STORY</text>
-    <text x="46" y="89" font-size="25" font-weight="700" fill="#eaf2f6" letter-spacing="-0.4">From level 1 to now</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#f6f1ff" letter-spacing="-0.4">From level 1 to now</text>
   </g>
   <path d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="8" stroke-linecap="round"/>
   <path id="trail_o" class="trail" d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="url(#refr_o)" stroke-width="2.4" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0"/>
-  <path d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="#fbe2a7" stroke-opacity="0.35" stroke-width="1.4" stroke-dasharray="2 9"/>
+  <path d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="#ffc857" stroke-opacity="0.35" stroke-width="1.4" stroke-dasharray="2 9"/>
   <g>
-    <circle r="11" fill="#6fe7c8" fill-opacity="0.18"/>
-    <rect x="-5.5" y="-5.5" width="11" height="11" rx="2" fill="#6fe7c8" stroke="#0a0f14" stroke-width="1.6"
+    <circle r="11" fill="#2ee6ff" fill-opacity="0.18"/>
+    <rect x="-5.5" y="-5.5" width="11" height="11" rx="2" fill="#2ee6ff" stroke="#0a0f14" stroke-width="1.6"
           transform="rotate(45)" filter="url(#glowS_o)"/>
     <animateMotion dur="22s" repeatCount="indefinite" rotate="0" calcMode="linear">
       <mpath href="#trail_o" xlink:href="#trail_o"/>
     </animateMotion>
   </g>
   <g class="ev1">
-  <rect x="139.5" y="186" width="1" height="16" fill="#fbe2a7" opacity="0.5"/>
+  <rect x="139.5" y="186" width="1" height="16" fill="#ffc857" opacity="0.5"/>
   <g>
   <clipPath id="tc27"><path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z"/></clipPath>
-  <g clip-path="url(#tc27)"><ellipse cx="108" cy="218" rx="103" ry="62" fill="#fbe2a7" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc27)"><ellipse cx="108" cy="218" rx="103" ry="62" fill="#ffc857" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="url(#pane_o)"/>
   <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M47,218 A16,16 0 0 1 62,203 H236 A16,16 0 0 1 251,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="62" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="62" y="226" font-size="9.8" letter-spacing="2" fill="#fbe2a7" font-weight="700">SEP 2023</text>
-  <text class="sans" x="62" y="249" font-size="15" font-weight="700" fill="#eaf2f6">Player spawned</text>
-  <text x="62" y="270" font-size="11" fill="#93a8b4">Created this GitHub account.</text>
-  <text x="62" y="287" font-size="11" fill="#93a8b4">Level 1, no gear, big ideas.</text>
-  <circle cx="140" cy="176" r="8" fill="#081219" stroke="#fbe2a7" stroke-width="2"/><circle cx="140" cy="176" r="3.4" fill="#fbe2a7" filter="url(#glowS_o)"/>
+  <text class="mono" x="62" y="226" font-size="9.8" letter-spacing="2" fill="#ffc857" font-weight="700">SEP 2023</text>
+  <text class="sans" x="62" y="249" font-size="15" font-weight="700" fill="#f6f1ff">Player spawned</text>
+  <text x="62" y="270" font-size="11" fill="#b4a8d8">Created this GitHub account.</text>
+  <text x="62" y="287" font-size="11" fill="#b4a8d8">Level 1, no gear, big ideas.</text>
+  <circle cx="140" cy="176" r="8" fill="#07051a" stroke="#ffc857" stroke-width="2"/><circle cx="140" cy="176" r="3.4" fill="#ffc857" filter="url(#glowS_o)"/>
   </g>
   <g class="ev3">
-  <rect x="369.5" y="186" width="1" height="16" fill="#6fe7c8" opacity="0.5"/>
+  <rect x="369.5" y="186" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
   <g>
   <clipPath id="tc28"><path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z"/></clipPath>
-  <g clip-path="url(#tc28)"><ellipse cx="329" cy="218" rx="103" ry="62" fill="#6fe7c8" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc28)"><ellipse cx="329" cy="218" rx="103" ry="62" fill="#2ee6ff" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="url(#pane_o)"/>
   <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M268.0,218 A16,16 0 0 1 283.0,203 H457.0 A16,16 0 0 1 472.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="283" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="283.0" y="226" font-size="9.8" letter-spacing="2" fill="#6fe7c8" font-weight="700">SEP 2024</text>
-  <text class="sans" x="283.0" y="249" font-size="15" font-weight="700" fill="#eaf2f6">The grind begins</text>
-  <text x="283.0" y="270" font-size="11" fill="#93a8b4">LeetCode-Solutions and CP drills:</text>
-  <text x="283.0" y="287" font-size="11" fill="#93a8b4">400+ problems and counting.</text>
-  <circle cx="370" cy="176" r="8" fill="#081219" stroke="#6fe7c8" stroke-width="2"/><circle cx="370" cy="176" r="3.4" fill="#6fe7c8" filter="url(#glowS_o)"/>
+  <text class="mono" x="283.0" y="226" font-size="9.8" letter-spacing="2" fill="#2ee6ff" font-weight="700">SEP 2024</text>
+  <text class="sans" x="283.0" y="249" font-size="15" font-weight="700" fill="#f6f1ff">The grind begins</text>
+  <text x="283.0" y="270" font-size="11" fill="#b4a8d8">LeetCode-Solutions and CP drills:</text>
+  <text x="283.0" y="287" font-size="11" fill="#b4a8d8">400+ problems and counting.</text>
+  <circle cx="370" cy="176" r="8" fill="#07051a" stroke="#2ee6ff" stroke-width="2"/><circle cx="370" cy="176" r="3.4" fill="#2ee6ff" filter="url(#glowS_o)"/>
   </g>
   <g class="ev5">
-  <rect x="599.5" y="186" width="1" height="16" fill="#e4a2b1" opacity="0.5"/>
+  <rect x="599.5" y="186" width="1" height="16" fill="#ff4fa0" opacity="0.5"/>
   <g>
   <clipPath id="tc29"><path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z"/></clipPath>
-  <g clip-path="url(#tc29)"><ellipse cx="559" cy="218" rx="103" ry="62" fill="#e4a2b1" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc29)"><ellipse cx="559" cy="218" rx="103" ry="62" fill="#ff4fa0" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="url(#pane_o)"/>
   <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M498.0,218 A16,16 0 0 1 513.0,203 H687.0 A16,16 0 0 1 702.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="513" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="513.0" y="226" font-size="9.8" letter-spacing="2" fill="#e4a2b1" font-weight="700">MAR 2025</text>
-  <text class="sans" x="513.0" y="249" font-size="15" font-weight="700" fill="#eaf2f6">SheShield</text>
-  <text x="513.0" y="270" font-size="11" fill="#93a8b4">A women's safety platform that</text>
-  <text x="513.0" y="287" font-size="11" fill="#93a8b4">now has 20 stars and an APK.</text>
-  <circle cx="600" cy="176" r="8" fill="#081219" stroke="#e4a2b1" stroke-width="2"/><circle cx="600" cy="176" r="3.4" fill="#e4a2b1" filter="url(#glowS_o)"/>
+  <text class="mono" x="513.0" y="226" font-size="9.8" letter-spacing="2" fill="#ff4fa0" font-weight="700">MAR 2025</text>
+  <text class="sans" x="513.0" y="249" font-size="15" font-weight="700" fill="#f6f1ff">SheShield</text>
+  <text x="513.0" y="270" font-size="11" fill="#b4a8d8">A women's safety platform that</text>
+  <text x="513.0" y="287" font-size="11" fill="#b4a8d8">now has 20 stars and an APK.</text>
+  <circle cx="600" cy="176" r="8" fill="#07051a" stroke="#ff4fa0" stroke-width="2"/><circle cx="600" cy="176" r="3.4" fill="#ff4fa0" filter="url(#glowS_o)"/>
   </g>
   <g class="ev7">
-  <rect x="829.5" y="186" width="1" height="16" fill="#a78bfa" opacity="0.5"/>
+  <rect x="829.5" y="186" width="1" height="16" fill="#b6ff4f" opacity="0.5"/>
   <g>
   <clipPath id="tc30"><path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z"/></clipPath>
-  <g clip-path="url(#tc30)"><ellipse cx="789" cy="218" rx="103" ry="62" fill="#a78bfa" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc30)"><ellipse cx="789" cy="218" rx="103" ry="62" fill="#b6ff4f" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="url(#pane_o)"/>
   <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M728.0,218 A16,16 0 0 1 743.0,203 H917.0 A16,16 0 0 1 932.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="743" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="743.0" y="226" font-size="9.8" letter-spacing="2" fill="#a78bfa" font-weight="700">JUL 2025</text>
-  <text class="sans" x="743.0" y="249" font-size="15" font-weight="700" fill="#eaf2f6">Hackathon season</text>
-  <text x="743.0" y="270" font-size="11" fill="#93a8b4">AlgoTrail visualiser and the</text>
-  <text x="743.0" y="287" font-size="11" fill="#93a8b4">Adobe Hackathon PDF engine.</text>
-  <circle cx="830" cy="176" r="8" fill="#081219" stroke="#a78bfa" stroke-width="2"/><circle cx="830" cy="176" r="3.4" fill="#a78bfa" filter="url(#glowS_o)"/>
+  <text class="mono" x="743.0" y="226" font-size="9.8" letter-spacing="2" fill="#b6ff4f" font-weight="700">JUL 2025</text>
+  <text class="sans" x="743.0" y="249" font-size="15" font-weight="700" fill="#f6f1ff">Hackathon season</text>
+  <text x="743.0" y="270" font-size="11" fill="#b4a8d8">AlgoTrail visualiser and the</text>
+  <text x="743.0" y="287" font-size="11" fill="#b4a8d8">Adobe Hackathon PDF engine.</text>
+  <circle cx="830" cy="176" r="8" fill="#07051a" stroke="#b6ff4f" stroke-width="2"/><circle cx="830" cy="176" r="3.4" fill="#b6ff4f" filter="url(#glowS_o)"/>
   </g>
   <g class="ev9">
-  <rect x="1059.5" y="186" width="1" height="16" fill="#fbe2a7" opacity="0.5"/>
+  <rect x="1059.5" y="186" width="1" height="16" fill="#ffc857" opacity="0.5"/>
   <g>
   <clipPath id="tc31"><path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z"/></clipPath>
-  <g clip-path="url(#tc31)"><ellipse cx="1010" cy="218" rx="103" ry="62" fill="#fbe2a7" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc31)"><ellipse cx="1010" cy="218" rx="103" ry="62" fill="#ffc857" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="url(#pane_o)"/>
   <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M949,218 A16,16 0 0 1 964,203 H1138 A16,16 0 0 1 1153,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="964" y="299.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="964" y="226" font-size="9.8" letter-spacing="2" fill="#fbe2a7" font-weight="700">NOV 2025</text>
-  <text class="sans" x="964" y="249" font-size="15" font-weight="700" fill="#eaf2f6">GridSense</text>
-  <text x="964" y="270" font-size="11" fill="#93a8b4">A 3D smart-grid digital twin</text>
-  <text x="964" y="287" font-size="11" fill="#93a8b4">with ML forecasting.</text>
-  <circle cx="1060" cy="176" r="8" fill="#081219" stroke="#fbe2a7" stroke-width="2"/><circle cx="1060" cy="176" r="3.4" fill="#fbe2a7" filter="url(#glowS_o)"/>
+  <text class="mono" x="964" y="226" font-size="9.8" letter-spacing="2" fill="#ffc857" font-weight="700">NOV 2025</text>
+  <text class="sans" x="964" y="249" font-size="15" font-weight="700" fill="#f6f1ff">GridSense</text>
+  <text x="964" y="270" font-size="11" fill="#b4a8d8">A 3D smart-grid digital twin</text>
+  <text x="964" y="287" font-size="11" fill="#b4a8d8">with ML forecasting.</text>
+  <circle cx="1060" cy="176" r="8" fill="#07051a" stroke="#ffc857" stroke-width="2"/><circle cx="1060" cy="176" r="3.4" fill="#ffc857" filter="url(#glowS_o)"/>
   </g>
   <g class="ev11">
-  <rect x="1059.5" y="392" width="1" height="16" fill="#6fe7c8" opacity="0.5"/>
+  <rect x="1059.5" y="392" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
   <g>
   <clipPath id="tc32"><path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z"/></clipPath>
-  <g clip-path="url(#tc32)"><ellipse cx="1010" cy="424" rx="103" ry="62" fill="#6fe7c8" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc32)"><ellipse cx="1010" cy="424" rx="103" ry="62" fill="#2ee6ff" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="url(#pane_o)"/>
   <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M949,424 A16,16 0 0 1 964,409 H1138 A16,16 0 0 1 1153,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="964" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="964" y="432" font-size="9.8" letter-spacing="2" fill="#6fe7c8" font-weight="700">FEB 2026</text>
-  <text class="sans" x="964" y="455" font-size="15" font-weight="700" fill="#eaf2f6">Real-time arc</text>
-  <text x="964" y="476" font-size="11" fill="#93a8b4">Pixel-Board and CampusWhisper:</text>
-  <text x="964" y="493" font-size="11" fill="#93a8b4">Socket.IO, WebRTC, Groq vision.</text>
-  <circle cx="1060" cy="382" r="8" fill="#081219" stroke="#6fe7c8" stroke-width="2"/><circle cx="1060" cy="382" r="3.4" fill="#6fe7c8" filter="url(#glowS_o)"/>
+  <text class="mono" x="964" y="432" font-size="9.8" letter-spacing="2" fill="#2ee6ff" font-weight="700">FEB 2026</text>
+  <text class="sans" x="964" y="455" font-size="15" font-weight="700" fill="#f6f1ff">Real-time arc</text>
+  <text x="964" y="476" font-size="11" fill="#b4a8d8">Pixel-Board and CampusWhisper:</text>
+  <text x="964" y="493" font-size="11" fill="#b4a8d8">Socket.IO, WebRTC, Groq vision.</text>
+  <circle cx="1060" cy="382" r="8" fill="#07051a" stroke="#2ee6ff" stroke-width="2"/><circle cx="1060" cy="382" r="3.4" fill="#2ee6ff" filter="url(#glowS_o)"/>
   </g>
   <g class="ev13">
-  <rect x="829.5" y="392" width="1" height="16" fill="#e4a2b1" opacity="0.5"/>
+  <rect x="829.5" y="392" width="1" height="16" fill="#ff4fa0" opacity="0.5"/>
   <g>
   <clipPath id="tc33"><path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z"/></clipPath>
-  <g clip-path="url(#tc33)"><ellipse cx="789" cy="424" rx="103" ry="62" fill="#e4a2b1" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc33)"><ellipse cx="789" cy="424" rx="103" ry="62" fill="#ff4fa0" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="url(#pane_o)"/>
   <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M728.0,424 A16,16 0 0 1 743.0,409 H917.0 A16,16 0 0 1 932.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="743" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="743.0" y="432" font-size="9.8" letter-spacing="2" fill="#e4a2b1" font-weight="700">MAY 2026</text>
-  <text class="sans" x="743.0" y="455" font-size="15" font-weight="700" fill="#eaf2f6">MindBloom</text>
-  <text x="743.0" y="476" font-size="11" fill="#93a8b4">Gemini-powered wellness for</text>
-  <text x="743.0" y="493" font-size="11" fill="#93a8b4">children, parents, counsellors.</text>
-  <circle cx="830" cy="382" r="8" fill="#081219" stroke="#e4a2b1" stroke-width="2"/><circle cx="830" cy="382" r="3.4" fill="#e4a2b1" filter="url(#glowS_o)"/>
+  <text class="mono" x="743.0" y="432" font-size="9.8" letter-spacing="2" fill="#ff4fa0" font-weight="700">MAY 2026</text>
+  <text class="sans" x="743.0" y="455" font-size="15" font-weight="700" fill="#f6f1ff">MindBloom</text>
+  <text x="743.0" y="476" font-size="11" fill="#b4a8d8">Gemini-powered wellness for</text>
+  <text x="743.0" y="493" font-size="11" fill="#b4a8d8">children, parents, counsellors.</text>
+  <circle cx="830" cy="382" r="8" fill="#07051a" stroke="#ff4fa0" stroke-width="2"/><circle cx="830" cy="382" r="3.4" fill="#ff4fa0" filter="url(#glowS_o)"/>
   </g>
   <g class="ev15">
-  <rect x="599.5" y="392" width="1" height="16" fill="#a78bfa" opacity="0.5"/>
+  <rect x="599.5" y="392" width="1" height="16" fill="#b6ff4f" opacity="0.5"/>
   <g>
   <clipPath id="tc34"><path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z"/></clipPath>
-  <g clip-path="url(#tc34)"><ellipse cx="559" cy="424" rx="103" ry="62" fill="#a78bfa" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc34)"><ellipse cx="559" cy="424" rx="103" ry="62" fill="#b6ff4f" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="url(#pane_o)"/>
   <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M498.0,424 A16,16 0 0 1 513.0,409 H687.0 A16,16 0 0 1 702.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="513" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="513.0" y="432" font-size="9.8" letter-spacing="2" fill="#a78bfa" font-weight="700">AUG 2026</text>
-  <text class="sans" x="513.0" y="455" font-size="15" font-weight="700" fill="#eaf2f6">Systems arc</text>
-  <text x="513.0" y="476" font-size="11" fill="#93a8b4">PII redaction engine, then</text>
-  <text x="513.0" y="493" font-size="11" fill="#93a8b4">Vyapaar agent commerce.</text>
-  <circle cx="600" cy="382" r="8" fill="#081219" stroke="#a78bfa" stroke-width="2"/><circle cx="600" cy="382" r="3.4" fill="#a78bfa" filter="url(#glowS_o)"/>
+  <text class="mono" x="513.0" y="432" font-size="9.8" letter-spacing="2" fill="#b6ff4f" font-weight="700">AUG 2026</text>
+  <text class="sans" x="513.0" y="455" font-size="15" font-weight="700" fill="#f6f1ff">Systems arc</text>
+  <text x="513.0" y="476" font-size="11" fill="#b4a8d8">PII redaction engine, then</text>
+  <text x="513.0" y="493" font-size="11" fill="#b4a8d8">Vyapaar agent commerce.</text>
+  <circle cx="600" cy="382" r="8" fill="#07051a" stroke="#b6ff4f" stroke-width="2"/><circle cx="600" cy="382" r="3.4" fill="#b6ff4f" filter="url(#glowS_o)"/>
   </g>
   <g class="ev17">
-  <rect x="369.5" y="392" width="1" height="16" fill="#fbe2a7" opacity="0.5"/>
+  <rect x="369.5" y="392" width="1" height="16" fill="#ffc857" opacity="0.5"/>
   <g>
   <clipPath id="tc35"><path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z"/></clipPath>
-  <g clip-path="url(#tc35)"><ellipse cx="329" cy="424" rx="103" ry="62" fill="#fbe2a7" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc35)"><ellipse cx="329" cy="424" rx="103" ry="62" fill="#ffc857" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="url(#pane_o)"/>
   <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M268.0,424 A16,16 0 0 1 283.0,409 H457.0 A16,16 0 0 1 472.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="283" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="283.0" y="432" font-size="9.8" letter-spacing="2" fill="#fbe2a7" font-weight="700">SEP 2026</text>
-  <text class="sans" x="283.0" y="455" font-size="15" font-weight="700" fill="#eaf2f6">Production grade</text>
-  <text x="283.0" y="476" font-size="11" fill="#93a8b4">TimedInk scheduler and the</text>
-  <text x="283.0" y="493" font-size="11" fill="#93a8b4">Hirehearsal AI interviewer.</text>
-  <circle cx="370" cy="382" r="8" fill="#081219" stroke="#fbe2a7" stroke-width="2"/><circle cx="370" cy="382" r="3.4" fill="#fbe2a7" filter="url(#glowS_o)"/>
+  <text class="mono" x="283.0" y="432" font-size="9.8" letter-spacing="2" fill="#ffc857" font-weight="700">SEP 2026</text>
+  <text class="sans" x="283.0" y="455" font-size="15" font-weight="700" fill="#f6f1ff">Production grade</text>
+  <text x="283.0" y="476" font-size="11" fill="#b4a8d8">TimedInk scheduler and the</text>
+  <text x="283.0" y="493" font-size="11" fill="#b4a8d8">Hirehearsal AI interviewer.</text>
+  <circle cx="370" cy="382" r="8" fill="#07051a" stroke="#ffc857" stroke-width="2"/><circle cx="370" cy="382" r="3.4" fill="#ffc857" filter="url(#glowS_o)"/>
   </g>
   <g class="ev19">
-  <rect x="139.5" y="392" width="1" height="16" fill="#6fe7c8" opacity="0.5"/>
+  <rect x="139.5" y="392" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
   <g>
   <clipPath id="tc36"><path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z"/></clipPath>
-  <g clip-path="url(#tc36)"><ellipse cx="108" cy="424" rx="103" ry="62" fill="#6fe7c8" opacity="0.15" filter="url(#soft_o)"/></g>
+  <g clip-path="url(#tc36)"><ellipse cx="108" cy="424" rx="103" ry="62" fill="#2ee6ff" opacity="0.15" filter="url(#soft_o)"/></g>
   <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="url(#pane_o)"/>
   <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M47,424 A16,16 0 0 1 62,409 H236 A16,16 0 0 1 251,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
   <rect x="62" y="505.5" width="174" height="1.2" rx="0.6" fill="url(#refr_o)"/>
   </g>
-  <text class="mono" x="62" y="432" font-size="9.8" letter-spacing="2" fill="#6fe7c8" font-weight="700">NOV 2026</text>
-  <text class="sans" x="62" y="455" font-size="15" font-weight="700" fill="#eaf2f6">Now playing</text>
-  <text x="62" y="476" font-size="11" fill="#93a8b4">BookMyCampus, Pratirodh and</text>
-  <text x="62" y="493" font-size="11" fill="#93a8b4">the SheShield Android app.</text>
-  <circle cx="140" cy="382" r="7" fill="none" stroke="#6fe7c8" stroke-width="1.6"><animate attributeName="r" values="7;22" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.8s" repeatCount="indefinite"/></circle>
-  <g><rect x="134" y="376" width="18" height="18" rx="4" fill="#e4a2b1" stroke="#0a0f14" stroke-width="2"/><rect x="131" y="373" width="18" height="18" rx="4" fill="#6fe7c8" stroke="#0a0f14" stroke-width="2"/></g>
+  <text class="mono" x="62" y="432" font-size="9.8" letter-spacing="2" fill="#2ee6ff" font-weight="700">NOV 2026</text>
+  <text class="sans" x="62" y="455" font-size="15" font-weight="700" fill="#f6f1ff">Now playing</text>
+  <text x="62" y="476" font-size="11" fill="#b4a8d8">BookMyCampus, Pratirodh and</text>
+  <text x="62" y="493" font-size="11" fill="#b4a8d8">the SheShield Android app.</text>
+  <circle cx="140" cy="382" r="7" fill="none" stroke="#2ee6ff" stroke-width="1.6"><animate attributeName="r" values="7;22" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.8s" repeatCount="indefinite"/></circle>
+  <g><rect x="134" y="376" width="18" height="18" rx="4" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2"/><rect x="131" y="373" width="18" height="18" rx="4" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2"/></g>
   </g>
-  <g class="ev20"><g transform="rotate(3 1060.5 56.0)"><g><rect x="1008" y="48" width="113" height="24" rx="6" fill="#a78bfa" stroke="#0a0f14" stroke-width="2.2"/><rect x="1004" y="44" width="113" height="24" rx="6" fill="#6fe7c8" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="1060.5" y="59.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">YOU ARE HERE ↘</text></g></g>
-  <text class="mono" x="600" y="578" text-anchor="middle" font-size="9.6" letter-spacing="1.6" fill="#5f7683">DATED FROM EACH REPOSITORY'S FIRST COMMIT &#183; THE GREEN DIAMOND IS ME, STILL WALKING</text>
+  <g class="ev20"><g transform="rotate(3 1060.5 56.0)"><g><rect x="1008" y="48" width="113" height="24" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/><rect x="1004" y="44" width="113" height="24" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="1060.5" y="59.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">YOU ARE HERE ↘</text></g></g>
+  <text class="mono" x="600" y="578" text-anchor="middle" font-size="9.6" letter-spacing="1.6" fill="#7a6ea3">DATED FROM EACH REPOSITORY'S FIRST COMMIT &#183; THE GREEN DIAMOND IS ME, STILL WALKING</text>
 <rect width="1200" height="600" rx="26" filter="url(#grain_o)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

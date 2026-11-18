@@ -18,6 +18,7 @@ from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET,  # noq
                     section_header, uid, ev, lighten)
 from icons import icon  # noqa: E402
 import story  # noqa: E402
+import arcade  # noqa: E402
 from design import sticker  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -444,8 +445,11 @@ def main():
     write("projects.svg", story.build_vault(d))
     write("stats.svg", build_stats(d))
     write("city.svg", story.build_city(d))
+    write("companion.svg", arcade.build_companion(d))
+    write("ticker.svg", arcade.build_ticker(d))
     write("trophies.svg", build_trophies(d))
     write("questlog.svg", build_questlog())
+    write("votes.svg", arcade.build_votes())
     write("footer.svg", build_footer())
     print("done")
 
