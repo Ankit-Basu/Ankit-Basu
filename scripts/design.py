@@ -10,6 +10,7 @@ Glassmorphism is faked the only way it can be inside an <img>: blurred colour
 blobs underneath, a translucent gradient pane on top, a bright specular top
 edge, a fading hairline border, and a whisper of noise grain.
 """
+import re
 
 # ---------------------------------------------------------------- palette
 # "Midnight Arcade": a synthwave night. The accent names are historical
@@ -256,18 +257,24 @@ def card(scope, x, y, w, h, r=18, tint=None, tint_op=0.16, shadow=True,
     if style:
         attrs += ' style="%s"' % style
     g = ["<g%s>" % attrs]
+    # Performance: these panels are <img> SVGs, and while any animation in
+    # the image runs the browser repaints the whole image every frame -
+    # including every filter. So the glass is built from filter-free parts:
+    # the shadow is an offset translucent copy of the pane, and the inner
+    # tint light is a radial gradient rather than a blurred ellipse.
+    if shadow:
+        g.append('<path d="%s" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>'
+                 % rr(x + 3, y, w - 6, h, r))
     if tint:
-        # Clipped to the pane on purpose. Unclipped, a blurred tint ellipse
-        # blooms past the rounded corners and reads as a coloured halo stuck
-        # to the outside of the card - the light has to look like it is inside
-        # the glass, not smeared around it.
-        tid = uid("tc")
-        g.append('<clipPath id="%s"><path d="%s"/></clipPath>' % (tid, rr(x, y, w, h, r)))
-        g.append('<g clip-path="url(#%s)"><ellipse cx="%.0f" cy="%.0f" rx="%.0f" ry="%.0f" '
-                 'fill="%s" opacity="%s" filter="url(#soft_%s)"/></g>'
-                 % (tid, x + w * 0.3, y + h * 0.16, w * 0.5, h * 0.62, tint, tint_op, s))
-    sh = ' filter="url(#drop_%s)"' % s if shadow else ""
-    g.append('<path d="%s" fill="url(#pane_%s)"%s/>' % (rr(x, y, w, h, r), s, sh))
+        gid = uid("tg")
+        g.append('<radialGradient id="%s" cx="0.3" cy="0.05" r="0.85">'
+                 '<stop offset="0" stop-color="%s" stop-opacity="%.3f"/>'
+                 '<stop offset="1" stop-color="%s" stop-opacity="0"/></radialGradient>'
+                 % (gid, tint, min(1.0, tint_op * 1.7), tint))
+    g.append('<path d="%s" fill="%s"/>' % (rr(x, y, w, h, r), BG0))
+    if tint:
+        g.append('<path d="%s" fill="url(#%s)"/>' % (rr(x, y, w, h, r), gid))
+    g.append('<path d="%s" fill="url(#pane_%s)"/>' % (rr(x, y, w, h, r), s))
     g.append('<path d="%s" fill="none" stroke="url(#rim_%s)" stroke-width="1.2"/>'
              % (rr(x, y, w, h, r), s))
     g.append('<path d="%s" fill="none" stroke="url(#spec_%s)" stroke-width="1.4"/>'
@@ -393,8 +400,17 @@ def svg_open(w, h):
             'viewBox="0 0 %s %s" width="%s" height="%s" role="img">' % (w, h, w, h))
 
 
-def page(scope, w, h, css, body, blobs=None, grid=True, use_grain=True,
+_FILTER_ATTR = re.compile(r'\s+filter="url\(#(?:glow|glowS|drop|dropS|soft|blob)_[A-Za-z0-9]+\)"')
+
+
+def page(scope, w, h, css, body, blobs=None, grid=True, use_grain=False,
          use_particles=0, pcol=CREAM):
+    # Every blur / drop-shadow filter is stripped from the finished panel.
+    # In an animated <img> SVG they are re-run on every frame, which is what
+    # made the profile stutter. Glows are carried by gradients and layered
+    # strokes instead; grain (a full-canvas feTurbulence in overlay blend)
+    # is off for the same reason.
+    body = _FILTER_ATTR.sub("", body)
     parts = [svg_open(w, h), base_defs(scope),
              "<style>" + BASE_CSS + css + "</style>",
              frame(scope, w, h, blobs, grid)]

@@ -12,11 +12,12 @@ import json
 import os
 
 import profile as P
-from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, PURPLE, INKK,
+from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, PURPLE, INKK, uid,
                     esc, card, page, section_header, ev, brut, sticker)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HW = 600  # half-width canvas
+PAD = 46
 
 
 def fmt(n):
@@ -303,3 +304,85 @@ def build_votes():
                 f'A BOT COUNTS YOUR VOTE AND CLOSES IT &#183; ONE VOTE PER PLAYER PER QUEST</text>')
     blobs = [(250, 200, 240, VIOLET, 0.14, "drift"), (900, 200, 240, ROSE, 0.18, "drift2")]
     return page(s, W, H, css, "\n  ".join(body), blobs)
+
+
+# ================================================================ marquee
+def build_marquee(flip=False):
+    """Two crossing neo-brutalist bands of kinetic type, scrolling in
+    opposite directions - the tape that holds the story's scenes together.
+    Each band is two copies of one pinned-width string, so the loop is
+    seamless and costs a single transform per band."""
+    s = "q2" if flip else "q1"
+    W, H = 1200, 120
+    words = P.MARQUEE[::-1] if flip else P.MARQUEE
+    unit = "  \u2726  ".join(words) + "  \u2726  "
+    fs = 20
+    L = len(unit) * fs * 0.64
+    css = ("@keyframes mqL{from{transform:translateX(0)}to{transform:translateX(-%.1fpx)}}"
+           "@keyframes mqR{from{transform:translateX(-%.1fpx)}to{transform:translateX(0)}}" % (L, L))
+    bands = [(-2.4, ROSE, CREAM, "mqL", 34), (1.8, MINT, ROSE, "mqR", 40)]
+    if flip:
+        bands = [(2.2, CREAM, MINT, "mqR", 36), (-1.6, VIOLET, ROSE, "mqL", 42)]
+    body = []
+    for k, (rot, fill, shade, anim, dur) in enumerate(bands[::-1]):
+        y = 38 + k * 6
+        txt = esc(unit)
+        body.append(f'<g transform="rotate({rot} 600 60)">'
+                    f'<rect x="-60" y="{y + 6}" width="1320" height="40" fill="{shade}" stroke="{INKK}" stroke-width="3"/>'
+                    f'<rect x="-60" y="{y}" width="1320" height="40" fill="{fill}" stroke="{INKK}" stroke-width="3"/>'
+                    f'<g style="animation:{anim} {dur}s linear infinite">'
+                    f'<text class="sans" x="0" y="{y + 27}" font-size="{fs}" font-weight="900" letter-spacing="1" '
+                    f'fill="{INKK}" textLength="{L:.1f}" lengthAdjust="spacing">{txt}</text>'
+                    f'<text class="sans" x="{L:.1f}" y="{y + 27}" font-size="{fs}" font-weight="900" letter-spacing="1" '
+                    f'fill="{INKK}" textLength="{L:.1f}" lengthAdjust="spacing">{txt}</text></g></g>')
+    return page(s, W, H, css, "\n  ".join(body), None, grid=False)
+
+
+# ================================================================ end credits
+def build_credits(d):
+    s = "e"
+    W, H = 1200, 380
+    rows = P.CREDITS
+    lh = 54
+    Lh = len(rows) * lh
+    wx, wy, ww, wh = 640, 40, 514, 300
+    css = ("@keyframes roll{from{transform:translateY(0)}to{transform:translateY(-%dpx)}}"
+           ".roll{animation:roll %ds linear infinite}"
+           "@keyframes ink{0%%,8%%{stroke-dashoffset:1}40%%,100%%{stroke-dashoffset:0}}"
+           ".ink{animation:ink 7s cubic-bezier(.45,.05,.35,1) infinite}"
+           "@keyframes fillin{0%%,38%%{fill-opacity:0}55%%,100%%{fill-opacity:1}}"
+           ".fillin{animation:fillin 7s ease-out infinite}"
+           "@keyframes q{0%%,100%%{opacity:1}50%%{opacity:0}}"
+           ".qm{animation:q 1s steps(1) infinite}" % (Lh, len(rows) * 2.6))
+    body = []
+    # left: the title card
+    body.append(f'<text class="mono ev1" x="{PAD}" y="86" font-size="11" letter-spacing="3.6" fill="{DIM}">'
+                f'EPILOGUE &#183; ROLL CREDITS</text>')
+    for k, (word, y) in enumerate([("THE", 168), ("END", 268)]):
+        body.append(f'<text class="sans ink fillin" x="{PAD - 4}" y="{y}" font-size="112" font-weight="900" '
+                    f'letter-spacing="-4" fill="{[CREAM, ROSE][k]}" fill-opacity="1" stroke="{[CREAM, ROSE][k]}" '
+                    f'stroke-width="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0">{word}</text>')
+    body.append(f'<text class="sans qm" x="{PAD + 268}" y="268" font-size="112" font-weight="900" fill="{MINT}">?</text>')
+    st, _ = sticker(PAD, 300, "POST-CREDITS SCENE: VOTE ABOVE \u2191", MINT, ROSE, fs=10, h=26, rot=-2)
+    body.append(f'<g class="ev3">{st}</g>')
+
+    # right: the credits window
+    clip = "cw_" + s
+    body.append(card(s, wx, wy, ww, wh, r=18, tint=PURPLE, tint_op=0.16))
+    body.append(f'<clipPath id="{clip}"><rect x="{wx}" y="{wy + 2}" width="{ww}" height="{wh - 4}"/></clipPath>')
+    col_rows = []
+    for rep in (0, 1):
+        for j, (role, name) in enumerate(rows):
+            y = wy + 70 + (rep * len(rows) + j) * lh
+            col_rows.append(f'<text class="mono" x="{wx + ww / 2}" y="{y}" text-anchor="middle" font-size="9.6" '
+                            f'letter-spacing="2.6" fill="{[CREAM, ROSE, MINT, VIOLET][j % 4]}">{esc(role)}</text>'
+                            f'<text class="sans" x="{wx + ww / 2}" y="{y + 21}" text-anchor="middle" font-size="15" '
+                            f'font-weight="700" fill="{INK}">{esc(name)}</text>')
+    body.append(f'<g clip-path="url(#{clip})"><g class="roll">{"".join(col_rows)}</g></g>')
+    fade = "fd_" + s
+    body.append(f'<linearGradient id="{fade}" x1="0" y1="0" x2="0" y2="1">'
+                f'<stop offset="0" stop-color="{BG0}"/><stop offset="0.2" stop-color="{BG0}" stop-opacity="0"/>'
+                f'<stop offset="0.8" stop-color="{BG0}" stop-opacity="0"/><stop offset="1" stop-color="{BG0}"/>'
+                f'</linearGradient><rect x="{wx + 2}" y="{wy + 2}" width="{ww - 4}" height="{wh - 4}" rx="16" '
+                f'fill="url(#{fade})"/>')
+    return page(s, W, H, css, "\n  ".join(body), None, use_particles=14)

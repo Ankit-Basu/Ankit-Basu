@@ -161,15 +161,17 @@
   </g>
   <g class="ev1">
   <g>
-  <clipPath id="tc56"><path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z"/></clipPath>
-  <g clip-path="url(#tc56)"><ellipse cx="208" cy="152" rx="270" ry="156" fill="#ffc857" opacity="0.18" filter="url(#soft_p)"/></g>
-  <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M69,112 H564 A20,20 0 0 1 584,132 V344 A20,20 0 0 1 564,364 H69 A20,20 0 0 1 49,344 V132 A20,20 0 0 1 69,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg51" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.306"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="#0d1117"/>
+  <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="url(#tg51)"/>
+  <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_p)"/>
   <path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,132 A20,20 0 0 1 66,113 H567 A20,20 0 0 1 586,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="66" y="361.5" width="501" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl57"><path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl57)"><rect x="-224" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  <clipPath id="cl52"><path d="M66,112 H567 A20,20 0 0 1 587,132 V344 A20,20 0 0 1 567,364 H66 A20,20 0 0 1 46,344 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl52)"><rect x="-224" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
-  <rect x="46" y="138" width="3" height="200" rx="1.5" fill="#ffc857" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="46" y="138" width="3" height="200" rx="1.5" fill="#ffc857" opacity="0.85"/>
   <g transform="rotate(-3 103.5 140.5)"><g><rect x="69" y="133" width="75" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66" y="130" width="75" height="21" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="103.5" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">LEGENDARY</text></g>
   <g><g transform="translate(521,132) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#ffc857" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="565" y="145" text-anchor="end" font-size="12" font-weight="700" fill="#ffc857">20</text></g>
   <g transform="translate(68,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.0s infinite"><g fill="none" stroke="#ffc857" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4 20 5.4v6.1c0 4.9-3.4 8.8-8 10.1-4.6-1.3-8-5.2-8-10.1V5.4Z"/>
@@ -188,15 +190,17 @@
   </g>
   <g class="ev2">
   <g>
-  <clipPath id="tc58"><path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z"/></clipPath>
-  <g clip-path="url(#tc58)"><ellipse cx="775" cy="152" rx="270" ry="156" fill="#b6ff4f" opacity="0.18" filter="url(#soft_p)"/></g>
-  <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M636,112 H1131 A20,20 0 0 1 1151,132 V344 A20,20 0 0 1 1131,364 H636 A20,20 0 0 1 616,344 V132 A20,20 0 0 1 636,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg53" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.306"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="#0d1117"/>
+  <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="url(#tg53)"/>
+  <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="url(#pane_p)"/>
   <path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M614,132 A20,20 0 0 1 633,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="633" y="361.5" width="501" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl59"><path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z"/></clipPath><g clip-path="url(#cl59)"><rect x="342" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
+  <clipPath id="cl54"><path d="M633,112 H1134 A20,20 0 0 1 1154,132 V344 A20,20 0 0 1 1134,364 H633 A20,20 0 0 1 613,344 V132 A20,20 0 0 1 633,112 Z"/></clipPath><g clip-path="url(#cl54)"><rect x="342" y="112" width="270" height="252" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.9s infinite"/></g>
   </g>
-  <rect x="613" y="138" width="3" height="200" rx="1.5" fill="#b6ff4f" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="613" y="138" width="3" height="200" rx="1.5" fill="#b6ff4f" opacity="0.85"/>
   <g transform="rotate(-3 662.0 140.5)"><g><rect x="636" y="133" width="58" height="21" rx="6" fill="#ffc857" stroke="#0a0f14" stroke-width="2.2"/><rect x="633" y="130" width="58" height="21" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="662.0" y="143.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">MYTHIC</text></g>
   <g transform="translate(635,168) scale(1.4167)" opacity="0.95" style="animation:breathe 4s ease-in-out 0.6s infinite"><g fill="none" stroke="#b6ff4f" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2.4 4.6 13.6h6.2l-1.2 8 8.8-11.2h-6.2Z"/></g></g>
   <text class="sans" x="683" y="192" font-size="23" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">Vyapaar</text>
@@ -212,15 +216,17 @@
   </g>
   <g class="ev3">
   <g>
-  <clipPath id="tc60"><path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc60)"><ellipse cx="125" cy="425" rx="131" ry="144" fill="#ff4fa0" opacity="0.18" filter="url(#soft_p)"/></g>
-  <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M69.0,388 H285.0 A20,20 0 0 1 305.0,408 V600 A20,20 0 0 1 285.0,620 H69.0 A20,20 0 0 1 49.0,600 V408 A20,20 0 0 1 69.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg55" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="#0d1117"/>
+  <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="url(#tg55)"/>
+  <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="url(#pane_p)"/>
   <path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47.0,408 A20,20 0 0 1 66.0,389 H288.0 A20,20 0 0 1 307.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="66" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl61"><path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z"/></clipPath><g clip-path="url(#cl61)"><rect x="-85" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
+  <clipPath id="cl56"><path d="M66.0,388 H288.0 A20,20 0 0 1 308.0,408 V600 A20,20 0 0 1 288.0,620 H66.0 A20,20 0 0 1 46.0,600 V408 A20,20 0 0 1 66.0,388 Z"/></clipPath><g clip-path="url(#cl56)"><rect x="-85" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.8s infinite"/></g>
   </g>
-  <rect x="46.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="46.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85"/>
   <g transform="rotate(-3 89.5 416.5)"><g><rect x="69.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="66.0" y="406" width="47" height="21" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="89.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
   <g transform="translate(68.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.2s infinite"><g fill="none" stroke="#ff4fa0" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.6"/><path d="M2.8 20.4c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/>
         <path d="M16.4 4.8a3.6 3.6 0 0 1 0 6.6M17.6 14.6c2.2.7 3.6 2.7 3.6 5.1"/></g></g>
@@ -235,15 +241,17 @@
   </g>
   <g class="ev4">
   <g>
-  <clipPath id="tc62"><path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc62)"><ellipse cx="407" cy="425" rx="131" ry="144" fill="#ff4fa0" opacity="0.18" filter="url(#soft_p)"/></g>
-  <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M351.0,388 H567.0 A20,20 0 0 1 587.0,408 V600 A20,20 0 0 1 567.0,620 H351.0 A20,20 0 0 1 331.0,600 V408 A20,20 0 0 1 351.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg57" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="#0d1117"/>
+  <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="url(#tg57)"/>
+  <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="url(#pane_p)"/>
   <path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M329.0,408 A20,20 0 0 1 348.0,389 H570.0 A20,20 0 0 1 589.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="348" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl63"><path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z"/></clipPath><g clip-path="url(#cl63)"><rect x="197" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
+  <clipPath id="cl58"><path d="M348.0,388 H570.0 A20,20 0 0 1 590.0,408 V600 A20,20 0 0 1 570.0,620 H348.0 A20,20 0 0 1 328.0,600 V408 A20,20 0 0 1 348.0,388 Z"/></clipPath><g clip-path="url(#cl58)"><rect x="197" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.7s infinite"/></g>
   </g>
-  <rect x="328.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="328.0" y="414" width="3" height="180" rx="1.5" fill="#ff4fa0" opacity="0.85"/>
   <g transform="rotate(-3 371.5 416.5)"><g><rect x="351.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="348.0" y="406" width="47" height="21" rx="6" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="371.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">EPIC</text></g>
   <g><g transform="translate(524.0,408) scale(0.6250)" opacity="1.0"><g fill="none" stroke="#ffc857" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="568.0" y="421" text-anchor="end" font-size="12" font-weight="700" fill="#ffc857">1</text></g>
   <g transform="translate(350.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 1.7999999999999998s infinite"><g fill="none" stroke="#ff4fa0" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 22 8l-10 4.8L2 8Z"/>
@@ -260,15 +268,17 @@
   </g>
   <g class="ev5">
   <g>
-  <clipPath id="tc64"><path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc64)"><ellipse cx="689" cy="425" rx="131" ry="144" fill="#2ee6ff" opacity="0.18" filter="url(#soft_p)"/></g>
-  <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M633.0,388 H849.0 A20,20 0 0 1 869.0,408 V600 A20,20 0 0 1 849.0,620 H633.0 A20,20 0 0 1 613.0,600 V408 A20,20 0 0 1 633.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg59" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="#0d1117"/>
+  <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="url(#tg59)"/>
+  <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="url(#pane_p)"/>
   <path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M611.0,408 A20,20 0 0 1 630.0,389 H852.0 A20,20 0 0 1 871.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="630" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl65"><path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z"/></clipPath><g clip-path="url(#cl65)"><rect x="479" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
+  <clipPath id="cl60"><path d="M630.0,388 H852.0 A20,20 0 0 1 872.0,408 V600 A20,20 0 0 1 852.0,620 H630.0 A20,20 0 0 1 610.0,600 V408 A20,20 0 0 1 630.0,388 Z"/></clipPath><g clip-path="url(#cl60)"><rect x="479" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 3.6s infinite"/></g>
   </g>
-  <rect x="610.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="610.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85"/>
   <g transform="rotate(-3 653.5 416.5)"><g><rect x="633.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="630.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="653.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
   <g transform="translate(632.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 2.4s infinite"><g fill="none" stroke="#2ee6ff" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.8 2.2"/></g></g>
   <text class="sans" x="674.0" y="462" font-size="18" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">TimedInk</text>
@@ -283,15 +293,17 @@
   </g>
   <g class="ev6">
   <g>
-  <clipPath id="tc66"><path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z"/></clipPath>
-  <g clip-path="url(#tc66)"><ellipse cx="971" cy="425" rx="131" ry="144" fill="#2ee6ff" opacity="0.18" filter="url(#soft_p)"/></g>
-  <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M915.0,388 H1131.0 A20,20 0 0 1 1151.0,408 V600 A20,20 0 0 1 1131.0,620 H915.0 A20,20 0 0 1 895.0,600 V408 A20,20 0 0 1 915.0,388 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg61" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="#0d1117"/>
+  <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="url(#tg61)"/>
+  <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="url(#pane_p)"/>
   <path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M893.0,408 A20,20 0 0 1 912.0,389 H1134.0 A20,20 0 0 1 1153.0,408" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="912" y="617.5" width="222" height="1.2" rx="0.6" fill="url(#refr_p)"/>
-  <clipPath id="cl67"><path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z"/></clipPath><g clip-path="url(#cl67)"><rect x="761" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 4.5s infinite"/></g>
+  <clipPath id="cl62"><path d="M912.0,388 H1134.0 A20,20 0 0 1 1154.0,408 V600 A20,20 0 0 1 1134.0,620 H912.0 A20,20 0 0 1 892.0,600 V408 A20,20 0 0 1 912.0,388 Z"/></clipPath><g clip-path="url(#cl62)"><rect x="761" y="388" width="131" height="232" fill="url(#sheen_p)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 4.5s infinite"/></g>
   </g>
-  <rect x="892.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85" filter="url(#glowS_p)"/>
+  <rect x="892.0" y="414" width="3" height="180" rx="1.5" fill="#2ee6ff" opacity="0.85"/>
   <g transform="rotate(-3 935.5 416.5)"><g><rect x="915.0" y="409" width="47" height="21" rx="6" fill="#0a0f14" stroke="#0a0f14" stroke-width="2.2"/><rect x="912.0" y="406" width="47" height="21" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="935.5" y="419.7" text-anchor="middle" font-size="9" font-weight="800" letter-spacing="1.4" fill="#0a0f14">RARE</text></g>
   <g transform="translate(914.0,444) scale(1.1667)" opacity="0.95" style="animation:breathe 4s ease-in-out 3.0s infinite"><g fill="none" stroke="#2ee6ff" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8-4.6 4 4.6 4M15.6 8l4.6 4-4.6 4M13.6 5.2l-3.2 13.6"/></g></g>
   <text class="sans" x="956.0" y="462" font-size="18" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">PII Redaction</text>
@@ -304,9 +316,11 @@
   <g><rect x="1035.0" y="576" width="86" height="21" rx="10.5" fill="#ffffff" fill-opacity="0.055" stroke="#2ee6ff" stroke-opacity="0.32" stroke-width="1"/><text class="mono" x="1078" y="590" text-anchor="middle" font-size="9.4" fill="#2ee6ff" fill-opacity="0.95" letter-spacing="0.4">python-docx</text></g>
   </g>
   <g class="ev8"><g>
-  <clipPath id="tc68"><path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z"/></clipPath>
-  <g clip-path="url(#tc68)"><ellipse cx="378" cy="664" rx="554" ry="69" fill="#b6ff4f" opacity="0.1" filter="url(#soft_p)"/></g>
-  <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="url(#pane_p)" filter="url(#drop_p)"/>
+  <path d="M67,646 H1133 A18,18 0 0 1 1151,664 V740 A18,18 0 0 1 1133,758 H67 A18,18 0 0 1 49,740 V664 A18,18 0 0 1 67,646 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg63" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.170"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="#0d1117"/>
+  <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="url(#tg63)"/>
+  <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="url(#pane_p)"/>
   <path d="M64,646 H1136 A18,18 0 0 1 1154,664 V740 A18,18 0 0 1 1136,758 H64 A18,18 0 0 1 46,740 V664 A18,18 0 0 1 64,646 Z" fill="none" stroke="url(#rim_p)" stroke-width="1.2"/>
   <path d="M47,664 A18,18 0 0 1 64,647 H1136 A18,18 0 0 1 1153,664" fill="none" stroke="url(#spec_p)" stroke-width="1.4"/>
   <rect x="64" y="755.5" width="1072" height="1.2" rx="0.6" fill="url(#refr_p)"/>
@@ -321,5 +335,4 @@
   <rect x="648" y="734" width="260" height="23" rx="11.5" fill="#ff4fa0" fill-opacity="0.07" stroke="#ff4fa0" stroke-opacity="0.35"/><text x="660" y="749.5" font-size="11"><tspan fill="#ff4fa0" font-weight="700">SUDARSHAN-X</tspan><tspan fill="#9da7b3">  Autonomous drone defence</tspan></text>
   <rect x="68" y="764" width="294" height="23" rx="11.5" fill="#2ee6ff" fill-opacity="0.07" stroke="#2ee6ff" stroke-opacity="0.35"/><text x="80" y="779.5" font-size="11"><tspan fill="#2ee6ff" font-weight="700">KrishiVaani</tspan><tspan fill="#9da7b3">  Multilingual farming assistant</tspan></text>
   </g>
-<rect width="1200" height="800" rx="26" filter="url(#grain_p)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

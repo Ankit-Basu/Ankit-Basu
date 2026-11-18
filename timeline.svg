@@ -156,7 +156,7 @@
       <circle r="3" fill="#ffc857" style="animation:breathe 2.4s ease-in-out infinite"/>
     </g>
     <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#ffc857"
-          fill-opacity="0.9" font-weight="600">ORIGIN STORY</text>
+          fill-opacity="0.9" font-weight="600">WORLD MAP</text>
     <text x="46" y="89" font-size="25" font-weight="700" fill="#f0f3f6" letter-spacing="-0.4">From level 1 to now</text>
   </g>
   <path d="M70 176H1060C1170 176 1170 382 1060 382H70" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="8" stroke-linecap="round"/>
@@ -165,7 +165,7 @@
   <g>
     <circle r="11" fill="#2ee6ff" fill-opacity="0.18"/>
     <rect x="-5.5" y="-5.5" width="11" height="11" rx="2" fill="#2ee6ff" stroke="#0a0f14" stroke-width="1.6"
-          transform="rotate(45)" filter="url(#glowS_o)"/>
+          transform="rotate(45)"/>
     <animateMotion dur="22s" repeatCount="indefinite" rotate="0" calcMode="linear">
       <mpath href="#trail_o" xlink:href="#trail_o"/>
     </animateMotion>
@@ -173,8 +173,9 @@
   <g class="ev1">
   <rect x="139.5" y="186" width="1" height="16" fill="#ffc857" opacity="0.5"/>
   <g>
-  <clipPath id="tc27"><path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z"/></clipPath>
-  <g clip-path="url(#tc27)"><ellipse cx="108" cy="218" rx="103" ry="62" fill="#ffc857" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg22" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="#0d1117"/>
+  <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="url(#tg22)"/>
   <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="url(#pane_o)"/>
   <path d="M62,202 H236 A16,16 0 0 1 252,218 V286 A16,16 0 0 1 236,302 H62 A16,16 0 0 1 46,286 V218 A16,16 0 0 1 62,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M47,218 A16,16 0 0 1 62,203 H236 A16,16 0 0 1 251,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -184,13 +185,14 @@
   <text class="sans" x="62" y="249" font-size="15" font-weight="700" fill="#f0f3f6">Player spawned</text>
   <text x="62" y="270" font-size="11" fill="#9da7b3">Created this GitHub account.</text>
   <text x="62" y="287" font-size="11" fill="#9da7b3">Level 1, no gear, big ideas.</text>
-  <circle cx="140" cy="176" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="140" cy="176" r="3.4" fill="#ffc857" filter="url(#glowS_o)"/>
+  <circle cx="140" cy="176" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="140" cy="176" r="3.4" fill="#ffc857"/>
   </g>
   <g class="ev3">
   <rect x="369.5" y="186" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
   <g>
-  <clipPath id="tc28"><path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z"/></clipPath>
-  <g clip-path="url(#tc28)"><ellipse cx="329" cy="218" rx="103" ry="62" fill="#2ee6ff" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg23" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="#0d1117"/>
+  <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="url(#tg23)"/>
   <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="url(#pane_o)"/>
   <path d="M283.0,202 H457.0 A16,16 0 0 1 473.0,218 V286 A16,16 0 0 1 457.0,302 H283.0 A16,16 0 0 1 267.0,286 V218 A16,16 0 0 1 283.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M268.0,218 A16,16 0 0 1 283.0,203 H457.0 A16,16 0 0 1 472.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -200,13 +202,14 @@
   <text class="sans" x="283.0" y="249" font-size="15" font-weight="700" fill="#f0f3f6">The grind begins</text>
   <text x="283.0" y="270" font-size="11" fill="#9da7b3">LeetCode-Solutions and CP drills:</text>
   <text x="283.0" y="287" font-size="11" fill="#9da7b3">400+ problems and counting.</text>
-  <circle cx="370" cy="176" r="8" fill="#0d1117" stroke="#2ee6ff" stroke-width="2"/><circle cx="370" cy="176" r="3.4" fill="#2ee6ff" filter="url(#glowS_o)"/>
+  <circle cx="370" cy="176" r="8" fill="#0d1117" stroke="#2ee6ff" stroke-width="2"/><circle cx="370" cy="176" r="3.4" fill="#2ee6ff"/>
   </g>
   <g class="ev5">
   <rect x="599.5" y="186" width="1" height="16" fill="#ff4fa0" opacity="0.5"/>
   <g>
-  <clipPath id="tc29"><path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z"/></clipPath>
-  <g clip-path="url(#tc29)"><ellipse cx="559" cy="218" rx="103" ry="62" fill="#ff4fa0" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg24" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.255"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="#0d1117"/>
+  <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="url(#tg24)"/>
   <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="url(#pane_o)"/>
   <path d="M513.0,202 H687.0 A16,16 0 0 1 703.0,218 V286 A16,16 0 0 1 687.0,302 H513.0 A16,16 0 0 1 497.0,286 V218 A16,16 0 0 1 513.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M498.0,218 A16,16 0 0 1 513.0,203 H687.0 A16,16 0 0 1 702.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -216,13 +219,14 @@
   <text class="sans" x="513.0" y="249" font-size="15" font-weight="700" fill="#f0f3f6">SheShield</text>
   <text x="513.0" y="270" font-size="11" fill="#9da7b3">A women's safety platform that</text>
   <text x="513.0" y="287" font-size="11" fill="#9da7b3">now has 20 stars and an APK.</text>
-  <circle cx="600" cy="176" r="8" fill="#0d1117" stroke="#ff4fa0" stroke-width="2"/><circle cx="600" cy="176" r="3.4" fill="#ff4fa0" filter="url(#glowS_o)"/>
+  <circle cx="600" cy="176" r="8" fill="#0d1117" stroke="#ff4fa0" stroke-width="2"/><circle cx="600" cy="176" r="3.4" fill="#ff4fa0"/>
   </g>
   <g class="ev7">
   <rect x="829.5" y="186" width="1" height="16" fill="#b6ff4f" opacity="0.5"/>
   <g>
-  <clipPath id="tc30"><path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z"/></clipPath>
-  <g clip-path="url(#tc30)"><ellipse cx="789" cy="218" rx="103" ry="62" fill="#b6ff4f" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg25" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.255"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="#0d1117"/>
+  <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="url(#tg25)"/>
   <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="url(#pane_o)"/>
   <path d="M743.0,202 H917.0 A16,16 0 0 1 933.0,218 V286 A16,16 0 0 1 917.0,302 H743.0 A16,16 0 0 1 727.0,286 V218 A16,16 0 0 1 743.0,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M728.0,218 A16,16 0 0 1 743.0,203 H917.0 A16,16 0 0 1 932.0,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -232,13 +236,14 @@
   <text class="sans" x="743.0" y="249" font-size="15" font-weight="700" fill="#f0f3f6">Hackathon season</text>
   <text x="743.0" y="270" font-size="11" fill="#9da7b3">AlgoTrail visualiser and the</text>
   <text x="743.0" y="287" font-size="11" fill="#9da7b3">Adobe Hackathon PDF engine.</text>
-  <circle cx="830" cy="176" r="8" fill="#0d1117" stroke="#b6ff4f" stroke-width="2"/><circle cx="830" cy="176" r="3.4" fill="#b6ff4f" filter="url(#glowS_o)"/>
+  <circle cx="830" cy="176" r="8" fill="#0d1117" stroke="#b6ff4f" stroke-width="2"/><circle cx="830" cy="176" r="3.4" fill="#b6ff4f"/>
   </g>
   <g class="ev9">
   <rect x="1059.5" y="186" width="1" height="16" fill="#ffc857" opacity="0.5"/>
   <g>
-  <clipPath id="tc31"><path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z"/></clipPath>
-  <g clip-path="url(#tc31)"><ellipse cx="1010" cy="218" rx="103" ry="62" fill="#ffc857" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg26" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="#0d1117"/>
+  <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="url(#tg26)"/>
   <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="url(#pane_o)"/>
   <path d="M964,202 H1138 A16,16 0 0 1 1154,218 V286 A16,16 0 0 1 1138,302 H964 A16,16 0 0 1 948,286 V218 A16,16 0 0 1 964,202 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M949,218 A16,16 0 0 1 964,203 H1138 A16,16 0 0 1 1153,218" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -248,13 +253,14 @@
   <text class="sans" x="964" y="249" font-size="15" font-weight="700" fill="#f0f3f6">GridSense</text>
   <text x="964" y="270" font-size="11" fill="#9da7b3">A 3D smart-grid digital twin</text>
   <text x="964" y="287" font-size="11" fill="#9da7b3">with ML forecasting.</text>
-  <circle cx="1060" cy="176" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="1060" cy="176" r="3.4" fill="#ffc857" filter="url(#glowS_o)"/>
+  <circle cx="1060" cy="176" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="1060" cy="176" r="3.4" fill="#ffc857"/>
   </g>
   <g class="ev11">
   <rect x="1059.5" y="392" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
   <g>
-  <clipPath id="tc32"><path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z"/></clipPath>
-  <g clip-path="url(#tc32)"><ellipse cx="1010" cy="424" rx="103" ry="62" fill="#2ee6ff" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg27" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="#0d1117"/>
+  <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="url(#tg27)"/>
   <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="url(#pane_o)"/>
   <path d="M964,408 H1138 A16,16 0 0 1 1154,424 V492 A16,16 0 0 1 1138,508 H964 A16,16 0 0 1 948,492 V424 A16,16 0 0 1 964,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M949,424 A16,16 0 0 1 964,409 H1138 A16,16 0 0 1 1153,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -264,13 +270,14 @@
   <text class="sans" x="964" y="455" font-size="15" font-weight="700" fill="#f0f3f6">Real-time arc</text>
   <text x="964" y="476" font-size="11" fill="#9da7b3">Pixel-Board and CampusWhisper:</text>
   <text x="964" y="493" font-size="11" fill="#9da7b3">Socket.IO, WebRTC, Groq vision.</text>
-  <circle cx="1060" cy="382" r="8" fill="#0d1117" stroke="#2ee6ff" stroke-width="2"/><circle cx="1060" cy="382" r="3.4" fill="#2ee6ff" filter="url(#glowS_o)"/>
+  <circle cx="1060" cy="382" r="8" fill="#0d1117" stroke="#2ee6ff" stroke-width="2"/><circle cx="1060" cy="382" r="3.4" fill="#2ee6ff"/>
   </g>
   <g class="ev13">
   <rect x="829.5" y="392" width="1" height="16" fill="#ff4fa0" opacity="0.5"/>
   <g>
-  <clipPath id="tc33"><path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z"/></clipPath>
-  <g clip-path="url(#tc33)"><ellipse cx="789" cy="424" rx="103" ry="62" fill="#ff4fa0" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg28" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.255"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="#0d1117"/>
+  <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="url(#tg28)"/>
   <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="url(#pane_o)"/>
   <path d="M743.0,408 H917.0 A16,16 0 0 1 933.0,424 V492 A16,16 0 0 1 917.0,508 H743.0 A16,16 0 0 1 727.0,492 V424 A16,16 0 0 1 743.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M728.0,424 A16,16 0 0 1 743.0,409 H917.0 A16,16 0 0 1 932.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -280,13 +287,14 @@
   <text class="sans" x="743.0" y="455" font-size="15" font-weight="700" fill="#f0f3f6">MindBloom</text>
   <text x="743.0" y="476" font-size="11" fill="#9da7b3">Gemini-powered wellness for</text>
   <text x="743.0" y="493" font-size="11" fill="#9da7b3">children, parents, counsellors.</text>
-  <circle cx="830" cy="382" r="8" fill="#0d1117" stroke="#ff4fa0" stroke-width="2"/><circle cx="830" cy="382" r="3.4" fill="#ff4fa0" filter="url(#glowS_o)"/>
+  <circle cx="830" cy="382" r="8" fill="#0d1117" stroke="#ff4fa0" stroke-width="2"/><circle cx="830" cy="382" r="3.4" fill="#ff4fa0"/>
   </g>
   <g class="ev15">
   <rect x="599.5" y="392" width="1" height="16" fill="#b6ff4f" opacity="0.5"/>
   <g>
-  <clipPath id="tc34"><path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z"/></clipPath>
-  <g clip-path="url(#tc34)"><ellipse cx="559" cy="424" rx="103" ry="62" fill="#b6ff4f" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg29" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.255"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="#0d1117"/>
+  <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="url(#tg29)"/>
   <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="url(#pane_o)"/>
   <path d="M513.0,408 H687.0 A16,16 0 0 1 703.0,424 V492 A16,16 0 0 1 687.0,508 H513.0 A16,16 0 0 1 497.0,492 V424 A16,16 0 0 1 513.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M498.0,424 A16,16 0 0 1 513.0,409 H687.0 A16,16 0 0 1 702.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -296,13 +304,14 @@
   <text class="sans" x="513.0" y="455" font-size="15" font-weight="700" fill="#f0f3f6">Systems arc</text>
   <text x="513.0" y="476" font-size="11" fill="#9da7b3">PII redaction engine, then</text>
   <text x="513.0" y="493" font-size="11" fill="#9da7b3">Vyapaar agent commerce.</text>
-  <circle cx="600" cy="382" r="8" fill="#0d1117" stroke="#b6ff4f" stroke-width="2"/><circle cx="600" cy="382" r="3.4" fill="#b6ff4f" filter="url(#glowS_o)"/>
+  <circle cx="600" cy="382" r="8" fill="#0d1117" stroke="#b6ff4f" stroke-width="2"/><circle cx="600" cy="382" r="3.4" fill="#b6ff4f"/>
   </g>
   <g class="ev17">
   <rect x="369.5" y="392" width="1" height="16" fill="#ffc857" opacity="0.5"/>
   <g>
-  <clipPath id="tc35"><path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z"/></clipPath>
-  <g clip-path="url(#tc35)"><ellipse cx="329" cy="424" rx="103" ry="62" fill="#ffc857" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg30" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.255"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="#0d1117"/>
+  <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="url(#tg30)"/>
   <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="url(#pane_o)"/>
   <path d="M283.0,408 H457.0 A16,16 0 0 1 473.0,424 V492 A16,16 0 0 1 457.0,508 H283.0 A16,16 0 0 1 267.0,492 V424 A16,16 0 0 1 283.0,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M268.0,424 A16,16 0 0 1 283.0,409 H457.0 A16,16 0 0 1 472.0,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -312,13 +321,14 @@
   <text class="sans" x="283.0" y="455" font-size="15" font-weight="700" fill="#f0f3f6">Production grade</text>
   <text x="283.0" y="476" font-size="11" fill="#9da7b3">TimedInk scheduler and the</text>
   <text x="283.0" y="493" font-size="11" fill="#9da7b3">Hirehearsal AI interviewer.</text>
-  <circle cx="370" cy="382" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="370" cy="382" r="3.4" fill="#ffc857" filter="url(#glowS_o)"/>
+  <circle cx="370" cy="382" r="8" fill="#0d1117" stroke="#ffc857" stroke-width="2"/><circle cx="370" cy="382" r="3.4" fill="#ffc857"/>
   </g>
   <g class="ev19">
   <rect x="139.5" y="392" width="1" height="16" fill="#2ee6ff" opacity="0.5"/>
   <g>
-  <clipPath id="tc36"><path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z"/></clipPath>
-  <g clip-path="url(#tc36)"><ellipse cx="108" cy="424" rx="103" ry="62" fill="#2ee6ff" opacity="0.15" filter="url(#soft_o)"/></g>
+  <radialGradient id="tg31" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.255"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="#0d1117"/>
+  <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="url(#tg31)"/>
   <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="url(#pane_o)"/>
   <path d="M62,408 H236 A16,16 0 0 1 252,424 V492 A16,16 0 0 1 236,508 H62 A16,16 0 0 1 46,492 V424 A16,16 0 0 1 62,408 Z" fill="none" stroke="url(#rim_o)" stroke-width="1.2"/>
   <path d="M47,424 A16,16 0 0 1 62,409 H236 A16,16 0 0 1 251,424" fill="none" stroke="url(#spec_o)" stroke-width="1.4"/>
@@ -333,5 +343,4 @@
   </g>
   <g class="ev20"><g transform="rotate(3 1060.5 56.0)"><g><rect x="1008" y="48" width="113" height="24" rx="6" fill="#b6ff4f" stroke="#0a0f14" stroke-width="2.2"/><rect x="1004" y="44" width="113" height="24" rx="6" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.2"/></g><text class="mono" x="1060.5" y="59.6" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.4" fill="#0a0f14">YOU ARE HERE ↘</text></g></g>
   <text class="mono" x="600" y="578" text-anchor="middle" font-size="9.6" letter-spacing="1.6" fill="#6e7681">DATED FROM EACH REPOSITORY'S FIRST COMMIT &#183; THE GREEN DIAMOND IS ME, STILL WALKING</text>
-<rect width="1200" height="600" rx="26" filter="url(#grain_o)" opacity="0.9" style="mix-blend-mode:overlay"/>
 </svg>

@@ -148,7 +148,10 @@
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
 
     @keyframes halo{0%,100%{opacity:.20}50%{opacity:.55}}
-    </style>
+    @keyframes tst0{0%,0.00%{transform:translateX(40px);opacity:0}3.00%,30.33%{transform:translateX(0);opacity:1}33.33%,100%{transform:translateX(40px);opacity:0}}.tst0{animation:tst0 15s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes tst1{0%,33.33%{transform:translateX(40px);opacity:0}36.33%,63.67%{transform:translateX(0);opacity:1}66.67%,100%{transform:translateX(40px);opacity:0}}.tst1{animation:tst1 15s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes tst2{0%,66.67%{transform:translateX(40px);opacity:0}69.67%,97.00%{transform:translateX(0);opacity:1}100.00%,100%{transform:translateX(40px);opacity:0}}.tst2{animation:tst2 15s cubic-bezier(.22,1,.36,1) infinite}
+</style>
 <rect width="1200" height="400" fill="#0d1117"/>
   <rect width="1200" height="400" fill="url(#grid_t)"/>
 <g class="ev0">
@@ -158,18 +161,20 @@
       <circle r="3" fill="#b6ff4f" style="animation:breathe 2.4s ease-in-out infinite"/>
     </g>
     <text class="mono" x="74" y="61" font-size="11.5" letter-spacing="3.4" fill="#b6ff4f"
-          fill-opacity="0.9" font-weight="600">TROPHY HALL</text>
-    <text x="46" y="89" font-size="25" font-weight="700" fill="#f0f3f6" letter-spacing="-0.4">Achievements &amp; Milestones</text>
+          fill-opacity="0.9" font-weight="600">UNLOCKED</text>
+    <text x="46" y="89" font-size="25" font-weight="700" fill="#f0f3f6" letter-spacing="-0.4">Achievements &amp; milestones</text>
   </g>
   <g class="ev1">
   <g>
-  <clipPath id="tc99"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath>
-  <g clip-path="url(#tc99)"><ellipse cx="125" cy="143" rx="131" ry="122" fill="#ffc857" opacity="0.18" filter="url(#soft_t)"/></g>
-  <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
+  <path d="M69,112 H285 A20,20 0 0 1 305,132 V288 A20,20 0 0 1 285,308 H69 A20,20 0 0 1 49,288 V132 A20,20 0 0 1 69,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg94" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.306"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="#0d1117"/>
+  <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="url(#tg94)"/>
+  <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="url(#pane_t)"/>
   <path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M47,132 A20,20 0 0 1 66,113 H288 A20,20 0 0 1 307,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="66" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl100"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl100)"><rect x="-85" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
+  <clipPath id="cl95"><path d="M66,112 H288 A20,20 0 0 1 308,132 V288 A20,20 0 0 1 288,308 H66 A20,20 0 0 1 46,288 V132 A20,20 0 0 1 66,112 Z"/></clipPath><g clip-path="url(#cl95)"><rect x="-85" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.0s infinite"/></g>
   </g>
   <circle cx="177" cy="158" r="30" fill="#ffc857" fill-opacity="0.09" stroke="#ffc857" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="177" cy="158" r="35" fill="none" stroke="#ffc857" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.0s infinite"/>
@@ -183,13 +188,15 @@
   </g>
   <g class="ev2">
   <g>
-  <clipPath id="tc101"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath>
-  <g clip-path="url(#tc101)"><ellipse cx="407" cy="143" rx="131" ry="122" fill="#2ee6ff" opacity="0.18" filter="url(#soft_t)"/></g>
-  <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
+  <path d="M351,112 H567 A20,20 0 0 1 587,132 V288 A20,20 0 0 1 567,308 H351 A20,20 0 0 1 331,288 V132 A20,20 0 0 1 351,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg96" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#2ee6ff" stop-opacity="0.306"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></radialGradient>
+  <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="#0d1117"/>
+  <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="url(#tg96)"/>
+  <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="url(#pane_t)"/>
   <path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M329,132 A20,20 0 0 1 348,113 H570 A20,20 0 0 1 589,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="348" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl102"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath><g clip-path="url(#cl102)"><rect x="197" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.85s infinite"/></g>
+  <clipPath id="cl97"><path d="M348,112 H570 A20,20 0 0 1 590,132 V288 A20,20 0 0 1 570,308 H348 A20,20 0 0 1 328,288 V132 A20,20 0 0 1 348,112 Z"/></clipPath><g clip-path="url(#cl97)"><rect x="197" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 0.85s infinite"/></g>
   </g>
   <circle cx="459" cy="158" r="30" fill="#2ee6ff" fill-opacity="0.09" stroke="#2ee6ff" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="459" cy="158" r="35" fill="none" stroke="#2ee6ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.35s infinite"/>
@@ -202,13 +209,15 @@
   </g>
   <g class="ev3">
   <g>
-  <clipPath id="tc103"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath>
-  <g clip-path="url(#tc103)"><ellipse cx="689" cy="143" rx="131" ry="122" fill="#b6ff4f" opacity="0.18" filter="url(#soft_t)"/></g>
-  <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
+  <path d="M633,112 H849 A20,20 0 0 1 869,132 V288 A20,20 0 0 1 849,308 H633 A20,20 0 0 1 613,288 V132 A20,20 0 0 1 633,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg98" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#b6ff4f" stop-opacity="0.306"/><stop offset="1" stop-color="#b6ff4f" stop-opacity="0"/></radialGradient>
+  <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="#0d1117"/>
+  <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="url(#tg98)"/>
+  <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="url(#pane_t)"/>
   <path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M611,132 A20,20 0 0 1 630,113 H852 A20,20 0 0 1 871,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="630" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl104"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath><g clip-path="url(#cl104)"><rect x="479" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.7s infinite"/></g>
+  <clipPath id="cl99"><path d="M630,112 H852 A20,20 0 0 1 872,132 V288 A20,20 0 0 1 852,308 H630 A20,20 0 0 1 610,288 V132 A20,20 0 0 1 630,112 Z"/></clipPath><g clip-path="url(#cl99)"><rect x="479" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 1.7s infinite"/></g>
   </g>
   <circle cx="741" cy="158" r="30" fill="#b6ff4f" fill-opacity="0.09" stroke="#b6ff4f" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="741" cy="158" r="35" fill="none" stroke="#b6ff4f" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.7s infinite"/>
@@ -221,13 +230,15 @@
   </g>
   <g class="ev4">
   <g>
-  <clipPath id="tc105"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath>
-  <g clip-path="url(#tc105)"><ellipse cx="971" cy="143" rx="131" ry="122" fill="#ff4fa0" opacity="0.18" filter="url(#soft_t)"/></g>
-  <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="url(#pane_t)" filter="url(#drop_t)"/>
+  <path d="M915,112 H1131 A20,20 0 0 1 1151,132 V288 A20,20 0 0 1 1131,308 H915 A20,20 0 0 1 895,288 V132 A20,20 0 0 1 915,112 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg100" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ff4fa0" stop-opacity="0.306"/><stop offset="1" stop-color="#ff4fa0" stop-opacity="0"/></radialGradient>
+  <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="#0d1117"/>
+  <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="url(#tg100)"/>
+  <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="url(#pane_t)"/>
   <path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M893,132 A20,20 0 0 1 912,113 H1134 A20,20 0 0 1 1153,132" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
   <rect x="912" y="305.5" width="222" height="1.2" rx="0.6" fill="url(#refr_t)"/>
-  <clipPath id="cl106"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath><g clip-path="url(#cl106)"><rect x="761" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.55s infinite"/></g>
+  <clipPath id="cl101"><path d="M912,112 H1134 A20,20 0 0 1 1154,132 V288 A20,20 0 0 1 1134,308 H912 A20,20 0 0 1 892,288 V132 A20,20 0 0 1 912,112 Z"/></clipPath><g clip-path="url(#cl101)"><rect x="761" y="112" width="131" height="196" fill="url(#sheen_t)" style="animation:sweep 6.5s cubic-bezier(.4,0,.2,1) 2.55s infinite"/></g>
   </g>
   <circle cx="1023" cy="158" r="30" fill="#ff4fa0" fill-opacity="0.09" stroke="#ff4fa0" stroke-opacity="0.38" stroke-width="1.3"/>
   <circle cx="1023" cy="158" r="35" fill="none" stroke="#ff4fa0" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 1.0499999999999998s infinite"/>
@@ -241,8 +252,9 @@
   </g>
   <g class="ev7">
   <g>
-  <clipPath id="tc107"><path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z"/></clipPath>
-  <g clip-path="url(#tc107)"><ellipse cx="378" cy="337" rx="554" ry="29" fill="#ffc857" opacity="0.07" filter="url(#soft_t)"/></g>
+  <radialGradient id="tg102" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#ffc857" stop-opacity="0.119"/><stop offset="1" stop-color="#ffc857" stop-opacity="0"/></radialGradient>
+  <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="#0d1117"/>
+  <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="url(#tg102)"/>
   <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="url(#pane_t)"/>
   <path d="M61,330 H1139 A15,15 0 0 1 1154,345 V361 A15,15 0 0 1 1139,376 H61 A15,15 0 0 1 46,361 V345 A15,15 0 0 1 61,330 Z" fill="none" stroke="url(#rim_t)" stroke-width="1.2"/>
   <path d="M47,345 A15,15 0 0 1 61,331 H1139 A15,15 0 0 1 1153,345" fill="none" stroke="url(#spec_t)" stroke-width="1.4"/>
@@ -261,5 +273,8 @@
   <text class="mono" x="985" y="359" font-size="10.4" letter-spacing="1.8" fill="#9da7b3" font-weight="600">3.1 YEARS BUILDING</text>
   <rect x="877" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>
   </g>
-<rect width="1200" height="400" rx="26" filter="url(#grain_t)" opacity="0.9" style="mix-blend-mode:overlay"/>
+  <g class="tst0" opacity="1"><g><rect x="810" y="34" width="348" height="58" rx="29" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2.4"/><rect x="806" y="30" width="348" height="58" rx="29" fill="#161b22" stroke="#0a0f14" stroke-width="2.4"/></g><circle cx="835" cy="59" r="19" fill="#2ee6ff" stroke="#0a0f14" stroke-width="2"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
+        <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g><text class="mono" x="866" y="54" font-size="9" letter-spacing="2" fill="#2ee6ff" font-weight="800">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="74" font-size="14.5" font-weight="800" fill="#f0f3f6">149-day streak</text><text x="1136" y="74" text-anchor="end" font-size="10" fill="#9da7b3">Longest run without missing a day</text></g>
+  <g class="tst1" opacity="0"><g><rect x="810" y="34" width="348" height="58" rx="29" fill="#ffc857" stroke="#0a0f14" stroke-width="2.4"/><rect x="806" y="30" width="348" height="58" rx="29" fill="#161b22" stroke="#0a0f14" stroke-width="2.4"/></g><circle cx="835" cy="59" r="19" fill="#ffc857" stroke="#0a0f14" stroke-width="2"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="866" y="54" font-size="9" letter-spacing="2" fill="#ffc857" font-weight="800">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="74" font-size="14.5" font-weight="800" fill="#f0f3f6">SheShield hit 20 stars</text><text x="1136" y="74" text-anchor="end" font-size="10" fill="#9da7b3">Most-starred build</text></g>
+  <g class="tst2" opacity="0"><g><rect x="810" y="34" width="348" height="58" rx="29" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2.4"/><rect x="806" y="30" width="348" height="58" rx="29" fill="#161b22" stroke="#0a0f14" stroke-width="2.4"/></g><circle cx="835" cy="59" r="19" fill="#ff4fa0" stroke="#0a0f14" stroke-width="2"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g><text class="mono" x="866" y="54" font-size="9" letter-spacing="2" fill="#ff4fa0" font-weight="800">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="74" font-size="14.5" font-weight="800" fill="#f0f3f6">2,175 contributions</text><text x="1136" y="74" text-anchor="end" font-size="10" fill="#9da7b3">And still counting</text></g>
 </svg>

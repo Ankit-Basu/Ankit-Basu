@@ -120,14 +120,22 @@ STORY = ["A builder from Jalandhar who turns campus problems into",
          "production systems: safety tech, AI agents and tools",
          "that real people open every day."]
 
-# Chapter cards between sections: (numeral, kicker, title, subtitle, accent)
+# Chapter cards between sections: (numeral, kicker, title, narrator line, accent)
+# Titles are narrative on purpose - the panel below each card carries the
+# descriptive heading, so the two never repeat each other.
 CHAPTERS = [
-    ("I", "ORIGIN STORY", "How the player got here", "Three years, thirty-odd repos, one habit: ship it", CREAM),
-    ("II", "THE ARSENAL", "Skills, credentials & gear", "Everything equipped for the next boss fight", ROSE),
-    ("III", "THE BUILDS", "Systems shipped to production", "Pulled straight from the repos that hold them", MINT),
-    ("IV", "BATTLE LOG", "Live telemetry from GitHub", "Rebuilt every day by GitHub Actions", VIOLET),
-    ("V", "TROPHY HALL", "Achievements unlocked", "Podiums, ratings and the grind behind them", CREAM),
-    ("VI", "CURRENT QUEST", "What's on the bench right now", "Active missions, live progress", ROSE),
+    ("I", "ORIGIN STORY", "It started with one commit",
+     "September 2023. An empty account, a laptop, and far too many ideas.", CREAM),
+    ("II", "THE ARSENAL", "Gearing up",
+     "Before any boss fight, the player checks what they are carrying.", ROSE),
+    ("III", "THE BUILDS", "Things that shipped",
+     "Some quests ended as products that people open every single day.", MINT),
+    ("IV", "BATTLE LOG", "Every commit leaves a mark",
+     "GitHub keeps score. Here is what it says, refreshed every morning.", VIOLET),
+    ("V", "TROPHY HALL", "Hard-won loot",
+     "Not every battle was won. These ones were, and they left a mark.", CREAM),
+    ("VI", "CURRENT QUEST", "The road ahead",
+     "The story is not finished. You get to choose what happens next.", ROSE),
 ]
 
 # Origin timeline, dated from each repo's creation date.
@@ -174,3 +182,20 @@ VOTE_OPTIONS = [
     ("rust", "A Rust side quest", "A fast CLI tool, written in Rust", MINT),
     ("oss", "Open-source arc", "Contribute to the tools I use daily", VIOLET),
 ]
+
+# ------------------------------------------------------------ end credits
+CREDITS = [
+    ("DIRECTED BY", "Ankit Basu"),
+    ("STARRING", "SheShield  ·  Vyapaar  ·  Hirehearsal"),
+    ("ALSO STARRING", "BookMyCampus  ·  TimedInk  ·  PII Redaction"),
+    ("SUPPORTING CAST", "GridSense  ·  MindBloom  ·  Pixel-Board  ·  AlgoTrail"),
+    ("SIDEKICK", "BYTE, the pixel robot"),
+    ("STUNT WORK", "400+ DSA problems, no doubles used"),
+    ("FILMED ON LOCATION", "Jalandhar, Punjab"),
+    ("SOUNDTRACK", "lo-fi, compiler warnings, 2 a.m. keyboard clicks"),
+    ("SPECIAL THANKS", "everyone who starred, forked or voted"),
+    ("NO BUGS WERE HARMED", "(several were, actually)"),
+]
+
+MARQUEE = ["OPEN TO SWE / AI ROLES", "SHIPPING SAFETY TECH", "AI AGENTS", "FULL-STACK SYSTEMS",
+           "400+ DSA", "5x HACKATHON WINS", "BUILT IN JALANDHAR"]

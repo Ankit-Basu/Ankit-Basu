@@ -16,7 +16,7 @@ import math
 import os
 
 import profile as P
-from design import (BG0, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, PURPLE, INKK, RARITY,
+from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET, PURPLE, INKK, RARITY,
                     esc, rr, card, chip_row, page, section_header, uid, ev,
                     brut, sticker)
 from icons import icon
@@ -115,7 +115,7 @@ def _portrait(s, fx, fy, size):
                f'stroke="url(#ink_{s})" stroke-linecap="round" stroke-linejoin="round" '
                f'filter="url(#glowS_{s})">')
     for p in sk["paths"]:
-        sw = 6.2 if p.get("k") == "sil" else 4.4
+        sw = 7.5 if p.get("k") == "sil" else 5.2
         out.append(f'<path class="w{p["w"]}" d="{p["d"]}" stroke-width="{sw}" pathLength="1" '
                    f'stroke-dasharray="1 1" stroke-dashoffset="0" opacity="0.22"/>')
     out.append("</g>")
@@ -218,7 +218,9 @@ def _horizon(s, H, sun=None, hy=None, depth=None):
       <rect x="{sx - sr}" y="{sy - sr}" width="{2 * sr}" height="{hy - (sy - sr)}" fill="#fff"/>
       <g style="animation:band 2.6s linear infinite">{bands}</g>
     </mask>
-    <circle cx="{sx}" cy="{sy}" r="{sr * 1.25:.0f}" fill="{ROSE}" opacity="0.18" filter="url(#soft_{s})"/>
+    <radialGradient id="halo_{s}"><stop offset="0.6" stop-color="{ROSE}" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="{ROSE}" stop-opacity="0"/></radialGradient>
+    <circle cx="{sx}" cy="{sy}" r="{sr * 1.45:.0f}" fill="url(#halo_{s})"/>
     <circle cx="{sx}" cy="{sy}" r="{sr}" fill="url(#sun_{s})" mask="url(#{msk})"
             style="animation:sunb 5s ease-in-out infinite"/>""")
     out.append(f'<rect x="0" y="{hy}" width="{W}" height="{H - hy}" fill="{BG0}" fill-opacity="0.55"/>')
@@ -234,7 +236,13 @@ def _horizon(s, H, sun=None, hy=None, depth=None):
         out.append(f'<rect x="0" y="{hy}" width="{W}" height="1.2" fill="{ROSE}" opacity="0.7" '
                    f'transform="translate(0 {rest:.1f})" '
                    f'style="animation:flr {T}s cubic-bezier(.55,0,1,.45) {-T * i / n:.2f}s infinite"/>')
-    out.append(f'<rect x="0" y="{hy - 1}" width="{W}" height="2.4" fill="url(#hzl_{s})" filter="url(#glowS_{s})"/>')
+    # sky glow over the horizon: a gradient band, not a blur
+    out.append(f'<linearGradient id="sky_{s}" x1="0" y1="0" x2="0" y2="1">'
+               f'<stop offset="0" stop-color="{ROSE}" stop-opacity="0"/>'
+               f'<stop offset="1" stop-color="{ROSE}" stop-opacity="0.2"/></linearGradient>'
+               f'<rect x="0" y="{hy - 70}" width="{W}" height="70" fill="url(#sky_{s})"/>')
+    out.append(f'<rect x="0" y="{hy - 3}" width="{W}" height="6" fill="url(#hzl_{s})" opacity="0.35"/>'
+               f'<rect x="0" y="{hy - 1}" width="{W}" height="2" fill="url(#hzl_{s})"/>')
     out.append("</g>")
     return "\n  ".join(out), "\n    ".join(css)
 
@@ -362,62 +370,91 @@ def build_hero(d):
 
 # ================================================================ chapter cards
 def build_chapter(i):
-    num, kicker, title, sub, col = P.CHAPTERS[i]
+    """A chapter break, drawn as a JRPG dialogue box.
+
+    Left: the neo-brutalist chapter numeral, stamped in. Right: a pixel-
+    bordered dialogue box - the chapter's name on a tab, a narrative title,
+    a narrator line that types itself out with a blinking continue arrow,
+    and a segmented loading bar for the chapter that follows.
+    """
+    num, kicker, title, line, col = P.CHAPTERS[i]
     s = "c%d" % (i + 1)
-    H = 150
-    shadow = {CREAM: ROSE, ROSE: VIOLET, MINT: CREAM, VIOLET: MINT}[col]
-    css = ("@keyframes stamp{0%{transform:scale(1.18) rotate(-7deg);opacity:.5}"
-           "55%{transform:scale(.96) rotate(1deg);opacity:1}100%{transform:scale(1) rotate(0)}}"
-           ".stamp{animation:stamp 1.1s cubic-bezier(.22,1,.36,1)}"
-           "@keyframes uline{0%,20%{stroke-dashoffset:.8}100%{stroke-dashoffset:0}}"
-           ".uline{animation:uline 2.2s cubic-bezier(.22,1,.36,1)}")
-    bw = 150
-    body = [f'<g class="stamp" style="transform-origin:{PAD + bw / 2}px 75px">'
-            f'{brut(PAD, 26, bw, 94, col, shadow, r=14, off=7, bw=3)}'
-            f'<text class="mono" x="{PAD + bw / 2}" y="52" text-anchor="middle" font-size="10" '
-            f'font-weight="800" letter-spacing="2.6" fill="{INKK}">CHAPTER</text>'
-            f'<text class="sans" x="{PAD + bw / 2}" y="104" text-anchor="middle" font-size="46" '
-            f'font-weight="900" fill="{INKK}" letter-spacing="-1">{num}</text></g>']
-
-    gx = PAD + bw + 26
-    gw = W - PAD - gx
-    body.append(f'<g class="ev1">{card(s, gx, 26, gw, 94, r=18, tint=col, tint_op=0.16, sheen=True)}</g>')
-    body.append(f'<text class="mono ev2" x="{gx + 28}" y="56" font-size="11" letter-spacing="3.4" '
-                f'fill="{col}" font-weight="700">{esc(kicker)}</text>')
-    body.append(f'<text class="sans ev2" x="{gx + 28}" y="88" font-size="26" font-weight="800" '
-                f'fill="{INK}" letter-spacing="-0.5">{esc(title)}</text>')
-    body.append(f'<text class="ev3" x="{gx + 28}" y="108" font-size="12.5" font-style="italic" '
-                f'fill="{DIM}">{esc(sub)}</text>')
-    body.append(f'<path class="uline" d="M{gx + 28} 66.5H{gx + 28 + len(kicker) * 9.4:.0f}" stroke="{col}" '
-                f'stroke-width="1.6" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0" opacity="0.6"/>')
-
-    # chapter progress: brutalist pips, the current one lit
+    H = 176
     n = len(P.CHAPTERS)
-    px = W - PAD - 30 - n * 26
-    body.append(f'<text class="mono ev3" x="{W - PAD - 28}" y="56" text-anchor="end" font-size="9.4" '
-                f'letter-spacing="2" fill="{FAINT}">PROGRESS {i + 1}/{n}</text>')
-    for j in range(n):
-        x = px + j * 26
-        if j == i:
-            body.append(f'<g class="ev4">{brut(x, 76, 16, 16, col, shadow, r=4, off=3, bw=2)}</g>')
-        elif j < i:
-            body.append(f'<rect class="ev4" x="{x}" y="76" width="16" height="16" rx="4" fill="{col}" '
-                        f'fill-opacity="0.35" stroke="{col}" stroke-opacity="0.6"/>')
-        else:
-            body.append(f'<rect class="ev4" x="{x}" y="76" width="16" height="16" rx="4" fill="none" '
-                        f'stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="3 3"/>')
-    body.append(f'<text class="mono ev5" x="{W - PAD - 28}" y="110" text-anchor="end" font-size="9.4" '
-                f'letter-spacing="2" fill="{col}" fill-opacity="0.85">&#10022; SAVE POINT REACHED</text>')
+    shadow = {CREAM: ROSE, ROSE: MINT, MINT: CREAM, VIOLET: ROSE}[col]
+    fs = 13
+    tw = len(line) * fs * 0.6
+    T = 11.0
+    nseg = 16
+    css = ("@keyframes stamp{0%%{transform:scale(1.18) rotate(-7deg);opacity:.5}"
+           "55%%{transform:scale(.96) rotate(1deg);opacity:1}100%%{transform:scale(1) rotate(0)}}"
+           ".stamp{animation:stamp 1.1s cubic-bezier(.22,1,.36,1)}"
+           "@keyframes say{0%%{width:0}32%%,100%%{width:%.1fpx}}.say{animation:say %.1fs steps(%d,end) infinite}"
+           "@keyframes nxt{0%%,100%%{transform:translateY(0);opacity:1}50%%{transform:translateY(3px);opacity:.35}}"
+           ".nxt{animation:nxt .9s steps(2,end) infinite}"
+           "@keyframes seg{0%%,4%%{opacity:.12}10%%,74%%{opacity:1}84%%,100%%{opacity:.12}}"
+           "@keyframes flick{0%%,100%%{opacity:1}48%%{opacity:1}50%%{opacity:.55}52%%{opacity:1}}"
+           ".flick{animation:flick 4.2s linear infinite}"
+           % (tw + 4, T, len(line)))
+    body = []
 
-    blobs = [(300, 70, 200, col, 0.22, "drift"), (950, 80, 220, shadow, 0.18, "drift2")]
-    return page(s, W, H, css, "\n  ".join(body), blobs, grid=False)
+    # -- numeral block
+    bw = 150
+    body.append(f'<g class="stamp" style="transform-origin:{PAD + bw / 2}px 92px">'
+                f'{brut(PAD, 34, bw, 112, col, shadow, r=14, off=7, bw=3)}'
+                f'<text class="mono" x="{PAD + bw / 2}" y="60" text-anchor="middle" font-size="10" '
+                f'font-weight="800" letter-spacing="2.6" fill="{INKK}">CHAPTER</text>'
+                f'<text class="sans" x="{PAD + bw / 2}" y="122" text-anchor="middle" font-size="54" '
+                f'font-weight="900" fill="{INKK}" letter-spacing="-1">{num}</text>'
+                f'<rect x="{PAD + 22}" y="132" width="{bw - 44}" height="3" fill="{INKK}" opacity="0.8"/></g>')
+
+    # -- dialogue box: ink outer frame, accent inner frame, pixel corner notches
+    gx = PAD + bw + 30
+    gw = W - PAD - gx
+    by, bh = 44, 104
+    body.append(f'<g class="ev1">')
+    body.append(f'<rect x="{gx}" y="{by}" width="{gw}" height="{bh}" fill="{BG2}" stroke="{INKK}" stroke-width="4"/>')
+    body.append(f'<rect x="{gx + 5}" y="{by + 5}" width="{gw - 10}" height="{bh - 10}" fill="none" '
+                f'stroke="{col}" stroke-width="2" class="flick"/>')
+    for cx_, cy_ in [(gx, by), (gx + gw - 8, by), (gx, by + bh - 8), (gx + gw - 8, by + bh - 8)]:
+        body.append(f'<rect x="{cx_}" y="{cy_}" width="8" height="8" fill="{BG0}"/>')
+    body.append("</g>")
+    # name tab
+    tab = "%s" % kicker
+    tw_ = len(tab) * 7.4 + 26
+    body.append(f'<g class="ev1">{brut(gx + 22, by - 14, tw_, 24, col, INKK, r=0, off=3, bw=2.4)}'
+                f'<text class="mono" x="{gx + 22 + tw_ / 2}" y="{by + 2.5}" text-anchor="middle" font-size="10.4" '
+                f'font-weight="800" letter-spacing="1.6" fill="{INKK}">{esc(tab)}</text></g>')
+
+    tx = gx + 26
+    body.append(f'<text class="sans ev2" x="{tx}" y="{by + 46}" font-size="25" font-weight="800" '
+                f'fill="{INK}" letter-spacing="-0.4">{esc(title)}</text>')
+    cid = uid("say")
+    body.append(f'<clipPath id="{cid}"><rect class="say" x="{tx - 2}" y="{by + 62}" width="{tw + 4:.1f}" height="22"/></clipPath>'
+                f'<text class="mono" x="{tx}" y="{by + 78}" font-size="{fs}" fill="{DIM}" textLength="{tw:.1f}" '
+                f'lengthAdjust="spacingAndGlyphs" clip-path="url(#{cid})">{esc(line)}</text>')
+    ax = gx + gw - 30
+    body.append(f'<path class="nxt" d="M{ax - 7} {by + bh - 26}h14l-7 8z" fill="{col}"/>')
+
+    # -- chapter progress + loading bar, top right of the box
+    rx = gx + gw - 26
+    body.append(f'<text class="mono ev3" x="{rx}" y="{by + 30}" text-anchor="end" font-size="9.4" '
+                f'letter-spacing="2" fill="{FAINT}">CH {i + 1:02d}/{n:02d} &#183; '
+                f'{"LOADING NEXT" if i < n - 1 else "FINAL CHAPTER"}</text>')
+    segw = 9
+    sx0 = rx - nseg * (segw + 3) + 3
+    for k in range(nseg):
+        dl = -T / 3.0 + k * 0.09
+        body.append(f'<rect x="{sx0 + k * (segw + 3)}" y="{by + 40}" width="{segw}" height="10" fill="{col}" '
+                    f'style="animation:seg {T / 3.0:.2f}s linear {dl:.2f}s infinite"/>')
+    return page(s, W, H, css, "\n  ".join(body), None, grid=False)
 
 
 # ================================================================ origin timeline
 def build_timeline():
     s = "o"
     H = 600
-    body = [section_header(s, PAD, 62, "ORIGIN STORY", "From level 1 to now", CREAM)]
+    body = [section_header(s, PAD, 62, "WORLD MAP", "From level 1 to now", CREAM)]
     xs = [140, 370, 600, 830, 1060]
     y1, y2 = 176, 382
     nodes = [(x, y1) for x in xs] + [(x, y2) for x in reversed(xs)]
@@ -486,7 +523,7 @@ def _shade(hexcol, k):
 def build_city(d):
     s = "y"
     H = 520
-    body = [section_header(s, PAD, 62, "BATTLE LOG", "The city my commits built", VIOLET)]
+    body = [section_header(s, PAD, 62, "CITY VIEW", "The city my commits built", VIOLET)]
     cal = d.get("calendar") or []
     weeks = 52
     recent = cal[-weeks * 7:]

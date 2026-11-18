@@ -19,7 +19,7 @@ from design import (BG0, BG2, INK, DIM, FAINT, CREAM, ROSE, MINT, VIOLET,  # noq
 from icons import icon  # noqa: E402
 import story  # noqa: E402
 import arcade  # noqa: E402
-from design import sticker  # noqa: E402
+from design import sticker, brut, INKK  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W = 1200
@@ -269,7 +269,7 @@ def build_trophies(d):
     css = """
     @keyframes halo{0%,100%{opacity:.20}50%{opacity:.55}}
     """
-    body = [section_header(s, PAD, 62, "TROPHY HALL", "Achievements & Milestones", VIOLET)]
+    body = [section_header(s, PAD, 62, "UNLOCKED", "Achievements & milestones", VIOLET)]
 
     tw, gap = 262, 20
     for i, (ic, title, sub, val, unit, col) in enumerate(P.TROPHIES):
@@ -313,10 +313,33 @@ def build_trophies(d):
             body.append(f'<rect x="{PAD + seg * i}" y="344" width="1" height="18" fill="#ffffff" opacity="0.1"/>')
     body.append("</g>")
 
-    blobs = [(200, 190, 250, CREAM, 0.20, "drift"),
-             (620, 210, 240, ROSE, 0.18, "drift2"),
-             (1020, 230, 250, VIOLET, 0.22, "drift3")]
-    return page(s, W, 400, css, "\n  ".join(body), blobs)
+    # -- achievement toasts: slide in, hold, slide out, one after another.
+    # Resting state is the first toast, fully shown.
+    stars = {r["name"]: r["stars"] for r in d.get("top_repos", [])}
+    toasts = [("flame", "%s-day streak" % fmt(d.get("longest")), "Longest run without missing a day", MINT),
+              ("star", "SheShield hit %s stars" % stars.get("SheShield", d["stars"]), "Most-starred build", CREAM),
+              ("pulse", "%s contributions" % fmt(d.get("total_contributions")), "And still counting", ROSE)]
+    T, n = 15.0, len(toasts)
+    slot = 100.0 / n
+    tx, ty, tw, th = 806, 30, 348, 58
+    for k, (ic, name, sub, col) in enumerate(toasts):
+        a = k * slot
+        css += ("@keyframes tst%d{0%%,%.2f%%{transform:translateX(40px);opacity:0}"
+                "%.2f%%,%.2f%%{transform:translateX(0);opacity:1}%.2f%%,100%%{transform:translateX(40px);opacity:0}}"
+                ".tst%d{animation:tst%d %.0fs cubic-bezier(.22,1,.36,1) infinite}\n"
+                % (k, a, a + 3, a + slot - 3, a + slot, k, k, T))
+        body.append(f'<g class="tst{k}" opacity="{1 if k == 0 else 0}">'
+                    f'{brut(tx, ty, tw, th, BG2, col, r=29, off=4, bw=2.4)}'
+                    f'<circle cx="{tx + 29}" cy="{ty + 29}" r="19" fill="{col}" stroke="{INKK}" stroke-width="2"/>'
+                    f'{icon(ic, tx + 19, ty + 19, 20, INKK, 2.2, 1)}'
+                    f'<text class="mono" x="{tx + 60}" y="{ty + 24}" font-size="9" letter-spacing="2" '
+                    f'fill="{col}" font-weight="800">ACHIEVEMENT UNLOCKED</text>'
+                    f'<text class="sans" x="{tx + 60}" y="{ty + 44}" font-size="14.5" font-weight="800" '
+                    f'fill="{INK}">{esc(name)}</text>'
+                    f'<text x="{tx + tw - 18}" y="{ty + 44}" text-anchor="end" font-size="10" '
+                    f'fill="{DIM}">{esc(sub)}</text></g>')
+
+    return page(s, W, 400, css, "\n  ".join(body), None)
 
 
 # ================================================================ quest log
@@ -438,6 +461,9 @@ def main():
     d = load()
     print("building panels from data synced %s" % d.get("synced_at"))
     write("banner.svg", story.build_hero(d))
+    write("marquee.svg", arcade.build_marquee())
+    write("marquee2.svg", arcade.build_marquee(flip=True))
+    write("credits.svg", arcade.build_credits(d))
     for i in range(len(P.CHAPTERS)):
         write("chapter%d.svg" % (i + 1), story.build_chapter(i))
     write("timeline.svg", story.build_timeline())
