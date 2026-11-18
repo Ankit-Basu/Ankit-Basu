@@ -57,6 +57,31 @@ def today_count(today):
     return days.get(today, 0), days
 
 
+COUNTED = {"PushEvent", "PullRequestEvent", "IssuesEvent", "PullRequestReviewEvent", "CreateEvent"}
+
+
+def events_today(midnight):
+    """Contribution-type events since local midnight, from the public feed.
+
+    The calendar alone can't answer "today": GitHub buckets it in the
+    viewer's timezone, and the Actions token has none, so it gets UTC days -
+    commits made before 05:30 IST land on "yesterday". Event timestamps are
+    exact, so counting from IST midnight is right whatever token runs this.
+    """
+    n = 0
+    for page in (1, 2, 3):
+        evs = call("GET", "/users/%s/events/public?per_page=100&page=%d" % (USER, page)) or []
+        for e in evs:
+            when = dt.datetime.fromisoformat(e["created_at"].replace("Z", "+00:00"))
+            if when < midnight:
+                return n
+            if e["type"] in COUNTED:
+                n += 1
+        if len(evs) < 100:
+            break
+    return n
+
+
 def streak_before(today, days):
     """Length of the streak that ends yesterday - what is at stake tonight."""
     n, d = 0, dt.date.fromisoformat(today) - dt.timedelta(days=1)
@@ -78,7 +103,12 @@ def main():
         return 1
     now = dt.datetime.now(TZ)
     today = now.date().isoformat()
-    count, days = today_count(today)
+    cal_count, days = today_count(today)
+    midnight = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    ev_count = events_today(midnight)
+    # either source seeing activity is enough; only both at zero raises an alert
+    count = max(cal_count, ev_count)
+    print("calendar says %d, activity feed says %d since midnight IST" % (cal_count, ev_count))
     if os.environ.get("FORCE_COUNT") is not None:
         count = int(os.environ["FORCE_COUNT"])
     at_stake = streak_before(today, days)
