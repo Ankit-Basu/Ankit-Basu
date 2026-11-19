@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 176" width="1200" height="176" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 244" width="1200" height="244" role="img">
 
   <defs>
     <linearGradient id="pane_c6" x1="0" y1="0" x2="0.7" y2="1">
@@ -146,51 +146,34 @@
     .ev24{animation:ev24 1.70s cubic-bezier(.22,1,.36,1);}
     @keyframes ev25{0%,72.0%{opacity:.5;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
     .ev25{animation:ev25 1.70s cubic-bezier(.22,1,.36,1);}
-@keyframes stamp{0%{transform:translateY(10px);opacity:.5}100%{transform:none;opacity:1}}.stamp{animation:stamp 1.2s cubic-bezier(.22,1,.36,1)}@keyframes trace{0%,10%{stroke-dashoffset:1}70%,100%{stroke-dashoffset:0}}.uline{animation:trace 2.6s cubic-bezier(.45,.05,.35,1)}@keyframes say{0%{width:0}32%,100%{width:552.1px}}.say{animation:say 11.0s steps(63,end) infinite}@keyframes nxt{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(3px);opacity:.4}}.nxt{animation:nxt 1.6s ease-in-out infinite}@keyframes seg{0%,4%{opacity:.15}10%,74%{opacity:1}84%,100%{opacity:.15}}@keyframes flick{0%,100%{opacity:.9}50%{opacity:.45}}.flick{animation:flick 3.2s ease-in-out infinite}</style>
-<rect width="1200" height="176" rx="20" fill="#0d1117"/>
-<g class="stamp" style="transform-origin:121.0px 92px"><g>
-  <radialGradient id="tg24" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#f9a8d4" stop-opacity="0.340"/><stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/></radialGradient>
-  <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="#0d1117"/>
-  <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="url(#tg24)"/>
-  <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="url(#pane_c6)"/>
-  <path d="M62,34 H180 A16,16 0 0 1 196,50 V130 A16,16 0 0 1 180,146 H62 A16,16 0 0 1 46,130 V50 A16,16 0 0 1 62,34 Z" fill="none" stroke="url(#rim_c6)" stroke-width="1.2"/>
-  <path d="M47,50 A16,16 0 0 1 62,35 H180 A16,16 0 0 1 195,50" fill="none" stroke="url(#spec_c6)" stroke-width="1.4"/>
-  <rect x="62" y="143.5" width="118" height="1.2" rx="0.6" fill="url(#refr_c6)"/>
-  </g><text class="mono" x="121.0" y="60" text-anchor="middle" font-size="11.3" font-weight="600" letter-spacing="3" fill="#f9a8d4">CHAPTER</text><text class="sans uline" x="121.0" y="122" text-anchor="middle" font-size="56.0" font-weight="800" fill="none" stroke="#f9a8d4" stroke-width="1.3" letter-spacing="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0">VI</text><rect x="105.0" y="132" width="32" height="1.5" rx="0.75" fill="#f9a8d4"/></g>
-  <g class="ev1">
-  <g>
-  <radialGradient id="tg25" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#f9a8d4" stop-opacity="0.136"/><stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/></radialGradient>
-  <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="#0d1117"/>
-  <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="url(#tg25)"/>
-  <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="url(#pane_c6)"/>
-  <path d="M238,34 H1138 A16,16 0 0 1 1154,50 V130 A16,16 0 0 1 1138,146 H238 A16,16 0 0 1 222,130 V50 A16,16 0 0 1 238,34 Z" fill="none" stroke="url(#rim_c6)" stroke-width="1.2"/>
-  <path d="M223,50 A16,16 0 0 1 238,35 H1138 A16,16 0 0 1 1153,50" fill="none" stroke="url(#spec_c6)" stroke-width="1.4"/>
-  <rect x="238" y="143.5" width="900" height="1.2" rx="0.6" fill="url(#refr_c6)"/>
+@keyframes stamp{0%{transform:translateY(12px);opacity:.5}100%{transform:none;opacity:1}}.stamp{animation:stamp 1.2s cubic-bezier(.22,1,.36,1)}@keyframes trace{0%,8%{stroke-dashoffset:1}60%,100%{stroke-dashoffset:0}}.trace{animation:trace 2.8s cubic-bezier(.45,.05,.35,1)}@keyframes say{0%{width:0}32%,100%{width:514.3px}}.say{animation:say 11.0s steps(63,end) infinite}@keyframes caret{0%,49%{opacity:1}50%,100%{opacity:0}}.caret{animation:caret 1s steps(1) infinite}@keyframes tw{0%,100%{opacity:1}50%{opacity:.45}}.tw{animation:tw 2.6s ease-in-out infinite}@keyframes halo{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.9);opacity:0}}.halo{animation:halo 2.4s ease-out infinite}@keyframes ping{0%{transform:scale(1);opacity:.9}100%{transform:scale(3);opacity:0}}.ping{animation:ping 1.8s ease-out infinite}@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}.bob{animation:bob 2.8s ease-in-out infinite}@keyframes flowd{from{stroke-dashoffset:24}to{stroke-dashoffset:0}}.flow{animation:flowd 1.6s linear infinite}@keyframes seg{0%,100%{opacity:1}50%{opacity:.55}}</style>
+<rect width="1200" height="244" rx="20" fill="#0d1117"/>
+<g>
+  <path d="M51,14 H1149 A24,24 0 0 1 1173,38 V206 A24,24 0 0 1 1149,230 H51 A24,24 0 0 1 27,206 V38 A24,24 0 0 1 51,14 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
+  <radialGradient id="tg21" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#f9a8d4" stop-opacity="0.204"/><stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/></radialGradient>
+  <path d="M48,14 H1152 A24,24 0 0 1 1176,38 V206 A24,24 0 0 1 1152,230 H48 A24,24 0 0 1 24,206 V38 A24,24 0 0 1 48,14 Z" fill="#0d1117"/>
+  <path d="M48,14 H1152 A24,24 0 0 1 1176,38 V206 A24,24 0 0 1 1152,230 H48 A24,24 0 0 1 24,206 V38 A24,24 0 0 1 48,14 Z" fill="url(#tg21)"/>
+  <path d="M48,14 H1152 A24,24 0 0 1 1176,38 V206 A24,24 0 0 1 1152,230 H48 A24,24 0 0 1 24,206 V38 A24,24 0 0 1 48,14 Z" fill="url(#pane_c6)"/>
+  <path d="M48,14 H1152 A24,24 0 0 1 1176,38 V206 A24,24 0 0 1 1152,230 H48 A24,24 0 0 1 24,206 V38 A24,24 0 0 1 48,14 Z" fill="none" stroke="url(#rim_c6)" stroke-width="1.2"/>
+  <path d="M25,38 A24,24 0 0 1 48,15 H1152 A24,24 0 0 1 1175,38" fill="none" stroke="url(#spec_c6)" stroke-width="1.4"/>
+  <rect x="48" y="227.5" width="1104" height="1.2" rx="0.6" fill="url(#refr_c6)"/>
   </g>
-  <path class="flick" d="M232 58V44H246" fill="none" stroke="#f9a8d4" stroke-width="1.4" stroke-linecap="round"/>
-  <path class="flick" d="M1144 58V44H1130" fill="none" stroke="#f9a8d4" stroke-width="1.4" stroke-linecap="round"/>
-  <path class="flick" d="M232 122V136H246" fill="none" stroke="#f9a8d4" stroke-width="1.4" stroke-linecap="round"/>
-  <path class="flick" d="M1144 122V136H1130" fill="none" stroke="#f9a8d4" stroke-width="1.4" stroke-linecap="round"/>
-  </g>
-  <g class="ev1"><g><rect x="248" y="44" width="140" height="22" rx="11.0" fill="#f9a8d4" fill-opacity="0.12" stroke="#f9a8d4" stroke-opacity="0.45" stroke-width="1"/><circle cx="260.0" cy="55.0" r="2.4" fill="#f9a8d4"/><text class="mono" x="269.0" y="59.1" font-size="11.5" font-weight="600" letter-spacing="1.6" fill="#f9a8d4" textLength="108.9" lengthAdjust="spacing">CURRENT QUEST</text></g></g>
-  <text class="sans ev2" x="248" y="100" font-size="25.0" font-weight="800" fill="#f0f3f6" letter-spacing="-0.4">The road ahead</text>
-  <clipPath id="say26"><rect class="say" x="246" y="116" width="552.1" height="22"/></clipPath><text class="mono" x="248" y="132" font-size="14.5" fill="#9da7b3" textLength="548.1" lengthAdjust="spacingAndGlyphs" clip-path="url(#say26)">The story is not finished. You get to choose what happens next.</text>
-  <path class="nxt" d="M1114 122l6 6 6-6" fill="none" stroke="#f9a8d4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="mono ev3" x="1124" y="62" text-anchor="end" font-size="10.8" letter-spacing="2" fill="#6e7681">CH 06/06 &#183; FINAL CHAPTER</text>
-  <rect x="951" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.67s infinite"/>
-  <rect x="962" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.58s infinite"/>
-  <rect x="973" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.49s infinite"/>
-  <rect x="984" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.40s infinite"/>
-  <rect x="995" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.31s infinite"/>
-  <rect x="1006" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.22s infinite"/>
-  <rect x="1017" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.13s infinite"/>
-  <rect x="1028" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -3.04s infinite"/>
-  <rect x="1039" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.95s infinite"/>
-  <rect x="1050" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.86s infinite"/>
-  <rect x="1061" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.77s infinite"/>
-  <rect x="1072" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.68s infinite"/>
-  <rect x="1083" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.59s infinite"/>
-  <rect x="1094" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.50s infinite"/>
-  <rect x="1105" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.41s infinite"/>
-  <rect x="1116" y="72" width="8" height="4" rx="2" fill="#f9a8d4" style="animation:seg 3.67s linear -2.32s infinite"/>
+  <path d="M38 44V28H54" fill="none" stroke="#f9a8d4" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M1162 44V28H1146" fill="none" stroke="#f9a8d4" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M38 200V216H54" fill="none" stroke="#f9a8d4" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M1162 200V216H1146" fill="none" stroke="#f9a8d4" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round"/>
+  <linearGradient id="ng_c6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f9a8d4"/></linearGradient>
+  <g class="stamp"><text class="mono" x="72" y="70" font-size="12.0" font-weight="600" letter-spacing="3.4" fill="#f9a8d4">CHAPTER</text><text class="sans" x="66" y="160" font-size="96.0" font-weight="800" letter-spacing="-5" fill="url(#ng_c6)">06</text><rect x="70" y="180" width="44" height="2" rx="1" fill="#f9a8d4"/></g>
+  <g class="ev1"><g><rect x="230" y="46" width="140" height="24" rx="12.0" fill="#f9a8d4" fill-opacity="0.12" stroke="#f9a8d4" stroke-opacity="0.45" stroke-width="1"/><circle cx="242.0" cy="58.0" r="2.4" fill="#f9a8d4"/><text class="mono" x="251.0" y="62.1" font-size="11.5" font-weight="600" letter-spacing="1.6" fill="#f9a8d4" textLength="108.9" lengthAdjust="spacing">CURRENT QUEST</text></g></g>
+  <text class="sans ev2" x="230" y="118" font-size="32.0" font-weight="800" fill="#f0f3f6" letter-spacing="-0.6">The road ahead</text>
+  <clipPath id="say22"><rect class="say" x="228" y="132" width="514.3" height="24"/></clipPath><text class="mono" x="230" y="150" font-size="13.5" fill="#9da7b3" textLength="510.3" lengthAdjust="spacingAndGlyphs" clip-path="url(#say22)">The story is not finished. You get to choose what happens next.</text>
+  <rect x="230" y="184" width="46" height="4" rx="2" fill="#f9a8d4" fill-opacity="0.4"/>
+  <rect x="282" y="184" width="46" height="4" rx="2" fill="#f9a8d4" fill-opacity="0.4"/>
+  <rect x="334" y="184" width="46" height="4" rx="2" fill="#f9a8d4" fill-opacity="0.4"/>
+  <rect x="386" y="184" width="46" height="4" rx="2" fill="#f9a8d4" fill-opacity="0.4"/>
+  <rect x="438" y="184" width="46" height="4" rx="2" fill="#f9a8d4" fill-opacity="0.4"/>
+  <rect x="490" y="184" width="46" height="4" rx="2" fill="#f9a8d4" fill-opacity="1" style="animation:seg 1.6s ease-in-out infinite"/>
+  <text class="mono ev3" x="550" y="190" font-size="10.8" letter-spacing="1.8" fill="#6e7681">06 / 06 &#183; FINAL CHAPTER</text>
+  <rect x="786" y="44" width="1" height="156" fill="#ffffff" opacity="0.08"/>
+  <g class="ev2"><circle cx="884" cy="126.0" r="62" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="10"/><path d="M884.0 54.0L884.0 48.0" stroke="#f9a8d4" stroke-opacity="1" stroke-width="2" stroke-linecap="round"/><path d="M926.3 67.8L929.8 62.9" stroke="#f9a8d4" stroke-opacity="1" stroke-width="2" stroke-linecap="round"/><path d="M952.5 103.8L958.2 101.9" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><path d="M952.5 148.2L958.2 150.1" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><path d="M926.3 184.2L929.8 189.1" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><path d="M884.0 198.0L884.0 204.0" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><path d="M841.7 184.2L838.2 189.1" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><path d="M815.5 148.2L809.8 150.1" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><path d="M815.5 103.8L809.8 101.9" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><path d="M841.7 67.8L838.2 62.9" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/><circle class="trace" cx="884" cy="126.0" r="62" fill="none" stroke="#f9a8d4" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="18 82" stroke-dashoffset="0" transform="rotate(-90 884 126.0)"/><g style="animation:spin 9s linear infinite;transform-origin:884px 126.0px"><circle cx="884" cy="38.0" r="3.2" fill="#7dd3fc"/></g><text class="sans" x="884" y="134.0" text-anchor="middle" font-size="28.0" font-weight="800" fill="#f0f3f6">18%</text><text class="mono" x="884" y="152.0" text-anchor="middle" font-size="10.1" letter-spacing="1.6" fill="#f9a8d4">PRATIRODH</text><g class="ev4"><text class="mono" x="982" y="76" font-size="10.1" letter-spacing="1.8" fill="#f9a8d4">NOW</text><text x="982" y="91" font-size="13.2" font-weight="600" fill="#f0f3f6">Data engineering</text></g><g class="ev5"><text class="mono" x="982" y="108" font-size="10.1" letter-spacing="1.8" fill="#9da7b3">NEXT</text><text x="982" y="123" font-size="13.2" font-weight="600" fill="#f0f3f6">Telephony simulator</text></g><g class="ev6"><text class="mono" x="982" y="140" font-size="10.1" letter-spacing="1.8" fill="#f9a8d4">BOSS</text><text x="982" y="155" font-size="13.2" font-weight="600" fill="#f0f3f6">The Voice Clone</text></g><g class="ev7"><text class="mono" x="982" y="172" font-size="10.1" letter-spacing="1.8" fill="#7dd3fc">YOU</text><text x="982" y="187" font-size="13.2" font-weight="600" fill="#f0f3f6">vote below</text></g></g>
 </svg>

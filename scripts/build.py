@@ -20,6 +20,7 @@ from icons import icon  # noqa: E402
 import story  # noqa: E402
 import arcade  # noqa: E402
 import game  # noqa: E402
+import chapters  # noqa: E402
 import buttons  # noqa: E402
 from design import sticker, brut, INKK  # noqa: E402
 
@@ -398,7 +399,7 @@ def main():
     write("marquee2.svg", arcade.build_marquee(flip=True))
     write("credits.svg", arcade.build_credits(d))
     for i in range(len(P.CHAPTERS)):
-        write("chapter%d.svg" % (i + 1), story.build_chapter(i))
+        write("chapter%d.svg" % (i + 1), chapters.build_chapter(i, d))
     write("timeline.svg", story.build_timeline())
     write("loadout.svg", build_loadout())
     write("skilltree.svg", game.build_skilltree())

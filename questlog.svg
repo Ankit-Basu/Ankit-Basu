@@ -155,9 +155,9 @@
   <rect width="1200" height="416" rx="20" fill="url(#grid_q)"/>
 <g>
   <path d="M65,40 H1135 A22,22 0 0 1 1157,62 V314 A22,22 0 0 1 1135,336 H65 A22,22 0 0 1 43,314 V62 A22,22 0 0 1 65,40 Z" fill="#000000" fill-opacity="0.32" transform="translate(0 7)"/>
-  <radialGradient id="tg96" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.153"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg92" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.153"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
   <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="#0d1117"/>
-  <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="url(#tg96)"/>
+  <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="url(#tg92)"/>
   <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="url(#pane_q)"/>
   <path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z" fill="none" stroke="url(#rim_q)" stroke-width="1.2"/>
   <path d="M41,62 A22,22 0 0 1 62,41 H1138 A22,22 0 0 1 1159,62" fill="none" stroke="url(#spec_q)" stroke-width="1.4"/>
@@ -173,19 +173,19 @@
     <text class="mono" x="72" y="128" font-size="13.4">
       <tspan fill="#7dd3fc">ankit@system</tspan><tspan fill="#9da7b3">:</tspan
       ><tspan fill="#c5f467">~/production</tspan><tspan fill="#9da7b3">$ </tspan></text>
-    <clipPath id="ty97"><rect class="tyw" x="280" y="112" width="176" height="24"/></clipPath>
+    <clipPath id="ty93"><rect class="tyw" x="280" y="112" width="176" height="24"/></clipPath>
     <text class="mono" x="280" y="128" font-size="13.4" fill="#fcd38d"
-          clip-path="url(#ty97)">cat now_building.md</text>
+          clip-path="url(#ty93)">cat now_building.md</text>
   </g>
   <g class="ev9">
   <text class="mono" x="72" y="172" font-size="13.6" fill="#fcd38d" font-weight="600">&#9656; Pratirodh</text>
   <text x="268" y="172" font-size="12.8" fill="#9da7b3">Detecting AI voice-clone fraud on Indian phone calls</text>
   <g>
     <rect x="800" y="163" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp98{from{width:8.1px}to{width:45.0px}}
-    .xp98{animation:xp98 3.40s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp98" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#fcd38d"/>
-    <rect class="xp98" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp94{from{width:8.1px}to{width:45.0px}}
+    .xp94{animation:xp94 3.40s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp94" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#fcd38d"/>
+    <rect class="xp94" x="800" y="163" width="45.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text class="mono" x="1128" y="172" text-anchor="end" font-size="12.1" font-weight="700" fill="#fcd38d">18%</text>
   </g>
@@ -194,10 +194,10 @@
   <text x="268" y="206" font-size="12.8" fill="#9da7b3">Android app: offline reports, hold-to-send SOS</text>
   <g>
     <rect x="800" y="197" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp99{from{width:39.6px}to{width:220.0px}}
-    .xp99{animation:xp99 3.54s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp99" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#f9a8d4"/>
-    <rect class="xp99" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp95{from{width:39.6px}to{width:220.0px}}
+    .xp95{animation:xp95 3.54s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp95" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#f9a8d4"/>
+    <rect class="xp95" x="800" y="197" width="220.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text class="mono" x="1128" y="206" text-anchor="end" font-size="12.1" font-weight="700" fill="#f9a8d4">88%</text>
   </g>
@@ -206,10 +206,10 @@
   <text x="268" y="240" font-size="12.8" fill="#9da7b3">Contest-grade problems, every single day</text>
   <g>
     <rect x="800" y="231" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp100{from{width:40.5px}to{width:225.0px}}
-    .xp100{animation:xp100 3.68s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp100" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#7dd3fc"/>
-    <rect class="xp100" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp96{from{width:40.5px}to{width:225.0px}}
+    .xp96{animation:xp96 3.68s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp96" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#7dd3fc"/>
+    <rect class="xp96" x="800" y="231" width="225.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text class="mono" x="1128" y="240" text-anchor="end" font-size="12.1" font-weight="700" fill="#7dd3fc">90%</text>
   </g>
@@ -218,20 +218,20 @@
   <text x="268" y="274" font-size="12.8" fill="#9da7b3">EKS + GitOps deployment pipeline</text>
   <g>
     <rect x="800" y="265" width="250" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.09"/>
-    <style>@keyframes xp101{from{width:26.1px}to{width:145.0px}}
-    .xp101{animation:xp101 3.82s cubic-bezier(.22,1,.36,1);}</style>
-    <rect class="xp101" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#c5f467"/>
-    <rect class="xp101" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
+    <style>@keyframes xp97{from{width:26.1px}to{width:145.0px}}
+    .xp97{animation:xp97 3.82s cubic-bezier(.22,1,.36,1);}</style>
+    <rect class="xp97" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#c5f467"/>
+    <rect class="xp97" x="800" y="265" width="145.0" height="6" rx="3.0" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text class="mono" x="1128" y="274" text-anchor="end" font-size="12.1" font-weight="700" fill="#c5f467">58%</text>
   </g>
   <text class="mono" x="72" y="316" font-size="13.4"><tspan fill="#7dd3fc">ankit@system</tspan><tspan fill="#9da7b3">:</tspan><tspan fill="#c5f467">~/production</tspan><tspan fill="#9da7b3">$</tspan><tspan fill="#fcd38d" style="animation:blink 1.1s steps(1) infinite"> &#9646;</tspan></text>
-  <clipPath id="sc102"><path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z"/></clipPath><g clip-path="url(#sc102)" opacity="0.5"><rect x="40" y="40" width="1120" height="34" fill="url(#sheen_q)" style="animation:scan 7s linear infinite"/></g>
+  <clipPath id="sc98"><path d="M62,40 H1138 A22,22 0 0 1 1160,62 V314 A22,22 0 0 1 1138,336 H62 A22,22 0 0 1 40,314 V62 A22,22 0 0 1 62,40 Z"/></clipPath><g clip-path="url(#sc98)" opacity="0.5"><rect x="40" y="40" width="1120" height="34" fill="url(#sheen_q)" style="animation:scan 7s linear infinite"/></g>
   <g class="ev21">
   <g>
-  <radialGradient id="tg103" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#c5f467" stop-opacity="0.136"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient>
+  <radialGradient id="tg99" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#c5f467" stop-opacity="0.136"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient>
   <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="#0d1117"/>
-  <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="url(#tg103)"/>
+  <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="url(#tg99)"/>
   <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="url(#pane_q)"/>
   <path d="M55,352 H1145 A15,15 0 0 1 1160,367 V381 A15,15 0 0 1 1145,396 H55 A15,15 0 0 1 40,381 V367 A15,15 0 0 1 55,352 Z" fill="none" stroke="url(#rim_q)" stroke-width="1.2"/>
   <path d="M41,367 A15,15 0 0 1 55,353 H1145 A15,15 0 0 1 1159,367" fill="none" stroke="url(#spec_q)" stroke-width="1.4"/>
