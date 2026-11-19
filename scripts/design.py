@@ -412,28 +412,46 @@ def bump(fs):
     lift; headings are already large enough and barely move."""
     fs = float(fs)
     if fs <= 10.5:
-        return round(fs * 1.2, 1)
-    if fs <= 12.5:
-        return round(fs * 1.1, 1)
-    if fs <= 16:
-        return round(fs * 1.05, 1)
-    return fs
+        out = fs * 1.2
+    elif fs <= 12.5:
+        out = fs * 1.1
+    elif fs <= 16:
+        out = fs * 1.05
+    else:
+        out = fs
+    # Floor: measured on the live profile at 1440px, panels render at 70.5%,
+    # so 12.6 here is ~9px on screen - the smallest anything is allowed to be.
+    return round(max(out, MIN_FS), 1)
 
 
+MIN_FS = 12.6
 _TAG = re.compile(r"<(?:text|tspan|g)\b[^>]*>")
 _FS = re.compile(r'font-size="([0-9.]+)"')
+_LS = re.compile(r'letter-spacing="([0-9.]+)"')
 
 
 def _scale_fonts(body):
     """Apply bump() to every font-size in the panel. Text pinned with
     textLength is skipped: its width is exact on purpose (typed lines,
     ticker loops, pills that size themselves), and scaling it would squash
-    the glyphs or break the animation that depends on that width."""
+    the glyphs or break the animation that depends on that width.
+
+    Small caps labels carry wide letter-spacing; when a label is lifted to
+    the floor size its tracking is tightened so it grows in height more
+    than in width and still fits where it was laid out."""
     def fix(m):
         tag = m.group(0)
         if "textLength=" in tag:
             return tag
-        return _FS.sub(lambda f: 'font-size="%s"' % bump(f.group(1)), tag)
+        fm = _FS.search(tag)
+        if not fm:
+            return tag
+        old = float(fm.group(1))
+        new = bump(old)
+        tag = tag[:fm.start()] + 'font-size="%s"' % new + tag[fm.end():]
+        if new > old * 1.25:
+            tag = _LS.sub(lambda l: 'letter-spacing="%.1f"' % min(float(l.group(1)) * 0.5, 1.2), tag)
+        return tag
     return _TAG.sub(fix, body)
 
 

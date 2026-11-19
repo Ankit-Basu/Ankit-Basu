@@ -137,9 +137,9 @@ def build_companion(d):
 
     cal = d.get("calendar") or []
     last = next((day for day, n in reversed(cal) if n), "-")
-    rows = [("CURRENT STREAK", "%s d" % fmt(d.get("current")), MINT),
-            ("BEST STREAK", "%s d" % fmt(d.get("longest")), CREAM),
-            ("LAST COMMIT", last[5:] if last != "-" else "-", ROSE)]
+    rows = [("STREAK", "%s d" % fmt(d.get("current")), MINT),
+            ("BEST", "%s d" % fmt(d.get("longest")), CREAM),
+            ("LAST PUSH", last[5:] if last != "-" else "-", ROSE)]
     for i, (lab, val, c) in enumerate(rows):
         x = 254 + i * 108
         body.append(f'<g class="{ev(3 + i)}">{card(s, x, 210, 96, 74, r=14, tint=c, tint_op=0.16, shadow=False)}'
@@ -151,8 +151,6 @@ def build_companion(d):
     st, _ = sticker(34, H - 70, "BYTE · LVL %d COMPANION" % max(1, int(d.get("longest") or 0) // 10),
                     MINT, ROSE, fs=9.6, h=24, off=3)
     body.append(f'<g class="ev5">{st}</g>')
-    body.append(f'<text class="mono" x="{HW - 34}" y="{H - 52}" text-anchor="end" font-size="9" '
-                f'fill="{FAINT}">hyped &#8805; 3 days &#183; on it 1-2 &#183; asleep at 0</text>')
     blobs = [(150, 220, 200, MINT, 0.22, "drift"), (460, 160, 200, ROSE, 0.2, "drift2")]
     return page(s, HW, H, css, "\n  ".join(body), blobs)
 

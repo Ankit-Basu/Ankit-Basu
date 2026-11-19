@@ -200,9 +200,9 @@ def ill_podium(x, y, w, h, col, d):
                    f'<circle cx="{cx}" cy="{my}" r="11" fill="{mc}"/>'
                    f'<circle cx="{cx}" cy="{my}" r="6.5" fill="none" stroke="#0d1117" stroke-opacity="0.35" stroke-width="1.4"/>'
                    f'</g>')
-        out.append(f'<text class="sans" x="{cx}" y="{my - 36:.0f}" text-anchor="middle" font-size="14" font-weight="800" '
+        out.append(f'<text class="sans" x="{cx}" y="{my - 41:.0f}" text-anchor="middle" font-size="14" font-weight="800" '
                    f'fill="{INK}">{esc(tr[3])}</text>'
-                   f'<text class="mono" x="{cx}" y="{my - 22:.0f}" text-anchor="middle" font-size="8" letter-spacing="1.2" '
+                   f'<text class="mono" x="{cx}" y="{my - 21:.0f}" text-anchor="middle" font-size="8" letter-spacing="1.2" '
                    f'fill="{DIM}">{esc(tr[4])}</text>')
     return "".join(out), ""
 

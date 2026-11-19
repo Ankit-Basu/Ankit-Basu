@@ -171,7 +171,7 @@
   <rect x="66" y="265.5" width="1068" height="1.2" rx="0.6" fill="url(#refr_l)"/>
   </g>
   <text x="72.0" y="160" font-size="13.7" font-weight="600" fill="#f0f3f6">Java / DSA</text>
-  <text class="mono" x="570.0" y="160" text-anchor="end" font-size="12.1" font-weight="700" fill="#fcd38d">94%</text>
+  <text class="mono" x="570.0" y="160" text-anchor="end" font-size="12.6" font-weight="700" fill="#fcd38d">94%</text>
   <g>
     <rect x="72.0" y="172" width="498.0" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.08"/>
     <style>@keyframes xp34{from{width:84.3px}to{width:468.1px}}
@@ -180,7 +180,7 @@
     <rect class="xp34" x="72.0" y="172" width="468.1" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text x="630.0" y="160" font-size="13.7" font-weight="600" fill="#f0f3f6">Full Stack (MERN)</text>
-  <text class="mono" x="1128.0" y="160" text-anchor="end" font-size="12.1" font-weight="700" fill="#f9a8d4">90%</text>
+  <text class="mono" x="1128.0" y="160" text-anchor="end" font-size="12.6" font-weight="700" fill="#f9a8d4">90%</text>
   <g>
     <rect x="630.0" y="172" width="498.0" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.08"/>
     <style>@keyframes xp35{from{width:80.7px}to{width:448.2px}}
@@ -189,7 +189,7 @@
     <rect class="xp35" x="630.0" y="172" width="448.2" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text x="72.0" y="222" font-size="13.7" font-weight="600" fill="#f0f3f6">Cloud &amp; DevOps</text>
-  <text class="mono" x="570.0" y="222" text-anchor="end" font-size="12.1" font-weight="700" fill="#7dd3fc">84%</text>
+  <text class="mono" x="570.0" y="222" text-anchor="end" font-size="12.6" font-weight="700" fill="#7dd3fc">84%</text>
   <g>
     <rect x="72.0" y="234" width="498.0" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.08"/>
     <style>@keyframes xp36{from{width:75.3px}to{width:418.3px}}
@@ -198,7 +198,7 @@
     <rect class="xp36" x="72.0" y="234" width="418.3" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.45"/>
   </g>
   <text x="630.0" y="222" font-size="13.7" font-weight="600" fill="#f0f3f6">AI / Deep Learning</text>
-  <text class="mono" x="1128.0" y="222" text-anchor="end" font-size="12.1" font-weight="700" fill="#c5f467">80%</text>
+  <text class="mono" x="1128.0" y="222" text-anchor="end" font-size="12.6" font-weight="700" fill="#c5f467">80%</text>
   <g>
     <rect x="630.0" y="234" width="498.0" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.08"/>
     <style>@keyframes xp37{from{width:71.7px}to{width:398.4px}}
@@ -218,7 +218,7 @@
   </g>
   <g transform="translate(68,304) scale(0.8750)" opacity="0.9"><g fill="none" stroke="#7dd3fc" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="6.2"/><path d="m12 12.4 1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3Z"/>
         <path d="M8.6 9.4 6 2.6h12l-2.6 6.8"/></g></g>
-  <text class="mono" x="100" y="320" font-size="12.0" letter-spacing="2.4" fill="#7dd3fc" fill-opacity="0.9" font-weight="600">CERTIFIED</text>
+  <text class="mono" x="100" y="320" font-size="12.6" letter-spacing="1.2" fill="#7dd3fc" fill-opacity="0.9" font-weight="600">CERTIFIED</text>
   <text x="196" y="321" font-size="12.8"><tspan fill="#fcd38d" font-weight="600">NPTEL · IIT</tspan><tspan fill="#9da7b3">  Privacy &amp; Security</tspan></text>
   <circle cx="409" cy="317" r="1.6" fill="#6e7681"/>
   <text x="425" y="321" font-size="12.8"><tspan fill="#fcd38d" font-weight="600">CSE Pathshala</tspan><tspan fill="#9da7b3">  Advanced C &amp; DSA</tspan></text>

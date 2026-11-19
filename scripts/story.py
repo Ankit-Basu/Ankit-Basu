@@ -589,9 +589,9 @@ SHORT = {
 }
 
 SHORT_SUB = {
-    "BookMyCampus": "Campus booking platform",
-    "TimedInk": "Fault-tolerant scheduler",
-    "PII-Redaction-Tool": "Document privacy engine",
+    "BookMyCampus": "Campus bookings",
+    "TimedInk": "Email scheduler",
+    "PII-Redaction-Tool": "Privacy engine",
 }
 
 

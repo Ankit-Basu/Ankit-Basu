@@ -181,10 +181,10 @@
   <g transform="translate(163,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#fcd38d" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="6.2"/><path d="m12 12.4 1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3Z"/>
         <path d="M8.6 9.4 6 2.6h12l-2.6 6.8"/></g></g>
   <text class="sans" x="177" y="206" text-anchor="middle" font-size="16.3" font-weight="700" fill="#f0f3f6">Hackathon Wins</text>
-  <text x="177" y="225" text-anchor="middle" font-size="11.9" fill="#9da7b3">National &amp; university podiums</text>
+  <text x="177" y="225" text-anchor="middle" font-size="12.6" fill="#9da7b3">National &amp; university podiums</text>
   <rect x="88" y="238" width="178" height="1" fill="#ffffff" opacity="0.09"/>
   <text class="sans" x="177" y="278" text-anchor="middle" font-size="30.0" font-weight="800" fill="#fcd38d" letter-spacing="-1">5+</text>
-  <text class="mono" x="177" y="294" text-anchor="middle" font-size="10.6" letter-spacing="2.2" fill="#9da7b3">WINS</text>
+  <text class="mono" x="177" y="294" text-anchor="middle" font-size="12.6" letter-spacing="1.1" fill="#9da7b3">WINS</text>
   </g>
   <g class="ev2">
   <g>
@@ -202,10 +202,10 @@
   <circle cx="459" cy="158" r="35" fill="none" stroke="#7dd3fc" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.35s infinite"/>
   <g transform="translate(445,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#7dd3fc" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8-4.6 4 4.6 4M15.6 8l4.6 4-4.6 4M13.6 5.2l-3.2 13.6"/></g></g>
   <text class="sans" x="459" y="206" text-anchor="middle" font-size="16.3" font-weight="700" fill="#f0f3f6">DSA Mastery</text>
-  <text x="459" y="225" text-anchor="middle" font-size="11.9" fill="#9da7b3">400+ problems · top 25%</text>
+  <text x="459" y="225" text-anchor="middle" font-size="12.6" fill="#9da7b3">400+ problems · top 25%</text>
   <rect x="370" y="238" width="178" height="1" fill="#ffffff" opacity="0.09"/>
   <text class="sans" x="459" y="278" text-anchor="middle" font-size="30.0" font-weight="800" fill="#7dd3fc" letter-spacing="-1">1590</text>
-  <text class="mono" x="459" y="294" text-anchor="middle" font-size="10.6" letter-spacing="2.2" fill="#9da7b3">LC RATING</text>
+  <text class="mono" x="459" y="294" text-anchor="middle" font-size="12.6" letter-spacing="1.1" fill="#9da7b3">LC RATING</text>
   </g>
   <g class="ev3">
   <g>
@@ -223,10 +223,10 @@
   <circle cx="741" cy="158" r="35" fill="none" stroke="#c5f467" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 7" style="animation:halo 3.6s ease-in-out 0.7s infinite"/>
   <g transform="translate(727,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#c5f467" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2.4 4.6 13.6h6.2l-1.2 8 8.8-11.2h-6.2Z"/></g></g>
   <text class="sans" x="741" y="206" text-anchor="middle" font-size="16.3" font-weight="700" fill="#f0f3f6">Contest Ranking</text>
-  <text x="741" y="225" text-anchor="middle" font-size="11.9" fill="#9da7b3">CF Div3 #1178 · CC #1161</text>
+  <text x="741" y="225" text-anchor="middle" font-size="12.6" fill="#9da7b3">CF Div3 #1178 · CC #1161</text>
   <rect x="652" y="238" width="178" height="1" fill="#ffffff" opacity="0.09"/>
   <text class="sans" x="741" y="278" text-anchor="middle" font-size="30.0" font-weight="800" fill="#c5f467" letter-spacing="-1">1119</text>
-  <text class="mono" x="741" y="294" text-anchor="middle" font-size="10.6" letter-spacing="2.2" fill="#9da7b3">CF RATING</text>
+  <text class="mono" x="741" y="294" text-anchor="middle" font-size="12.6" letter-spacing="1.1" fill="#9da7b3">CF RATING</text>
   </g>
   <g class="ev4">
   <g>
@@ -245,13 +245,13 @@
   <g transform="translate(1009,144) scale(1.1667)" opacity="1.0"><g fill="none" stroke="#f9a8d4" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 22 8l-10 4.8L2 8Z"/>
         <path d="M6.2 10.4v5.2c0 1.9 2.6 3.4 5.8 3.4s5.8-1.5 5.8-3.4v-5.2M22 8v5.6"/></g></g>
   <text class="sans" x="1023" y="206" text-anchor="middle" font-size="16.3" font-weight="700" fill="#f0f3f6">Academic Honours</text>
-  <text x="1023" y="225" text-anchor="middle" font-size="11.9" fill="#9da7b3">ISC 95% · ICSE 97%</text>
+  <text x="1023" y="225" text-anchor="middle" font-size="12.6" fill="#9da7b3">ISC 95% · ICSE 97%</text>
   <rect x="934" y="238" width="178" height="1" fill="#ffffff" opacity="0.09"/>
   <text class="sans" x="1023" y="278" text-anchor="middle" font-size="30.0" font-weight="800" fill="#f9a8d4" letter-spacing="-1">9.2</text>
-  <text class="mono" x="1023" y="294" text-anchor="middle" font-size="10.6" letter-spacing="2.2" fill="#9da7b3">/ 10 CGPA</text>
+  <text class="mono" x="1023" y="294" text-anchor="middle" font-size="12.6" letter-spacing="1.1" fill="#9da7b3">/ 10 CGPA</text>
   </g>
   <g class="tst0" opacity="1"><g><rect x="806" y="33.0" width="348" height="58" rx="12" fill="#000000" fill-opacity="0.35"/><rect x="806" y="30" width="348" height="58" rx="12" fill="#161b22"/><rect x="815.6" y="30.6" width="328.8" height="1" fill="#ffffff" opacity="0.45"/></g><circle cx="835" cy="59" r="19" fill="#7dd3fc"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4c.8 3.4-1.6 4.6-3 6.6-2 2.8-1.4 6.2 1 8 1.6 1.2 3.4 1.2 5 0 2.4-1.8 3-5.2 1-8-.6-.8-1.2-1.4-1.6-2.2"/>
-        <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g><text class="mono" x="866" y="54" font-size="10.8" letter-spacing="2" fill="#7dd3fc" font-weight="700">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="75" font-size="15.8" font-weight="700" fill="#f0f3f6">149-day streak</text></g>
-  <g class="tst1" opacity="0"><g><rect x="806" y="33.0" width="348" height="58" rx="12" fill="#000000" fill-opacity="0.35"/><rect x="806" y="30" width="348" height="58" rx="12" fill="#161b22"/><rect x="815.6" y="30.6" width="328.8" height="1" fill="#ffffff" opacity="0.45"/></g><circle cx="835" cy="59" r="19" fill="#fcd38d"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="866" y="54" font-size="10.8" letter-spacing="2" fill="#fcd38d" font-weight="700">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="75" font-size="15.8" font-weight="700" fill="#f0f3f6">SheShield hit 20 stars</text></g>
-  <g class="tst2" opacity="0"><g><rect x="806" y="33.0" width="348" height="58" rx="12" fill="#000000" fill-opacity="0.35"/><rect x="806" y="30" width="348" height="58" rx="12" fill="#161b22"/><rect x="815.6" y="30.6" width="328.8" height="1" fill="#ffffff" opacity="0.45"/></g><circle cx="835" cy="59" r="19" fill="#f9a8d4"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g><text class="mono" x="866" y="54" font-size="10.8" letter-spacing="2" fill="#f9a8d4" font-weight="700">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="75" font-size="15.8" font-weight="700" fill="#f0f3f6">2,194 contributions</text></g>
+        <path d="M12 21c-1.8 0-3.2-1.4-3.2-3.2 0-2 1.6-2.8 3.2-5 1.6 2.2 3.2 3 3.2 5 0 1.8-1.4 3.2-3.2 3.2Z"/></g></g><text class="mono" x="866" y="54" font-size="12.6" letter-spacing="1.0" fill="#7dd3fc" font-weight="700">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="75" font-size="15.8" font-weight="700" fill="#f0f3f6">149-day streak</text></g>
+  <g class="tst1" opacity="0"><g><rect x="806" y="33.0" width="348" height="58" rx="12" fill="#000000" fill-opacity="0.35"/><rect x="806" y="30" width="348" height="58" rx="12" fill="#161b22"/><rect x="815.6" y="30.6" width="328.8" height="1" fill="#ffffff" opacity="0.45"/></g><circle cx="835" cy="59" r="19" fill="#fcd38d"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.6 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6l-5.9 3.2 1.2-6.6-4.8-4.6 6.6-.9Z"/></g></g><text class="mono" x="866" y="54" font-size="12.6" letter-spacing="1.0" fill="#fcd38d" font-weight="700">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="75" font-size="15.8" font-weight="700" fill="#f0f3f6">SheShield hit 20 stars</text></g>
+  <g class="tst2" opacity="0"><g><rect x="806" y="33.0" width="348" height="58" rx="12" fill="#000000" fill-opacity="0.35"/><rect x="806" y="30" width="348" height="58" rx="12" fill="#161b22"/><rect x="815.6" y="30.6" width="328.8" height="1" fill="#ffffff" opacity="0.45"/></g><circle cx="835" cy="59" r="19" fill="#f9a8d4"/><g transform="translate(825,49) scale(0.8333)" opacity="1"><g fill="none" stroke="#0a0f14" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12h4.2l2.4-6.4 4 12.8 2.6-6.4h5.6"/></g></g><text class="mono" x="866" y="54" font-size="12.6" letter-spacing="1.0" fill="#f9a8d4" font-weight="700">ACHIEVEMENT UNLOCKED</text><text class="sans" x="866" y="75" font-size="15.8" font-weight="700" fill="#f0f3f6">2,194 contributions</text></g>
 </svg>
