@@ -464,7 +464,7 @@
     <text class="mono" x="1112" y="377" text-anchor="middle" font-size="12.6" font-weight="800"
           letter-spacing="0.8" fill="#0a0f14">LVL</text>
     <text class="sans" x="1112" y="403" text-anchor="middle" font-size="26.0" font-weight="800"
-          fill="#0a0f14">21</text>
+          fill="#0a0f14">22</text>
   </g>
   <g class="ev5"><g><rect x="812" y="62" width="112" height="26" rx="13.0" fill="#7dd3fc" fill-opacity="0.12" stroke="#7dd3fc" stroke-opacity="0.45" stroke-width="1"/><circle cx="824.0" cy="75.0" r="2.4" fill="#7dd3fc"/><text class="mono" x="833.0" y="79.5" font-size="12.6" font-weight="600" letter-spacing="1.6" fill="#7dd3fc" textLength="80.8" lengthAdjust="spacing">ARCHITECT</text></g></g>
 </svg>

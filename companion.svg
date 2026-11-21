@@ -178,7 +178,7 @@
   <path d="M270,96 H550 A16,16 0 0 1 566,112 V172 A16,16 0 0 1 550,188 H270 A16,16 0 0 1 254,172 V112 A16,16 0 0 1 270,96 Z" fill="none" stroke="url(#rim_m)" stroke-width="1.2"/>
   <path d="M255,112 A16,16 0 0 1 270,97 H550 A16,16 0 0 1 565,112" fill="none" stroke="url(#spec_m)" stroke-width="1.4"/>
   <rect x="270" y="185.5" width="280" height="1.2" rx="0.6" fill="url(#refr_m)"/>
-  </g><path d="M254 136L238 148L254 154" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.2"/><text class="mono" x="272" y="124" font-size="12.6" letter-spacing="1.0" fill="#fcd38d" font-weight="700">BYTE SAYS</text><text x="272" y="152" font-size="14.2" fill="#f0f3f6" font-weight="600">Day 2 of a fresh streak. Keep pushing!</text><text class="mono" x="272" y="172" font-size="12.6" fill="#9da7b3">mood: ON &#183; fed by my real commit streak</text></g>
+  </g><path d="M254 136L238 148L254 154" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.2"/><text class="mono" x="272" y="124" font-size="12.6" letter-spacing="1.0" fill="#fcd38d" font-weight="700">BYTE SAYS</text><text x="272" y="152" font-size="14.2" fill="#f0f3f6" font-weight="600">Day 1 of a fresh streak. Keep pushing!</text><text class="mono" x="272" y="172" font-size="12.6" fill="#9da7b3">mood: ON &#183; fed by my real commit streak</text></g>
   <g class="ev3"><g>
   <radialGradient id="tg78" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#7dd3fc" stop-opacity="0.272"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></radialGradient>
   <path d="M268,210 H336 A14,14 0 0 1 350,224 V270 A14,14 0 0 1 336,284 H268 A14,14 0 0 1 254,270 V224 A14,14 0 0 1 268,210 Z" fill="#0d1117"/>
@@ -187,7 +187,7 @@
   <path d="M268,210 H336 A14,14 0 0 1 350,224 V270 A14,14 0 0 1 336,284 H268 A14,14 0 0 1 254,270 V224 A14,14 0 0 1 268,210 Z" fill="none" stroke="url(#rim_m)" stroke-width="1.2"/>
   <path d="M255,224 A14,14 0 0 1 268,211 H336 A14,14 0 0 1 349,224" fill="none" stroke="url(#spec_m)" stroke-width="1.4"/>
   <rect x="268" y="281.5" width="68" height="1.2" rx="0.6" fill="url(#refr_m)"/>
-  </g><text class="mono" x="266" y="232" font-size="12.6" letter-spacing="0.6" fill="#7dd3fc" font-weight="700">STREAK</text><text class="sans" x="266" y="266" font-size="22.0" font-weight="800" fill="#f0f3f6">2 d</text></g>
+  </g><text class="mono" x="266" y="232" font-size="12.6" letter-spacing="0.6" fill="#7dd3fc" font-weight="700">STREAK</text><text class="sans" x="266" y="266" font-size="22.0" font-weight="800" fill="#f0f3f6">1 d</text></g>
   <g class="ev4"><g>
   <radialGradient id="tg79" cx="0.3" cy="0.05" r="0.85"><stop offset="0" stop-color="#fcd38d" stop-opacity="0.272"/><stop offset="1" stop-color="#fcd38d" stop-opacity="0"/></radialGradient>
   <path d="M376,210 H444 A14,14 0 0 1 458,224 V270 A14,14 0 0 1 444,284 H376 A14,14 0 0 1 362,270 V224 A14,14 0 0 1 376,210 Z" fill="#0d1117"/>
@@ -205,6 +205,6 @@
   <path d="M484,210 H552 A14,14 0 0 1 566,224 V270 A14,14 0 0 1 552,284 H484 A14,14 0 0 1 470,270 V224 A14,14 0 0 1 484,210 Z" fill="none" stroke="url(#rim_m)" stroke-width="1.2"/>
   <path d="M471,224 A14,14 0 0 1 484,211 H552 A14,14 0 0 1 565,224" fill="none" stroke="url(#spec_m)" stroke-width="1.4"/>
   <rect x="484" y="281.5" width="68" height="1.2" rx="0.6" fill="url(#refr_m)"/>
-  </g><text class="mono" x="482" y="232" font-size="12.6" letter-spacing="0.6" fill="#f9a8d4" font-weight="700">LAST PUSH</text><text class="sans" x="482" y="266" font-size="22.0" font-weight="800" fill="#f0f3f6">11-19</text></g>
+  </g><text class="mono" x="482" y="232" font-size="12.6" letter-spacing="0.6" fill="#f9a8d4" font-weight="700">LAST PUSH</text><text class="sans" x="482" y="266" font-size="22.0" font-weight="800" fill="#f0f3f6">11-21</text></g>
   <g class="ev5"><g><rect x="34" y="330" width="241" height="24" rx="12.0" fill="#7dd3fc" fill-opacity="0.12" stroke="#7dd3fc" stroke-opacity="0.45" stroke-width="1"/><circle cx="46.0" cy="342.0" r="2.4" fill="#7dd3fc"/><text class="mono" x="55.0" y="346.5" font-size="12.6" font-weight="600" letter-spacing="1.6" fill="#7dd3fc" textLength="209.1" lengthAdjust="spacing">BYTE · LVL 14 COMPANION</text></g></g>
 </svg>
